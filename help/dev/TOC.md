@@ -2,9 +2,9 @@
 user-guide-title: Adobe Target 개발자 안내서
 breadcrumb-title: Target 개발자 안내서
 user-guide-description: 고객의 경험을 맞춤화 및 개인화하여 웹 및 모바일 사이트, 앱, 소셜 미디어 및 기타 디지털 채널에서 매출을 극대화하는 방법을 알아봅니다.
-source-git-commit: 5321ce43be26e8f0776da49e597ecb5f8dfb5984
+source-git-commit: 65cad3c558aa0f52c8007dcdb566c0ce3b29d8b7
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '739'
 ht-degree: 55%
 
 ---
@@ -217,5 +217,6 @@ ht-degree: 55%
       + [SDK 초기화](/help/dev/patterns/initialize-sdk.md)
       + [데이터 수집 구성](/help/dev/patterns/data-collection.md)
       + [경험 렌더링](/help/dev/patterns/render-experiences.md)
+      + [Target 알림](/help/dev/patterns/notify-target.md)
 
 
