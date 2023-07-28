@@ -4,10 +4,10 @@ description: 허용 목록에 추가하다 도움이 되는 호스트 목록 보
 title: How Do I 허용 목록 [!DNL Target] 에지 노드
 feature: Privacy & Security
 exl-id: a7e5d2fc-da8e-414d-a3da-2441ea21503d
-source-git-commit: 55deb12a59dc228ec7dcec17fc0ecb43e2900613
+source-git-commit: 3f4147d521b1fb3ee12e879e52a48d459f6b24b9
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 5%
+source-wordcount: '516'
+ht-degree: 6%
 
 ---
 
@@ -27,11 +27,7 @@ ht-degree: 5%
 >
 >[!DNL Adobe Target] 인프라가 업데이트되고 있으며 허용 목록에 추가하다 주소를 원하는 고객은 두 세트의 IP를 모두 사용해야 합니다. 그렇게 하지 않으면 경험을 가져오기 위한 Target API 호출이 허용 목록에 추가하다를 사용하도록 구성된 방화벽 뒤의 네트워크 내에서 비롯된 서버측 또는 하이브리드 구현을 사용하는 고객에게 영향을 미칩니다.
 >
->이 업데이트는 다음 일정에 따라 수행됩니다.
->
->* 5월 22~26일: 유럽, 중동 및 아프리카(EMEA) 지역
->* 5월 22~26일: 아시아 태평양(APAC) 지역
->* 6월 6~10일: 아메리카 지역
+>모든 Edge4 *x* 아래 두 표에 모두 나열된 주소는 2023년 8월 9일에 업데이트될 예정입니다.
 
 ## 네트워크 주소 변환(NAT) IP 주소 [!DNL Target] 가장자리
 
