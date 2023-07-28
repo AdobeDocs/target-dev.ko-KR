@@ -6,7 +6,7 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 5321ce43be26e8f0776da49e597ecb5f8dfb5984
+source-git-commit: 9b65380febf64896a3885c49f8bb79e4bb33f604
 workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 5%
@@ -27,7 +27,7 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL �
 
 다음 그림에서 단계 번호는 아래 섹션에 해당합니다.
 
-![경험 다이어그램 렌더링](/help/dev/patterns/assets/render-experiences-diagram.png){width="600" zoomable="yes"}
+![경험 다이어그램 렌더링](/help/dev/patterns/assets/diagram-render-experiences.png){width="600" zoomable="yes"}
 
 다음 링크를 클릭하여 원하는 섹션으로 이동합니다.
 
