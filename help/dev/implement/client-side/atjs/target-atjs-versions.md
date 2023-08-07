@@ -4,9 +4,9 @@ description: 각 버전의 변경 사항에 대한 세부 사항 보기 [!DNL Ad
 title: at.js의 각 버전에 포함된 것은 무엇입니까?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: dc7831e4c3eb7dfc4a11d440e55b3a116b6e28fc
 workflow-type: tm+mt
-source-wordcount: '4554'
+source-wordcount: '4603'
 ht-degree: 73%
 
 ---
@@ -15,9 +15,15 @@ ht-degree: 73%
 
 [!DNL Adobe Target] at.js JavaScript 라이브러리의 각 버전 변경 내용에 대한 세부 사항입니다.
 
->[!WARNING]
+>[!IMPORTANT]
 >
->[!DNL Adobe Target] 는 at.js 1을 모두 지원합니다.*x*&#x200B;와 at.js 2.*x* 간의 매핑에 대해 설명합니다. 지원되는 버전을 실행 중인지 확인하려면 at.js의 주요 버전 중 가장 최근의 업데이트로 업그레이드하십시오.
+>[!DNL Adobe Target] 는 at.js 1을 모두 지원합니다.*x*&#x200B;와 at.js 2.*x* 간의 매핑에 대해 설명합니다.
+>
+>at.js 1.*x* 이(가) 유지 관리 모드로 전환되었습니다. 다음 [!DNL Target] 팀은 필요한 경우 버그 수정 및 보안 패치를 릴리스합니다.
+>
+>다음 [!DNL Target] team은 at.js 2에 대한 모든 지원을 제공합니다.*x* 버그 수정, 보안 패치, 기능 및 성능 최적화를 지속적으로 릴리스할 수 있습니다.
+>
+>둘 중 하나의 최신 버전으로 업그레이드해야 합니다.*x* 또는 2.*x* 해당 주 버전의 이전 부 버전에서 발견된 문제에 대한 버그 수정 및 보안 패치를 얻을 수 있습니다.
 
 의 태그 [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) 는 at.js를 업그레이드하는 데 선호되는 방법입니다. 확장 개발자는 확장에 새로운 기능을 지속적으로 추가하고 버그를 자주 수정합니다. 이러한 업데이트는 새로운 버전의 확장에 패키지화되어 Adobe Experience Platform 카탈로그에서 업그레이드로 사용할 수 있습니다. 자세한 내용은 [확장 업그레이드](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) 다음에서 *태그 개요* 가이드.
 
