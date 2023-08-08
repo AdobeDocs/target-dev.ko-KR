@@ -6,9 +6,9 @@ kt: 3815
 thumbnail: null
 author: Judy Kim
 exl-id: 9b391f42-2922-48e0-ad7e-10edd6125be6
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: ba53161b2ec51af3d90994773034790feb51099c
 workflow-type: tm+mt
-source-wordcount: '1521'
+source-wordcount: '1507'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,6 @@ Adobe Target 및 Adobe Target Recommendations API를 사용하여 웹 페이지�
 | --- | --- |
 | [어디서나 Adobe Target - Server Side 또는 IoT 구현](https://expleague.azureedge.net/labs/L733/index.html) | Adobe Target 서버측 API를 활용하는 React 애플리케이션에 대한 실습 경험을 제공하는 Adobe Summit 2019 Lab. |
 | [Adobe SDK가 없는 모바일 앱의 Adobe Target](https://community.tealiumiq.com/t5/Universal-Data-Hub/Adobe-Target-in-a-Mobile-App-Without-the-Adobe-SDK/ta-p/26753) | 이 안내서에서는 Adobe SDK를 설치하지 않고 모바일 앱에서 Adobe Target을 설정하는 방법을 보여 줍니다. 이 솔루션은 Tealium SDK 웹 보기 및 원격 명령 모듈을 사용하여 Adobe 방문자 API(Experience Cloud) 및 Adobe Target API에 요청을 보내고 받습니다. |
-| [모바일 앱에서의 Adobe Target 작동 방식](../../implement/mobile/how-target-works-mobile-apps.md) | Mobile SDK에서 Target이 작동하는 방법 |
 | [Experience Platform Launch 및 Target API 구현에서 Target 확장 구성](https://developer.adobe.com/client-sdks/documentation/adobe-target/) | Experience Platform Launch에서 Target 확장을 구성하고, 앱에 Target 확장을 추가하고, 활동 요청, 오퍼 미리 가져오기 및 시각적 미리 보기 모드 시작에 Target API를 구현하는 단계입니다. |
 | [Adobe Target 노드 클라이언트](https://www.npmjs.com/package/@adobe/target-nodejs-sdk) | 오픈 소스 Target Node.js SDK v1.0 |
 | [서버측 개요](../../implement/server-side/server-side-overview.md) | Adobe Target 서버 측 배달 API, 서버 측 배치 배달 API, Node.js SDK 및 Adobe Target Recommendations API에 대한 정보입니다. |

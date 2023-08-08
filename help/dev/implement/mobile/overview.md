@@ -4,10 +4,10 @@ description: 사용 방법 알아보기 [!DNL Adobe Target] 모바일 앱 최적
 title: 사용할 수 있습니까 [!DNL Target] 모바일 앱을 사용하시겠습니까?
 feature: Implement Mobile
 exl-id: 8f61a0ae-04e4-41ed-ad30-fbcca13c4d21
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: ba53161b2ec51af3d90994773034790feb51099c
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 28%
+source-wordcount: '150'
+ht-degree: 26%
 
 ---
 
@@ -22,18 +22,3 @@ ht-degree: 28%
 구현에 대한 자세한 정보 [!DNL Target] 모바일 앱에서 [모바일 앱용 Adobe Experience Platform SDK](https://developer.adobe.com/client-sdks/documentation/){target=_blank} documentation. Information specific to [!DNL Target] can be found under [Adobe Target](https://developer.adobe.com/client-sdks/documentation/adobe-target/){target=_blank}.
 
 구현 방법 알아보기 [!DNL Adobe Experience Cloud] 를 사용하는 모바일 앱의 애플리케이션 [!DNL Adobe Experience Platform Mobile SDK]. 자세한 내용은 [모바일 앱에서 Adobe Experience Cloud 구현 자습서](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=_blank} 다음에서 [!DNL Experience Platform] *모바일 앱 튜토리얼*.
-
-## [!DNL Adobe Mobile SDK] 버전 4.*x*
-
->[!IMPORTANT]
->
->지원 [!DNL Adobe Mobile] 버전 4.*x* SDK는 2021년 8월 31일부로 종료되었으며 더 이상 다음에 대해 권장되지 않습니다. [!DNL Adobe Target] 모바일 사용자.
->
->여전히 기존 을 사용하는 경우 [!DNL Adobe Mobile] 버전 4.*x* SDK의 모바일 앱 타깃팅 프로세스에는 다음 단계가 포함됩니다.
->
->1. [ [!DNL Target] 모바일 앱에서의 작동 방식](/help/dev/implement/mobile/how-target-works-mobile-apps.md)
->1. [ [!DNL Target] SDK에서 사용](/help/dev/implement/mobile/enable-target-in-sdk.md)
->
->1. [ [!DNL Target]  위치 및 성공 지표 만들기](/help/dev/implement/mobile/mobile-create-location-and-metric.md)
->
->1. [사용자 지정 사용자 데이터 전송](/help/dev/implement/mobile/mobile-custom-user-data.md)
