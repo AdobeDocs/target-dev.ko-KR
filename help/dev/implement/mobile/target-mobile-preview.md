@@ -4,9 +4,9 @@ description: 모바일 미리 보기 링크를 사용하여 모바일 앱 활동
 title: 에서 모바일 미리 보기 링크를 사용하는 방법 [!DNL Target] 모바일?
 feature: Implement Mobile
 exl-id: c0c4237a-de1f-4231-b085-f8f1e96afc13
-source-git-commit: b678b69624963b4bdbce230a05a0355da96469f1
+source-git-commit: 97c96e63f9121793a83b445ad3dc33c5d094509a
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '555'
 ht-degree: 51%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 51%
    * **iOs**: iOS의 URL 체계 설정에 대한 자세한 내용은 [앱에 대한 사용자 지정 URL 체계 정의](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target=_blank} Apple 개발자 웹 사이트에서.
    * **Android**: Android용 URL 체계 설정에 대한 자세한 내용은 [앱 콘텐츠에 대한 딥링크 만들기](https://developer.android.com/training/app-links/deep-linking){target=_blank} Android 개발자 웹 사이트에서.
 
-1. **설정 `collectLaunchInfo` API**
+1. **설정 `collectLaunchInfo` API(i0S만 해당)**
 
    자세한 내용은 [시각적 미리보기](https://developer.adobe.com/client-sdks/documentation/adobe-target/#visual-preview){target=_blank} 위치: *Adobe Target* 다음에서 *[!DNL Adobe Experience Platform Mobile SDK]* 설명서를 참조하십시오.
 
