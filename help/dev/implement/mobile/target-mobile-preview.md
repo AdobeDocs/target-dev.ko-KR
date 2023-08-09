@@ -4,10 +4,10 @@ description: 모바일 미리 보기 링크를 사용하여 모바일 앱 활동
 title: 에서 모바일 미리 보기 링크를 사용하는 방법 [!DNL Target] 모바일?
 feature: Implement Mobile
 exl-id: c0c4237a-de1f-4231-b085-f8f1e96afc13
-source-git-commit: cf39b35e208a99114b3f97df2e9ef7eb8a46e153
+source-git-commit: b678b69624963b4bdbce230a05a0355da96469f1
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 57%
+source-wordcount: '552'
+ht-degree: 51%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 57%
 
 ## 전제 조건
 
-1. **지원되는 SDK 버전 사용:**&#x200B;모바일 미리 보기 기능을 사용하려면 해당 앱에서 Adobe Mobile SDK의 해당 4.14 이상 버전을 다운로드한 후 설치해야 합니다.
+1. **지원되는 SDK 버전 사용:** 모바일 미리 보기 기능을 사용하려면 해당 앱에서 적절한 버전의 Adobe Mobile SDK를 다운로드하여 설치해야 합니다.
 
    적절한 SDK를 다운로드하는 방법에 대한 지침은 [현재 SDK 버전](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/){target=_blank} 다음에서 *[!DNL Adobe Experience Platform Mobile SDK]* 설명서를 참조하십시오.
 
