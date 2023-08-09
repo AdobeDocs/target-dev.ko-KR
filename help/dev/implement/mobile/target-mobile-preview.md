@@ -4,20 +4,16 @@ description: 모바일 미리 보기 링크를 사용하여 모바일 앱 활동
 title: 에서 모바일 미리 보기 링크를 사용하는 방법 [!DNL Target] 모바일?
 feature: Implement Mobile
 exl-id: c0c4237a-de1f-4231-b085-f8f1e96afc13
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: cf39b35e208a99114b3f97df2e9ef7eb8a46e153
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 68%
+source-wordcount: '554'
+ht-degree: 57%
 
 ---
 
 # [!DNL Target] 모바일 미리 보기
 
 모바일 미리 보기 링크를 사용하여 모바일 앱 활동에 대한 간단한 종단 간 QA를 수행하고 특별한 테스트 장치 없이 장치에서 다양한 경험을 직접 등록할 수 있습니다.
-
->[!NOTE]
->
->모바일 미리 보기 기능을 사용하려면 해당 Adobe Mobile SDK 4.14 이상 버전을 다운로드한 후 설치해야 합니다.
 
 ## 개요
 
@@ -27,69 +23,24 @@ ht-degree: 68%
 
 1. **지원되는 SDK 버전 사용:**&#x200B;모바일 미리 보기 기능을 사용하려면 해당 앱에서 Adobe Mobile SDK의 해당 4.14 이상 버전을 다운로드한 후 설치해야 합니다.
 
-   적절한 SDK를 다운로드하는 방법에 대한 지침은
-
-   * **iOS:** [시작하기 전에](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/requirements.html) 다음에서 *Mobile Services iOS 도움말*.
-   * **Android:** [시작하기 전에](https://experienceleague.adobe.com/docs/mobile-services/android/getting-started-android/requirements.html) 다음에서 *Mobile Services Android 도움말*.
+   적절한 SDK를 다운로드하는 방법에 대한 지침은 [현재 SDK 버전](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/){target=_blank} 다음에서 *[!DNL Adobe Experience Platform Mobile SDK]* 설명서를 참조하십시오.
 
 1. **URL 체계 설정:** 미리 보기 링크는 URL 체계를 사용하여 앱을 엽니다. 미리 보기에 대해 고유한 URL 체계를 지정해야 합니다.
 
-   다음 그림은 iOS의 예입니다.
+   자세한 내용은 [시각적 미리보기](https://developer.adobe.com/client-sdks/documentation/adobe-target/#visual-preview){target=_blank} 위치: *Adobe Target* 다음에서 *[!DNL Adobe Experience Platform Mobile SDK]* 설명서를 참조하십시오.
 
-   ![대체 이미지](assets/mobile-preview-url-scheme-ios.png)
+   다음 링크에는 추가 정보가 포함되어 있습니다.
 
-   다음 그림은 Android의 예입니다.
+   * **iOs**: iOS의 URL 체계 설정에 대한 자세한 내용은 [앱에 대한 사용자 지정 URL 체계 정의](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target=_blank} Apple 개발자 웹 사이트에서.
+   * **Android**: Android용 URL 체계 설정에 대한 자세한 내용은 [앱 콘텐츠에 대한 딥링크 만들기](https://developer.android.com/training/app-links/deep-linking){target=_blank} Android 개발자 웹 사이트에서.
 
-   ![대체 이미지](assets/Android_Deeplink.png)
+1. **설정 `collectLaunchInfo` API**
 
-1. **Adobe DeepLink 추적**
-
-   **iOS:** 앱 위임에서는 대리자가 이전 단계에서 지정한 URL 체계로 리소스를 열도록 요구되면 `[ADBMobile trackAdobeDeepLink:url`을 호출합니다.
-
-   다음 코드 조각은 예제입니다.
-
-   ```javascript {line-numbers="true"}
-   - (BOOL) application:(UIApplication *)app openURL:(NSURL *)url 
-                options:(NSDictionary<NSString *,id> *)options { 
-   
-       if ([[url scheme] isEqualToString:@"com.adobe.targetmobile"]) { 
-           [ADBMobile trackAdobeDeepLink:url]; 
-           return YES; 
-       } 
-       return NO; 
-   } 
-   ```
-
-   **Android:** 앱에서 호출자가 이전 단계에서 지정된 URL 체계로 리소스를 열도록 요청받으면 `Config.trackAdobeDeepLink(URL);`을 호출합니다.
-
-   ```javascript {line-numbers="true"}
-    private Boolean shouldOpenDeeplinkUrl() { 
-        Intent appLinkIntent = getIntent(); 
-        String appLinkAction = appLinkIntent.getAction(); 
-        Uri appLinkData = appLinkIntent.getData; 
-        if (appLinkData.toString().startsWith("com.adobe.targetmobile")) { 
-            Config.trackAdobeDeepLink(appLinkData); 
-            return true; 
-        } 
-        return false; 
-     }
-   ```
-
-   모바일 미리 보기가 Android에 대해 작동되도록 하려면 Adobe Mobile SDK 버전 5를 사용하는 경우 AndroidManifest.xml에 다음 코드 조각도 추가해야 합니다.
-
-   ```javascript {line-numbers="true"}
-   <activity android:name="com.adobe.marketing.mobile.FullscreenMessageActivity" />
-   ```
-
-   Adobe Mobile SDK의 버전 4를 사용 중인 경우 다음 코드 조각을 사용하십시오.
-
-   ```javascript {line-numbers="true"}
-   <activity android:name="com.adobe.mobile.MessageFullScreenActivity" />
-   ```
+   자세한 내용은 [시각적 미리보기](https://developer.adobe.com/client-sdks/documentation/adobe-target/#visual-preview){target=_blank} 위치: *Adobe Target* 다음에서 *[!DNL Adobe Experience Platform Mobile SDK]* 설명서를 참조하십시오.
 
 ## 미리 보기 링크 생성
 
-1. 다음에서 [!DNL Target] UI에서 **[!UICONTROL 추가 옵션]** 아이콘(3개의 수직 줄임표)을 클릭한 다음 를 선택합니다 **[!UICONTROL 모바일 미리 보기 만들기]**.
+1. 다음에서 [!DNL Target] UI에서 **[!UICONTROL 추가 옵션]** 아이콘(수직 줄임표)을 클릭한 다음 을 선택합니다 **[!UICONTROL 모바일 미리 보기 만들기]**.
 
    ![대체 이미지](assets/mobile-preview-create.png)
 
