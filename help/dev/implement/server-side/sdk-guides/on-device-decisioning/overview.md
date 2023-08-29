@@ -4,9 +4,9 @@ description: 사용 방법 알아보기 [!UICONTROL [!UICONTROL 온디바이스 
 title: 온디바이스 의사 결정이란 무엇입니까?
 feature: Implement Server-side
 exl-id: 22ed3072-56f0-4075-9d1a-d642afe3b649
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 79ffa3f58d780f587fe1202b82d3860395504dfe
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1214'
 ht-degree: 8%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 8%
 
 | 대상 규칙 | 온디바이스 의사 결정 |
 | --- | --- |
-| [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | 예 |
+| [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | 예<P>온디바이스 의사 결정을 사용할 때 지원되는 지역 속성은 다음과 같습니다.<ul><li>국가/지역</li><li>구/군/시</li><li>위도</li><li>경도</li></ul> |
 | [네트워크](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html) | 아니요 |
 | [모바일](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) | 아니요 |
 | [사용자 지정 매개 변수](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) | 예 |
@@ -137,7 +137,7 @@ ht-degree: 8%
 이 7분 길이의 비디오:
 
 * 설명 [!UICONTROL 온디바이스 의사 결정], 의 다른 메서드와 비교하는 방법 포함 [!DNL Target] 구현
-* 을 활성화하는 방법을 보여 줍니다. [!UICONTROL 온디바이스 의사 결정] Target
+* 을 활성화하는 방법을 보여 줍니다. [!UICONTROL 온디바이스 의사 결정] 대상
 * JSON 콘텐츠로 구성된 샘플 양식 기반 작성기 활동을 검사합니다
 * 에 필요한 키 구성이 포함된 샘플 Node.JS SDK 코드를 표시합니다. [!UICONTROL 온디바이스 의사 결정]
 * 브라우저에서 결과를 보여 줍니다

@@ -4,10 +4,10 @@ description: 지원되는 기능 알아보기 [!UICONTROL 온디바이스 의사
 title: 온디바이스 의사 결정에서 지원되는 기능
 feature: at.js
 exl-id: bdd65658-6c4a-41ae-a222-59c00a11bdac
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 79ffa3f58d780f587fe1202b82d3860395504dfe
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 9%
+source-wordcount: '666'
+ht-degree: 10%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 9%
 | [경험 타겟팅](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT) | 예 |
 | [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) ![Premium](../../../assets/premium.png) | 아니오 |
 | [권장 사항](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html) ![프리미엄](../../../assets/premium.png) | 아니요 |
-| [Analytics를 사용한 Target 활동](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?) (A4T) | 예 |
+| [Analytics for Target을 사용하는 활동](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?) (A4T) | 예 |
 
 ## 대상 타기팅
 
@@ -36,7 +36,7 @@ ht-degree: 9%
 
 | 대상 규칙 | 지원됨? |
 | --- | --- |
-| [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | 예 |
+| [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | 예<P>온디바이스 의사 결정을 사용할 때 지원되는 지역 속성은 다음과 같습니다.<ul><li>국가/지역</li><li>구/군/시</li><li>위도</li><li>경도</li></ul> |
 | [네트워크](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html) | 아니요 |
 | [모바일](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) | 아니요 |
 | [사용자 정의 매개변수](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) | 예 |
