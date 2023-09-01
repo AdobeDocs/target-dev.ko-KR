@@ -4,10 +4,10 @@ description: 방법 알아보기 [!DNL Adobe Target] 는 IP 주소, PII 및 옵�
 title: Target은 PII를 포함한 개인 정보 보호 문제를 어떻게 처리합니까?
 feature: Privacy & Security
 exl-id: 4330e034-2483-4a25-9c87-48dbef6fc9de
-source-git-commit: d9ac5bab3a09cf49b2178a62c06eebe733b9048d
+source-git-commit: 88bde40aa6dfb96e1d53e4db6ba5547d38dbbb99
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 39%
+source-wordcount: '790'
+ht-degree: 42%
 
 ---
 
@@ -39,11 +39,9 @@ Adobe은 사용자가 Adobe에 대해 활성화할 수 있는 &quot;계획적 �
 
 [!DNL Target] 전체 IP 주소를 수신하고 지정된 대로 이를 난독화합니다([마지막 옥텟] 또는 [전체 IP]로 설정한 경우). [!DNL Target] 그런 다음 난독화된 IP 주소를 현재 세션 동안에만 메모리에 보관합니다.
 
-### 를 사용할 때 데이터 스트림 수준 IP 난독화 [!DNL Adobe Experience Platform Web SDK]
+### 를 사용할 때 데이터 스트림 수준 IP 난독화 [!DNL Adobe Experience Platform Web SDK] {#aep}
 
-사용 시 [!DNL Platform Web SDK] (버전 23.4 이상) 데이터스트림 수준의 IP 난독화 설정이 [!DNL Target]. 예를 들어 데이터 스트림 수준 IP 난독화 옵션이 로 설정된 경우 [!UICONTROL 전체] 및 [!DNL Target] IP 난독화 옵션이 다음으로 설정됨 [!UICONTROL 마지막 옥텟 난독화], [!DNL Target] 는 완전히 난독화된 IP를 수신합니다. 에서 IP 난독화가 수행되기 때문에 [!DNL Target] 지리적 위치 조회 전에 데이터 스트림 수준의 IP 난독화 설정이 영향을 주지 않습니다.
-
-IP 난독화가 데이터 스트림 수준에서 설정되고 데이터가 에지 네트워크를 통해 전송되면 요청이 [!DNL Target] 및 [!DNL Adobe Audience Manager] (AAM) 난독화된 IP만 포함하며 클라이언트 IP를 기반으로 하는 모든 로직은 데이터스트림 수준 IP 난독화 옵션의 영향을 받습니다. 에 설정된 모든 IP 난독화 [!DNL Target] 또는 AAM이 이미 난독화된 IP에 적용됩니다.
+사용 시 [!DNL Platform Web SDK] (버전 23.4 이상) 데이터스트림 수준의 IP 난독화 설정이 [!DNL Target]. 예를 들어 데이터 스트림 수준 IP 난독화 옵션이 로 설정된 경우 [!UICONTROL 전체] 및 [!DNL Target] IP 난독화 옵션이 다음으로 설정됨 [!UICONTROL 마지막 옥텟 난독화], [!DNL Target] 는 완전히 난독화된 IP를 수신합니다.
 
 자세한 내용은 [!UICONTROL IP 난독화] 위치: [데이터 스트림 구성](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html){target=_blank} 다음에서 *[!DNL Adobe Experience Platfrom]데이터 스트림 안내서*.
 
