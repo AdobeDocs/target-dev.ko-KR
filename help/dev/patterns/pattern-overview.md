@@ -6,9 +6,9 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: c4b9dfed19e5e4a56bfeae26c4310b997a2d617e
+source-git-commit: 7a79eb1d263cf42529a5a1b1ca1f9de4db218a49
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '148'
 ht-degree: 0%
 
 ---
@@ -34,10 +34,10 @@ ht-degree: 0%
 
 각 패턴은 서로 다른 부품으로 구성됩니다. 각 부분은 다음을 위한 중요한 구현 요구 사항에 해당합니다. [!DNL Target] 구현.
 
-각 부분은 이 안내서의 별도 페이지에 설명되어 있습니다. 예를 들어 [!DNL Target] 구현 패턴에는 다음 페이지가 포함됩니다.
+각 부분은 이 안내서의 별도 페이지에 설명되어 있습니다. 예를 들어 [[!DNL Recommendations] at.js를 사용한 구현 패턴](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md) 에는 다음 페이지가 포함되어 있습니다.
 
 * SDK 초기화
-* 프로필 강화
+* 데이터 수집 구성
 * 렌더링 경험
 * 알림 [!DNL Target]
 

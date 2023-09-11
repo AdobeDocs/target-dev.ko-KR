@@ -2,10 +2,10 @@
 user-guide-title: Adobe Target 개발자 안내서
 breadcrumb-title: Target 개발자 안내서
 user-guide-description: 고객의 경험을 맞춤화 및 개인화하여 웹 및 모바일 사이트, 앱, 소셜 미디어 및 기타 디지털 채널에서 매출을 극대화하는 방법을 알아봅니다.
-source-git-commit: 2d1b1829a8f794e29bb054d1bfdcb5047d6b4acb
+source-git-commit: 7a79eb1d263cf42529a5a1b1ca1f9de4db218a49
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 53%
+source-wordcount: '729'
+ht-degree: 54%
 
 ---
 
@@ -168,7 +168,7 @@ ht-degree: 53%
    + [Target 모바일 미리보기](implement/mobile/target-mobile-preview.md)
    + [위치 서비스 사용](implement/mobile/use-location-service.md)
    + [모바일 앱을 위한 Target FAQ](implement/mobile/mobile-faq.md)
-   + [웹 보기가 있는 기본 앱에서 AEP Mobile SDK로 Target 구현](/help/dev/implement/mobile/native-app.md)
+   + [웹 보기가 있는 기본 앱에서 AEP Mobile SDK를 사용하여 Target 구현](/help/dev/implement/mobile/native-app.md)
 + 이메일 구현 {#implement-email}
    + [이메일: Target 구현 개요](implement/email/overview.md)
    + [이미지용 Adbox 만들기](implement/email/testing-content-with-the-adbox.md)
@@ -208,10 +208,11 @@ ht-degree: 53%
    + [Adobe Experience Platform Edge Network Server API](/help/dev/before-implement/delivery-api-overview/aep-edge-network-server-api.md)
 + 구현 패턴 {#implementation-patterns} {#hidden}
    + [구현 패턴 개요](/help/dev/patterns/pattern-overview.md)
-   + Target 구현 패턴 {#target}
-      + [SDK 초기화](/help/dev/patterns/initialize-sdk.md)
-      + [데이터 수집 구성](/help/dev/patterns/data-collection.md)
-      + [경험 렌더링](/help/dev/patterns/render-experiences.md)
-      + [타겟에게 알림](/help/dev/patterns/notify-target.md)
+   + at.js를 사용한 Recommendations 구현 패턴 {#atjs}
+      + [at.js 개요를 사용한 Recommendations 구현 패턴](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
+      + [SDK 초기화](/help/dev/patterns/recs-atjs/initialize-sdk.md)
+      + [데이터 수집 구성](/help/dev/patterns/recs-atjs/data-collection.md)
+      + [경험 렌더링](/help/dev/patterns/recs-atjs/render-experiences.md)
+      + [타겟에게 알림](/help/dev/patterns/recs-atjs/notify-target.md)
 
 
