@@ -6,9 +6,9 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 948ebe0c5011fb0327a7b5d45f3e7ac857fcb8ad
+source-git-commit: e15513f5c52240536ccf41f16ba7f4dc6dbf9a04
 workflow-type: tm+mt
-source-wordcount: '1772'
+source-wordcount: '1791'
 ht-degree: 7%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 7%
 **전제 조건**
 
 * 방문자 ID/API 서비스를 사용하려면 회사에 대해 가 활성화되어 있어야 합니다. [!DNL Adobe Experience Cloud] 다음 작업을 수행합니다. [!UICONTROL 조직 ID]. 자세한 내용은 [Experience Cloud 요구 사항: 조직 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/requirements.html?){target=_blank} 다음에서 *ID 서비스 도움말* 가이드.
-* 다음이 필요합니다. `VisitorAPI.js` 파일. 이 파일을 가져오려면 디지털 마케팅 팀에 문의하십시오.
+* 다음이 필요합니다. `VisitorAPI.js` 파일. 이 파일이 있는 경우 이미 이 파일이 있어야 합니다. [!DNL Adobe Analytics] 을 구현했습니다. 을(를) 통해 이 파일을 추가할 수도 있습니다. [[!DNL Adobe Experience Platform] 태그 확장](https://experienceleague.adobe.com/docs/tags.html){target=_blank} or can be downloaded from the [Adobe Analytics Code Manager](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html){target=_blank}.
 
 **VisitorAPI.js 구성 및 참조**
 
@@ -431,7 +431,7 @@ ht-degree: 7%
 
 **전제 조건**
 
-* 디지털 마케팅 팀에 웹 SDK 라이브러리 파일을 다운로드하거나 문의하십시오. `at.js 2.*x*`
+* 디지털 마케팅 팀에 다음을 다운로드하거나 문의하십시오. `at.js 2.*x*` JavaScript 라이브러리 파일입니다.
 
 *읽기 횟수*
 
