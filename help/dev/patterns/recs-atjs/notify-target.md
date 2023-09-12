@@ -6,7 +6,7 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 7a79eb1d263cf42529a5a1b1ca1f9de4db218a49
+source-git-commit: 6cd78f8e3cbdd97a09b0cb6ca3af55994e85f819
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 1%
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 +++세부 정보 보기
 
-![Adobe Target 추적 API 다이어그램 실행](/help/dev/patterns/recs-atjs/assets/fire-adobe-target-track-api-diagram.png){width="300" zoomable="yes"}
+![Adobe Target 추적 API 다이어그램 실행](/help/dev/patterns/recs-atjs/assets/fire-adobe-target-track-api-diagram.png){width="400" zoomable="yes"}
 
 에 언급된 대로 주문 전환 속성을 보냅니다. *전제 조건* 아래 섹션. mbox 이름은 중요하지 않지만 변환은 를 사용하는 것입니다 `orderConfirmPage`.
 

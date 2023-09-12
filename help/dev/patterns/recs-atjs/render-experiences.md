@@ -6,7 +6,7 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 1349004b7da45b775b27a6ba119a26f77a9607fb
+source-git-commit: 6cd78f8e3cbdd97a09b0cb6ca3af55994e85f819
 workflow-type: tm+mt
 source-wordcount: '1080'
 ht-degree: 7%
@@ -252,7 +252,7 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL �
 
 +++세부 정보 보기
 
-![페이지 로드 요청 다이어그램 실행](/help/dev/patterns/recs-atjs/assets/fire-page-load-request.png){width="300" zoomable="yes"}
+![페이지 로드 요청 다이어그램 실행](/help/dev/patterns/recs-atjs/assets/fire-page-load-request.png){width="400" zoomable="yes"}
 
 **전제 조건**
 
@@ -277,7 +277,7 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL �
 
 +++세부 정보 보기
 
-![지리적 위치 요청 다이어그램 실행](/help/dev/patterns/recs-atjs/assets/fire-regional-location-request.png){width="300" zoomable="yes"}
+![지리적 위치 요청 다이어그램 실행](/help/dev/patterns/recs-atjs/assets/fire-regional-location-request.png){width="400" zoomable="yes"}
 
 **전제 조건**
 

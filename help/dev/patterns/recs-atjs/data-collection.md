@@ -6,7 +6,7 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: c6d779f14a53193ff423678ebe96fdaacc57be5d
+source-git-commit: 6cd78f8e3cbdd97a09b0cb6ca3af55994e85f819
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 3%
@@ -46,7 +46,7 @@ ht-degree: 3%
 
 +++세부 정보 보기
 
-![데이터 매핑 다이어그램 구성](/help/dev/patterns/recs-atjs/assets/cofigure-data-mapping.png){width="300" zoomable="yes"}
+![데이터 매핑 다이어그램 구성](/help/dev/patterns/recs-atjs/assets/cofigure-data-mapping.png){width="400" zoomable="yes"}
 
 **전제 조건**
 
@@ -90,7 +90,7 @@ ht-degree: 3%
 
 +++세부 정보 보기
 
-![Adobe Target 추적 API 다이어그램 실행](/help/dev/patterns/recs-atjs/assets/fire-track-api.png){width="300" zoomable="yes"}
+![Adobe Target 추적 API 다이어그램 실행](/help/dev/patterns/recs-atjs/assets/fire-track-api.png){width="400" zoomable="yes"}
 
 **전제 조건**
 

@@ -6,7 +6,7 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: e15513f5c52240536ccf41f16ba7f4dc6dbf9a04
+source-git-commit: 6cd78f8e3cbdd97a09b0cb6ca3af55994e85f819
 workflow-type: tm+mt
 source-wordcount: '1791'
 ht-degree: 7%
@@ -54,7 +54,7 @@ ht-degree: 7%
 
 +++세부 정보 보기
 
-![방문자 API SDK 다이어그램 로드](/help/dev/patterns/recs-atjs/assets/load-visitor-api-sdk.png){width="300" zoomable="yes"}
+![방문자 API SDK 다이어그램 로드](/help/dev/patterns/recs-atjs/assets/load-visitor-api-sdk.png){width="400" zoomable="yes"}
 
 **전제 조건**
 
@@ -90,7 +90,7 @@ ht-degree: 7%
 
 +++세부 정보 보기
 
-![고객 ID 설정](/help/dev/patterns/recs-atjs/assets/set-customer-id.png){width="300" zoomable="yes"}
+![고객 ID 설정](/help/dev/patterns/recs-atjs/assets/set-customer-id.png){width="400" zoomable="yes"}
 
 **전제 조건**
 
@@ -117,7 +117,7 @@ ht-degree: 7%
 
 +++세부 정보 보기
 
-![자동 페이지 로드 요청 구성](/help/dev/patterns/recs-atjs/assets/configure-automatic-page-request.png){width="300" zoomable="yes"}
+![자동 페이지 로드 요청 구성](/help/dev/patterns/recs-atjs/assets/configure-automatic-page-request.png){width="400" zoomable="yes"}
 
 **전제 조건**
 
@@ -146,7 +146,7 @@ ht-degree: 7%
 
 +++세부 정보 보기
 
-![플리커 처리 다이어그램 구성](/help/dev/patterns/recs-atjs/assets/flicker-handling.png){width="300" zoomable="yes"}
+![플리커 처리 다이어그램 구성](/help/dev/patterns/recs-atjs/assets/flicker-handling.png){width="400" zoomable="yes"}
 
 **전제 조건**
 
@@ -179,7 +179,7 @@ ht-degree: 7%
 
 +++세부 정보 보기
 
-![데이터 매핑 다이어그램](/help/dev/patterns/recs-atjs/assets/data-mapping.png){width="300" zoomable="yes"}
+![데이터 매핑 다이어그램](/help/dev/patterns/recs-atjs/assets/data-mapping.png){width="400" zoomable="yes"}
 
 **전제 조건**
 
@@ -399,7 +399,7 @@ ht-degree: 7%
 
 +++세부 정보 보기
 
-![원격 데이터 매핑 다이어그램](/help/dev/patterns/recs-atjs/assets/remote-data-mapping.png){width="300" zoomable="yes"}
+![원격 데이터 매핑 다이어그램](/help/dev/patterns/recs-atjs/assets/remote-data-mapping.png){width="400" zoomable="yes"}
 
 **전제 조건**
 
@@ -427,7 +427,7 @@ ht-degree: 7%
 
 +++세부 정보 보기
 
-![Adobe Target 웹 SDK 다이어그램 로드](/help/dev/patterns/recs-atjs/assets/load-web-sdk.png){width="300" zoomable="yes"}
+![Adobe Target 웹 SDK 다이어그램 로드](/help/dev/patterns/recs-atjs/assets/load-web-sdk.png){width="400" zoomable="yes"}
 
 **전제 조건**
 
