@@ -4,10 +4,10 @@ description: 각 버전의 변경 사항에 대한 세부 사항 보기 [!DNL Ad
 title: at.js의 각 버전에 포함된 것은 무엇입니까?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
-source-git-commit: dc7831e4c3eb7dfc4a11d440e55b3a116b6e28fc
+source-git-commit: 0bdbeebc07bc4e1dd0dc34171fbf2476db5c256f
 workflow-type: tm+mt
-source-wordcount: '4603'
-ht-degree: 73%
+source-wordcount: '4635'
+ht-degree: 72%
 
 ---
 
@@ -25,7 +25,12 @@ ht-degree: 73%
 >
 >둘 중 하나의 최신 버전으로 업그레이드해야 합니다.*x* 또는 2.*x* 해당 주 버전의 이전 부 버전에서 발견된 문제에 대한 버그 수정 및 보안 패치를 얻을 수 있습니다.
 
-의 태그 [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) 는 at.js를 업그레이드하는 데 선호되는 방법입니다. 확장 개발자는 확장에 새로운 기능을 지속적으로 추가하고 버그를 자주 수정합니다. 이러한 업데이트는 새로운 버전의 확장에 패키지화되어 Adobe Experience Platform 카탈로그에서 업그레이드로 사용할 수 있습니다. 자세한 내용은 [확장 업그레이드](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) 다음에서 *태그 개요* 가이드.
+의 태그 [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) 는 at.js를 업그레이드하는 데 선호되는 방법입니다. 확장 개발자는 확장에 새로운 기능을 지속적으로 추가하고 버그를 자주 수정합니다. 이러한 업데이트는 새로운 버전의 확장에 패키지화되어 Adobe Experience Platform 카탈로그에서 업그레이드로 사용할 수 있습니다. 자세한 내용은 [확장 업그레이드](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) 다음에서 *태그 개요* guide.6+
+
+## at.js 버전 2.10.3(2023년 9월 12일)
+
+* 를 잘못 트리거하는 문제가 해결되었습니다. `at-content-rendering-succeeded` 렌더링되는 오퍼가 없을 때의 사용자 지정 이벤트입니다. 올바른 이벤트입니다. `at-content-rendering-no-offers`이제 가 트리거됩니다.
+* 추가됨 `eventToken` 및 `responseTokens` 에 대한 오류 개체 `at-content-rendering-failed` 사용자 지정 이벤트.
 
 ## at.js 버전 2.10.2 (2023년 3월 7일)
 
@@ -77,7 +82,7 @@ ht-degree: 73%
 * at.js settings `secureOnly`가 `true`로 설정될 때마다 쿠키에 보안 속성이 추가됩니다.
 * 이제 `triggerView()`를 사용할 때 응답 토큰을 사용할 수 있습니다.
 * `CONTENT_RENDERING_NO_OFFERS` 이벤트와 관련된 문제가 해결되었습니다. 이제 [!DNL Target]에서 반환되는 내용이 없을 때 이 이벤트가 정상적으로 트리거됩니다.
-* [!UICONTROL Target 분석] 을 사용할 때 (A4T) 클릭 메트릭 세부 사항이 정상적으로 반환됩니다 `prefetch` 요청.
+* [!UICONTROL Analytics for Target] 을 사용할 때 (A4T) 클릭 메트릭 세부 사항이 정상적으로 반환됩니다 `prefetch` 요청.
 * UUID 생성이 더 이상 `Math.random()`을 사용하지 않고 `window.crypto`를 사용합니다.
 * 모든 네트워크 호출에서 `sessionId` 쿠키 만료가 정상적으로 연장됩니다.
 * 이제 단일 페이지 애플리케이션 (SPA) 보기 캐시 초기화가 정상적으로 처리되며 `viewsEnabled` 설정이 적용됩니다. 설정 `viewsEnabled` (으)로 `false` 이제 값이 `triggerView()` 함수. 다음을 참조하십시오 [초기 페이지 로드 작업 순서](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md#order).
@@ -305,7 +310,7 @@ at.js 버전 1.6.3에는 다음의 수정 사항과 개선 사항이 포함되�
 
 다음은 at.js 버전 1.6.0에 포함된 개선 사항 및 수정 사항입니다.
 
-* 이제 리디렉션 오퍼가 [!UICONTROL Target 분석] (A4T) 통합. 클라이언트 측 임시 해결책이 제거되었습니다. (TNT-30247)
+* 이제 리디렉션 오퍼가 [!UICONTROL Analytics for Target] (A4T) 통합. 클라이언트 측 임시 해결책이 제거되었습니다. (TNT-30247)
 * 이제 클라이언트 측 엣지 라우팅이 기본적으로 사용됩니다. (TNT-30261)
 * 동작 간에 종속성이 있을 때 Visual Experience Composer(VEC) 동작 렌더링에 문제가 수정되었습니다. (TNT-30248)
 
