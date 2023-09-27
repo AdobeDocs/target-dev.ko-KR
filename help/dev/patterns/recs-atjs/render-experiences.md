@@ -6,9 +6,9 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 85af1bad244dc0aa7665e2fbb627d82f6fabbf88
+source-git-commit: 266a8670a906e5be70f11bb05301b708f61a57d6
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1104'
 ht-degree: 7%
 
 ---
@@ -29,7 +29,9 @@ ht-degree: 7%
 
 at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL 자동 페이지 로드 요청] 활성화되었습니다. 이 옵션은에서 경험을 가져오는 동안 전체 HTML 본문을 숨깁니다. [!DNL Target]. 이 경우 깜박임을 처리하는 것은 사용자의 책임입니다. 지침을 위해 깜박임 처리에 사용할 수 있는 구현 패턴을 검색합니다.
 
-다음 그림에서 단계 번호는 아래 섹션에 해당합니다.
+>[!NOTE]
+>
+>다음 그림에서 단계 번호는 아래 섹션에 해당합니다. 단계 번호는 특정 순서가 아니며, [!DNL Target] 활동을 만드는 동안 UI입니다.
 
 ![경험 다이어그램 렌더링](/help/dev/patterns/recs-atjs/assets/diagram-render-experiences-new.png){width="600" zoomable="yes"}
 
