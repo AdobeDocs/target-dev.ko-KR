@@ -4,11 +4,9 @@ description: 추적할 필요가 있는 모든 이벤트를 [!DNL Target] trackE
 feature: APIs/SDKs
 level: Experienced
 role: Developer
-hide: true
-hidefromtoc: true
-source-git-commit: 013a49b92357cfb5d45f7e595b46b1b12ce91c65
+source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '359'
 ht-degree: 1%
 
 ---
@@ -49,6 +47,10 @@ ht-degree: 1%
    * `productPurchaseId`: 주문의 일부로 구매한 제품 ID입니다. 쉼표를 사용하여 여러 제품을 구분하십시오.
    * `orderTotal`: 구매에 대한 주문 총액.
    * `orderId`: 구매의 주문 ID입니다.
+
+  다음 그림은 를 보여줍니다. [규칙 [!DNL tags] 위치: [!DNL Experience Platform]](https://experienceleague.adobe.com/docs/tags.html){target=_blank} 이 경고는 [!UICONTROL 확인] 페이지를 가리키도록 업데이트하는 중입니다.
+
+  ![작업 구성 페이지](/help/dev/patterns/recs-atjs/assets/action-configuration.png){width="400" zoomable="yes"}
 
 * 장바구니 추가에 대한 이벤트를 추적하는 경우 `cartIds` 를 매개 변수로 사용하십시오. 에 대해 쉼표로 구분된 제품 ID 목록을 전달할 수 있습니다. `cardIds`.
 

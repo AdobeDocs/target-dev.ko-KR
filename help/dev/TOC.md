@@ -2,7 +2,7 @@
 user-guide-title: Adobe Target 개발자 안내서
 breadcrumb-title: Target 개발자 안내서
 user-guide-description: 고객의 경험을 맞춤화 및 개인화하여 웹 및 모바일 사이트, 앱, 소셜 미디어 및 기타 디지털 채널에서 매출을 극대화하는 방법을 알아봅니다.
-source-git-commit: 7a79eb1d263cf42529a5a1b1ca1f9de4db218a49
+source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 54%
@@ -206,7 +206,7 @@ ht-degree: 54%
       + [모델 API](/help/dev/administer/models-api/models-api-overview.md)
    + [ADOBE ADMIN CONSOLE API](/help/dev/before-implement/delivery-api-overview/adobe-console-api.md)
    + [Adobe Experience Platform Edge Network Server API](/help/dev/before-implement/delivery-api-overview/aep-edge-network-server-api.md)
-+ 구현 패턴 {#implementation-patterns} {#hidden}
++ 구현 패턴 {#implementation-patterns}
    + [구현 패턴 개요](/help/dev/patterns/pattern-overview.md)
    + at.js를 사용한 Recommendations 구현 패턴 {#atjs}
       + [at.js 개요를 사용한 Recommendations 구현 패턴](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)

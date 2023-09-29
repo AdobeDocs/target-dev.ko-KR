@@ -4,11 +4,9 @@ description: 을(를) 로드하는 데 필요한 모든 단계를 [!DNL Adobe Ta
 feature: APIs/SDKs
 level: Experienced
 role: Developer
-hide: true
-hidefromtoc: true
-source-git-commit: 266a8670a906e5be70f11bb05301b708f61a57d6
+source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
 workflow-type: tm+mt
-source-wordcount: '1814'
+source-wordcount: '1820'
 ht-degree: 7%
 
 ---
@@ -448,6 +446,8 @@ ht-degree: 7%
 +++
 
 [이 페이지 상단의 다이어그램으로 돌아갑니다.](#diagram)
+
+2단계로 진행합니다. [데이터 수집 구성](/help/dev/patterns/recs-atjs/data-collection.md).
 
 
 

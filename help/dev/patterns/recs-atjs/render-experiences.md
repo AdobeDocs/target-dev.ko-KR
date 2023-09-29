@@ -4,11 +4,9 @@ description: 경험을 렌더링하는 데 필요한 모든 단계가 올바른 
 feature: APIs/SDKs
 level: Experienced
 role: Developer
-hide: true
-hidefromtoc: true
-source-git-commit: 266a8670a906e5be70f11bb05301b708f61a57d6
+source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1124'
 ht-degree: 7%
 
 ---
@@ -52,7 +50,7 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL �
 
 ## 3.1: 프로모션 {#promotion}
 
-프로모션된 항목을 추가하고 Target Recommendations에서 해당 배치를 제어합니다. [디자인](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-design/create-design.html){target=_blank}.
+프로모션된 항목을 추가하고 의 전면 또는 후면 프로모션을 선택하여 권장 사항 디자인에서 해당 배치를 제어합니다. [!DNL Target] 활동을 만드는 동안 UI입니다.
 
 +++세부 정보 보기
 
@@ -65,6 +63,10 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL �
 **필요한 엔티티 매개 변수**
 
 * &quot;속성별 판촉&quot; 옵션을 사용할 때 판촉의 항목 속성을 전달해야 합니다.
+
+**읽기 횟수**
+
+* [프로모션 추가](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/adding-promotions.html){target=_blank}
 
 +++
 
@@ -297,3 +299,5 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL �
 +++
 
 [이 페이지 상단의 다이어그램으로 돌아갑니다.](#diagram)
+
+4단계로 진행합니다. [타겟에게 알림](/help/dev/patterns/recs-atjs/notify-target.md).
