@@ -3,10 +3,10 @@ title: create 메서드를 사용하여 Java SDK 초기화
 description: create 메서드를 사용하여 Java SDK를 초기화하고 [!UICONTROL TargetClient] 을(를) 호출하려면 [!DNL Adobe Target] (실험 및 개인화된 경험)
 feature: APIs/SDKs
 exl-id: 0e0ddead-7de8-4549-b81c-e72598558e4b
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 1d080b5e402e5d55039bf06611b44678cc6c36de
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 18%
+source-wordcount: '462'
+ht-degree: 17%
 
 ---
 
@@ -38,12 +38,15 @@ ClientConfigBuilder ClientConfig.builder()
 
 | 이름 | 유형 | 필수 | 기본값 | 설명 |
 | --- | --- | --- | --- | --- |
-| 클라이언트 | 문자열 | 예 | 없음 | [!UICONTROL Target 클라이언트 Id] |
+| 클라이언트 | 문자열 | 예 | 없음 | [!UICONTROL 대상 클라이언트 Id] |
 | organizationId | 문자열 | 예 | 없음 | [!UICONTROL Experience Cloud 조직 ID] |
 | connectTime | 숫자 | 아니오 | 10000 | 모든 요청에 대한 연결 시간 제한(밀리초) |
 | socketTime | 숫자 | 아니오 | 10000 | 모든 요청에 대한 소켓 시간 제한(밀리초) |
 | maxConnectionPerHost | 숫자 | 아니오 | 100 | 최대 연결 수 [!DNL Target] 호스트 |
 | maxConnectionTotal | 숫자 | 아니오 | 200 | 모든 연결을 포함한 최대 연결 수 [!DNL Target] 호스트 |
+| connectionTtlMs | 숫자 | 아니오 | -1 | 총 TTL(Time to Live)은 영구 연결의 최대 수명(밀리초)을 정의합니다. 기본적으로 연결은 무기한 유지됩니다. |
+| 유휴 연결 유효성 검사 | 숫자 | 아니오 | 1000 | 재사용 전에 영구 연결이 재확인되는 비활성 기간(밀리초) |
+| evictIdleConnectionsAfterSecs | 숫자 | 아니오 | 20 | 연결 풀에서 유휴 연결을 제거하는 시간(초) |
 | enableRetries | 부울 | 아니오 | true | 소켓 시간 초과에 대한 자동 재시도(최대 4회) |
 | logRequest | 부울 | 아니오 | false | 로그 [!DNL Target] 디버그의 요청 및 응답 |
 | logRequestStatus | 부울 | 아니오 | false | 로그 [!DNL Target] 응답 시간, 상태 및 URL |
@@ -52,7 +55,7 @@ ClientConfigBuilder ClientConfig.builder()
 | requestInterceptor | HttpRequestInterceptor | 아니요 | Null | 사용자 지정 요청 인터셉터 추가 |
 | defaultPropertyToken | 문자열 | 아니오 | 없음 | 다음에 대한 기본 속성 토큰을 설정합니다. `getOffers` 호출합니다. **온디바이스 의사 결정**, SDK는에 설정된 속성 토큰에 대한 적격 활동이 포함된 아티팩트만 다운로드합니다. `defaultPropertyToken` |
 | defaultDecisioningMethod | DecisioningMethod enum | 아니요 | SERVER_SIDE | 온디바이스 의사 결정을 사용하려면 ON_DEVICE 또는 HYBRID로 설정해야 합니다. |
-| 원격 분석 사용 | 부울 | 아니오 | true | 에 대한 요청 중에 고객이 추가 데이터 수집을 옵트아웃할 수 있음 [!DNL Target] 서버 |
+| 원격 분석 사용 | 부울 | 아니오 | true | 에 대한 요청 중에 고객이 추가 데이터 수집을 옵트아웃할 수 있도록 허용 [!DNL Target] 서버 |
 | proxyConfig | 클라이언트 프록시 구성 | 아니요 | 없음 | 클라이언트가 자체 프록시 세부 정보를 제공할 수 있음 |
 | exceptionHandler | TargetExceptionHandler | 아니요 | 없음 | 규칙 처리 중 사용자 지정 예외 처리를 구현하는 데 사용할 수 있습니다. |
 | httpClient | HttpClient | 아니요 | 없음 | 사용자가 다음을 바꿀 수 있도록 허용 [!DNL Target] 사용자 지정 HTTP 클라이언트가 있는 HTTP 클라이언트 |
