@@ -4,9 +4,9 @@ description: 구현 패턴을 사용하는 방법 이해
 feature: APIs/SDKs
 level: Experienced
 role: Developer
-source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
+source-git-commit: 09dafc7c85ea7f3600fceac4e673e8f1901771a4
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 * [[!DNL Recommendations] at.js를 사용한 구현 패턴](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
 
-이러한 구현 패턴은 수행하는 방법보다 수행할 작업, 수행할 시기 및 수행할 위치에 중점을 두기 위한 것입니다. 자세한 흐름 다이어그램은 작업 순서를 이해하는 데 도움이 되며 관련 설명서에 대한 링크는 상황별 및 단계별 지침을 제공합니다.
+이러한 구현 패턴은 수행할 작업, 수행할 시기 및 수행할 위치에 중점을 둡니다. 자세한 흐름 다이어그램은 작업 순서를 이해하는 데 도움이 되며 관련 설명서에 대한 링크는 상황별 및 단계별 지침을 제공합니다.
 
 ## 새로운 패턴이나 기존 패턴의 수정에 대한 아이디어 제안
 
