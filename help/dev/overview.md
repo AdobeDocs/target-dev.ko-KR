@@ -5,16 +5,14 @@ description: ' [!DNL Adobe Target] 을 구현 및 관리하고 해당 API 및 SD
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
 exl-id: 655cff9b-fc04-45cf-9068-5c6c32b70d79
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 063d0574ee380bf76130fb0f17db89cd09efdb7d
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '479'
 ht-degree: 12%
 
 ---
 
 # [!DNL Adobe Target] 개발자 안내서
-
-![Adobe Target 배너 이미지](/help/dev/assets/target-home-banner-simple.png)
 
 **([보기 [!DNL Target] 설명서 업데이트 정보](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html){target=_blank})**
 
@@ -36,7 +34,7 @@ ht-degree: 12%
 
 ## 클라이언트측 구현
 
-[**Adobe Experience Platform 웹 SDK**](/help/dev/implement/client-side/aep-web-sdk.md): [!DNL Adobe Experience Platform Web SDK] 에서 다양한 서비스와 상호 작용할 수 있습니다. [!DNL Experience Cloud] (포함) [!DNL Target])을 통해 [!UICONTROL Adobe Experience Edge Network].
+[**Adobe Experience Platform 웹 SDK**](/help/dev/implement/client-side/aep-web-sdk.md): [!DNL Adobe Experience Platform Web SDK] 에서 다양한 서비스와 상호 작용할 수 있습니다. [!DNL Experience Cloud] (포함) [!DNL Target])을 통해 [!UICONTROL Experience Edge 네트워크 Adobe].
 
 [**Target at.js JavaScript 라이브러리**](/help/dev/implement/client-side/overview.md): at.js JavaScript 라이브러리는 웹 구현에 대한 페이지 로드 시간을 향상시키고, 보안을 강화하고, 단일 페이지 애플리케이션에 대해 더 나은 구현 옵션을 제공합니다.
 
@@ -98,7 +96,7 @@ ht-degree: 12%
 * [Target Java SDK 소스](https://github.com/adobe/target-java-sdk)
 * [Target Java SDK 예제 리포지토리](https://github.com/adobe/target-java-sdk-samples)
 * [Target 구현](./before-implement/prepare-to-implement-target.md)
-* [Target 관리](./before-administer/target-api-overview.md)
+* [대상 관리](./before-administer/target-api-overview.md)
 * [Adobe Target 개발 문서 GitHub 리포지토리](https://github.com/AdobeDocs/target-developers)
 * [Adobe Target 릴리스 노트](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html)
 * [Adobe Target 비즈니스 사용 안내서](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=ko_KR)
