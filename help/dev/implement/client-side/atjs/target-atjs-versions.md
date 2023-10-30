@@ -4,10 +4,10 @@ description: 각 버전의 변경 사항에 대한 세부 사항 보기 [!DNL Ad
 title: at.js의 각 버전에 포함된 것은 무엇입니까?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
-source-git-commit: eb82f6a0d0165d73c1c40917c96e09c8bdddf647
+source-git-commit: c5d1f477a2561a59efb3250e35563b48822fbe59
 workflow-type: tm+mt
-source-wordcount: '4678'
-ht-degree: 72%
+source-wordcount: '4697'
+ht-degree: 71%
 
 ---
 
@@ -30,6 +30,10 @@ ht-degree: 72%
 ## at.js 버전 2.11.2(2023년 10월 26일)
 
 * 사용자 지정 이벤트에서 전송된 응답 토큰에 불일치가 발생하는 문제를 해결했습니다.
+
+## at.js 버전 2.11.1(2023년 10월 13일)
+
+* at.js를 실행하는 페이지가 quirks 모드에 있는 동안 확인할 수 없는 오류가 발생하는 문제를 해결했습니다.
 
 ## at.js 버전 2.11.0(2023년 10월 10일)
 
