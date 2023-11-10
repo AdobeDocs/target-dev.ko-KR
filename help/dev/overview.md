@@ -5,9 +5,9 @@ description: ' [!DNL Adobe Target] 을 구현 및 관리하고 해당 API 및 SD
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
 exl-id: 655cff9b-fc04-45cf-9068-5c6c32b70d79
-source-git-commit: 1d834edf4da94614e3a4be665ebd97399439ec98
+source-git-commit: d98c7b890f7456de0676cadce5d6c70bc62d6140
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '481'
 ht-degree: 12%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 12%
 
 [**[!DNL Target Reporting API]**](https://developer.adobe.com/target/administer/admin-api/#tag/Reports): 검색 [!UICONTROL A/B 테스트] 및 [!UICONTROL Automated Personalization] 활동 보고서 데이터입니다.
 
-[**[!DNL Target Recommendations API]**](http://developers.adobetarget.com/api/recommendations/): 사용 [!DNL Target Recommendations] API.
+[**[!DNL Target Recommendations API]**](https://developer.adobe.com/target/administer/recommendations-api/): 사용 [!DNL Target Recommendations] API.
 
 [**[!DNL Target Models API]**](administer/models-api/models-api-overview.md): 차단 목록을 관리하여에 사용되는 기능 정의 [!DNL Target] 머신 러닝 모델.
 
