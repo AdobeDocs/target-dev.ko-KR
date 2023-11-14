@@ -6,9 +6,9 @@ kt: 3815
 thumbnail: null
 author: Judy Kim
 exl-id: 51a67a49-a92d-4377-9a9f-27116e011ab1
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 2fba03b3882fd23a16342eaab9406ae4491c9044
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '939'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 경우에 따라 Recommendations에서 제공하는 알고리즘에서 홍보하려는 특정 항목을 표시하지 못할 수 있습니다. 이러한 상황에서 사용자 지정 기준은 주어진 주요 항목 또는 카테고리에 대한 특정 권장 항목 세트를 전달할 수 있는 방법을 제공합니다.
 
-사용자 지정 기준을 만들려면 키 항목 또는 범주와 권장 항목 간에 원하는 매핑을 정의하고 가져옵니다. 이 프로세스는 다음에 설명되어 있습니다. [사용자 지정 기준 설명서](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html). 해당 설명서에서 설명한 대로 Target UI(사용자 인터페이스)를 통해 사용자 지정 기준을 만들고, 편집하고, 삭제할 수 있습니다. 하지만, Target은 사용자 지정 기준을 더 자세히 관리할 수 있도록 해주는 일련의 사용자 지정 기준 API도 제공합니다.
+사용자 지정 기준을 만들려면 키 항목 또는 범주와 권장 항목 간에 원하는 매핑을 정의하고 가져옵니다. 이 프로세스는 다음에 설명되어 있습니다. [사용자 지정 기준 설명서](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html). 해당 설명서에서 설명한 대로 Target UI(사용자 인터페이스)를 통해 사용자 지정 기준을 만들고, 편집하고, 삭제할 수 있습니다. 하지만 Target에서는 사용자 지정 기준을 더 자세히 관리할 수 있는 사용자 지정 기준 API 세트를 제공합니다.
 
 >[!WARNING]
 >
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 ## 사용자 지정 기준 만들기
 
-을 사용하여 사용자 지정 기준을 만들려면 [사용자 지정 기준 API 만들기](https://developers.adobetarget.com/api/recommendations/#operation/createCriteriaCustom)구문:
+을 사용하여 사용자 지정 기준을 만들려면 [사용자 지정 기준 API 만들기](https://developer.adobe.com/target/administer/recommendations-api/#operation/createCriteriaCustom)구문:
 
 `POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom`
 
@@ -39,7 +39,7 @@ ht-degree: 1%
 
    ![CreateCustomCriteria1](assets/CreateCustomCriteria1.png)
 
-1. 사용자 추가 **본문** 다음으로: **raw** 사용자 지정 기준 CSV 파일의 위치를 정의하는 JSON. 에 제공된 예제 사용 [사용자 지정 기준 API 만들기](https://developers.adobetarget.com/api/recommendations/#operation/getAllCriteriaCustom) 템플릿을 위한 설명서 `environmentId` 및 기타 값(필요한 경우) 이 예에서는 LAST_PURCHASED를 키로 사용합니다.
+1. 사용자 추가 **본문** 다음으로: **raw** 사용자 지정 기준 CSV 파일의 위치를 정의하는 JSON. 에 제공된 예제 사용 [사용자 지정 기준 API 만들기](https://developer.adobe.com/target/administer/recommendations-api/#operation/getAllCriteriaCustom) 템플릿을 위한 설명서 `environmentId` 및 기타 값(필요한 경우) 이 예에서는 LAST_PURCHASED를 키로 사용합니다.
 
    ![CreateCustomCriteria2](assets/CreateCustomCriteria2.png)
 
@@ -55,18 +55,18 @@ ht-degree: 1%
 
 ## 사용자 지정 기준 나열
 
-각각에 대한 세부 정보와 함께 모든 사용자 지정 기준 목록을 검색하려면 [목록 사용자 지정 기준 API](https://developers.adobetarget.com/api/recommendations/#operation/getAllCriteriaCustom). 구문은 입니다.
+각각에 대한 세부 정보와 함께 모든 사용자 지정 기준 목록을 검색하려면 [목록 사용자 지정 기준 API](https://developer.adobe.com/target/administer/recommendations-api/#operation/getAllCriteriaCustom). 구문은 입니다.
 
 `GET https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom`
 
 1. 확인 `TENANT_ID` 및 `API_KEY` 이전과 마찬가지로 을 호출하고 요청을 보냅니다. 응답에서 사용자 지정 기준 ID와 이전에 기록한 오류 메시지에 대한 세부 사항을 확인합니다.
    ![ListCustomCriteria](assets/ListCustomCriteria.png)
 
-이 경우 서버 정보가 잘못되었기 때문에 오류가 발생했습니다. 즉, Target이 사용자 지정 기준 정의가 포함된 CSV 파일에 액세스할 수 없습니다. 이 문제를 해결하기 위해 사용자 지정 기준을 편집해 보겠습니다.
+이 경우 서버 정보가 잘못되었기 때문에 오류가 발생했습니다. 즉, Target에서 사용자 지정 기준 정의가 포함된 CSV 파일에 액세스할 수 없습니다. 이 문제를 해결하기 위해 사용자 지정 기준을 편집해 보겠습니다.
 
 ## 사용자 지정 기준 편집
 
-사용자 지정 기준 정의의 세부 사항을 변경하려면 [사용자 지정 기준 API 편집](https://developers.adobetarget.com/api/recommendations/#operation/updateCriteriaCustom). 구문은 입니다.
+사용자 지정 기준 정의의 세부 사항을 변경하려면 [사용자 지정 기준 API 편집](https://developer.adobe.com/target/administer/recommendations-api/#operation/updateCriteriaCustom). 구문은 입니다.
 
 `POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom/:criteriaId`
 
@@ -86,7 +86,7 @@ ht-degree: 1%
 
 ## 사용자 지정 기준 가져오기
 
-특정 사용자 지정 기준에 대한 사용자 지정 기준 세부 정보를 보려면 [사용자 지정 기준 API 가져오기](https://developers.adobetarget.com/api/recommendations/#operation/getCriteriaCustom). 구문은 입니다.
+특정 사용자 지정 기준에 대한 사용자 지정 기준 세부 정보를 보려면 [사용자 지정 기준 API 가져오기](https://developer.adobe.com/target/administer/recommendations-api/#operation/getCriteriaCustom). 구문은 입니다.
 
 `GET https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom/:criteriaId`
 
@@ -99,7 +99,7 @@ ht-degree: 1%
 
 ## 사용자 지정 기준 삭제
 
-앞에서 언급한 기준 ID를 사용하여 다음을 사용하여 사용자 지정 기준을 삭제합니다. [사용자 지정 기준 API 삭제](https://developers.adobetarget.com/api/recommendations/#operation/deleteCriteriaCustom). 구문은 입니다.
+앞에서 언급한 기준 ID를 사용하여 다음을 사용하여 사용자 지정 기준을 삭제합니다. [사용자 지정 기준 API 삭제](https://developer.adobe.com/target/administer/recommendations-api/#operation/deleteCriteriaCustom). 구문은 입니다.
 
 `DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom/:criteriaId`
 
@@ -112,8 +112,8 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->다시 말해서, 기준은 사용자 지정 기준 만들기 API를 사용하여 생성되었으므로 삭제되더라도 Target UI에서 제거되지 않습니다.
+>다시 말해서, 기준은 사용자 정의 기준 만들기 API를 사용하여 생성되었기 때문에 삭제되더라도 Target UI에서 제거되지 않습니다.
 
-축하합니다! 이제 Recommendations API를 사용하여 사용자 지정 기준을 만들고, 나열하고, 편집하고, 삭제하고, 세부 정보를 가져올 수 있습니다. 다음 섹션에서는 Target 배달 API를 사용하여 권장 사항을 검색합니다.
+축하합니다! 이제 Recommendations API를 사용하여 사용자 지정 기준을 만들고, 나열하고, 편집하고, 삭제하고, 세부 정보를 가져올 수 있습니다. 다음 섹션에서는 Target 게재 API를 사용하여 권장 사항을 검색합니다.
 
 &lt;!— [다음 &quot;서버측 배달 API로 Recommendations 가져오기&quot; >](fetch-recs-server-side-delivery-api.md) —>

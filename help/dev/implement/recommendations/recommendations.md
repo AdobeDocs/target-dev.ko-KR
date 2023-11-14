@@ -4,9 +4,9 @@ description: 구현 방법 알아보기 [!UICONTROL Recommendations] 의 활동 
 title: 구현 방법 [!UICONTROL Recommendations] 활동?
 feature: Recommendations
 exl-id: af1e8b60-6dbb-451b-aa4f-e167d1800d1c
-source-git-commit: 1e1bfb556005f7ea998caf97685c834825372bd6
+source-git-commit: 2fba03b3882fd23a16342eaab9406ae4491c9044
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1461'
 ht-degree: 29%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 29%
 | 방법 | 정의 | 사용하는 경우 | 추가 정보 |
 | --- | --- | --- | --- |
 | 카탈로그 피드 | 매일 업로드하고 수집할 피드(CSV, Google 제품 XML 또는 Analytics 제품 분류)를 예약합니다. | 한 번에 여러 항목에 대한 정보를 보냅니다. 자주 변경되지 않는 정보를 보내는 경우 | 다음을 참조하십시오 [피드](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html). |
-| 엔티티 API | API를 호출하여 단일 항목에 대한 최신 업데이트를 보냅니다. | 한 번에 한 항목에 대해 발생하는 업데이트 전송 자주 변경되는 정보(예: 가격, 재고/재고 수준) 전송 | 다음을 참조하십시오. [엔티티 API 개발자 설명서](https://developers.adobetarget.com/api/recommendations/#tag/Entities). |
+| 엔티티 API | API를 호출하여 단일 항목에 대한 최신 업데이트를 보냅니다. | 한 번에 한 항목에 대해 발생하는 업데이트 전송 자주 변경되는 정보(예: 가격, 재고/재고 수준) 전송 | 다음을 참조하십시오. [엔티티 API 개발자 설명서](https://developer.adobe.com/target/administer/recommendations-api/#tag/Entities). |
 | 페이지에서 업데이트 전달 | 페이지에서 JavaScript를 사용하거나 배달 API를 사용하여 단일 항목에 대한 최신 업데이트를 보냅니다. | 한 번에 한 항목에 대해 발생하는 업데이트 전송 자주 변경되는 정보(예: 가격, 재고/재고 수준) 전송 | 다음을 참조하십시오 [항목 보기/제품 페이지](#item-views-or-product-pages) 아래요. |
 
 대부분의 고객은 하나 이상의 피드를 구현해야 합니다. 그런 다음 엔티티 API 또는 페이지 위 방법을 사용하여 자주 변경되는 속성 또는 항목에 대한 업데이트로 피드를 보완하도록 선택할 수 있습니다.

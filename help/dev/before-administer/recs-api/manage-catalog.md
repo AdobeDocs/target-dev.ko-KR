@@ -6,10 +6,10 @@ kt: 3815
 thumbnail: null
 author: Judy Kim
 exl-id: aea82607-cde4-456a-8dfb-2967badce455
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 2fba03b3882fd23a16342eaab9406ae4491c9044
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 2%
+source-wordcount: '924'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 다음을 충족하도록 보장 [Recommendations API 사용 요구 사항](/help/dev/before-administer/recs-api/overview.md#prerequisites)을 통해 학습 내용: [액세스 토큰 생성](/help/dev/before-administer/configure-authentication.md) jwt 인증 플로우를 사용하여 [!DNL Adobe Target] 의 관리 API [Adobe Developer 콘솔](https://developer.adobe.com/console/home).
 
-이제 다음을 사용할 수 있습니다. [RECOMMENDATIONS API](https://developers.adobetarget.com/api/recommendations/) 추천 카탈로그에서 항목을 추가, 업데이트 또는 삭제합니다. 나머지 Adobe Target 관리 API와 마찬가지로 Recommendations API도 인증이 필요합니다.
+이제 다음을 사용할 수 있습니다. [RECOMMENDATIONS API](https://developer.adobe.com/target/administer/recommendations-api/) 추천 카탈로그에서 항목을 추가, 업데이트 또는 삭제합니다. 나머지 Adobe Target 관리 API와 마찬가지로 Recommendations API도 인증이 필요합니다.
 
 >[!NOTE]
 >
@@ -25,11 +25,11 @@ ht-degree: 2%
 
 ![JWT3ff](assets/configure-io-target-jwt3ff.png)
 
-계속하기 전에 [Recommendations Postman 컬렉션](https://developers.adobetarget.com/api/recommendations/#section/Postman).
+계속하기 전에 [Recommendations Postman 컬렉션](https://developer.adobe.com/target/administer/recommendations-api/#section/Postman).
 
 ## 엔티티 저장 API를 사용하여 항목 생성 및 업데이트
 
-제품 페이지에서 실행되는 CSV 제품 피드 또는 Target 요청이 아닌 API를 사용하여 Recommendations 제품 데이터베이스를 채우려면 [엔티티 API 저장](https://developers.adobetarget.com/api/recommendations/#operation/saveEntities). 이 요청은 단일 Target 환경에서 항목을 추가하거나 업데이트합니다. 구문은 입니다.
+제품 페이지에서 실행되는 CSV 제품 피드 또는 Target 요청이 아닌 API를 사용하여 Recommendations 제품 데이터베이스를 채우려면 [엔티티 API 저장](https://developer.adobe.com/target/administer/recommendations-api/#operation/saveEntities). 이 요청은 단일 Target 환경에서 항목을 추가하거나 업데이트합니다. 구문은 입니다.
 
 ```
 POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities
@@ -124,7 +124,7 @@ POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities
 
 ## 엔티티 가져오기 API를 사용하여 항목 세부 정보를 가져오는 중
 
-기존 항목의 세부 정보를 검색하려면 [엔티티 API 가져오기](https://developers.adobetarget.com/api/recommendations/#operation/getEntity). 구문은 입니다.
+기존 항목의 세부 정보를 검색하려면 [엔티티 API 가져오기](https://developer.adobe.com/target/administer/recommendations-api/#operation/getEntity). 구문은 입니다.
 
 ```
 GET https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities/[entity.id]
@@ -143,7 +143,7 @@ GET https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities/[entity.id]
 1. 요청을 보냅니다.
 
    ![GetEntity3](assets/GetEntity3.png)
-위의 예에서 보듯이 엔티티를 찾을 수 없다는 오류가 표시되면 요청을 올바른 Target 환경에 제출하고 있는지 확인합니다.
+위의 예에서 보듯이 엔티티를 찾을 수 없다는 오류 메시지가 표시되면 요청을 올바른 Target 환경에 제출하고 있는지 확인합니다.
 
 
 
@@ -163,7 +163,7 @@ GET https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities/[entity.id]
 
 ## 엔티티 삭제 API를 사용하여 항목 삭제
 
-카탈로그에서 항목을 제거하려면 [엔티티 API 삭제](https://developers.adobetarget.com/api/recommendations/#operation/deleteEntities). 구문은 입니다.
+카탈로그에서 항목을 제거하려면 [엔티티 API 삭제](https://developer.adobe.com/target/administer/recommendations-api/#operation/deleteEntities). 구문은 입니다.
 
 ```
 DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities?ids=[comma-delimited-entity-ids]&environment=[environmentId]

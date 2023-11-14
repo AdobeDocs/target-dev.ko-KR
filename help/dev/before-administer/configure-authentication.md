@@ -3,9 +3,9 @@ title: 인증 구성 방법 [!DNL Adobe Target] API
 description: 상호 작용에 필요한 인증 토큰을 생성하는 방법 [!DNL Adobe Target] API?
 feature: APIs/SDKs, Administration & Configuration
 exl-id: fc67363c-6527-40aa-aff1-350b5af884ab
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 2fba03b3882fd23a16342eaab9406ae4491c9044
 workflow-type: tm+mt
-source-wordcount: '1941'
+source-wordcount: '1942'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 2%
 | 리소스 | 세부 사항 |
 | --- | --- |
 | Postman | 이 단계를 성공적으로 완료하려면 [Postman 앱](https://www.postman.com/downloads/) 운영 체제용. Postman basic은 계정 생성이 무료입니다. 를 사용하기 위해 필수는 아니지만 [!DNL Adobe Target] API를 일반적으로 사용하는 경우 Postman을 통해 API 워크플로를 보다 쉽게 수행할 수 있습니다. [!DNL Adobe Target] 는 API를 실행하고 작동 방법을 학습하는 데 도움이 되는 몇 가지 Postman 컬렉션을 제공합니다. 이 안내서의 나머지 부분에서는 Postman에 대한 작업 지식을 전제로 합니다. 도움이 필요하면 [Postman 설명서](https://learning.getpostman.com/). |
-| 참조 | 이 안내서의 나머지 부분에서 다음 리소스에 익숙하다고 가정합니다.<ul><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[Target 관리 및 프로필 API 설명서](../administer/admin-api/admin-api-overview-new.md)</li><li>[Recommendations API 설명서](https://developers.adobetarget.com/api/recommendations/)</li></ul> |
+| 참조 | 이 안내서의 나머지 부분에서 다음 리소스에 익숙하다고 가정합니다.<ul><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[Target 관리 및 프로필 API 설명서](../administer/admin-api/admin-api-overview-new.md)</li><li>[Recommendations API 설명서](https://developer.adobe.com/target/administer/recommendations-api/)</li></ul> |
 
 ## Adobe I/O 프로젝트 만들기
 
@@ -231,4 +231,4 @@ Postman에서 프로젝트의 세부 정보를 지정하는 방법에는 여러 
 
    ![testtoken6](assets/configure-io-target-testtoken6.png)
 
-이제 Adobe 인증을 확인했으므로 이를 사용하여 와 상호 작용할 수 있습니다. [!DNL Adobe Target] API(및 기타 Adobe API). 예를 들어 다음과 같은 작업을 수행할 수 있습니다 [Recommendations API 사용](recs-api/overview.md) 권장 사항을 만들거나 관리하거나 [Target 배달 API](/help/dev/implement/delivery-api/overview.md).
+이제 Adobe 인증을 확인했으므로 이를 사용하여 와 상호 작용할 수 있습니다. [!DNL Adobe Target] API(및 기타 Adobe API). 예를 들어 다음과 같은 작업을 수행할 수 있습니다 [Recommendations API 사용](recs-api/overview.md) 권장 사항을 만들거나 관리하거나 [Target 게재 API](/help/dev/implement/delivery-api/overview.md).
