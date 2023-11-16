@@ -4,10 +4,10 @@ description: 데이터 가져오기 [!DNL Target] 벌크 프로필 업데이트 
 title: 데이터를으로 가져오는 방법 [!DNL Target] 벌크 프로필 업데이트 API를 사용하시겠습니까?
 feature: Implementation
 exl-id: 654b13b7-1683-4c44-80e6-7557b9d29f66
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 3ae2391dea9994c0ddc1df39d74cccf6e067c1a4
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 60%
+source-wordcount: '404'
+ht-degree: 57%
 
 ---
 
@@ -41,6 +41,8 @@ CRM 또는 기타 내부 시스템은 페이지 구현에서 프로필 데이터
 ## 주의 사항
 
 묶음 파일의 크기는 50MB 미만이어야 합니다. 또한 총 행 수는 업로드당 500,000개 행을 초과하지 않아야 합니다.
+
+업데이트는 일반적으로 1시간 이내에 발생하지만 반영하는 데 24시간 정도 소요될 수 있습니다
 
 이후 묶음에서 24시간 동안 업로드할 수 있는 행 수에는 제한이 없습니다. 그러나 영업 시간 동안 처리 프로세스를 조절하여 다른 프로세스가 효율적으로 실행되도록 할 수도 있습니다.
 
