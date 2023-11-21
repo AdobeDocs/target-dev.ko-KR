@@ -4,9 +4,9 @@ description: 각 버전의 변경 사항에 대한 세부 사항 보기 [!DNL Ad
 title: at.js의 각 버전에 포함된 것은 무엇입니까?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
-source-git-commit: c5d1f477a2561a59efb3250e35563b48822fbe59
+source-git-commit: ccb87e1217b754b2d496308da35998882cbe2fb1
 workflow-type: tm+mt
-source-wordcount: '4697'
+source-wordcount: '4712'
 ht-degree: 71%
 
 ---
@@ -26,6 +26,10 @@ ht-degree: 71%
 >둘 중 하나의 최신 버전으로 업그레이드해야 합니다.*x* 또는 2.*x* 해당 주 버전의 이전 부 버전에서 발견된 문제에 대한 버그 수정 및 보안 패치를 얻을 수 있습니다.
 
 의 태그 [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) 는 at.js를 업그레이드하는 데 선호되는 방법입니다. 확장 개발자는 확장에 새로운 기능을 지속적으로 추가하고 버그를 자주 수정합니다. 이러한 업데이트는 새로운 버전의 확장에 패키지화되어 Adobe Experience Platform 카탈로그에서 업그레이드로 사용할 수 있습니다. 자세한 내용은 [확장 업그레이드](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) 다음에서 *태그 개요* guide.6+
+
+## at.js 버전 2.11.3(2023년 11월 21일)
+
+* 응답 토큰이 전송되지 않던 문제를 수정했습니다. `at-content-rendering-failed` 이벤트.
 
 ## at.js 버전 2.11.2(2023년 10월 26일)
 
