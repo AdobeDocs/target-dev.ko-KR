@@ -2,10 +2,10 @@
 user-guide-title: Adobe Target 개발자 안내서
 breadcrumb-title: Target 개발자 안내서
 user-guide-description: 고객의 경험을 맞춤화 및 개인화하여 웹 및 모바일 사이트, 앱, 소셜 미디어 및 기타 디지털 채널에서 매출을 극대화하는 방법을 알아봅니다.
-source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
+source-git-commit: 734bda64915a08f2edba37cbbb66b2de581c2237
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 54%
+ht-degree: 55%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 54%
       + [스크립트 프로필 속성](before-implement/methods-to-get-data-into-target/script-profile-attributes.md)
       + [데이터 공급자](before-implement/methods-to-get-data-into-target/data-providers.md)
       + [벌크 프로필 업데이트 API](before-implement/methods-to-get-data-into-target/bulk-profile-update-api.md)
-      + [싱글 프로필 업데이트 API](before-implement/methods-to-get-data-into-target/single-profile-update-api.md)
+      + [단일 프로필 업데이트 API](before-implement/methods-to-get-data-into-target/single-profile-update-api.md)
       + [고객 속성](before-implement/methods-to-get-data-into-target/customer-attributes.md)
       + [프로필 API 설정](before-implement/methods-to-get-data-into-target/profile-api-settings.md)
    + [Target 보안 개요](before-implement/target-security-overview.md)
@@ -209,10 +209,10 @@ ht-degree: 54%
 + 구현 패턴 {#implementation-patterns}
    + [구현 패턴 개요](/help/dev/patterns/pattern-overview.md)
    + at.js를 사용한 Recommendations 구현 패턴 {#atjs}
-      + [at.js 개요를 사용한 Recommendations 구현 패턴](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
+      + [at.js를 사용하는 Recommendations 구현 패턴 개요](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
       + [SDK 초기화](/help/dev/patterns/recs-atjs/initialize-sdk.md)
-      + [데이터 수집 구성](/help/dev/patterns/recs-atjs/data-collection.md)
-      + [경험 렌더링](/help/dev/patterns/recs-atjs/render-experiences.md)
+      + [데이터 컬렉션 구성](/help/dev/patterns/recs-atjs/data-collection.md)
+      + [렌더링 경험](/help/dev/patterns/recs-atjs/render-experiences.md)
       + [타겟에게 알림](/help/dev/patterns/recs-atjs/notify-target.md)
 
 
