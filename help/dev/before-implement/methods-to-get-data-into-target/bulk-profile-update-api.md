@@ -4,10 +4,10 @@ description: 데이터 가져오기 [!DNL Target] 사용 [!UICONTROL 벌크 프�
 title: 데이터를으로 가져오는 방법 [!DNL Target] 사용 [!UICONTROL 벌크 프로필 업데이트 API]?
 feature: Implementation
 exl-id: 654b13b7-1683-4c44-80e6-7557b9d29f66
-source-git-commit: 43f4fb8345a77ccb0e112fe196e7e0944cc468c9
+source-git-commit: 946e9431e6bde30f564b4ba1a4cf0a78d8c5c6bf
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 4%
+source-wordcount: '286'
+ht-degree: 5%
 
 ---
 
@@ -17,9 +17,11 @@ ht-degree: 4%
 
 사용 [!UICONTROL 벌크 프로필 업데이트 API], 많은 사용자에 대해 프로필 매개 변수 형식으로 자세한 방문자 프로필 데이터를 편리하게 보낼 수 있습니다. [!DNL Target] 모든 외부 소스에서 외부 소스에는 일반적으로 웹 페이지에서 사용할 수 없는 CRM(고객 관계 관리) 또는 POS(판매 지점) 시스템이 포함될 수 있습니다.
 
+대비 [!UICONTROL 벌크 프로필 업데이트 API] (으)로 [[!DNL Adobe Target Single Profile Update API]](/help/dev/administer/profile-api/profile-single-api.md).
+
 ## [!UICONTROL 고객 속성] 및 [!UICONTROL 벌크 프로필 업데이트 API]
 
-이 옵션은 과 유사합니다. [!UICONTROL 고객 속성] 몇 가지 차이점이 있습니다.
+이 옵션은 과 유사합니다. [[!UICONTROL 고객 속성]](/help/dev/before-implement/methods-to-get-data-into-target/customer-attributes.md) 몇 가지 차이점이 있습니다.
 
 * [!UICONTROL 고객 속성] ftp 업로드를 사용합니다. 다음 [!UICONTROL Target 벌크 프로필 업데이트 API] 는 HTTP POST API를 사용합니다.
 * [!UICONTROL 고객 속성] 데이터 공유 대상: [!DNL Analytics]. 다음 [!UICONTROL 벌크 프로필 업데이트] 다음에서만 사용할 수 있습니다. [!DNL Target].
@@ -31,6 +33,8 @@ ht-degree: 4%
 * `mbox3rdPartyID`에서 더하기 기호(+)와 슬래시(/)는 보낼 수 없습니다.
 
 ## 리소스
+
+자세한 내용은 다음 문서를 참조하십시오.
 
 * [[!DNL Adobe Target Profile APIs overview]](/help/dev/administer/profile-api/profile-api-overview.md)
 * [[!DNL Adobe Target Single Profile Update API]](/help/dev/administer/profile-api/profile-single-api.md)
