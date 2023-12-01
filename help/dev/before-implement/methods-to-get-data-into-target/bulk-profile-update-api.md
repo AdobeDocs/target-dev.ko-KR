@@ -4,10 +4,10 @@ description: 데이터 가져오기 [!DNL Target] 사용 [!UICONTROL 벌크 프�
 title: 데이터를으로 가져오는 방법 [!DNL Target] 사용 [!UICONTROL 벌크 프로필 업데이트 API]?
 feature: Implementation
 exl-id: 654b13b7-1683-4c44-80e6-7557b9d29f66
-source-git-commit: 734bda64915a08f2edba37cbbb66b2de581c2237
+source-git-commit: af9db32d59bdf32f2b9fade267922803250377dd
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 30%
+source-wordcount: '421'
+ht-degree: 23%
 
 ---
 
@@ -44,12 +44,10 @@ CRM 또는 기타 내부 시스템에는 지속적으로 업데이트하려는 �
 * 묶음 파일의 크기는 50MB 미만이어야 합니다. 또한 총 행 수는 업로드당 500,000개 행을 초과하지 않아야 합니다.
 * 업데이트는 일반적으로 1시간 이내에 발생하지만 반영하는 데 24시간 정도 소요될 수 있습니다.
 * 후속 배치에서 24시간 동안 업로드할 수 있는 행 수에는 제한이 없습니다. 그러나 영업 시간 동안 처리 프로세스를 조절하여 다른 프로세스가 효율적으로 실행되도록 할 수도 있습니다.
-* 동일한 간에 mbox를 호출하지 않고 연속적인 [V2 배치 업데이트를 호출](https://developers.adobetarget.com/api/#updating-profiles)`thirdPartyIds`하면 첫 번째 배치 업데이트 호출에서 업데이트된 속성을 재정의합니다.
+* 동일한 항목 사이에 mbox 호출이 없는 연속적인 V2 배치 업데이트 호출 `thirdPartyIds` 첫 번째 배치 업데이트 호출에서 업데이트된 속성을 재정의합니다.
 
-## 코드 예
+## 리소스
 
-[프로필 업데이트](https://developers.adobetarget.com/api/#updating-profiles)를 참조하십시오.
-
-### 관련 정보 링크
-
-[프로필 업데이트](https://developers.adobetarget.com/api/#updating-profiles)
+* [[!DNL Adobe Target Profile APIs overview]](/help/dev/administer/profile-api/profile-api-overview.md)
+* [[!DNL Adobe Target Single Profile Update API]](/help/dev/administer/profile-api/profile-single-api.md)
+* [[!DNL Adobe Target Bulk Profile Update API]](/help/dev/administer/profile-api/profile-bulk-api.md)

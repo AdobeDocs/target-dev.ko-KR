@@ -2,10 +2,10 @@
 user-guide-title: Adobe Target 개발자 안내서
 breadcrumb-title: Target 개발자 안내서
 user-guide-description: 고객의 경험을 맞춤화 및 개인화하여 웹 및 모바일 사이트, 앱, 소셜 미디어 및 기타 디지털 채널에서 매출을 극대화하는 방법을 알아봅니다.
-source-git-commit: 734bda64915a08f2edba37cbbb66b2de581c2237
+source-git-commit: af9db32d59bdf32f2b9fade267922803250377dd
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 55%
+source-wordcount: '740'
+ht-degree: 54%
 
 ---
 
@@ -193,7 +193,10 @@ ht-degree: 55%
    + 관리 API {#admin-api}
       + [관리 API 개요](before-administer/admin-api-overview/admin-api-overview.md)
       + [Adobe Target 관리 API](/help/dev/administer/admin-api/admin-api-overview-new.md)
-   + [프로필 API](/help/dev/administer/profile-api/profile-api-overview.md)
+   + 프로필 API {#profile-apis}
+      + [프로필 API 개요](/help/dev/administer/profile-api/profile-api-overview.md)
+      + [단일 프로필 업데이트 API](/help/dev/administer/profile-api/profile-single-api.md)
+      + [벌크 프로필 업데이트 API](/help/dev/administer/profile-api/profile-bulk-api.md)
    + [보고 API](/help/dev/administer/reporting-api/reporting-api.md)
    + RECOMMENDATIONS API {#recommendations-api}
       + [Recommendations API 개요](before-administer/recs-api/overview.md)
