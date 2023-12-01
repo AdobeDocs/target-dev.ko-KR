@@ -3,9 +3,9 @@ title: Adobe Target 벌크 프로필 업데이트 API
 description: 사용 방법 알아보기 [!DNL Adobe Target] [!UICONTROL 벌크 프로필 업데이트 API] 여러 방문자의 프로필 데이터를 다음으로 보내기 [!DNL Target].
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
-source-git-commit: 6f7d9875e3b73352ead3a55e40a4b2f81f3d4400
+source-git-commit: 43f4fb8345a77ccb0e112fe196e7e0944cc468c9
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '722'
 ht-degree: 9%
 
 ---
@@ -24,6 +24,11 @@ ht-degree: 9%
 >[!NOTE]
 >
 >버전 2(v2) [!UICONTROL 벌크 프로필 업데이트 API] 는 현재 버전입니다. 그러나 [!DNL Target] 는 여전히 버전 1(v1)을 지원합니다.
+
+## 벌크 프로필 업데이트 API의 이점
+
+* 프로필 속성의 개수에 대한 제한은 없습니다.
+* 사이트를 통해 전송된 프로필 속성은 API를 통해 또는 그 반대로 업데이트할 수 있습니다.
 
 ## 주의 사항
 

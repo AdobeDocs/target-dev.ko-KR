@@ -4,10 +4,10 @@ description: 데이터 가져오기 [!DNL Target] 단일 프로필 업데이트 
 title: 데이터를으로 가져오는 방법 [!DNL Target] 사용 [!UICONTROL 단일 프로필 업데이트 API]?
 feature: Implementation
 exl-id: e6c394cb-74a3-4991-b656-5ae601f2d5e2
-source-git-commit: 81bff85a9d1fe28ca267c471a470da95568fd06d
+source-git-commit: 43f4fb8345a77ccb0e112fe196e7e0944cc468c9
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 2%
+source-wordcount: '150'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 다음 [!UICONTROL 단일 프로필 업데이트 API] 및 는 일반적으로 구현되지 않은 채널에서 발생하는 트랜잭션과 관련하여 업데이트가 발생해야 하는 경우에 사용됩니다 [!DNL Target]. 예를 들어 일부 오프라인 작업을 수행하는 단일 방문자의 프로필을 업데이트하려고 합니다. 콜 센터 문의, 대출 지원, 매장 내 로열티 카드 사용, 키오스크 액세스 등의 작업을 수행할 수 있습니다.
 
-자세한 내용은 다음 문서를 참조하십시오.
+## 리소스:
 
 * [[!DNL Adobe Target Profile APIs overview]](/help/dev/administer/profile-api/profile-api-overview.md)
 * [[!DNL Adobe Target Single Profile Update API]](/help/dev/administer/profile-api/profile-single-api.md)
