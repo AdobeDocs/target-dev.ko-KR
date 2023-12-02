@@ -4,9 +4,9 @@ description: Adobe Target 프로필 API를 사용하여 방문자 데이터를 (
 contributors: https://github.com/icaraps
 exl-id: 482a4175-1d02-47e9-a5c0-dd00e8560773
 feature: APIs/SDKs
-source-git-commit: 81bff85a9d1fe28ca267c471a470da95568fd06d
+source-git-commit: 1a1c3d96cf6ef5c337a63fdec8c700da695ff5d1
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '233'
 ht-degree: 1%
 
 ---
@@ -25,3 +25,5 @@ API를 통해 프로필을 업데이트하는 방법에는 두 가지가 있습�
 
 * [싱글 프로필 업데이트 API](/help/dev/administer/profile-api/profile-single-api.md)
 * [일괄 처리를 통한 벌크 프로필 업데이트](/help/dev/administer/profile-api/profile-bulk-api.md)
+
+이전 프로필 API 설명서는 여기에서 찾을 수 있습니다. [https://developers.adobetarget.com/api/#profiles](https://developers.adobetarget.com/api/#profiles){target=_blank}
