@@ -1,14 +1,14 @@
 ---
 keywords: target 개발자 안내서, 개요;홈
 title: Adobe Target 개발자 안내서
-description: ' [!DNL Adobe Target] 을 구현 및 관리하고 해당 API 및 SDK로 작업하려면 어떻게 해야 합니까?'
+description: 구현 및 관리 방법 [!DNL Adobe Target] API 및 SDK를 사용하여 작업할 수 있습니까?
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
 exl-id: 655cff9b-fc04-45cf-9068-5c6c32b70d79
-source-git-commit: a72d3ee76b25702b186565e86ec6b0e67c9d5d1b
+source-git-commit: dadc3804da4592dba4ad88b8c5c9f804c56e232b
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 13%
+source-wordcount: '407'
+ht-degree: 5%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 13%
 
 [**[!DNL Target Admin API]**](administer/admin-api/admin-api-overview-new.md): 사용 [!DNL Adobe Target] 속성, 활동, 대상, 오퍼, 속성, 보고서, mbox, 호스트, 환경 등을 관리하기 위한 관리 API입니다.
 
-[**[!DNL Target Profile API]**](/help/dev/administer/profile-api/profile-api-overview.md): 검색 [!DNL Adobe Target] 사용자 프로필 정보.
+[**[!DNL Target Profile API]**](/help/dev/administer/profile-api/profiles-api.md): 검색 [!DNL Adobe Target] 사용자 프로필 정보.
 
 [**[!DNL Target Reporting API]**](https://developer.adobe.com/target/administer/admin-api/#tag/Reports): 검색 [!UICONTROL A/B 테스트] 및 [!UICONTROL Automated Personalization] 활동 보고서 데이터입니다.
 
