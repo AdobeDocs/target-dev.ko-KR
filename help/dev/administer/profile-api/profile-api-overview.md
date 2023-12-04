@@ -1,17 +1,17 @@
 ---
-title: Adobe Target 프로필 API 개요
+title: 프로필 업데이트
 description: Adobe Target 프로필 API를 사용하여 방문자 데이터를 (으)로 보내는 방법 알아보기 [!DNL Target].
 contributors: https://github.com/icaraps
 exl-id: 482a4175-1d02-47e9-a5c0-dd00e8560773
 feature: APIs/SDKs
-source-git-commit: 1a1c3d96cf6ef5c337a63fdec8c700da695ff5d1
+source-git-commit: 9707680ddcf0c373c635aa9f3cb5ba1b74cf90a3
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '226'
 ht-degree: 1%
 
 ---
 
-# [!DNL Adobe Target Profile APIs overview]
+# 프로필 업데이트
 
 사용자 프로필에는 연령, 성별, 구매한 제품, 마지막으로 방문한 시간 등과 같은 웹 페이지 방문자의 인구 통계학적 및 행동 정보가 포함되어 있습니다. [!DNL Adobe Target] 은 이 정보를 사용하여 각 방문자에게 제공하는 콘텐츠를 개인화합니다.
 

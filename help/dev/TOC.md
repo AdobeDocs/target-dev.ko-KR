@@ -2,10 +2,10 @@
 user-guide-title: Adobe Target 개발자 안내서
 breadcrumb-title: Target 개발자 안내서
 user-guide-description: 고객의 경험을 맞춤화 및 개인화하여 웹 및 모바일 사이트, 앱, 소셜 미디어 및 기타 디지털 채널에서 매출을 극대화하는 방법을 알아봅니다.
-source-git-commit: af9db32d59bdf32f2b9fade267922803250377dd
+source-git-commit: 9707680ddcf0c373c635aa9f3cb5ba1b74cf90a3
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 54%
+source-wordcount: '744'
+ht-degree: 45%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 54%
 # Adobe Target 개발자 안내서 {#developer}
 
 + [Adobe Target 개발자 안내서](overview.md)
-+ 시작하기 {#implementation}
++ 시작 {#implementation}
    + 구현하기 전에 {#before-implement}
       + [구현하기 전에](before-implement/considerations-before-you-implement-target.md)
       + [Target 구현 준비](before-implement/prepare-to-implement-target.md)
@@ -89,7 +89,7 @@ ht-degree: 54%
       + [이전 구현에서 글로벌 mbox를 사용](implement/client-side/atjs/global-mbox/mbox-global-target-standard.md)
       + [글로벌 mbox에 매개 변수 전달](implement/client-side/atjs/global-mbox/pass-parameters-to-global-mbox.md)
       + [글로벌 mbox 자주 묻는 질문](implement/client-side/atjs/global-mbox/global-mbox-faq.md)
-+ 서버 측 구현 {#server-side}
++ 서버측 구현 {#server-side}
    + [서버측: Target 구현 개요](implement/server-side/server-side-overview.md)
    + [Target SDK 시작하기](implement/server-side/sdk-guides/getting-started/getting-started.md)
    + [샘플 앱](implement/server-side/sdk-guides/sample-apps/sample-apps.md)
@@ -168,7 +168,7 @@ ht-degree: 54%
    + [Target 모바일 미리보기](implement/mobile/target-mobile-preview.md)
    + [위치 서비스 사용](implement/mobile/use-location-service.md)
    + [모바일 앱을 위한 Target FAQ](implement/mobile/mobile-faq.md)
-   + [웹 보기가 있는 기본 앱에서 AEP Mobile SDK를 사용하여 Target 구현](/help/dev/implement/mobile/native-app.md)
+   + [웹 보기가 있는 기본 앱에서 AEP Mobile SDK로 Target 구현](/help/dev/implement/mobile/native-app.md)
 + 이메일 구현 {#implement-email}
    + [이메일: Target 구현 개요](implement/email/overview.md)
    + [이미지용 Adbox 만들기](implement/email/testing-content-with-the-adbox.md)
@@ -194,7 +194,9 @@ ht-degree: 54%
       + [관리 API 개요](before-administer/admin-api-overview/admin-api-overview.md)
       + [Adobe Target 관리 API](/help/dev/administer/admin-api/admin-api-overview-new.md)
    + 프로필 API {#profile-apis}
-      + [프로필 API 개요](/help/dev/administer/profile-api/profile-api-overview.md)
+      + [프로필 API 개요](/help/dev/administer/profile-api/profiles-api.md)
+      + [프로필 가져오기](/help/dev/administer/profile-api/profile-fetch.md)
+      + [프로필 업데이트](/help/dev/administer/profile-api/profile-api-overview.md)
       + [단일 프로필 업데이트 API](/help/dev/administer/profile-api/profile-single-api.md)
       + [벌크 프로필 업데이트 API](/help/dev/administer/profile-api/profile-bulk-api.md)
    + [보고 API](/help/dev/administer/reporting-api/reporting-api.md)
@@ -212,10 +214,10 @@ ht-degree: 54%
 + 구현 패턴 {#implementation-patterns}
    + [구현 패턴 개요](/help/dev/patterns/pattern-overview.md)
    + at.js를 사용한 Recommendations 구현 패턴 {#atjs}
-      + [at.js를 사용하는 Recommendations 구현 패턴 개요](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
+      + [at.js 개요를 사용한 Recommendations 구현 패턴](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
       + [SDK 초기화](/help/dev/patterns/recs-atjs/initialize-sdk.md)
-      + [데이터 컬렉션 구성](/help/dev/patterns/recs-atjs/data-collection.md)
-      + [렌더링 경험](/help/dev/patterns/recs-atjs/render-experiences.md)
+      + [데이터 수집 구성](/help/dev/patterns/recs-atjs/data-collection.md)
+      + [경험 렌더링](/help/dev/patterns/recs-atjs/render-experiences.md)
       + [타겟에게 알림](/help/dev/patterns/recs-atjs/notify-target.md)
 
 
