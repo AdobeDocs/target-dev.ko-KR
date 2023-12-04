@@ -3,10 +3,10 @@ title: Adobe Target 벌크 프로필 업데이트 API
 description: 사용 방법 알아보기 [!DNL Adobe Target] [!UICONTROL 벌크 프로필 업데이트 API] 여러 방문자의 프로필 데이터를 다음으로 보내기 [!DNL Target].
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
-source-git-commit: 43f4fb8345a77ccb0e112fe196e7e0944cc468c9
+source-git-commit: 8bc819823462fae71335ac3b6c871140158638fe
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 9%
+source-wordcount: '727'
+ht-degree: 8%
 
 ---
 
@@ -54,14 +54,14 @@ batch=pcId, param1, param2, param3, param4 123, value1 124, value1,,, value4 125
 * 묶음 파일의 크기는 50MB 미만이어야 합니다. 또한 총 행 수는 50만 개를 초과할 수 없습니다. 이 제한은 서버가 너무 많은 요청으로 침수되지 않도록 합니다.
 * 여러 파일을 보낼 수 있습니다. 단, 하루에 보내는 모든 파일의 행 합계 합계는 각 클라이언트에 대해 100만 개를 초과할 수 없습니다.
 * 업로드하는 속성의 수에는 제한이 없습니다. 그러나 시스템 데이터를 포함한 프로필의 전체 크기는 2000KB를 초과할 수 없습니다. [!DNL Adobe] 프로필 속성에 대해 1000KB 미만의 스토리지를 사용하는 것이 좋습니다.
-* 매개변수 및 값은 대/소문자를 구분합니다.
+* 매개 변수와 값은 대/소문자를 구분합니다.
 
 ## HTTP POST 요청
 
 에 대한 HTTP POST 요청 만들기 [!DNL Target] 파일을 처리할 에지 서버입니다. 다음은 curl 명령을 사용한 batch.txt 파일에 대한 샘플 HTTP POST 요청입니다.
 
 ``````
-curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/ CLIENTCODE/v2/profile/batchUpdate
+curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
 ``````
 
 여기서
