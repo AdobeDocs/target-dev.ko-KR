@@ -3,9 +3,9 @@ title: Adobe Target 프로필 API
 description: Adobe Target 프로필 API를 사용하여 방문자 데이터를 (으)로 보내는 방법 알아보기 [!DNL Target].
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
-source-git-commit: 9707680ddcf0c373c635aa9f3cb5ba1b74cf90a3
+source-git-commit: 289299a52e5611c0da341f313aa4a447fcf3666a
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '149'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 1%
 ## 프로필 [!DNL Postman] 컬렉션
 
 [!DNL Postman] 는 API 호출을 쉽게 실행할 수 있도록 하는 애플리케이션입니다. 이 [!DNL Postman] 컬렉션에 다음 항목이 모두 포함됨 [!DNL Profile API] 호출. 클릭 [Postman에서 실행](https://www.getpostman.com/collections/ec7376f9028977ccaa99){target=_blank} 프로필 API 컬렉션을 가져올 수 있습니다.
+
+## 레거시 프로필 API 설명서.
+
+이전 프로필 API 설명서는 여기에서 찾을 수 있습니다. [https://developers.adobetarget.com/api/#profiles](https://developers.adobetarget.com/api/#profiles){target=_blank}
 
 ## 의 구조 [!DNL Target] 프로필
 
