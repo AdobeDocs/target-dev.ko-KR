@@ -3,10 +3,10 @@ title: Adobe Target 벌크 프로필 업데이트 API
 description: 사용 방법 알아보기 [!DNL Adobe Target] [!UICONTROL 벌크 프로필 업데이트 API] 여러 방문자의 프로필 데이터를 다음으로 보내기 [!DNL Target].
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
-source-git-commit: 8bc819823462fae71335ac3b6c871140158638fe
+source-git-commit: b263fef6017dc6f840037cab9045c36b9e354cee
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 8%
+source-wordcount: '773'
+ht-degree: 9%
 
 ---
 
@@ -72,27 +72,58 @@ BATCH.TXT는 파일 이름입니다. CLIENTCODE는 [!DNL Target] 클라이언트
 
 ### Inspect 응답
 
-v2는 프로필별 상태를 반환하고 v1은 전체 상태만 반환합니다. 응답에는 프로필별 성공 메시지가 있는 다른 URL에 대한 링크가 포함되어 있습니다.
+프로필 API는 &quot;batchStatus&quot; 아래의 링크와 함께 처리할 배치의 제출 상태를 특정 배치 작업의 전체 상태를 보여 주는 다른 URL로 반환합니다.
 
-### 응답 예
+### API 응답 예
+
+잘린 다음 코드는 프로필 API 응답의 예입니다.
 
 ```
-true http://mboxedge19.tt.omtrdc.net/m2/demo/v2/profile/batchStatus?batchId=demo-1845664501&m2Node=00 Batch submitted for processing
+<response>
+    <success>true</success>
+    <batchStatus>http://mboxedge45.tt.omtrdc.net/m2/demo/profile/batchStatus?batchId=demo-1701473848678-13029383</batchStatus>
+    <message>Batch submitted for processing</message>
+</response>
 ```
 
 오류가 있는 경우 응답에는 다음이 포함됩니다. `success=false` 오류에 대한 자세한 메시지를 표시합니다.
 
-성공적인 응답은 다음과 같습니다.
+### 기본 일괄 처리 상태 응답
 
-``````
-demo-1845664501 1436187396849-250353.03_03 success 2403081156529-351655.03_03 success 2403081156529-351656.03_03 success 1436187396849-250351.01_00 success 
-``````
+위의 경우 성공한 기본 응답 `batchStatus` 클릭한 URL 링크는 다음과 같습니다.
+
+```
+<response><batchId>demo4-1701473848678-13029383</batchId><status>complete</status><batchSize>1</batchSize></response>
+```
 
 상태 필드에 필요한 값은 다음과 같습니다.
 
-**성공**: 프로필이 업데이트되었습니다. 프로필을 찾을 수 없는 경우 배치의 값으로 프로필을 만들었습니다.
-**오류**: 실패, 예외 또는 메시지 손실로 인해 프로필이 업데이트되거나 만들어지지 않았습니다.
-**보류 중**: 프로필이 아직 업데이트되거나 만들어지지 않았습니다.
+| 상태 | 세부 사항 |
+| --- | --- |
+| [!UICONTROL complete] | 프로필 배치 업데이트 요청이 완료되었습니다. |
+| [!UICONTROL 미완료] | 프로필 배치 업데이트 요청이 아직 처리 중이며 완료되지 않았습니다. |
+| [!UICONTROL 중단] | 프로필 배치 업데이트 요청이 중단되어 완료할 수 없습니다. |
 
+### 자세한 배치 상태 URL 응답
 
+매개 변수를 전달하여 보다 자세한 응답을 가져올 수 있습니다 `showDetails=true` (으)로 `batchStatus` 위의 url입니다.
 
+예:
+
+```
+http://mboxedge45.tt.omtrdc.net/m2/demo/profile/batchStatus?batchId=demo-1701473848678-13029383&showDetails=true
+```
+
+#### 자세한 응답
+
+```
+<response>
+    <batchId>demo4-1701473848678-13029383</batchId>
+    <status>complete</status>
+    <batchSize>1</batchSize>
+    <consumedCount>1</consumedCount>
+    <successfulUpdates>1</successfulUpdates>
+    <profilesNotFound>0</profilesNotFound>
+    <failedUpdates>0</failedUpdates>
+</response>
+```
