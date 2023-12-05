@@ -3,7 +3,7 @@ title: 프로필 가져오기
 description: Adobe Target 프로필 API를 사용하여에서 사용할 방문자 데이터를 가져오는 방법에 대해 알아봅니다 [!DNL Target].
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
-source-git-commit: 9707680ddcf0c373c635aa9f3cb5ba1b74cf90a3
+source-git-commit: e5a1c38d448cb7446b7b26cd0dc882976ba94dd3
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
@@ -39,13 +39,13 @@ http://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/111492025094307-353046?
 다음 예는 를 사용하여 프로필을 가져오도록 요청 형식을 보여 줍니다. `thirdPartyId`:
 
 ```
-https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/thirdPartyId/your-thirdpartyid?<your-client-code>
+https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/thirdPartyId/your-thirdpartyid?client=<your-client-code>
 ```
 
 바꾸기 `<your-client-code>` 및 `your-thirdpartyid` 및 GET 요청을 실행합니다. 다음은 를 사용한 프로필 가져오기 호출의 예입니다. [!UICONTROL thirdpartyid]:
 
 ```
-http://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/thirdPartyId/a1-mbox3rdPartyId?client=<your-client-code>
+https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/thirdPartyId/a1-mbox3rdPartyId?client=<your-client-code>
 ```
 
 이 호출이 수행되면, [!DNL Target] 는 edge 요청에 언급된 클러스터에서 먼저 프로필을 찾으려고 시도하거나 프로필이 있는 모든 곳에서 프로필을 찾아서 컨텐츠를 반환합니다. 프로필 콘텐츠는 JSON 형식으로 반환됩니다.
