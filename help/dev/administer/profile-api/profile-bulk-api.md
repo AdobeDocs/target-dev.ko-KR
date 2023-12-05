@@ -3,10 +3,10 @@ title: Adobe Target 벌크 프로필 업데이트 API
 description: 사용 방법 알아보기 [!DNL Adobe Target] [!UICONTROL 벌크 프로필 업데이트 API] 여러 방문자의 프로필 데이터를 다음으로 보내기 [!DNL Target].
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
-source-git-commit: b263fef6017dc6f840037cab9045c36b9e354cee
+source-git-commit: 38a5e82d3170fa64220bd63f505f1470af43e8a3
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 9%
+source-wordcount: '824'
+ht-degree: 8%
 
 ---
 
@@ -35,6 +35,7 @@ ht-degree: 9%
 * 묶음 파일의 크기는 50MB 미만이어야 합니다. 또한 총 행 수는 업로드당 500,000개 행을 초과하지 않아야 합니다.
 * 후속 배치에서 24시간 동안 업로드할 수 있는 행 수에는 제한이 없습니다. 그러나 영업 시간 동안 처리 프로세스를 조절하여 다른 프로세스가 효율적으로 실행되도록 할 수도 있습니다.
 * 동일한 thirdPartyIds 간에 mbox를 호출하지 않고 연속적인 v2 배치 업데이트를 호출하면 첫 번째 배치 업데이트 호출에서 업데이트된 속성을 재정의합니다.
+* [!DNL Adobe] 는 배치 프로필 데이터의 100%가 Target에 온보딩되고 유지되므로 타깃팅에서 사용할 수 있다고 보장하지 않습니다. 현재 설계에서는 적은 비율의 데이터(대규모 프로덕션 배치의 최대 0.1%)가 온보딩되거나 보존되지 않을 수 있습니다.
 
 ## 배치 파일
 
