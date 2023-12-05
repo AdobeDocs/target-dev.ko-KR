@@ -3,7 +3,7 @@ title: 프로필 가져오기
 description: Adobe Target 프로필 API를 사용하여에서 사용할 방문자 데이터를 가져오는 방법에 대해 알아봅니다 [!DNL Target].
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
-source-git-commit: e5a1c38d448cb7446b7b26cd0dc882976ba94dd3
+source-git-commit: ee53a8f0210480d9b70dc77a3a5cd8d92d2f2e3d
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
@@ -27,7 +27,7 @@ https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/your-tnt-id?client=<yo
 바꾸기 `<your-client-code>` 및 `your-tnt-id` 및 GET 요청을 실행합니다. 다음은 를 사용한 프로필 가져오기 호출의 예입니다. `tntid`;
 
 ```
-http://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/111492025094307-353046?client=<your-client-code>
+https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/111492025094307-353046?client=<your-client-code>
 ```
 
 ## thirdPartyId 사용
