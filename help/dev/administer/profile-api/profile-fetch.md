@@ -3,16 +3,28 @@ title: 프로필 가져오기
 description: Adobe Target 프로필 API를 사용하여에서 사용할 방문자 데이터를 가져오는 방법에 대해 알아봅니다 [!DNL Target].
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
-source-git-commit: ee53a8f0210480d9b70dc77a3a5cd8d92d2f2e3d
+source-git-commit: 49acf92bbe06dbcee36fef2b7394acd7ce37baad
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
 
 # 프로필 업데이트
 
-A [!DNL Target] 프로필은 다음 두 가지 방법으로 가져올 수 있습니다. `tntid` 또는 `thirdPartyId`.
+A [!DNL Target] 세 가지 방법으로 프로필을 가져올 수 있습니다. `[!DNL Experience Cloud Visitor ID]` (`ECID`), `tntid` 또는 `thirdPartyId`.
+
+## 사용 [!DNL Experience Cloud Visitor ID] (ECID)
+
+다음을 기반으로 프로필을 가져올 수 있습니다. `ECID`. HTTP 메서드는 GET 형식이어야 합니다.
+
+URL은 다음 예제와 비슷합니다.
+
+```
+https://<clientCode>.tt.omtrdc.net/rest/v1/profiles/marketingCloudVisitorId/<ECID>?client=<clientCode>
+```
+
+바꾸기 `<clientCode>` (으)로 [!DNL Target] [!UICONTROL 클라이언트 코드] 및 `<ECID>` (으)로 [!DNL Experience Cloud Visitor ID] ([!DNL Marketing Cloud Visitor ID]).
 
 ## tntid 사용
 
@@ -24,7 +36,7 @@ A [!DNL Target] 프로필은 다음 두 가지 방법으로 가져올 수 있습
 https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/your-tnt-id?client=<your-client-code>
 ```
 
-바꾸기 `<your-client-code>` 및 `your-tnt-id` 및 GET 요청을 실행합니다. 다음은 를 사용한 프로필 가져오기 호출의 예입니다. `tntid`;
+바꾸기 `<your-client-code>` 및 `your-tnt-id` 및 GET 요청을 실행합니다. 다음은 를 사용한 프로필 가져오기 호출의 예입니다. `tntid`:
 
 ```
 https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/111492025094307-353046?client=<your-client-code>
