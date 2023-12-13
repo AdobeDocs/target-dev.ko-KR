@@ -4,10 +4,10 @@ description: 사용 [!UICONTROL targetGlobalSettings()] 함수 [!DNL Adobe Targe
 title: 사용 방법 [!UICONTROL targetGlobalSettings()] 기능?
 feature: at.js
 exl-id: f6218313-6a70-448e-8555-b7b039e64b2c
-source-git-commit: d5d25c6a559dafe446d26cca6c03d8e693cbd508
+source-git-commit: 12cf430b65695d38d1651f2a97df418d82d231f3
 workflow-type: tm+mt
-source-wordcount: '2521'
-ht-degree: 18%
+source-wordcount: '2568'
+ht-degree: 17%
 
 ---
 
@@ -18,6 +18,18 @@ ht-degree: 18%
 ## 설정의 지침을 완료하여 이 설정을 변경할 수 있습니다
 
 다음 설정을 재정의할 수 있습니다.
+
+### aepSandboxId
+
+* **유형**: 문자열
+* **기본값**: null
+* **설명**: 전송하는 데 사용되는 선택적 매개 변수 [!DNL Adobe Experience Platform] 공유할 샌드박스 ID [!DNL Adobe Experience Platform] 기본이 아닌 샌드박스에서 을 사용하여 생성된 대상 [!DNL Target]. If `aepSandboxId` 은(는) null이 아닙니다. `aepSandboxName` 도 제공해야 합니다.
+
+### aepSandboxName
+
+* **유형**: 문자열
+* **기본값**: null
+* **설명**: 전송하는 데 사용되는 선택적 매개 변수 [!DNL Adobe Experience Platform] 공유할 샌드박스 이름 [!DNL Adobe Experience Platform] 기본이 아닌 샌드박스에서 을 사용하여 생성된 대상 [!DNL Target]. If `aepSandboxName` 은(는) null이 아닙니다. `aepSandboxId` 도 제공해야 합니다.
 
 ### artifactLocation
 
@@ -31,7 +43,7 @@ ht-degree: 18%
 * **기본값**: 본문 { opacity: 0 }
 * **설명**: 다음과 같은 경우에만 사용됩니다. `globalMboxAutocreate === true` 깜박임 가능성을 최소화하기 위해.
 
-  자세한 내용은 [at.js에서 플리커를 관리하는 방법](/help/dev/implement/client-side/atjs/how-atjs-works/manage-flicker-with-atjs.md)을 참조하십시오.
+  자세한 내용은 [at.js에서 플리커를 관리하는 방법](/help/dev/implement/client-side/atjs/how-atjs-works/manage-flicker-with-atjs.md).
 
 ### bodyHidingEnabled
 
@@ -90,7 +102,7 @@ ht-degree: 18%
 
   Server-side만 at.js 2.5+가 구현되고 웹 속성에 배포되는 경우 기본적으로 설정되는 기본 의사 결정 방법입니다.
 
-  서버측을 기본 구성으로만 사용한다는 것은 모든 결정이 [!DNL Target] 에지 네트워크: 차단 서버 호출을 포함합니다. 이 방법을 사용하면 지연 시간이 늘어날 수 있지만 적용 기능을 제공하는 등 상당한 이점이 있습니다 [!DNL Target]다음을 포함하는 의 머신 러닝 기능 [Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html), [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP) 및 [자동 Target](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) 활동.
+  서버측을 기본 구성으로만 사용한다는 것은 모든 결정이 [!DNL Target] 에지 네트워크: 차단 서버 호출을 포함합니다. 이 방법을 사용하면 지연 시간이 늘어날 수 있지만 적용 기능을 제공하는 등 상당한 이점이 있습니다 [!DNL Target]다음을 포함하는 의 머신 러닝 기능 [Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html), [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP) 및 [자동 타기팅](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) 활동.
 
   또한 을 사용하여 개인화된 경험을 향상시킵니다. [!DNL Target]세션 및 채널에서 지속되는 의 사용자 프로필은 비즈니스에 강력한 결과를 제공할 수 있습니다.
 
@@ -284,7 +296,7 @@ window.targetGlobalSettings = {
 | 이름 | 문자열 | 공급자의 이름입니다. |
 | version | 문자열 | 공급자 버전입니다. 이 키는 공급자 발전에 사용됩니다. |
 | timeout | 숫자 | 네트워크 요청인 경우 공급자 시간 제한을 나타냅니다.  이 키는 선택 사항입니다. |
-| provider | 함수 | 공급자 데이터 가져오기 로직을 포함하는 함수입니다.<p>이 함수에는 단일 필수 매개 변수인 `callback`이 있습니다. callback 매개 변수는 데이터를 성공적으로 가져왔거나 오류가 있는 경우에만 호출되어야 하는 함수입니다.<p>콜백에는 다음 두 매개 변수가 필요합니다.<ul><li>error: 오류가 발생했는지를 나타냅니다. 모든 것이 정상이면 이 매개 변수를 null로 설정해야 합니다.</li><li>params: 로 전송될 매개 변수를 나타내는 JSON 개체 [!DNL Target] 요청.</li></ul> |
+| provider | 함수 | 공급자 데이터 가져오기 로직을 포함하는 함수입니다.<p>함수에는 단일 필수 매개 변수가 있습니다. `callback`. callback 매개 변수는 데이터를 성공적으로 가져왔거나 오류가 있는 경우에만 호출되어야 하는 함수입니다.<p>콜백에는 다음 두 매개 변수가 필요합니다.<ul><li>error: 오류가 발생했는지를 나타냅니다. 모든 것이 정상이면 이 매개 변수를 null로 설정해야 합니다.</li><li>params: 로 전송될 매개 변수를 나타내는 JSON 개체 [!DNL Target] 요청.</li></ul> |
 
 다음 예제에서는 데이터 공급자가 동기화 실행을 사용하는 위치를 보여 줍니다.
 
@@ -408,7 +420,7 @@ window.targetGlobalSettings = {
 
 다음의 하이브리드 통합이 있어야 합니다. [!DNL Target].
 
-* **서버측**: 다음을 사용해야 합니다. [배달 API](/help/dev/implement/delivery-api/overview.md) 또는 [SDK TARGET](/help/dev/implement/server-side/sdk-guides/getting-started/getting-started.md).
+* **서버측**: 다음을 사용해야 합니다. [배달 API](/help/dev/implement/delivery-api/overview.md) 또는 [Target SDK](/help/dev/implement/server-side/sdk-guides/getting-started/getting-started.md).
 * **클라이언트측**: 다음을 사용해야 합니다. [at.js 버전 2.2 이상](/help/dev/implement/client-side/atjs/target-atjs-versions.md).
 
 ### 코드 샘플
