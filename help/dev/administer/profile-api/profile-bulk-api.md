@@ -3,7 +3,8 @@ title: Adobe Target 벌크 프로필 업데이트 API
 description: 사용 방법 알아보기 [!DNL Adobe Target] [!UICONTROL 벌크 프로필 업데이트 API] 여러 방문자의 프로필 데이터를 다음으로 보내기 [!DNL Target] 타깃팅에 사용됩니다.
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
-source-git-commit: a6f47c99cfc419771c1a6674990c415a2035ab4e
+exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
+source-git-commit: 32a6d14c911b977aea96b0fb6832929892d70d5d
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 8%
@@ -18,8 +19,8 @@ ht-degree: 8%
 
 | 버전 | URL 예 | 기능 |
 | --- | --- | --- |
-| v1 | `http://CLIENTCODE.tt.omtrdc.net/m2/ CLIENTCODE/profile/batchUpdate` | 벌크 프로필 업데이트만 지원합니다. |
-| v2 | `http://CLIENTCODE.tt.omtrdc.net/m2/ CLIENTCODE/v2/profile/batchUpdate` | <ul><li>프로필을 찾을 수 없는 경우 만듭니다.</li><li>행별 상태 업데이트.</li></ul> |
+| v1 | `http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/profile/batchUpdate` | 벌크 프로필 업데이트만 지원합니다. |
+| v2 | `http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate` | <ul><li>프로필을 찾을 수 없는 경우 만듭니다.</li><li>행별 상태 업데이트.</li></ul> |
 
 >[!NOTE]
 >
