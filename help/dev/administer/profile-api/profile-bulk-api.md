@@ -4,9 +4,9 @@ description: 사용 방법 알아보기 [!DNL Adobe Target] [!UICONTROL 벌크 �
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: 32a6d14c911b977aea96b0fb6832929892d70d5d
+source-git-commit: 3d90616b0a920abea380d4cfcd1227eafde86adb
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '846'
 ht-degree: 8%
 
 ---
@@ -34,6 +34,7 @@ ht-degree: 8%
 ## 주의 사항
 
 * 묶음 파일의 크기는 50MB 미만이어야 합니다. 또한 총 행 수는 업로드당 500,000개 행을 초과하지 않아야 합니다.
+* 업데이트는 일반적으로 1시간 이내에 발생하지만 반영하는 데 24시간 정도 소요될 수 있습니다.
 * 후속 배치에서 24시간 동안 업로드할 수 있는 행 수에는 제한이 없습니다. 그러나 영업 시간 동안 처리 프로세스를 조절하여 다른 프로세스가 효율적으로 실행되도록 할 수도 있습니다.
 * 동일한 thirdPartyIds 간에 mbox를 호출하지 않고 연속적인 v2 배치 업데이트를 호출하면 첫 번째 배치 업데이트 호출에서 업데이트된 속성을 재정의합니다.
 * [!DNL Adobe] 는 배치 프로필 데이터의 100%가 Target에 온보딩되고 유지되므로 타깃팅에서 사용할 수 있다고 보장하지 않습니다. 현재 설계에서는 적은 비율의 데이터(대규모 프로덕션 배치의 최대 0.1%)가 온보딩되거나 보존되지 않을 수 있습니다.
