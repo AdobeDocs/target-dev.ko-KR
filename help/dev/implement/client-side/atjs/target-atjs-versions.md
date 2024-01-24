@@ -4,10 +4,10 @@ description: 각 버전의 변경 사항에 대한 세부 사항 보기 [!DNL Ad
 title: at.js의 각 버전에 포함된 것은 무엇입니까?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
-source-git-commit: 09ecaa3be954fe5a002e09a422ceeb7a4ed0750a
+source-git-commit: 9999c1b5f603e6607bd81f6ad6a06a7f74e76acb
 workflow-type: tm+mt
-source-wordcount: '4712'
-ht-degree: 71%
+source-wordcount: '4926'
+ht-degree: 63%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 71%
 
 >[!IMPORTANT]
 >
->[!DNL Adobe Target] 는 at.js 1을 모두 지원합니다.*x*&#x200B;와 at.js 2.*x* 간의 매핑에 대해 설명합니다.
+>[!DNL Adobe Target] 는 at.js 1을 모두 지원합니다.*x*&#x200B;와 at.js 2 모두에 있는 Hide Body(본문 숨기기) 및 Show Body(본문 표시) 호출을 보여줍니다.*x*.
 >
 >at.js 1.*x* 이(가) 유지 관리 모드로 전환되었습니다. 다음 [!DNL Target] 팀은 필요한 경우 버그 수정 및 보안 패치를 릴리스합니다.
 >
@@ -26,6 +26,10 @@ ht-degree: 71%
 >둘 중 하나의 최신 버전으로 업그레이드해야 합니다.*x* 또는 2.*x* 해당 주 버전의 이전 부 버전에서 발견된 문제에 대한 버그 수정 및 보안 패치를 얻을 수 있습니다.
 
 의 태그 [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) 는 at.js를 업그레이드하는 데 선호되는 방법입니다. 확장 개발자는 확장에 새로운 기능을 지속적으로 추가하고 버그를 자주 수정합니다. 이러한 업데이트는 새로운 버전의 확장에 패키지화되어 Adobe Experience Platform 카탈로그에서 업그레이드로 사용할 수 있습니다. 자세한 내용은 [확장 업그레이드](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) 다음에서 *태그 개요* guide.6+
+
+## at.js 버전 2.11.4 (2024년 1월 24일 목요일)
+
+* 잘못된 지역 데이터가 배달 API로 전송되지 않도록 at.js가 업데이트되었습니다.
 
 ## at.js 버전 2.11.3(2023년 11월 21일)
 
@@ -58,7 +62,7 @@ ht-degree: 71%
 * 이름에 점이 있는 매개변수를 포함하는 대상자 규칙과 관련된 활동이 온디바이스 결정을 위해 예상되는 경험을 반환하지 않는 버그가 수정되었습니다.
 * mboxDisable이 활성화된 경우에도 at.js가 게재 호출을 실행하는 at.js 2.6.0에서 도입된 버그를 수정했습니다.
 
-## at.js 버전 2.10.0(2022년 9월 19일)
+## at.js 버전 2.10.0(2022년 9월 19일 화요일)
 
 * 서드파티 쿠키 지원이 추가되었습니다.
 
@@ -69,7 +73,7 @@ ht-degree: 71%
 
 ## at.js 버전 2.8.1 (2022년 1월 28일)
 
-* `pageLoad`가 온디바이스 의사 결정 (ODD) 하이브리드 실행 모드에서 target-global-mbox에 매핑되지 않는 문제가 해결되었습니다.
+* 고정 `pageLoad` 온디바이스 의사 결정 (ODD) 하이브리드 실행 모드에서 target-global-mbox에 매핑되지 않습니다.
 * mbox 요청에 대한 분석 세부 정보 관련 문제가 해결되었습니다.
 * 보안 취약성을 해결하기 위해 개발 종속성이 업그레이드되었습니다.
 
@@ -102,7 +106,7 @@ ht-degree: 71%
 * [!UICONTROL Analytics for Target] 을 사용할 때 (A4T) 클릭 메트릭 세부 사항이 정상적으로 반환됩니다 `prefetch` 요청.
 * UUID 생성이 더 이상 `Math.random()`을 사용하지 않고 `window.crypto`를 사용합니다.
 * 모든 네트워크 호출에서 `sessionId` 쿠키 만료가 정상적으로 연장됩니다.
-* 이제 단일 페이지 애플리케이션 (SPA) 보기 캐시 초기화가 정상적으로 처리되며 `viewsEnabled` 설정이 적용됩니다. 설정 `viewsEnabled` (으)로 `false` 이제 값이 `triggerView()` 함수. 다음을 참조하십시오 [초기 페이지 로드 작업 순서](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md#order).
+* 이제 단일 페이지 애플리케이션(SPA) 보기 캐시 초기화가 정상적으로 처리되며 가 적용됩니다 `viewsEnabled` 설정. 설정 `viewsEnabled` (으)로 `false` 이제 값이 `triggerView()` 함수. 다음을 참조하십시오 [초기 페이지 로드 작업 순서](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md#order).
 
 ## at.js 2.5.0 (2021년 5월 13일)
 
@@ -153,7 +157,7 @@ at.js 유지 관리 릴리스이며, 다음과 같은 개선 기능 및 수정 �
 * CNAME 및 에지 재정의 at.js 2를 사용할 때 문제를 해결했습니다.*x* 가 서버 도메인을 잘못 만들어 [!DNL Target] 요청에 실패할 수 있습니다. (TNT-35065)
 * 을(를) 사용할 때 발생하는 문제를 해결했습니다. [!DNL Target] 확장 v2 및 [!UICONTROL Adobe Analytics Launch] 확장, [!DNL Target] 지연됨 [!DNL Analytics] `sendBeacon` 호출합니다. (TNT-36407, TNT-35990, TNT-36000)
 
-## at.js 버전 2.3.0 (2020년 3월 25일)
+## at.js 버전 2.3.0 (2020년 3월 25일 목요일)
 
 at.js 유지 관리 릴리스이며, 다음과 같은 개선 기능 및 수정 사항이 포함되어 있습니다.
 
@@ -161,7 +165,7 @@ at.js 유지 관리 릴리스이며, 다음과 같은 개선 기능 및 수정 �
 * Google Tag Manager 배포용 Google Closure 컴파일러로 at.js를 컴파일할 때 발생하는 문제를 수정했습니다.
 * at.js check 쿠키의 이름이에서 변경됨 `check` 끝 `at_check` 고객 구현과의 충돌을 방지하기 위해.
 
-## at.js 버전 1.8.1 (2020년 3월 25일)
+## at.js 버전 1.8.1 (2020년 3월 25일 목요일)
 
 at.js 유지 관리 릴리스이며, 다음과 같은 개선 기능 및 수정 사항이 포함되어 있습니다.
 
@@ -180,7 +184,7 @@ at.js 유지 관리 릴리스이며, 다음과 같은 개선 기능 및 수정 �
 >
 >ECID 확장을 v4.4로 업그레이드하여 향상된 성능을 이용해 보십시오.
 
-* at.js 버전 2.2에서는 이라는 새 설정도 제공합니다. `serverState`. 이 설정은 의 하이브리드 통합 시 페이지 성능을 최적화하는 데 사용할 수 있습니다. [!DNL Target] 가 구현되었습니다. 하이브리드 통합은 클라이언트측에서 at.js v2.2+를 사용하고 있으며 배달 API 또는 를 모두 사용하고 있음을 의미합니다. [!DNL Target] 경험을 게재할 서버측 SDK. `serverState` 는 at.js v2.2+에서 서버측에서 가져온 콘텐츠에서 직접 경험을 적용하고 서비스되는 페이지의 일부로 클라이언트에 반환할 수 있는 기능을 제공합니다. 자세한 내용은 [targetGlobalSettings](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#serverstate)의 &quot;serverState&quot;를 참조하십시오.
+* at.js 버전 2.2에서는 이라는 새 설정도 제공합니다. `serverState`. 이 설정은 의 하이브리드 통합 시 페이지 성능을 최적화하는 데 사용할 수 있습니다. [!DNL Target] 가 구현되었습니다. 하이브리드 통합은 클라이언트측에서 at.js v2.2+를 사용하고 있으며 배달 API 또는 를 모두 사용하고 있음을 의미합니다. [!DNL Target] 경험을 게재할 서버측 SDK. `serverState` 는 at.js v2.2+에서 서버측에서 가져온 콘텐츠에서 직접 경험을 적용하고 서비스되는 페이지의 일부로 클라이언트에 반환할 수 있는 기능을 제공합니다. 자세한 내용은 의 &quot;serverState&quot;를 참조하십시오 [targetGlobalSettings](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#serverstate).
 
 ## at.js 버전 1.8.0(2019년 10월 10일)
 
@@ -363,7 +367,7 @@ at.js 버전 1.6.3에는 다음의 수정 사항과 개선 사항이 포함되�
    * CONTENT_RENDERING_NO_OFFERS
    * CONTENT_RENDERING_REDIRECT
 
-  자세한 내용은 [at.js 사용자 지정 이벤트](/help/dev/implement/client-side/atjs/atjs-functions/atjs-custom-events.md)를 참조하십시오.
+  자세한 내용은 [at.js 사용자 지정 이벤트](/help/dev/implement/client-side/atjs/atjs-functions/atjs-custom-events.md).
 
 * 데이터 공급자에서 가져온 추가 매개 변수로 at.js 요청을 확장할 수 있습니다. 데이터 공급자는 `dataProviders key` 아래의 `window.targetGlobalSettings`에 추가되어야 합니다.
 
@@ -378,13 +382,13 @@ at.js 버전 1.6.3에는 다음의 수정 사항과 개선 사항이 포함되�
 
 ## at.js 버전 1.2.3
 
-현재  at.js  버전 1.2.3을 사용할 수 있습니다.
+이제 at.js 버전 1.2.3을 사용할 수 있습니다.
 
 * JSON 오퍼에 대한 지원을 추가합니다. JSON은 양식 기반 경험 작성기를 사용하여 만든 활동에서만 지원됩니다. 현재 JSON을 사용하는 유일한 방법은 직접 API 호출을 통해서입니다. 다음을 참조하십시오 [JSON 오퍼 만들기](https://experienceleague.adobe.com/docs/target/using/experiences/offers/create-json-offer.html).
 
 ## at.js 버전 1.2.2
 
-현재 at.js 버전 1.2.2을 사용할 수 있습니다.
+이제 at.js 버전 1.2.2를 사용할 수 있습니다.
 
 * 에서 JavaScript 오류를 반환하는 문제를 수정했습니다. [!DNL Target] 라이브러리가 QUIRKS 모드를 사용하여 페이지에 로드되었습니다. (TNT-28312)
 * 의 원인이 되는 문제가 해결되었습니다. [!DNL Target] 중단하려면 클릭 추적 [!DNL Analytics] 데이터 수집 호출. (TNT-28261)
@@ -393,13 +397,13 @@ at.js 버전 1.6.3에는 다음의 수정 사항과 개선 사항이 포함되�
 
 ## at.js 버전 1.2.1
 
-현재  at.js  버전 1.2.1을 사용할 수 있습니다.
+이제 at.js 버전 1.2.1을 사용할 수 있습니다.
 
 * target=&quot;_blank&quot; 인 링크에 대한 클릭 추적을 방지할 때 발생하는 문제를 해결했습니다 [!DNL Target] 을 클릭하여 새 탭에서 링크를 엽니다.
 
 ## at.js 버전 1.2.0
 
-at.j s  버전 1.2은 이제 대부분의 버그 수정 사항을 포함하는 유지 관리 릴리스로 사용할 수 있습니다.
+이제 at.js 버전 1.2는 대부분의 버그 수정 사항을 포함하는 유지 관리 릴리스로 사용할 수 있습니다.
 
 * 클릭 추적 특수 사례에 대해 기본 동작이 수행되지 않도록 하는 문제가 수정되었습니다. (TNT-28089)
 * 이 있는 링크에 대한 클릭 추적을 수행할 때 발생하는 문제를 수정했습니다. `target="_blank"` 이(가) 다음을 방지함: [!DNL Target] 을 클릭하여 새 탭에서 링크를 엽니다. (TNT-28072)
@@ -408,15 +412,15 @@ at.j s  버전 1.2은 이제 대부분의 버그 수정 사항을 포함하는 �
 * 의 문제가 해결되었습니다. [!UICONTROL 경험 타기팅] 찾아보기와 작성 간을 전환할 때 VEC 내에서 활동 설정이 실패했습니다. (TNT-27942)
 * 클릭 추적 요소에 대한 깜박임 스타일 클래스의 잘못된 처리가 수정되었습니다. (TNT-27896)
 * 전역 mbox 매개 변수가 모든 mbox 매개 변수와 혼합되도록 하는 문제가 수정되었습니다. (TNT-27846)
-* Handlebars, Mustache 및 기타 클라이언트측 템플릿 라이브러리가  at.js  에서 제대로 처리되도록 하는 데 필요한 변경이 수행되었습니다. (TNT-27831)
-* `sdidParamExpiry`가 제대로 초기화되어 방문자 API로 전달되도록 하는 데 필요한 변경이 수행되었습니다. `at.js 1.1.0`에 추가된 회귀입니다. 이전  at.js  버전은 영향을 받지 않습니다. 리디렉션 오퍼 및 A4T를 사용하는 클라이언트에만 영향을 줍니다. (TNT-27791)
+* Handlebars, Mustache 및 기타 클라이언트 측 템플릿 라이브러리가 at.js에서 제대로 처리되도록 하는 데 필요한 변경이 수행되었습니다. (TNT-27831)
+* `sdidParamExpiry`가 제대로 초기화되어 방문자 API로 전달되도록 하는 데 필요한 변경이 수행되었습니다. `at.js 1.1.0`에 추가된 회귀입니다. 이전 at.js 버전은 영향을 받지 않습니다. 리디렉션 오퍼 및 A4T를 사용하는 클라이언트에만 영향을 줍니다. (TNT-27791)
 * 사용 중인 형식 속성과 관계없이 `SCRIPT`가 실행되도록 하는 데 필요한 변경이 수행되었습니다. (TNT-27865)
 
-## at.js 버전 1.1.0
+## at.js 버전 1.1.0.
 
 **날짜:** 2017년 8월 2일
 
-다음 개선 사항 및 수정 사항이  at.js  버전 1.1에 포함되어 있습니다.
+다음 개선 사항 및 수정 사항이 at.js 버전 1.1에 포함되어 있습니다.
 
 * 응답 토큰 처리가 추가되었습니다. 자세한 내용은 [응답 토큰](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html)을 참조하십시오.
 * `document.currentScript polyfill`이 Angular 1.X를 방해하지 않도록 문제가 해결되었습니다.
@@ -442,7 +446,7 @@ at.j s  버전 1.2은 이제 대부분의 버그 수정 사항을 포함하는 �
 
 **날짜:** 2017년 5월 22일
 
-다음 개선 사항 및 수정 사항이  at.js  버전 0.9.7에 포함되어 있습니다.
+다음 개선 사항 및 수정 사항이 at.js 버전 0.9.7에 포함되어 있습니다.
 
 * VEC(시각적 경험 작성기)에서 `insertAfter` 및`insertBefore` 작업에서 누락된 자산 키와 관련된 문제가 수정되었습니다. 이러한 문제는 시각적 오퍼에서 오퍼 템플릿으로의 마이그레이션과 관련되어 있습니다.
 
@@ -450,9 +454,9 @@ at.j s  버전 1.2은 이제 대부분의 버그 수정 사항을 포함하는 �
 
 **날짜:** 2017년 4월 13일
 
-다음 개선 사항 및 수정 사항이  at.js  버전 0.9.6에 포함되어 있습니다.
+다음 개선 사항 및 수정 사항이 at.js 버전 0.9.6에 포함되어 있습니다.
 
-* A4T에 대해 리디렉션 오퍼가 지원됩니다.  at.js  버전 0.9.6을 다운로드하여 설치한 후에는 [!UICONTROL  Adobe Analytics 를  Target ] 에 대한 보고 소스로 사용하는 (A4T) 활동에서 리디렉션 오퍼를 사용할 수 있습니다.  at.js  버전 0.9.6 외에, 리디렉션 오퍼 및 A4T를 사용하기 위해 구현이 충족해야 하는 다른 최소 요구 사항도 있습니다. 자세한 내용 및 알고 있어야 하는 추가 중요한 정보는 [리디렉션 오퍼 - A4T FAQ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-redirect-offers.html)를 참조하십시오.
+* A4T에 대해 리디렉션 오퍼가 지원됩니다. at.js 버전 0.9.6을 다운로드하여 설치한 후에는 를 사용하는 활동에서 리디렉션 오퍼를 사용할 수 있습니다. [!UICONTROL Target용 보고 소스로서의 Adobe Analytics] (A4T). at.js 버전 0.9.6 외에, 리디렉션 오퍼 및 A4T를 사용하기 위해 구현이 충족해야 하는 다른 최소 요구 사항도 있습니다. 자세한 내용 및 알고 있어야 하는 추가 중요한 정보는 [리디렉션 오퍼 - A4T FAQ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-redirect-offers.html)를 참조하십시오.
 * 방문자 API가 페이지에 있고 `visitorApiTimeout` 설정이 너무 공격적이어서 [!DNL Target] 에서 MCID 데이터를 전송하지 않는 상황이 발생할 수 있음 [!DNL Target] 요청. 이로 인해 A4T를 사용할 때 [!DNL Analytics]에서 연결되지 않은 히트 발생과 같은 문제가 나타날 수 있습니다.
 
   이 동작은 at.js 0.9.6에서 `visitorApiTimeout` 은(는) 1ms로 설정되어 있습니다. [!DNL Target] 는 SDID, 추적 서버 및 고객 ID 데이터를 수집한 다음 [!DNL Target] 요청.
@@ -461,7 +465,7 @@ at.j s  버전 1.2은 이제 대부분의 버그 수정 사항을 포함하는 �
 * `getOffer()`의 응답 형식이 변경되었습니다. 자세한 내용은 [adobe.target.getOffer(options)](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-getoffer.md)를 참조하십시오.
 * 지원되지 않는 `<!DOCTYPE>` 선언에 대한 콘솔 로깅이 추가되었습니다.
 * 다음과 같은 문제가 해결되었습니다. [!DNL Target Classic] 여러 기본 오퍼가 단일 mbox에 전달된 경우 플러그인이 올바르게 적용되지 않았습니다. (TGT-22664)
-* mbox 쿠키가 이러한 도메인에 대해 올바르게 설정되도록 하기 위해 두 문자로 이루어진 TLD(최상위 도메인)의 쿠키 설정이 개선되었습니다(예:  test.no ,  autodrives.ca 등).
+* mbox 쿠키가 이러한 도메인(예: test.no, autodrives.ca 등)에 대해 올바르게 설정되었는지 확인할 수 있도록 두 글자로 된 TLD(최상위 도메인)에 대한 쿠키 설정이 개선되었습니다.
 * 쿠키를 저장할 때 사용해야 하는 최상위 도메인을 추출하는 알고리즘이 at.js 버전 0.9.6에서 변경되었습니다. 이러한 변경으로 인해 쿠키를 IP를 사용하는 주소에 저장할 수 없습니다. 대부분의 경우 IP 주소는 테스트 용도로 사용되지만, 해결 방법으로 DNS 항목을 사용하거나, 로컬 상자에서 호스트 파일을 조정할 수 있습니다.
 * 속성이 정수 대신 문자열 값일 때 이동 및 재정렬 작업 처리 방식이 수정되었습니다.
 
@@ -469,12 +473,12 @@ at.j s  버전 1.2은 이제 대부분의 버그 수정 사항을 포함하는 �
 
 **날짜:** 2017년 1월 19일
 
-* 이제 mbox 이름에는 앰퍼샌드(&amp;)를 비롯한 특수 문자가 포함될 수 있습니다. 
+* 이제 mbox 이름에는 앰퍼샌드(&amp;)를 비롯한 특수 문자가 포함될 수 있습니다.
 
   허용 가능한 특수 문자 목록은 다음을 참조하십시오. [at.js 구성](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md).
 
 * at.js에서 HTTPS만 사용되는지 또는 페이지 프로토콜을 기준으로 HTTP와 HTTPS 간을 전환할 수 있는지를 나타내는 `secureOnly` 설정이 추가되었습니다. 이 설정은 기본값이 False이고 `targetGlobalSettings`를 통해 대체할 수 있는 고급 설정입니다.
-* .  at.js  버전 0.9.3 및 이전 버전에서  레거시 브라우저 지원  옵션을 사용할 수 있습니다. 이 옵션은 at.js 버전 0.9.4에서 제거되었습니다.
+* at.js 버전 0.9.3 및 이전 버전에서 레거시 브라우저 지원 옵션을 사용할 수 있습니다. 이 옵션은 at.js 버전 0.9.4에서 제거되었습니다.
 
 ## at.js 버전 0.9.3
 
@@ -488,7 +492,7 @@ at.j s  버전 1.2은 이제 대부분의 버그 수정 사항을 포함하는 �
 
 **날짜:** 2016년 9월 21일
 
-* Device Graph 옵트아웃을 활성화하거나 비활성화하는 `optoutEnabled` 설정이 추가되었습니다. 이 설정이 `true`로 설정되고 방문자가 추적을 옵트아웃한 경우 방문자의 브라우저는 mbox 호출을 수행하지 않습니다. Device Graph는 현재 베타 버전입니다. 이 설정은 기본적으로 `false`로 설정되지만 Device Graph를 사용하는 경우에는 `true`로 설정되어야 합니다.
+* Device Graph 옵트아웃을 활성화하거나 비활성화하는 `optoutEnabled` 설정이 추가되었습니다. 이 설정이 `true`로 설정되고 방문자가 추적을 옵트아웃한 경우 방문자의 브라우저는 mbox 호출을 수행하지 않습니다. Device Graph는 현재 베타 버전입니다. 이 설정은 (으)로 설정됩니다. `false` 기본적으로, 그러나 을(를) (으)로 설정해야 함 `true` 디바이스 그래프를 사용하는 경우.
 * 알림 메커니즘에 대한 `CustomEvent` 지원이 추가되었습니다. 이전에는 at.js 이벤트 알림 메커니즘을 `document.addEventListener()`()와 같은 표준 DOM API를 통해 사용할 수 없었습니다. 이제는 `document.addEventListener()`를 사용하여 요청 이벤트 및 콘텐츠 렌더링 이벤트와 같은 at.js 이벤트에 가입할 수 있습니다.
 * VEC(시각적 경험 작성기)에서 만든 오퍼와 관련된 문제가 수정되었습니다. 이번 릴리스 이전에는 [!DNL Target] 선택기를 숨기고, 모든 선택기가 선택될 때만 숨김을 해제했습니다. at.js 0.9.2에서 [!DNL Target] 일치하는 선택기가 확인되면 바로 숨김을 해제합니다.
 
@@ -506,10 +510,10 @@ at.j s  버전 1.2은 이제 대부분의 버그 수정 사항을 포함하는 �
 
 **날짜:** 2016년 6월 23일
 
-* VEC 오퍼를 사용할 때 발생하는 흰색 화면 문제를 수정합니다. at.js을 사용하는 모든 사용자는 이 새 버전으로 업그레이드해야 합니다.
+* VEC 오퍼를 사용할 때 발생하는 흰색 화면 문제를 수정합니다. at.js를 사용하는 모든 사용자는 이 새 버전으로 업그레이드해야 합니다.
 * 새 `registerExtension` API.
 
-  이 새로운 API는 개발자들이 라이브러리에 대한 확장 프로그램(즉, 플러그인)을 개발하기 위해 at.js에서 사용되는 특정 jQuery 모듈에 액세스할 수 있도록 합니다. 이 변경으로 인해 몇 가지 결과가 나타납니다. 이러한 결과는 다음 기능을 사용하는 사용자에게만 적용됩니다.
+  이 새로운 API는 개발자가 at.js에서 사용되는 특정 jQuery 모듈에 액세스하여 라이브러리에 대한 확장 프로그램(즉, 플러그인)을 개발할 수 있도록 합니다. 이 변경으로 인해 몇 가지 결과가 나타납니다. 이러한 결과는 다음 기능을 사용하는 사용자에게만 적용됩니다.
 
    * `getSettings()` API가 제거되었지만 `registerExtension()`을 사용하여 동일한 기능을 사용할 수 있습니다.
    * `getTracking()` API가 제거되었지만 `registerExtension()`을 사용하여 동일한 기능을 사용할 수 있습니다.
@@ -528,9 +532,9 @@ at.j s  버전 1.2은 이제 대부분의 버그 수정 사항을 포함하는 �
 
 **날짜:** 2016년 5월 5일
 
-이것은 at.js 라이브러리의 첫 번째 공식 릴리스입니다.
+at.js 라이브러리의 첫 번째 공식 릴리스입니다.
 
-at.js는 일반적인 웹 구현과 단일 페이지 애플리케이션 둘 다에 맞게 디자인된 새로운 [!DNL Target]용 구현 라이브러리입니다.
+at.js는 의 새로운 구현 라이브러리입니다. [!DNL Target] 일반적인 웹 구현과 단일 페이지 애플리케이션 둘 다에 맞게 디자인되었습니다.
 
 at.js는 [!DNL Adobe Target] 구현을 위한 mbox.js를 대신합니다.
 
@@ -541,6 +545,6 @@ at.js에는 target.js에 포함된 구성 요소도 포함되어 있으므로 �
 at.js를 구현할 때는 다음에 유의하십시오.
 
 * 버전 8 이전의 Internet Explorer 버전은 지원되지 않습니다.
-* 비동기식 구현은 [!UICONTROL Test&amp;Target과 SiteCatalyst] 플러그인의 통합과 같은 이전 통합이 작동되지 않을 수 있음을 의미합니다.
-* mbox.js 개체 및 메서드를 참조하는 [!DNL Target] 플러그인은 지원되지 않습니다.
+* 비동기식 구현은 과 같은 기존 통합을 의미합니다. [!UICONTROL SiteCatalyst 대상 Test&amp;Target] 플러그인이 작동하지 않을 수 있습니다.
+* [!DNL Target] mbox.js 개체 및 메서드를 참조하는 플러그인은 지원되지 않습니다.
 * 모든 [!DNL Target] 호출은 XMLHTTPRequest를 통해 수행되고 콘텐츠는 JSON을 통해 반환됩니다.
