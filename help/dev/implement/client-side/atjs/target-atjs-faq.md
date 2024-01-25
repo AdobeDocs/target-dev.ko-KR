@@ -4,10 +4,10 @@ description: 에 대해 자주 묻는 질문에 대한 답변 읽기 [!DNL Adobe
 title: at.js에 대한 일반적인 질문과 대답은 무엇입니까?
 feature: at.js
 exl-id: 362ccc5b-8731-46c0-bc52-3e55c273e216
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 448c43c0c10e22ad054f4ee98bfc282f8c96cdcb
 workflow-type: tm+mt
-source-wordcount: '2897'
-ht-degree: 48%
+source-wordcount: '2938'
+ht-degree: 39%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 48%
 
 ## mbox.js와 비교하여 at.js를 사용할 때의 장점은 무엇입니까?
 
-at.js 라이브러리는 mbox.js를 대체합니다. mbox.js 라이브러리는 더 이상 지원되지 않습니다. 하지만 대부분의 사용자에게 at.js는 mbox.js보다 나은 이점을 제공합니다.
+at.js 라이브러리는 mbox.js를 대체합니다. mbox.js 라이브러리는 더 이상 지원되지 않습니다. 그러나 대부분의 사용자에게 at.js는 mbox.js보다 나은 이점을 제공합니다.
 
 여러 가지 이점 중에서 at.js는 웹 구현에 대한 페이지 로드 시간을 향상시키고, 보안을 강화하고, 단일 페이지 애플리케이션에 대해 더 나은 구현 옵션을 제공합니다.
 
@@ -29,9 +29,9 @@ at.js 라이브러리는 mbox.js를 대체합니다. mbox.js 라이브러리는 
 
 위에서 보듯이 mbox.js를 사용하는 페이지 콘텐츠는 [!DNL Target] 호출이 완료되었습니다. 반면에 at.js를 사용하는 페이지 콘텐츠는 [!DNL Target] 호출이 시작되면 로드가 시작되며 호출이 완료될 때까지 기다리지 않습니다.
 
-## at.js 및 mbox.js가 페이지 로드 시간에 미치는 영향을 무엇입니까?
+## at.js 및 mbox.js가 페이지 로드 시간에 미치는 영향은 무엇입니까?
 
-많은 고객과 컨설턴트는 특히 새 사용자와 재방문 사용자의 컨텍스트에서 비교하여 페이지 로드 시간에 대한 at.js와 mbox.js의 영향을 알고 싶어 합니다. 안타깝게도, 제각각의 고객 구현으로 인해 at.js나 mbox.js가 어떻게 페이지 로드 시간에 영향을 주는지에 대한 구체적 수치를 측정하고 제공하기는 어렵습니다.
+많은 고객과 컨설턴트는 특히 새 사용자와 재방문 사용자의 컨텍스트에서 페이지 로드 시간에 대한 at.js 및 mbox.js의 영향을 알고 싶어 합니다. 안타깝게도 at.js 또는 mbox.js가 각 고객의 구현으로 인해 페이지 로드 시간에 어떻게 영향을 주는지에 대한 구체적 수치를 측정하고 제공하기는 어렵습니다.
 
 하지만 방문자 API가 페이지에 있는 경우 [!DNL Target] at.js 및 mbox.js가 페이지 로드 시간에 어떻게 영향을 미치는지 더 잘 이해할 수 있습니다.
 
@@ -84,7 +84,7 @@ at.js 버전 1.0.0 이상은 모든 요청을 동시에 실행합니다. 이전 
 
 at.js 라이브러리 버전 1.0.0은 요청을 더 빨리 완료합니다. 또한 at.js 요청은 비동기적이므로 [!DNL Target] 는 페이지 렌더링을 차단하지 않습니다. 요청이 완료되기까지 몇 초가 걸리는 경우에도 여전히 렌더링된 페이지가 표시되며, 페이지의 일부 부분만 까지 공백으로 표시됩니다 [!DNL Target] 에서 응답을 가져옵니다. [!DNL Target] edge.
 
-## 짐을 실어도 될까요 [!DNL Target] 라이브러리를 비동기적으로?
+## 짐을 실을 수 있나요 [!DNL Target] 라이브러리를 비동기적으로?
 
 at.js 1.0.0 릴리스를 통해 [!DNL Target] 라이브러리가 비동기적으로 표시됩니다.
 
@@ -118,7 +118,7 @@ at.js를 비동기식으로 로드하는 것은 브라우저 렌더링이 차단
 
 ## at.js는 [!DNL Adobe Experience Manager] 통합(Experience Manager)?
 
-FP-11577을 사용하는 [!DNL Adobe Experience Manager] 6.2(또는 이상)에서는 이제 [!UICONTROL Adobe Target 클라우드 서비스] 통합을 통해 at.js 구현을 지원합니다. 
+[!DNL Adobe Experience Manager] FP-11577을 사용하는 6.2(또는 이상)에서는 이제 와 함께 at.js 구현을 지원합니다. [!UICONTROL Adobe Target Cloud Service] 통합.
 
 ## at.js를 사용하여 페이지 로드 플리커를 방지하려면 어떻게 합니까?
 
@@ -130,7 +130,7 @@ at.js 파일은 다운로드 시 약 109KB입니다. 그러나 대부분의 서�
 
 ## at.js가 mbox.js보다 큰 이유는 무엇입니까?
 
-at.js 구현은 단일 라이브러리(at.js)를 사용하는 반면, mbox.js 구현은 실제로 두 개의 라이브러리(mbox.js와 target.js)를 사용합니다. 따라서 공정한 비교는 at.js 대 mbox.js *와* `target.js`입니다. gzip으로 압축된 두 버전의 크기를 비교하면 at.js 버전 1.2는 34KB이고 mbox.js 버전 63은 26.2KB입니다. ``
+at.js 구현은 단일 라이브러리(at.js)를 사용하는 반면, mbox.js 구현은 실제로 두 개의 라이브러리(mbox.js 및 target.js)를 사용합니다. 따라서 공정한 비교는 at.js 대 mbox.js *와* `target.js`입니다. gzip으로 압축된 두 버전의 크기를 비교하면 at.js 버전 1.2는 34KB이고 mbox.js 버전 63은 26.2KB입니다. ``
 
 at.js는 mbox.js와 비교하여 훨씬 더 많은 DOM 구문 분석을 수행하므로 더 adfd큽니다. 이것은 at.js가 JSON 응답에 있는 &quot;원시&quot; 데이터를 가져오고 이를 이해해야 하기 때문에 필요합니다. 사용된 mbox.js `document.write()` 모든 구문 분석은 브라우저가 수행했습니다.
 
@@ -160,7 +160,7 @@ Safari 방문자를 지원하기 위해 더 나은 X-Domain이 &quot;비활성�
 
 ## 웹 페이지에서 mbox가 실행되지 않는 이유는 무엇입니까?
 
-[!DNL Target] 고객들이 테스트나 간단한 개념 입증 용도로 [!DNL Target]에 클라우드 기반 인스턴스를 사용하는 경우가 있습니다. 이러한 도메인 및 기타 많은 다른 도메인이 [공용 접미사 목록](https://publicsuffix.org/list/public_suffix_list.dat)에 나와 있습니다.
+[!DNL Target] 고객은 때로 클라우드 기반 인스턴스를 [!DNL Target] 테스트 또는 간단한 개념 입증 목적입니다. 이러한 도메인 및 기타 많은 다른 도메인이 [공용 접미사 목록](https://publicsuffix.org/list/public_suffix_list.dat)에 나와 있습니다.
 
 최신 브라우저에서는 를 사용자 지정하지 않는 한 이러한 도메인을 사용하는 경우 쿠키를 저장하지 않습니다. `cookieDomain` targetGlobalSettings()를 사용하여 설정하는 중입니다. 자세한 내용은 [클라우드 기반 인스턴스 사용 [!DNL Target]](/help/dev/implement/client-side/target-debugging-atjs/targeting-using-cloud-based-instances.md).
 
@@ -204,7 +204,7 @@ if (/^123\.456\.78\..*/g.test(window.location.hostname)) {
 * 느린 네트워크로 인해 페이지가 느리게 작성되고 있으며 at.js가 DOM에서 선택기를 찾을 수 없습니다.
 * 활동이 실행 중인 페이지 구조가 변경되었습니다. 시각적 경험 작성기(VEC)에서 활동을 다시 열 경우 경고 메시지가 표시됩니다. 필요한 모든 요소를 찾을 수 있도록 활동을 업데이트합니다.
 * 기본 페이지가 단일 페이지 애플리케이션(SPA)의 일부이거나 이 페이지에 페이지 아래쪽에 나타나는 요소가 있는데, at.js &quot;선택기 폴링 메커니즘&quot;이 해당 요소를 찾을 수 없습니다. `selectorsPollingTimeout`을 늘리는 것이 도움이 될 수 있습니다. 자세한 내용은 [targetGlobalSettings()](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md)를 참조하십시오.
-* 지표가 설정된 URL과 관계없이 모든 클릭 추적 지표가 모든 페이지에 추가되려고 시도합니다. 그 자체로 문제가 안 되더라도 이렇게 되면 많은 메시지가 표시됩니다.
+* 지표가 설정된 URL과 관계없이 모든 클릭 추적 지표가 모든 페이지에 추가되려고 시도합니다. 이러한 상황에서는 문제가 없지만 이러한 메시지가 많이 표시됩니다.
 
   최상의 결과를 얻으려면 를 다운로드하여 사용하십시오. [at.js 최신 버전](/help/dev/implement/client-side/atjs/target-atjs-versions.md). at.js를 다운로드하는 방법에 대한 자세한 내용은 [를 사용하여 at.js 다운로드 [!DNL Target] 인터페이스](how-to-deployatjs/implement-target-without-a-tag-manager.md#download-atjs-using-the-target-interface) 의 섹션 [*at.js를 배포하는 방법* > *구현 [!DNL Target] 태그 관리자 없음*](how-to-deployatjs/implement-target-without-a-tag-manager.md) 기사.
 
@@ -250,7 +250,7 @@ at.js에 의해 활성화된 Adobe Edge 네트워크와의 통신은 `secureOnly
 
 [!DNL Target] 은 서버측에서 모든 의사 결정을 실행합니다. 즉, at.js는 페이지가 다시 로드되거나 at.js 공용 API가 호출될 때마다 네트워크 요청을 실행합니다.
 
-## 최상의 사례 시나리오에서 사용자가 콘텐츠를 숨기고, 대체하고, 표시하는 것과 관련된 페이지 로드에 가시적인 영향을 미치지 않을 것으로 기대할 수 있습니까?
+## 최상의 사례 시나리오에서 사용자가 컨텐츠를 숨기고, 대체하고, 표시하는 것과 관련된 페이지 로드에 가시적인 영향을 미치지 않을 것으로 기대할 수 있습니까?
 
 at.js는 연장된 기간 동안 HTML BODY 또는 기타 DOM 요소를 사전에 숨기지 않으려고 시도하지만 이는 네트워크 조건 및 활동 설정에 따라 다릅니다. at.js에서는 본문 숨기기 CSS 스타일을 사용자 지정하는 데 사용할 수 있는 [설정](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md)을 제공하므로 전체 HTML BODY를 공백으로 남기지 않고 페이지의 일부만 미리 숨길 수 있습니다. 이러한 부분에는 &quot;개인화&quot;해야 하는 DOM 요소가 포함될 것으로 예상됩니다.
 
@@ -297,3 +297,7 @@ at. s에는 HTML5 doctype이 필요합니다.
 `<!DOCTYPE html>`
 
 HTML5 doctype은 페이지가 표준 모드로 로드되도록 합니다. quirks 모드로 로드할 때 at.js가 사용하는 일부 JS API가 비활성화됩니다. [!DNL Target] quirks 모드에서 at.js를 비활성화합니다.
+
+## at.js는 Ionic 앱 환경에서 작동합니까?
+
+at.js는 웹이 아닌 환경에서 작동하도록 의도되지 않았으므로 이 구현은 테스트되지 않았습니다. [!DNL Adobe] 다음을 권장합니다. [모바일 구현용 SDK](/help/dev/implement/mobile/overview.md).
