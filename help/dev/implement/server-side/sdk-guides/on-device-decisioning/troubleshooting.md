@@ -3,9 +3,9 @@ title: 온디바이스 의사 결정 문제 해결
 description: 문제 해결 방법 알아보기 [!UICONTROL 온디바이스 의사 결정]
 exl-id: e76f95ce-afae-48e0-9dbb-2097133574dc
 feature: APIs/SDKs
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 1d892d4d4d6f370f7772d0308ee0dd0d5c12e700
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ java -Dorg.slf4j.simpleLogger.defaultLogLevel=DEBUG ...
 
 ## 3. 다음을 확인합니다 [!UICONTROL 온디바이스 의사 결정] *규칙 아티팩트* 정의된 폴링 간격에 따라 검색하고 캐시했습니다.
 
-1. 폴링 간격(기본값: 5분) 기간을 기다린 후 SDK에서 아티팩트를 가져오는지 확인하십시오. 동일한 터미널 로그가 출력됩니다.
+1. 폴링 간격(기본값: 20분) 기간을 기다린 후 SDK에서 아티팩트를 가져오는지 확인하십시오. 동일한 터미널 로그가 출력됩니다.
 
    또한[!DNL Target]규칙 아티팩트에 대한 세부 정보와 함께 추적을 터미널에 출력해야 합니다.
 
