@@ -4,9 +4,9 @@ description: Experience Cloud과 통합, Audience Manager 통합
 keywords: 배달 api, 서버측, 서버측, 통합, audience manager, aam
 exl-id: c21e0200-23ba-4a0b-adf4-38e03c087f00
 feature: Implement Server-side
-source-git-commit: 09a50aa67ccd5c687244a85caad24df56c0d78f5
+source-git-commit: e3f14e97fa48ffb1f07b29aca5711d16e75faa80
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '417'
 ht-degree: 4%
 
 ---
@@ -298,4 +298,4 @@ public class TargetClientService {
 
 >[!ENDTABS]
 
-TargetRequestUtils.java에 대한 자세한 내용은 [유틸리티 메서드(Java)](https://experienceleague.corp.adobe.com/docs/target-dev/developer/server-side/java/utility-methods.html){target=_blank}
+에 대한 자세한 내용 `TargetRequestUtils.java`, 참조 [유틸리티 메서드(Java)](https://experienceleague.adobe.com/docs/target-dev/developer/server-side/java/utility-methods.html){target=_blank}
