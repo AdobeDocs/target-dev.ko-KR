@@ -4,9 +4,9 @@ description: 에서 프리페치를 사용하는 방법 [!UICONTROL Adobe Target
 keywords: 배달 api
 exl-id: eab88e3a-442c-440b-a83d-f4512fc73e75
 feature: APIs/SDKs
-source-git-commit: 91592a86957770c4d189115fd3ebda61ed52dd38
+source-git-commit: 803723d95d50cc39101d1646232446fbb0254385
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
@@ -126,7 +126,7 @@ curl -X POST \
 
 [[!UICONTROL Adobe Analytics for Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html){target=_blank} (A4T)은 을 기반으로 활동을 만들 수 있는 솔루션 간 통합입니다 [!DNL Analytics] 전환 지표 및 대상 세그먼트.
 
-다음 코드 조각을 사용하면 다음을 포함하는 mbox를 미리 가져올 수 있습니다 `clickTrack` 통지할 지표 [!DNL Analytics] 오퍼를 클릭함:
+다음 코드 조각은 다음을 포함하는 mbox 미리 가져오기의 응답입니다. `clickTrack` 통지할 지표 [!DNL Analytics] 오퍼를 클릭함:
 
 ```
 {
