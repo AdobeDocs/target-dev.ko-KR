@@ -4,9 +4,9 @@ description: 에서 프리페치를 사용하는 방법 [!UICONTROL Adobe Target
 keywords: 배달 api
 exl-id: eab88e3a-442c-440b-a83d-f4512fc73e75
 feature: APIs/SDKs
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 91592a86957770c4d189115fd3ebda61ed52dd38
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -121,6 +121,51 @@ curl -X POST \
 ```
 
 응답 내에 `content` 특정 항목에 대해 사용자에게 표시할 경험이 포함된 필드 `mbox`. 이 기능은 사용자가 세션 내에서 웹 또는 모바일 애플리케이션과 상호 작용하고 를 방문할 때 서버에 캐시될 때 매우 유용합니다. `mbox` 애플리케이션의 특정 페이지에서 다른 환경을 만드는 대신 캐시에서 경험을 전달할 수 있습니다 [!UICONTROL Adobe Target 게재 API] 호출합니다. 단, 경험이 사용자에게에서 전달됩니다. `mbox`, a `notification` 노출 로깅이 수행되도록 배달 API 호출을 통해 전송됩니다. 이는 의 응답이 `prefetch` 호출이 캐시되므로 해당 시간에는 사용자가 경험을 보지 않았습니다. `prefetch` 호출이 발생합니다. 에 대해 자세히 알아보려면 `notification` 프로세스를 참조하십시오. [알림](notifications.md).
+
+## 사용 시 clickTrack 지표로 mbox 미리 가져오기 [!UICONTROL Analytics for Target] (A4T)
+
+[[!UICONTROL Adobe Analytics for Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html){target=_blank} (A4T)은 을 기반으로 활동을 만들 수 있는 솔루션 간 통합입니다 [!DNL Analytics] 전환 지표 및 대상 세그먼트.
+
+다음 코드 조각을 사용하면 다음을 포함하는 mbox를 미리 가져올 수 있습니다 `clickTrack` 통지할 지표 [!DNL Analytics] 오퍼를 클릭함:
+
+```
+{
+  "prefetch": {
+    "mboxes": [
+      {
+        "index": 0,
+        "name": "<mboxName>",
+        "options": [
+           ...
+        ],
+        "metrics": [
+          {
+            "type": "click",
+            "eventToken": "<eventToken>",
+             "analytics": {
+               "payload": {
+                 "pe": "tnt",
+                 "tnta": "..."
+               }
+             }
+          },
+          }
+        ],
+        "analytics": {
+          "payload": {
+            "pe": "tnt",
+            "tnta": "347565:1:0|2,347565:1:0|1"
+          }
+        }
+      }
+    ]
+  }
+}
+```
+
+>[!NOTE]
+>
+>mbox에 대한 미리 가져오기에는 [!DNL Analytics] 자격 있는 활동에 대한 페이로드만. 아직 정규화되지 않은 활동에 대한 성공 지표를 미리 가져오면 보고가 일치하지 않습니다.
 
 ## 미리 가져오기 보기
 
