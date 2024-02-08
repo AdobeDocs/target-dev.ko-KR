@@ -4,9 +4,9 @@ description: 에서 프리페치를 사용하는 방법 [!UICONTROL Adobe Target
 keywords: 배달 api
 exl-id: eab88e3a-442c-440b-a83d-f4512fc73e75
 feature: APIs/SDKs
-source-git-commit: 901b56a91c69c9c5a2bd322aa999d45c47058a5e
+source-git-commit: 4ff2746b8b485fe3d845337f06b5b0c1c8d411ad
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 모바일 앱 및 서버와 같은 클라이언트는 세션 내에서 지정된 방문자에 대해 여러 mbox를 미리 가져오고 캐시하여 [!UICONTROL Adobe Target 게재 API].
 
-```
+```shell shell-session
 curl -X POST \
 'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=7abf6304b2714215b1fd39a870f01afc#1555632114' \
 -H 'Content-Type: application/json' \
@@ -71,7 +71,7 @@ curl -X POST \
 
 다음 범위 내 `prefetch` 필드, 하나 이상 추가 `mboxes` 세션 내의 방문자에 대해 최소 한 번 이상 미리 가져오려고 합니다. 다음에 대해 미리 가져오기 `mboxes`, 다음 응답을 받게 됩니다.
 
-```
+```JSON {line-numbers="true"}
 {
     "status": 200,
     "requestId": "5efee0d8-3779-4b12-a74e-e04848faf191",
@@ -128,7 +128,7 @@ curl -X POST \
 
 다음 코드 조각은 를 포함하는 mbox 미리 가져오기의 응답입니다 `clickTrack` 통지할 지표 [!DNL Analytics] 오퍼를 클릭함:
 
-```
+```JSON {line-numbers="true"}
 {
   "prefetch": {
     "mboxes": [
@@ -169,9 +169,9 @@ curl -X POST \
 
 ## 미리 가져오기 보기
 
-보기는 단일 페이지 애플리케이션(SPA) 및 모바일 애플리케이션을 보다 원활하게 지원합니다. 보기는 SPA 또는 모바일 경험을 함께 구성하는 시각적 요소의 논리 그룹으로 볼 수 있습니다. 이제 VEC는 게재 API를 통해 [SPA 보기](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md) 이제 를 프리페치할 수 있습니다.
+보기는 단일 페이지 애플리케이션(SPA) 및 모바일 애플리케이션을 보다 원활하게 지원합니다. 보기는 SPA 또는 모바일 경험을 함께 구성하는 시각적 요소의 논리 그룹으로 볼 수 있습니다. 이제 게재 API를 통해 VEC가 만들어짐 [[!UICONTROL A/B 테스트]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html){target=_blank} and [[!UICONTROL Experience Targeting]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html){target=_blank} 에 대한 수정 사항이 있는 (X)T 활동 [SPA 보기](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md) 이제 를 프리페치할 수 있습니다.
 
-```
+```shell  {line-numbers="true"}
 curl -X POST \
   'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=a3e7368c62d944c0855d424cd7a03ab0' \
   -H 'Content-Type: application/json' \
@@ -199,9 +199,9 @@ curl -X POST \
 }'
 ```
 
-위의 예제 호출은 AB 및 XT 활동에 대해 SPA VEC를 통해 만든 모든 보기를 미리 가져와 웹에 대해 표시합니다 `channel`. 호출에서는 방문자가 사용하는 AB 또는 XT 활동에서 모든 보기를 미리 가져오려고 합니다 `tntId`:`84e8d0e211054f18af365d65f45e902b.28_131` 누가 방문합니까? `url`:`https://target.enablementadobe.com/react/demo/#/` 자격 요건.
+위의 예제 호출은에 대해 SPA VEC를 통해 생성된 모든 보기를 미리 가져옵니다. [!UICONTROL A/B 테스트] 및 웹에 대해 표시할 XT 활동 `channel`. 이 호출은 에서 모든 보기를 미리 가져옵니다. [!UICONTROL A/B 테스트] 또는 방문자가 있는 XT 활동 `tntId`:`84e8d0e211054f18af365d65f45e902b.28_131` 누가 방문합니까? `url`:`https://target.enablementadobe.com/react/demo/#/` 자격 요건.
 
-```
+```JSON  {line-numbers="true"}
 {
     "status": 200,
     "requestId": "14ce028e-d2d2-4504-b3da-32740fa8dd61",
@@ -280,4 +280,4 @@ curl -X POST \
 }
 ```
 
-다음에서 `content` 응답의 필드, 메모 메타데이터 `type`, `selector`, `cssSelector`, 및 `content`: 사용자가 페이지를 방문할 때 최종 사용자에게 경험을 렌더링하는 데 사용됩니다. 다음 사항에 주의하십시오. `prefetched` 필요한 경우 콘텐츠를 캐시하고 사용자에게 렌더링할 수 있습니다.
+다음에서 `content` 응답의 필드, 메모 메타데이터 `type`, `selector`, `cssSelector`, 및 `content`: 사용자가 페이지를 방문할 때 방문자에게 경험을 렌더링하는 데 사용됩니다. 다음 사항에 주의하십시오. `prefetched` 필요한 경우 콘텐츠를 캐시하고 사용자에게 렌더링할 수 있습니다.
