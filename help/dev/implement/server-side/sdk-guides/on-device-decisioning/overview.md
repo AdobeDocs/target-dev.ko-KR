@@ -1,31 +1,31 @@
 ---
 keywords: 서버측, 서버측, sdk, sdk, sdk, 온디바이스, 의사 결정, 온디바이스, 온디바이스, 제로 지연, 지연, 거의 제로, node.js, server side3
-description: 사용 방법 알아보기 [!UICONTROL [!UICONTROL 온디바이스 의사 결정]를 캐시하려면 ] [!DNL Target] 거의 0에 가까운 지연 시간에 메모리 내 의사 결정을 수행하기 위한 서버의 A/B 및 MVT 활동.
+description: 사용 방법 알아보기 [!UICONTROL [!UICONTROL on-device decisioning]를 캐시하려면 ] [!DNL Target] 거의 0에 가까운 지연 시간에 메모리 내 의사 결정을 수행하기 위한 서버의 A/B 및 MVT 활동.
 title: 온디바이스 의사 결정이란 무엇입니까?
 feature: Implement Server-side
 exl-id: 22ed3072-56f0-4075-9d1a-d642afe3b649
-source-git-commit: 79ffa3f58d780f587fe1202b82d3860395504dfe
+source-git-commit: ff0becf3fe3a6fd6694e13243b6a93b910316434
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 8%
+source-wordcount: '1022'
+ht-degree: 9%
 
 ---
 
 # 온디바이스 의사 결정 개요
 
-차세대 [!DNL Adobe Target] 이제 SDK에서 오퍼 사용 [!UICONTROL 온디바이스 의사 결정]: 서버에서 A/B 및 Experience Targeting (XT) 캠페인을 캐시하고, 네트워크 요청을 차단하지 않고 거의 0에 가까운 지연 시간에 메모리 내 의사 결정을 수행하는 기능을 제공합니다. [!DNL Adobe Target]의 에지 네트워크.
+차세대 [!DNL Adobe Target] 이제 SDK에서 오퍼 사용 [!UICONTROL on-device decisioning]: 서버에서 A/B 및 Experience Targeting (XT) 캠페인을 캐시하고, 네트워크 요청을 차단하지 않고 거의 0에 가까운 지연 시간에 메모리 내 의사 결정을 수행하는 기능을 제공합니다. [!DNL Adobe Target]의 에지 네트워크.
 
-[!DNL Adobe Target] 또한 라이브 서버 호출을 통해 실험 및 ML 기반 개인화 캠페인에서 가장 관련성이 높고 최신 경험을 제공할 수 있는 유연성을 제공합니다. 즉, 성과가 가장 중요할 때 다음을 활용하도록 선택할 수 있다 [!UICONTROL 온디바이스 의사 결정]가장 관련성이 높고 최신 경험이 필요한 경우 대신 서버 호출을 수행할 수 있습니다. 다음을 참조하십시오 [온디바이스 의사 결정과 edge decisioning 비교 사용 시기](../../sdk-guides/on-device-decisioning/supported-features.md) 을 사용할 수 있는 사용 사례에 대해 알아봅니다.
+[!DNL Adobe Target] 또한 라이브 서버 호출을 통해 실험 및 ML 기반 개인화 캠페인에서 가장 관련성이 높고 최신 경험을 제공할 수 있는 유연성을 제공합니다. 즉, 성과가 가장 중요할 때 다음을 활용하도록 선택할 수 있다 [!UICONTROL on-device decisioning]가장 관련성이 높고 최신 경험이 필요한 경우 대신 서버 호출을 수행할 수 있습니다. 다음을 참조하십시오 [온디바이스 의사 결정과 edge decisioning 비교 사용 시기](../../sdk-guides/on-device-decisioning/supported-features.md) 을 사용할 수 있는 사용 사례에 대해 알아봅니다.
 
 >[!NOTE]
 >
->온디바이스 의사 결정은 클라이언트측과 서버측 구현 모두에서 사용할 수 있습니다. 이 문서에서는 [!UICONTROL 온디바이스 의사 결정] 서버측. 에 관한 정보를 위하여 [!UICONTROL 온디바이스 의사 결정] 클라이언트측의 경우 클라이언트측 구현 설명서 를 참조하십시오 [여기](../../../client-side/atjs/on-device-decisioning/on-device-decisioning.md).
+>온디바이스 의사 결정은 클라이언트측과 서버측 구현 모두에서 사용할 수 있습니다. 이 문서에서는 [!UICONTROL on-device decisioning] 서버측. 에 관한 정보를 위하여 [!UICONTROL on-device decisioning] 클라이언트측의 경우 클라이언트측 구현 설명서 를 참조하십시오 [여기](../../../client-side/atjs/on-device-decisioning/on-device-decisioning.md).
 
 ## 어떻게 작동합니까?
 
-을(를) 설치하고 초기화할 때 [!DNL Adobe Target] 을 사용한 SDK [!UICONTROL 온디바이스 의사 결정] 활성화됨, a *규칙 아티팩트* 서버에 가장 가까운 Akamai CDN에서 로컬로 다운로드 및 캐시됩니다. 검색 요청 시 [!DNL Adobe Target] 경험은 서버측 애플리케이션 내에서 이루어지며, 반환할 콘텐츠는 캐시된 규칙 아티팩트에 인코딩된 메타데이터를 기반으로 메모리 내에서 결정되며, 이 메타데이터는 다음을 모두 정의합니다. [!UICONTROL 온디바이스 의사 결정] A/B 및 XT 활동.
+을(를) 설치하고 초기화할 때 [!DNL Adobe Target] 을 사용한 SDK [!UICONTROL on-device decisioning] 활성화됨, a *규칙 아티팩트* 서버에 가장 가까운 Akamai CDN에서 로컬로 다운로드 및 캐시됩니다. 검색 요청 시 [!DNL Adobe Target] 경험은 서버측 애플리케이션 내에서 이루어지며, 반환할 콘텐츠는 캐시된 규칙 아티팩트에 인코딩된 메타데이터를 기반으로 메모리 내에서 결정되며, 이 메타데이터는 다음을 모두 정의합니다. [!UICONTROL on-device decisioning] A/B 및 XT 활동.
 
-다음 다이어그램은 [!UICONTROL 온디바이스 의사 결정] 아키텍처. 이미지를 확장하려면 를 클릭합니다.
+다음 다이어그램은 [!UICONTROL on-device decisioning] 아키텍처. 이미지를 확장하려면 를 클릭합니다.
 
 이미지 를 클릭하여 전체 너비로 확장합니다.
 
@@ -44,8 +44,8 @@ ht-degree: 8%
 
 온디바이스 의사 결정은 [양식 기반 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html):
 
-* [!UICONTROL A/B 테스트]
-* [!UICONTROL 경험 타겟팅] (XT)
+* [!UICONTROL A/B Test]
+* [!UICONTROL Experience Targeting] (XT)
 
 ### 할당 방법
 
@@ -71,13 +71,13 @@ ht-degree: 8%
 | [시간대](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | 예 |
 | [Experience Cloud 대상](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (Adobe Audience Manager, Adobe Analytics 및 Adobe Experience Manager의 대상 | 아니요 |
 
-## 사용할 클라이언트를 프로비저닝하려면 어떻게 해야 합니까 [!UICONTROL 온디바이스 의사 결정]?
+## 사용할 클라이언트를 프로비저닝하려면 어떻게 해야 합니까 [!UICONTROL on-device decisioning]?
 
-모든 사용자가 온디바이스 의사 결정을 사용할 수 있습니다. [!DNL Adobe Target] 를 사용하는 고객 [!DNL Adobe Target] 서버측 SDK입니다. 이 기능을 사용하려면 다음 위치로 이동하십시오. **[!UICONTROL 관리]** > **[!UICONTROL 구현]** > **[!UICONTROL 계정 세부 정보]** 다음에서 [!DNL Adobe Target] UI 및 활성화 **[!UICONTROL 온디바이스 의사 결정]** 토글.
+모든 사용자가 온디바이스 의사 결정을 사용할 수 있습니다. [!DNL Adobe Target] 를 사용하는 고객 [!DNL Adobe Target] 서버측 SDK입니다. 이 기능을 사용하려면 다음 위치로 이동하십시오. **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]** 다음에서 [!DNL Adobe Target] UI 및 활성화 **[!UICONTROL On-Device Decisioning]** 토글.
 
 >[!NOTE]
 >
->관리자 또는 승인자가 있어야 합니다. *사용자 역할* 을(를) 활성화 또는 비활성화하려면 [!UICONTROL 온디바이스 의사 결정] 토글.
+>관리자 또는 승인자가 있어야 합니다. *사용자 역할* 을(를) 활성화 또는 비활성화하려면 [!UICONTROL On-Device Decisioning] 토글.
 
 ![대체 이미지](assets/asset-odd-toggle.png)
 
@@ -85,33 +85,33 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->초기화하기 전에 토글을 활성화하십시오. [!DNL Adobe Target] 사용할 SDK [!UICONTROL 온디바이스 의사 결정]. 규칙 아티팩트는 먼저 다음을 위해 Akamai CDN을 생성하고 전파해야 합니다. [!UICONTROL 온디바이스 의사 결정] 일 때문에.
+>초기화하기 전에 토글을 활성화하십시오. [!DNL Adobe Target] 사용할 SDK [!UICONTROL on-device decisioning]. 규칙 아티팩트는 먼저 다음을 위해 Akamai CDN을 생성하고 전파해야 합니다. [!UICONTROL on-device decisioning] 일 때문에.
 
-### 기존 항목 모두 포함 [!UICONTROL 온디바이스 의사 결정] 아티팩트 토글 의 적격 활동
+### 기존 항목 모두 포함 [!UICONTROL on-device decisioning] 아티팩트 토글 의 적격 활동
 
-전환 **날짜** 라이브를 원하는 경우 [!DNL Target] 대상 활동 [!UICONTROL 온디바이스 의사 결정] 아티팩트에 자동으로 포함될 수 있습니다.
+전환 **날짜** 라이브를 원하는 경우 [!DNL Target] 대상 활동 [!UICONTROL on-device decisioning] 아티팩트에 자동으로 포함될 수 있습니다.
 
-이 토글 나가기 **끔** 은(는) 다음을 다시 만들고 활성화해야 함을 의미합니다. [!UICONTROL 온디바이스 의사 결정] 생성된 규칙 아티팩트에 포함될 활동을 지정합니다.
+이 토글 나가기 **끔** 은(는) 다음을 다시 만들고 활성화해야 함을 의미합니다. [!UICONTROL on-device decisioning] 생성된 규칙 아티팩트에 포함될 활동을 지정합니다.
 
-## 활동은 어떻게 알 수 있습니까? [!UICONTROL 온디바이스 의사 결정] 가능합니까?
+## 활동은 어떻게 알 수 있습니까? [!UICONTROL on-device decisioning] 가능합니까?
 
-활동을 만든 후 레이블 을 호출합니다. **[!UICONTROL 의사 결정 방법]**&#x200B;활동 세부 사항 페이지에 표시되면 활동이 [!UICONTROL 온디바이스 의사 결정] 할 수 있습니다.
+활동을 만든 후 레이블 을 호출합니다. **[!UICONTROL Decisioning Method]**&#x200B;활동 세부 사항 페이지에 표시되면 활동이 [!UICONTROL on-device decisioning] 할 수 있습니다.
 
 ![대체 이미지](assets/asset-odd9.png)
 
-다음과 같은 모든 활동을 볼 수도 있습니다. [!UICONTROL 온디바이스 의사 결정] 다음에 사용 가능 **[!UICONTROL 활동]** 열을 추가하여 페이지 **[!UICONTROL 의사 결정 방법]** 활동 목록으로 이동합니다.
+다음과 같은 모든 활동을 볼 수도 있습니다. [!UICONTROL on-device decisioning] 다음에 사용 가능 **[!UICONTROL Activities]** 열을 추가하여 페이지 **[!UICONTROL Decisioning Method]** 활동 목록으로 이동합니다.
 
 ![대체 이미지](assets/asset-odd7.png)
 
 >[!NOTE]
 >
->다음과 같은 활동을 만들고 활성화한 후 [!UICONTROL 온디바이스 의사 결정] Akamai CDN PoPs에 생성 및 전파되는 규칙 아티팩트에 포함되기까지 최대 5~10분이 소요될 수 있습니다.
+>다음과 같은 활동을 만들고 활성화한 후 [!UICONTROL on-device decisioning] Akamai CDN PoPs에 생성 및 전파되는 규칙 아티팩트에 포함되기까지 최대 20분이 소요될 수 있습니다.
 
-## 다음을 확인하기 위해 따라야 하는 단계에 대한 요약은 무엇입니까? [!UICONTROL 온디바이스 의사 결정] 활동은 다음을 통해 성공적으로 전달되었습니다. [!DNL Adobe Target]의 서버측 SDK?
+## 다음을 확인하기 위해 따라야 하는 단계에 대한 요약은 무엇입니까? [!UICONTROL on-device decisioning] 활동은 다음을 통해 성공적으로 전달되었습니다. [!DNL Adobe Target]의 서버측 SDK?
 
-1. 액세스 [!DNL Adobe Target] UI 및 탐색 **[!UICONTROL 관리]** > **[!UICONTROL 구현]** > **[!UICONTROL 계정 세부 정보]** 을(를) 활성화하려면 **[!UICONTROL 온디바이스 의사 결정]** 토글.
-1. 활성화 **[!UICONTROL 기존 항목 모두 포함 [!UICONTROL 온디바이스 의사 결정] 아티팩트의 적격 활동]** 토글.
-1. 에서 지원하는 활동 유형 만들기 및 활성화 [!UICONTROL 온디바이스 의사 결정]을 클릭하고 **[!UICONTROL 의사 결정 방법]** 은(는) **[!UICONTROL 온디바이스 의사 결정]** 을 참조하십시오.
+1. 액세스 [!DNL Adobe Target] UI 및 탐색 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]** 을(를) 활성화하려면 **[!UICONTROL On-Device Decisioning]** 토글.
+1. 활성화 **[!UICONTROL Include all existing [!UICONTROL on-device decisioning] qualified activities in the artifact]** 토글.
+1. 에서 지원하는 활동 유형 만들기 및 활성화 [!UICONTROL on-device decisioning]을 클릭하고 **[!UICONTROL Decisioning Method]** 은(는) **[!UICONTROL On-Device Decisioning]** 을 참조하십시오.
 1. 설치 및 초기화 [Node.js](../../node-js/overview.md) 또는 [Java](../../java/overview.md) 을 사용한 SDK `decisioningMethod = on-device`.
 1. 구현 `getOffers()` 또는 `getAttributes()` 를 사용하여 디바이스에서 경험을 검색할 수 있습니다.
 1. 코드 배포.
@@ -132,14 +132,14 @@ ht-degree: 8%
 
 ### 자습서: 온디바이스 의사 결정
 
-[!DNL Adobe Target] [!UICONTROL 온디바이스 의사 결정] 거의 0에 가까운 지연 시간 콘텐츠 전달을 활성화합니다.
+[!DNL Adobe Target] [!UICONTROL on-device decisioning] 거의 0에 가까운 지연 시간 콘텐츠 전달을 활성화합니다.
 
 이 7분 길이의 비디오:
 
-* 설명 [!UICONTROL 온디바이스 의사 결정], 의 다른 메서드와 비교하는 방법 포함 [!DNL Target] 구현
-* 을 활성화하는 방법을 보여 줍니다. [!UICONTROL 온디바이스 의사 결정] 대상
+* 설명 [!UICONTROL on-device decisioning], 의 다른 메서드와 비교하는 방법 포함 [!DNL Target] 구현
+* 을 활성화하는 방법을 보여 줍니다. [!UICONTROL on-device decisioning] 대상
 * JSON 콘텐츠로 구성된 샘플 양식 기반 작성기 활동을 검사합니다
-* 에 필요한 키 구성이 포함된 샘플 Node.JS SDK 코드를 표시합니다. [!UICONTROL 온디바이스 의사 결정]
+* 에 필요한 키 구성이 포함된 샘플 Node.JS SDK 코드를 표시합니다. [!UICONTROL on-device decisioning]
 * 브라우저에서 결과를 보여 줍니다
 
 >[!VIDEO](https://video.tv.adobe.com/v/329032/?quality=12)
