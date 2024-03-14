@@ -4,16 +4,22 @@ description: 에 대해 알아보기 [!DNL Adobe Target] 서버 측 배달 API, 
 title: 어디에서 배울 수 있습니까 [!DNL Target] 서버 측 배달 API 및 SDK?
 feature: Implement Server-side
 exl-id: 3eb0a789-cf1a-4d02-acf7-3c895bcb662f
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 75af30045684b95d5989b0a1f877ba95bb8cd883
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 14%
+source-wordcount: '569'
+ht-degree: 13%
 
 ---
 
 # 서버 측: 구현 [!DNL Target]
 
 다음에 대한 정보: [!DNL Adobe Target] 서버 측 배달 API, SDK 및 [!DNL Target Recommendations] API.
+
+>[!NOTE]
+>
+>구현에서 at.js를 사용하고 [!DNL AppMeasurement] 클라이언트측에서는 [!UICONTROL Target Delivery API] 및 서버측 SDK에 대해서는 아래에서 설명합니다.
+>
+>구현에서 다음을 사용하는 경우 [!UICONTROL Adobe Experience Platform Web SDK], 다음을 사용해야 합니다. [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server API]](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview){target=_blank}.
 
 다음 프로세스는 [!DNL Target]의 서버 측 구현 시 발생합니다.
 
@@ -66,6 +72,6 @@ ht-degree: 14%
 
 ## [!DNL Target Recommendations] API
 
-링크: [RECOMMENDATIONS API TARGET](https://developers.adobetarget.com/api/recommendations) 및 [Adobe Recommendations API 개요](../../before-administer/recs-api/overview.md).
+링크: [Target Recommendations API](https://developers.adobetarget.com/api/recommendations) 및 [Adobe Recommendations API 개요](../../before-administer/recs-api/overview.md).
 
 Recommendations API를 사용하면 프로그래밍 방식으로 와 상호 작용할 수 있습니다 [!DNL Target] recommendations 서버입니다. 이러한 API는 일반적으로 를 통해 이루어지는 기능을 수행하기 위해 애플리케이션 스택의 범위와 통합될 수 있습니다. [!DNL Target] 사용자 인터페이스.
