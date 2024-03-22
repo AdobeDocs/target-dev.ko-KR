@@ -2,7 +2,7 @@
 user-guide-title: Adobe Target 개발자 안내서
 breadcrumb-title: Target 개발자 안내서
 user-guide-description: 고객의 경험을 맞춤화 및 개인화하여 웹 및 모바일 사이트, 앱, 소셜 미디어 및 기타 디지털 채널에서 매출을 극대화하는 방법을 알아봅니다.
-source-git-commit: 49b6572c0d414ab304712691c97794bb0b1e3781
+source-git-commit: 54647001c4e5dc5ce208430c7fea103a720b0980
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 45%
@@ -22,7 +22,7 @@ ht-degree: 45%
       + [개인정보 보호 및 데이터 보호 규정](before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md)
       + [Target 쿠키](before-implement/privacy/cookie-behavior.md)
       + [Target 쿠키 삭제](before-implement/privacy/cookie-deleting.md)
-      + [타사 쿠키 사용이 Target에 미치는 영향(at.js)](/help/dev/before-implement/privacy/third_party_cookie_deprecation)
+      + [타사 쿠키 사용이 Target에 미치는 영향(at.js)](/help/dev/before-implement/privacy/third-party-cookie-deprecation.md)
       + [Google Chrome samesite 쿠키 정책](before-implement/privacy/google-chrome-samesite-cookie-policies.md)
       + [Apple ITP(Intelligent Tracking Prevention) 2.x](before-implement/privacy/apple-itp-2x.md)
       + [콘텐츠 보안 정책(CSP) 지침](before-implement/privacy/content-security-policy.md)
