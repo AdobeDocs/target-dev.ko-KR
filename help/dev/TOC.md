@@ -2,9 +2,9 @@
 user-guide-title: Adobe Target 개발자 안내서
 breadcrumb-title: Target 개발자 안내서
 user-guide-description: 고객의 경험을 맞춤화 및 개인화하여 웹 및 모바일 사이트, 앱, 소셜 미디어 및 기타 디지털 채널에서 매출을 극대화하는 방법을 알아봅니다.
-source-git-commit: 54647001c4e5dc5ce208430c7fea103a720b0980
+source-git-commit: c963a070a7a4c5e7dc2915eb5ac7d60895340705
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '756'
 ht-degree: 45%
 
 ---
@@ -164,6 +164,7 @@ ht-degree: 45%
       + [로거(Python)](implement/server-side/python/logger.md)
 + [하이브리드 구현](implement/hybrid/hybrid-overview.md)
 + [Recommendations 구현](implement/recommendations/recommendations.md)
++ [Recommendations 구현 베타](/help/dev/implement/recommendations/recommendations-beta.md)
 + 모바일 앱 구현 {#mobile-apps}
    + [모바일 앱을 위한 Target 개요](implement/mobile/overview.md)
    + [Target 모바일 미리보기](implement/mobile/target-mobile-preview.md)
@@ -211,7 +212,7 @@ ht-degree: 45%
       + [모델 API(차단 목록에 추가) 개요](before-administer/models-api.md)
       + [모델 API](/help/dev/administer/models-api/models-api-overview.md)
    + [ADOBE ADMIN CONSOLE API](/help/dev/before-implement/delivery-api-overview/adobe-console-api.md)
-   + [Adobe Experience Platform Edge Network Server API](/help/dev/before-implement/delivery-api-overview/aep-edge-network-server-api.md)
+   + [Adobe Experience Platform Edge Network 서버 API](/help/dev/before-implement/delivery-api-overview/aep-edge-network-server-api.md)
 + 구현 패턴 {#implementation-patterns}
    + [구현 패턴 개요](/help/dev/patterns/pattern-overview.md)
    + at.js를 사용한 Recommendations 구현 패턴 {#atjs}
