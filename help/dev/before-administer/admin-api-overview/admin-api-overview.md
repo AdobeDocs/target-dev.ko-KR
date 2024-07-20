@@ -1,36 +1,36 @@
 ---
 title: Adobe Target 관리 API 개요
-description: 개요 [!DNL Adobe Target Admin API]
+description: ' [!DNL Adobe Target Admin API] 개요'
 exl-id: 1168d376-c95b-4c5a-b7a2-c7815799a787
 feature: APIs/SDKs
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '1365'
-ht-degree: 3%
+source-wordcount: '1312'
+ht-degree: 2%
 
 ---
 
 # Target 관리 API 개요
 
-이 문서에서는 이해 및 사용에 필요한 배경 정보에 대한 개요를 제공합니다 [!DNL Adobe Target Admin API]에 성공했습니다. 다음 내용은 사용자가 다음 방법을 이해하는 것으로 가정합니다. [인증 구성](../configure-authentication.md) 대상 [!DNL Adobe Target Admin API]s.
+이 문서에서는 [!DNL Adobe Target Admin API]을(를) 이해하고 성공적으로 사용하는 데 필요한 배경 정보에 대한 개요를 제공합니다. 다음 내용은 사용자가 [!DNL Adobe Target Admin API]에 대해 [인증을 구성](../configure-authentication.md)하는 방법을 이해하고 있다고 가정합니다.
 
 >[!NOTE]
 >
->을 관리하려는 경우 [!DNL Target] ui를 통해 다음을 참조하십시오. [의 관리 섹션 *Adobe Target 비즈니스 실무자 안내서*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
+>UI를 통해 [!DNL Target]을(를) 관리하려면 *Adobe Target 비즈니스 실무자 안내서*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en)의 [관리 섹션을 참조하십시오.
 >
->관리 API 및 프로필 API는 종종 총괄적으로(&quot;관리 및 프로필 API&quot;) 참조되지만, 별도로(&quot;관리 API&quot; 및 &quot;프로필 API&quot;) 참조할 수도 있습니다. Recommendations API는 의 특정 구현입니다 [!DNL Target] 관리 API.
+>관리 API 및 프로필 API는 종종 총괄적으로(&quot;관리 및 프로필 API&quot;) 참조되지만, 별도로(&quot;관리 API&quot; 및 &quot;프로필 API&quot;) 참조할 수도 있습니다. Recommendations API는 [!DNL Target] 관리 API의 특정 구현입니다.
 
 ## 시작하기 전에
 
-에 제공된 모든 코드 예에서 [관리 API](../../administer/admin-api/admin-api-overview-new.md), 바꾸기 {tenant} 임차인 값으로, `your-bearer-token` jwt 및 `your-api-key` 에서 API 키 사용 [Adobe Developer 콘솔](https://developer.adobe.com/console/home). 테넌트 및 JWT에 대한 자세한 내용은 방법 문서 를 참조하십시오. [인증 구성](../configure-authentication.md) Adobe [!DNL Target] 관리 API.
+[관리 API](../../administer/admin-api/admin-api-overview-new.md)에 대해 제공된 모든 코드 예제에서 {tenant}을(를) 테넌트 값으로, `your-bearer-token`을(를) JWT로 생성한 액세스 토큰으로, `your-api-key`을(를) [Adobe Developer Console](https://developer.adobe.com/console/home)의 API 키로 바꿉니다. 테넌트 및 JWT에 대한 자세한 내용은 Adobe [!DNL Target] 관리 API에 대해 [인증을 구성](../configure-authentication.md)하는 방법에 대한 문서를 참조하십시오.
 
 ## 버전 매기기
 
 모든 API에는 연결된 버전이 있습니다. 사용하려는 API의 올바른 버전을 제공하는 것이 중요합니다.
 
-요청에 페이로드(POST 또는 PUT)가 포함되어 있으면 `Content-Type` 요청의 헤더는 버전을 지정하는 데 사용됩니다.
+요청에 페이로드(POST 또는 PUT)가 포함된 경우 요청의 `Content-Type` 헤더를 사용하여 버전을 지정합니다.
 
-요청에 페이로드(GET, DELETE 또는 OPTIONS)가 포함되어 있지 않으면 `Accept` 머리글은 버전을 지정하는 데 사용됩니다.
+요청에 페이로드(GET, DELETE 또는 OPTIONS)가 포함되어 있지 않으면 `Accept` 헤더를 사용하여 버전을 지정합니다.
 
 버전을 제공하지 않으면 호출이 기본적으로 V1(application/vnd.adobe.target.v1+json)로 설정됩니다.
 
@@ -56,7 +56,7 @@ ht-degree: 3%
 
 관리 Postman 컬렉션
 
-Postman은 API 호출을 쉽게 실행할 수 있는 애플리케이션입니다. 이 [Target 관리 API Postman 컬렉션](https://developers.adobetarget.com/api/#admin-postman-collection) 활동, 대상, 오퍼, 보고서, Mbox 및 환경을 사용한 인증이 필요한 모든 Target 관리 API 호출을 포함합니다
+Postman은 API 호출을 쉽게 실행할 수 있는 애플리케이션입니다. 이 [Target 관리 API Postman 컬렉션](https://developers.adobetarget.com/api/#admin-postman-collection)에는 활동, 대상, 오퍼, 보고서, Mbox 및 환경을 사용하여 인증이 필요한 모든 Target 관리 API 호출이 포함되어 있습니다
 
 ## 응답 코드
 
@@ -64,11 +64,11 @@ Postman은 API 호출을 쉽게 실행할 수 있는 애플리케이션입니다
 
 | 상태 | 의미 | 설명 |
 | --- | --- | --- |
-| 200 | [확인](https://www.rfc-editor.org/rfc/rfc7231#section-6.3.1) | OK |  |
+| 200 | [확인](https://www.rfc-editor.org/rfc/rfc7231#section-6.3.1) | 확인 |  |
 | 400 | [잘못된 요청](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.1) | 잘못된 요청. 요청에 제공된 데이터가 잘못되었을 가능성이 큽니다. |  |
-| 401 | [승인되지 않음](https://www.rfc-editor.org/rfc/rfc7235#section-3.1) | 사용자는 이 작업을 수행할 수 없습니다. |  |
-| 403 | [금지됨](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.3) | 이 리소스에 대한 액세스가 금지되어 있습니다. |  |
-| 404 | [발견되지 않음](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.4) | 참조된 리소스를 찾을 수 없습니다. |  |
+| 401 | [권한 없음](https://www.rfc-editor.org/rfc/rfc7235#section-3.1) | 사용자는 이 작업을 수행할 수 없습니다. |  |
+| 403 | [사용할 수 없음](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.3) | 이 리소스에 대한 액세스가 금지되어 있습니다. |  |
+| 404 | [찾을 수 없음](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.4) | 참조된 리소스를 찾을 수 없습니다. |  |
 
 ## 활동
 
@@ -78,7 +78,7 @@ Postman은 API 호출을 쉽게 실행할 수 있는 애플리케이션입니다
 * [경험 타겟팅(XT)](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html)
 * [Recommendations](https://experienceleague.adobe.com/docs/target/using/activities/recommendations-activity.html)
 * [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html)
-* [다변량 테스트 (MVT)](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html)
+* [MVT(다변량 테스트)](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html)
 
 ## 일괄 업데이트
 
@@ -98,7 +98,7 @@ Postman은 API 호출을 쉽게 실행할 수 있는 애플리케이션입니다
 
 요청의 작업은 종종 종속됩니다. 예를 들어 한 작업의 출력이 다음 작업의 입력에 사용될 수 있습니다. 예를 들어 operationId=0에서 만든 오퍼는 campaign 만들기 operationId=1에서 사용해야 합니다.
 
-두 배치 작업을 함께 연결하려면 종속 작업에 필요한 작업의 ID를 지정하십시오. (예: &quot;dependsOnOperationId&quot; : 5) 또한 일괄 처리 작업의 POST 요청을 통해 생성된 리소스의 ID를 &quot;relativeUrl&quot; 및 &quot;body&quot;의 종속 작업에 모두 사용할 수 있습니다.
+두 배치 작업을 함께 연결하려면 종속 작업에 필요한 작업의 ID를 지정하십시오(예: &quot;dependsOnOperationId&quot; : 5). 또한 일괄 처리 작업의 POST 요청을 통해 생성된 리소스의 ID를 &quot;relativeUrl&quot; 및 &quot;body&quot;의 종속 작업에 모두 사용할 수 있습니다.
 
 #### 권한 및 제한
 
@@ -110,15 +110,15 @@ Postman은 API 호출을 쉽게 실행할 수 있는 애플리케이션입니다
 
 | 특성 | 설명 | 제한 | 기본값 |
 | --- | --- | --- | --- |
-| body | http 일괄 처리 작업의 본문입니다. 은 POST 및 PUT을 제외한 모든 작업에 대해 무시됩니다. 은(는) 이전 배치 작업의 ID를 참조할 수 있습니다(예: &quot;offerId&quot;: &quot;{operationIdResponse:0}&quot;, &quot;segmentId&quot;: &quot;{operationIdResponse:1}&quot; | 은(는) 유효한 JSON이어야 합니다. operationIdResponse를 참조하는 경우 참조된 operationId 응답은 유효한 ID여야 하며 해당 작업에 대한 메서드는 POST 상태여야 합니다. | 빈 개체 {} |  |
+| 본문 | http 일괄 처리 작업의 본문입니다. 은 POST 및 PUT을 제외한 모든 작업에 대해 무시됩니다. 은(는) 이전 일괄 처리 작업의 ID를 참조할 수 있습니다. 예: &quot;offerId&quot;: &quot;{operationIdResponse:0}&quot;, &quot;segmentId&quot;: &quot;{operationIdResponse:1}&quot; | 은(는) 유효한 JSON이어야 합니다. operationIdResponse를 참조하는 경우 참조된 operationId 응답은 유효한 ID여야 하며 해당 작업에 대한 메서드는 POST 상태여야 합니다. | 빈 개체 {} |  |
 | dependsOnOperationIds | 지정된 작업이 성공적으로 완료된 경우에만 현재 작업이 실행되도록 하는 제한 ID 목록입니다. 을 사용하여 작업을 연결할 수 있습니다. | 최대 255개의 작업이 허용됩니다. 고유 값만 허용됩니다. 배열에서 유효한 operationId를 가리켜야 합니다. 순환 의존성은 허용되지 않습니다. |  |  |
 | 헤더 | 특정 작업과 함께 보낼 키-값 헤더의 배열입니다. Authorization 헤더를 통해 배치 API에 대한 인증을 수행한 경우 개별 작업에도 복사됩니다. | 허용된 배열의 최대 헤더 수는 50개입니다. | Content-Type: application/json |  |
 | headers->name | 헤더 이름 | 다른 헤더 이름 간에 고유해야 합니다. 헤더는 rfc에서 대소문자를 구분하지 않습니다. 그렇지 않으면 값이 서로 무시됩니다. |  |  |
 | headers->value | 헤더 값 | 해당 사항 없음 | 빈 문자열 |  |
-| 메서드를 사용합니다 | 사용할 HTTP 메서드. 사용 가능한 옵션: GET, POST, PUT, PATCH, DELETE | GET, POST, PUT, PATCH, DELETE 메서드만 허용됩니다. |  |  |
+| 방법 | 사용할 HTTP 메서드. 사용 가능한 옵션: GET, POST, PUT, PATCH, DELETE | GET, POST, PUT, PATCH, DELETE 메서드만 허용됩니다. |  |  |
 | operationId | 응답 및 참조 결과를 위한 다른 작업 중에서 작업을 식별하는 데 사용되는 작업 ID입니다. | 다른 작업들에서 고유함, 0-255 값 |  |  |
 | 작업 | 일괄 처리에서 수행할 작업 목록입니다. 주문은 관련이 없습니다. | 최대 256개의 작업이 허용됩니다. |  |  |
-| relativeUrl | &quot;/admin/rest/&quot; 뒤에 있는 관리자 rest API의 상대 URL입니다. 다음과 같은 쿼리 문자열 매개 변수를 포함할 수 있습니다. &quot;/v2/campaigns?limit=10&amp;offset=10&quot;. 은(는) 이전 배치 작업의 ID를 포함하는 URL을 참조할 수 있습니다(예: &quot;/v1/offers/{operationIdResponse:0}&quot;. 쿼리 매개 변수가 전송되는 경우 URL로 인코딩해야 합니다. | /로 시작해야 합니다(상대적). 유효한 새 JSON API만 지원됩니다. relativeURL이 잘못된 경우 특정 작업에 대한 404 응답이 반환됩니다. operationIdResponse를 참조하는 경우 참조된 operationId 응답이 유효한 ID여야 하며 해당 작업에 대한 메서드는 POST 상태여야 합니다. |  |  |
+| relativeUrl | &quot;/admin/rest/&quot; 뒤에 있는 관리자 rest API의 상대 URL입니다. 다음과 같은 쿼리 문자열 매개 변수를 포함할 수 있습니다. &quot;/v2/campaigns?limit=10&amp;offset=10&quot;. 은(는) 이전 일괄 처리 작업의 ID를 포함하는 URL을 참조할 수 있습니다(예: &quot;/v1/offers/{operationIdResponse:0}&quot;). 쿼리 매개 변수가 전송되는 경우 URL로 인코딩해야 합니다. | /로 시작해야 합니다(상대적). 유효한 새 JSON API만 지원됩니다. relativeURL이 잘못된 경우 특정 작업에 대한 404 응답이 반환됩니다. operationIdResponse를 참조하는 경우 참조된 operationId 응답이 유효한 ID여야 하며 해당 작업에 대한 메서드는 POST 상태여야 합니다. |  |  |
 
 #### 샘플 요청 개체
 
@@ -154,7 +154,7 @@ Postman은 API 호출을 쉽게 실행할 수 있는 애플리케이션입니다
 | 헤더 | 특정 작업에 대한 응답으로 전송할 키-값 헤더 배열. |  |
 | headers->name | 헤더 이름 |  |
 | headers->value | 헤더 값 |  |
-| body | http 일괄 처리 응답 작업의 본문 |  |
+| 본문 | http 일괄 처리 응답 작업의 본문 |  |
 
 #### 샘플 응답 개체
 

@@ -1,13 +1,13 @@
 ---
 keywords: mboxCreate, mboxcreate, mbox create, at.js, 함수, 함수
-description: 사용 [!UICONTROL mboxCreate()] 함수 [!DNL Adobe Target] mboxDefault 클래스 이름을 사용하여 가장 가까운 DIV에 오퍼를 적용하는 at.js JavaScript 라이브러리입니다. (at.js 1.x)
-title: 사용 방법 [!UICONTROL mboxCreate()] 기능?
+description: ' [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 [!UICONTROL mboxCreate()] 함수를 사용하여 mboxDefault 클래스 이름을 사용하는 가장 가까운 DIV에 오퍼를 적용합니다. (at.js 1.x)'
+title: '[!UICONTROL mboxCreate()] 함수를 사용하는 방법'
 feature: at.js
 exl-id: 86eba1fc-4e1d-4793-94e7-898bf81f8945
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 55%
+source-wordcount: '205'
+ht-degree: 56%
 
 ---
 
@@ -41,8 +41,8 @@ ht-degree: 55%
 
   예를 들어, 페이지에서 뒷부분에 나오는 사이트 코드 또는 기타 mbox에 사용되는 JavaScript 변수를 설정하는 오퍼가 여기에 해당합니다.
 
-* 다음 사항을 충족해야 합니다. `<div class="mboxDefault"></div>`호출 전 `[!UICONTROL mboxCreate()]`: at.js가 사용자를 위해 추가하지 않기 때문입니다.
+* at.js에서 자동으로 추가해주지 않으므로 `[!UICONTROL mboxCreate()]`을(를) 호출하기 전에 `<div class="mboxDefault"></div>`이(가) 있는지 확인하십시오.
 
 * 비어 있는 페이지 맨 위 `[!UICONTROL mboxCreate()]` 함수는 글로벌 mbox로 권장되지 않습니다.
 
-  at.js의 자동 생성된 글로벌 mbox는에서 실행되므로 더 나은 옵션입니다. `<head>` 일찍 컨텐츠를 반환할 수 있습니다.
+  at.js의 자동 생성된 글로벌 mbox는 `<head>`에서 실행되고 일찍 컨텐츠를 반환할 수 있으므로 더 나은 옵션입니다.

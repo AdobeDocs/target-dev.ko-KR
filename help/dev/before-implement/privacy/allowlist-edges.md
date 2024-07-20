@@ -1,7 +1,7 @@
 ---
 keywords: 허용 목록에 추가하다 구현, 구현, 화이트 리스트, 화이트 리스트, 허용 목록, 에지, $9
-description: 허용 목록에 추가하다 도움이 되는 호스트 목록 보기 [!DNL Adobe Target] 에지(최종 사용자에게 최적의 응답 시간을 보장하는 지리적으로 분산된 서비스 노드).
-title: How Do I 허용 목록 [!DNL Target] 에지 노드
+description: 호스트 목록을 확인하여 허용 목록에 추가하다 [!DNL Adobe Target] 에지(최종 사용자에게 최적의 응답 시간을 보장하는 지리적으로 분산된 노드)를 제공합니다.
+title: 허용 목록에 추가하다 [!DNL Target] Edge 노드는 어떻게 합니까?
 feature: Privacy & Security
 exl-id: a7e5d2fc-da8e-414d-a3da-2441ea21503d
 source-git-commit: 49b6572c0d414ab304712691c97794bb0b1e3781
@@ -11,53 +11,53 @@ ht-degree: 0%
 
 ---
 
-# 허용 목록 [!DNL Target] 에지 노드
+# [!DNL Target] 에지 노드 허용 목록
 
-허용 목록에 추가하다에 도움이 되는 정보 및 최신 호스트 목록 [!DNL Adobe Target] 가장자리.
+허용 목록에 추가하다 [!DNL Adobe Target] 가장자리를 연결하는 데 도움이 되는 정보와 최신 호스트 목록입니다.
 
-에지(edge)는 콘텐츠를 요청하는 최종 사용자가 어디에 있든지 상관없이 최적의 응답 시간을 보장하는 지리적으로 분산된 서비스 아키텍처입니다. 각 에지 노드에는 사용자의 콘텐츠 요청에 응답하고, 해당 요청에 대한 분석 데이터를 추적하는 데 필요한 모든 정보가 있습니다. 사용자 요청은 가장 가까운 에지 노드로 라우팅됩니다. 자세한 내용은 [에지 네트워크](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html#concept_0AE2ED8E9DE64288A8B30FCBF1040934).
+에지(edge)는 콘텐츠를 요청하는 최종 사용자가 어디에 있든지 상관없이 최적의 응답 시간을 보장하는 지리적으로 분산된 서비스 아키텍처입니다. 각 에지 노드에는 사용자의 콘텐츠 요청에 응답하고, 해당 요청에 대한 분석 데이터를 추적하는 데 필요한 모든 정보가 있습니다. 사용자 요청은 가장 가까운 에지 노드로 라우팅됩니다. 자세한 내용은 [에지 네트워크](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html#concept_0AE2ED8E9DE64288A8B30FCBF1040934)를 참조하십시오.
 
-허용 목록 [!DNL Target] 원하는 경우 에지 노드
+원하는 경우 [!DNL Target] 에지 노드를 허용 목록 할 수 있습니다.
 
 >[!IMPORTANT]
 >
->네트워크 주소 변환(NAT) IP 주소 허용 목록에 추가 [!DNL Target] 가장자리 및 [!DNL Target] 기사에 설명된 에지 IP 주소, 당신은 또한 모든 허용 목록에 추가하다를 해야 [!DNL Adobe Analytics] IP 주소 블록.
+>문서에 설명된 [!DNL Target] 에지 및 [!DNL Target] 에지 IP 주소의 NAT(Network Address Translation) IP 주소 허용 목록에 추가 외에 모든 [!DNL Adobe Analytics] IP 주소 블록에도 허용 목록에 추가하다해야 합니다.
 >
->자세한 내용은 [모든 Adobe Analytics IP 주소 블록](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=en#all-adobe-analytics-ip-address-blocks){target=_blank} 다음에서 *Adobe Analytics 기술 노트* 설명서를 참조하십시오.
+>자세한 내용은 *Adobe Analytics 기술 노트* 설명서에서 [모든 Adobe Analytics IP 주소 블록](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=en#all-adobe-analytics-ip-address-blocks){target=_blank}을(를) 참조하십시오.
 >
->[!DNL Adobe Target] 인프라가 업데이트되고 있으며 허용 목록에 추가하다 주소를 원하는 고객은 두 세트의 IP를 모두 사용해야 합니다. 이렇게 하지 않으면 경험을 가져오기 위한 Target API 호출이 허용 목록에 추가하다를 사용하도록 구성된 방화벽 뒤의 네트워크 내에서 비롯된 서버측 또는 하이브리드 구현을 사용하는 고객에게 영향을 줍니다.
+>[!DNL Adobe Target] 인프라가 업데이트되고 허용 목록에 추가하다 주소를 업데이트하려는 고객은 두 IP 집합을 모두 사용해야 합니다. 이렇게 하지 않으면 경험을 가져오기 위한 Target API 호출이 허용 목록에 추가하다를 사용하도록 구성된 방화벽 뒤의 네트워크 내에서 비롯된 서버측 또는 하이브리드 구현을 사용하는 고객에게 영향을 줍니다.
 >
->모든 Edge4 *x* 아래 두 표에 모두 나열된 주소는 2023년 8월 9일에 업데이트될 예정입니다.
+>아래 두 표에 모두 나열된 모든 Edge4 *x* 주소는 2023년 8월 9일에 업데이트될 예정입니다.
 
-## 네트워크 주소 변환(NAT) IP 주소 [!DNL Target] 가장자리
+## [!DNL Target] 가장자리의 NAT(Network Address Translation) IP 주소
 
-송신 IP 주소 목록 [!DNL Target] 가장자리. 이 IP를 보유하고 있다면 허용 목록 [!DNL Target] 귀하의 서비스에 연결하십시오.
+[!DNL Target] 에지의 이그레스 IP 주소 목록입니다. 허용 목록에 추가하다 [!DNL Target]에서 서비스에 연결할 수 있는 경우 해당 IP를 다운로드하십시오.
 
-| 가장자리 위치 | 이그레스 IP 주소 |
+| Edge 위치 | 이그레스 IP 주소 |
 | --- | --- |
-| Edge41(뭄바이) | 3.6.2.221<br />13.235.112.4 <br />52.66.66.192 |
-| Edge42(도쿄) | 52.69.55.232<br />43.206.61.43 <br />13.113.73.214 |
-| Edge44(미국 동부 해안) | 54.164.192.223<br />52.86.86.203 <br />54.88.167.98 |
-| Edge45(미국 서해안) | 52.40.124.129<br />54.148.219.69 <br />54.189.208.212 |
+| Edge41 (뭄바이) | 3.6.2.221<br />13.235.112.4 <br />52.66.66.192 |
+| Edge42 (도쿄) | 52.69.55.232<br />43.206.61.43 <br />13.113.73.214 |
+| Edge44 (미국 동부 해안) | 54.164.192.223<br />52.86.86.203 <br />54.88.167.98 |
+| Edge45 (미국 서부 해안) | 52.40.124.129<br />54.148.219.69 <br />54.189.208.212 |
 | Edge46(시드니) | 54.253.144.4<br />54.66.198.142 <br />13.211.218.51 |
-| Edge47(아일랜드) | 52.208.136.136<br />54.170.28.19 <br />99.80.111.82 |
-| Edge48(싱가포르) | 3.1.141.36<br />18.143.112.116 <br />52.76.61.44 |
+| Edge47 (아일랜드) | 52.208.136.136<br />54.170.28.19 <br />99.80.111.82 |
+| Edge48 (싱가포르) | 3.1.141.36<br />18.143.112.116 <br />52.76.61.44 |
 
 ## [!DNL Target] 에지 IP 주소
 
-의 IP 주소 목록 [!DNL Target] 가장자리. API를 호출하려는 경우 다음 IP 허용 목록 [!DNL Target] 가장자리.
+[!DNL Target] 가장자리의 IP 주소 목록입니다. 허용 목록에 추가하다 API를 [!DNL Target] 에지로 호출하려는 경우 해당 IP를 다운로드합니다.
 
 로드 밸런서가 트래픽 프로필에 따라 확장 및 축소되므로 이 목록은 자주 변경됩니다.
 
-| 가장자리 위치 | 도메인 | IP 주소 |
+| Edge 위치 | 도메인 | IP 주소 |
 | --- | --- | --- |
-|  | `CLIENTCODE.tt.omtrdc.net`<br />(여기서 CLIENTCODE는 [!DNL Target] 클라이언트 ID) |  |
-| Edge41(뭄바이) | `mboxedge41.tt.omtrdc.net` | 15.206.104.6<br />3.109.14.178 <br />13.234.139.131 |
-| Edge42(도쿄) | `mboxedge42.tt.omtrdc.net` | 52.194.84.34<br />3.115.158.39 <br />18.180.123.21 |
-| Edge44(미국 동부 해안) | `mboxedge44.tt.omtrdc.net` | 54.205.210.54<br />23.20.189.8 <br />35.169.173.155 |
-| Edge45(미국 서해안) | `mboxedge45.tt.omtrdc.net` | 35.161.163.45<br />44.230.114.101 <br />35.161.120.22 |
+|  | `CLIENTCODE.tt.omtrdc.net`<br />(여기서 CLIENTCODE는 [!DNL Target] 클라이언트 ID임) |  |
+| Edge41 (뭄바이) | `mboxedge41.tt.omtrdc.net` | 15.206.104.6<br />3.109.14.178 <br />13.234.139.131 |
+| Edge42 (도쿄) | `mboxedge42.tt.omtrdc.net` | 52.194.84.34<br />3.115.158.39 <br />18.180.123.21 |
+| Edge44 (미국 동부 해안) | `mboxedge44.tt.omtrdc.net` | 54.205.210.54<br />23.20.189.8 <br />35.169.173.155 |
+| Edge45 (미국 서부 해안) | `mboxedge45.tt.omtrdc.net` | 35.161.163.45<br />44.230.114.101 <br />35.161.120.22 |
 | Edge46(시드니) | `mboxedge46.tt.omtrdc.net` | 3.104.142.61<br />52.62.4.152 <br />54.253.105.140 |
-| Edge47(아일랜드) | `mboxedge47.tt.omtrdc.net` | 18.203.168.186<br />54.228.83.91 <br />54.217.181.83 |
-| Edge48(싱가포르) | `mboxedge48.tt.omtrdc.net` | 54.179.6.70<br />13.215.150.94 <br />18.136.47.70 |
+| Edge47 (아일랜드) | `mboxedge47.tt.omtrdc.net` | 18.203.168.186<br />54.228.83.91 <br />54.217.181.83 |
+| Edge48 (싱가포르) | `mboxedge48.tt.omtrdc.net` | 54.179.6.70<br />13.215.150.94 <br />18.136.47.70 |
 
 로드 밸런서가 트래픽 프로필의 변경을 감지하면 로드 밸런서가 증가하거나 감소합니다. Elastic Load Balancing이 확장되는 데 필요한 시간은 감지된 변경 사항에 따라 1분에서 7분 사이일 수 있습니다. 로드 밸런서가 확장되면 새 IP 주소 목록으로 DNS 레코드를 업데이트합니다. Elastic Load Balancing은 증가된 용량을 활용하기 위해 DNS 기록인 60초에서 TTL 설정을 사용합니다.

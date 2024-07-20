@@ -1,12 +1,12 @@
 ---
-title: 에서 getAttributes 사용 [!DNL Adobe Target] .NET SDK 사용
-description: getAttributes()를 사용하여 실험과 개인화된 경험을 가져오는 방법을 알아봅니다. [!DNL Target] 속성 값을 추출할 수 있습니다.
+title: .NET SDK와 함께  [!DNL Adobe Target] 에서 getAttributes 사용
+description: getAttributes()를 사용하여  [!DNL Target] 에서 실험과 개인화된 경험을 가져오고 특성 값을 추출하는 방법을 알아봅니다.
 feature: APIs/SDKs
 exl-id: 808da83d-3077-468b-a2ad-e35c25905f7d
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 10%
 
 ## 설명
 
-`GetAttributes()` 에서 실험 및 개인화된 경험을 가져오는 데 사용됩니다. [!DNL Target] 속성 값을 추출할 수 있습니다.
+`GetAttributes()`은(는) [!DNL Target]에서 실험과 개인화된 경험을 가져오고 특성 값을 추출하는 데 사용됩니다.
 
 ## 방법
 
@@ -28,16 +28,16 @@ TargetAttributes TargetClient.GetAttributes(TargetDeliveryRequest targetRequest,
 
 | 이름 | 유형 | 필수 | 기본값 | 설명 |
 | --- | --- | --- | --- | --- |
-| targetRequest | TargetDeliveryRequest | 아니요 | null | 동일 [!DNL Target] 다음에 사용되는 요청 [오퍼 &#x200B; 가져오기](get-offers.md) |
-| mboxNames | params 문자열[] | 아니요 | null | mbox 이름의 매개 변수 배열 |
+| targetRequest | TargetDeliveryRequest | 아니요 | null | [오퍼 가져오기](get-offers.md)에 사용된 것과 동일한 {0&#x200B;} 요청[!DNL Target] |
+| mboxNames | 매개 변수 문자열[] | 아니요 | null | mbox 이름의 매개 변수 배열 |
 
 ## 결과
 
-A `TargetAttributes` 다음에서 개체가 반환됩니다. `TargetClient.GetAttributes()` 에는 다음과 같은 속성 및 메서드가 있습니다.
+다음 속성 및 메서드를 가진 `TargetClient.GetAttributes()`에서 `TargetAttributes` 개체가 반환됩니다.
 
 | 속성/메서드 | 반환 유형 | 설명 |
 | --- | --- | --- |
-| 응답 | TargetDeliveryResponse | 다음에 의해 정상적으로 반환된 응답 개체 반환: [오퍼 가져오기](get-offers.md) |
+| 응답 | TargetDeliveryResponse | 일반적으로 [오퍼 가져오기](get-offers.md)에서 반환된 응답 개체를 반환합니다. |
 | ToDictionary | IReadOnlyDictionary | mbox 이름으로 그룹화된 키 값 쌍을 가진 사전 사전을 반환합니다. |
 | ToMboxDictionary(mboxName) | IReadOnlyDictionary | 제공된 mbox에 대한 키 값 쌍이 있는 사전을 반환합니다. |
 | GetBoolean(mboxName, key, defaultValue) | 부울 | 지정된 mbox 이름 및 속성 키에 대한 값을 반환합니다. |

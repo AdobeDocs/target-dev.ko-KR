@@ -1,6 +1,6 @@
 ---
-title: 초기화 [!DNL Adobe Target] 요청을 기록할 Node.js SDK
-description: 에 요청을 기록하는 방법 알아보기 [!DNL Adobe Target] Node.js SDK.
+title: 요청을 기록하려면  [!DNL Adobe Target] Node.js SDK를 초기화하십시오.
+description: ' [!DNL Adobe Target] Node.js SDK에서 요청을 기록하는 방법에 대해 알아봅니다.'
 feature: APIs/SDKs
 exl-id: 5db3e301-47b3-4330-b185-c0c03f72e790
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
@@ -14,9 +14,9 @@ ht-degree: 2%
 
 ## 설명
 
-날짜 [sdk 초기화](initialize-sdk.md), `options.logger` 개체는 선택 사항입니다. 그러나 문제가 발생할 때 효과적으로 디버깅하려면 `logger` sdk를 초기화할 때 개체를 제공해야 합니다.
+[SDK를 초기화](initialize-sdk.md)할 때 `options.logger` 개체는 선택적 개체입니다. 그러나 문제가 발생할 때 효과적으로 디버깅하려면 SDK를 초기화할 때 `logger` 개체를 제공해야 합니다.
 
-다음 `logger` 개체에 다음이 있어야 합니다. `debug()` 및 `error()` 메서드를 사용합니다. 적절한 로거가 제공될 때, 예: `console`, [!DNL Target] 요청 및 응답이 기록됩니다.
+`logger` 개체에는 `debug()` 및 `error()` 메서드가 있어야 합니다. `console`과(와) 같은 적절한 로거가 제공되면 [!DNL Target]개의 요청 및 응답이 기록됩니다.
 
 ## 예
 

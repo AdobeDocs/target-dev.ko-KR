@@ -1,19 +1,19 @@
 ---
 keywords: mboxDefine, mboxdefine, mboxDefine, mboxUpdate, mboxupdate, mbox 업데이트, at.js, 함수, 함수, mboxDefine0
-description: 사용 [!UICONTROL mboxDefine()] 및 [!UICONTROL mboxUpdate()] 에 대한 함수 [!DNL Adobe Target] at.js JavaScript 라이브러리 를 사용하여 mbox를 정의하거나 업데이트합니다. (at.js 1.x)
-title: 사용 방법 [!UICONTROL mboxDefine()] 및 [!UICONTROL mboxUpdate()] 기능?
+description: ' [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 [!UICONTROL mboxDefine()] 및 [!UICONTROL mboxUpdate()] 함수를 사용하여 mbox를 정의하거나 업데이트하십시오. (at.js 1.x)'
+title: '[!UICONTROL mboxDefine()] 및 [!UICONTROL mboxUpdate()] 함수를 사용하려면 어떻게 해야 합니까?'
 feature: at.js
 exl-id: 0a7dbea2-1cbd-4a5b-ba68-4c76a88d65c4
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 52%
+source-wordcount: '201'
+ht-degree: 53%
 
 ---
 
 # [!UICONTROL mboxDefine()] 및 [!UICONTROL mboxUpdate()] - at.js 1.x
 
-에서 mbox 정의 및 업데이트 [!DNL Adobe Target].
+[!DNL Adobe Target]에서 mbox를 정의하고 업데이트합니다.
 
 >[!NOTE]
 >

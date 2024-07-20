@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # AAM 세그먼트
 
-[!DNL Adobe Audience Manager] 를 통해 세그먼트를 활용할 수 있습니다. [!DNL Adobe Target] SDK. AAM 세그먼트를 활용하려면 다음 필드를 제공해야 합니다.
+[!DNL Adobe Target] SDK를 통해 [!DNL Adobe Audience Manager] 세그먼트를 활용할 수 있습니다. AAM 세그먼트를 활용하려면 다음 필드를 제공해야 합니다.
 
 >[!NOTE]
 >
@@ -25,31 +25,31 @@ ht-degree: 4%
 | `marketingCloudVisitorId` | 예 | Marketing Cloud 방문자 ID |
 | `blob` | 예 | AAM Blob을 사용하여 추가 데이터를 AAM에 보낼 수 있습니다. 비워 둘 수 없으며 크기는 1024 미만이어야 합니다. |
 
-SDK는 다음을 만들 때 이러한 필드를 자동으로 채웁니다. `getOffers` 메서드 호출이지만 유효한 방문자 쿠키가 제공되었는지 확인해야 합니다. 이 쿠키를 가져오려면 브라우저에서 VisitorAPI.js를 구현해야 합니다.
+`getOffers` 메서드를 호출할 때 SDK에서 이 필드를 자동으로 채우지만 올바른 방문자 쿠키가 제공되었는지 확인해야 합니다. 이 쿠키를 가져오려면 브라우저에서 VisitorAPI.js를 구현해야 합니다.
 
 ## Implementation 안내서
 
 ### 쿠키 사용
 
-쿠키는 상호 연관시키는 데 사용됩니다. [!DNL Adobe Audience Manager] 을 사용한 요청 [!DNL Adobe Target] 요청. 이러한 쿠키는 이 구현에 사용되는 쿠키입니다.
+쿠키는 [!DNL Adobe Audience Manager] 요청을 [!DNL Adobe Target] 요청과 상호 연결하는 데 사용됩니다. 이러한 쿠키는 이 구현에 사용되는 쿠키입니다.
 
 | 쿠키 | 이름 | 설명 |
 | --- | --- | --- |
-| 방문자 쿠키 | `AMCVS_XXXXXXXXXXXXXXXXXXXXXXXX%40AdobeOrg` | 이 쿠키는 다음 사용자에 의해 설정됩니다. `VisitorAPI.js` 로 초기화된 경우 `visitorState` 타겟에서 `getOffers` 응답. |
-| target 쿠키 | `mbox` | 웹 서버는 이름과 값을 사용하여 이 쿠키를 설정해야 합니다. `targetCookie` 타겟에서 `getOffers` 응답. |
+| 방문자 쿠키 | `AMCVS_XXXXXXXXXXXXXXXXXXXXXXXX%40AdobeOrg` | 이 쿠키는 대상 `getOffers` 응답에서 `visitorState`(으)로 초기화될 때 `VisitorAPI.js`에 의해 설정됩니다. |
+| target 쿠키 | `mbox` | 웹 서버는 대상 `getOffers` 응답의 `targetCookie` 이름과 값을 사용하여 이 쿠키를 설정해야 합니다. |
 
 ### 단계 개요
 
 사용자가 웹 서버에 요청을 보내는 브라우저에 URL을 입력한다고 가정합니다. 해당 요청을 이행하는 경우:
 
 1. 서버는 요청에서 방문자 및 타겟 쿠키를 읽습니다.
-1. 서버가 `getOffers` 방법 [!DNL Target] 사용 가능한 경우 방문자 및 타겟 쿠키를 지정하는 SDK.
-1. 다음의 경우 `getOffers` 호출이 이행됨, 값 `targetCookie` 및 `visitorState` 응답의 가 사용됩니다.
-   1. 쿠키는에서 가져온 값이 있는 응답에 설정됩니다. `targetCookie`. 이 작업은 다음을 사용하여 수행됩니다. `Set-Cookie` 응답 헤더 : 브라우저에 target 쿠키를 지속하도록 지시합니다.
-   1. 를 초기화하는 HTML 응답이 준비됩니다. `VisitorAPI.js` 및 전달 `visitorState` 대상 응답에서 가져왔습니다.
+1. 서버가 [!DNL Target] SDK의 `getOffers` 메서드를 호출하여 사용 가능한 경우 방문자 및 대상 쿠키를 지정합니다.
+1. `getOffers` 호출이 이행되면 응답의 `targetCookie` 및 `visitorState`에 대한 값이 사용됩니다.
+   1. 쿠키는 `targetCookie`에서 가져온 값으로 응답에 설정됩니다. 이 작업은 브라우저에 타겟 쿠키를 지속하도록 알리는 `Set-Cookie` 응답 헤더를 사용하여 수행됩니다.
+   1. `VisitorAPI.js`을(를) 초기화하고 대상 응답에서 `visitorState`을(를) 전달하는 HTML 응답이 준비되었습니다.
 1. HTML 응답이 브라우저에 로드되었습니다.
-   1. `VisitorAPI.js` 는 문서 헤더에 포함됩니다.
-   1. VisitorAPI가 다음으로 초기화됨 `visitorState` 다음에서 `getOffers` SDK 응답. 그러면 방문자 쿠키가 브라우저에서 설정되므로, 후속 요청 시 서버로 전송됩니다.
+   1. `VisitorAPI.js`이(가) 문서 헤더에 포함되어 있습니다.
+   1. VisitorAPI가 `getOffers` SDK 응답에서 `visitorState`(으)로 초기화되었습니다. 그러면 방문자 쿠키가 브라우저에서 설정되므로, 후속 요청 시 서버로 전송됩니다.
 
 ### 예제 코드
 
@@ -57,7 +57,7 @@ SDK는 다음을 만들 때 이러한 필드를 자동으로 채웁니다. `getO
 
 #### Node.js
 
-이 샘플은 다음을 사용합니다. [express, Node.js 웹 프레임워크](https://expressjs.com/).
+이 샘플은 [express, Node.js 웹 프레임워크](https://expressjs.com/)를 사용합니다.
 
 >[!BEGINTABS]
 
@@ -175,7 +175,7 @@ app.listen(3000, function () {
 
 #### Java
 
-이 샘플은 [봄, Java 웹 프레임워크](https://spring.io/).
+이 샘플은 [spring, Java 웹 프레임워크](https://spring.io/)를 사용합니다.
 
 >[!BEGINTABS]
 
@@ -298,4 +298,4 @@ public class TargetClientService {
 
 >[!ENDTABS]
 
-에 대한 자세한 내용 `TargetRequestUtils.java`, 참조 [유틸리티 메서드(Java)](https://experienceleague.adobe.com/docs/target-dev/developer/server-side/java/utility-methods.html){target=_blank}
+`TargetRequestUtils.java`에 대한 자세한 내용은 [유틸리티 메서드(Java)](https://experienceleague.adobe.com/docs/target-dev/developer/server-side/java/utility-methods.html){target=_blank}를 참조하십시오.

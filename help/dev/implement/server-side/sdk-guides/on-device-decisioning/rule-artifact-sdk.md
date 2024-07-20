@@ -1,18 +1,18 @@
 ---
 title: 온디바이스 의사 결정 규칙 아티팩트 자동 다운로드, 저장 및 업데이트
-description: 를 초기화하는 동안 온디바이스 의사 결정 규칙 아티팩트로 작업하는 방법을 알아봅니다. [!DNL Adobe Target] SDK.
+description: ' [!DNL Adobe Target] SDK를 초기화하는 동안 온디바이스 의사 결정 규칙 아티팩트로 작업하는 방법에 대해 알아봅니다.'
 feature: APIs/SDKs
 exl-id: be41a723-616f-4aa3-9a38-8143438bd18a
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 1%
+source-wordcount: '347'
+ht-degree: 0%
 
 ---
 
-# 를 통해 규칙 아티팩트를 자동으로 다운로드, 저장 및 업데이트 [!DNL Adobe Target] SDK
+# [!DNL Adobe Target] SDK를 통해 규칙 아티팩트를 자동으로 다운로드, 저장 및 업데이트
 
-이 방법은 를 초기화할 수 있을 때 가장 적합합니다. [!DNL Adobe Target] 웹 서버를 초기화하고 시작하는 동시에 SDK를 사용할 수 있습니다. 규칙 아티팩트는 [!DNL Adobe Target] 웹 서버 애플리케이션이 요청을 제공하기 전에 SDK를 통해 메모리에 캐시됩니다. 웹 애플리케이션이 실행되면 다음을 모두 수행합니다 [!DNL Adobe Target] 결정은 메모리 내 규칙 아티팩트를 사용하여 실행됩니다. 캐시된 규칙 아티팩트는 다음을 기반으로 업데이트됩니다. `pollingInterval` sdk 초기화 단계에서 를 지정합니다.
+이 방법은 웹 서버를 초기화하고 시작할 때 [!DNL Adobe Target] SDK를 초기화할 수 있는 경우에 가장 적합합니다. 규칙 아티팩트는 웹 서버 응용 프로그램이 요청을 제공하기 전에 [!DNL Adobe Target] SDK에서 다운로드하고 메모리에 캐시됩니다. 웹 응용 프로그램이 실행되고 나면 메모리 내 규칙 아티팩트를 사용하여 모든 [!DNL Adobe Target] 결정이 실행됩니다. 캐시된 규칙 아티팩트는 SDK 초기화 단계에서 지정한 `pollingInterval`을(를) 기반으로 업데이트됩니다.
 
 ## 단계 요약
 
@@ -92,10 +92,10 @@ npm i @adobe/target-nodejs-sdk -P
    TargetClient targetClient = TargetClient.create(config);
    ```
 
-1. 클라이언트와 organizationId를 모두 검색할 수 있습니다. [!DNL Adobe Target] 로 이동하여 **[!UICONTROL 관리]** > **[!UICONTROL 구현]**, 여기에 표시된 대로
+1. 아래와 같이 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**(으)로 이동하여 [!DNL Adobe Target]에서 클라이언트와 organizationId를 모두 검색할 수 있습니다.
 
    &lt;!— image-client-code.png 삽입 —>
-   ![Target의 관리 아래에 있는 구현 페이지](assets/asset-rule-artifact-3.png)
+   ![Target에서 관리 아래의 구현 페이지](assets/asset-rule-artifact-3.png)
 
 ## 3. 규칙 아티팩트 저장 및 사용
 
@@ -146,9 +146,9 @@ TargetDeliveryResponse response = targetClient.getOffers(request);
 
 >[!NOTE]
 >
->위의 코드 샘플에서 `TargetClient` 개체는 메모리 내 규칙 아티팩트에 대한 참조를 보유합니다. 표준 SDK 메서드를 호출하는 데 이 개체를 사용하면 의사 결정에 메모리 내 규칙 아티팩트가 사용됩니다. 애플리케이션이 클라이언트 요청을 초기화하여 수신하는 파일 이외의 파일에서 SDK 메서드를 호출해야 하는 구조로 되어 있고 해당 파일에 TargetClient 개체에 대한 액세스 권한이 없는 경우 JSON 페이로드를 다운로드하여 로컬 JSON 파일에 저장하여 SDK를 초기화해야 하는 다른 파일에서 사용할 수 있습니다. 이에 대해서는 다음 섹션에서 설명합니다 [json 페이로드를 사용하여 규칙 아티팩트 다운로드](rule-artifact-json.md).
+>위의 코드 샘플에서 `TargetClient` 개체는 메모리 내 규칙 아티팩트에 대한 참조를 보유합니다. 표준 SDK 메서드를 호출하는 데 이 개체를 사용하면 의사 결정에 메모리 내 규칙 아티팩트가 사용됩니다. 애플리케이션이 클라이언트 요청을 초기화하여 수신하는 파일 이외의 파일에서 SDK 메서드를 호출해야 하는 구조로 되어 있고 해당 파일에 TargetClient 개체에 대한 액세스 권한이 없는 경우 JSON 페이로드를 다운로드하여 로컬 JSON 파일에 저장하여 SDK를 초기화해야 하는 다른 파일에서 사용할 수 있습니다. 다음 절에서는 [JSON 페이로드를 사용하여 규칙 아티팩트를 다운로드](rule-artifact-json.md)하는 방법에 대해 설명합니다.
 
-다음은 를 초기화한 후 웹 애플리케이션을 시작하는 예입니다. [!DNL Adobe Target] SDK.
+다음은 [!DNL Adobe Target] SDK를 초기화한 후 웹 응용 프로그램을 시작하는 예입니다.
 
 >[!BEGINTABS]
 

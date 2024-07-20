@@ -1,6 +1,6 @@
 ---
-title: 에서 getAttributes 사용 [!DNL Adobe Target] Java SDK 사용
-description: getAttributes()를 사용하여 실험과 개인화된 경험을 가져오는 방법을 알아봅니다. [!DNL Target] 속성 값을 추출할 수 있습니다.
+title: Java SDK를 사용하여  [!DNL Adobe Target] 에서 getAttributes 사용
+description: getAttributes()를 사용하여  [!DNL Target] 에서 실험과 개인화된 경험을 가져오고 특성 값을 추출하는 방법을 알아봅니다.
 feature: APIs/SDKs
 exl-id: e493e1b9-7180-4a7c-b98d-be84cc3a57c3
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
@@ -14,7 +14,7 @@ ht-degree: 13%
 
 ## 설명
 
-`getAttributes()` 에서 실험 및 개인화된 경험을 가져오는 데 사용됩니다. [!DNL Target] 속성 값을 추출할 수 있습니다.
+`getAttributes()`은(는) [!DNL Target]에서 실험과 개인화된 경험을 가져오고 특성 값을 추출하는 데 사용됩니다.
 
 ## 방법
 
@@ -28,13 +28,13 @@ Attributes TargetClient.getAttributes(TargetDeliveryRequest targetRequest, Strin
 
 | 이름 | 유형 | 필수 | 기본값 | 설명 |
 | --- | --- | --- | --- | --- |
-| targetRequest | TargetDeliveryRequest | 예 | 없음 | 에 사용된 것과 동일한 target 요청 [오퍼 &#x200B; 가져오기](get-offers.md) |
+| targetRequest | TargetDeliveryRequest | 예 | 없음 | [오퍼 가져오기](get-offers.md)에 사용된 것과 동일한 &#x200B; 대상 요청 |
 | mboxNames | var-args 배열 | 아니요 | 없음 | mbox 이름의 var-args 배열 |
 
 
 ## 결과
 
-An `Attributes` 다음에서 개체가 반환됩니다. `TargetClient.getAttributes()` 에는 다음과 같은 메서드가 있습니다.
+다음 메서드를 사용하는 `TargetClient.getAttributes()`에서 `Attributes` 개체가 반환됩니다.
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |

@@ -1,25 +1,25 @@
 ---
 title: Adobe Target 배달 API 단일 또는 일괄 배달
-description: 사용 방법 [!UICONTROL Adobe Target 게재 API] 단일 또는 일괄 게재 호출
+description: '[!UICONTROL Adobe Target Delivery API]개의 단일 또는 일괄 게재 호출을 사용하는 방법'
 keywords: 배달 api
 exl-id: 525cd1f2-616a-486c-8f49-8117615500bb
 feature: APIs/SDKs
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
 
 # 단일 또는 일괄 게재
 
-다음 [!UICONTROL Adobe Target 게재 API] 는 단일 또는 일괄 게재 호출을 지원합니다. 서버에서 단일 또는 여러 mbox에 대한 콘텐츠를 요청할 수 있습니다.
+[!UICONTROL Adobe Target Delivery API]은(는) 단일 또는 일괄 게재 호출을 지원합니다. 서버에서 단일 또는 여러 mbox에 대한 콘텐츠를 요청할 수 있습니다.
 
 단일 호출 대 일괄 호출을 수행하기로 결정할 때 성능 비용을 측정합니다. 사용자에게 표시해야 하는 모든 콘텐츠를 알고 있는 경우, 가장 좋은 방법은 여러 개의 단일 게재 호출을 방지하기 위해 단일 배치 게재 호출로 모든 mbox에 대한 콘텐츠를 검색하는 것입니다.
 
 ## 단일 게재 호출
 
-를 통해 사용자에게 하나의 mbox에 대해 표시할 경험을 검색할 수 있습니다. [!UICONTROL Adobe Target 게재 API]. 단일 게재 호출을 수행하는 경우 사용자를 위한 mbox에 대한 추가 콘텐츠를 검색하려면 다른 서버 호출을 시작해야 합니다. 이 작업은 시간이 지남에 따라 비용이 많이 소요될 수 있으므로 단일 배달 API 호출을 사용할 때 접근 방식을 평가해야 합니다.
+[!UICONTROL Adobe Target Delivery API]을(를) 통해 하나의 mbox에 대해 사용자에게 표시할 경험을 검색할 수 있습니다. 단일 게재 호출을 수행하는 경우 사용자를 위한 mbox에 대한 추가 콘텐츠를 검색하려면 다른 서버 호출을 시작해야 합니다. 이 작업은 시간이 지남에 따라 매우 비용이 많이 소요될 수 있으므로 단일 배달 API 호출을 사용할 때 접근 방식을 평가해야 합니다.
 
 ```
 curl -X POST \
@@ -55,7 +55,7 @@ curl -X POST \
 }'
 ```
 
-위의 단일 게재 호출 예제에서 경험을 검색하여 사용자에게 표시합니다. `tntId`: `abcdefghijkl00023.1_1` 의 경우 `mbox`:`SummerOffer` 웹 채널에서 확인할 수 있습니다. 이 단일 게재 호출은 다음 응답을 생성합니다.
+위의 단일 게재 호출 예제에서 웹 채널의 `mbox`:`SummerOffer`에 대해 `tntId`: `abcdefghijkl00023.1_1`을(를) 사용하여 사용자에게 표시하도록 경험이 검색됩니다. 이 단일 게재 호출은 다음 응답을 생성합니다.
 
 ```
 {
@@ -83,11 +83,11 @@ curl -X POST \
 }
 ```
 
-응답에서 다음을 확인합니다. `content` 필드에는 SummerOffer mbox에 해당하는 웹에서 사용자에게 표시되는 경험을 설명하는 HTML이 포함됩니다.
+응답에서 `content` 필드에는 SummerOffer mbox에 해당하는 웹에 대해 사용자에게 표시되는 경험을 설명하는 HTML이 포함됩니다.
 
 ### 페이지 로드 실행
 
-AB가 바닥글이나 머리글에 있는 글꼴을 테스트하는 것과 같이 웹 채널에서 페이지 로드가 발생할 때 표시되어야 하는 경험이 있는 경우 다음을 지정할 수 있습니다 `pageLoad` 다음에서 `execute` 적용해야 하는 모든 수정 사항을 검색하는 필드입니다.
+AB가 바닥글이나 머리글에 있는 글꼴을 테스트하는 것과 같이 웹 채널에서 페이지를 로드할 때 표시되어야 하는 경험이 있는 경우 `execute` 필드에 `pageLoad`을(를) 지정하여 적용해야 하는 모든 수정 사항을 검색할 수 있습니다.
 
 ```
 curl -X POST \
@@ -117,7 +117,7 @@ curl -X POST \
 }'
 ```
 
-위의 샘플 호출은 페이지가 표시될 때 사용자를 표시하는 모든 경험을 검색합니다 `https://target.enablementadobe.com/react/demo/#/` 을 로드합니다.
+위의 샘플 호출은 `https://target.enablementadobe.com/react/demo/#/` 페이지가 로드될 때 사용자에게 표시할 모든 경험을 검색합니다.
 
 ```
 {
@@ -155,7 +155,7 @@ curl -X POST \
   }
 ```
 
-다음에서 `content` 필드: 페이지 로드 시 적용해야 하는 수정 사항을 검색할 수 있습니다. 위의 예에서 헤더에 있는 링크의 이름을 지정해야 합니다 *수정된 홈*.
+`content` 필드에서 페이지 로드 시 적용해야 하는 수정 사항을 검색할 수 있습니다. 위의 예에서는 헤더의 링크 이름을 *수정된 홈*&#x200B;으로 지정해야 합니다.
 
 ## 일괄 처리된 게재 호출
 
@@ -203,7 +203,7 @@ curl -X POST \
 }'
 ```
 
-위의 일괄 처리 게재 호출 예제에서 경험은 을 통해 사용자에게 표시되도록 검색됩니다. `tntId`: `abcdefghijkl00023.1_1` 다발성 `mbox`:`SummerOffer`, `SummerShoesOffer`, 및 `SummerDressOffer`. 이 사용자를 위해 여러 mbox에 대한 경험을 표시해야 하므로 이러한 요청을 일괄 처리하고 세 개의 개별 게재 호출 대신 하나의 서버 호출을 수행할 수 있습니다.
+위의 일괄 처리된 게재 호출 예제에서 여러 `mbox`:`SummerOffer`, `SummerShoesOffer` 및 `SummerDressOffer`에 대해 `tntId`: `abcdefghijkl00023.1_1`을(를) 가진 사용자에게 표시할 경험이 검색됩니다. 이 사용자를 위해 여러 mbox에 대한 경험을 표시해야 하므로 이러한 요청을 일괄 처리하고 세 개의 개별 게재 호출 대신 하나의 서버 호출을 수행할 수 있습니다.
 
 ```
 {
@@ -252,4 +252,4 @@ curl -X POST \
 }
 ```
 
-위의 응답에서 다음을 확인할 수 있습니다. `content` 각 mbox의 필드에서는 각 mbox에 대해 사용자에게 표시할 경험의 HTML 표현을 검색할 수 있습니다.
+위의 응답에서 각 mbox의 `content` 필드 내에서 각 mbox에 대해 사용자에게 표시할 경험의 HTML 표현을 검색할 수 있음을 알 수 있습니다.

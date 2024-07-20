@@ -1,11 +1,11 @@
 ---
-title: 에서 이벤트 구독 [!DNL Adobe Target] Python SDK
-description: Python SDK 내에서 발생하는 다양한 이벤트를 구독하는 방법을 알아봅니다. [!UICONTROL OnDeviceDecisioningHandler] 개체.
+title: ' [!DNL Adobe Target] Python SDK에서 이벤트 구독'
+description: '[!UICONTROL OnDeviceDecisioningHandler] 개체를 사용하여 Python SDK 내에서 발생하는 다양한 이벤트를 구독하는 방법에 대해 알아봅니다.'
 feature: APIs/SDKs
 exl-id: 4e32e3b5-6072-4703-b09d-abb467aa1304
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '165'
 ht-degree: 3%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 3%
 
 ## 설명
 
-날짜 [sdk 초기화](initialize-sdk.md), `options["events"]` dict는 이벤트 이름 키와 콜백 함수 값이 있는 선택적 개체입니다. SDK 내에서 발생하는 다양한 이벤트를 구독하는 데 사용할 수 있습니다. 예: `client_ready` event는 SDK가 메서드 호출을 위해 준비될 때 호출되는 콜백 함수와 함께 사용할 수 있습니다.
+[SDK를 초기화](initialize-sdk.md)할 때 `options["events"]` dict는 이벤트 이름 키와 콜백 함수 값이 있는 선택적 개체입니다. SDK 내에서 발생하는 다양한 이벤트를 구독하는 데 사용할 수 있습니다. 예를 들어 `client_ready` 이벤트는 SDK에서 메서드 호출을 수행할 준비가 되었을 때 호출되는 콜백 함수와 함께 사용할 수 있습니다.
 
-다음의 경우 `callback` 함수가 호출되면 이벤트 개체가 전달됩니다. 각 이벤트에는 `type` 해당 이벤트 이름과 일부 이벤트에는 관련 정보가 포함된 추가 속성이 포함됩니다.
+`callback` 함수가 호출되면 이벤트 개체가 전달됩니다. 각 이벤트에는 이벤트 이름에 해당하는 `type`이(가) 있으며, 일부 이벤트에는 관련 정보가 있는 추가 속성이 포함되어 있습니다.
 
 ## 이벤트
 

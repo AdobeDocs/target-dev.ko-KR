@@ -1,11 +1,11 @@
 ---
 title: Adobe Target SDK를 사용하여 개인화 게재
-description: 을 사용하여 개인화를 제공하는 방법 알아보기 [!UICONTROL 온디바이스 의사 결정].
+description: '[!UICONTROL on-device decisioning]을(를) 사용하여 개인화를 제공하는 방법을 알아봅니다.'
 feature: APIs/SDKs
 exl-id: bac64c78-0d3a-40d7-ae2b-afa0f1b8dc4f
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -14,73 +14,73 @@ ht-degree: 0%
 
 ## 단계 요약
 
-1. 사용 [!UICONTROL 온디바이스 의사 결정] (조직)
-1. 만들기 [!UICONTROL 경험 타기팅] (XT) 활동
+1. 조직에 대해 [!UICONTROL on-device decisioning] 사용
+1. [!UICONTROL Experience Targeting](XT) 활동 만들기
 1. 대상자별 개인화된 경험 정의
 1. 대상자당 개인화된 경험 확인
 1. 보고 설정
 1. KPI 추적을 위한 지표 추가
 1. 애플리케이션에서 개인화된 오퍼 구현
 1. 전환 이벤트를 추적하는 코드 구현
-1. 활성화 [!UICONTROL 경험 타기팅] (XT) 개인화 활동
+1. [!UICONTROL Experience Targeting](XT) 개인화 활동 활성화
 
 당신이 여행사라고 가정해 보세요. 특정 여행 패키지를 25% 할인된 가격으로 맞춤형 오퍼를 제공하고자 합니다. 오퍼가 사용자에게 반향을 일으키도록 하려면 대상 도시의 랜드마크를 표시하기로 합니다. 또한 개인화된 오퍼의 게재가 거의 0에 가까운 지연 시간에 실행되어 사용자 경험에 부정적인 영향을 주지 않고 결과를 왜곡하려고 합니다.
 
-## 1. 활성화 [!UICONTROL 온디바이스 의사 결정] (조직)
+## 1. 조직에 대해 [!UICONTROL on-device decisioning] 사용
 
-1. 온디바이스 의사 결정을 활성화하면 A/B 활동이 거의 0에 가까운 지연 시간에 실행됩니다. 이 기능을 사용하려면 다음 위치로 이동하십시오. **[!UICONTROL 관리]** > **[!UICONTROL 구현]** > **[!UICONTROL 계정 세부 정보]** 위치: [!DNL Adobe Target], 및 활성화 **[!UICONTROL 온디바이스 의사 결정]** 토글.
+1. 온디바이스 의사 결정을 활성화하면 A/B 활동이 거의 0에 가까운 지연 시간에 실행됩니다. 이 기능을 사용하려면 [!DNL Adobe Target]에서 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]**(으)로 이동하여 **[!UICONTROL On-Device Decisioning]** 전환을 사용하도록 설정하십시오.
 
    ![대체 이미지](assets/asset-odd-toggle.png)
 
    >[!NOTE]
    >
-   >관리자 또는 승인자가 있어야 합니다. [사용자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) 을(를) 활성화 또는 비활성화하려면 [!UICONTROL 온디바이스 의사 결정] 토글.
+   >[!UICONTROL On-Device Decisioning] 전환을 활성화하거나 비활성화하려면 관리자 또는 승인자 [사용자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html)이(가) 있어야 합니다.
 
-   활성화 후 **[!UICONTROL 온디바이스 의사 결정]** 전환, [!DNL Adobe Target] 생성 시작 *규칙 아티팩트* 클라이언트.
+   **[!UICONTROL On-Device Decisioning]** 전환을 활성화한 후 [!DNL Adobe Target]에서 클라이언트에 대한 *규칙 아티팩트*&#x200B;를 생성하기 시작합니다.
 
-## 2. 만들기 [!UICONTROL 경험 타기팅] (XT) 활동
+## 2. [!UICONTROL Experience Targeting](XT) 활동 만들기
 
-1. 위치 [!DNL Adobe Target]로 이동한 다음 **[!UICONTROL 활동]** 페이지를 선택한 다음 **[!UICONTROL 활동 만들기]** > **[!UICONTROL 경험 타기팅]**.
+1. [!DNL Adobe Target]에서 **[!UICONTROL Activities]** 페이지로 이동한 다음 **[!UICONTROL Create Activity]** > **[!UICONTROL Experience Targeting]**&#x200B;을(를) 선택합니다.
 
    ![대체 이미지](assets/asset-xt.png)
 
-1. 다음에서 **[!UICONTROL 경험 타깃팅 활동 만들기]** 모달, 기본값 유지 **[!UICONTROL 웹]** 옵션 선택됨 (1), 선택 **[!UICONTROL 양식]** 경험 작성기 (2)로서 작업 공간 및 속성 (3)을 선택하고 **[!UICONTROL 다음]** (4)
+1. **[!UICONTROL Create Experience Targeting Activity]** 모달에서 기본 **[!UICONTROL Web]** 옵션을 선택한 상태로 둡니다(1). **[!UICONTROL Form]**&#x200B;을(를) 경험 작성기로 선택합니다(2). 작업 공간 및 속성을 선택합니다(3). **[!UICONTROL Next]**(4)을(를) 클릭합니다.
 
    ![대체 이미지](assets/asset-xt-next.png)
 
 ## 3. 대상자별로 개인화된 경험 정의
 
-1. 다음에서 **[!UICONTROL 경험]** 활동 만들기 단계에서 **[!UICONTROL 대상 변경]** 이를 통해 캘리포니아 주 샌프란시스코로 여행하고자 하는 방문자를 대상으로 청중을 모집할 수 있습니다.
+1. **[!UICONTROL Experiences]** 활동 만들기 단계에서 **[!UICONTROL Change Audience]**&#x200B;을(를) 클릭하여 캘리포니아주 샌프란시스코로 여행하려는 방문자의 대상을 만듭니다.
 
    ![대체 이미지](assets/asset-change-audience.png)
 
-1. 다음에서 **[!UICONTROL 대상자 만들기]** 모달, 사용자 지정 규칙을 정의합니다. `destinationCity = San Francisco`. 이는 샌프란시스코로 이동하고자 하는 사용자 그룹을 정의합니다.
+1. **[!UICONTROL Create Audience]** 모달에서 `destinationCity = San Francisco`인 사용자 지정 규칙을 정의합니다. 이는 샌프란시스코로 이동하고자 하는 사용자 그룹을 정의합니다.
 
    ![대체 이미지](assets/asset-audience-sf.png)
 
-1. 아직 **[!UICONTROL 경험]** 단계, 골든 게이트 브리지에 대한 특별 오퍼를 렌더링하려는 응용 프로그램 내의 위치 이름 (1)을 입력합니다. 단, 샌프란시스코로 향하는 위치에 대해서만 가능합니다. 여기에 표시된 예에서 홈 페이지는 HTML 오퍼 (2)에 대해 선택한 위치이며, 다음에서 정의됩니다. **[!UICONTROL 콘텐츠]** 영역입니다.
+1. 여전히 **[!UICONTROL Experiences]** 단계에서는 골든 게이트 Bridge에 대한 특별 오퍼를 렌더링할 응용 프로그램 내 위치(1)의 이름을 입력합니다. 단, 샌프란시스코로 이동하는 경우에만 가능합니다. 여기에 표시된 예에서 홈 페이지는 **[!UICONTROL Content]** 영역에 정의된 HTML 오퍼 (2)에 대해 선택한 위치입니다.
 
    ![대체 이미지](assets/asset-content-sf.png)
 
-1. 다음을 클릭하여 다른 타깃팅 대상 추가 **[!UICONTROL 경험 타깃팅 추가]**. 이번에는 대상 규칙을 정의하여 뉴욕으로 이동하려는 대상을 타겟팅합니다. `destinationCity = New York`. 응용 프로그램 내에서 엠파이어 스테이트 빌딩에 대한 특별 오퍼를 렌더링할 위치를 정의합니다. 여기에 표시된 예에서는 `homepage` 은 HTML 오퍼(2)에 대해 선택된 위치이며, 다음에서 정의됩니다. **[!UICONTROL 콘텐츠]** 영역입니다.
+1. **[!UICONTROL Add Experience Targeting]**&#x200B;을(를) 클릭하여 다른 타깃팅 대상을 추가합니다. 이번에는 `destinationCity = New York`인 대상 규칙을 정의하여 New York으로 이동하려는 대상을 타기팅합니다. 응용 프로그램 내에서 엠파이어 스테이트 빌딩에 대한 특별 오퍼를 렌더링할 위치를 정의합니다. 여기에 표시된 예에서 `homepage`은(는) **[!UICONTROL Content]** 영역에 정의된 HTML 오퍼(2)에 대해 선택한 위치입니다.
 
    ![대체 이미지](assets/asset-content-ny.png)
 
 ## 4. 대상자별로 개인화된 경험 확인
 
-다음에서 **[!UICONTROL 타겟팅]** 단계에서는 대상자별로 원하는 개인화된 경험을 구성했는지 확인합니다.
+**[!UICONTROL Targeting]** 단계에서 대상자별로 원하는 개인화된 경험을 구성했는지 확인합니다.
 
 ![대체 이미지](assets/asset-verify-sf-ny.png)
 
 ## 5. 보고 설정
 
-다음에서 **[!UICONTROL 목표 및 설정]** 단계, 선택 **[!UICONTROL Adobe Target]** (으)로 **[!UICONTROL 보고 소스]** 에서 활동 결과를 보려면 [!DNL Adobe Target] UI 또는 선택 **[!UICONTROL Adobe Analytics]** Adobe Analytics UI에서 이를 확인할 수 있습니다.
+**[!UICONTROL Goals & Settings]** 단계에서 [!DNL Adobe Target] UI에서 활동 결과를 보려면 **[!UICONTROL Adobe Target]**&#x200B;을(를) **[!UICONTROL Reporting Source]**(으)로 선택하거나, Adobe Analytics UI에서 해당 결과를 보려면 **[!UICONTROL Adobe Analytics]**&#x200B;을(를) 선택하십시오.
 
 ![대체 이미지](assets/asset-reporting-sf-ny.png)
 
 ## 6. KPI 추적을 위한 지표 추가
 
-선택 **[!UICONTROL 목표 지표]** 활동의 성공을 측정합니다. 이 예에서 성공적인 전환은 사용자가 개인화된 대상 오퍼를 클릭하는지 여부를 기반으로 합니다.
+**[!UICONTROL Goal Metric]**&#x200B;을(를) 선택하여 활동의 성공을 측정합니다. 이 예에서 성공적인 전환은 사용자가 개인화된 대상 오퍼를 클릭하는지 여부를 기반으로 합니다.
 
 ## 7. 애플리케이션에서 개인화된 오퍼 구현
 

@@ -1,30 +1,30 @@
 ---
 title: Adobe Target 배달 API 클라이언트 힌트
-description: 에서 클라이언트 힌트를 사용하는 방법 [!DNL Adobe Target] 배달 API?
+description: ' [!DNL Adobe Target] 배달 API에서 클라이언트 힌트를 사용하는 방법은 무엇입니까?'
 exl-id: 317b9d7d-5b98-464e-9113-08b899ee1455
 feature: APIs/SDKs
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
 
-# 클라이언트 힌트 및 [!UICONTROL Adobe Target 게재 API]
+# 클라이언트 힌트 및 [!UICONTROL Adobe Target Delivery API]
 
-클라이언트 힌트를 (으)로 보내야 합니다. [!DNL Adobe Target] 오퍼 요청 시.
+오퍼 요청 시 클라이언트 힌트를 [!DNL Adobe Target](으)로 보내야 합니다.
 
-일반적으로 사용 가능한 모든 클라이언트 힌트를 로 전송하는 것이 좋습니다. [!DNL Target]. 자세한 내용은 [사용자 에이전트 및 클라이언트 힌트](/help/dev/implement/client-side/atjs/user-agent-and-client-hints.md) 다음에서 [클라이언트측 구현](../../implement/client-side/overview.md) 섹션.
+일반적으로 사용 가능한 모든 클라이언트 힌트를 [!DNL Target]에 보내는 것이 좋습니다. 자세한 내용은 [클라이언트측 구현](../../implement/client-side/overview.md) 섹션에서 [사용자 에이전트 및 클라이언트 힌트](/help/dev/implement/client-side/atjs/user-agent-and-client-hints.md)를 참조하십시오.
 
 ## 배달 API 직접 호출
 
 ### 브라우저에서
 
-이 경우 브라우저는 낮은 엔트로피 클라이언트 힌트를 로 보냅니다. [!DNL Target] 요청 헤더를 통해 자동으로. 그러나 이 구현에는 두 가지 브라우저 수준의 제한이 있습니다. 첫 번째 - https를 통해 요청을 하는 경우가 아니면 브라우저에서 클라이언트 힌트 헤더가 전송되지 않습니다. 두 번째 - 클라이언트 힌트는 첫 번째 요청에서에 전송되지 않습니다. [!DNL Target] 페이지에서 참조할 수 있습니다. 클라이언트 힌트 헤더는 두 번째 요청과 그 이후의 모든 요청에 대해서만 전송됩니다. 즉, 대상자 세분화 및 개인화는에서 수행할 수 없습니다 [!DNL Target] 첫 번째 페이지에서 를 방문하십시오. 이러한 두 가지 제한 사항을 모두 해결하려면 브라우저에서 사용자 에이전트 클라이언트 힌트 API 를 사용하여 클라이언트 힌트를 직접 수집한 다음 요청 페이로드에서 전송하는 것이 좋습니다.
+이 경우 브라우저는 요청 헤더를 통해 낮은 엔트로피 클라이언트 힌트를 [!DNL Target]에 자동으로 전송합니다. 그러나 이 구현에는 두 가지 브라우저 수준의 제한이 있습니다. 첫 번째 - https를 통해 요청을 하는 경우가 아니면 브라우저에서 클라이언트 힌트 헤더가 전송되지 않습니다. 두 번째 - 페이지의 [!DNL Target]에게 첫 번째 요청 시 클라이언트 힌트가 전송되지 않습니다. 클라이언트 힌트 헤더는 두 번째 요청과 그 이후의 모든 요청에 대해서만 전송됩니다. 즉, [!DNL Target]이(가) 첫 번째 페이지 방문 시 대상 세분화 및 개인화를 수행할 수 없습니다. 이러한 두 가지 제한 사항을 모두 해결하려면 브라우저에서 사용자 에이전트 클라이언트 힌트 API 를 사용하여 클라이언트 힌트를 직접 수집한 다음 요청 페이로드에서 전송하는 것이 좋습니다.
 
 ### 서버에서
 
-이 경우 클라이언트 힌트를 브라우저에서 로 수동으로 전달해야 합니다. [!DNL Target] 게재 API 요청 시.
+이 경우 배달 API 요청 시 브라우저에서 [!DNL Target](으)로 클라이언트 힌트를 수동으로 전달해야 합니다.
 
 ```
 curl -X POST 'http://mboxedge28.tt.omtrdc.net/rest/v1/delivery?client=myClientCode&sessionId=abcdefghijkl00014' -d '{

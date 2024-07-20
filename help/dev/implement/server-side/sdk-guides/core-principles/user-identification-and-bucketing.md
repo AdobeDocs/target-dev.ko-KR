@@ -5,8 +5,8 @@ exl-id: 4fcf235b-6a58-442c-ae13-9d05ec1033fc
 feature: Implement Server-side
 source-git-commit: 09a50aa67ccd5c687244a85caad24df56c0d78f5
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 5%
+source-wordcount: '1130'
+ht-degree: 3%
 
 ---
 
@@ -14,20 +14,20 @@ ht-degree: 5%
 
 ## 사용자 식별
 
-내에서 사용자를 식별할 수 있는 방법에는 여러 가지가 있습니다 [!DNL Adobe Target]. [!UICONTROL Target] 는 다음 식별자를 사용합니다.
+[!DNL Adobe Target] 내에서 사용자를 식별하는 방법에는 여러 가지가 있습니다. [!UICONTROL Target]은(는) 다음 식별자를 사용합니다.
 
 | 필드 이름 | 설명 |
 | --- | --- |
-| `tntID` | 다음 `tntId` 는 의 기본 식별자입니다. [!DNL Target] 사용자용입니다. 이 ID를 제공하거나 [!DNL Target] 요청에 포함되지 않은 경우 이 자동으로 생성됩니다. |
-| `thirdPartyId` | 다음 `thirdPartyId` 는 모든 호출과 함께 보낼 수 있는 사용자의 회사 식별자입니다. 사용자가 회사 사이트에 로그인하면 일반적으로 회사는 방문자 계정, 로열티 카드, 멤버십 번호 또는 해당 회사에 대한 기타 적용 가능한 식별자에 연결되는 ID를 만듭니다. |
-| `marketingCloudVisitorId` | 다음 `marketingCloudVisitorId` 는 서로 다른 Adobe 솔루션 간에 데이터를 병합하고 공유하는 데 사용됩니다. marketingCloudVisitorId는 Adobe Analytics 및 Adobe Audience Manager과의 통합에 필요합니다. |
-| `customerIds` | Experience Cloud 방문자 ID와 함께, 추가 [고객 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) 각 방문자에 대한 인증된 상태를 활용할 수도 있습니다. |
+| `tntID` | `tntId`은(는) 사용자의 [!DNL Target]에 있는 기본 식별자입니다. 이 ID를 제공할 수 있습니다. 그렇지 않으면 요청에 ID가 포함되지 않은 경우 [!DNL Target]에서 자동으로 생성합니다. |
+| `thirdPartyId` | `thirdPartyId`은(는) 모든 호출과 함께 보낼 수 있는 사용자의 회사 식별자입니다. 사용자가 회사 사이트에 로그인하면 일반적으로 회사는 방문자 계정, 로열티 카드, 멤버십 번호 또는 해당 회사에 대한 기타 적용 가능한 식별자에 연결되는 ID를 만듭니다. |
+| `marketingCloudVisitorId` | `marketingCloudVisitorId`은(는) 다른 Adobe 솔루션 간에 데이터를 병합하고 공유하는 데 사용됩니다. marketingCloudVisitorId는 Adobe Analytics 및 Adobe Audience Manager과의 통합에 필요합니다. |
+| `customerIds` | Experience Cloud 방문자 ID와 함께 각 방문자에 대한 추가 [고객 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) 및 인증된 상태도 활용할 수 있습니다. |
 
-## [!DNL Target] ID (tntID)
+## [!DNL Target] ID(tntID)
 
-다음 [!DNL Target] ID 또는 `tntId`는 장치 ID로 간주할 수 있습니다. 이 `tntId` 다음에 의해 자동으로 생성됨: [!DNL Adobe Target] 요청에 제공되지 않는 경우. 후속 요청에는 이 항목이 포함되어야 합니다. `tntId` 동일한 사용자가 사용하는 장치에 올바른 콘텐츠를 게재할 수 있습니다.
+[!DNL Target] ID 또는 `tntId`은(는) 장치 ID로 간주할 수 있습니다. 이 `tntId`은(는) 요청에 제공되지 않을 경우 [!DNL Adobe Target]에 의해 자동으로 생성됩니다. 동일한 사용자가 사용하는 장치에 올바른 콘텐츠를 전달하려면 후속 요청에 이 `tntId`을(를) 포함해야 합니다.
 
-다음 샘플 호출에서는 `tntId` 이(가)에 전달되지 않습니다. [!DNL Target].
+다음 샘플 호출은 `tntId`이(가) [!DNL Target]에 전달되지 않는 상황을 보여 줍니다.
 
 >[!BEGINTABS]
 
@@ -82,7 +82,7 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 >[!ENDTABS]
 
-가 없을 때 `tntId`, [!DNL Adobe Target] 다음을 생성합니다. `tntId` 와 는 다음과 같이 응답에 제공합니다.
+`tntId`이(가) 없는 경우 [!DNL Adobe Target]은(는) `tntId`을(를) 생성하여 다음과 같이 응답에 제공합니다.
 
 ```json {line-numbers="true"}
 {
@@ -97,13 +97,13 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 }
 ```
 
-이 예에서 은 `tntId` 은(는) `10abf6304b2714215b1fd39a870f01afc.35_0`. 이 점을 참고하십시오. `tntId` 는 세션 간 동일한 사용자에 대해 사용해야 합니다.
+이 예제에서 생성된 `tntId`은(는) `10abf6304b2714215b1fd39a870f01afc.35_0`입니다. 이 `tntId`은(는) 세션 간 동일한 사용자에 대해 사용해야 합니다.
 
 ## 타사 ID(thirdPartyId)
 
-조직에서 ID를 사용하여 방문자를 식별하는 경우 다음을 사용할 수 있습니다 `thirdPartyID` 콘텐츠를 게재할 수 있습니다. A `thirdPartyID` 는 최종 사용자가 웹, 모바일 또는 IoT 채널에서 비즈니스와 상호 작용하는지 여부에 관계없이 귀사에서 최종 사용자를 식별하는 데 사용하는 영구 ID입니다. 즉, `thirdPartyId` 은 여러 채널에서 사용할 수 있는 사용자 프로필 데이터를 참조합니다. 그러나 다음을 제공해야 합니다. `thirdPartyID` 마다 [!DNL Adobe Target] 게재 API 호출.
+조직에서 ID를 사용하여 방문자를 식별하는 경우 `thirdPartyID`을(를) 사용하여 콘텐츠를 전달할 수 있습니다. `thirdPartyID`은(는) 최종 사용자가 웹, 모바일 또는 IoT 채널에서 비즈니스와 상호 작용하는지 여부에 관계없이 비즈니스에서 최종 사용자를 식별하는 데 사용하는 영구 ID입니다. 즉, `thirdPartyId`은(는) 여러 채널에서 사용할 수 있는 사용자 프로필 데이터를 참조합니다. 그러나 [!DNL Adobe Target] 배달 API 호출을 수행할 때마다 `thirdPartyID`을(를) 제공해야 합니다.
 
-다음 샘플 호출에서는 `thirdPartyId`.
+다음 샘플 호출에서는 `thirdPartyId`의 사용을 보여 줍니다.
 
 >[!BEGINTABS]
 
@@ -163,13 +163,13 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 >[!ENDTABS]
 
-이 시나리오에서는 [!DNL Adobe Target] 다음을 생성합니다. `tntId` 제공된 에 매핑될 원래 호출로 전달되지 않았기 때문입니다 `thirdPartyId`.
+이 시나리오에서 [!DNL Adobe Target]은(는) 원래 호출로 전달되지 않았으므로 `tntId`을(를) 생성하며, 이 호출은 제공된 `thirdPartyId`에 매핑됩니다.
 
 ## Marketing Cloud 방문자 ID(marketingCloudVisitorId)
 
-다음 `marketingCloudVisitorId` 는 Adobe Experience Cloud의 모든 솔루션에서 방문자를 식별하는 범용 및 영구 ID입니다. 조직이 ID 서비스를 구현하면 이 ID를 사용하여 다음을 포함한 다른 Experience Cloud 솔루션에서 동일한 사이트 방문자와 해당 데이터를 식별할 수 있습니다. [!DNL Adobe Target], Adobe Analytics 및 Adobe Audience Manager. 다음을 참고하십시오. `marketingCloudVisitorId` 을(를) 통합할 때 필요합니다. [!DNL Target] 포함 [!DNL Adobe Analytics] 및 [!DNL Adobe Audience Manager].
+`marketingCloudVisitorId`은(는) Adobe Experience Cloud의 모든 솔루션에서 방문자를 식별하는 범용 및 영구 ID입니다. 조직에서 ID 서비스를 구현하면 이 ID를 사용하여 [!DNL Adobe Target], Adobe Analytics 및 Adobe Audience Manager을 비롯한 다양한 Experience Cloud 솔루션에서 동일한 사이트 방문자와 해당 데이터를 식별할 수 있습니다. [!DNL Target]을(를) [!DNL Adobe Analytics] 및 [!DNL Adobe Audience Manager]과(와) 통합할 때 `marketingCloudVisitorId`이(가) 필요합니다.
 
-다음 샘플 호출에서는 `marketingCloudVisitorId` Experience Cloud ID 서비스에서 검색한 데이터를에 전달합니다. [!DNL Target].
+다음 샘플 호출은 Experience Cloud ID 서비스에서 검색된 `marketingCloudVisitorId`이(가) [!DNL Target]에 전달되는 방법을 보여 줍니다.
 
 >[!BEGINTABS]
 
@@ -229,11 +229,11 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 >[!ENDTABS]
 
-이 시나리오에서는 [!DNL Target] 다음을 생성합니다. `tntId` 제공된 에 매핑될 원래 호출로 전달되지 않았기 때문입니다 `marketingCloudVisitorId`.
+이 시나리오에서 [!DNL Target]은(는) 원래 호출로 전달되지 않았으므로 `tntId`을(를) 생성하며, 이 호출은 제공된 `marketingCloudVisitorId`에 매핑됩니다.
 
 ## 고객 ID (customerIds)
 
-[고객 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) Experience Cloud 방문자 ID에 추가하거나 연결할 수 있습니다. 전송할 때마다 `customerIds`, `marketingCloudVisitorId` 도 제공해야 합니다. 또한, 각각의 인증 상태와 함께 제공될 수 있다 `customerId` 각 방문자에 대해. 다음과 같은 인증 상태가 사용될 수 있습니다.
+[고객 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)를 Experience Cloud 방문자 ID에 추가하거나 연결할 수 있습니다. `customerIds`을(를) 보낼 때마다 `marketingCloudVisitorId`도 제공해야 합니다. 또한 각 방문자에 대해 각 `customerId`과(와) 함께 인증 상태를 제공할 수 있습니다. 다음과 같은 인증 상태가 사용될 수 있습니다.
 
 | 인증 상태 | 사용자 상태 |
 | --- | --- |
@@ -241,7 +241,7 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 | `authenticated` | 사용자는 현재 웹 사이트 또는 앱에서 활성 세션으로 인증됩니다. |
 | `logged_out` | 사용자가 인증되었지만 로그아웃되었습니다. 사용자가 인증된 상태에서 연결을 끊으려고 했습니다. 사용자가 더 이상 인증됨으로 처리되는 것을 원치 않습니다. |
 
-다음 경우에만 주의하십시오. `customerId` 이(가) 인증된 상태이면 [!DNL Target] 저장되고 customerId에 연결된 사용자 프로필 데이터를 참조합니다. 다음과 같은 경우 `customerId` 은(는) 알 수 없거나 `logged_out` 상태, 무시되며 와 연결될 수 있는 모든 사용자 프로필 데이터가 표시됩니다 `customerId` 은 대상 타기팅에 활용되지 않습니다.
+`customerId`이(가) 인증된 상태인 경우에만 [!DNL Target]이(가) 저장되고 customerId에 연결된 사용자 프로필 데이터를 참조합니다. `customerId`이(가) 알 수 없거나 `logged_out` 상태인 경우 무시되며, 해당 `customerId`과(와) 연결할 수 있는 모든 사용자 프로필 데이터는 대상 타기팅에 사용되지 않습니다.
 
 >[!BEGINTABS]
 
@@ -311,11 +311,11 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 >[!ENDTABS]
 
-위의 예에서는 를 보내는 방법을 보여 줍니다. `customerId` 다음 포함 `authenticatedState`. 전송 시 `customerId`, `integrationCode`, `id`, 및 `authenticatedState` 및 `marketingCloudVisitorId` 필수 항목입니다. 다음 `integrationCode` 은(는) 의 별칭입니다 [고객 특성 파일](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=ko-KR) CRS를 통해서 제공했습니다.
+위의 예에서는 `authenticatedState`을(를) 사용하여 `customerId`을(를) 보내는 방법을 보여 줍니다. `customerId`을(를) 보낼 때 `integrationCode`, `id`, `authenticatedState` 및 `marketingCloudVisitorId`이(가) 필요합니다. `integrationCode`은(는) CRS를 통해 제공한 [고객 특성 파일](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=ko-KR)의 별칭입니다.
 
 ## 병합된 프로필
 
-다음을 결합할 수 있습니다 `tntId`, `thirdPartyID`, 및 `marketingCloudVisitorId` 동일한 요청에서. 이 시나리오에서는 [!DNL Adobe Target] 는 이러한 모든 ID의 매핑을 유지하고 방문자에게 고정합니다. 프로필의 기능 알아보기 [실시간으로 병합 및 동기화](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) 다른 식별자 사용.
+동일한 요청에서 `tntId`, `thirdPartyID` 및 `marketingCloudVisitorId`을(를) 결합할 수 있습니다. 이 시나리오에서는 [!DNL Adobe Target]이(가) 이러한 모든 ID의 매핑을 유지하고 방문자에게 고정합니다. 다른 식별자를 사용하여 프로필이 [실시간으로 병합 및 동기화](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html)되는 방법을 알아봅니다.
 
 >[!BEGINTABS]
 
@@ -379,14 +379,14 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 >[!ENDTABS]
 
-위의 예에서는 를 결합하는 방법을 보여 줍니다 `tntId`, `thirdPartyID`, 및 `marketingCloudVisitorId` 동일한 요청에서.
+위의 예에서는 동일한 요청에서 `tntId`, `thirdPartyID` 및 `marketingCloudVisitorId`을(를) 결합하는 방법을 보여 줍니다.
 
 ## 버킷팅
 
-을 설정하는 방법에 따라 사용자가 경험을 보게 그룹화됩니다. [!DNL Adobe Target] 활동. 위치 [!DNL Adobe Target], 버킷팅:
+[!DNL Adobe Target] 활동을 설정하는 방법에 따라 사용자가 경험을 볼 수 있도록 그룹화됩니다. [!DNL Adobe Target]에서 버킷팅은 다음과 같습니다.
 
-* **결정론적**: MurmurHash3은 사용자 ID가 일관적인 한 사용자가 그룹화되고 매번 올바른 변형을 확인하는 데 사용됩니다.
-* **고정**: [!DNL Adobe Target] 는 사용자가 사용자 프로필에 표시하는 변형을 저장하여 세션 및 채널에서 변형이 해당 사용자에게 일관되게 표시되도록 합니다. 서버측 의사 결정을 사용할 때 변형과 고착성이 보장됩니다. 온디바이스 의사 결정을 사용하면 고착성이 보장되지 않습니다.
+* **결정론적**: MurmurHash3은 사용자가 그룹화되고 사용자 ID가 일관적인 한 항상 올바른 변형을 확인하는 데 사용됩니다.
+* **고정**: [!DNL Adobe Target]은(는) 사용자 프로필에 표시되는 변형을 저장하여 세션 및 채널에서 해당 사용자에게 변형이 일관되게 표시되도록 합니다. 서버측 의사 결정을 사용할 때 변형과 고착성이 보장됩니다. 온디바이스 의사 결정을 사용하면 고착성이 보장되지 않습니다.
 
 ## 전체 버킷팅 워크플로
 
@@ -422,19 +422,19 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 다음과 같이 가정해 보십시오.
 
-* 클라이언트 코드가 있는 클라이언트 C `acmeclient`
-* ID가 있는 활동 A `1111` 및 세 가지 경험 `E1`, `E2`, `E3`
-* 경험에는 다음과 같은 배포가 있습니다. `E1` - 33%, `E2` - 33%, `E3` - 34%
+* 클라이언트 코드가 `acmeclient`인 클라이언트 C
+* 활동 A의 ID는 `1111`이고 경험은 `E1`, `E2`, `E3`입니다.
+* 경험에 다음과 같은 분포가 있습니다. `E1` - 33%, `E2` - 33%, `E3` - 34%
 
 선택 흐름은 다음과 같습니다.
 
-1. 디바이스 ID `702ff4d0-83b1-4e2e-a0a6-22cbe460eb15`
+1. 장치 ID `702ff4d0-83b1-4e2e-a0a6-22cbe460eb15`
 1. 클라이언트 코드 `acmeclient`
 1. 활동 ID `1111`
-1. 소금 `experience`
-1. 해시할 값 `acmeclient.1111.702ff4d0-83b1-4e2e-a0a6-22cbe460eb15.experience`, 해시 값 `-919077116`
-1. 해시의 절대값 `919077116`
-1. 10000 나누어서 나머지를 `7116`
-1. 나머지 이후의 값은 10000으로 나뉩니다. `0.7116`
-1. 총 경험 수에 값을 곱한 후 결과 `3 * 0.7116 = 2.1348`
-1. 경험 색인은 입니다. `2`: 를 사용하고 있으므로 세 번째 경험을 의미합니다. `0` 기반 색인화.
+1. 솔트 `experience`
+1. 해시 값 `acmeclient.1111.702ff4d0-83b1-4e2e-a0a6-22cbe460eb15.experience`, 해시 값 `-919077116`
+1. 해시 `919077116`의 절대값
+1. `7116`(으)로 10000 후 남은 시간
+1. 나머지 이후의 값은 `0.7116`10000(으)로 나뉩니다.
+1. 총 경험 수 `3 * 0.7116 = 2.1348`에 값을 곱한 후 결과
+1. 경험 인덱스는 `2`입니다. `0` 기반 인덱싱을 사용하고 있으므로 세 번째 경험을 의미합니다.

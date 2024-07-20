@@ -1,13 +1,13 @@
 ---
 keywords: registerExtension, registerextension, register extension, at.js, function, function, clientCode, serverDomain, globalMboxName, globalMboxAutoCreate, timeout, registerExtension2
-description: 사용 [!UICONTROL registerExtension()] 함수 [!DNL Adobe Target] at.js JavaScript 라이브러리를 사용하여 특정 확장을 등록할 수 있습니다. (at.js 1.x)
-title: 사용 방법 [!UICONTROL registerExtension()] 기능?
+description: ' [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 [!UICONTROL registerExtension()] 함수를 사용하여 특정 확장을 등록하십시오. (at.js 1.x)'
+title: '[!UICONTROL registerExtension()] 함수를 사용하는 방법'
 feature: at.js
 exl-id: 71decf00-84c5-4914-b0cd-bb061fa6265f
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 76%
+source-wordcount: '265'
+ht-degree: 69%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 76%
 * 매개 변수 중 하나가 제공되지 않으면 예외가 발생합니다.
 * 모듈 배열이 비어 있으면 예외가 발생합니다.
 
-`[!UICONTROL registerExtension]` 사용 방법에 대한 자세한 내용과 예를 보려면 GitHub의 [Adobe Experience Cloud Target atjs 확장 프로그램](https://github.com/Adobe-Marketing-Cloud/target-atjs-extensions) 페이지를 참조하십시오.
+`[!UICONTROL registerExtension]`을(를) 사용하는 방법에 대한 자세한 내용과 예를 보려면 GitHub의 [Adobe Experience Cloud Target atjs 확장 프로그램](https://github.com/Adobe-Marketing-Cloud/target-atjs-extensions) 페이지를 참조하십시오.
 
 ## 설정 모듈 메서드
 

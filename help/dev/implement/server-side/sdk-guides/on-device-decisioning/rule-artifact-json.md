@@ -5,8 +5,8 @@ feature: APIs/SDKs
 exl-id: 4ccfb455-f813-4bdb-a9c1-d576a110a9bb
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 1%
+source-wordcount: '292'
+ht-degree: 0%
 
 ---
 
@@ -113,7 +113,7 @@ npm i @adobe/target-nodejs-sdk -P
    TargetClient targetClient = TargetClient.create(config);
    ```
 
-1. 클라이언트 및 `organizationId` 에서 검색 가능 [!DNL Adobe Target]로 이동하여 **[!UICONTROL 관리]** > **[!UICONTROL 구현]**, 여기에 표시된 대로
+1. 아래와 같이 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**(으)로 이동하여 [!DNL Adobe Target]에서 클라이언트와 `organizationId`을(를) 모두 검색할 수 있습니다.
 
    &lt;!— image-client-code.png 삽입 —>
    ![대체 이미지](assets/asset-rule-artifact-3.png)
@@ -162,7 +162,7 @@ TargetDeliveryResponse response = targetClient.getOffers(request);
 
 >[!NOTE]
 >
->을(를) 초기화하여 [!DNL Adobe Target]JSON 페이로드를 통해 SDK를 사용하면 다음이 가능하므로 서버는 온디바이스 의사 결정 활동을 통해 즉시 요청을 제공할 준비가 된 것입니다. [!DNL Adobe Target]SDK는 규칙 아티팩트가 다운로드될 때까지 기다릴 필요가 없습니다.
+>JSON 페이로드를 통해 [!DNL Adobe Target]SDK를 초기화하면 [!DNL Adobe Target]SDK에서 규칙 아티팩트가 다운로드될 때까지 기다릴 필요가 없기 때문에 서버에서 온디바이스 의사 결정 활동을 통해 요청을 즉시 제공할 수 있습니다.
 
 다음은 JSON 페이로드 초기화 기능을 보여 주는 예입니다.
 

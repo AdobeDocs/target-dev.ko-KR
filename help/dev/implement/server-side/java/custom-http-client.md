@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # 사용자 지정 HTTP 클라이언트 구성(Java)
 
-SDK를 실행하는 애플리케이션에 사용자 정의 HTTP 클라이언트가 필요한 경우, SSL 구성 또는 요청에 기본 헤더 추가와 같은 기능을 활성화하려면 다음을 수행합니다. `TargetClient` 다음을 사용하여 구성해야 합니다. `ClientConfig.builder().httpClient()`:
+SDK를 실행하는 응용 프로그램에 사용자 지정 HTTP 클라이언트가 필요한 경우 SSL 구성 또는 요청에 기본 헤더 추가와 같은 기능을 활성화하려면 `ClientConfig.builder().httpClient()`을(를) 사용하여 `TargetClient`을(를) 구성해야 합니다.
 
 ## 기본 사용자 지정 HTTP 클라이언트 구성
 
-SDK는 현재 를 구현하는 HTTP 클라이언트를 지원합니다. `org.apache.http.client.HttpClient` 인터페이스.
+현재 SDK는 `org.apache.http.client.HttpClient` 인터페이스를 구현하는 HTTP 클라이언트를 지원합니다.
 
 ### 기본 구현
 
@@ -32,7 +32,7 @@ TargetClient targetClient = TargetClient.create(clientConfig);
 
 ## SSL 구성을 사용한 사용자 지정 HTTP 클라이언트 구성
 
-다음은에서 SSL을 구성하는 방법의 예입니다. `TargetClient` 을(를) 사용자 지정하여 `HttpClient` 에 전달됨 `ClientConfig`. 다음 코드 조각은 `org.apache.http.conn.ssl` ssl 구성을 위한 패키지
+다음은 `ClientConfig`에 전달된 `HttpClient`을(를) 사용자 지정하여 `TargetClient`에서 SSL을 구성하는 방법의 예입니다. 다음 코드 조각은 SSL 구성을 위해 `org.apache.http.conn.ssl` 패키지의 클래스를 사용합니다.
 
 ### SSL 구현
 

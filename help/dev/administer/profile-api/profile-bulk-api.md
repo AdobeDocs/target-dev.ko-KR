@@ -1,6 +1,6 @@
 ---
 title: Adobe Target 벌크 프로필 업데이트 API
-description: 사용 방법 알아보기 [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] 여러 방문자의 프로필 데이터를 다음으로 보내기 [!DNL Target] 타깃팅에 사용됩니다.
+description: ' [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API]을(를) 사용하여 타깃팅에 사용할 여러 방문자의 프로필 데이터를  [!DNL Target] 에 보내는 방법을 알아봅니다.'
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
@@ -13,9 +13,9 @@ ht-degree: 8%
 
 # [!DNL Adobe Target Bulk Profile Update API]
 
-다음 [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] 배치 파일을 사용하여 웹 사이트에 대한 여러 방문자의 사용자 프로필을 일괄적으로 업데이트할 수 있습니다.
+[!DNL Adobe Target] [!UICONTROL Bulk Profile Update API]을(를) 사용하면 배치 파일을 사용하여 웹 사이트에 대한 여러 방문자의 사용자 프로필을 일괄적으로 업데이트할 수 있습니다.
 
-사용 [!UICONTROL Bulk Profile Update API], 많은 사용자에 대해 프로필 매개 변수 형식으로 자세한 방문자 프로필 데이터를 편리하게 보낼 수 있습니다. [!DNL Target] 모든 외부 소스에서 외부 소스에는 일반적으로 웹 페이지에서 사용할 수 없는 CRM(고객 관계 관리) 또는 POS(판매 지점) 시스템이 포함될 수 있습니다.
+[!UICONTROL Bulk Profile Update API]을(를) 사용하면 많은 사용자에 대한 프로필 매개 변수 형식의 자세한 방문자 프로필 데이터를 외부 소스에서 [!DNL Target](으)로 편리하게 보낼 수 있습니다. 외부 소스에는 일반적으로 웹 페이지에서 사용할 수 없는 CRM(고객 관계 관리) 또는 POS(판매 지점) 시스템이 포함될 수 있습니다.
 
 | 버전 | URL 예 | 기능 |
 | --- | --- | --- |
@@ -24,7 +24,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->버전 2(v2) [!UICONTROL Bulk Profile Update API] 는 현재 버전입니다. 그러나 [!DNL Target] 는 여전히 버전 1(v1)을 지원합니다.
+>[!UICONTROL Bulk Profile Update API]의 버전 2(v2)가 현재 버전입니다. 그러나 [!DNL Target]은(는) 여전히 버전 1(v1)을 지원합니다.
 
 ## 벌크 프로필 업데이트 API의 이점
 
@@ -37,7 +37,7 @@ ht-degree: 8%
 * 업데이트는 일반적으로 1시간 이내에 발생하지만 반영하는 데 24시간 정도 소요될 수 있습니다.
 * 후속 배치에서 24시간 동안 업로드할 수 있는 행 수에는 제한이 없습니다. 그러나 영업 시간 동안 처리 프로세스를 조절하여 다른 프로세스가 효율적으로 실행되도록 할 수도 있습니다.
 * 동일한 thirdPartyIds 간에 mbox를 호출하지 않고 연속적인 v2 배치 업데이트를 호출하면 첫 번째 배치 업데이트 호출에서 업데이트된 속성을 재정의합니다.
-* [!DNL Adobe] 는 배치 프로필 데이터의 100%가 Target에 온보딩되고 유지되므로 타깃팅에서 사용할 수 있다고 보장하지 않습니다. 현재 설계에서는 적은 비율의 데이터(대규모 프로덕션 배치의 최대 0.1%)가 온보딩되거나 보존되지 않을 수 있습니다.
+* [!DNL Adobe]은(는) 일괄 처리 프로필 데이터의 100%가 Target에 온보딩되고 유지되므로 타깃팅에서 사용할 수 있다고 보장하지 않습니다. 현재 설계에서는 적은 비율의 데이터(대규모 프로덕션 배치의 최대 0.1%)가 온보딩되거나 보존되지 않을 수 있습니다.
 
 ## 배치 파일
 
@@ -53,23 +53,23 @@ batch=pcId,param1,param2,param3,param4
 
 >[!NOTE]
 >
->다음 `batch=` 매개 변수는 필수 항목이며, 파일의 시작 부분에 지정해야 합니다.
+>`batch=` 매개 변수는 필수이며 파일의 시작 부분에 지정해야 합니다.
 
-에 대한 POST 호출에서 이 파일을 참조합니다. [!DNL Target] 파일을 처리할 서버. 배치 파일을 생성할 때 다음 사항을 고려하십시오.
+파일을 처리하기 위해 [!DNL Target] 서버에 대한 POST 호출에서 이 파일을 참조합니다. 배치 파일을 생성할 때 다음 사항을 고려하십시오.
 
 * 파일의 첫 행은 열 머리글을 지정해야 합니다.
-* 첫 번째 헤더는 다음 중 하나여야 합니다. `pcId` 또는 `thirdPartyId`. 다음 [!UICONTROL Marketing Cloud visitor ID] 은(는) 지원되지 않습니다. [!UICONTROL pcId] 다음 값: [!DNL Target]-생성된 visitorID입니다. `thirdPartyId` 는 클라이언트 응용 프로그램에서 지정한 ID이며, 로 전달됩니다. [!DNL Target] mbox 호출을 통해 `mbox3rdPartyId`. 이는 여기에서 다음과 같이 참조되어야 합니다. `thirdPartyId`.
+* 첫 번째 헤더는 `pcId` 또는 `thirdPartyId`이어야 합니다. [!UICONTROL Marketing Cloud visitor ID]은(는) 지원되지 않습니다. [!UICONTROL pcId]은(는) [!DNL Target]에서 생성한 visitorID입니다. `thirdPartyId`은(는) 클라이언트 응용 프로그램에서 지정한 ID이며, mbox 호출을 통해 `mbox3rdPartyId`(으)로 [!DNL Target]에 전달됩니다. 여기에서 `thirdPartyId`(으)로 참조되어야 합니다.
 * 보안상의 이유로 배치 파일에서 지정하는 매개변수와 값은 UTF-8을 사용하여 URL로 인코딩되어야 합니다. HTTP 요청을 통해 처리하기 위해 매개 변수와 값을 다른 에지 노드로 전달할 수 있습니다.
-* 매개 변수는 형식이어야 합니다. `paramName` 만 해당. 매개변수는에 표시됩니다. [!DNL Target] 다음으로: `profile.paramName`.
-* 을 사용하는 경우 [!UICONTROL Bulk Profile Update API] v2, 각각에 대해 모든 매개 변수 값을 지정할 필요는 없습니다 `pcId`. 프로필은 다음에 대해 만들어집니다. `pcId` 또는 `mbox3rdPartyId` 에서 찾을 수 없음 [!DNL Target]. v1을 사용하는 경우 누락된 pcIds 또는 mbox3rdPartyIds에 대해 프로필이 만들어지지 않습니다.
+* 매개 변수는 `paramName` 형식이어야 합니다. 매개 변수가 [!DNL Target]에 `profile.paramName`(으)로 표시됩니다.
+* [!UICONTROL Bulk Profile Update API] v2를 사용하는 경우 각 `pcId`에 대해 모든 매개 변수 값을 지정할 필요는 없습니다. [!DNL Target]에서 찾을 수 없는 `pcId` 또는 `mbox3rdPartyId`에 대해 프로필이 만들어집니다. v1을 사용하는 경우 누락된 pcIds 또는 mbox3rdPartyIds에 대해 프로필이 만들어지지 않습니다.
 * 묶음 파일의 크기는 50MB 미만이어야 합니다. 또한 총 행 수는 50만 개를 초과할 수 없습니다. 이 제한은 서버가 너무 많은 요청으로 침수되지 않도록 합니다.
 * 여러 파일을 보낼 수 있습니다. 단, 하루에 보내는 모든 파일의 행 합계 합계는 각 클라이언트에 대해 100만 개를 초과할 수 없습니다.
-* 업로드하는 속성의 수에는 제한이 없습니다. 그러나 시스템 데이터를 포함한 프로필의 전체 크기는 2000KB를 초과할 수 없습니다. [!DNL Adobe] 프로필 속성에 대해 1000KB 미만의 스토리지를 사용하는 것이 좋습니다.
+* 업로드하는 속성의 수에는 제한이 없습니다. 그러나 시스템 데이터를 포함한 프로필의 전체 크기는 2000KB를 초과할 수 없습니다. [!DNL Adobe]은(는) 프로필 특성에 1000KB 미만의 저장소를 사용하는 것을 권장합니다.
 * 매개 변수와 값은 대/소문자를 구분합니다.
 
 ## HTTP POST 요청
 
-에 대한 HTTP POST 요청 만들기 [!DNL Target] 파일을 처리할 에지 서버입니다. 다음은 curl 명령을 사용한 batch.txt 파일에 대한 샘플 HTTP POST 요청입니다.
+파일을 처리할 [!DNL Target] Edge Server에 대한 HTTP POST 요청을 만듭니다. 다음은 curl 명령을 사용한 batch.txt 파일에 대한 샘플 HTTP POST 요청입니다.
 
 ``````
 curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
@@ -79,7 +79,7 @@ curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTC
 
 BATCH.TXT는 파일 이름입니다. CLIENTCODE는 [!DNL Target] 클라이언트 코드입니다.
 
-클라이언트 코드를 모르는 경우 [!DNL Target] 사용자 인터페이스 클릭 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**. 클라이언트 코드는에 표시됩니다. [!UICONTROL Account Details] 섹션.
+클라이언트 코드를 모르는 경우 [!DNL Target] 사용자 인터페이스에서 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**&#x200B;을(를) 클릭합니다. 클라이언트 코드는 [!UICONTROL Account Details] 섹션에 표시됩니다.
 
 ### Inspect 응답
 
@@ -97,11 +97,11 @@ BATCH.TXT는 파일 이름입니다. CLIENTCODE는 [!DNL Target] 클라이언트
 </response>
 ```
 
-오류가 있는 경우 응답에는 다음이 포함됩니다. `success=false` 오류에 대한 자세한 메시지를 표시합니다.
+오류가 있는 경우 응답에는 `success=false`과(와) 오류에 대한 자세한 메시지가 포함됩니다.
 
 ### 기본 일괄 처리 상태 응답
 
-위의 경우 성공한 기본 응답 `batchStatus` 클릭한 URL 링크는 다음과 같습니다.
+위의 `batchStatus` URL 링크를 클릭했을 때 성공한 기본 응답은 다음과 같습니다.
 
 ```
 <response><batchId>demo4-1701473848678-13029383</batchId><status>complete</status><batchSize>1</batchSize></response>
@@ -117,7 +117,7 @@ BATCH.TXT는 파일 이름입니다. CLIENTCODE는 [!DNL Target] 클라이언트
 
 ### 자세한 배치 상태 URL 응답
 
-매개 변수를 전달하여 보다 자세한 응답을 가져올 수 있습니다 `showDetails=true` (으)로 `batchStatus` 위의 url입니다.
+매개 변수 `showDetails=true`을(를) 위의 `batchStatus` URL로 전달하여 보다 자세한 응답을 가져올 수 있습니다.
 
 예:
 

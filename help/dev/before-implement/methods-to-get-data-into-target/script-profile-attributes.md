@@ -1,25 +1,25 @@
 ---
 keywords: 프로필 속성 구현, 구현, 설정, 설정, 스크립팅
-description: 데이터 가져오기 [!DNL Target] 스크립트 프로필 속성을 사용합니다.
-title: 데이터를으로 가져오는 방법 [!DNL Target] 스크립트 프로필 속성을 사용하시겠습니까?
+description: 스크립트 프로필 특성을 사용하여  [!DNL Target] 에 데이터를 가져옵니다.
+title: 스크립트 프로필 특성을 사용하여  [!DNL Target] 에 데이터를 가져오려면 어떻게 해야 합니까?
 feature: Implementation
 exl-id: ba11f1de-e68b-4505-8e3e-cd4d46ef59a2
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 69%
+source-wordcount: '283'
+ht-degree: 74%
 
 ---
 
 # 스크립트 프로필 속성
 
-스크립트 프로필 속성은에 정의된 이름/값 쌍입니다. [!DNL Adobe Target] 해결책. 서버 호출에 대해 Target 서버에서 JavaScript 코드 조각을 실행하여 값을 결정합니다.
+스크립트 프로필 특성은 [!DNL Adobe Target] 솔루션에 정의된 이름/값 쌍입니다. 서버 호출에 대해 Target 서버에서 JavaScript 코드 조각을 실행하여 값을 결정합니다.
 
 사용자는 mbox 호출에 대해 실행되는 작은 코드 조각을 작성한 다음 대상 및 활동 멤버십에 대해 방문자를 평가합니다.
 
 ## 형식
 
-스크립트 프로필 속성은 Target의 대상 섹션에서 만들어집니다. 모든 속성 이름이 유효하며 값은 가 작성한 JavaScript 함수의 결과입니다. [!DNL Target] 사용자. 인페이지 프로필 속성과 구분할 수 있도록 속성 이름에는 Target에서 자동으로 &quot;user. &quot; 위치 [!DNL Target] 페이지 내 프로필 속성과 구별합니다.
+스크립트 프로필 속성은 Target의 대상 섹션에서 만들어집니다. 모든 특성 이름이 유효하며 값은 [!DNL Target] 사용자가 작성한 JavaScript 함수의 결과입니다. 인페이지 프로필 속성과 구분할 수 있도록 속성 이름에는 Target에서 자동으로 &quot;user. 페이지 내 프로필 특성과 구별하기 위해 [!DNL Target]에서 &quot;.
 
 코드 조각은 Rhino JS 언어로 작성되며 토큰 및 기타 값을 참조할 수 있습니다.
 

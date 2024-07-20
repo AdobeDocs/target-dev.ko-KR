@@ -1,11 +1,11 @@
 ---
-title: 디스플레이 또는 클릭 알림 보내기 대상 [!DNL Adobe Target] Java SDK 사용
-description: sendNotifications()를 사용하여 디스플레이 또는 클릭 알림을 보내는 방법 알아보기 [!DNL Adobe Target] 측정 및 보고용.
+title: Java SDK를 사용하여  [!DNL Adobe Target] 에 디스플레이 또는 클릭 알림 보내기
+description: 측정 및 보고를 위해 sendNotifications()를 사용하여 디스플레이를 보내거나  [!DNL Adobe Target] 에 알림을 클릭하는 방법에 대해 알아봅니다.
 feature: APIs/SDKs
 exl-id: 9231b480-f50f-40d1-ab06-0b9f2a2d79e3
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '230'
 ht-degree: 2%
 
 ---
@@ -14,18 +14,18 @@ ht-degree: 2%
 
 ## 설명
 
-`sendNotifications()` 디스플레이 또는 클릭 알림을 전송하는 데 사용됨 [!DNL Adobe Target] 측정 및 보고용.
+`sendNotifications()`은(는) 측정 및 보고를 위해 [!DNL Adobe Target]에게 디스플레이 또는 클릭 알림을 보내는 데 사용됩니다.
 
 >[!NOTE]
 >
->다음의 경우 `execute` 필수 매개 변수가 있는 오브젝트가 요청 자체 내에 있는 경우 적격 활동에 대해 노출이 자동으로 증가합니다.
+>필수 매개 변수가 있는 `execute` 개체가 요청 자체에 있으면 자격 있는 활동에 대해 자동으로 노출이 증가합니다.
 
 노출을 자동으로 증가시키는 SDK 메서드는 다음과 같습니다.
 
 * `getOffers()`
 * `getAttributes()`
 
-다음과 같은 경우 `prefetch` 개체가 요청 내에 전달되고 mbox가 있는 활동에 대한 노출이 자동으로 증가하지 않습니다. `prefetch` 개체. `sendNotifications()` 노출 및 전환을 늘리기 위해 프리페치된 경험에 사용해야 합니다.
+요청 내에서 `prefetch` 개체가 전달되면 `prefetch` 개체 내에 mbox가 있는 활동에 대한 노출이 자동으로 증가하지 않습니다. `sendNotifications()`은(는) 노출 및 전환을 늘리기 위해 미리 가져온 경험에 사용해야 합니다.
 
 ## 방법
 
@@ -37,7 +37,7 @@ ResponseStatus TargetClient.sendNotifications(TargetDeliveryRequest request)
 
 ## 예
 
-먼저, 을 빌드합니다. [!DNL Target Delivery API] 다음에 대한 콘텐츠 프리페치 요청 `home` 및 `product1` mbox.
+먼저 `home` 및 `product1` mbox에 대한 콘텐츠를 미리 가져오기 위한 [!DNL Target Delivery API] 요청을 빌드해 보겠습니다.
 
 ### 미리 가져오기
 
@@ -51,7 +51,7 @@ PrefetchRequest prefetchMboxesRequest = new PrefetchRequest().setMboxes(mboxRequ
 TargetDeliveryResponse targetResponse = targetJavaClient.getOffers(targetDeliveryRequest);
 ```
 
-성공적인 응답에는 다음이 포함됩니다. [!UICONTROL Target 배달 API] 요청된 mbox에 대해 프리페치된 콘텐츠가 포함된 응답 개체. 샘플 `targetResponse.response` 객체는 다음과 같을 수 있습니다.
+성공적인 응답에는 요청된 mbox에 대해 미리 가져온 콘텐츠가 포함된 [!UICONTROL Target Delivery API] 응답 개체가 포함됩니다. 샘플 `targetResponse.response` 개체는 다음과 같을 수 있습니다.
 
 ### 응답
 
@@ -109,7 +109,7 @@ TargetDeliveryResponse targetResponse = targetJavaClient.getOffers(targetDeliver
 }
 ```
 
-mbox를 확인합니다. `name` 및 `state` 필드 및 `eventToken` 필드, 각 항목 [!DNL Target] 컨텐츠 옵션을 사용할 수 있습니다. 다음에서 제공해야 합니다. `sendNotifications()` 각 콘텐츠 옵션이 표시되는 즉시 요청합니다. 다음을 가정해 보겠습니다. `product1` mbox가 브라우저가 아닌 장치에 표시되었습니다. 알림 요청은 다음과 같이 표시됩니다.
+각 [!DNL Target] 콘텐츠 옵션에서 mbox `name` 및 `state` 필드와 `eventToken` 필드를 확인합니다. 각 콘텐츠 옵션이 표시되는 즉시 `sendNotifications()` 요청에 제공해야 합니다. `product1` mbox가 브라우저가 아닌 장치에 표시되었다고 가정해 보겠습니다. 알림 요청은 다음과 같이 표시됩니다.
 
 ### 요청
 
@@ -128,7 +128,7 @@ TargetDeliveryRequest mboxNotificationRequest = TargetDeliveryRequest.builder().
 }}).build();
 ```
 
-mbox 상태와 이에 해당하는 이벤트 토큰이 모두 포함되어 있습니다. [!DNL Target] 프리페치 응답에서 전달된 오퍼. 알림 요청을 빌드했다면 다음으로 전송할 수 있습니다. [!DNL Target] 경유 `sendNotifications()` API 메서드:
+미리 가져오기 응답에 전달된 [!DNL Target] 오퍼에 해당하는 이벤트 토큰과 mbox 상태가 모두 포함되었습니다. 알림 요청을 빌드하면 `sendNotifications()` API 메서드를 통해 [!DNL Target]에 보낼 수 있습니다.
 
 ### 응답
 

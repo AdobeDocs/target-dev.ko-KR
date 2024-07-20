@@ -1,23 +1,23 @@
 ---
 keywords: 구현, javascript 라이브러리, js, atjs, 온디바이스 의사 결정, 온디바이스 의사 결정, at.js, 온디바이스, 온디바이스, 문제 해결, 문제 해결, 구현2
-description: 문제 해결 방법 알아보기 [!UICONTROL 온디바이스 의사 결정] at.js 라이브러리를 사용합니다.
+description: at.js 라이브러리를 사용하여 [!UICONTROL on-device decisioning] 문제를 해결하는 방법을 알아봅니다.
 title: at.js JavaScript 라이브러리를 사용하여 온디바이스 의사 결정 문제를 해결하려면 어떻게 합니까?
 feature: at.js
 exl-id: b9530cc7-5e83-4fdf-bde9-b2492e0861ff
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
 
-# 문제 해결 [!UICONTROL 온디바이스 의사 결정] at.js용
+# at.js에 대한 [!UICONTROL on-device decisioning] 문제 해결
 
-문제를 해결하려면 다음 단계를 완료하십시오 [!UICONTROL 온디바이스 의사 결정] 위치: [!UICONTROL Adobe Target] at.js JavaScript 라이브러리를 사용하여 다음을 수행할 수 있습니다.
+at.js JavaScript 라이브러리를 사용하여 [!UICONTROL Adobe Target]의 [!UICONTROL on-device decisioning] 문제를 해결하려면 다음 단계를 완료하십시오.
 
 ## 1단계: at.js에 대한 콘솔 로그 활성화
 
-URL 매개 변수 추가 `mboxDebug=1` at.js가 브라우저의 콘솔에서 메시지를 인쇄할 수 있도록 합니다.
+URL 매개 변수 `mboxDebug=1`을(를) 추가하면 at.js가 브라우저의 콘솔에서 메시지를 인쇄할 수 있습니다.
 
 모든 메시지에는 편리한 개요를 위해 접두사 &quot;AT:&quot;가 들어 있습니다. 아티팩트가 성공적으로 로드되었는지 확인하려면 콘솔 로그에 다음과 유사한 메시지가 포함되어야 합니다.
 
@@ -30,7 +30,7 @@ AT: LD.ArtifactProvider artifact received - status=200
 
 이미지 를 클릭하여 전체 너비로 확장합니다.
 
-![아티팩트 메시지가 포함된 콘솔 로그](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/browser-console.png "아티팩트 메시지가 포함된 콘솔 로그"){zoomable=&quot;yes&quot;}
+![아티팩트 메시지가 포함된 콘솔 로그](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/browser-console.png "아티팩트 메시지가 포함된 콘솔 로그"){zoomable="yes"}
 
 ## 2단계: 브라우저의 네트워크 탭에서 규칙 아티팩트 다운로드 확인
 
@@ -44,11 +44,11 @@ AT: LD.ArtifactProvider artifact received - status=200
 
    또한 &quot;/delivery|rules.json/&quot;별로 필터링하여 모든 Target 호출 및 아티팩트 rules.json을 표시할 수 있습니다.
 
-   ![Google Chrome의 네트워크 탭](assets/rule-json.png)
+   Google Chrome의 ![네트워크 탭](assets/rule-json.png)
 
 ## 3단계: at.js 사용자 지정 이벤트를 사용하여 규칙 아티팩트 다운로드 확인
 
-at.js 라이브러리는 를 지원하기 위해 두 개의 새로운 사용자 지정 이벤트를 전달합니다 [!UICONTROL 온디바이스 의사 결정].
+at.js 라이브러리는 [!UICONTROL on-device decisioning]을(를) 지원하도록 두 개의 새로운 사용자 지정 이벤트를 전달합니다.
 
 * `adobe.target.event.ARTIFACT_DOWNLOAD_SUCCEEDED`
 * `adobe.target.event.ARTIFACT_DOWNLOAD_FAILED`

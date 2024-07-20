@@ -6,8 +6,8 @@ feature: at.js
 role: Developer
 source-git-commit: 34e8625798121e236a04646dfcf049f9c2b6f9d0
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 60%
+source-wordcount: '1580'
+ht-degree: 54%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 60%
 
 >[!NOTE]
 >
->이 주제에는 `mboxSession`과 `mboxPC`에 대한 정보가 포함되어 있습니다. 구현 우수 사례에 따라 쿠키 데이터와 중요한 정보를 연결하거나 저장하지 않는 것이 좋습니다. `mboxSession` 또는 `mboxPC`.
+>이 주제에는 `mboxSession`과 `mboxPC`에 대한 정보가 포함되어 있습니다. 구현 모범 사례에 따라 쿠키 데이터와 중요한 정보(`mboxSession` 또는 `mboxPC`)를 연결하거나 저장하지 않는 것이 좋습니다.
 
-참조: [Target 쿠키 삭제](/help/dev/before-implement/privacy/cookie-deleting.md).
+[Target 쿠키 삭제](/help/dev/before-implement/privacy/cookie-deleting.md)도 참조하세요.
 
 ## 퍼스트 파티 또는 타사 쿠키를 사용하는 경우
 
@@ -29,7 +29,7 @@ ht-degree: 60%
 
 1. 1개 도메인.
 
-   모든 테스트가 하나의 최상위 도메인(`www.domain.com`, `store.domain.com`, `anysub.domain.com`등).
+   모든 테스트가 하나의 최상위 도메인(`www.domain.com`, `store.domain.com`, `anysub.domain.com` 등)에서 수행됩니다.
 
    접근 방법: 자사 쿠키(기본값)만 사용합니다.
 
@@ -41,7 +41,7 @@ ht-degree: 60%
    * 타사 쿠키만 활성화합니다(드문 경우이지만 mbox 쿠키를 도메인 외부에 보관하는 이점이 있음).
    * 퍼스트 파티 쿠키만 활성화하고 도메인을 교차할 때 `mboxSession` 매개 변수를 전달합니다.
 
-     다음 `mboxSession` 매개 변수를 랜딩 페이지로 전달하고 JavaScript 라이브러리(Adobe Experience Platform Web SDK 또는 at.js)에서 참조해야 합니다. 중간 리디렉터 페이지일 수 없습니다.
+     `mboxSession` 매개 변수를 랜딩 페이지로 전달하고 JavaScript 라이브러리(Adobe Experience Platform Web SDK 또는 at.js)에서 참조해야 합니다. 중간 리디렉터 페이지일 수 없습니다.
 
 1. 타사 사이트에서 Adbox 또는 Flashbox만 사용합니다.
 
@@ -59,7 +59,7 @@ ht-degree: 60%
 
 퍼스트 파티 쿠키는 clientdomain.com에 저장됩니다. 여기서 `clientdomain`은 사용자 도메인입니다.
 
-JavaScript 라이브러리는 `mboxSession ID` Target 쿠키에 저장합니다. 첫 번째 mbox 응답에는 오퍼와 을 저장할 JavaScript가 포함됩니다. `mboxPC ID` 애플리케이션에서 생성된 를 mbox 쿠키에 포함합니다.
+JavaScript 라이브러리는 `mboxSession ID`을(를) 생성하여 Target 쿠키에 저장합니다. 첫 번째 mbox 응답에는 오퍼와 애플리케이션에서 생성된 `mboxPC ID`을(를) mbox 쿠키에 저장할 JavaScript이 포함됩니다.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ JavaScript 라이브러리는 `mboxSession ID` Target 쿠키에 저장합니다.
 
 타사 쿠키는 clientcode.tt.omtrdc.net에 저장되고 퍼스트 파티 쿠키는 clientdomain.com에 저장됩니다. 여기서 `clientdomain`은 사용자 도메인입니다.
 
-JavaScript 라이브러리는 `mboxSession ID`. 첫 번째 위치 요청은 `mboxSession` 및 `mboxPC`라는 타사 쿠키를 설정하는 HTTP 응답 헤더를 반환하며 리디렉션 요청이 추가 매개 변수(`mboxXDomainCheck=true`)를 사용하여 다시 전송됩니다.
+JavaScript 라이브러리는 `mboxSession ID`을(를) 생성합니다. 첫 번째 위치 요청은 `mboxSession` 및 `mboxPC`라는 타사 쿠키를 설정하는 HTTP 응답 헤더를 반환하며 리디렉션 요청이 추가 매개 변수(`mboxXDomainCheck=true`)를 사용하여 다시 전송됩니다.
 
 브라우저가 타사 쿠키를 수락하면 리디렉션 요청에 해당 쿠키가 포함되고 오퍼가 반환됩니다.
 
@@ -83,11 +83,11 @@ JavaScript 라이브러리는 `mboxSession ID`. 첫 번째 위치 요청은 `mbo
 
 타사 쿠키는 clientcode.tt.omtrdc.net에 저장되고 퍼스트 파티 쿠키는 clientdomain.com에 저장됩니다. 여기서 `clientdomain`은 사용자 도메인입니다.
 
-JavaScript 라이브러리는 `mboxSession ID`. 첫 번째 위치 요청은 `mboxSession` 및 `mboxPC`라는 타사 쿠키를 설정하는 HTTP 응답 헤더를 반환하며 리디렉션 요청이 추가 매개 변수(`mboxXDomainCheck=true`)를 사용하여 다시 전송됩니다.
+JavaScript 라이브러리는 `mboxSession ID`을(를) 생성합니다. 첫 번째 위치 요청은 `mboxSession` 및 `mboxPC`라는 타사 쿠키를 설정하는 HTTP 응답 헤더를 반환하며 리디렉션 요청이 추가 매개 변수(`mboxXDomainCheck=true`)를 사용하여 다시 전송됩니다.
 
 브라우저가 타사 쿠키를 수락하면 리디렉션 요청에 해당 쿠키가 포함되고 오퍼가 반환됩니다.
 
-일부 브라우저는 타사 쿠키를 거부합니다. 타사 쿠키가 차단되는 경우에는 퍼스트 파티 쿠키가 계속 작동합니다. Target은 타사 Target 설정을 시도하며, 설정할 수 없을 경우 클라이언트의 특정 도메인에 대해서만 추적할 수 있습니다. 서드파티 쿠키가 차단되는 경우 도메인 간 추적은 `mboxSession` 는 도메인들을 연결하는 링크에 추가됩니다. 이 경우, 다른 퍼스트 파티 쿠키가 설정되고 이전 도메인의 퍼스트 파티 쿠키와 동기화됩니다.
+일부 브라우저는 타사 쿠키를 거부합니다. 타사 쿠키가 차단되는 경우에는 퍼스트 파티 쿠키가 계속 작동합니다. Target은 타사 쿠키 설정을 시도하며, 설정할 수 없을 경우 클라이언트의 특정 도메인에 대해서만 추적할 수 있습니다. 서드파티 쿠키가 차단되는 경우 `mboxSession`이(가) 도메인들을 연결하는 링크에 추가되지 않으면 도메인 간 추적이 작동하지 않습니다. 이 경우, 다른 퍼스트 파티 쿠키가 설정되고 이전 도메인의 퍼스트 파티 쿠키와 동기화됩니다.
 
 ## 쿠키 설정
 
@@ -130,11 +130,11 @@ Apple의 메시지:
 |--- |--- |
 | Intelligent tracking prevention(지능형 추적 방지) | 자세한 내용은 WebKit Open Source Web Browser Engine 웹 사이트에서 [Intelligent Tracking Prevention](https://webkit.org/blog/7675/intelligent-tracking-prevention/)을 참조하십시오. |
 | 쿠키 | Safari의 쿠키 처리 방법:<ul><li>사용자가 직접 액세스하는 도메인에 없는 타사 쿠키는 저장되지 않습니다. 이 동작은 새로운 동작이 아닙니다. 타사 쿠키는 이미 Safari에서 지원되지 않습니다.</li><li>사용자가 직접 액세스하는 도메인에 설정된 타사 쿠키는 24시간 후에 삭제됩니다.</li><li>해당 퍼스트 파티 도메인이 여러 사이트에서 사용자를 추적하는 것으로 분류된 경우 30일 후에 퍼스트 파티 쿠키가 삭제됩니다. 이 문제는 다양한 도메인에 온라인으로 사용자를 보내는 대형 회사에 적용될 수 있습니다. Apple은 이러한 도메인이 정확히 어떻게 분류되는지, 또는 도메인이 사이트 간 사용자를 추적하는 것으로 분류되었는지를 어떻게 확인할 수 있는지에 대해 명확히 밝히지 않았습니다.</li></ul> |
-| 여러 사이트에 걸친 도메인을 식별하는 기계 학습 | Apple의 메시지:<br />기계 학습 분류기: 기계 학습 모델은 수집된 통계 수치를 기반으로 사이트 간 사용자를 추적할 수 있는 최상위 민간 제어 도메인을 분류하는 데 사용됩니다. 수집된 다양한 통계 수치 중, 고유 도메인의 하위 리소스 할당 번호, 고유 도메인의 하위 프레임 할당 번호, 리디렉션되는 고유 도메인의 번호, 이렇게 세 개의 벡터가 현재 추적 사례를 기반으로 분류에 대한 강력한 신호를 갖고 있는 것으로 드러났습니다. 모든 데이터 수집 및 분류는 장치를 통해 이루어집니다.<br />그러나 사용자가 와 상호 작용하는 경우 `example.com` 자사 도메인이라고도 하는 최상위 도메인인 Intelligent Tracking Prevention은 사용자가 웹 사이트에 관심이 있다는 신호로 간주하고 이 타임라인에 표시된 대로 동작을 일시적으로 조정합니다.<br />사용자가 와 상호 작용한 경우 `example.com` 지난 24시간, 쿠키는 다음과 같은 경우에 사용할 수 있습니다. `example.com` 은(는) 제3자입니다. 이 방법을 사용하면 &quot;Y에서 내 X 계정으로 로그인&quot; 로그인 시나리오가 허용됩니다.<ul><li>최상위 도메인으로 방문하는 도메인은 영향을 받지 않습니다. 예를 들어 OKTA와 같은 사이트</li><li>여러 고유 도메인에서 현재 페이지의 하위 도메인이나 하위 프레임인 도메인을 식별합니다.</li></ul> |
+| 여러 사이트에 걸친 도메인을 식별하는 기계 학습 | Apple에서:<br />기계 학습 분류기: 기계 학습 모델은 수집된 통계 수치를 기반으로 사이트 간 사용자를 추적할 수 있는 최상위 민간 제어 도메인을 분류하는 데 사용됩니다. 수집된 다양한 통계 수치 중, 고유 도메인의 하위 리소스 할당 번호, 고유 도메인의 하위 프레임 할당 번호, 리디렉션되는 고유 도메인의 번호, 이렇게 세 개의 벡터가 현재 추적 사례를 기반으로 분류에 대한 강력한 신호를 갖고 있는 것으로 드러났습니다. 모든 데이터 수집 및 분류는 장치를 통해 이루어집니다.<br />그러나 사용자가 `example.com`을(를) 자사 도메인이라고도 하는 최상위 도메인으로 상호 작용하는 경우 Intelligent Tracking Prevention은 사용자가 웹 사이트에 관심이 있다는 신호로 간주하고 이 타임라인에 표시된 대로 일시적으로 동작을 조정합니다.<br />사용자가 지난 24시간 동안 `example.com`과(와) 상호 작용한 경우 `example.com`이(가) 서드파티인 경우 해당 쿠키를 사용할 수 있습니다. 이 방법을 사용하면 &quot;Y에서 내 X 계정으로 로그인&quot; 로그인 시나리오가 허용됩니다.<ul><li>최상위 도메인으로 방문하는 도메인은 영향을 받지 않습니다. 예를 들어 OKTA와 같은 사이트</li><li>여러 고유 도메인에서 현재 페이지의 하위 도메인이나 하위 프레임인 도메인을 식별합니다.</li></ul> |
 
-**Adobe은 어떤 영향을 받습니까?**
+**Adobe은 어떻게 영향을 받습니까?**
 
 | 영향을 받는 기능 | 세부 사항 |
 |--- |--- |
 | 옵트아웃 지원 | Apple의 WebKit 변경 사항 추적에서는 옵트아웃 지원을 중단합니다.<br />Target 옵트아웃은 `clientcode.tt.omtrdc.net` 도메인의 쿠키를 사용합니다. 자세한 내용은.[개인 정보 보호](/help/dev/before-implement/privacy/privacy.md)를 참조하십시오.<br />Target은 두 개의 옵트아웃을 지원합니다.<ul><li>클라이언트당 하나(클라이언트는 옵트아웃 링크를 관리합니다.)</li><li>Adobe를 통해, 모든 고객용으로 모든 Target 기능에서 사용자를 옵트아웃하는 하나</li></ul>두 방법 모두 타사 쿠키를 사용합니다. |
-| 타겟 활동 | 고객은 Target 계정에 대한 자신의 [프로필 라이프타임 길이](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html) Target 계정 (최대 90일)에 사용할 수 있습니다. 문제는 계정의 프로필 라이프타임이 30일보다 길고, 고객의 도메인이 사이트 간에 사용자를 추적하는 것으로 표시되었기 때문에 퍼스트 파티 쿠키가 삭제되는 경우 Safari 방문자에 대한 동작이 Target의 다음 영역에서 영향을 받는다는 것입니다.<br />**[!UICONTROL Target 보고서&#x200B;]**: Safari 사용자가 활동에 들어갔다가 30일 후에 재방문한 다음 전환하는 경우, 해당 사용자는 2명의 방문자와 1개의 전환으로 계산됩니다.<br />이 동작은 Analytics를 보고 소스로 사용(A4T)하는 활동에 대해 동일합니다.<br />**[!UICONTROL 프로필 및 활동 멤버십]**:<ul><li>퍼스트 파티 쿠키가 만료되면 프로필 데이터가 지워집니다.</li><li>퍼스트 파티 쿠키가 만료되면 활동 멤버십이 지워집니다.</li><li> 타사 쿠키 구현을 사용하거나 퍼스트 파티 쿠키와 타사 쿠키 구현을 사용을 사용하는 계정의 경우 Target이 Safari에서 작동하지 않습니다. 이 동작은 새로운 동작이 아닙니다. Safari가 한동안 서드파티 쿠키를 허용하지 않았습니다.</li></ul><br />**[!UICONTROL 제안 사항&#x200B;]**: 고객 도메인이 세션 간 방문자를 추적하는 도메인으로 표시될 수 있다는 걱정이 있다면 Target 시 프로필 라이프타임을 30일 이하로 설정하는 것이 가장 안전합니다. 이 제한은 사용자가 Safari 및 다른 모든 브라우저에서 유사하게 추적되도록 합니다. |
+| 타겟 활동 | 고객은 Target 계정에 대해 [프로필 라이프타임 길이](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html)를 선택할 수 있습니다(최대 90일). 문제는 계정의 프로필 라이프타임이 30일보다 길고, 고객의 도메인이 사이트 간에 사용자를 추적하는 것으로 표시되었기 때문에 퍼스트 파티 쿠키가 삭제되는 경우 Safari 방문자에 대한 동작이 Target의 다음 영역에서 영향을 받는다는 것입니다.<br />**[!UICONTROL Target reports]**: Safari 사용자가 활동에 들어갔다가, 30일 후에 재방문한 다음, 전환하는 경우, 해당 사용자는 2명의 방문자와 하나의 전환으로 카운트됩니다.<br />이 동작은 Analytics를 보고 소스로 사용(A4T)하는 활동에 대해 동일합니다.<br />**[!UICONTROL Profile & activity membership]**:<ul><li>퍼스트 파티 쿠키가 만료되면 프로필 데이터가 지워집니다.</li><li>퍼스트 파티 쿠키가 만료되면 활동 멤버십이 지워집니다.</li><li> 타사 쿠키 구현을 사용하거나 퍼스트 파티 쿠키와 타사 쿠키 구현을 사용을 사용하는 계정의 경우 Target이 Safari에서 작동하지 않습니다. 이 동작은 새로운 동작이 아닙니다. Safari가 한동안 서드파티 쿠키를 허용하지 않았습니다.</li></ul><br />**[!UICONTROL Suggestions]**: 고객 도메인이 세션 간 방문자를 추적하는 도메인으로 표시될 수 있다는 걱정이 있다면 Target에서 프로필 라이프타임을 30일 이하로 설정하는 것이 가장 안전합니다. 이 제한은 사용자가 Safari 및 다른 모든 브라우저에서 유사하게 추적되도록 합니다. |

@@ -5,14 +5,14 @@ feature: APIs/SDKs
 exl-id: a5ae9826-7bb5-41de-8796-76edc4f5b281
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
 
-# 시작하기 [!DNL Target] SDK
+# [!DNL Target]개의 SDK 시작
 
-시작하고 실행하기 위해 첫 번째 항목을 만드는 것이 좋습니다 [온디바이스 의사 결정](../on-device-decisioning/overview.md) 기능 플래그 활동을 선택한 언어로 표시:
+시작하고 실행하려면 선택한 언어로 첫 번째 [장치 내 의사 결정](../on-device-decisioning/overview.md) 기능 플래그 활동을 만드는 것이 좋습니다.
 
 * Node.js
 * Java
@@ -24,30 +24,30 @@ ht-degree: 0%
 1. 조직에 대해 온디바이스 의사 결정 활성화
 1. SDK 설치
 1. SDK 초기화
-1. 에서 기능 플래그 설정 [!DNL Adobe Target] [!UICONTROL A/B 테스트] 활동
+1. [!DNL Adobe Target] [!UICONTROL A/B Test] 활동에서 기능 플래그 설정
 1. 응용 프로그램에서 기능 구현 및 렌더링
 1. 애플리케이션의 이벤트에 대한 추적 구현
-1. 활성화 [!UICONTROL A/B 테스트] 활동
+1. [!UICONTROL A/B Test] 활동 활성화
 
 ## 1. 조직에 대해 온디바이스 의사 결정 사용
 
-디바이스에서 의사 결정을 활성화하면 [!UICONTROL A/B 테스트] 활동이 거의 0에 가까운 지연 시간에 실행됩니다. 이 기능을 사용하려면 다음 위치로 이동하십시오. **[!UICONTROL 관리]** > **[!UICONTROL 구현]** > **[!UICONTROL 계정 세부 정보]** 및 활성화 **[!UICONTROL 온디바이스 의사 결정]** 토글.
+디바이스에서 의사 결정을 사용하면 [!UICONTROL A/B Test] 활동이 거의 0에 가까운 대기 시간에 실행됩니다. 이 기능을 사용하려면 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]**(으)로 이동하여 **[!UICONTROL On-Device Decisioning]** 토글을 활성화하십시오.
 
 ![대체 이미지](assets/asset-odd-toggle.png)
 
 >[!NOTE]
 >
->다음을 보유해야 합니다. **[!UICONTROL 관리자]** 또는 **[!UICONTROL 승인자]** [사용자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) 을(를) 활성화 또는 비활성화하려면 **[!UICONTROL 온디바이스 의사 결정]** 토글.
+>**[!UICONTROL On-Device Decisioning]** 전환을 활성화하거나 비활성화하려면 **[!UICONTROL Admin]** 또는 **[!UICONTROL Approver]** [사용자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html)이(가) 있어야 합니다.
 
-활성화 후 **[!UICONTROL 온디바이스 의사 결정]** 전환, [!DNL Adobe Target] 생성 시작 [규칙 아티팩트](../on-device-decisioning/rule-artifact-overview.md) 클라이언트.
+**[!UICONTROL On-Device Decisioning]** 전환을 활성화한 후 [!DNL Adobe Target]에서 클라이언트에 대한 [규칙 아티팩트](../on-device-decisioning/rule-artifact-overview.md)를 생성하기 시작합니다.
 
 ## 2. SDK 설치
 
-Node.js, Java 및 Python의 경우 터미널의 프로젝트 디렉터리에서 다음 명령을 실행합니다. .NET의 경우 다음 방법으로 종속으로 추가합니다. [nuGet에서 설치](https://www.nuget.org/packages/Adobe.Target.Client).
+Node.js, Java 및 Python의 경우 터미널의 프로젝트 디렉터리에서 다음 명령을 실행합니다. .NET의 경우 [NuGet에서 설치](https://www.nuget.org/packages/Adobe.Target.Client)하여 종속성으로 추가하십시오.
 
 >[!BEGINTABS]
 
->[!TAB Node.js (NPM)]
+>[!TAB NPM(Node.js)]
 
 ```js {line-numbers="true"}
 npm i @adobe/target-nodejs-sdk -P
@@ -63,7 +63,7 @@ npm i @adobe/target-nodejs-sdk -P
 </dependency>
 ```
 
->[!TAB .NET (Bash)]
+>[!TAB .NET(Bash)]
 
 ```bash {line-numbers="true"}
 dotnet add package Adobe.Target.Client
@@ -115,7 +115,7 @@ ClientConfig config = ClientConfig.builder()
 TargetClient targetClient = TargetClient.create(config);
 ```
 
->[!TAB .NET (C#)]
+>[!TAB .NET(C#)]
 
 ```csharp {line-numbers="true"}
 var targetClientConfig = new TargetClientConfig.Builder("testClient", "ABCDEF012345677890ABCDEF0@AdobeOrg")
@@ -146,31 +146,31 @@ target_client = TargetClient.create(CONFIG)
 
 >[!ENDTABS]
 
-## 4. 기능 플래그를 설정합니다. [!DNL Adobe Target] [!UICONTROL A/B 테스트] 활동
+## 4. [!DNL Adobe Target] [!UICONTROL A/B Test] 활동에서 기능 플래그를 설정합니다
 
-1. 위치 [!DNL Target]로 이동한 다음 **[!UICONTROL 활동]** 페이지를 선택한 다음 **[!UICONTROL 활동 만들기]** > **[!UICONTROL A/B 테스트]**.
+1. [!DNL Target]에서 **[!UICONTROL Activities]** 페이지로 이동한 다음 **[!UICONTROL Create Activity]** > **[!UICONTROL A/B test]**&#x200B;을(를) 선택합니다.
 
    ![대체 이미지](assets/asset-ab.png)
 
-1. 다음에서 **[!UICONTROL A/B 테스트 활동 만들기]** 모달에서 기본 웹 옵션을 선택한 상태로 둡니다(1). 다음을 선택합니다. **[!UICONTROL 양식]** 경험 작성기 (2)로서 **[!UICONTROL 기본 작업 영역]** 포함 **[!UICONTROL 속성 제한 없음]**(3) 을 클릭한 다음 **[!UICONTROL 다음]** (4)
+1. **[!UICONTROL Create A/B Test Activity]** 모달에서 기본 웹 옵션을 선택한 상태로 둡니다(1). **[!UICONTROL Form]**&#x200B;을(를) 경험 작성기로 선택합니다(2). **[!UICONTROL No Property Restrictions]**(3)을(를) 사용하여 **[!UICONTROL Default Workspace]**&#x200B;을(를) 선택한 다음 **[!UICONTROL Next]**(4)을(를) 클릭합니다.
 
    ![대체 이미지](assets/asset-form.png)
 
-1. 다음에서 **[!UICONTROL 경험]** 활동 만들기 단계에서 활동(1)의 이름을 입력하고 를 클릭하여 두 번째 경험인 경험 B를 추가합니다. **[!UICONTROL 경험 추가]** (2) 선택한 위치 이름을 입력합니다(3). 예를 들어, `ondevice-featureflag` 또는 `homepage-addtocart-featureflag` 기능 플래그 테스트 대상을 나타내는 위치 이름입니다.  아래 표시된 예에서는 `ondevice-featureflag` 은 경험 B에 대해 정의된 위치입니다. 필요에 따라 대상 세분화(4)를 추가하여 활동에 자격을 제한할 수 있습니다.
+1. 활동을 만드는 **[!UICONTROL Experiences]** 단계에서 **[!UICONTROL Add Experience]**(2)을(를) 클릭하여 활동의 이름(1)을 입력하고 두 번째 경험인 경험 B를 추가합니다. 선택한 위치 이름을 입력합니다(3). 예를 들어 `ondevice-featureflag` 또는 `homepage-addtocart-featureflag`은(는) 기능 플래그 테스트의 대상을 나타내는 위치 이름입니다.  아래 예제에서 `ondevice-featureflag`은(는) 경험 B에 대해 정의된 위치입니다. 필요에 따라 대상 세분화(4)를 추가하여 활동에 대한 자격을 제한할 수 있습니다.
 
    ![대체 이미지](assets/asset-location.png)
 
-1. 다음에서 **[!UICONTROL 콘텐츠]** 동일한 페이지의 섹션에서 다음을 선택합니다. **[!UICONTROL JSON 오퍼 만들기]** (1)을 클릭합니다.
+1. 같은 페이지의 **[!UICONTROL CONTENT]** 섹션에서 아래와 같이 드롭다운(1)의 **[!UICONTROL Create JSON Offer]**&#x200B;을(를) 선택합니다.
 
    ![대체 이미지](assets/asset-offer.png)
 
-1. 다음에서 **[!UICONTROL JSON 데이터]** 표시되는 텍스트 상자에 유효한 JSON 개체(2)를 사용하여 각 경험(1)에 대한 기능 플래그 변수를 입력합니다.
+1. 표시되는 **[!UICONTROL JSON Data]** 텍스트 상자에 유효한 JSON 개체(2)를 사용하여 각 경험(1)에 대한 기능 플래그 변수를 입력합니다.
 
    경험 A에 대한 기능 플래그 변수를 입력합니다.
 
    ![대체 이미지](assets/asset-json_a.png)
 
-   **(위의 경험 A에 대한 샘플 JSON)**
+   **(경험 A에 대한 샘플 JSON, 이상)**
 
    ```json {line-numbers="true"}
    {
@@ -183,7 +183,7 @@ target_client = TargetClient.create(CONFIG)
 
    ![대체 이미지](assets/asset-json_b.png)
 
-   **(위의 경험 B에 대한 샘플 JSON)**
+   **(경험 B에 대한 샘플 JSON, 이상)**
 
    ```json {line-numbers="true"}
    {
@@ -192,21 +192,21 @@ target_client = TargetClient.create(CONFIG)
    }
    ```
 
-1. 클릭 **[!UICONTROL 다음]** (1) (으)로 이동 **[!UICONTROL 타겟팅]** 활동 만들기 단계입니다.
+1. **[!UICONTROL Next]**(1)을(를) 클릭하여 **[!UICONTROL Targeting]** 활동 만들기 단계로 진행합니다.
 
    ![대체 이미지](assets/asset-next_2_t.png)
 
-1. 다음에서 **[!UICONTROL 타겟팅]** 아래 표시된 단계 예와 같이, 단순성을 위해 대상 타깃팅(2)은 모든 방문자의 기본 세트에 유지됩니다. 즉, 활동이 타깃팅되지 않습니다. 그러나 참고 Adobe은 항상 프로덕션 활동의 대상을 타기팅하는 것을 권장합니다. 클릭 **[!UICONTROL 다음]** (3) (으)로 이동 **[!UICONTROL 목표 및 설정]** 활동 만들기 단계입니다.
+1. 아래 표시된 **[!UICONTROL Targeting]** 단계 예제에서 대상 타깃팅(2)은 단순성을 위해 모든 방문자의 기본 세트에 남아 있습니다. 즉, 활동이 타깃팅되지 않습니다. 그러나 참고 Adobe은 항상 프로덕션 활동의 대상을 타기팅하는 것을 권장합니다. **[!UICONTROL Next]**(3)을(를) 클릭하여 **[!UICONTROL Goals & Settings]** 활동 만들기 단계로 진행합니다.
 
    ![대체 이미지](assets/asset-next_2_g.png)
 
-1. 다음에서 **[!UICONTROL 목표 및 설정]** 단계, 설정 **[!UICONTROL 보고 소스]** 끝 **[!UICONTROL Adobe Target]** (1) 다음을 정의합니다. **[!UICONTROL 목표 지표]** 다음으로: **[!UICONTROL 전환]**&#x200B;를 클릭하고 사이트의 전환 지표를 기반으로 세부 사항을 지정합니다(2). 클릭 **[!UICONTROL 저장 및 닫기]** (3) 활동을 저장합니다.
+1. **[!UICONTROL Goals & Settings]** 단계에서 **[!UICONTROL Reporting Source]**&#x200B;을(를) **[!UICONTROL Adobe Target]**(1)(으)로 설정합니다. 사이트의 전환 지표에 따라 세부 정보를 지정하여 **[!UICONTROL Goal Metric]**&#x200B;을(를) **[!UICONTROL Conversion]**(으)로 정의합니다(2). **[!UICONTROL Save & Close]**(3)을(를) 클릭하여 활동을 저장합니다.
 
    ![대체 이미지](assets/asset-conv.png)
 
 ## 5. 응용 프로그램에서 기능 구현 및 렌더링
 
-에서 기능 플래그 변수를 설정한 후 [!DNL Target]를 클릭하고 애플리케이션 코드를 수정하여 이를 사용합니다. 예를 들어 애플리케이션에서 기능 플래그를 가져온 후 이를 사용하여 기능을 활성화하고 방문자가 자격을 부여받은 경험을 렌더링할 수 있습니다.
+[!DNL Target]에서 기능 플래그 변수를 설정한 후 해당 변수를 사용하도록 응용 프로그램 코드를 수정하십시오. 예를 들어 애플리케이션에서 기능 플래그를 가져온 후 이를 사용하여 기능을 활성화하고 방문자가 자격을 부여받은 경험을 렌더링할 수 있습니다.
 
 >[!BEGINTABS]
 
@@ -242,7 +242,7 @@ Attributes attributes = targetClient.getAttributes(request, "ondevice-featurefla
 String flag = attributes.getString("ondevice-featureflag", "flag");
 ```
 
->[!TAB .NET (C#)]
+>[!TAB .NET(C#)]
 
 ```csharp {line-numbers="true"}
 var mbox = new MboxRequest(index: 0, name: "ondevice-featureflag");
@@ -329,7 +329,7 @@ NotificationDeliveryService notificationDeliveryService = new NotificationDelive
 notificationDeliveryService.sendNotification(notificationRequest);
 ```
 
->[!TAB .NET (C#)]
+>[!TAB .NET(C#)]
 
 ```csharp {line-numbers="true"}
 var order = new Order
@@ -382,12 +382,12 @@ target_client.send_notifications({
 
 >[!ENDTABS]
 
-## 7. 활성화 [!UICONTROL A/B 테스트] 활동
+## 7. [!UICONTROL A/B Test] 활동 활성화
 
-1. 클릭 **[!UICONTROL 활성화]** (1) 를 활성화하려면 [!UICONTROL A/B 테스트] 활동.
+1. **[!UICONTROL Activate]**(1)을(를) 클릭하여 [!UICONTROL A/B Test] 활동을 활성화합니다.
 
    >[!NOTE]
    >
-   >다음을 보유해야 합니다. **[!UICONTROL 승인자]** 또는 **[!UICONTROL 게시자]** [사용자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) 을 눌러 이 단계를 수행합니다.
+   >이 단계를 수행하려면 **[!UICONTROL Approver]** 또는 **[!UICONTROL Publisher]** [사용자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html)이 있어야 합니다.
 
    ![대체 이미지](assets/asset-activate.png)

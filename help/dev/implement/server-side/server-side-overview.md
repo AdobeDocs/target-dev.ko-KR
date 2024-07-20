@@ -1,7 +1,7 @@
 ---
 keywords: server side, 서버측, api, sdk, node.js, nodejs, node js, recommendations api, api, api, server side1
-description: 에 대해 알아보기 [!DNL Adobe Target] 서버 측 배달 API, SDK 및 [!DNL Target Recommendations] API.
-title: 어디에서 배울 수 있습니까 [!DNL Target] 서버 측 배달 API 및 SDK?
+description: ' [!DNL Adobe Target] 서버측 배달 API, SDK 및 [!DNL Target Recommendations] API에 대해 알아봅니다.'
+title: ' [!DNL Target] 서버측 배달 API 및 SDK에 대한 자세한 내용은 어디에서 확인할 수 있습니까?'
 feature: Implement Server-side
 exl-id: 3eb0a789-cf1a-4d02-acf7-3c895bcb662f
 source-git-commit: 75af30045684b95d5989b0a1f877ba95bb8cd883
@@ -11,15 +11,15 @@ ht-degree: 13%
 
 ---
 
-# 서버 측: 구현 [!DNL Target]
+# 서버 측: [!DNL Target] 구현
 
-다음에 대한 정보: [!DNL Adobe Target] 서버 측 배달 API, SDK 및 [!DNL Target Recommendations] API.
+[!DNL Adobe Target]개의 서버측 배달 API, SDK 및 [!DNL Target Recommendations]개의 API에 대한 정보입니다.
 
 >[!NOTE]
 >
->구현에서 at.js를 사용하고 [!DNL AppMeasurement] 클라이언트측에서는 [!UICONTROL Target Delivery API] 및 서버측 SDK에 대해서는 아래에서 설명합니다.
+>구현에서 클라이언트측에서 at.js 및 [!DNL AppMeasurement]을(를) 사용하는 경우 아래에 설명된 [!UICONTROL Target Delivery API] 및 서버측 SDK를 사용해야 합니다.
 >
->구현에서 다음을 사용하는 경우 [!UICONTROL Adobe Experience Platform Web SDK], 다음을 사용해야 합니다. [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server API]](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview){target=_blank}.
+>구현에서 [!UICONTROL Adobe Experience Platform Web SDK]을(를) 사용하는 경우 [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server API]](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview){target=_blank}을(를) 사용해야 합니다.
 
 다음 프로세스는 [!DNL Target]의 서버 측 구현 시 발생합니다.
 
@@ -32,7 +32,7 @@ ht-degree: 13%
 
 >[!NOTE]
 >
->처음 방문자는 클라이언트측에서만 초기화할 수 있습니다. 처음 방문자 *할 수 없음* 서버측에서 초기화됩니다. 이는 서드파티 demdex 쿠키에 따라 달라지는 ECID로 인해 발생하며, 따라서 브라우저가 포함된 구현에서 Visitor API.js를 통해 초기화해야 합니다.
+>처음 방문자는 클라이언트측에서만 초기화할 수 있습니다. 처음 방문자 *은(는) 서버측에서 초기화할 수*&#x200B;없습니다. 이는 서드파티 demdex 쿠키에 따라 달라지는 ECID로 인해 발생하며, 따라서 브라우저가 포함된 구현에서 Visitor API.js를 통해 초기화해야 합니다.
 
 다음 섹션은 다양한 서버측 API 및 SDK에 대한 자세한 정보를 제공합니다.
 
@@ -42,7 +42,7 @@ ht-degree: 13%
 
 `/rest/v1/delivery`
 
-다음을 통해 [!DNL Target] 배달 API를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
+[!DNL Target] 배달 API를 통해 다음을 수행할 수 있습니다.
 
 * SPA 및 모바일 채널을 비롯한 웹과 연결된 TV, 키오스크 또는 매장 내 디지털 화면과 같은 비브라우저 기반 IoT 장치 전반에 경험을 제공합니다.
 * HTTP/s를 호출할 수 있는 모든 서버측 플랫폼 또는 애플리케이션에서 경험을 제공합니다.
@@ -52,26 +52,26 @@ ht-degree: 13%
 
 ## 서버측 SDK
 
-다음 [!DNL Adobe Target] 서버측 SDK 설명서는 을 구현하는 데 도움이 됩니다 [!DNL Target] 원하는 언어로 서버에 게시할 수 있습니다.
+[!DNL Adobe Target] 서버측 SDK 설명서는 선택한 언어로 서버에 [!DNL Target]을(를) 구현하는 데 도움이 됩니다.
 
 * [Node.js](node-js/overview.md)
 * [Java](java/overview.md)
 * [.NET](net/overview.md)
 * [Python](python/overview.md)
 
-까지 [!DNL Adobe Target]의 서버측 SDK를 사용하여 다음을 수행할 수 있습니다.
+[!DNL Adobe Target]의 서버측 SDK를 통해 다음을 수행할 수 있습니다.
 
-* 실행 및 실행 **기능 플래그 지정**, **롤아웃**, 및 **A/B 실험** 위치: **거의 0에 가까운 지연**.
-* 경험 전달 **웹**, 포함 **SPA**, 및 **모바일 채널**, 및 비브라우저 기반 **사물 인터넷(IoT) 장치** 연결된 TV, 키오스크 또는 매장 내 디지털 화면 등.
-* 제공 **ML(머신 러닝) 기반의 개인화된 경험** 사용자가 귀하의 비즈니스와 어떤 채널 또는 장치를 사용하는지에 관계없이 사용자에게 전달됩니다.
-* **Adobe Experience Cloud과 원활하게 통합** 제품: **Adobe Analytics**, **Adobe Audience Manager**&#x200B;및 **Experience Cloud ID 서비스** 서버측에서 가져온 것입니다.
+* **거의 0에 가까운 대기 시간**&#x200B;에 **기능 플래그 지정**, **롤아웃**, **A/B 실험**&#x200B;을 실행하고 실행하십시오.
+* **웹**(예: **SPA**, **모바일 채널** 및 연결된 TV, 키오스크 또는 매장 내 디지털 화면과 같은 비브라우저 기반 **사물인터넷(IoT) 장치**)에서 경험을 전달하십시오.
+* 사용자가 귀하의 비즈니스에 참여한 채널 또는 장치에 관계없이 **ML(기계 학습) 기반의 개인화된 경험**&#x200B;을 사용자에게 전달합니다.
+* **서버측에서** Adobe Experience Cloud Adobe Analytics **,** Adobe Audience Manager **및** Experience Cloud ID 서비스&#x200B;**와 같은** 제품과 원활하게 통합됩니다.
 
-다음을 참조하십시오. [시작](sdk-guides/getting-started/getting-started.md) 를 통해 간단한 기능 플래그 지정 사용 사례를 실행하는 방법을 알아보는 페이지 [온디바이스 의사 결정](sdk-guides/on-device-decisioning/overview.md).
+[디바이스에서 의사 결정](sdk-guides/on-device-decisioning/overview.md)을 통해 간단한 기능 플래그 지정 사용 사례를 실행하는 방법을 알아보려면 [시작하기](sdk-guides/getting-started/getting-started.md) 페이지를 참조하세요.
 
-다음을 확인하십시오. [샘플 앱](sdk-guides/sample-apps/sample-apps.md) 재미있게 놀고 놀기 위해서!
+[샘플 앱](sdk-guides/sample-apps/sample-apps.md)을 확인해 보세요.
 
 ## [!DNL Target Recommendations] API
 
 링크: [Target Recommendations API](https://developers.adobetarget.com/api/recommendations) 및 [Adobe Recommendations API 개요](../../before-administer/recs-api/overview.md).
 
-Recommendations API를 사용하면 프로그래밍 방식으로 와 상호 작용할 수 있습니다 [!DNL Target] recommendations 서버입니다. 이러한 API는 일반적으로 를 통해 이루어지는 기능을 수행하기 위해 애플리케이션 스택의 범위와 통합될 수 있습니다. [!DNL Target] 사용자 인터페이스.
+Recommendations API를 사용하면 [!DNL Target] 권장 사항 서버와 프로그래밍 방식으로 상호 작용할 수 있습니다. 이러한 API는 일반적으로 [!DNL Target] 사용자 인터페이스를 통해 수행하는 기능을 수행하기 위해 다양한 애플리케이션 스택과 통합될 수 있습니다.

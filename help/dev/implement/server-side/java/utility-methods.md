@@ -1,5 +1,5 @@
 ---
-title: 에서 유틸리티 메서드 사용 [!DNL Adobe Target] Java SDK
+title: ' [!DNL Adobe Target] Java SDK에서 유틸리티 메서드 사용'
 description: 컨트롤러 간에 다시 사용할 수 있고 별도의 유틸리티 클래스로 이동할 수 있는 도우미 메서드를 사용하는 방법에 대해 알아봅니다.
 feature: APIs/SDKs
 exl-id: 19418126-c4d8-4e6b-bb84-036b7fe0e6ec

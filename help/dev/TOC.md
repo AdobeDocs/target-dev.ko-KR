@@ -13,7 +13,7 @@ ht-degree: 45%
 # Adobe Target 개발자 안내서 {#developer}
 
 + [Adobe Target 개발자 안내서](overview.md)
-+ 시작 {#implementation}
++ {#implementation} 시작
    + 구현하기 전에 {#before-implement}
       + [구현하기 전에](before-implement/considerations-before-you-implement-target.md)
       + [Target 구현 준비](before-implement/prepare-to-implement-target.md)
@@ -90,7 +90,7 @@ ht-degree: 45%
       + [이전 구현에서 글로벌 mbox를 사용](implement/client-side/atjs/global-mbox/mbox-global-target-standard.md)
       + [글로벌 mbox에 매개 변수 전달](implement/client-side/atjs/global-mbox/pass-parameters-to-global-mbox.md)
       + [글로벌 mbox 자주 묻는 질문](implement/client-side/atjs/global-mbox/global-mbox-faq.md)
-+ 서버측 구현 {#server-side}
++ 서버 측 구현 {#server-side}
    + [서버측: Target 구현 개요](implement/server-side/server-side-overview.md)
    + [Target SDK 시작하기](implement/server-side/sdk-guides/getting-started/getting-started.md)
    + [샘플 앱](implement/server-side/sdk-guides/sample-apps/sample-apps.md)
@@ -171,7 +171,7 @@ ht-degree: 45%
    + [위치 서비스 사용](implement/mobile/use-location-service.md)
    + [모바일 앱을 위한 Target FAQ](implement/mobile/mobile-faq.md)
    + [웹 보기가 있는 기본 앱에서 AEP Mobile SDK로 Target 구현](/help/dev/implement/mobile/native-app.md)
-+ 이메일 구현 {#implement-email}
++ 전자 메일 구현 {#implement-email}
    + [이메일: Target 구현 개요](implement/email/overview.md)
    + [이미지용 Adbox 만들기](implement/email/testing-content-with-the-adbox.md)
    + [이메일 이미지 Adbox 테스트](implement/email/testing-email-image-adbox.md)
@@ -202,7 +202,7 @@ ht-degree: 45%
       + [단일 프로필 업데이트 API](/help/dev/administer/profile-api/profile-single-api.md)
       + [벌크 프로필 업데이트 API](/help/dev/administer/profile-api/profile-bulk-api.md)
    + [보고 API](/help/dev/administer/reporting-api/reporting-api.md)
-   + RECOMMENDATIONS API {#recommendations-api}
+   + Recommendations API {#recommendations-api}
       + [Recommendations API 개요](before-administer/recs-api/overview.md)
       + [API를 사용하여 카탈로그 관리](before-administer/recs-api/manage-catalog.md)
       + [사용자 지정 기준 관리](before-administer/recs-api/manage-custom-criteria.md)
@@ -215,7 +215,7 @@ ht-degree: 45%
    + [Adobe Experience Platform Edge Network 서버 API](/help/dev/before-implement/delivery-api-overview/aep-edge-network-server-api.md)
 + 구현 패턴 {#implementation-patterns}
    + [구현 패턴 개요](/help/dev/patterns/pattern-overview.md)
-   + at.js를 사용한 Recommendations 구현 패턴 {#atjs}
+   + at.js {#atjs}을(를) 사용하는 Recommendations 구현 패턴
       + [at.js 개요를 사용한 Recommendations 구현 패턴](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
       + [SDK 초기화](/help/dev/patterns/recs-atjs/initialize-sdk.md)
       + [데이터 수집 구성](/help/dev/patterns/recs-atjs/data-collection.md)

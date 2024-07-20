@@ -1,19 +1,19 @@
 ---
 keywords: adobe.target.sendNotifications, sendNotifications, sendnotifications, send notifications, notifications, at.js, functions, function, $9
-description: 사용 [!UICONTROL adobe.target.sendNotifications()] at.js가 알림을 [!DNL Target] 경험을 렌더링할 때 를 사용하지 않는 에지 [!UICONTROL applyOffer](s) (at.js.2.1 +)
+description: 경험이 [!UICONTROL applyOffer]을(를) 사용하지 않고 렌더링될 때 at.js에 대해 [!UICONTROL adobe.target.sendNotifications()]을(를) 사용하여  [!DNL Target] edge로 알림을 보냅니다. (at.js.2.1 +)
 title: adobe.target.sendNotifications() 함수를 사용하는 방법은 무엇입니까?
 feature: at.js
 exl-id: 1a08da10-31a0-4b0b-af7d-91ed7d32c308
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 84%
+source-wordcount: '640'
+ht-degree: 83%
 
 ---
 
 # [!UICONTROL adobe.target.sendNotifications(options)]
 
-이 함수는 (으)로 알림을 보냅니다. [!DNL Target] 를 사용하지 않고 경험을 렌더링할 때 에지 `[!UICONTROL adobe.target.applyOffer()]` 또는 `[!UICONTROL adobe.target.applyOffers()]`.
+이 함수는 `[!UICONTROL adobe.target.applyOffer()]` 또는 `[!UICONTROL adobe.target.applyOffers()]`을(를) 사용하지 않고 경험을 렌더링할 때 [!DNL Target] Edge에 알림을 보냅니다.
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ ht-degree: 84%
 | Request > notifications > view > key | 문자열 | 아니오 | `<=` 512자. | 키 보기. API를 통해 보기에 설정된 키입니다. |
 | Request > notifications > view > state | 문자열 | 아니오 |  | 상태 토큰 보기. |
 
-**참고**: 다음 문자는 *아님* 허용 대상 `Request > notifications > mbox > name`:
+**참고**: 다음 문자는 `Request > notifications > mbox > name`에 사용할 수 있는 *허용되지 않음*&#x200B;입니다.
 
 ```
 - '-, ./=`:;&!@#$%^&*()+|?~[]{}'
@@ -118,4 +118,4 @@ adobe.target.getOffers({
 
 >[!NOTE]
 >
->을 사용하는 경우 [!DNL Adobe Analytics], `[!UICONTROL getOffers()]` 프리페치만 사용 `[!UICONTROL sendNotifications()]`, [!DNL Analytics] 요청은 다음 시간 이후에 실행되어야 합니다. `[!UICONTROL sendNotifications()]` 가 실행됩니다. 목적은 SDID가에 의해 생성되도록 하는 것입니다. `[!UICONTROL sendNotifications()]` (이)가 (으)로 전송된 SDID와 일치 [!DNL Analytics] 및 [!DNL Target].
+>미리 가져오기 전용 [!DNL Adobe Analytics], `[!UICONTROL getOffers()]` 및 `[!UICONTROL sendNotifications()]`을(를) 사용하는 경우 `[!UICONTROL sendNotifications()]`이(가) 실행된 후에 [!DNL Analytics] 요청을 실행해야 합니다. 목적은 `[!UICONTROL sendNotifications()]`에 의해 생성된 SDID가 [!DNL Analytics] 및 [!DNL Target]에 전송된 SDID와 일치하는지 확인하는 것입니다.

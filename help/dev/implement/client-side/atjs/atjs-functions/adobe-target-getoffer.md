@@ -1,33 +1,33 @@
 ---
 keywords: adobe.target.getOffer, getOffer, getoffer, 오퍼 가져오기, at.js, 함수, 함수, $8
-description: 사용 [!UICONTROL adobe.target.getOffer()] 함수 및 해당 옵션 [!DNL Adobe Target] at.js 라이브러리를 사용하여 요청을 실행하여 [!DNL Target] 오퍼.
-title: 사용 방법 [!UICONTROL adobe.target.getOffer()] 기능?
+description: ' [!DNL Adobe Target] at.js 라이브러리에 대한 [!UICONTROL adobe.target.getOffer()] 함수와 해당 옵션을 사용하여  [!DNL Target] 오퍼 가져오기 요청을 실행합니다.'
+title: '[!UICONTROL adobe.target.getOffer()] 함수를 사용하는 방법'
 feature: at.js
 exl-id: 7b917d42-06e8-4838-a09d-0c4872c9beaa
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 81%
+source-wordcount: '460'
+ht-degree: 79%
 
 ---
 
 # [!DNL adobe.target.getOffer(options)]
 
-이 함수는 를 가져오는 요청을 실행합니다. [!DNL Target] 오퍼.
+이 함수는 [!DNL Target] 오퍼를 가져오는 요청을 실행합니다.
 
 `[!UICONTROL adobe.target.applyOffer()]`와 함께 사용하여 응답을 처리하거나 자체적인 성공 처리를 사용할 수 있습니다. 옵션 매개 변수는 필수이며 다음 구조를 갖습니다.
 
 | 키 | 유형 | 필수 | 설명 |
 |--- |--- |--- |--- |
 | mbox | 문자열 | 예 | Mbox 이름 |
-| params | 개체 | 아니오 | mbox 매개 변수. 다음 구조를 가진 키 - 값 쌍의 개체입니다.<P>`{ "param1": "value1", "param2": "value2"}` |
+| params | 개체 | 아니오 | Mbox 매개 변수입니다. 다음 구조를 가진 키 - 값 쌍의 개체입니다.<P>`{ "param1": "value1", "param2": "value2"}` |
 | 성공 | 함수 | 예 | 서버에서 응답을 받았을 때 실행할 콜백입니다. 성공 콜백 함수는 오퍼 개체의 배열을 나타내는 단일 매개 변수를 수신합니다. 다음은 성공 콜백 예입니다.<P>`function handleSuccess(response){......}`<P>자세한 내용은 아래 응답을 참조하십시오. |
-| 오류 | 함수 | 예 | 오류가 발생한 경우 실행할 콜백입니다. 오류가 있는 것으로 간주되는 몇 가지 경우가 있습니다.<ul><li>HTTP 상태 코드가 200 정상이 아닙니다.</li><li>응답을 구문 분석할 수 없습니다. 예를 들어, JSON이 잘못 구성되었거나 JSON 대신 HTML이 구성되었습니다.</li><li>응답에 &quot;오류&quot; 키가 포함되어 있습니다. 예를 들어, 요청을 제대로 처리할 수 없다는 예외가 에지에서 발생했습니다. mbox가 차단되어 컨텐츠를 검색할 수 없는 등의 경우 오류가 발생했습니다. 오류 콜백 함수는 두 개의 매개 변수(status 및 error)를 수신합니다. 다음은 오류 콜백 예제입니다. `function handleError(status, error){......}`</li></ul>자세한 내용은 오류 응답을 참조하십시오. |
-| timeout | 숫자 | 아니오 | 시간 초과(밀리 초)입니다. 지정하지 않으면 at.js의 기본 시간 초과가 사용됩니다.<P>기본 시간 초과는 다음에서 설정할 수 있습니다. [!DNL Target] 아래의 UI [!UICONTROL 관리] > [!UICONTROL 구현]. |
+| 오류 | 함수 | 예 | 오류가 발생한 경우 실행할 콜백입니다. 오류가 있는 것으로 간주되는 몇 가지 경우가 있습니다.<ul><li>HTTP 상태 코드가 200 정상이 아닙니다.</li><li>응답을 구문 분석할 수 없습니다. 예를 들어, JSON이 잘못 구성되었거나 JSON 대신 HTML이 구성되었습니다.</li><li>응답에 &quot;오류&quot; 키가 포함되어 있습니다. 예를 들어, 요청을 제대로 처리할 수 없다는 예외가 에지에서 발생했습니다. mbox가 차단되어 컨텐츠를 검색할 수 없는 등의 경우 오류가 발생했습니다. 오류 콜백 함수는 두 개의 매개 변수(status 및 error)를 수신합니다. 오류 콜백 예제는 다음과 같습니다. `function handleError(status, error){......}`</li></ul>자세한 내용은 오류 응답을 참조하십시오. |
+| timeout | 숫자 | 아니오 | 시간 초과(밀리 초)입니다. 지정하지 않으면 at.js의 기본 시간 초과가 사용됩니다.<P>[!UICONTROL Administration] > [!UICONTROL Implementation] 아래의 [!DNL Target] UI에서 기본 시간 제한을 설정할 수 있습니다. |
 
 ## 예
 
-매개 변수 추가 [!UICONTROL getOffer()] 및 사용 [!UICONTROL applyOffer()] 성공 처리용:
+[!UICONTROL getOffer()]을(를) 사용하여 매개 변수를 추가하고 [!UICONTROL applyOffer()]을(를) 사용하여 성공 처리:
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffer({   
@@ -48,7 +48,7 @@ adobe.target.getOffer({
 });
 ```
 
-를 사용하여 매개 변수 및 프로필 매개 변수 추가 [!UICONTROL getOffer()] 및 사용 [!UICONTROL applyOffer()] 성공 처리용:
+[!UICONTROL getOffer()]을(를) 사용하여 매개 변수 및 프로필 매개 변수를 추가하고 [!UICONTROL applyOffer()]을(를) 사용하여 성공 처리:
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffer({   
@@ -71,7 +71,7 @@ adobe.target.getOffer({
 });
 ```
 
-사용자 지정 시간 초과 및 사용자 지정 성공 처리 사용 [!UICONTROL getOffer()]:
+[!UICONTROL getOffer()]에서 사용자 지정 시간 제한 및 사용자 지정 성공 처리 사용:
 
 &quot;YOUR_OWN_CUSTOM_HANDLING_FUNCTION&quot;은 고객이 정의하는 함수의 자리 표시자입니다.
 

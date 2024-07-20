@@ -1,9 +1,10 @@
 ---
 title: Adobe Target 프로필 API
-description: Adobe Target 프로필 API를 사용하여 방문자 데이터를 (으)로 보내는 방법 알아보기 [!DNL Target].
+description: Adobe Target 프로필 API를 사용하여 방문자 데이터를  [!DNL Target](으)로 보내는 방법을 알아봅니다.
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
-source-git-commit: e5a1c38d448cb7446b7b26cd0dc882976ba94dd3
+exl-id: 480cbbbe-4822-48c3-80d4-53628dee57b0
+source-git-commit: e2462d12cf58ab5a588c13a96df5e6abafb9d675
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 1%
@@ -12,16 +13,16 @@ ht-degree: 1%
 
 # [!DNL Adobe Target Profiles API] 개요
 
-[!DNL Adobe Target] 모든 개별 사용자에 대한 프로필을 만들고 유지 관리합니다. 이 프로필은 [!DNL Target] 에지 클러스터 및 가 방문할 때마다 실시간으로 업데이트됩니다.
+[!DNL Adobe Target]은(는) 모든 개별 사용자에 대한 프로필을 만들고 유지 관리합니다. 이 프로필은 [!DNL Target] 에지 클러스터에 저장되며 방문할 때마다 실시간으로 업데이트됩니다.
 
-## 의 구조 [!DNL Target] 프로필
+## [!DNL Target] 프로필 구조
 
 Target 프로필은 다음 객체로 구성됩니다.
 
 | 개체 | 세부 사항 |
 | --- | --- |
-| `clientcode` | 다음 [!DNL Target] 프로필이 연결된 클라이언트 코드입니다. |
-| `visitorId` | 프로필용 식별자. 다음과 같을 수 있습니다. `tntid`, `thirdpartyid`, 또는 `marketingcloudvisitorid`. |
+| `clientcode` | 프로필이 연결된 [!DNL Target] 클라이언트 코드입니다. |
+| `visitorId` | 프로필용 식별자. `tntid`, `thirdpartyid` 또는 `marketingcloudvisitorid`일 수 있습니다. |
 | `modifiedAt` | 프로필이 마지막으로 업데이트된 시점의 타임스탬프입니다. |
 | `profileAttributes` | 해당 개별 프로필에 키-값 쌍으로 저장된 모든 프로필 속성 목록입니다. |
 

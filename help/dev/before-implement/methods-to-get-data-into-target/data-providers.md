@@ -1,19 +1,19 @@
 ---
 keywords: 구현, 구현, 설정, 설정, 데이터 공급자
-description: 데이터 가져오기 [!DNL Target] 데이터 공급자 사용.
-title: 데이터를으로 가져오는 방법 [!DNL Target] 데이터 공급자를 사용하시겠습니까?
+description: 데이터 공급자를 사용하여  [!DNL Target] 에 데이터를 가져옵니다.
+title: 데이터 공급자를 사용하여  [!DNL Target] 에 데이터를 가져오려면 어떻게 해야 합니까?
 feature: Implementation
 exl-id: 9971bd96-f736-4965-afe2-b4901c12d006
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 53%
+source-wordcount: '287'
+ht-degree: 55%
 
 ---
 
 # 데이터 공급자
 
-데이터 공급자는 타사에서 로 데이터를 쉽게 전달할 수 있는 기능입니다 [!DNL Adobe Target].
+데이터 공급자는 타사에서 [!DNL Adobe Target](으)로 데이터를 쉽게 전달할 수 있는 기능입니다.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ ht-degree: 53%
 
 ## 메서드의 이점
 
-이 설정을 사용하면 고객이 Demandbase, BlueKai 및 사용자 지정 서비스와 같은 타사 데이터 공급자로부터 데이터를 수집하여 로 전달할 수 있습니다 [!DNL Target] 글로벌 mbox 요청에 mbox 매개 변수로 사용됩니다.
+이 설정을 사용하면 고객이 Demandbase, BlueKai 및 사용자 지정 서비스와 같은 타사 데이터 공급자로부터 데이터를 수집하고, 글로벌 mbox 요청의 mbox 매개 변수로 데이터를 [!DNL Target]에 전달할 수 있습니다.
 
 비동기 및 동기 요청을 통해 여러 공급자로부터 데이터를 수집하도록 지원합니다.
 
@@ -39,7 +39,7 @@ ht-degree: 53%
 
 ## 주의 사항
 
-데이터 공급자가에 추가된 경우 `window.targetGlobalSettings.dataProviders` 비동기 상태인 경우 병렬로 실행됩니다. 방문자 API 요청은에 추가된 함수와 함께 실행됩니다 `window.targetGlobalSettings.dataProviders` 최소 대기 시간을 허용합니다.
+`window.targetGlobalSettings.dataProviders`에 추가된 데이터 공급자가 비동기 상태인 경우 병렬로 실행됩니다. 최소 대기 시간을 허용하기 위해 방문자 API 요청이 `window.targetGlobalSettings.dataProviders`에 추가된 함수와 함께 실행됩니다.
 
 at.js는 데이터를 캐시하려고 하지 않습니다. 데이터 공급자는 데이터를 한 번만 가져오는 경우 데이터가 캐시되는지 확인해야 하고, 공급자 함수가 호출될 때 두 번째 호출을 위해 캐시 데이터를 제공해야 합니다.
 
