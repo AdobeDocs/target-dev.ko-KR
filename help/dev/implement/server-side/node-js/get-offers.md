@@ -10,7 +10,7 @@ ht-degree: 21%
 
 ---
 
-# [!UICONTROL Get Offers](Node.js)
+# [!UICONTROL Get Offers] (Node.js)
 
 ## 설명
 
