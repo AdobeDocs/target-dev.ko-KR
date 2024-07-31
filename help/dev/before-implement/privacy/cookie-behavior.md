@@ -4,7 +4,7 @@ description: ' [!DNL Target] 쿠키 동작(퍼스트 파티 쿠키, 퍼스트 �
 title: ' [!DNL Target] 쿠키에 대한 정보는 어디에서 찾을 수 있습니까?'
 feature: at.js
 exl-id: d44e02ce-8920-4130-bcad-699ca77c0dad
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 39f390a0e5eedf8c6957333759d31d96ed11b321
 workflow-type: tm+mt
 source-wordcount: '1581'
 ht-degree: 51%
@@ -120,6 +120,7 @@ JavaScript 라이브러리는 `mboxSession ID`을(를) 생성합니다. 첫 번�
 |--- |--- |
 | 퍼스트 파티 도메인 | [!DNL Target] 고객을 위한 표준 구현입니다. &quot;mbox&quot; 쿠키가 고객의 도메인에 설정되어 있습니다. |
 | 타사 추적 | 타사 추적은 [!DNL Target] 및 [!DNL Adobe Audience Manager](AAM)의 광고 및 타깃팅 사용 사례에 중요합니다. 타사 추적을 사용하려면 교차 사이트 스크립팅 기술이 필요합니다. [!DNL Target]은(는) `clientcode.tt.omtrd.net` 도메인에 설정된 &quot;mboxSession&quot;과 &quot;mboxPC&quot;, 두 개의 쿠키를 사용합니다. |
+
 **Apple은 어떻게 접근하고 있습니까?**
 
 Apple의 메시지:

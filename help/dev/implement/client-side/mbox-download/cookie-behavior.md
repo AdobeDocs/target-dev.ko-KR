@@ -4,7 +4,7 @@ description: Target 쿠키 동작(자사 쿠키, 자사 쿠키가 포함된 타�
 title: Target 쿠키에 대한 정보는 어디에서 찾을 수 있습니까?
 feature: at.js
 role: Developer
-source-git-commit: 34e8625798121e236a04646dfcf049f9c2b6f9d0
+source-git-commit: 39f390a0e5eedf8c6957333759d31d96ed11b321
 workflow-type: tm+mt
 source-wordcount: '1580'
 ht-degree: 54%
@@ -118,6 +118,7 @@ JavaScript 라이브러리는 `mboxSession ID`을(를) 생성합니다. 첫 번�
 |--- |--- |
 | 퍼스트 파티 도메인 | Target 고객을 위한 표준 구현입니다. &quot;mbox&quot; 쿠키가 고객의 도메인에 설정되어 있습니다. |
 | 타사 추적 | 타사 추적은 Target 및 Adobe Audience Manager(AAM)의 광고 및 타깃팅 사용 사례에 중요합니다. 타사 추적을 사용하려면 교차 사이트 스크립팅 기술이 필요합니다. Target에서는 `clientcode.tt.omtrd.net` 도메인에 있는 &quot;mboxSession&quot;과 &quot;mboxPC&quot;, 이 두 개의 쿠키를 사용합니다. |
+
 **Apple은 어떻게 접근하고 있습니까?**
 
 Apple의 메시지:
