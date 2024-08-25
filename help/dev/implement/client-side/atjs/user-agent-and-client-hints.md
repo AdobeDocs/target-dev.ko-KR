@@ -136,7 +136,7 @@ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like 
 
 Target의 다음 사용 사례에는 클라이언트 힌트가 필요합니다.
 
-### 대상 속성
+### 대상자 속성
 
 Target 대상을 사용하며 다음 대상 속성 중 하나를 사용하는 경우, Target에서는 올바른 세분화를 수행하기 위해 클라이언트 힌트가 필요합니다.
 

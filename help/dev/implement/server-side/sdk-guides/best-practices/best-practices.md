@@ -19,7 +19,7 @@ ht-degree: 0%
 의사 결정 방법으로 &quot;온디바이스&quot;를 사용하는 경우 방문자가 웹 페이지를 처음 로드하면 아티팩트가 다운로드됩니다. 첫 번째 페이지 로드 시 발생해야 하는 모든 활동 자격(캐시 없음)은 아티팩트가 완전히 다운로드된 후에만 발생합니다. 새 익명 방문자에 대해 활동 자격이 빠르게 수행되도록 하기 위해 따를 수 있는 특정 모범 사례가 있습니다.
 
 * 아티팩트에 있지 않은 &quot;디바이스에서&quot; 가능 활동을 비활성화합니다.
-* Target Premium이 있는 경우 [속성/작업 공간](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=ko-KR)을 사용하여 다른 작업 공간에 대해 다른 아티팩트 파일을 만들 수 있습니다.
+* Target Premium이 있는 경우 [속성/작업 공간](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=ko-KR)을 사용하여 작업 공간별로 다른 아티팩트 파일을 만들 수 있습니다.
 * 합법적인 이유로 인해 아티팩트 파일이 매우 커지면 &quot;hybrid&quot; 의사 결정 방법을 사용할 수 있습니다. 이 메서드를 사용하면 아티팩트를 병렬로 다운로드할 수 있으며 아티팩트가 다운로드될 때까지 모든 Target API 호출이 중단됩니다. 이 접근 방식에 대한 자세한 내용은 아래의 &quot;하이브리드&quot; 의사 결정 모드에 대한 모범 사례 섹션을 참조하십시오.
 * 단일 페이지 응용 프로그램(SPA)이 있는 경우 [!DNL Adobe]에서는 첫 번째 페이지 로드 중에 응용 프로그램의 기본 JavaScript 파일을 로드하기 전에 at.js를 로드하고 초기화하는 것이 좋습니다. 이 접근 방식은 훨씬 이전에 아티팩트 다운로드를 시작하므로 더 빠른 경험 렌더링을 제공합니다.
 

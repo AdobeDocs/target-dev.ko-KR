@@ -76,7 +76,7 @@ Adobe Target용 [배달 API](/help/dev/implement/delivery-api/overview.md)은(�
    ![server-side-create-recs-json-response2.png](assets/server-side-create-recs-json-response2.png)
 응답에는 키 ID와 권장 엔티티의 엔티티 ID가 포함됩니다.
 
-이러한 방식으로 Recommendations에서 배달 API를 사용하면 HTML이 아닌 디바이스에서 방문자에게 권장 사항을 표시하기 전에 추가 단계를 수행할 수 있습니다. 예를 들어 최종 결과를 표시하기 전에 배달 API에서 응답을 가져와 다른 시스템(예: CMS, PIM 또는 전자 상거래 플랫폼)에서 엔티티 속성 세부 사항(재고, 가격, 등급 등)을 추가로 실시간 조회할 수 있습니다.
+이러한 방식으로 Recommendations에서 배달 API를 사용하면 HTML이 아닌 디바이스에서 방문자에게 권장 사항을 표시하기 전에 추가 단계를 수행할 수 있습니다. 예를 들어 최종 결과를 표시하기 전에 배달 API의 응답을 가져와서 다른 시스템(예: CMS, PIM 또는 전자 상거래 플랫폼)에서 엔티티 속성 세부 사항(재고, 가격, 등급 등)을 추가로 실시간 조회할 수 있습니다.
 
 이 안내서에 설명된 접근 방식을 사용하면 모든 애플리케이션에서 Target의 응답을 활용하여 개인화된 추천을 제공할 수 있습니다.
 

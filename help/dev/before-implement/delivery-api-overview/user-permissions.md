@@ -1,7 +1,7 @@
 ---
 title: Adobe Target Delivery API 사용자 권한
 description: Adobe Target Delivery API 사용자 권한
-badgePremium: label="Premium" type="Positive" url="https://experienceleague.adobe.com/docs/target/using/introduction/intro.html?lang=en#premium newtab=true" tooltip="Target Premium에 포함된 내용을 확인하십시오."
+badgePremium: label="Premium" type="Positive" url="https://experienceleague.adobe.com/docs/target/using/introduction/intro.html?lang=en#premium newtab=true" tooltip="Target Premium에 포함된 내용을 확인합니다."
 keywords: 배달 api
 exl-id: 332f90bd-4079-4653-aa38-b35837631c94
 feature: APIs/SDKs

@@ -26,7 +26,7 @@ ht-degree: 8%
 
 ### [!DNL Platform Web SDK](으)로 [!DNL Adobe Experience Cloud] 구현
 
-[이 자습서](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR)에서 [!DNL Adobe Experience Platform Web SDK]을(를) 사용하여 [!DNL Experience Cloud] 응용 프로그램을 구현하는 방법을 알아봅니다. [!DNL Target]에 대한 자세한 내용은 Platform Web SDK로 [설정 [!DNL Target] 튜토리얼 섹션](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html)을 참조하십시오.
+[이 자습서](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko)에서 [!DNL Adobe Experience Platform Web SDK]을(를) 사용하여 [!DNL Experience Cloud] 응용 프로그램을 구현하는 방법을 알아봅니다. [!DNL Target]에 대한 자세한 내용은 Platform Web SDK로 [설정 [!DNL Target] 튜토리얼 섹션](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html)을 참조하십시오.
 
 ### at.js 2에서 [!DNL Target] 마이그레이션.*x*&#x200B;에서 [!DNL Platform Web SDK](으)로
 

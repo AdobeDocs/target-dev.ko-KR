@@ -284,7 +284,7 @@ window.targetGlobalSettings = {
 
 | 비디오 | 설명 |
 |--- |--- |
-| [Adobe Target에서 데이터 공급자 사용](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html) | 데이터 공급자는 타사의 데이터를 Target에 쉽게 전달할 수 있는 기능입니다. 타사는 기상 서비스, DMP 또는 자체 웹 서비스일 수 있습니다. 그런 다음, 이 데이터를 사용하여 대상, Target 콘텐츠를 작성하고 방문자 프로필을 보강할 수 있습니다. |
+| [Adobe Target에서 데이터 공급자 사용](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html) | 데이터 공급자는 타사의 데이터를 Target에 쉽게 전달할 수 있는 기능입니다. 타사는 기상 서비스, DMP 또는 자체 웹 서비스일 수 있습니다. 그런 다음, 이 데이터를 사용하여 대상자, Target 콘텐츠를 작성하고 방문자 프로필을 보강할 수 있습니다. |
 | [Adobe Target에서 데이터 공급자 구현](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html) | Adobe [!DNL Target]의 dataProviders 기능을 사용하여 타사 데이터 공급자로부터 데이터를 검색하고 [!DNL Target] 요청에 전달하는 방법에 대한 자세한 내용과 예제에 대한 구현입니다. |
 
 `window.targetGlobalSettings.dataProviders` 설정은 데이터 공급자의 배열입니다.

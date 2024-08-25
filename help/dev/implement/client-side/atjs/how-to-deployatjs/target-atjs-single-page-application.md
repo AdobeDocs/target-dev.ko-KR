@@ -190,7 +190,7 @@ SPA용 [!DNL Adobe Target] VEC는 &quot;보기&quot;라는 새로운 개념을 �
 
 ## at.js 2.x 시스템 다이어그램
 
-다음 다이어그램은 보기가 있는 at.js 2.x의 워크플로우를 이해하고 이를 통해 어떻게 SPA 통합이 향상되는지를 이해하는 데 도움이 됩니다. at.js 2.x에서 사용되는 개념의 도입을 보다 잘 이해하려면 [단일 페이지 애플리케이션 구현](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md)을 참조하십시오.
+다음 다이어그램은 보기가 있는 at.js 2.x의 워크플로를 이해하고 이를 통해 어떻게 SPA 통합이 향상되는지를 이해하는 데 도움이 됩니다. at.js 2.x에서 사용되는 개념의 도입을 보다 잘 이해하려면 [단일 페이지 애플리케이션 구현](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md)을 참조하십시오.
 
 ![at.js 2.x에서 Target 흐름](../../assets/system-diagram-atjs-20.png)
 

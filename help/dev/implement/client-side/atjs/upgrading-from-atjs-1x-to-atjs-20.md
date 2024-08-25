@@ -252,7 +252,7 @@ at.js 2.*x*&#x200B;님, 더 이상 네트워크 호출에 &quot;`target-global-m
 
 ### at.js에서 글로벌 mbox 이름이 문제가 됩니까?
 
-고객은 **[!UICONTROL Target]** > **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Edit at.js Settings]**&#x200B;을(를) 통해 글로벌 mbox 이름을 지정할 수 있습니다. 이 설정은 [!DNL Target] Edge Server에서 execute > pageLoad를 [!DNL Target] UI에 나타나는 글로벌 mbox 이름으로 변환하는 데 사용됩니다. 이렇게 변환하면 고객은 계속해서 서버 측 API, 양식 기반 작성기, 프로필 스크립트를 사용할 수 있으며 글로벌 mbox 이름을 사용하여 대상을 만들 수 있습니다. 또한 at.js 1을 사용하는 페이지가 여전히 있는 경우 동일한 글로벌 mbox 이름이 **[!UICONTROL Administration]** > **[!UICONTROL Visual Experience Composer]** 페이지에도 구성되도록 하는 것이 좋습니다.다음 그림과 같이 *x*&#x200B;입니다.
+고객은 **[!UICONTROL Target]** > **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Edit at.js Settings]**&#x200B;을(를) 통해 글로벌 mbox 이름을 지정할 수 있습니다. 이 설정은 [!DNL Target] Edge Server에서 execute > pageLoad를 [!DNL Target] UI에 나타나는 글로벌 mbox 이름으로 변환하는 데 사용됩니다. 이렇게 변환하면 고객은 계속해서 서버 측 API, 양식 기반 작성기, 프로필 스크립트를 사용할 수 있으며 글로벌 mbox 이름을 사용하여 대상자를 만들 수 있습니다. 또한 at.js 1을 사용하는 페이지가 여전히 있는 경우 동일한 글로벌 mbox 이름이 **[!UICONTROL Administration]** > **[!UICONTROL Visual Experience Composer]** 페이지에도 구성되도록 하는 것이 좋습니다.다음 그림과 같이 *x*&#x200B;입니다.
 
 ![at.js 수정 대화 상자](../assets/modify-atjs.png)
 
@@ -288,7 +288,7 @@ at.js 2.*x*&#x200B;님, 더 이상 네트워크 호출에 &quot;`target-global-m
 >
 >도메인 간 추적은 at.js 2.10부터 지원되지만 at.js 2.2.10 이전 *x*. 도메인 간 추적은 at.js 2에서 지원됩니다.at.js 2.*x*&#x200B;에서 지원됩니다.
 
-[!DNL Target]에서 타사 쿠키가 `<CLIENTCODE>.tt.omtrdc.net`에 저장됩니다. 자사 쿠키는 `clientdomain.com`에 저장됩니다. 첫 번째 요청은 `mboxSession` 및 `mboxPC`라는 타사 쿠키를 설정하는 HTTP 응답 헤더를 반환하는 반면, 리디렉션 요청이 추가 매개 변수(`mboxXDomainCheck=true`)를 사용하여 다시 전송됩니다. 브라우저가 타사 쿠키를 수락하면 리디렉션 요청에 해당 쿠키가 포함되고 경험이 반환됩니다. 여기서는 HTTP GET 메서드를 사용하므로 이 워크플로우가 가능합니다.
+[!DNL Target]에서 타사 쿠키가 `<CLIENTCODE>.tt.omtrdc.net`에 저장됩니다. 자사 쿠키는 `clientdomain.com`에 저장됩니다. 첫 번째 요청은 `mboxSession` 및 `mboxPC`라는 타사 쿠키를 설정하는 HTTP 응답 헤더를 반환하는 반면, 리디렉션 요청이 추가 매개 변수(`mboxXDomainCheck=true`)를 사용하여 다시 전송됩니다. 브라우저가 타사 쿠키를 수락하면 리디렉션 요청에 해당 쿠키가 포함되고 경험이 반환됩니다. 여기서는 HTTP GET 메서드를 사용하므로 이 워크플로가 가능합니다.
 
 단, at.js 2.*x*, HTTP GET이 사용되지 않습니다. 대신 HTTP POST은 at.js 2.[!DNL Target] Edge 서버에 JSON 페이로드를 전송하기 위한 *x*. HTTP POST을 사용하면 브라우저가 서드파티 쿠키를 지원하는지 여부를 확인하는 리디렉션 요청이 중단됨을 의미합니다. 이것은 HTTP GET 요청은 멱등 트랜잭션이 아니지만 HTTP POST는 비멱등이어서 임의로 반복되면 안 되기 때문입니다. 따라서 at.js 2.*x*(2.10 이전)은(는) 기본적으로 지원되지 않습니다. at.js 1.*x*&#x200B;는 도메인 간 추적을 위한 기본 지원을 제공합니다.
 
@@ -306,7 +306,7 @@ at.js v2 버전에 대해 도메인 간 추적을 사용하려면&#x200B;*x* 2.1
 
 ### 글로벌 mbox 이름이 지원됨
 
-고객은 **[!UICONTROL Target]** > **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Edit]**&#x200B;을(를) 통해 글로벌 mbox 이름을 지정할 수 있습니다. 이 설정은 [!DNL Target] Edge Server에서 execute > pageLoad를 입력된 글로벌 mbox 이름으로 변환하는 데 사용됩니다. 이렇게 변환하면 고객은 계속해서 서버 측 API, 양식 기반 작성기, 프로필 스크립트를 사용할 수 있으며 글로벌 mbox를 타깃팅하는 대상을 만들 수 있습니다.
+고객은 **[!UICONTROL Target]** > **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Edit]**&#x200B;을(를) 통해 글로벌 mbox 이름을 지정할 수 있습니다. 이 설정은 [!DNL Target] Edge Server에서 execute > pageLoad를 입력된 글로벌 mbox 이름으로 변환하는 데 사용됩니다. 이렇게 변환하면 고객은 계속해서 서버 측 API, 양식 기반 작성기, 프로필 스크립트를 사용할 수 있으며 글로벌 mbox를 타기팅하는 대상자를 만들 수 있습니다.
 
 ### 아래의 at.js 사용자 지정 이벤트는 `triggerView()`에 적용할 수 있습니까? 아니면 `applyOffer()`나 `applyOffers()`에만 적용할 수 있습니까?
 
