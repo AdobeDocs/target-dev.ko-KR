@@ -67,4 +67,4 @@ ht-degree: 38%
 
 ## 도움말
 
-질문이 있거나 Classic API에서 [!DNL Adobe Developer Console]의 [!DNL Target] API로 전환하는 데 도움이 필요한 경우 [!DNL Adobe Target Client Care](tt-support@adobe.com)에 문의하십시오.
+질문이 있거나 Classic API에서 [!DNL Adobe Developer Console]의 [!DNL Target] API로 전환하는 데 도움이 필요한 경우 [!DNL Adobe Target Client Care] (tt-support@adobe.com)에 문의하십시오.
