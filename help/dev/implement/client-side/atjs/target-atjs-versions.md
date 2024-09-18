@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Target] at.js JavaScript 라이브러리의 각 버�
 title: at.js의 각 버전에 포함된 것은 무엇입니까?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
-source-git-commit: 9999c1b5f603e6607bd81f6ad6a06a7f74e76acb
+source-git-commit: bee8752dd212a14f8414879e03565867eb87f6b9
 workflow-type: tm+mt
-source-wordcount: '4904'
-ht-degree: 64%
+source-wordcount: '4967'
+ht-degree: 63%
 
 ---
 
@@ -25,7 +25,16 @@ ht-degree: 64%
 >
 >둘 중 하나의 최신 버전으로 업그레이드해야 합니다.*x* 또는 2.*x*&#x200B;을(를) 통해 해당 주 버전의 이전 부 버전에서 발견된 문제에 대한 버그 수정 및 보안 패치를 얻을 수 있습니다.
 
-[Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)의 태그는 at.js를 업그레이드하는 기본 방법입니다. 확장 개발자는 확장에 새로운 기능을 지속적으로 추가하고 버그를 자주 수정합니다. 이러한 업데이트는 새로운 버전의 확장에 패키지화되어 Adobe Experience Platform 카탈로그에서 업그레이드로 사용할 수 있습니다. 자세한 내용은 *태그 개요* 안내서의 [확장 업그레이드](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html)를 참조하십시오.6+
+[Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)의 태그는 at.js를 업그레이드하는 기본 방법입니다. 확장 개발자는 확장에 새로운 기능을 지속적으로 추가하고 버그를 자주 수정합니다. 이러한 업데이트는 새로운 버전의 확장에 패키지화되어 Adobe Experience Platform 카탈로그에서 업그레이드로 사용할 수 있습니다. 자세한 내용은 *태그 개요* 안내서에서 [확장 업그레이드](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html)를 참조하십시오.
+
+## at.js 버전 2.11.6(2024년 9월 29일)
+
+* [!UICONTROL Visual Experience Composer](VEC) 또는 [!UICONTROL Form-Based Experience Composer] 내의 리디렉션 오퍼에서 [!DNL Target]이(가) 올바르게 작동하지 않는 문제를 해결했습니다.
+
+## at.js 버전 2.11.5(2024년 8월 14일)
+
+* 쿠키 읽기 및 쓰기 작업을 위한 캐싱을 구현하여 반복되고 많은 비용이 드는 문자열 구문 분석 및 조작의 오버헤드를 줄였습니다.
+* 문자열을 수동으로 구문 분석하고 조작하는 것보다 빠르기 때문에 가능한 경우 최신 URL 검색 매개변수 API를 구현했습니다.
 
 ## at.js 버전 2.11.4 (2024년 1월 24일 목요일)
 

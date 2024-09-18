@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API]을(를) 
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: 2934fbaa1dc3cd92bc5a434937e5db9a617009a9
+source-git-commit: bee8752dd212a14f8414879e03565867eb87f6b9
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '829'
 ht-degree: 8%
 
 ---
@@ -64,7 +64,7 @@ batch=pcId,param1,param2,param3,param4
 * [!UICONTROL Bulk Profile Update API] v2를 사용하는 경우 각 `pcId`에 대해 모든 매개 변수 값을 지정할 필요는 없습니다. [!DNL Target]에서 찾을 수 없는 `pcId` 또는 `mbox3rdPartyId`에 대해 프로필이 만들어집니다. v1을 사용하는 경우 누락된 pcIds 또는 mbox3rdPartyIds에 대해 프로필이 만들어지지 않습니다.
 * 묶음 파일의 크기는 50MB 미만이어야 합니다. 또한 총 행 수는 50만 개를 초과할 수 없습니다. 이 제한은 서버가 너무 많은 요청으로 침수되지 않도록 합니다.
 * 여러 파일을 보낼 수 있습니다. 단, 하루에 보내는 모든 파일의 행 합계 합계는 각 클라이언트에 대해 100만 개를 초과할 수 없습니다.
-* 업로드하는 속성의 수에는 제한이 없습니다. 그러나 시스템 데이터를 포함한 프로필의 전체 크기는 2000KB를 초과할 수 없습니다. [!DNL Adobe]은(는) 프로필 특성에 1000KB 미만의 저장소를 사용하는 것을 권장합니다.
+* 업로드할 수 있는 속성 수에는 제한이 없습니다. 하지만 고객 속성, 프로필 API, Mbox 내 프로필 매개 변수 및 프로필 스크립트 출력을 포함하는 외부 프로필 데이터의 총 크기는 64KB를 초과할 수 없습니다.
 * 매개 변수와 값은 대/소문자를 구분합니다.
 
 ## HTTP POST 요청
