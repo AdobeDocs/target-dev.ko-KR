@@ -4,10 +4,10 @@ description: SPA(단일 페이지 애플리케이션)에서 사용하려면  [!D
 title: adobe.target.triggerView() 함수를 사용하는 방법
 feature: at.js
 exl-id: d6130c56-4e77-4668-ad21-a5b335f8b234
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: fe4e607173c760f782035a10f52936d96e9db300
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 26%
+source-wordcount: '406'
+ht-degree: 21%
 
 ---
 
@@ -69,3 +69,29 @@ adobe.target.getOffers({
     console.log('AT: View triggered on : ' + pageView);
 });
 ```
+
+## 예: `triggerView()`과(와) [!UICONTROL Adobe Visual Editing Helper extension]의 호환성
+
+[Adobe Visual Editing Helper 확장 기능](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank}을 사용할 때는 다음 사항을 고려하십시오.
+
+[!DNL Chrome] 확장에 대한 [!DNL Googl]e의 새 V3 매니페스트 정책으로 인해 [!UICONTROL Visual Editing Helper extension]은(는) VEC에서 [!DNL Target] 라이브러리를 로드하기 전에 `DOMContentLoaded` 이벤트를 기다려야 합니다. 이 지연으로 인해 작성 라이브러리가 준비되기 전에 웹 페이지에서 `triggerView()` 호출이 실행되어 로드 시 보기가 채워지지 않을 수 있습니다.
+
+이 문제를 완화하려면 페이지 `load` 이벤트에 대한 수신기를 사용합니다.
+
+다음은 구현의 예입니다.
+
+```javascript
+function triggerViewIfLoaded() {
+    adobe.target.triggerView("homeView");
+}
+
+if (document.readyState === "complete") {
+    // If the page is already loaded
+    triggerViewIfLoaded();
+} else {
+    // If the page is not yet loaded, set up an event listener
+    window.addEventListener("load", triggerViewIfLoaded);
+}
+```
+
+
