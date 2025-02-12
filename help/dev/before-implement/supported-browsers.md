@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Target] 이(가) 인터페이스 및 콘텐츠 전달
 title: ' [!DNL Target] 이(가) 지원하는 브라우저는 무엇입니까?'
 feature: Implementation
 exl-id: 1d778e14-26b0-477b-ac28-d304db70a133
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: f194c6de43070443b78c9a69b4233c27d70b8858
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 26%
+source-wordcount: '380'
+ht-degree: 23%
 
 ---
 
@@ -38,6 +38,7 @@ TLS에 대한 자세한 내용은 [TLS(전송 계층 보안) 암호화 변경 �
 
 다음을 참고하십시오.
 
+* [!DNL Adobe Experience Platform Web SDK]은(는) [!DNL Google Chrome], [!DNL Safari], [!DNL Firefox] 및 [!DNL Microsoft Edge Chromium]의 최신 버전에서 최적으로 작동하도록 디자인되었습니다. 이러한 브라우저의 이전 버전 또는 사용되지 않는 브라우저(예: [!DNL Internet Explorer])에서 특정 기능을 사용하는 데 문제가 있을 수 있습니다.
 * at.js 구현의 경우 [!DNL Target]은(는) Internet Explorer 이전 버전 및 위에 나열된 브라우저의 이전 버전에서 기본 콘텐츠를 표시합니다.
 * Internet Explorer에서는 알 수 없는 모든 요소(예: 사용자 지정 요소)를 동일한 요소 유형으로 처리합니다. 따라서 게재는 사용자 지정 요소에서 작동하지 않습니다.
 * [!DNL Target]은(는) 위 목록에 없는 브라우저와 [quirks 모드](https://en.wikipedia.org/wiki/Quirks_mode)를 사용하는 브라우저에는 기본 콘텐츠를 표시합니다. at.js에는 표준 모드에서 렌더링되는 문서 형식(예: `<!DOCTYPE html>`)이 필요합니다.
