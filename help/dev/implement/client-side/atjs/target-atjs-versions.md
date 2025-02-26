@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Target] at.js JavaScript 라이브러리의 각 버�
 title: at.js의 각 버전에 포함된 것은 무엇입니까?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
-source-git-commit: bee8752dd212a14f8414879e03565867eb87f6b9
+source-git-commit: 3deeee2838d02d578bb653a4911313463b962050
 workflow-type: tm+mt
-source-wordcount: '4967'
+source-wordcount: '4994'
 ht-degree: 63%
 
 ---
@@ -27,9 +27,13 @@ ht-degree: 63%
 
 [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)의 태그는 at.js를 업그레이드하는 기본 방법입니다. 확장 개발자는 확장에 새로운 기능을 지속적으로 추가하고 버그를 자주 수정합니다. 이러한 업데이트는 새로운 버전의 확장에 패키지화되어 Adobe Experience Platform 카탈로그에서 업그레이드로 사용할 수 있습니다. 자세한 내용은 *태그 개요* 안내서에서 [확장 업그레이드](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html)를 참조하십시오.
 
+## at.js 버전 2.11.7(2025년 2월 26일)
+
+* `localStorage`을(를) 사용할 수 없을 때 원격 분석 로깅을 수정했습니다. 원격 분석으로 인해 일부 고객의 브라우저에서 `localStorage`을(를) 사용하지 않도록 설정한 문제가 발생했습니다.
+
 ## at.js 버전 2.11.6(2024년 9월 29일)
 
-* [!UICONTROL Visual Experience Composer](VEC) 또는 [!UICONTROL Form-Based Experience Composer] 내의 리디렉션 오퍼에서 [!DNL Target]이(가) 올바르게 작동하지 않는 문제를 해결했습니다.
+* [!UICONTROL Visual Experience Composer]&#x200B;(VEC) 또는 [!UICONTROL Form-Based Experience Composer] 내의 리디렉션 오퍼에서 [!DNL Target]이(가) 올바르게 작동하지 않는 문제를 해결했습니다.
 
 ## at.js 버전 2.11.5(2024년 8월 14일)
 
@@ -54,7 +58,7 @@ ht-degree: 63%
 
 ## at.js 버전 2.11.0(2023년 10월 10일)
 
-* `getOffer/getOffers` 호출 시 배달 API로 전달되는 `targetGlobalSettings`의 사용자 지정 [!DNL Adobe Experience Platform](AEP) `sandboxId` 및 `sandboxName` 설정에 대한 지원이 추가되었습니다.
+* `getOffer/getOffers` 호출 시 배달 API로 전달되는 `targetGlobalSettings`의 사용자 지정 [!DNL Adobe Experience Platform]&#x200B;(AEP) `sandboxId` 및 `sandboxName` 설정에 대한 지원이 추가되었습니다.
 * 선택기에서 `:eq()`을(를) 연결하는 섀도 DOM 수정.
 
 ## at.js 버전 2.10.3(2023년 9월 12일)
@@ -100,7 +104,7 @@ ht-degree: 63%
 
 이번 릴리스에는 다음과 같은 변경 사항이 포함됩니다.
 
-* `window.default` 또는 `document-default`을(를) 설정한 고객에 대해 Platform launch 빌드가 올바르게 작동하도록 `reactor-window` 및 `reactor-document` Adobe Experience Platform Launch 모듈을 제거했습니다.
+* `window.default` 또는 `document-default`을(를) 설정한 고객에 대해 Platform Launch 빌드가 올바르게 작동하도록 `reactor-window` 및 `reactor-document` Adobe Experience Platform Launch 모듈을 제거했습니다.
 * 이제 at.js 1.8.3은 서드파티 도메인 쿠키가 제대로 설정되었는지 확인하기 위해 `Samesite=None` 및 `Secure`을(를) 명시적으로 설정합니다.
 
 ## at.js 2.6.1 (2021년 8월 16일)
@@ -184,8 +188,8 @@ at.js 유지 관리 릴리스이며, 다음과 같은 개선 기능 및 수정 �
 
 이번 at.js 릴리스에는 다음과 같은 개선 사항 및 수정 사항이 포함되어 있습니다.
 
-* 페이지 요소에 [!DNL Adobe Analytics] 코드가 없을 때 클릭 추적이 [!DNL Analytics for Target](A4T)에서 전환을 보고하지 않는 문제를 해결했습니다.
-* 웹 페이지에서 ECID(Experience Cloud ID 서비스) v4.4와 at.js 2.2를 모두 사용할 때 성능이 향상되었습니다.
+* 페이지 요소에 [!DNL Adobe Analytics] 코드가 없을 때 클릭 추적이 [!DNL Analytics for Target]&#x200B;(A4T)에서 전환을 보고하지 않는 문제를 해결했습니다.
+* 웹 페이지에서 ECID(Experience Cloud ID Service) v4.4와 at.js 2.2를 모두 사용할 때 성능이 향상되었습니다.
 * 이전에는 at.js가 경험을 가져오기 전에 ECID가 두 번의 차단 호출을 했습니다. 이것이 한 번의 호출로 줄어들어 성능이 크게 향상되었습니다.
 * 기본 오퍼의 이벤트 토큰이 전송된 알림에 포함되지 않던 잘못된 프리페치된 보기 처리가 수정되었습니다.
 
@@ -193,13 +197,13 @@ at.js 유지 관리 릴리스이며, 다음과 같은 개선 기능 및 수정 �
 >
 >ECID 확장을 v4.4로 업그레이드하여 향상된 성능을 이용해 보십시오.
 
-* at.js 버전 2.2에서는 `serverState`이라는 새 설정도 제공합니다. 이 설정은 [!DNL Target]의 하이브리드 통합이 구현될 때 페이지 성능을 최적화하는 데 사용할 수 있습니다. 하이브리드 통합은 클라이언트측에서 at.js v2.2+를 사용하고 있으며, 서버측에서 배달 API 또는 [!DNL Target] SDK를 모두 사용하고 있음을 의미합니다. `serverState`은(는) at.js v2.2+에서 서버측에서 가져온 콘텐츠에서 직접 경험을 적용하고 서비스되는 페이지의 일부로 클라이언트에 반환할 수 있는 기능을 제공합니다. 자세한 내용은 [targetGlobalSettings](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#serverstate)의 &quot;serverState&quot;를 참조하십시오.
+* at.js 버전 2.2에서는 `serverState`이라는 새 설정도 제공합니다. 이 설정은 [!DNL Target]의 하이브리드 통합이 구현될 때 페이지 성능을 최적화하는 데 사용할 수 있습니다. 하이브리드 통합은 클라이언트측에서 at.js v2.2+를 사용하고 있으며, 서버측에서 배달 API 또는 [!DNL Target] SDK을 모두 사용하고 있음을 의미합니다. `serverState`은(는) at.js v2.2+에서 서버측에서 가져온 콘텐츠에서 직접 경험을 적용하고 서비스되는 페이지의 일부로 클라이언트에 반환할 수 있는 기능을 제공합니다. 자세한 내용은 [targetGlobalSettings](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#serverstate)의 &quot;serverState&quot;를 참조하십시오.
 
 ## at.js 버전 1.8.0(2019년 10월 10일)
 
 이번 at.js 릴리스에는 다음과 같은 개선 사항 및 수정 사항이 포함되어 있습니다.
 
-* 웹 페이지에서 ECID(Experience Cloud ID 서비스) v4.4와 at.js 1.8을 모두 사용할 때 성능이 향상되었습니다.
+* 웹 페이지에서 ECID(Experience Cloud ID Service) v4.4와 at.js 1.8을 모두 사용할 때 성능이 향상되었습니다.
 * 이전에는 at.js가 경험을 가져오기 전에 ECID가 두 번의 차단 호출을 했습니다. 이것이 한 번의 호출로 줄어들어 성능이 크게 향상되었습니다.
 
 >[!NOTE]
@@ -335,12 +339,12 @@ at.js 버전 1.6.3에는 다음의 수정 사항과 개선 사항이 포함되�
 * .리디렉션 페이지가 리디렉션 활동에 대해 다시 자격을 확보할 때 예외가 발생하도록 변경했습니다. (TNT-30532)
 * getOffer() API 요청에서 올바른 요청 제한 시간이 적용되지 않는 문제가 수정되었습니다. (TNT-30498)
 * 파일 프로토콜을 사용할 때 at.js 1.6.0이 쿠키를 저장하지 못하도록 하는 문제가 수정되었습니다. (TNT-30454)
-* [!DNL Analytics for Target](A4T)을(를) 사용할 때 리디렉션을 사용하여 일부 경험만 전달되는 것으로 보이지 않는 문제를 해결했습니다. (TNT-30444)
+* [!DNL Analytics for Target]&#x200B;(A4T)을(를) 사용할 때 리디렉션을 사용하여 일부 경험만 전달되는 것으로 보이지 않는 문제를 해결했습니다. (TNT-30444)
 * [!DNL Target] 호출이 성공한 후 페이지를 숨기는 문제를 해결했습니다. (TNT-30358)
 
 다음은 at.js 버전 1.6.0에 포함된 개선 사항 및 수정 사항입니다.
 
-* 이제 리디렉션 오퍼가 [!UICONTROL Analytics for Target](A4T) 통합에서 자동으로 지원됩니다. 클라이언트 측 임시 해결책이 제거되었습니다. (TNT-30247)
+* 이제 리디렉션 오퍼가 [!UICONTROL Analytics for Target]&#x200B;(A4T) 통합에서 자동으로 지원됩니다. 클라이언트 측 임시 해결책이 제거되었습니다. (TNT-30247)
 * 이제 클라이언트 측 엣지 라우팅이 기본적으로 사용됩니다. (TNT-30261)
 * 동작 간에 종속성이 있을 때 Visual Experience Composer(VEC) 동작 렌더링에 문제가 수정되었습니다. (TNT-30248)
 
@@ -465,7 +469,7 @@ at.js 버전 1.6.3에는 다음의 수정 사항과 개선 사항이 포함되�
 
 다음 개선 사항 및 수정 사항이 at.js 버전 0.9.6에 포함되어 있습니다.
 
-* A4T에 대해 리디렉션 오퍼가 지원됩니다. at.js 버전 0.9.6을 다운로드하여 설치한 후에는 [!UICONTROL Adobe Analytics as the Reporting Source for Target](A4T)을 사용하는 활동에서 리디렉션 오퍼를 사용할 수 있습니다. at.js 버전 0.9.6 외에, 리디렉션 오퍼 및 A4T를 사용하기 위해 구현이 충족해야 하는 다른 최소 요구 사항도 있습니다. 자세한 내용 및 알고 있어야 하는 추가 중요한 정보는 [리디렉션 오퍼 - A4T FAQ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-redirect-offers.html)를 참조하십시오.
+* A4T에 대해 리디렉션 오퍼가 지원됩니다. at.js 버전 0.9.6을 다운로드하여 설치한 후에는 [!UICONTROL Adobe Analytics as the Reporting Source for Target]&#x200B;(A4T)을 사용하는 활동에서 리디렉션 오퍼를 사용할 수 있습니다. at.js 버전 0.9.6 외에, 리디렉션 오퍼 및 A4T를 사용하기 위해 구현이 충족해야 하는 다른 최소 요구 사항도 있습니다. 자세한 내용 및 알고 있어야 하는 추가 중요한 정보는 [리디렉션 오퍼 - A4T FAQ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-redirect-offers.html)를 참조하십시오.
 * 방문자 API가 페이지에 있고 `visitorApiTimeout` 설정이 너무 적극적이었던 at.js 0.9.6 이전에는 [!DNL Target]에서 [!DNL Target] 요청에 MCID 데이터를 전송하지 않는 상황이 발생할 수 있었습니다. 이로 인해 A4T를 사용할 때 [!DNL Analytics]에서 연결되지 않은 히트 발생과 같은 문제가 나타날 수 있습니다.
 
   이 동작은 `visitorApiTimeout`이(가) 1ms로 설정되어 있더라도 [!DNL Target]은(는) SDID, 추적 서버 및 고객 ID를 수집한 후 [!DNL Target] 요청에 전송하려고 하므로 at.js 0.9.6에서 변경되었습니다.
