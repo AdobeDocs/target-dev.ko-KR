@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Target] 이(가) 인터페이스 및 콘텐츠 전달
 title: ' [!DNL Target] 이(가) 지원하는 브라우저는 무엇입니까?'
 feature: Implementation
 exl-id: 1d778e14-26b0-477b-ac28-d304db70a133
-source-git-commit: f194c6de43070443b78c9a69b4233c27d70b8858
+source-git-commit: 1b6dcb24d677b758ed1daf85dc0a7e9e5b42680d
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 23%
+source-wordcount: '421'
+ht-degree: 20%
 
 ---
 
@@ -21,10 +21,24 @@ TLS에 대한 자세한 내용은 [TLS(전송 계층 보안) 암호화 변경 �
 
 [!DNL Target] 인터페이스는 다음 브라우저 및 장치를 지원합니다.
 
+>[!NOTE]
+>
+>Target은 나열된 각 브라우저의 최신 버전과 최신 버전 - 1을 지원합니다.
+
+
 | 장치 유형 | 브라우저 버전 |
 |--- |--- |
-| Windows | <ul><li>Microsoft Edge</li><li>Google Chrome (최신, 최신 마이너스 1)</li><li>Mozilla Firefox (최신, 최신 마이너스 1)</li></ul> |
-| Mac | <ul><li>Firefox(최신, 최신 마이너스 1)</li><li>Chrome (최신, 최신 마이너스 1)</li></ul> |
+| [!DNL Windows] | <ul><li>[!DNL Microsoft Edge]</li><li>[!DNL Google Chrome]</li><li>[!DNL Mozilla Firefox]</li></ul> |
+| [!DNL Mac] | <ul><li>[!DNL Microsoft Edge]</li><li>[!DNL Google Chrome]</li><li>[!DNL Mozilla Firefox]</li></ul> |
+
+## 시각적 편집 요구 사항
+
+[!UICONTROL Visual Experience Composer]&#x200B;(VEC)에서 웹 페이지를 안정적으로 열고 작성하고 미리 보려면 웹 브라우저에 [Adobe Experience Cloud Visual Editing Helper 브라우저 확장 기능](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank}이 설치되어 있거나 [!UICONTROL Enhanced Experience Composer (EEC)]을(를) 사용해야 합니다.
+
+>[!NOTE]
+>
+>[!DNL Google Chrome] 및 [!DNL Microsoft Edge]은(는) 현재 [!DNL Adobe Target]에서 웹 페이지의 시각적 편집을 지원하는 유일한 브라우저입니다.
+
 
 ## 콘텐츠 전달
 
