@@ -4,7 +4,7 @@ description: '[!UICONTROL Adobe Client Care]과(와) 함께  [!DNL Adobe Target]
 title: Target에서 CNAME을 사용하는 방법
 feature: Privacy & Security
 exl-id: 5709df5b-6c21-4fea-b413-ca2e4912d6cb
-source-git-commit: 31d7de17530c14a392cbeef777937c07a214e07a
+source-git-commit: dd99cf1753e4fa5033ee463b79a31c6eddcd02b5
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 1%
@@ -98,7 +98,7 @@ macOS 또는 Linux 명령줄 터미널에서 bash 및 curl >=7.49를 사용하�
 1. 이 bash 함수를 복사하여 터미널에 붙여넣거나 함수를 bash 시작 스크립트 파일(일반적으로 `~/.bash_profile` 또는 `~/.bashrc`)에 붙여넣어 터미널 세션에서 함수를 사용할 수 있도록 하십시오.
 
    ```
-      function adobeTargetCnameValidation {
+   function adobeTargetCnameValidation {
      local hostname="$1"
      if [ -z "$hostname" ]; then
        echo "ERROR: no hostname specified"
@@ -242,7 +242,7 @@ macOS 또는 Linux 명령줄 터미널에서 bash 및 curl >=7.49를 사용하�
    구현이 준비되면 아래와 같은 출력이 표시됩니다. 중요한 점은 모든 유효성 검사 상태 줄에 `🚫`이(가) 아닌 `✅`이(가) 표시된다는 것입니다. 각 Target 에지 CNAME 분할에는 요청된 인증서의 기본 호스트 이름과 일치하는 `CN=target.example.com`이(가) 표시됩니다(인증서의 추가 SAN 호스트 이름은 이 출력에 인쇄되지 않음).
 
    ```
-      $ adobeTargetCnameValidation 
+      $ adobeTargetCnameValidation
     target.example.com==========================================================Adobe Target CNAME implementation validation for hostname target.example.com:
     ✅ target.example.com passes DNS CNAME validation
     ✅ target.example.com passes TLS and HTTP response validation for region IRL1
@@ -274,7 +274,7 @@ macOS 또는 Linux 명령줄 터미널에서 bash 및 curl >=7.49를 사용하�
     *  expire date: Feb 20 23:59:59 2026 GMT
     *  issuer: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
     *  subject: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com==========================================================  For additional TLS/SSL validation, see SSL Shopper:    🔎  https://www.sslshopper.com/ssl-checker.html#hostname=target.example.com  To check DNS propagation around the world, see whatsmydns.net:    🔎  DNS A records:     https://whatsmydns.net/#A/target.example.com
-        🔎  DNS CNAME record:  https://whatsmydns.net/#CNAME/target.example.com 
+        🔎  DNS CNAME record:  https://whatsmydns.net/#CNAME/target.example.com
    ```
 
 >[!NOTE]
