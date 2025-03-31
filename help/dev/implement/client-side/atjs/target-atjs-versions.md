@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Target] at.js JavaScript 라이브러리의 각 버�
 title: at.js의 각 버전에 포함된 것은 무엇입니까?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
-source-git-commit: 3deeee2838d02d578bb653a4911313463b962050
+source-git-commit: 1a9b43142319ace8fa04aff209b8b639c7512e3f
 workflow-type: tm+mt
-source-wordcount: '4994'
-ht-degree: 63%
+source-wordcount: '5018'
+ht-degree: 62%
 
 ---
 
@@ -26,6 +26,10 @@ ht-degree: 63%
 >둘 중 하나의 최신 버전으로 업그레이드해야 합니다.*x* 또는 2.*x*&#x200B;을(를) 통해 해당 주 버전의 이전 부 버전에서 발견된 문제에 대한 버그 수정 및 보안 패치를 얻을 수 있습니다.
 
 [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)의 태그는 at.js를 업그레이드하는 기본 방법입니다. 확장 개발자는 확장에 새로운 기능을 지속적으로 추가하고 버그를 자주 수정합니다. 이러한 업데이트는 새로운 버전의 확장에 패키지화되어 Adobe Experience Platform 카탈로그에서 업그레이드로 사용할 수 있습니다. 자세한 내용은 *태그 개요* 안내서에서 [확장 업그레이드](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html)를 참조하십시오.
+
+## at.js 버전 2.11.8(2025년 3월 31일)
+
+* 크기 조정 및 이동 작업 중 에지 사례를 방지하기 위해 문자열 접미사 유효성 검사에서 CodeQL로 식별된 취약성이 해결되었습니다. (TNT-51516)
 
 ## at.js 버전 2.11.7(2025년 2월 26일)
 
