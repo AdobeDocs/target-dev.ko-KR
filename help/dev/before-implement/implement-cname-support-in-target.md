@@ -4,9 +4,9 @@ description: '[!UICONTROL Adobe Client Care]과(와) 함께  [!DNL Adobe Target]
 title: Target에서 CNAME을 사용하는 방법
 feature: Privacy & Security
 exl-id: 5709df5b-6c21-4fea-b413-ca2e4912d6cb
-source-git-commit: a36826202c5baa47f95a88c7b29c0d114901e6fa
+source-git-commit: 1a78a1e2750ae906338e91ff24ac16cdc99323ba
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1165'
 ht-degree: 1%
 
 ---
@@ -89,7 +89,7 @@ Apple ITP(Intelligent Tracking Prevention) 버전 2.3에서는 [!DNL Target]개�
 
 ### 내 CNAME 구현에 사용되는 키 유형 및 인증서 서명 알고리즘은 무엇입니까?
 
-모든 인증서는 RSA SHA-256이며 키는 기본적으로 RSA 2048비트입니다. 2048비트보다 큰 키 크기는 현재 지원되지 않습니다.
+모든 인증서는 RSA SHA-256이며 키는 기본적으로 RSA 2048비트입니다. 2048비트보다 큰 키 크기는 [!UICONTROL Customer Care]을(를) 통해 명시적으로 요청해야 합니다.
 
 ### CNAME 구현이 트래픽에 대해 준비되었는지 어떻게 확인할 수 있습니까?
 
