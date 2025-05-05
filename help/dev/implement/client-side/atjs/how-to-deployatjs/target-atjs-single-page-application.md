@@ -315,12 +315,12 @@ at.js 2.x API를 사용하면 여러 가지 방법으로 [!DNL Target] 구현을
 
 ### SPA에서 at.js 2.x 구현
 
->[!VIDEO](https://video.tv.adobe.com/v/26248/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/34780/?quality=12&captions=kor)
 
 자세한 내용은 [단일 페이지 애플리케이션(SPA)에서 Adobe Target의 at.js 2.x 구현](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html?lang=ko)을 참조하십시오.
 
 ### [!DNL Adobe Target]에서 SPA용 VEC 사용
 
->[!VIDEO](https://video.tv.adobe.com/v/26249/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/34786/?quality=12&captions=kor)
 
 자세한 내용은 [Adobe Target에서 SPA VEC(단일 페이지 애플리케이션용 시각적 경험 작성기 사용](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html?lang=ko)을 참조하십시오.
