@@ -33,8 +33,8 @@ Apple ITP 2.x는 다음 영역의 [!DNL Target]에 영향을 줍니다.
 | --- | --- |
 | 고유 방문자 수의 잠재적 증가 | 만료 창이 7일(ITP 2.1 사용) 및 1일(ITP 2.2 및 ITP 2.3 사용)로 설정되어 있으므로 Safari 브라우저에서 발생하는 고유 방문자 수가 증가하는 것을 볼 수 있습니다. 방문자가 7일(ITP 2.1) 또는 1일(ITP 2.2 및 ITP 2.3) 이후 도메인을 재방문하는 경우 [!DNL Target]은(는) 만료된 쿠키 대신 도메인에 새 [!DNL Target] 쿠키를 배치해야 합니다. 사용자가 동일하지만 새 [!DNL Target] 쿠키는 새 고유 방문자로 해석됩니다. |
 | [!DNL Target] 활동에 대한 전환 기간 감소 | [!DNL Target] 활동의 방문자 프로필에는 의사 결정에 대해 전환 기간이 감소될 수 있습니다. [!DNL Target] 쿠키는 방문자를 식별하고 개인화를 위해 사용자 프로필 속성을 저장하는 데 사용됩니다. 7일(ITP 2.1) 또는 1일(ITP 2.2 및 2.3) 이후 Safari에서 [!DNL Target] 쿠키가 만료될 수 있으므로, 삭제된 [!DNL Target] 쿠키에 연결되어 있던 사용자 프로필 데이터는 의사 결정 시 사용할 수 없습니다. |
-| 3rdPartyID를 기반으로 하는 프로필 스크립트 | 만료 창이 7일(ITP 2.1 사용) 및 1일(ITP 2.2 및 ITP 2.3 사용)로 설정되어 있으므로 3rdPartyID 쿠키를 기반으로 하는 [프로필 스크립트](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html)는 만료 시 작동을 중지합니다. |
-| iOS 디바이스에서 QA/미리보기 URL | 만료 창이 7일(ITP 2.1 사용) 및 1일(ITP 2.2 및 ITP 2.3 사용)로 설정되어 있으므로 URL이 3rdPartyID 쿠키를 기반으로 하므로 만료 시 [QA/미리 보기 URL](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html)의 작동이 중지됩니다. |
+| 3rdPartyID를 기반으로 하는 프로필 스크립트 | 만료 창이 7일(ITP 2.1 사용) 및 1일(ITP 2.2 및 ITP 2.3 사용)로 설정되어 있으므로 3rdPartyID 쿠키를 기반으로 하는 [프로필 스크립트](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=ko)는 만료 시 작동을 중지합니다. |
+| iOS 디바이스에서 QA/미리보기 URL | 만료 창이 7일(ITP 2.1 사용) 및 1일(ITP 2.2 및 ITP 2.3 사용)로 설정되어 있으므로 URL이 3rdPartyID 쿠키를 기반으로 하므로 만료 시 [QA/미리 보기 URL](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html?lang=ko)의 작동이 중지됩니다. |
 
 ## 현재 [!DNL Target] 구현이 영향을 받습니까?
 

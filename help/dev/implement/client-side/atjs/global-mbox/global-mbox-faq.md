@@ -19,7 +19,7 @@ ht-degree: 39%
 
 계정에서는 하나의 글로벌 mbox만 지원됩니다.
 
-활동에 URL 규칙을 추가하여 활동이 실행되는 위치를 제한할 수 있습니다. 자세한 내용은 [유사한 페이지에 동일한 경험 포함](https://experienceleague.adobe.com/docs/target/using/experiences/vec/temtest.html)을 참조하십시오.
+활동에 URL 규칙을 추가하여 활동이 실행되는 위치를 제한할 수 있습니다. 자세한 내용은 [유사한 페이지에 동일한 경험 포함](https://experienceleague.adobe.com/docs/target/using/experiences/vec/temtest.html?lang=ko)을 참조하십시오.
 
 [targetPageParams](/help/dev/implement/client-side/atjs/atjs-functions/targetpageparams.md)을 사용하여 페이지에서 매개 변수를 전달한 다음, [!UICONTROL Visual Experience Composer] (VEC)의 &quot;URL 구성&quot; 섹션에서 또는 [!UICONTROL Form-Based Experience Composer]에서 매개 변수를 &quot;개선&quot;으로 추가하여 해당 매개 변수를 선택할 수도 있습니다.
 

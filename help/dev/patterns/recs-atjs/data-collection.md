@@ -71,11 +71,11 @@ ht-degree: 2%
 
 **판독값**
 
-* [엔터티 특성](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html){target=_blank}
+* [엔터티 특성](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=ko){target=_blank}
 
 **고려 사항**
 
-* 엔터티 특성을 전달하는 또 다른 방법은 [Recommendations 제품 피드](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html){target=_blank}를 사용하도록 [!DNL Target] UI에서 제품 카탈로그를 업데이트하는 것입니다.
+* 엔터티 특성을 전달하는 또 다른 방법은 [Recommendations 제품 피드](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html?lang=ko){target=_blank}를 사용하도록 [!DNL Target] UI에서 제품 카탈로그를 업데이트하는 것입니다.
 * 엔티티 속성 전달은 데이터 레이어에서 제품 카탈로그 데이터를 사용할 수 있는 페이지에만 적용할 수 있습니다.
 * 모든 호출에서 `entity.event.detailsOnly=true` 매개 변수를 전달하는 것이 우선됩니다.
 

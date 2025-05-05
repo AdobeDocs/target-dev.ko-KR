@@ -17,7 +17,7 @@ ht-degree: 7%
 
 라이브러리 구성을 빠르게 보고, 사용자 지정 매개 변수가 올바르게 전달되었는지 확인하기 위한 요청을 검사하고, 콘솔 로깅을 켜고, 모든 [!DNL Target] 요청을 비활성화할 수 있습니다. [!DNL Experience Cloud]을(를) 인증하면 강력한 Mbox 추적 도구를 사용하여 활동 및 대상 자격과 방문자 프로필을 검사할 수 있습니다.
 
-[Adobe Experience Cloud Debugger 개요](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html){target=_blank}를 검토합니다.
+[Adobe Experience Cloud Debugger 개요](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=ko){target=_blank}를 검토합니다.
 
 ## 교육 비디오
 

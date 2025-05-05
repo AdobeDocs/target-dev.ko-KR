@@ -15,4 +15,4 @@ ht-degree: 3%
 
 [!DNL Adobe Target]은(는) 클라이언트측과 서버측 구현을 혼합하여 개인화를 위한 고유한 하이브리드 배포 모델을 제공합니다. 이 하이브리드 모델을 사용하면 기술 전문가가 아닌 사용자도 WYSIWYG [!UICONTROL Visual Experience Composer] (VEC)를 사용하여 실험 또는 개인화 활동을 작성하고 서버측에서 실행하거나 전달하고 이러한 경험을 렌더링하여 높은 성능을 제공할 수 있습니다.
 
-자세한 내용은 [Adobe Target Tutorials](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html?lang=ko-KR)의 [Adobe 하이브리드 배포](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/hybrid-deployment.html)를 참조하십시오.
+자세한 내용은 [Adobe Target Tutorials](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html?lang=ko-KR)의 [Adobe 하이브리드 배포](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/hybrid-deployment.html?lang=ko)를 참조하십시오.

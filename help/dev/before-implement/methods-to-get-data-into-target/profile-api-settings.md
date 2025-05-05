@@ -36,11 +36,11 @@ ht-degree: 28%
 
    * 책임자 역할 또는 최소 승인자 권한이 있어야 합니다.
 
-     Target Standard 고객에 대한 자세한 내용은 *사용자*&#x200B;의 [역할 및 권한 지정](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/users/user-management.html#roles-permissions)을 참조하십시오. [!DNL Target Premium] 고객에 대한 자세한 내용은 [기업 권한 구성](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html)을 참조하십시오.
+     Target Standard 고객에 대한 자세한 내용은 *사용자*&#x200B;의 [역할 및 권한 지정](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/users/user-management.html?lang=ko#roles-permissions)을 참조하십시오. [!DNL Target Premium] 고객에 대한 자세한 내용은 [기업 권한 구성](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=ko)을 참조하십시오.
 
    * 작업 영역/제품 프로필 수준에서 관리자 역할
 
-     작업 영역은 [!DNL Target Premium] 고객만 사용할 수 있습니다. 자세한 내용은 [기업 권한 구성](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html)을 참조하십시오.
+     작업 영역은 [!DNL Target Premium] 고객만 사용할 수 있습니다. 자세한 내용은 [기업 권한 구성](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=ko)을 참조하십시오.
 
    * [!DNL Adobe Target] 제품 수준의 관리자 권한(Sysadmin 권한)
 

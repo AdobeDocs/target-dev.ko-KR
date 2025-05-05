@@ -43,8 +43,8 @@ Experience Cloud ID(ECID) 구현이 필요합니다.
 
 ## 코드 예
 
-자세한 내용은 [고객 특성 원본을 만들고 데이터 파일을 업로드](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html)하는 방법을 참조하십시오.
+자세한 내용은 [고객 특성 원본을 만들고 데이터 파일을 업로드](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html?lang=ko)하는 방법을 참조하십시오.
 
 ### 관련 정보 링크
 
-[고객 특성 원본을 만들고 데이터 파일을 업로드](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html)합니다.
+[고객 특성 원본을 만들고 데이터 파일을 업로드](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html?lang=ko)합니다.

@@ -298,4 +298,4 @@ public class TargetClientService {
 
 >[!ENDTABS]
 
-`TargetRequestUtils.java`에 대한 자세한 내용은 [유틸리티 메서드(Java)](https://experienceleague.adobe.com/docs/target-dev/developer/server-side/java/utility-methods.html){target=_blank}를 참조하십시오.
+`TargetRequestUtils.java`에 대한 자세한 내용은 [유틸리티 메서드(Java)](https://experienceleague.adobe.com/docs/target-dev/developer/server-side/java/utility-methods.html?lang=ko){target=_blank}를 참조하십시오.

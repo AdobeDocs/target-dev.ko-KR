@@ -29,7 +29,7 @@ JavaScript 함수를 호출하는 코드는 글로벌 mbox가 at.js의 일부로
 * JSON 개체
 * 앰퍼샌드로 구분된 목록
 
-이 세 가지 방법을 사용하여 매개 변수가 올바로 전달되고 있는지 확인하십시오. [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html)를 사용하여 매개 변수 전달을 확인할 수도 있습니다.
+이 세 가지 방법을 사용하여 매개 변수가 올바로 전달되고 있는지 확인하십시오. [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=ko)를 사용하여 매개 변수 전달을 확인할 수도 있습니다.
 
 페이지에 글로벌 mbox를 추가하려면 먼저 JavaScript 함수를 정의해야 합니다. 이름은 `targetPageParams`여야 합니다.
 

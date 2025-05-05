@@ -17,4 +17,4 @@ ht-degree: 0%
 
 [!UICONTROL Edge Network Server API]은(는) 다양한 데이터 수집, 개인화, 광고 및 마케팅 사용 사례에 사용할 수 있습니다. 서버 API는 서버, IoT 디바이스, 셋톱 박스 및 다양한 다른 디바이스에서 사용할 수 있습니다.
 
-자세한 내용은 *Edge Server API 설명서*&#x200B;에서 [Edge Network 서버 API 개요](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html){target=_blank}를 참조하십시오.
+자세한 내용은 *Edge Server API 설명서*&#x200B;에서 [Edge Network 서버 API 개요](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=ko){target=_blank}를 참조하십시오.

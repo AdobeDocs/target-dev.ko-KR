@@ -68,8 +68,8 @@ targetPageParams(매개 변수를 페이지의 글로벌 mbox에 추가합니다
 
 ## 관련 정보 링크
 
-권장 사항: [페이지 유형에 따른 구현](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html)
+권장 사항: [페이지 유형에 따른 구현](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=ko)
 
 주문 확인: [전환 추적](../../implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md#track-conversions)
 
-카테고리 친화성: [카테고리 친화성](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html)
+카테고리 친화성: [카테고리 친화성](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=ko)

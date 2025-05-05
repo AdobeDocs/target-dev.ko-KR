@@ -21,4 +21,4 @@ ht-degree: 22%
 
 모바일 앱에서 [!DNL Target]을(를) 구현하는 방법에 대한 자세한 내용은 [모바일 앱용 Adobe Experience Platform SDK](https://developer.adobe.com/client-sdks/documentation/){target=_blank} 설명서를 참조하십시오. [!DNL Target]에 대한 정보는 [Adobe Target](https://developer.adobe.com/client-sdks/documentation/adobe-target/){target=_blank}에 있습니다.
 
-[!DNL Adobe Experience Platform Mobile SDK]을(를) 사용하여 모바일 앱에서 [!DNL Adobe Experience Cloud] 응용 프로그램을 구현하는 방법에 대해 알아봅니다. 자세한 내용은 [!DNL Experience Platform] *모바일 앱 자습서*&#x200B;에서 [모바일 앱에서 Adobe Experience Cloud 구현 자습서](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=_blank}를 참조하십시오.
+[!DNL Adobe Experience Platform Mobile SDK]을(를) 사용하여 모바일 앱에서 [!DNL Adobe Experience Cloud] 응용 프로그램을 구현하는 방법에 대해 알아봅니다. 자세한 내용은 [!DNL Experience Platform] *모바일 앱 자습서*&#x200B;에서 [모바일 앱에서 Adobe Experience Cloud 구현 자습서](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko){target=_blank}를 참조하십시오.

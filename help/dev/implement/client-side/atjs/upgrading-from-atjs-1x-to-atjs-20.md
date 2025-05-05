@@ -405,7 +405,7 @@ at.js 1.*x*&#x200B;에서 vst를 사용할 수 있습니다.* 대상을 만들 m
 
 ## 응답 토큰
 
-at.js 2.*x*&#x200B;는 at.js 1.*x*&#x200B;와 마찬가지로 사용자 지정 이벤트 `at-request-succeeded`를 사용하여 응답 토큰을 표시합니다. `at-request-succeeded` 사용자 지정 이벤트를 사용한 코드 예에 대해서는 [응답 토큰](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html)을 참조하십시오.
+at.js 2.*x*&#x200B;는 at.js 1.*x*&#x200B;와 마찬가지로 사용자 지정 이벤트 `at-request-succeeded`를 사용하여 응답 토큰을 표시합니다. `at-request-succeeded` 사용자 지정 이벤트를 사용한 코드 예에 대해서는 [응답 토큰](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=ko)을 참조하십시오.
 
 ## at.js 1.at.js 2에 대한 *x* 매개 변수입니다.*x* 페이로드 매핑
 
@@ -772,4 +772,4 @@ at.js 2.*x*&#x200B;은(는) SPA에 대한 Adobe [!DNL Target]의 지원을 개�
 
 >[!VIDEO](https://video.tv.adobe.com/v/26250/?quality=12)
 
-[at.js 2 이해 를 참조하십시오.자세한 내용은 *x*&#x200B;을(를) 작동시킵니다](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html).
+[at.js 2 이해 를 참조하십시오.자세한 내용은 *x*&#x200B;을(를) 작동시킵니다](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html?lang=ko).

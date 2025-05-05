@@ -15,13 +15,13 @@ ht-degree: 66%
 
 [!DNL Adobe Target] 클라이언트측을 구현하려면 at.js JavaScript 라이브러리를 사용해야 합니다.
 
-클라이언트측 [!DNL Adobe Target]의 구현에서 [!DNL Target]은 활동과 연관된 경험을 클라이언트 브라우저에 직접 전달합니다. 브라우저는 표시할 경험을 결정하고 표시합니다. 클라이언트측 구현에서는 WYSIWYG 편집기, VEC([시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html)) 또는 [양식 기반 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html)인 비-시각적 인터페이스를 사용하여 테스트 및 개인화 경험을 만들 수 있습니다.
+클라이언트측 [!DNL Adobe Target]의 구현에서 [!DNL Target]은 활동과 연관된 경험을 클라이언트 브라우저에 직접 전달합니다. 브라우저는 표시할 경험을 결정하고 표시합니다. 클라이언트측 구현에서는 WYSIWYG 편집기, VEC([시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=ko)) 또는 [양식 기반 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=ko)인 비-시각적 인터페이스를 사용하여 테스트 및 개인화 경험을 만들 수 있습니다.
 
 ## at.js란 무엇입니까?
 
 at.js 라이브러리는 [!DNL Adobe Target]의 클라이언트측 구현을 위한 구현 라이브러리입니다. at.js 라이브러리는 웹 구현에 대한 페이지 로드 시간을 향상시키고, 단일 페이지 애플리케이션에 대해 더 나은 구현 옵션을 제공합니다. at.js는 권장되는 구현 라이브러리이며 새 기능으로 자주 업데이트됩니다. 모든 고객은 [최신 버전의 at.js](/help/dev/implement/client-side/atjs/target-atjs-versions.md)를 구현하거나 이 버전으로 마이그레이션하는 것이 좋습니다.
 
-자세한 내용은 [Target JavaScript 라이브러리](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html#libraries)를 참조하십시오.
+자세한 내용은 [Target JavaScript 라이브러리](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html?lang=ko#libraries)를 참조하십시오.
 
 아래에 표시된 [!DNL Target]구현에서 구현되는 Adobe Experience Cloud 솔루션은 [!DNL Analytics], Target 및 [!DNL Audience Manager]입니다. 또한 다음 [!DNL Experience Cloud]개의 핵심 서비스가 구현됩니다. [!DNL Adobe Experience Platform], [!UICONTROL Audiences] 및 [!UICONTROL Visitor ID Service].
 
@@ -74,7 +74,7 @@ at.js 2.x는 SPA에 대한 Adobe Target의 지원을 개선하고 다른 Experie
 
 >[!VIDEO](https://video.tv.adobe.com/v/26250/?quality=12)
 
-자세한 내용은 [at.js 2.x 작동 방식 이해](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html)를 참조하십시오.
+자세한 내용은 [at.js 2.x 작동 방식 이해](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html?lang=ko)를 참조하십시오.
 
 ## at.js 1.x 다이어그램
 

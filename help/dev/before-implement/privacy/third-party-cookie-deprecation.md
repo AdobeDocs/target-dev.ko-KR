@@ -15,4 +15,4 @@ ht-degree: 0%
 
 [!DNL Adobe Target] at.js 구현에 대한 서드파티 쿠키의 향후 사용 중단을 확인합니다.
 
-자세한 내용은 Adobe Target 커뮤니티에서 [타사 쿠키 사용이 Adobe Target(at.js)에 미치는 영향](https://experienceleaguecommunities.adobe.com/t5/adobe-target-blogs/the-impact-of-third-party-cookie-deprecation-on-adobe-target-at/ba-p/661615?search=Third%20Party%20Cookie%20Deprecation){target=_blank}을 참조하십시오.
+자세한 내용은 Adobe Target 커뮤니티에서 [타사 쿠키 사용이 Adobe Target(at.js)에 미치는 영향](https://experienceleaguecommunities.adobe.com/t5/adobe-target-blogs/the-impact-of-third-party-cookie-deprecation-on-adobe-target-at/ba-p/661615?profile.language=ko&search=Third%20Party%20Cookie%20Deprecation){target=_blank}을 참조하십시오.

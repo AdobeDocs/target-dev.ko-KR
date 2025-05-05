@@ -148,7 +148,7 @@ Safari 방문자를 지원하기 위해 더 나은 X-Domain이 &quot;비활성�
 
 ## 단일 페이지 애플리케이션에서 Target [!UICONTROL Visual Experience Composer] (VEC)을 사용할 수 있습니까?
 
-예. at.js 2.x를 사용하는 경우 SPA용 VEC를 사용할 수 있습니다. 자세한 내용은 [단일 페이지(SPA) 시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html)를 참조하십시오.
+예. at.js 2.x를 사용하는 경우 SPA용 VEC를 사용할 수 있습니다. 자세한 내용은 [단일 페이지(SPA) 시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html?lang=ko)를 참조하십시오.
 
 ## at.js 구현에 Adobe Experience Cloud Debugger를 사용할 수 있습니까?
 
@@ -239,7 +239,7 @@ targetGlobalSettings() 함수([targetGlobalSettings](/help/dev/implement/client-
 * 커뮤니케이션 세션을 추적합니다
 * 무작위 문자로 구성되어 있습니다
 * 세션 ID는 30분 동안 유효합니다.
-* 응답 토큰을 비활성화할 수 있습니다([응답 토큰](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html)).
+* 응답 토큰을 비활성화할 수 있습니다([응답 토큰](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=ko)).
 * 이 변수는 Adobe 솔루션 환경에서만 유용합니다.
 
 값이 &quot;*&quot;인 `Access-Control-Allow-Origin` 헤더가 at.js 요청에 표시될 것으로 예상됩니다. 공용 항목이므로 인증이 필요하지 않으며 JavaScript 호출을 통해 모든 도메인에서 Adobe Edge 네트워크에 액세스해야 합니다.

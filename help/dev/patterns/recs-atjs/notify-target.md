@@ -49,7 +49,7 @@ ht-degree: 1%
    * `orderTotal`: 구매에 대한 주문 총계입니다.
    * `orderId`: 구매의 주문 ID.
 
-  다음 그림은 [!UICONTROL Confirmation] 페이지에서만 실행해야 하는 [규칙  [!DNL tags] in [!DNL Experience Platform]](https://experienceleague.adobe.com/docs/tags.html){target=_blank}을(를) 보여 줍니다.
+  다음 그림은 [!UICONTROL Confirmation] 페이지에서만 실행해야 하는 [규칙  [!DNL tags] in [!DNL Experience Platform]](https://experienceleague.adobe.com/docs/tags.html?lang=ko){target=_blank}을(를) 보여 줍니다.
 
   ![작업 구성 페이지](/help/dev/patterns/recs-atjs/assets/action-configuration.png){width="400" zoomable="yes"}
 
@@ -58,7 +58,7 @@ ht-degree: 1%
 **판독값**
 
 * [adobe.target.trackEvent() 메서드](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-trackevent.md)
-* 장바구니 기반 기준용 [장바구니 ID](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/base-the-recommendation-on-a-recommendation-key.html?lang=en#cart-based){target=_blank}
+* 장바구니 기반 기준용 [장바구니 ID](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/base-the-recommendation-on-a-recommendation-key.html?lang=ko#cart-based){target=_blank}
 
 **작업**
 

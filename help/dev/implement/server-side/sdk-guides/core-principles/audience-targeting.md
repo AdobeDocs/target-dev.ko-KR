@@ -14,11 +14,11 @@ ht-degree: 22%
 
 ## 개요
 
-대상을 사용하여 실험 및 개인화 활동을 타깃팅할 수 있습니다. [!DNL Adobe Target]은(는) 기본적으로 무수히 강력한 대상 타깃팅 기능을 지원합니다. 다음 특성은 [대상 타기팅](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/create-audience.html)에 사용할 수 있습니다.
+대상을 사용하여 실험 및 개인화 활동을 타깃팅할 수 있습니다. [!DNL Adobe Target]은(는) 기본적으로 무수히 강력한 대상 타깃팅 기능을 지원합니다. 다음 특성은 [대상 타기팅](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/create-audience.html?lang=ko)에 사용할 수 있습니다.
 
 ### [!DNL Target] 라이브러리
 
-자세한 내용은 [[!DNL Target] 라이브러리](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/target-library.html)를 참조하십시오.
+자세한 내용은 [[!DNL Target] 라이브러리](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/target-library.html?lang=ko)를 참조하십시오.
 &#x200B;
 * Bing에서 참조됨
 * Chrome 브라우저
@@ -36,7 +36,7 @@ ht-degree: 22%
 
 ### 지역
 
-자세한 내용은 [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html)을 참조하세요.
+자세한 내용은 [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html?lang=ko)을 참조하세요.
 &#x200B; &#x200B;
 * 국가/지역
 * 주/도
@@ -49,7 +49,7 @@ ht-degree: 22%
 
 ### 네트워크
 
-자세한 내용은 [네트워크](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html)를 참조하세요.
+자세한 내용은 [네트워크](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html?lang=ko)를 참조하세요.
 
 * ISP
 * 도메인 이름
@@ -57,7 +57,7 @@ ht-degree: 22%
 
 ### 모바일
 
-자세한 내용은 [모바일](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html)을 참조하십시오.
+자세한 내용은 [모바일](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html?lang=ko)을 참조하십시오.
 
 * 장치 마케팅 이름
 * 장치 모델
@@ -71,13 +71,13 @@ ht-degree: 22%
 
 ### 사용자 지정
 
-자세한 내용은 [사용자 지정 매개 변수](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html)를 참조하십시오.
+자세한 내용은 [사용자 지정 매개 변수](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html?lang=ko)를 참조하십시오.
 
 * 모든 키/값 쌍
 
 ### 운영 체제
 
-자세한 내용은 [운영 체제](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html)를 참조하십시오.
+자세한 내용은 [운영 체제](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html?lang=ko)를 참조하십시오.
 
 * Linux
 * Macintosh
@@ -85,7 +85,7 @@ ht-degree: 22%
 
 ### 사이트 페이지
 
-자세한 내용은 [사이트 페이지](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html)를 참조하십시오.
+자세한 내용은 [사이트 페이지](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html?lang=ko)를 참조하십시오.
 
 * 현재 페이지
 * 이전 페이지
@@ -94,7 +94,7 @@ ht-degree: 22%
 
 ### 브라우저
 
-자세한 내용은 [브라우저](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html)를 참조하십시오.
+자세한 내용은 [브라우저](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=ko)를 참조하십시오.
 
 * 유형
 * 언어
@@ -102,13 +102,13 @@ ht-degree: 22%
 
 ### 방문자 프로필
 
-자세한 내용은 [방문자 프로필](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html)을 참조하세요.
+자세한 내용은 [방문자 프로필](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=ko)을 참조하세요.
 
 * 지속되는 모든 키/값 쌍
 
 ### 트래픽 소스
 
-자세한 내용은 [트래픽 원본](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html)을 참조하세요.
+자세한 내용은 [트래픽 원본](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=ko)을 참조하세요.
 
 * Baidu에서
 * Bing에서
@@ -120,7 +120,7 @@ ht-degree: 22%
 
 ### 시간대
 
-자세한 내용은 [시간대](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html)를 참조하십시오.
+자세한 내용은 [시간대](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html?lang=ko)를 참조하십시오.
 
 * 시작 날짜/종료 날짜
 
@@ -197,17 +197,17 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 
 | 대상 규칙 | 온디바이스 의사 결정 |
 | --- | --- |
-| [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | 예 |
-| [네트워크](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html) | 아니요 |
-| [모바일](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) | 아니요 |
-| [사용자 지정 매개 변수](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) | 예 |
-| [운영 체제](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html) | 예 |
-| [사이트 페이지](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html) | 예 |
-| [브라우저](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html) | 예 |
-| [방문자 프로필](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html) | 아니요 |
-| [트래픽 소스](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) | 아니요 |
-| [시간대](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | 예 |
-| [Experience Cloud 대상](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html)(Adobe Audience Manager, Adobe Analytics 및 Adobe Experience Manager의 대상) | 아니요 |
+| [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html?lang=ko) | 예 |
+| [네트워크](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html?lang=ko) | 아니요 |
+| [모바일](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html?lang=ko) | 아니요 |
+| [사용자 지정 매개 변수](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html?lang=ko) | 예 |
+| [운영 체제](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html?lang=ko) | 예 |
+| [사이트 페이지](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html?lang=ko) | 예 |
+| [브라우저](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=ko) | 예 |
+| [방문자 프로필](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=ko) | 아니요 |
+| [트래픽 소스](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=ko) | 아니요 |
+| [시간대](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html?lang=ko) | 예 |
+| [Experience Cloud 대상](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=ko)(Adobe Audience Manager, Adobe Analytics 및 Adobe Experience Manager의 대상) | 아니요 |
 
 ### 온디바이스 의사 결정을 위한 지역 타기팅
 
@@ -324,14 +324,14 @@ public class TargetRequestUtils {
 
 | 대상 규칙 | 서버측 의사 결정 |
 | --- | --- |
-| [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | 예 |
-| [네트워크](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html) | 예 |
-| [모바일](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) | 예 |
-| [사용자 지정 매개 변수](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) | 예 |
-| [운영 체제](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html) | 예 |
-| [사이트 페이지](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html) | 예 |
-| [브라우저](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html) | 예 |
-| [방문자 프로필](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html) | 예 |
-| [트래픽 소스](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) | 예 |
-| [시간대](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | 예 |
-| [Experience Cloud 대상](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html)(Adobe Audience Manager, Adobe Analytics 및 Adobe Experience Manager의 대상) | 예 |
+| [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html?lang=ko) | 예 |
+| [네트워크](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html?lang=ko) | 예 |
+| [모바일](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html?lang=ko) | 예 |
+| [사용자 지정 매개 변수](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html?lang=ko) | 예 |
+| [운영 체제](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html?lang=ko) | 예 |
+| [사이트 페이지](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html?lang=ko) | 예 |
+| [브라우저](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=ko) | 예 |
+| [방문자 프로필](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=ko) | 예 |
+| [트래픽 소스](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=ko) | 예 |
+| [시간대](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html?lang=ko) | 예 |
+| [Experience Cloud 대상](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=ko)(Adobe Audience Manager, Adobe Analytics 및 Adobe Experience Manager의 대상) | 예 |

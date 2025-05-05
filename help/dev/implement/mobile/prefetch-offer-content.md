@@ -26,7 +26,7 @@ ht-degree: 43%
 iOS 및 Android Mobile SDK에서 미리 가져오기 방법을 사용할 때는 다음 제한 사항을 고려하십시오.
 
 * 미리 가져오기 콘텐츠는 실행 간에는 지속되지 않으며, 애플리케이션이 상주하는 동안 또는 `clearPrefetchCache()` 메서드가 호출될 때까지 캐시됩니다.
-* 미리 가져오기 기능은 [!UICONTROL Auto-Allocate] 및 [!UICONTROL Auto-Target] 트래픽 할당 메서드, [!UICONTROL Automated Personalization] 또는 [!UICONTROL Recommendations] 활동 유형 또는 A/B 또는 XT 활동 내의 [권장 사항 오퍼](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-as-an-offer.html)에 대해 지원되지 않습니다.
+* 미리 가져오기 기능은 [!UICONTROL Auto-Allocate] 및 [!UICONTROL Auto-Target] 트래픽 할당 메서드, [!UICONTROL Automated Personalization] 또는 [!UICONTROL Recommendations] 활동 유형 또는 A/B 또는 XT 활동 내의 [권장 사항 오퍼](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-as-an-offer.html?lang=ko)에 대해 지원되지 않습니다.
 
 미리 가져오기 방법, 공용 클래스 및 코드 샘플을 포함한 자세한 내용은 다음을 참조하십시오.
 

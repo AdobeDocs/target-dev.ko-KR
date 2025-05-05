@@ -22,7 +22,7 @@ Target에서는 다음 세 가지 식별자를 사용합니다.
 | `tntId` | `tntId`은(는) 사용자의 [!DNL Target]에 있는 기본 식별자입니다. 이 ID를 제공할 수 있습니다. 그렇지 않으면 [!DNL Target]이(가) 요청에 ID를 포함하지 않으면 자동으로 생성합니다. |
 | `thirdPartyId` | `thirdPartyId`은(는) 모든 호출을 통해 보낼 수 있는 사용자의 회사 식별자입니다. 사용자가 회사 사이트에 로그인하면 일반적으로 회사는 방문자 계정, 로열티 카드, 멤버십 번호 또는 해당 회사에 대한 기타 적용 가능한 식별자에 연결되는 ID를 만듭니다. |
 | `marketingCloudVisitorId` | `marketingCloudVisitorId`은(는) 다른 Adobe 솔루션 간에 데이터를 병합하고 공유하는 데 사용됩니다. Adobe Analytics 및 Adobe Audience Manager과의 통합에는 `marketingCloudVisitorId`이(가) 필요합니다. |
-| `customerIds` | Experience Cloud 방문자 ID와 함께 각 방문자에 대해 추가 [고객 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) 및 인증된 상태를 활용할 수 있습니다. |
+| `customerIds` | Experience Cloud 방문자 ID와 함께 각 방문자에 대해 추가 [고객 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=ko) 및 인증된 상태를 활용할 수 있습니다. |
 
 ## [!DNL Target] ID
 
@@ -169,7 +169,7 @@ curl -X POST \
 
 ## Customer ID
 
-[고객 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)을(를) 추가하고 Experience Cloud 방문자 ID와 연결할 수 있습니다. `customerIds`을(를) 보낼 때마다 `marketingCloudVisitorId`도 제공해야 합니다. 또한 각 방문자에 대해 각 `customerId`과(와) 함께 인증 상태를 제공할 수 있습니다. 다음 인증 상태를 고려할 수 있습니다.
+[고객 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=ko)을(를) 추가하고 Experience Cloud 방문자 ID와 연결할 수 있습니다. `customerIds`을(를) 보낼 때마다 `marketingCloudVisitorId`도 제공해야 합니다. 또한 각 방문자에 대해 각 `customerId`과(와) 함께 인증 상태를 제공할 수 있습니다. 다음 인증 상태를 고려할 수 있습니다.
 
 | 인증 상태 | 사용자 상태 |
 | --- | --- |
@@ -224,7 +224,7 @@ curl -X POST \
 
 ## 병합된 프로필
 
-동일한 요청에서 `tntId`, `thirdPartyID` 및 `marketingCloudVisitorId`을(를) 결합할 수 있습니다. 이 시나리오에서는 Adobe Target이 이러한 모든 ID의 매핑을 유지하고 방문자에게 고정합니다. 다른 식별자를 사용하여 프로필이 [실시간으로 병합 및 동기화](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html)되는 방법을 알아봅니다.
+동일한 요청에서 `tntId`, `thirdPartyID` 및 `marketingCloudVisitorId`을(를) 결합할 수 있습니다. 이 시나리오에서는 Adobe Target이 이러한 모든 ID의 매핑을 유지하고 방문자에게 고정합니다. 다른 식별자를 사용하여 프로필이 [실시간으로 병합 및 동기화](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=ko)되는 방법을 알아봅니다.
 
 ```
 curl -X POST \

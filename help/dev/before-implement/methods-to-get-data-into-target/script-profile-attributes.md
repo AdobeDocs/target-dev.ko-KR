@@ -54,4 +54,4 @@ user.purchase_recency: var dayInMillis = 3600 * 24 * 1000; if (mbox.name
 
 ### 관련 정보 링크
 
-[프로필 스크립트 속성](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html#concept_8C07AEAB0A144FECA8B4FEB091AED4D2)의 프로필 스크립트 정보 카드 보기 섹션을 참조하십시오
+[프로필 스크립트 속성](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=ko#concept_8C07AEAB0A144FECA8B4FEB091AED4D2)의 프로필 스크립트 정보 카드 보기 섹션을 참조하십시오

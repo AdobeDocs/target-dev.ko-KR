@@ -24,6 +24,6 @@ ht-degree: 62%
 | 일반 mbox는 일반적으로 컨텐츠를 `<DIV>` 태그로 둘러싸고 있습니다. | 글로벌 mbox는 &quot;비어 있는&quot; 상태이며 컨텐츠를 둘러싸지 않습니다. |
 | 한 활동의 컨텐츠만 일반 mbox에서 전달할 수 있습니다. | 여러 활동의 컨텐츠를 글로벌 mbox에 대한 하나의 응답으로 전달할 수 있습니다. |
 
-여러 활동이 글로벌 mbox를 통해 또는 여러 일반 mbox를 통해 전달되는 경우 Target [활동(또는 활동)이 웹 페이지에 전달되는 우선 순위를 결정합니다](https://experienceleague.adobe.com/docs/target/using/activities/priority.html).
+여러 활동이 글로벌 mbox를 통해 또는 여러 일반 mbox를 통해 전달되는 경우 Target [활동(또는 활동)이 웹 페이지에 전달되는 우선 순위를 결정합니다](https://experienceleague.adobe.com/docs/target/using/activities/priority.html?lang=ko).
 
 추가적인 페이지 수준 데이터를 [!DNL Target] 함수를 사용하여 글로벌 mbox와 함께 `[!UICONTROL targetPageParams]`에 전송할 수 있습니다. 이것은 mbox 매개 변수 기능과 비슷합니다. 자세한 내용은 [글로벌 Mbox에 매개 변수 전달](/help/dev/implement/client-side/atjs/global-mbox/pass-parameters-to-global-mbox.md)을 참조하십시오.

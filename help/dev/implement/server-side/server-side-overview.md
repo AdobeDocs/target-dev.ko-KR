@@ -19,7 +19,7 @@ ht-degree: 13%
 >
 >구현에서 클라이언트측에서 at.js 및 [!DNL AppMeasurement]을(를) 사용하는 경우 아래에 설명된 [!UICONTROL Target Delivery API] 및 서버측 SDK를 사용해야 합니다.
 >
->구현에서 [!UICONTROL Adobe Experience Platform Web SDK]을(를) 사용하는 경우 [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server API]](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview){target=_blank}을(를) 사용해야 합니다.
+>구현에서 [!UICONTROL Adobe Experience Platform Web SDK]을(를) 사용하는 경우 [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server API]](https://experienceleague.adobe.com/ko/docs/experience-platform/edge-network-server-api/overview){target=_blank}을(를) 사용해야 합니다.
 
 다음 프로세스는 [!DNL Target]의 서버 측 구현 시 발생합니다.
 

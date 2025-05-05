@@ -51,7 +51,7 @@ target_client_instance.get_offers(options)
 | target_location_hint_cookie | dict | [!DNL Target] 위치 힌트 쿠키 |
 | analytics_details | list[AnalyticsResponse] | 클라이언트측 Analytics 사용의 경우 Analytics 페이로드 |
 | 추적 | list[dict] | 모든 요청 mbox/보기에 대해 집계된 추적 데이터 |
-| response_tokens | list[dict] | [&#x200B;응답 토큰 목록](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) |
+| response_tokens | list[dict] | [&#x200B;응답 토큰 목록](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=ko) |
 | meta | dict | 온디바이스 의사 결정에 사용하기 위한 추가 의사 결정 메타데이터 |
 
 데이터를 다시 브라우저로 전달하는 데 사용되는 `target_cookie` 및 `target_location_hint_cookie` 개체의 구조는 다음과 같습니다.

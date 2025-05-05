@@ -33,7 +33,7 @@ TLS에 대한 자세한 내용은 [TLS(전송 계층 보안) 암호화 변경 �
 
 ## 시각적 편집 요구 사항
 
-[!UICONTROL Visual Experience Composer]&#x200B;(VEC)에서 웹 페이지를 안정적으로 열고 작성하고 미리 보려면 웹 브라우저에 [Adobe Experience Cloud Visual Editing Helper 브라우저 확장 기능](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank}이 설치되어 있거나 [!UICONTROL Enhanced Experience Composer (EEC)]을(를) 사용해야 합니다.
+[!UICONTROL Visual Experience Composer]&#x200B;(VEC)에서 웹 페이지를 안정적으로 열고 작성하고 미리 보려면 웹 브라우저에 [Adobe Experience Cloud Visual Editing Helper 브라우저 확장 기능](https://experienceleague.adobe.com/ko/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank}이 설치되어 있거나 [!UICONTROL Enhanced Experience Composer (EEC)]을(를) 사용해야 합니다.
 
 >[!NOTE]
 >

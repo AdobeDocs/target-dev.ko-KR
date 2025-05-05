@@ -21,12 +21,12 @@ ht-degree: 57%
 
 | 통합 | 세부 사항 |
 |--- |--- |
-| [!UICONTROL Analytics for Target] (A4T) | [Adobe Target용 보고 소스로서의 Adobe Analytics (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html)를 참조하십시오. |
+| [!UICONTROL Analytics for Target] (A4T) | [Adobe Target용 보고 소스로서의 Adobe Analytics (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=ko)를 참조하십시오. |
 | [!UICONTROL Profiles & Audiences] (P&amp;A) | *핵심 서비스 사용 안내서*&#x200B;에서 [대상](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=ko-KR)을 참조하세요. |
-| [!UICONTROL Experience Cloud ID Service] | [Adobe Experience Cloud ID 서비스 설명서](https://experienceleague.adobe.com/docs/id-service/using/home.html)를 참조하십시오. |
+| [!UICONTROL Experience Cloud ID Service] | [Adobe Experience Cloud ID 서비스 설명서](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)를 참조하십시오. |
 | [!UICONTROL Tags in Adobe Experience Platform] | [!UICONTROL Tags in Adobe Experience Platform]은(는) [!DNL Adobe]의 차세대 태그 관리 기능입니다. [!UICONTROL Tags]은(는) 관련 고객 환경을 향상시키는 데 필요한 분석, 마케팅 및 광고 태그를 배포하고 관리하는 간단한 방법을 고객에게 제공합니다. [구현 [!DNL Target] Adobe Experience Platform 사용](../how-to-deployatjs/implement-target-using-adobe-launch.md)을 참조하십시오. |
-| [!UICONTROL Adobe Experience Manager] (AEM) Cloud Service | [!UICONTROL AEM Cloud Service]을(를) 사용하면 AEM 워크플로에서 [!UICONTROL A/B Test] 및 [!UICONTROL Experience Targeting] 활동을 만들 수 있습니다. FP-11577 이상을 사용하는 [!UICONTROL Adobe Experience Manager] 6.2에서 at.js를 지원합니다. 자세한 내용은 [통합 [!DNL Adobe Target]](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)을 참조하고 AEM 버전을 선택하세요. |
-| [!UICONTROL AEM Experience Fragments] | [!DNL Target] 활동에 AEM에서 만든 경험 조각을 사용하면 AEM의 편의성과 기능을 [!DNL Target]의 강력한 AI(Automated Intelligence) 및 기계 학습(ML) 기능을 결합하여 경험을 다양한 규모로 테스트 및 개인화할 수 있습니다.  AEM에서는 모든 콘텐츠 및 에셋을 중앙 위치에 가져와서 개인화 전략을 실행합니다. AEM을 사용하면 코드를 작성하지 않고도 한 위치에서 데스크탑, 태블릿 및 휴대 디바이스의 콘텐츠를 쉽게 만들 수 있습니다. 모든 디바이스를 위해 페이지를 만들 필요가 없이, 컨텐츠를 사용하여 각 경험이 자동으로 조정됩니다. AEM  [AEM 경험 구성요소](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)를 참조하십시오. |
+| [!UICONTROL Adobe Experience Manager] (AEM) Cloud Service | [!UICONTROL AEM Cloud Service]을(를) 사용하면 AEM 워크플로에서 [!UICONTROL A/B Test] 및 [!UICONTROL Experience Targeting] 활동을 만들 수 있습니다. FP-11577 이상을 사용하는 [!UICONTROL Adobe Experience Manager] 6.2에서 at.js를 지원합니다. 자세한 내용은 [통합 [!DNL Adobe Target]](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko)을 참조하고 AEM 버전을 선택하세요. |
+| [!UICONTROL AEM Experience Fragments] | [!DNL Target] 활동에 AEM에서 만든 경험 조각을 사용하면 AEM의 편의성과 기능을 [!DNL Target]의 강력한 AI(Automated Intelligence) 및 기계 학습(ML) 기능을 결합하여 경험을 다양한 규모로 테스트 및 개인화할 수 있습니다.  AEM에서는 모든 콘텐츠 및 에셋을 중앙 위치에 가져와서 개인화 전략을 실행합니다. AEM을 사용하면 코드를 작성하지 않고도 한 위치에서 데스크탑, 태블릿 및 휴대 디바이스의 콘텐츠를 쉽게 만들 수 있습니다. 모든 디바이스를 위해 페이지를 만들 필요가 없이, 컨텐츠를 사용하여 각 경험이 자동으로 조정됩니다. AEM  [AEM 경험 구성요소](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=ko)를 참조하십시오. |
 
 ## 지원되지 않는 통합
 

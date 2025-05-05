@@ -42,7 +42,7 @@ at.js 버전 1.*x*&#x200B;의 경우 쿠키 동작은 퍼스트 파티 쿠키, �
 
 ### 퍼스트 파티 또는 타사 쿠키를 사용하는 경우
 
-사이트 설정에 따라 사용할 쿠키가 결정됩니다. 퍼스트 파티 및 타사 쿠키를 이해하면 [!DNL Target]의 작동 방식을 이해하는 데 도움이 됩니다. 자세한 내용은 [방법 [!DNL Adobe Target] 작동 방식](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html)을 참조하십시오.
+사이트 설정에 따라 사용할 쿠키가 결정됩니다. 퍼스트 파티 및 타사 쿠키를 이해하면 [!DNL Target]의 작동 방식을 이해하는 데 도움이 됩니다. 자세한 내용은 [방법 [!DNL Adobe Target] 작동 방식](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html?lang=ko)을 참조하십시오.
 
 쿠키에 대한 주요 사용 사례로는 다음 세 가지가 있습니다.
 
@@ -155,4 +155,4 @@ Apple의 메시지:
 | 영향을 받는 기능 | 세부 사항 |
 |--- |--- |
 | 옵트아웃 지원 | Apple의 WebKit 변경 사항 추적에서는 옵트아웃 지원을 중단합니다.<P>[!DNL Target] 옵트아웃은 `clientcode.tt.omtrdc.net` 도메인의 쿠키를 사용합니다. 자세한 내용은.[개인 정보 보호](/help/dev/before-implement/privacy/privacy.md)를 참조하십시오.<P>[!DNL Target]이(가) 두 개의 옵트아웃을 지원합니다.<ul><li>클라이언트당 하나(클라이언트는 옵트아웃 링크를 관리합니다.)</li><li>모든 고객의 모든 [!DNL Target] 기능에서 사용자를 옵트아웃하는 Adobe을 통한 기능입니다.</li></ul>두 방법 모두 타사 쿠키를 사용합니다. |
-| [!DNL Target]개 활동 | 고객은 [!DNL Target] 계정에 대해 최대 90일까지 [프로필 라이프타임 길이](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html)를 선택할 수 있습니다. 문제는 계정의 프로필 라이프타임이 30일보다 길고, 고객의 도메인이 사이트 간에 사용자를 추적하는 것으로 표시되었기 때문에 퍼스트 파티 쿠키가 삭제되는 경우 Safari 방문자에 대한 동작이 [!DNL Target]의 다음 영역에서 영향을 받는다는 것입니다.<P>**[!DNL Target]보고서**: Safari 사용자가 활동에 들어갔다가 30일 후에 재방문한 다음 전환하는 경우 해당 사용자는 2명의 방문자와 1개의 전환으로 계산됩니다.<P>이 동작은 [!DNL Analytics]을(를) 보고 소스로 사용(A4T)하는 활동에 대해 동일합니다.<P>**프로필 및 활동 멤버십**:<ul><li>퍼스트 파티 쿠키가 만료되면 프로필 데이터가 지워집니다.</li><li>퍼스트 파티 쿠키가 만료되면 활동 멤버십이 지워집니다.</li><li> [!DNL Target]은(는) 타사 쿠키 구현 또는 퍼스트 파티 및 타사 쿠키 구현을 사용하는 계정의 경우 Safari에서 작동하지 않습니다. 이 동작은 새로운 동작이 아닙니다. Safari가 얼마 동안 타사 쿠키를 허용하지 않았습니다.</li></ul><P>**제안**: 고객 도메인이 세션 간 방문자를 추적하는 도메인으로 표시될 수 있다는 걱정이 있다면 [!DNL Target]에서 프로필 라이프타임을 30일 이하로 설정하는 것이 가장 안전합니다. 그러면 사용자가 Safari 및 기타 모든 브라우저에서 유사하게 추적됩니다. |
+| [!DNL Target]개 활동 | 고객은 [!DNL Target] 계정에 대해 최대 90일까지 [프로필 라이프타임 길이](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html?lang=ko)를 선택할 수 있습니다. 문제는 계정의 프로필 라이프타임이 30일보다 길고, 고객의 도메인이 사이트 간에 사용자를 추적하는 것으로 표시되었기 때문에 퍼스트 파티 쿠키가 삭제되는 경우 Safari 방문자에 대한 동작이 [!DNL Target]의 다음 영역에서 영향을 받는다는 것입니다.<P>**[!DNL Target]보고서**: Safari 사용자가 활동에 들어갔다가 30일 후에 재방문한 다음 전환하는 경우 해당 사용자는 2명의 방문자와 1개의 전환으로 계산됩니다.<P>이 동작은 [!DNL Analytics]을(를) 보고 소스로 사용(A4T)하는 활동에 대해 동일합니다.<P>**프로필 및 활동 멤버십**:<ul><li>퍼스트 파티 쿠키가 만료되면 프로필 데이터가 지워집니다.</li><li>퍼스트 파티 쿠키가 만료되면 활동 멤버십이 지워집니다.</li><li> [!DNL Target]은(는) 타사 쿠키 구현 또는 퍼스트 파티 및 타사 쿠키 구현을 사용하는 계정의 경우 Safari에서 작동하지 않습니다. 이 동작은 새로운 동작이 아닙니다. Safari가 얼마 동안 타사 쿠키를 허용하지 않았습니다.</li></ul><P>**제안**: 고객 도메인이 세션 간 방문자를 추적하는 도메인으로 표시될 수 있다는 걱정이 있다면 [!DNL Target]에서 프로필 라이프타임을 30일 이하로 설정하는 것이 가장 안전합니다. 그러면 사용자가 Safari 및 기타 모든 브라우저에서 유사하게 추적됩니다. |

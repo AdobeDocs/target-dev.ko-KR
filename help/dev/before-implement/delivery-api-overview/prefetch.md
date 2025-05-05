@@ -124,7 +124,7 @@ curl -X POST \
 
 ## [!UICONTROL Analytics for Target] 사용 시 `clickTrack` 지표로 mbox 미리 가져오기(A4T)
 
-[[!UICONTROL Adobe Analytics for Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html){target=_blank}(A4T)은(는) [!DNL Analytics] 전환 지표 및 대상 세그먼트를 기반으로 활동을 만들 수 있는 솔루션 간 통합입니다.
+[[!UICONTROL Adobe Analytics for Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=ko){target=_blank}(A4T)은(는) [!DNL Analytics] 전환 지표 및 대상 세그먼트를 기반으로 활동을 만들 수 있는 솔루션 간 통합입니다.
 
 다음 코드 조각은 `clickTrack` 지표가 포함된 mbox 미리 가져오기의 응답으로서, 오퍼를 클릭했음을 [!DNL Analytics]에 알립니다.
 
@@ -169,7 +169,7 @@ curl -X POST \
 
 ## 미리 가져오기 보기
 
-보기는 단일 페이지 애플리케이션(SPA) 및 모바일 애플리케이션을 보다 원활하게 지원합니다. 보기는 SPA 또는 모바일 경험을 함께 구성하는 시각적 요소의 논리 그룹으로 볼 수 있습니다. 이제 배달 API를 통해 VEC가 [SPA 보기](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md)에서 수정한 [[!UICONTROL A/B Test]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html){target=_blank} 및 [[!UICONTROL Experience Targeting]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html){target=_blank}(X)T 활동을 미리 가져올 수 있습니다.
+보기는 단일 페이지 애플리케이션(SPA) 및 모바일 애플리케이션을 보다 원활하게 지원합니다. 보기는 SPA 또는 모바일 경험을 함께 구성하는 시각적 요소의 논리 그룹으로 볼 수 있습니다. 이제 배달 API를 통해 VEC가 [SPA 보기](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md)에서 수정한 [[!UICONTROL A/B Test]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=ko){target=_blank} 및 [[!UICONTROL Experience Targeting]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=ko){target=_blank}(X)T 활동을 미리 가져올 수 있습니다.
 
 ```shell  {line-numbers="true"}
 curl -X POST \

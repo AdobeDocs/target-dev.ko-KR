@@ -149,7 +149,7 @@ GET https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities/[entity.id]
 
    >[!NOTE]
    >
-   >환경이 명시적으로 지정되지 않은 경우 엔터티 가져오기는 [기본 환경](https://experienceleague.adobe.com/docs/target/using/administer/environments.html)에서만 엔터티를 가져옵니다. 기본 환경이 아닌 다른 환경에서 가져오려면 환경 ID를 지정해야 합니다.
+   >환경이 명시적으로 지정되지 않은 경우 엔터티 가져오기는 [기본 환경](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=ko)에서만 엔터티를 가져옵니다. 기본 환경이 아닌 다른 환경에서 가져오려면 환경 ID를 지정해야 합니다.
 
 1. 필요한 경우 `environmentId` 매개 변수를 추가하고 요청을 다시 보냅니다.
 

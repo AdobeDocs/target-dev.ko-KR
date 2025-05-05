@@ -17,15 +17,15 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch이 [!DNL Adobe Experience Platform]에서 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과 제품 설명서에 몇 가지 용어 변경 사항이 적용되었습니다. 용어 변경에 대한 통합 참고 자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?)를 참조하십시오.
+>Adobe Experience Platform Launch이 [!DNL Adobe Experience Platform]에서 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과 제품 설명서에 몇 가지 용어 변경 사항이 적용되었습니다. 용어 변경에 대한 통합 참고 자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ko&)를 참조하십시오.
 
 다음 표에는 자세한 정보를 얻을 수 있는 다양한 소스가 나열되어 있습니다.
 
 | 리소스 | 세부 사항 |
 |--- |--- |
-| [Adobe Target 추가](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/target.html#implement-solutions) | 이 자습서에서는 [!DNL Adobe Experience Platform]의 태그를 사용하여 웹 사이트에서 [!DNL Target]을(를) 구현하는 단계별 지침을 제공합니다. 다뤄지는 주제에는 at.js JavaScript 라이브러리 추가, 글로벌 mbox 실행, 매개 변수 추가 및 다른 솔루션과의 통합이 있습니다. 이 문서는 Adobe Experience Platform 및 기타 Adobe Experience Cloud 솔루션을 구현하는 방법을 보여 주는 대규모 자습서의 일부입니다. |
-| [빠른 시작 안내서](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html) | 관련 고객 환경을 향상하는 데 필요한 분석, 마케팅 및 광고 태그를 배포하고 관리하는 방법에 대한 정보입니다. |
-| [Adobe [!DNL Target] 확장 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html) | [!DNL Adobe Experience Platform]을(를) 사용하여 [!DNL Target]을(를) 구현하는 방법에 대한 정보입니다. |
+| [Adobe Target 추가](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/target.html?lang=ko#implement-solutions) | 이 자습서에서는 [!DNL Adobe Experience Platform]의 태그를 사용하여 웹 사이트에서 [!DNL Target]을(를) 구현하는 단계별 지침을 제공합니다. 다뤄지는 주제에는 at.js JavaScript 라이브러리 추가, 글로벌 mbox 실행, 매개 변수 추가 및 다른 솔루션과의 통합이 있습니다. 이 문서는 Adobe Experience Platform 및 기타 Adobe Experience Cloud 솔루션을 구현하는 방법을 보여 주는 대규모 자습서의 일부입니다. |
+| [빠른 시작 안내서](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=ko) | 관련 고객 환경을 향상하는 데 필요한 분석, 마케팅 및 광고 태그를 배포하고 관리하는 방법에 대한 정보입니다. |
+| [Adobe [!DNL Target] 확장 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=ko) | [!DNL Adobe Experience Platform]을(를) 사용하여 [!DNL Target]을(를) 구현하는 방법에 대한 정보입니다. |
 
 ## [!DNL Target] 확장을 사용하여 at.js를 구현하는 이점
 

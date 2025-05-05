@@ -37,7 +37,7 @@ JavaScript 호출을 통해 모든 도메인에서 [!DNL Target]에 액세스할
 
 ### 내 사이트가 외부 도메인에 iFrame으로 임베드되는 것을 허용하거나 방지하려면 어떻게 해야 합니까?
 
-[시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html){target=_blank}(VEC)가 웹 사이트를 iFrame에 포함할 수 있도록 하려면 웹 서버 설정에서 CSP(설정된 경우)를 변경해야 합니다. [!DNL Adobe] 도메인은 화이트리스트에 추가하고 구성해야 합니다.
+[시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=ko){target=_blank}(VEC)가 웹 사이트를 iFrame에 포함할 수 있도록 하려면 웹 서버 설정에서 CSP(설정된 경우)를 변경해야 합니다. [!DNL Adobe] 도메인은 화이트리스트에 추가하고 구성해야 합니다.
 
 보안상의 이유로 사이트가 외부 도메인 아래에 iFrame으로 포함되지 않도록 하려는 경우
 

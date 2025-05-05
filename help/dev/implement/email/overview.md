@@ -28,7 +28,7 @@ AdBox 광고 및 리디렉터는 모든 종류의 활동에 사용할 수 있습
 
 ## 보안 모범 사례
 
-리디렉터를 사용하면 오픈 리디렉션 취약점의 위험에 노출될 수 있습니다. 리디렉터 링크를 서드파티가 무단으로 사용하지 않도록 하려면, 기본 리디렉션 URL 도메인에 &quot;승인된 호스트&quot;를 사용하여 허용 목록에 추가하다하는 것이 좋습니다. [!DNL Target]은(는) 리디렉션을 허용할 호스트 허용 목록에 추가하다 도메인을 사용합니다. 자세한 내용은 *호스트*&#x200B;에서  [!DNL Target][&#128279;](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html#allowlist)(으)로 mbox 호출을 보내도록 승인된 호스트를 지정하는 허용 목록 만들기를 참조하십시오.
+리디렉터를 사용하면 오픈 리디렉션 취약점의 위험에 노출될 수 있습니다. 리디렉터 링크를 서드파티가 무단으로 사용하지 않도록 하려면, 기본 리디렉션 URL 도메인에 &quot;승인된 호스트&quot;를 사용하여 허용 목록에 추가하다하는 것이 좋습니다. [!DNL Target]은(는) 리디렉션을 허용할 호스트 허용 목록에 추가하다 도메인을 사용합니다. 자세한 내용은 *호스트*&#x200B;에서  [!DNL Target][&#128279;](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=ko#allowlist)(으)로 mbox 호출을 보내도록 승인된 호스트를 지정하는 허용 목록 만들기를 참조하십시오.
 
 ## 제한
 

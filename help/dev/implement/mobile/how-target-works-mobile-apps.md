@@ -24,7 +24,7 @@ ht-degree: 22%
 
 *타겟 위치*&#x200B;는 mbox라고도 합니다. 앱에서 식별된 위치는 테스트나 개인화에 사용할 수 있습니다(예: 홈 화면의 환영 메시지). 이러한 위치는 테스트 작성 프로세스 중에 식별됩니다.
 
-*[성공 지표](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)*&#x200B;은(는) 특정 활동이 성공했는지(서명, 구매, 티켓 예약 등) 여부를 식별하는, 사용자가 수행하는 작업입니다.
+*[성공 지표](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=ko)*&#x200B;은(는) 특정 활동이 성공했는지(서명, 구매, 티켓 예약 등) 여부를 식별하는, 사용자가 수행하는 작업입니다.
 
 ![대체 이미지](assets/mobile-target-location.png)
 

@@ -21,7 +21,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
-> [!DNL Adobe Experience Platform Launch] 가 [!DNL Adobe Experience Platform]의 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과 제품 설명서에 몇 가지 용어 변경 사항이 적용되었습니다. 용어 변경에 대한 통합 참고 자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html)를 참조하십시오.
+> [!DNL Adobe Experience Platform Launch] 가 [!DNL Adobe Experience Platform]의 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과 제품 설명서에 몇 가지 용어 변경 사항이 적용되었습니다. 용어 변경에 대한 통합 참고 자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ko)를 참조하십시오.
 
 * **[태그 관리자 없이  [!DNL Target] 구현](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md)**: 태그 관리자(예: [!DNL Adobe Experience Platform]의 태그)를 사용하지 않고 [!DNL Target]을(를) 구현할 수 있습니다.
 * **타사 태그 관리자를 사용하여 [!DNL Target]을(를) 구현**: [Adobe Experience Platform의 태그](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)는 [!DNL Target]을(를) 구현하는 기본 방법입니다. 그러나 Tealium, Ensighten 및 Google 태그를 포함한 타사 태그 관리자를 사용하여 [!DNL Target]을(를) 구현할 수도 있습니다. Launch를 사용할 때의 이점 목록을 보려면 [확장을 사용하여 at.js를 구현할 때의 이점](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md#advantages-of-implementing-atjs-using-the-target-extension)을 참조하십시오. [!DNL Adobe Target] 

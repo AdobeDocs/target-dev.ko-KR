@@ -52,7 +52,7 @@ TargetClient.getOffers(options: Object): Promise
 | target쿠키 | 개체 | [!DNL Target] 쿠키 |
 | targetLocationHintCookie | 개체 | [!DNL Target] 위치 힌트 쿠키 |
 | analyticsDetails | 배열 | 클라이언트측 Analytics 사용의 경우 Analytics 페이로드 |
-| responseTokens | 배열 | [응답 토큰](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?) 목록입니다. |
+| responseTokens | 배열 | [응답 토큰](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=ko&) 목록입니다. |
 | 추적 | 배열 | 모든 요청 mbox/보기에 대해 집계된 추적 데이터 |
 | status | 개체 | 응답의 상태를 포함하는 개체. |
 | decisioningMethod | 문자열 | 사용할 의사 결정 방법([on-device](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md), 서버측, 하이브리드)을 결정합니다 |

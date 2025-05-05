@@ -44,7 +44,7 @@ ht-degree: 0%
 
 &lt;!—(1. [인증에 대한 설명서](https://developer.adobe.com/developer-console/docs/guides/authentication/)에 따라 개인 키 및 공개 인증서를 생성합니다. // [//]: #([Adobe IO 설정 방법: 인증 - 단계별](https://helpx.adobe.com/marketing-cloud-core/kb/adobe-io-authentication-step-by-step.html)의 **단계 1**&#x200B;에 설명됨). 1단계를 완료한 후 이 안내서로 돌아가서 아래의 2단계로 다시 시작하십시오. // 이 단계의 결과는 `private.key` 파일 및 `certificate_pub.crt` 파일을 만든 것입니다. 이 두 파일을 생성했으면 이 안내서로 돌아갑니다.)—>
 
-1. [Adobe Admin Console](https://adminconsole.adobe.com/)에서 [!DNL Adobe] 사용자 계정에 [!DNL Target]에 대한 [제품 관리자](https://helpx.adobe.com/enterprise/using/admin-roles.html) 및 [개발자](https://helpx.adobe.com/enterprise/using/manage-developers.html) 수준 액세스 권한이 모두 부여되었는지 확인하십시오.
+1. [Adobe Admin Console](https://adminconsole.adobe.com/)에서 [!DNL Adobe] 사용자 계정에 [!DNL Target]에 대한 [제품 관리자](https://helpx.adobe.com/kr/enterprise/using/admin-roles.html) 및 [개발자](https://helpx.adobe.com/kr/enterprise/using/manage-developers.html) 수준 액세스 권한이 모두 부여되었는지 확인하십시오.
 
 1. [Adobe Developer Console](https://developer.adobe.com/console/home)에서 이 통합을 만들 [!UICONTROL Experience Cloud Organization]을(를) 선택합니다. (단일 [!UICONTROL Experience Cloud Organization]에 대한 액세스 권한만 있을 수 있습니다.)
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
    ![configure-io-target-createproject8](assets/configure-io-target-createproject8.png)
 
-1. Adobe Developer Console으로 돌아가서 Adobe Recommendations을 사용 중인 속성에 해당하는 [제품 프로필](https://helpx.adobe.com/enterprise/using/manage-products-and-profiles.html)을 선택합니다. 속성을 사용하지 않는 경우 기본 Workspace 옵션을 선택합니다. **[!UICONTROL Save configured API]** 아이콘을 클릭합니다.
+1. Adobe Developer Console으로 돌아가서 Adobe Recommendations을 사용 중인 속성에 해당하는 [제품 프로필](https://helpx.adobe.com/kr/enterprise/using/manage-products-and-profiles.html)을 선택합니다. 속성을 사용하지 않는 경우 기본 Workspace 옵션을 선택합니다. **[!UICONTROL Save configured API]** 아이콘을 클릭합니다.
 
    ![configure-io-target-createproject9](assets/configure-io-target-createproject9.png)
 
@@ -95,7 +95,7 @@ Postman에서 프로젝트의 세부 정보를 지정하는 방법에는 여러 
 
 >[!NOTE]
 >
->[!DNL Target]을(를) 포함하여 모든 Experience Cloud 솔루션에 적용할 수 있는 비디오 지침은 [Experience Platform API와 함께 Postman 사용](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html)을 참조하십시오. 다음 섹션은 [!DNL Target] API와 관련이 있습니다. 1. Experience Platform API를 만들고 Postman 2로 내보냅니다. Postman을 사용하여 액세스 토큰을 생성합니다. 이러한 단계는 아래에 나와 있습니다.
+>[!DNL Target]을(를) 포함하여 모든 Experience Cloud 솔루션에 적용할 수 있는 비디오 지침은 [Experience Platform API와 함께 Postman 사용](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=ko)을 참조하십시오. 다음 섹션은 [!DNL Target] API와 관련이 있습니다. 1. Experience Platform API를 만들고 Postman 2로 내보냅니다. Postman을 사용하여 액세스 토큰을 생성합니다. 이러한 단계는 아래에 나와 있습니다.
 
 1. [Adobe Developer Console](https://developer.adobe.com/console/home)에서 새 프로젝트의 **[!UICONTROL Service Account (JWT)]** 자격 증명을 보려면 이동하십시오. 표시된 대로 왼쪽 탐색 또는 **[!UICONTROL Credentials]** 섹션을 사용합니다.
 
