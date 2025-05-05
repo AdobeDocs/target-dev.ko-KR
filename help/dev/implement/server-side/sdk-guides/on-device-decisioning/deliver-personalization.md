@@ -15,14 +15,14 @@ ht-degree: 0%
 ## 단계 요약
 
 1. 조직에 대해 [!UICONTROL on-device decisioning] 사용
-1. [!UICONTROL Experience Targeting](XT) 활동 만들기
+1. [!UICONTROL Experience Targeting] (XT) 활동 만들기
 1. 대상자별 개인화된 경험 정의
 1. 대상자당 개인화된 경험 확인
 1. 보고 설정
 1. KPI 추적을 위한 지표 추가
 1. 애플리케이션에서 개인화된 오퍼 구현
 1. 전환 이벤트를 추적하는 코드 구현
-1. [!UICONTROL Experience Targeting](XT) 개인화 활동 활성화
+1. [!UICONTROL Experience Targeting] (XT) 개인화 활동 활성화
 
 당신이 여행사라고 가정해 보세요. 특정 여행 패키지를 25% 할인된 가격으로 맞춤형 오퍼를 제공하고자 합니다. 오퍼가 사용자에게 반향을 일으키도록 하려면 대상 도시의 랜드마크를 표시하기로 합니다. 또한 개인화된 오퍼의 게재가 거의 0에 가까운 지연 시간에 실행되어 사용자 경험에 부정적인 영향을 주지 않고 결과를 왜곡하려고 합니다.
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
    **[!UICONTROL On-Device Decisioning]** 전환을 활성화한 후 [!DNL Adobe Target]에서 클라이언트에 대한 *규칙 아티팩트*&#x200B;를 생성하기 시작합니다.
 
-## 2. [!UICONTROL Experience Targeting](XT) 활동 만들기
+## 2. [!UICONTROL Experience Targeting] (XT) 활동 만들기
 
 1. [!DNL Adobe Target]에서 **[!UICONTROL Activities]** 페이지로 이동한 다음 **[!UICONTROL Create Activity]** > **[!UICONTROL Experience Targeting]**&#x200B;을(를) 선택합니다.
 

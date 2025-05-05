@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Target] 프로필은 다음 세 가지 방법으로 가져올 수 있습니다. `[!DNL Experience Cloud Visitor ID]`(`ECID`), `tntid` 또는 `thirdPartyId`을(를) 사용합니다.
 
-## [!DNL Experience Cloud Visitor ID](ECID) 사용
+## [!DNL Experience Cloud Visitor ID] (ECID) 사용
 
 `ECID`을(를) 기반으로 프로필을 가져올 수 있습니다. HTTP 메서드는 GET 형식이어야 합니다.
 
@@ -25,7 +25,7 @@ URL은 다음 예제와 비슷합니다.
 https://<clientCode>.tt.omtrdc.net/rest/v1/profiles/marketingCloudVisitorId/<ECID>?client=<clientCode>
 ```
 
-`<clientCode>`을(를) [!DNL Target] [!UICONTROL Client Code](으)로 바꾸고 `<ECID>`을(를) [!DNL Experience Cloud Visitor ID]([!DNL Marketing Cloud Visitor ID])(으)로 바꿉니다.
+`<clientCode>`을(를) [!DNL Target] [!UICONTROL Client Code] (으)로 바꾸고 `<ECID>`을(를) [!DNL Experience Cloud Visitor ID] ([!DNL Marketing Cloud Visitor ID])(으)로 바꿉니다.
 
 ## tntid 사용
 

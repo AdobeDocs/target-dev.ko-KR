@@ -204,7 +204,7 @@ ht-degree: 18%
 
 * **유형**: 숫자
 * **기본값**: 300000(5분(밀리초))
-* **설명**: at.js가 새 버전의 온디바이스 의사 결정 아티팩트를 가져오고 캐시를 업데이트하는 간격입니다. 3000000}에 허용되는 최소값입니다.`pollingInterval`
+* **설명**: at.js가 새 버전의 온디바이스 의사 결정 아티팩트를 가져오고 캐시를 업데이트하는 간격입니다. 3000000&rbrace;에 허용되는 최소값입니다.`pollingInterval`
 
 ### secureOnly
 
@@ -554,4 +554,4 @@ const PAGE_TEMPLATE = `
 `serverState`의 작동 방식에 대해 자세히 알아보려면 다음 리소스를 확인하십시오.
 
 * [샘플 코드](https://github.com/Adobe-Marketing-Cloud/target-node-client-samples/tree/master/advanced-atjs-integration-serverstate).
-* `serverState`](https://github.com/Adobe-Marketing-Cloud/target-node-client-samples/tree/master/react-shopping-cart-demo)이(가) 있는 [단일 페이지 응용 프로그램(SPA) 샘플 앱입니다.
+* `serverState`[&#128279;](https://github.com/Adobe-Marketing-Cloud/target-node-client-samples/tree/master/react-shopping-cart-demo)이(가) 있는 단일 페이지 응용 프로그램(SPA) 샘플 앱입니다.

@@ -203,7 +203,7 @@ SPA용 [!DNL Adobe Target] VEC는 &quot;보기&quot;라는 새로운 개념을 �
 | 5 | [!DNL Target]에서는 URL 요청 매개변수 및 프로필 데이터를 기반으로 현재 페이지 및 미래 보기를 위해 방문자에게 반환할 활동 및 경험을 결정합니다. |
 | 6 | 타기팅된 콘텐츠는 다시 페이지로 전송되며, 원할 경우 추가적인 개인화를 위한 프로필 값을 포함할 수 있습니다.<br />현재 페이지의 타깃팅된 콘텐츠는 기본 콘텐츠의 플리커 없이 가능한 한 빨리 나타납니다.<br />`triggerView()`를 통해 보기를 트리거할 때 추가적인 서버 호출 없이 즉시 적용할 수 있도록 브라우저에서 캐시된 SPA의 사용자 동작에 대한 결과로서 표시되는 보기를 위한 타깃팅된 콘텐츠입니다. |
 | 7 | Analytics 데이터가 데이터 수집 서버로 전송됩니다. |
-| 8 | 대상 데이터는 SDID를 통해 [!DNL Analytics] 데이터와 일치하고 [!DNL Analytics] 보고 저장소로 처리됩니다.그런 다음 [!DNL Target](A4T) 보고서에 대한 [!DNL Analytics]을(를) 통해 <br />Analytics 데이터를 [!DNL Analytics]과(와) [!DNL Target] 모두에서 볼 수 있습니다. |
+| 8 | 대상 데이터는 SDID를 통해 [!DNL Analytics] 데이터와 일치하고 [!DNL Analytics] 보고 저장소로 처리됩니다.그런 다음 [!DNL Target] (A4T) 보고서에 대한 [!DNL Analytics]을(를) 통해 <br />Analytics 데이터를 [!DNL Analytics]과(와) [!DNL Target] 모두에서 볼 수 있습니다. |
 
 이제 SPA에서 `triggerView()`가 구현될 때 그곳이 어디든, 보기 및 작업은 캐시에서 검색되고 서버 호출 없이 사용자에게 표시됩니다. `triggerView()`는 또한 노출 수를 증가시키고 기록하기 위해 [!DNL Target] 백엔드에 알림을 요청합니다.
 
@@ -287,9 +287,9 @@ at.js 2.x API를 사용하면 여러 가지 방법으로 [!DNL Target] 구현을
 | --- | --- | --- |
 | 1 | VisitorAPI JS 로드 | 이 라이브러리는 방문자에게 ECID를 할당합니다. 이 ID는 나중에 웹 페이지의 다른 Adobe 솔루션에서 사용됩니다. |
 | 2 | at.js 2.x 로드 | at.js 2.x는 [!DNL Target] 요청 및 보기를 구현하는 데 사용하는 필요한 모든 API를 로드합니다. |
-| 3 | [!DNL Target] 요청 실행 | 데이터 계층이 있는 경우 [!DNL Target] 요청을 실행하기 전에 [!DNL Target](으)로 보내는 데 필요한 중요한 데이터를 로드하는 것이 좋습니다. `targetPageParams`을(를) 사용하여 타깃팅에 사용할 데이터를 포함할 수 있습니다.<P>[targetGlobalSettings](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md)에서 `pageLoadEnabled` 및 `viewsEnabled`을(를) true로 설정하면 at.js가 2단계에서 자동으로 모든 VEC [!DNL Target] 오퍼를 요청합니다.<P>페이지가 로드된 후 `getOffers`을(를) 사용하여 VEC 오퍼를 가져올 수도 있습니다. 이렇게 하려면 API 호출에 `execute>pageLoad` 및 `prefetch>views`이(가) 요청에 포함되어 있는지 확인하십시오. |
+| 3 | [!DNL Target] 요청 실행 | 데이터 계층이 있는 경우 [!DNL Target] 요청을 실행하기 전에 [!DNL Target] (으)로 보내는 데 필요한 중요한 데이터를 로드하는 것이 좋습니다. `targetPageParams`을(를) 사용하여 타깃팅에 사용할 데이터를 포함할 수 있습니다.<P>[targetGlobalSettings](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md)에서 `pageLoadEnabled` 및 `viewsEnabled`을(를) true로 설정하면 at.js가 2단계에서 자동으로 모든 VEC [!DNL Target] 오퍼를 요청합니다.<P>페이지가 로드된 후 `getOffers`을(를) 사용하여 VEC 오퍼를 가져올 수도 있습니다. 이렇게 하려면 API 호출에 `execute>pageLoad` 및 `prefetch>views`이(가) 요청에 포함되어 있는지 확인하십시오. |
 | 4 | `triggerView()` 호출 | 3단계에서 시작한 [!DNL Target] 요청은 페이지 로드 실행과 보기 모두에 대한 경험을 반환할 수 있으므로 [!DNL Target] 요청이 반환되고 캐시에 오퍼 적용을 완료한 후에 `triggerView()`이(가) 호출되는지 확인하십시오. 이 단계는 보기당 한 번만 실행해야 합니다. |
-| 5 | [!DNL Analytics] 페이지 보기 비콘 호출 | 이 비콘은 데이터 결합을 위해 [!DNL Analytics](으)로 3단계 및 4단계와 연결된 SDID를 보냅니다. |
+| 5 | [!DNL Analytics] 페이지 보기 비콘 호출 | 이 비콘은 데이터 결합을 위해 [!DNL Analytics] (으)로 3단계 및 4단계와 연결된 SDID를 보냅니다. |
 | 6 | 추가 `triggerView({"page": false})` 호출 | 이것은 보기를 변경하지 않고 페이지의 특정 구성 요소를 잠재적으로 다시 렌더링할 수 있는 SPA 프레임워크의 선택적 단계입니다. 이러한 경우 SPA 프레임워크에서 구성 요소를 다시 렌더링한 후 [!DNL Target] 경험이 다시 적용되도록 하려면 이 API를 호출하는 것이 중요합니다. [!DNL Target] 경험이 SPA 보기에서 유지되도록 원하는 만큼 이 단계를 실행할 수 있습니다. |
 
 ### SPA 보기 변경에 대한 작업 순서(전체 페이지 다시 로드 없음)

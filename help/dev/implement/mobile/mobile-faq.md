@@ -33,8 +33,8 @@ Adobe Experience Platform Mobile SDK는 현재 iOS, Android 및 React를 지원�
 
 ## [!DNL Target] Mobile은 [!DNL Adobe Target] Premium 제품 SKU만의 기능입니까?
 
-아니오. [!DNL Adobe Target Standard] 고객의 경우 [!DNL Target Standard] 모바일 앱 추가 기능만 사용하여 [!UICONTROL A/B Test] 및 [!UICONTROL Experience Targeting](XT) 활동에 Mobile SDK를 사용할 수 있습니다. 모바일 앱에서 [!UICONTROL Recommendations] 또는 AI 기반 기능을 사용하려면 [Adobe Target Premium](https://experienceleague.adobe.com/docs/target/using/introduction/intro.html#premium) 라이선스가 필요합니다.
+아니오. [!DNL Adobe Target Standard] 고객의 경우 [!DNL Target Standard] 모바일 앱 추가 기능만 사용하여 [!UICONTROL A/B Test] 및 [!UICONTROL Experience Targeting] (XT) 활동에 Mobile SDK를 사용할 수 있습니다. 모바일 앱에서 [!UICONTROL Recommendations] 또는 AI 기반 기능을 사용하려면 [Adobe Target Premium](https://experienceleague.adobe.com/docs/target/using/introduction/intro.html#premium) 라이선스가 필요합니다.
 
-## [!DNL Adobe Experience Manager](AEM)과(와) [!DNL Target] 모바일 활동 간에 모바일 앱 통합이 있습니까?
+## [!DNL Adobe Experience Manager] (AEM)과(와) [!DNL Target] 모바일 활동 간에 모바일 앱 통합이 있습니까?
 
-현재 AEM에서 [!DNL Target](으)로 JSON [경험 조각](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html){target=_blank}을(를) 공유할 수 있으며, 그런 다음 모바일 앱 활동에서 사용할 수도 있습니다.
+현재 AEM에서 [!DNL Target] (으)로 JSON [경험 조각](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html){target=_blank}을(를) 공유할 수 있으며, 그런 다음 모바일 앱 활동에서 사용할 수도 있습니다.

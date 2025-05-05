@@ -35,7 +35,7 @@ TargetClient.getOffers(options: Object): Promise
 | visitorCookey | 문자열 | 아니오 | 없음 | ECID(VisitorId) 쿠키 |
 | target쿠키 | 문자열 | 아니오 | 없음 | [!DNL Target] 쿠키 |
 | targetLocationHint | 문자열 | 아니오 | 없음 | [!DNL Target] 위치 힌트 |
-| consumerId | 문자열 | 아니요 | 없음 | [!UICONTROL Analytics for Target](A4T) 결합에 대한 consumerIds |
+| consumerId | 문자열 | 아니요 | 없음 | [!UICONTROL Analytics for Target] (A4T) 결합에 대한 consumerIds |
 | 고객 ID | 배열 | 아니요 | 없음 | VisitorId 호환 형식의 고객 ID |
 | sessionId | 문자열 | 아니오 | 없음 | 여러 [!DNL Target]개의 요청을 연결하는 데 사용됨 |
 | (방문자 | 개체 | 아니오 | 새 VisitorId | 외부 VisitorId 인스턴스 제공 |

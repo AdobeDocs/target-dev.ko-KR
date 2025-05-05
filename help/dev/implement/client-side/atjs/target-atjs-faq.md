@@ -130,7 +130,7 @@ at.js 파일은 다운로드 시 약 109KB입니다. 그러나 대부분의 서�
 
 ## at.js가 mbox.js보다 큰 이유는 무엇입니까?
 
-at.js 구현은 단일 라이브러리(at.js)를 사용하는 반면, mbox.js 구현은 실제로 두 개의 라이브러리(mbox.js 및 target.js)를 사용합니다. 따라서 공정한 비교는 at.js 대 mbox.js *와* `target.js`입니다. gzip으로 압축된 두 버전의 크기를 비교하면 at.js 버전 1.2는 34KB이고 mbox.js 버전 63은 26.2KB입니다. ``
+at.js 구현은 단일 라이브러리(at.js)를 사용하는 반면, mbox.js 구현은 실제로 두 개의 라이브러리(mbox.js 및 target.js)를 사용합니다. 따라서 공정한 비교는 at.js 대 mbox.js *와* `target.js`입니다. gzip으로 압축된 두 버전의 크기를 비교하면 at.js 버전 1.2는 34KB이고 mbox.js 버전 63은 26.2KB입니다. &grave;&grave;
 
 at.js는 mbox.js와 비교하여 훨씬 더 많은 DOM 구문 분석을 수행하므로 더 adfd큽니다. 이것은 at.js가 JSON 응답에 있는 &quot;원시&quot; 데이터를 가져오고 이를 이해해야 하기 때문에 필요합니다. mbox.js가 `document.write()`을(를) 사용했으며 브라우저에서 모든 구문 분석을 수행했습니다.
 
@@ -146,7 +146,7 @@ at.js는 현재 jQuery의 일부를 사용하므로 at.js의 맨 위에 MIT 라�
 
 Safari 방문자를 지원하기 위해 더 나은 X-Domain이 &quot;비활성화&quot;(퍼스트 파티 쿠키만 설정)되거나 &quot;활성화&quot;(Safari에서 퍼스트 파티 쿠키만 설정하고 기타 브라우저에서는 퍼스트 파티 쿠키와 타사 쿠키 설정)됩니다.
 
-## 단일 페이지 애플리케이션에서 Target [!UICONTROL Visual Experience Composer](VEC)을 사용할 수 있습니까?
+## 단일 페이지 애플리케이션에서 Target [!UICONTROL Visual Experience Composer] (VEC)을 사용할 수 있습니까?
 
 예. at.js 2.x를 사용하는 경우 SPA용 VEC를 사용할 수 있습니다. 자세한 내용은 [단일 페이지(SPA) 시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html)를 참조하십시오.
 

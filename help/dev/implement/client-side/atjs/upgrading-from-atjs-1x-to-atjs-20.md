@@ -19,7 +19,7 @@ at.js 2.이전 버전에서 사용할 수 없는 *x*:
 
 * 페이지 로드 시 모든 오퍼를 캐시하여 여러 서버 호출을 하나의 서버 호출로 줄일 수 있습니다.
 * 오퍼가 기존 서버 호출로 인해 초래되는 지연 없이 캐시를 통해 즉시 표시되므로 사이트에서 최종 사용자의 경험을 크게 향상시킬 수 있습니다.
-* 간단한 1줄의 코드 및 일회용 개발자 설정으로 마케터가 SPA에서 VEC를 통해 [!UICONTROL A/B Test] 및 [!UICONTROL Experience Targeting](XT) 활동을 만들고 실행할 수 있도록 할 수 있습니다.
+* 간단한 1줄의 코드 및 일회용 개발자 설정으로 마케터가 SPA에서 VEC를 통해 [!UICONTROL A/B Test] 및 [!UICONTROL Experience Targeting] (XT) 활동을 만들고 실행할 수 있도록 할 수 있습니다.
 
 ## at.js 2.*x 시스템 다이어그램*
 
@@ -38,7 +38,7 @@ at.js 2.이전 버전에서 사용할 수 없는 *x*:
 | 5 | [!DNL Target]에서는 URL 요청 매개변수 및 프로필 데이터를 기반으로 현재 페이지 및 미래 보기를 위해 방문자에게 반환할 활동 및 경험을 결정합니다. |
 | 6 | 타기팅된 콘텐츠는 다시 페이지로 전송되며, 원할 경우 추가적인 개인화를 위한 프로필 값을 포함할 수 있습니다.<P>현재 페이지의 타깃팅된 콘텐츠는 기본 콘텐츠의 플리커 없이 가능한 한 빨리 나타납니다.<P>`triggerView()`을(를) 통해 보기를 트리거할 때 추가적인 서버 호출 없이 즉시 적용할 수 있도록 브라우저에서 캐시된 SPA의 사용자 동작에 대한 결과로서 표시되는 보기를 위한 타깃팅된 콘텐츠입니다. |
 | 7 | [!UICONTROL Analytics] 데이터가 데이터 수집 서버로 전송됩니다. |
-| 8 | 대상 데이터는 SDID를 통해 [!UICONTROL Analytics] 데이터와 일치하고 [!UICONTROL Analytics] 보고 저장소로 처리됩니다.<P>그런 다음 [!UICONTROL Analytics] 데이터는 [!UICONTROL Analytics for Target](A4T) 보고서를 통해 [!UICONTROL Analytics] 및 [!DNL Target] 모두에서 볼 수 있습니다. |
+| 8 | 대상 데이터는 SDID를 통해 [!UICONTROL Analytics] 데이터와 일치하고 [!UICONTROL Analytics] 보고 저장소로 처리됩니다.<P>그런 다음 [!UICONTROL Analytics] 데이터는 [!UICONTROL Analytics for Target] (A4T) 보고서를 통해 [!UICONTROL Analytics] 및 [!DNL Target] 모두에서 볼 수 있습니다. |
 
 이제 SPA에서 `triggerView()`가 구현될 때 그곳이 어디든, 보기 및 작업은 캐시에서 검색되고 서버 호출 없이 사용자에게 표시됩니다. `triggerView()`는 또한 노출 수를 증가시키고 기록하기 위해 [!DNL Target] 백엔드에 알림을 요청합니다.
 
@@ -317,7 +317,7 @@ at.js v2 버전에 대해 도메인 간 추적을 사용하려면&#x200B;*x* 2.1
 
 at.js 사용자 지정 이벤트는 `triggerView()`에도 적용할 수 있습니다.
 
-### &amp;lbrace;`"page" : "true"`&amp;rbrace;를 사용하여 `triggerView()`을(를) 호출하면 [!DNL Target] 백엔드에 알림이 전송되고 노출이 증가합니다. 이렇게 되면 프로필 스크립트도 실행됩니까?
+### &lbrace;`"page" : "true"`&rbrace;를 사용하여 `triggerView()`을(를) 호출하면 [!DNL Target] 백엔드에 알림이 전송되고 노출이 증가합니다. 이렇게 되면 프로필 스크립트도 실행됩니까?
 
 [!DNL Target] 백엔드에 미리 가져오기 호출이 수행되면 프로필 스크립트가 실행됩니다. 그런 다음 영향을 받은 프로필 데이터가 암호화되어 클라이언트측으로 다시 전달됩니다. `{"page": "true"}`인 `triggerView()`를 호출하면 암호화된 프로필 데이터와 함께 알림이 전송됩니다. 이때 [!DNL Target] 백엔드가 프로필 데이터를 해독하고 데이터베이스에 저장합니다.
 
@@ -361,13 +361,13 @@ at.js 1.*x*&#x200B;에서 vst를 사용할 수 있습니다.* 대상을 만들 m
 
 >[!NOTE]
 >
->[!UICONTROL Auto-Target] 활동은 at.js 2를 통해 지원됩니다.모든 수정 사항이 `Page Load Event`에 적용되면 *x* 및 VEC가 실행됩니다. 수정 사항이 특정 보기에 추가되면 [!UICONTROL A/B Test], [!UICONTROL Auto-Allocate] 및 [!UICONTROL Experience Targeting](XT) 활동만 지원됩니다.
+>[!UICONTROL Auto-Target] 활동은 at.js 2를 통해 지원됩니다.모든 수정 사항이 `Page Load Event`에 적용되면 *x* 및 VEC가 실행됩니다. 수정 사항이 특정 보기에 추가되면 [!UICONTROL A/B Test], [!UICONTROL Auto-Allocate] 및 [!UICONTROL Experience Targeting] (XT) 활동만 지원됩니다.
 
 ### 통합
 
 | 유형 | 지원됨? |
 | --- | --- |
-| [!UICONTROL Analytics for Target](A4T) | 예 |
+| [!UICONTROL Analytics for Target] (A4T) | 예 |
 | 대상자 | 예 |
 | 고객 속성 | 예 |
 | AEM 경험 구성요소 | 예 |

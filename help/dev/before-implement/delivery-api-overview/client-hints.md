@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 클라이언트 힌트 및 [!UICONTROL Adobe Target Delivery API]
 
-오퍼 요청 시 클라이언트 힌트를 [!DNL Adobe Target](으)로 보내야 합니다.
+오퍼 요청 시 클라이언트 힌트를 [!DNL Adobe Target] (으)로 보내야 합니다.
 
 일반적으로 사용 가능한 모든 클라이언트 힌트를 [!DNL Target]에 보내는 것이 좋습니다. 자세한 내용은 [클라이언트측 구현](../../implement/client-side/overview.md) 섹션에서 [사용자 에이전트 및 클라이언트 힌트](/help/dev/implement/client-side/atjs/user-agent-and-client-hints.md)를 참조하십시오.
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ### 서버에서
 
-이 경우 배달 API 요청 시 브라우저에서 [!DNL Target](으)로 클라이언트 힌트를 수동으로 전달해야 합니다.
+이 경우 배달 API 요청 시 브라우저에서 [!DNL Target] (으)로 클라이언트 힌트를 수동으로 전달해야 합니다.
 
 ```
 curl -X POST 'http://mboxedge28.tt.omtrdc.net/rest/v1/delivery?client=myClientCode&sessionId=abcdefghijkl00014' -d '{

@@ -1,6 +1,6 @@
 ---
 keywords: 서버측, 서버측, sdk, sdk, sdk, 온디바이스, 의사 결정, 온디바이스, 온디바이스, 제로 지연, 지연, 거의 제로, node.js, server side3
-description: '[!UICONTROL [!UICONTROL on-device decisioning]을(를) 사용하여  [!DNL Target] A/B 및 MVT 활동을 서버에 캐시하여 거의 0에 가까운 대기 시간에 메모리 내 결정을 수행하는 방법에 대해 알아봅니다.'
+description: '[!UICONTROL on-device decisioning]을(를) 사용하여  [!DNL Target] A/B 및 MVT 활동을 서버에 캐시하여 거의 0에 가까운 대기 시간에 메모리 내 결정을 수행하는 방법에 대해 알아봅니다.'
 title: 온디바이스 의사 결정이란 무엇입니까?
 feature: Implement Server-side
 exl-id: 22ed3072-56f0-4075-9d1a-d642afe3b649
@@ -45,7 +45,7 @@ ht-degree: 9%
 디바이스에서 의사 결정은 [양식 기반 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html)에서 만든 다음 활동 유형을 지원합니다.
 
 * [!UICONTROL A/B Test]
-* [!UICONTROL Experience Targeting](XT)
+* [!UICONTROL Experience Targeting] (XT)
 
 ### 할당 방법
 

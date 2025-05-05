@@ -15,7 +15,7 @@ ht-degree: 8%
 
 [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API]을(를) 사용하면 배치 파일을 사용하여 웹 사이트에 대한 여러 방문자의 사용자 프로필을 일괄적으로 업데이트할 수 있습니다.
 
-[!UICONTROL Bulk Profile Update API]을(를) 사용하면 많은 사용자에 대한 프로필 매개 변수 형식의 자세한 방문자 프로필 데이터를 외부 소스에서 [!DNL Target](으)로 편리하게 보낼 수 있습니다. 외부 소스에는 일반적으로 웹 페이지에서 사용할 수 없는 CRM(고객 관계 관리) 또는 POS(판매 지점) 시스템이 포함될 수 있습니다.
+[!UICONTROL Bulk Profile Update API]을(를) 사용하면 많은 사용자에 대한 프로필 매개 변수 형식의 자세한 방문자 프로필 데이터를 외부 소스에서 [!DNL Target] (으)로 편리하게 보낼 수 있습니다. 외부 소스에는 일반적으로 웹 페이지에서 사용할 수 없는 CRM(고객 관계 관리) 또는 POS(판매 지점) 시스템이 포함될 수 있습니다.
 
 | 버전 | URL 예 | 기능 |
 | --- | --- | --- |
@@ -43,13 +43,13 @@ ht-degree: 8%
 
 프로필 데이터를 대량으로 업데이트하려면 배치 파일을 만듭니다. 배치 파일은 다음 샘플 파일과 유사한 쉼표로 구분된 값이 있는 텍스트 파일입니다.
 
-``````
+``` ```
 batch=pcId,param1,param2,param3,param4
 123,value1
 124,value1,,,value4
 125,,value2
 126,value1,value2,value3,value4
-``````
+``` ```
 
 >[!NOTE]
 >
@@ -71,9 +71,9 @@ batch=pcId,param1,param2,param3,param4
 
 파일을 처리할 [!DNL Target] Edge Server에 대한 HTTP POST 요청을 만듭니다. 다음은 curl 명령을 사용한 batch.txt 파일에 대한 샘플 HTTP POST 요청입니다.
 
-``````
+``` ```
 curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
-``````
+``` ```
 
 여기서
 

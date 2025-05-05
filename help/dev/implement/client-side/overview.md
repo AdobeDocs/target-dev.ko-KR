@@ -19,7 +19,7 @@ ht-degree: 28%
 
 * [Adobe Experience Platform 웹 SDK](/help/dev/implement/client-side/aep-web-sdk.md)
 
-  [!UICONTROL Adobe Experience Platform Web SDK]을(를) 사용하면 [!UICONTROL Adobe Experience Edge Network]을(를) 통해 [!DNL Adobe Experience Cloud]([!DNL Target] 포함)의 다양한 서비스와 상호 작용할 수 있습니다. [!UICONTROL Adobe Experience Platform Web SDK](으)로 마이그레이션하려면 [내용 [!UICONTROL Adobe Experience Platform Web SDK]](/help/dev/implement/client-side/aep-web-sdk.md)을(를) 참조하십시오.
+  [!UICONTROL Adobe Experience Platform Web SDK]을(를) 사용하면 [!UICONTROL Adobe Experience Edge Network]을(를) 통해 [!DNL Adobe Experience Cloud] ([!DNL Target] 포함)의 다양한 서비스와 상호 작용할 수 있습니다. [!UICONTROL Adobe Experience Platform Web SDK] (으)로 마이그레이션하려면 [내용 [!UICONTROL Adobe Experience Platform Web SDK]](/help/dev/implement/client-side/aep-web-sdk.md)을(를) 참조하십시오.
 
 * [[!DNL Target] at.js JavaScript 라이브러리](/help/dev/implement/client-side/atjs/how-atjs-works/overview.md)
 

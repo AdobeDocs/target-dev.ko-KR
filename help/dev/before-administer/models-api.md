@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # 모델 API 개요
 
-차단 목록에 추가하다 API라고도 하는 모델 API를 사용하면 사용자가 [!UICONTROL Automated Personalization](AP) 및 [!DNL Auto-Target](AT) 활동에 대한 머신 러닝 모델에 사용되는 기능 목록을 보고 관리할 수 있습니다. AP 또는 AT 활동용 모델에서 기능을 사용하지 않으려면 모델 API를 사용하여 해당 기능을 &quot;사용자 차단 목록&quot;에 추가할 수 있습니다.
+차단 목록에 추가하다 API라고도 하는 모델 API를 사용하면 사용자가 [!UICONTROL Automated Personalization] (AP) 및 [!DNL Auto-Target] (AT) 활동에 대한 머신 러닝 모델에 사용되는 기능 목록을 보고 관리할 수 있습니다. AP 또는 AT 활동용 모델에서 기능을 사용하지 않으려면 모델 API를 사용하여 해당 기능을 &quot;사용자 차단 목록&quot;에 추가할 수 있습니다.
 
 **[!UICONTROL blocklist]**&#x200B;은(는) [!DNL Adobe Target]이(가) 해당 기계 학습 모델에서 제외할 기능 집합을 정의합니다. 기능에 대한 자세한 내용은 [사용한 데이터 [!DNL Target] 머신 러닝 알고리즘](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/ap-data.html)을 참조하십시오.
 

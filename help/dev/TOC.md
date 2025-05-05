@@ -13,7 +13,7 @@ ht-degree: 45%
 # Adobe Target 개발자 안내서 {#developer}
 
 + [Adobe Target 개발자 안내서](overview.md)
-+ {#implementation} 시작
++ 시작{#implementation}
    + 구현하기 전에 {#before-implement}
       + [구현하기 전에](before-implement/considerations-before-you-implement-target.md)
       + [Target 구현 준비](before-implement/prepare-to-implement-target.md)
@@ -215,7 +215,7 @@ ht-degree: 45%
    + [Adobe Experience Platform Edge Network 서버 API](/help/dev/before-implement/delivery-api-overview/aep-edge-network-server-api.md)
 + 구현 패턴 {#implementation-patterns}
    + [구현 패턴 개요](/help/dev/patterns/pattern-overview.md)
-   + at.js {#atjs}을(를) 사용하는 Recommendations 구현 패턴
+   + at.js을(를) 사용하는 Recommendations 구현 패턴 {#atjs}
       + [at.js 개요를 사용한 Recommendations 구현 패턴](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
       + [SDK 초기화](/help/dev/patterns/recs-atjs/initialize-sdk.md)
       + [데이터 수집 구성](/help/dev/patterns/recs-atjs/data-collection.md)

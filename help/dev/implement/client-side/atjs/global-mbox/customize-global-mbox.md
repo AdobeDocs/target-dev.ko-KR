@@ -40,4 +40,4 @@ at.js에 대한 [!DNL Adobe Target] 글로벌 mbox를 사용자 지정하는 데
 
 >[!WARNING]
 >
->계정의 모든 활동이 이 mbox와 동기화됩니다. 활동이 계속 작동할 수 있도록 글로벌 mbox가 사이트에 있는지 확인하십시오. 이 mbox와 동기화하는 [!UICONTROL Visual Experience Composer](VEC)을(를) 사용하여 만든 영향을 받는 활동을 편집하고 다시 저장하십시오. [!UICONTROL Form-Based Experience Composer] 또는 API를 통해 만든 활동을 다시 저장할 필요는 없습니다.
+>계정의 모든 활동이 이 mbox와 동기화됩니다. 활동이 계속 작동할 수 있도록 글로벌 mbox가 사이트에 있는지 확인하십시오. 이 mbox와 동기화하는 [!UICONTROL Visual Experience Composer] (VEC)을(를) 사용하여 만든 영향을 받는 활동을 편집하고 다시 저장하십시오. [!UICONTROL Form-Based Experience Composer] 또는 API를 통해 만든 활동을 다시 저장할 필요는 없습니다.

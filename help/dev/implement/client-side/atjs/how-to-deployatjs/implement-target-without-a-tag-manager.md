@@ -245,7 +245,7 @@ at.js는 웹 사이트에 있는 모든 페이지의 `<head>` 요소에 구현�
 
 >[!NOTE]
 >
->사용자가 웹 사이트에서 구매를 수행하는 경우, 보고를 위해 Analytics for [!DNL Target](A4T)을 사용하더라도 Adobe은 주문 확인 mbox를 구현하는 것을 권장합니다.
+>사용자가 웹 사이트에서 구매를 수행하는 경우, 보고를 위해 Analytics for [!DNL Target] (A4T)을 사용하더라도 Adobe은 주문 확인 mbox를 구현하는 것을 권장합니다.
 
 1. 주문 상세 정보 페이지에서 아래의 모델에 따라 mbox 스크립트를 삽입합니다.
 1. WORDS IN CAPITAL LETTERS를 카탈로그의 동적 또는 정적 값과 교체합니다.

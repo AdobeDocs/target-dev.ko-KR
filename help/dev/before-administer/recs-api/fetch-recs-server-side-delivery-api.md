@@ -68,6 +68,7 @@ Adobe Target용 [배달 API](/help/dev/implement/delivery-api/overview.md)은(�
    * **browser** 및 **address** 개체는 HTML 이외의 사용 사례에 필요하지 않으므로 **Body**&#x200B;에서 제거되었습니다.
    * *api_charter*&#x200B;이(가) 이 예제에서 위치 이름으로 나열됩니다.
    * 이 권장 사항은 현재 항목 키를 Target에 전달해야 하는 콘텐츠 유사성을 기반으로 하므로 entity.id가 지정됩니다.
+
      ![server-side-Delivery-API-call.png](assets/server-side-delivery-api-call2.png)
 쿼리 매개 변수를 올바르게 구성해야 합니다. 예를 들어 필요에 따라 `{{CLIENT_CODE}}`을(를) 지정해야 합니다. &lt;!— Q: 업데이트된 호출 구문에서 entity.id는 이전 버전에서와 같이 mboxParameter 대신 profileParameter로 나열됩니다. —> &lt;!— Q: 이전 이미지 ![server-side-create-recs-post.png](assets/server-side-create-recs-post.png) 이전 첨부 텍스트: &quot;이 권장 사항은 mboxParameters를 통해 전송된 entity.id를 기반으로 하는 콘텐츠 유사 제품을 기반으로 합니다.&quot; —>
      ![client-code3](assets/client-code3.png)

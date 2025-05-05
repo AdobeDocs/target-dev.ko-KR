@@ -39,7 +39,7 @@ ht-degree: 3%
 
 1. **[!UICONTROL Firefox]** 메뉴 > **[!UICONTROL Preferences]**&#x200B;을(를) 클릭합니다.
 1. **[!UICONTROL Privacy and Security]** 탭을 클릭합니다.
-1. **쿠키 및 사이트 데이터*&#x200B;에서 **[!UICONTROL Manage Data]**&#x200B;을(를) 클릭합니다.
+1. **쿠키 및 사이트 데이터*&#x200B;에서 &#x200B;** [!UICONTROL Manage Data]**&#x200B;을(를) 클릭합니다.
 1. `adobe.com` 사이트를 선택한 다음 **[!UICONTROL Remove Selected]**&#x200B;을(를) 클릭합니다.
 
 >[!WARNING]

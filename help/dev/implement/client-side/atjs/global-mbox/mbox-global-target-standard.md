@@ -21,7 +21,7 @@ ht-degree: 20%
 
 [!DNL Target]와 레거시 구현 둘 다에 기존 글로벌 mbox를 사용하려면, 몇 개의 매개 변수를 설정해야 합니다.
 
-1. [!DNL Target](으)로 이동한 다음 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**&#x200B;을(를) 클릭합니다.
+1. [!DNL Target] (으)로 이동한 다음 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**&#x200B;을(를) 클릭합니다.
 
    기본적으로 **[!UICONTROL Page load enabled (Auto-create global mbox]**&#x200B;이(가) 활성화되어 있고 사용자 지정 글로벌 mbox의 이름은 `target-global-mbox`입니다.
 

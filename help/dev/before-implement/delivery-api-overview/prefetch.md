@@ -21,7 +21,7 @@ ht-degree: 0%
 | --- | --- |
 | `prefetch` | 가져와야 하지만 방문한 것으로 표시해서는 안 되는 mbox 및 보기 목록. [!DNL Target] Edge은 미리 가져오기 배열에 있는 각 mbox 또는 보기에 대해 `eventToken`을(를) 반환합니다. |
 | `notifications` | 이전에 미리 가져온 mbox 및 보기 목록은 방문한 것으로 표시해야 합니다. |
-| `eventToken` | 콘텐츠를 미리 가져올 때 반환되는 해시된 암호화 토큰. 이 토큰을 `notifications` 배열의 [!DNL Target](으)로 다시 보내야 합니다. |
+| `eventToken` | 콘텐츠를 미리 가져올 때 반환되는 해시된 암호화 토큰. 이 토큰을 `notifications` 배열의 [!DNL Target] (으)로 다시 보내야 합니다. |
 
 ## Mbox 미리 가져오기
 

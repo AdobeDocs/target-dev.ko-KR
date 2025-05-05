@@ -45,7 +45,7 @@ TargetClient.create(options)
 | environment_id | int | 아니요 | production | [!DNL Target] 환경 ID |
 | 환경 | str | 아니요 | production | [!DNL Target] 환경 이름 |
 | cdn_environment | str | 아니요 | production | CDN 환경 이름 |
-| telemetry_enabled | 부울 | 아니요 | True | False로 설정하면 원격 분석 데이터가 [!DNL Adobe](으)로 전송되지 않습니다 |
+| telemetry_enabled | 부울 | 아니요 | True | False로 설정하면 원격 분석 데이터가 [!DNL Adobe] (으)로 전송되지 않습니다 |
 | version | str | 아니요 | 없음 | 이 SDK의 버전 번호 |
 
 ## 예

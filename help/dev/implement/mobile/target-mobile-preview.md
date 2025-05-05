@@ -46,7 +46,7 @@ ht-degree: 23%
 
    >[!NOTE]
    >
-   >양식 기반 [!UICONTROL A/B Test] 및 [!UICONTROL Experience Targeting](XT) 활동만 선택할 수 있습니다.
+   >양식 기반 [!UICONTROL A/B Test] 및 [!UICONTROL Experience Targeting] (XT) 활동만 선택할 수 있습니다.
 
    ![대체 이미지](assets/mobile-preview-select-activities.png)
 

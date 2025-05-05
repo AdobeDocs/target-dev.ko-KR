@@ -38,7 +38,7 @@ ht-degree: 4%
 * 대상 타기팅
 * 할당 방법
 
-자세한 내용은 [!UICONTROL on-device decisioning]](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md)의 [지원되는 기능을 참조하십시오.
+자세한 내용은 [!UICONTROL on-device decisioning][&#128279;](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md)의 지원되는 기능을 참조하십시오.
 
 ## [!UICONTROL on-device decisioning]은(는) 어떻게 작동합니까?
 
@@ -85,7 +85,7 @@ Server-side만 at.js 2.5.0+가 구현되고 웹 속성에 배포되는 경우 �
 | 11 | 방문자에 대해 경험이 렌더링됩니다. |
 | 12 | 전체 웹 페이지가 로드됩니다. |
 | 13 | Analytics 데이터가 데이터 수집 서버로 전송됩니다. |
-| 14 | 타깃팅된 데이터는 SDID를 통해 Analytics 데이터에 대응되며 Analytics 보고 저장소로 처리됩니다. 그런 다음 Analytics 데이터는 [!UICONTROL Analytics for Target](A4T) 보고서를 통해 Analytics 및 [!DNL Target] 모두에서 볼 수 있습니다. |
+| 14 | 타깃팅된 데이터는 SDID를 통해 Analytics 데이터에 대응되며 Analytics 보고 저장소로 처리됩니다. 그런 다음 Analytics 데이터는 [!UICONTROL Analytics for Target] (A4T) 보고서를 통해 Analytics 및 [!DNL Target] 모두에서 볼 수 있습니다. |
 
 ### 온디바이스 전용
 
@@ -93,7 +93,7 @@ Server-side만 at.js 2.5.0+가 구현되고 웹 속성에 배포되는 경우 �
 
 [!UICONTROL On-device decisioning]은(는) [!UICONTROL on-device decisioning]에 적합한 모든 활동을 포함하는 캐시된 규칙 아티팩트에서 결정을 내리기 때문에 매우 빠른 속도로 경험 및 개인화 활동을 제공할 수 있습니다.
 
-[!UICONTROL on-device decisioning]에 적합한 활동에 대한 자세한 내용은 [!UICONTROL on-device decisioning]](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md)에서 [지원되는 기능을 참조하십시오.
+[!UICONTROL on-device decisioning]에 적합한 활동에 대한 자세한 내용은 [!UICONTROL on-device decisioning][&#128279;](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md)에서 지원되는 기능을 참조하십시오.
 
 이 의사 결정 방법은 Target의 의사 결정이 필요한 모든 페이지에서 성능이 매우 중요한 경우에만 사용해야 합니다. 또한 이 결정 방법을 선택하면 [!UICONTROL on-device decisioning]에 적합하지 않은 [!DNL Target] 활동이 전달되거나 실행되지 않습니다. at.js 라이브러리 2.5.0+는 의사 결정을 위해 캐시된 규칙 아티팩트만 찾도록 구성됩니다.
 
@@ -122,7 +122,7 @@ Server-side만 at.js 2.5.0+가 구현되고 웹 속성에 배포되는 경우 �
 | 9 | at.js 라이브러리는 캐시된 JSON 규칙 아티팩트에서 경험을 렌더링하도록 DOM을 조작합니다. |
 | 10 | 방문자에 대해 경험이 렌더링됩니다. |
 | 11 | 전체 웹 페이지가 로드됩니다. |
-| 12 | Analytics 데이터가 데이터 수집 서버로 전송됩니다. 타깃팅된 데이터는 SDID를 통해 Analytics 데이터에 대응되며 Analytics 보고 저장소로 처리됩니다. 그런 다음 Analytics 데이터는 [!UICONTROL Analytics for Target](A4T) 보고서를 통해 Analytics 및 [!DNL Target] 모두에서 볼 수 있습니다. |
+| 12 | Analytics 데이터가 데이터 수집 서버로 전송됩니다. 타깃팅된 데이터는 SDID를 통해 Analytics 데이터에 대응되며 Analytics 보고 저장소로 처리됩니다. 그런 다음 Analytics 데이터는 [!UICONTROL Analytics for Target] (A4T) 보고서를 통해 Analytics 및 [!DNL Target] 모두에서 볼 수 있습니다. |
 
 다음 다이어그램은 방문자의 후속 페이지 히트 또는 재방문에 대한 방문자, 브라우저, at.js 2.5.0+ 및 캐시된 JSON 규칙 아티팩트 간의 상호 작용을 보여 줍니다. JSON 규칙 아티팩트는 이미 캐시되어 있으며 브라우저에서 사용할 수 있으므로, 차단 네트워크 호출 없이 즉시 결정됩니다. 이 흐름 다이어그램은 후속 페이지 탐색 또는 재방문자를 캡처합니다.
 
@@ -147,7 +147,7 @@ Server-side만 at.js 2.5.0+가 구현되고 웹 속성에 배포되는 경우 �
 | 7 | at.js 라이브러리는 캐시된 JSON 규칙 아티팩트에서 경험을 렌더링하도록 DOM을 조작합니다. |
 | 8 | 방문자에 대해 경험이 렌더링됩니다. |
 | 9 | 전체 웹 페이지가 로드됩니다. |
-| 10 | Analytics 데이터가 데이터 수집 서버로 전송됩니다. 타깃팅된 데이터는 SDID를 통해 Analytics 데이터에 대응되며 Analytics 보고 저장소로 처리됩니다. 그런 다음 Analytics 데이터는 [!UICONTROL Analytics for Target](A4T) 보고서를 통해 Analytics 및 [!DNL Target] 모두에서 볼 수 있습니다. |
+| 10 | Analytics 데이터가 데이터 수집 서버로 전송됩니다. 타깃팅된 데이터는 SDID를 통해 Analytics 데이터에 대응되며 Analytics 보고 저장소로 처리됩니다. 그런 다음 Analytics 데이터는 [!UICONTROL Analytics for Target] (A4T) 보고서를 통해 Analytics 및 [!DNL Target] 모두에서 볼 수 있습니다. |
 
 ### 하이브리드
 
@@ -187,7 +187,7 @@ JSON 규칙 아티팩트에는 mbox에 실행 중인 서버측 활동 또는 [!U
 | 12 | at.js 라이브러리는 [!DNL Target] Edge Network의 경험을 렌더링하도록 DOM을 조작합니다. |
 | 13 | 방문자에 대해 경험이 렌더링됩니다. |
 | 14 | 전체 웹 페이지가 로드됩니다. |
-| 15 | Analytics 데이터가 데이터 수집 서버로 전송됩니다. 타깃팅된 데이터는 SDID를 통해 Analytics 데이터에 대응되며 Analytics 보고 저장소로 처리됩니다. 그런 다음 Analytics 데이터는 [!UICONTROL Analytics for Target](A4T) 보고서를 통해 Analytics 및 [!DNL Target] 모두에서 볼 수 있습니다. |
+| 15 | Analytics 데이터가 데이터 수집 서버로 전송됩니다. 타깃팅된 데이터는 SDID를 통해 Analytics 데이터에 대응되며 Analytics 보고 저장소로 처리됩니다. 그런 다음 Analytics 데이터는 [!UICONTROL Analytics for Target] (A4T) 보고서를 통해 Analytics 및 [!DNL Target] 모두에서 볼 수 있습니다. |
 
 다음 다이어그램은 후속 페이지 탐색 또는 재방문을 위해 방문자, 브라우저, at.js 2.5.0+ 및 캐시된 JSON 규칙 아티팩트 간의 상호 작용을 보여 줍니다. 이 다이어그램에서는 후속 페이지 탐색 또는 재방문에 대해 디바이스에서 의사 결정이 이루어지는 사용 사례에만 중점을 둡니다. 특정 페이지에 대해 라이브 상태인 활동에 따라 서버측 결정을 실행하기 위해 서버측 호출을 수행할 수 있습니다.
 
@@ -213,7 +213,7 @@ JSON 규칙 아티팩트에는 mbox에 실행 중인 서버측 활동 또는 [!U
 | 8 | at.js 라이브러리는 캐시된 JSON 규칙 아티팩트에서 경험을 렌더링하도록 DOM을 조작합니다. |
 | 9 | 방문자에 대해 경험이 렌더링됩니다. |
 | 10 | 전체 웹 페이지가 로드됩니다. |
-| 11 | Analytics 데이터가 데이터 수집 서버로 전송됩니다. 타깃팅된 데이터는 SDID를 통해 Analytics 데이터에 대응되며 Analytics 보고 저장소로 처리됩니다. 그런 다음 Analytics 데이터는 [!UICONTROL Analytics for Target](A4T) 보고서를 통해 Analytics 및 [!DNL Target] 모두에서 볼 수 있습니다. |
+| 11 | Analytics 데이터가 데이터 수집 서버로 전송됩니다. 타깃팅된 데이터는 SDID를 통해 Analytics 데이터에 대응되며 Analytics 보고 저장소로 처리됩니다. 그런 다음 Analytics 데이터는 [!UICONTROL Analytics for Target] (A4T) 보고서를 통해 Analytics 및 [!DNL Target] 모두에서 볼 수 있습니다. |
 
 ## [!UICONTROL on-device decisioning]을(를) 사용하려면 어떻게 해야 합니까?
 
@@ -334,6 +334,6 @@ Target은 메타데이터, 규칙 및 조건으로 구성된 아티팩트로 [!U
 
    첫 번째 JSON 규칙 아티팩트 생성은 최대 10분 정도 소요될 수 있습니다.
 
-1. [!UICONTROL on-device decisioning]](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md)이(가) 지원하는 [활동 유형을 만들고 활성화한 후 [!UICONTROL on-device decisioning]이(가) 적격인지 확인하십시오.
+1. [!UICONTROL on-device decisioning][&#128279;](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md)이(가) 지원하는 활동 유형을 만들고 활성화한 후 [!UICONTROL on-device decisioning]이(가) 적격인지 확인하십시오.
 1. at.js 설정 UI를 통해 **[!UICONTROL Decisioning Method]**&#x200B;을(를) **[!UICONTROL "Hybrid"]** 또는 **[!UICONTROL "On-device only"]**(으)로 설정합니다.
 1. At.js 2.5.0+를 다운로드하여 페이지에 배포합니다.

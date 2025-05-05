@@ -13,8 +13,8 @@ ht-degree: 0%
 
 # [!DNL Adobe Experience Cloud]과(와) 통합
 
-[!DNL Analytics]([!UICONTROL Analytics for Target] 또는 &quot;A4T&quot;)과 [!DNL Adobe Target] 서버측 통합에 대한 자세한 내용은 [Analytics for Target(A4T) 보고](/help/dev/implement/server-side/sdk-guides/integration-with-experience-cloud/a4t-reporting.md)를 참조하십시오.
+[!DNL Analytics] ([!UICONTROL Analytics for Target] 또는 &quot;A4T&quot;)과 [!DNL Adobe Target] 서버측 통합에 대한 자세한 내용은 [Analytics for Target(A4T) 보고](/help/dev/implement/server-side/sdk-guides/integration-with-experience-cloud/a4t-reporting.md)를 참조하십시오.
 
-[!DNL Adobe Audience Manager](AAM)과 Adobe Target 서버측 통합에 대한 자세한 내용은 [AAM 세그먼트](/help/dev/implement/server-side/sdk-guides/integration-with-experience-cloud/aam-segments.md)를 참조하십시오.
+[!DNL Adobe Audience Manager] (AAM)과 Adobe Target 서버측 통합에 대한 자세한 내용은 [AAM 세그먼트](/help/dev/implement/server-side/sdk-guides/integration-with-experience-cloud/aam-segments.md)를 참조하십시오.
 
 [!DNL Experience Cloud ID (ECID) Service]과의 서버측 통합에 대한 자세한 내용은 [ECID(Experience Cloud ID) 서비스](/help/dev/implement/server-side/sdk-guides/integration-with-experience-cloud/ecid.md)를 참조하십시오.

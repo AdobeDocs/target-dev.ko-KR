@@ -24,8 +24,8 @@ ht-degree: 2%
 
 [SDK 초기화 단계](/help/dev/patterns/recs-atjs/initialize-sdk.md) 동안 이미 데이터를 매핑한 경우 다음 경우에 이 다이어그램의 단계를 실행해야 합니다.
 
-* 데이터 레이어는 동일한 페이지에서 어떤 방식으로든 확장되므로 해당 추가 데이터를 [!DNL Target](으)로 전송하려고 합니다.
-* 제품 카탈로그 데이터를 [!DNL Target Recommendations](으)로 보내려고 합니다.
+* 데이터 레이어는 동일한 페이지에서 어떤 방식으로든 확장되므로 해당 추가 데이터를 [!DNL Target] (으)로 전송하려고 합니다.
+* 제품 카탈로그 데이터를 [!DNL Target Recommendations] (으)로 보내려고 합니다.
 
 ## 데이터 다이어그램 수집 {#diagram}
 
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 ## 2.1: 데이터 매핑 구성 {#configure}
 
-이 단계는 [!DNL Adobe Target](으)로 전송해야 하는 모든 데이터가 설정되도록 하는 데 도움이 됩니다.
+이 단계는 [!DNL Adobe Target] (으)로 전송해야 하는 모든 데이터가 설정되도록 하는 데 도움이 됩니다.
 
 +++세부 정보 보기
 
@@ -57,7 +57,7 @@ ht-degree: 2%
 
 **작업**
 
-`targetPageParams()` 함수를 사용하여 [!DNL Target](으)로 전송해야 하는 모든 필수 데이터를 설정하십시오.
+`targetPageParams()` 함수를 사용하여 [!DNL Target] (으)로 전송해야 하는 모든 필수 데이터를 설정하십시오.
 
 +++
 
@@ -85,7 +85,7 @@ ht-degree: 2%
 
 ## 2.3 Adobe Target Track API 실행 {#fire-api}
 
-이 단계는 [!DNL Target](으)로 전송해야 하는 모든 데이터를 전송하는 데 도움이 됩니다.
+이 단계는 [!DNL Target] (으)로 전송해야 하는 모든 데이터를 전송하는 데 도움이 됩니다.
 
 +++세부 정보 보기
 
@@ -101,7 +101,7 @@ ht-degree: 2%
 
 **작업**
 
-[adobe.target.trackEvent() 메서드](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-trackevent.md)을(를) 사용하여 [!DNL Target](으)로 보내야 하는 모든 데이터를 보냅니다.
+[adobe.target.trackEvent() 메서드](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-trackevent.md)을(를) 사용하여 [!DNL Target] (으)로 보내야 하는 모든 데이터를 보냅니다.
 
 +++
 

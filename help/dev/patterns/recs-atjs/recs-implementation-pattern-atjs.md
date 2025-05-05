@@ -24,8 +24,8 @@ ht-degree: 0%
 
 1. [!DNL Adobe Target] 및 [!DNL Experience Cloud ID Service]용 클라이언트측 SDK
 1. [!DNL Target Delivery API] 통화
-1. [!UICONTROL Experience Cloud ID](ECID) 획득 호출
-1. 벌크 프로필 업데이트 API 및 [!DNL Customer Attributes](CA) 서비스
+1. [!UICONTROL Experience Cloud ID] (ECID) 획득 호출
+1. 벌크 프로필 업데이트 API 및 [!DNL Customer Attributes] (CA) 서비스
 1. 고객의 데이터 소스에서 [!DNL Target] 프로필 스토어로 프로필 데이터 수집
 1. 프로필 및 행동 데이터 수집 및 방문자에게 표시할 경험 결정
 1. 페이지에서 렌더링되는 경험

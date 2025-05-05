@@ -1,6 +1,6 @@
 ---
 title: 프로필 업데이트
-description: Adobe Target 프로필 API를 사용하여 방문자 데이터를  [!DNL Target](으)로 보내는 방법을 알아봅니다.
+description: Adobe Target 프로필 API를 사용하여 방문자 데이터를  [!DNL Target] (으)로 보내는 방법을 알아봅니다.
 contributors: https://github.com/icaraps
 exl-id: 482a4175-1d02-47e9-a5c0-dd00e8560773
 feature: APIs/SDKs

@@ -21,11 +21,11 @@ ht-degree: 39%
 
 활동에 URL 규칙을 추가하여 활동이 실행되는 위치를 제한할 수 있습니다. 자세한 내용은 [유사한 페이지에 동일한 경험 포함](https://experienceleague.adobe.com/docs/target/using/experiences/vec/temtest.html)을 참조하십시오.
 
-[targetPageParams](/help/dev/implement/client-side/atjs/atjs-functions/targetpageparams.md)을 사용하여 페이지에서 매개 변수를 전달한 다음, [!UICONTROL Visual Experience Composer](VEC)의 &quot;URL 구성&quot; 섹션에서 또는 [!UICONTROL Form-Based Experience Composer]에서 매개 변수를 &quot;개선&quot;으로 추가하여 해당 매개 변수를 선택할 수도 있습니다.
+[targetPageParams](/help/dev/implement/client-side/atjs/atjs-functions/targetpageparams.md)을 사용하여 페이지에서 매개 변수를 전달한 다음, [!UICONTROL Visual Experience Composer] (VEC)의 &quot;URL 구성&quot; 섹션에서 또는 [!UICONTROL Form-Based Experience Composer]에서 매개 변수를 &quot;개선&quot;으로 추가하여 해당 매개 변수를 선택할 수도 있습니다.
 
 ## [!DNL Target] 글로벌 mbox에 대한 수입 데이터를 전달하려면 어떻게 해야 합니까?
 
-target-global-mbox에 대한 매출 및 주문 정보를 수집하려면 &quot;mbox 매개 변수&quot;를 [!DNL Target](으)로 보내야 합니다. 이러한 매개 변수는 [!DNL Target]에 추가 정보를 보내는 데 사용되는 이름/값 쌍입니다. [!DNL Target]은(는) 이러한 매개 변수(예약된 이름)를 자동으로 검색하여 매출 데이터를 채웁니다.
+target-global-mbox에 대한 매출 및 주문 정보를 수집하려면 &quot;mbox 매개 변수&quot;를 [!DNL Target] (으)로 보내야 합니다. 이러한 매개 변수는 [!DNL Target]에 추가 정보를 보내는 데 사용되는 이름/값 쌍입니다. [!DNL Target]은(는) 이러한 매개 변수(예약된 이름)를 자동으로 검색하여 매출 데이터를 채웁니다.
 
 `orderConfirmPage`의 경우 `orderTotal`, `orderId` 및 `productPurchasedId`을(를) 전달해야 합니다.
 

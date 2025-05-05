@@ -16,7 +16,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->UI를 통해 [!DNL Target]을(를) 관리하려면 *Adobe Target 비즈니스 실무자 안내서*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en)의 [관리 섹션을 참조하십시오.
+>UI를 통해 [!DNL Target]을(를) 관리하려면 *Adobe Target 비즈니스 실무자 안내서*[&#128279;](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en)의 관리 섹션을 참조하십시오.
 >
 >관리 API 및 프로필 API는 종종 총괄적으로(&quot;관리 및 프로필 API&quot;) 참조되지만, 별도로(&quot;관리 API&quot; 및 &quot;프로필 API&quot;) 참조할 수도 있습니다. Recommendations API는 [!DNL Target] 관리 API의 특정 구현입니다.
 

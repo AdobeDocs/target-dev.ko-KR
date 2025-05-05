@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Dynamic Tag Manager](DTM)을 사용하여 [!DNL Target] 구현
+# [!DNL Dynamic Tag Manager] (DTM)을 사용하여 [!DNL Target] 구현
 
 [!DNL Adobe Dynamic Tag Manager]은(는) 레거시 제품이며 더 이상 지원되지 않습니다. 최상의 구현 경험을 위해 [!DNL Adobe]에서는 [!DNL Adobe Experience Platform]의 태그를 사용하는 것이 좋습니다.
 

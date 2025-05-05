@@ -60,7 +60,7 @@ https://vadymus.github.io/ateng/at-order-confirmation/index.html?a=1&b=2&adobe_m
 알 수 있듯이 URL에 `adobe_mc` 매개 변수가 추가되었습니다. 이 매개변수에는 다음에 대한 인코딩된 값이 포함되어 있습니다.
 
 * TS=1660667205: 현재 타임스탬프입니다. 이 타임스탬프는 웹 보기가 만료된 값을 받지 않도록 합니다.
-* MCMID=69624092487065093697422606480535692677: [!UICONTROL Experience Cloud ID](ECID). [!DNL Adobe] 솔루션 간 방문자 식별에 필요한 MID 또는 [!UICONTROL Marketing Cloud ID]이라고도 합니다.
+* MCMID=69624092487065093697422606480535692677: [!UICONTROL Experience Cloud ID] (ECID). [!DNL Adobe] 솔루션 간 방문자 식별에 필요한 MID 또는 [!UICONTROL Marketing Cloud ID]이라고도 합니다.
 * MCORGID=EB9CAE8B56E003697F000101@AdobeOrg: [!UICONTROL Adobe Organization ID].
 
 `Identity.getUrlVariables`은(는) [!DNL Experience Cloud Identity Service] URL 변수를 포함하는 적절한 형식의 문자열을 반환하는 대체 [!DNL Adobe Experience Platform Mobile SDK] 메서드입니다. 자세한 내용은 *ID API 참조*&#x200B;에서 [getUrlVariables](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#geturlvariables){target=_blank}을(를) 참조하십시오.

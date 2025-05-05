@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 프리페치된 Mbox에 대한 알림
 
-한 번의 게재 호출을 통해 하나 이상의 알림을 전송할 수 있습니다. 알림의 `type`이(가) 올바르게 반영될 수 있도록 추적해야 하는 지표가 각 mbox에 대해 `click` 또는 `display`인지 확인하십시오. 또한 각 알림에 대해 `id`을(를) 전달하여 [!UICONTROL  Adobe Target Delivery API]을(를) 통해 알림이 올바르게 전송되었는지 확인할 수 있습니다. 보고용으로 제공된 mbox에 대해 `click` 또는 `display`이(가) 발생한 시기를 나타내기 위해 `timestamp`을(를) [!DNL Target](으)로 전달해야 합니다.
+한 번의 게재 호출을 통해 하나 이상의 알림을 전송할 수 있습니다. 알림의 `type`이(가) 올바르게 반영될 수 있도록 추적해야 하는 지표가 각 mbox에 대해 `click` 또는 `display`인지 확인하십시오. 또한 각 알림에 대해 `id`을(를) 전달하여 [!UICONTROL &#x200B; Adobe Target Delivery API]을(를) 통해 알림이 올바르게 전송되었는지 확인할 수 있습니다. 보고용으로 제공된 mbox에 대해 `click` 또는 `display`이(가) 발생한 시기를 나타내기 위해 `timestamp`을(를) [!DNL Target] (으)로 전달해야 합니다.
 
 ```
 curl -X POST \
@@ -106,11 +106,11 @@ curl -X POST \
 }
 ```
 
-[!DNL Target](으)로 전송된 `notifications`이(가) 모두 올바르게 처리되면 응답의 `notifications` 배열에 나타납니다. 그러나 `notifications` `id`이(가) 누락된 경우 해당 특정 `notification`은(는) 처리되지 않았습니다. 이 시나리오에서는 성공한 `notification` 응답을 검색할 때까지 다시 시도 논리를 적용할 수 있습니다. API 호출이 차단되어 성능 지연이 발생하지 않도록 재시도 논리에 시간 제한이 지정되어 있는지 확인하십시오.
+[!DNL Target] (으)로 전송된 `notifications`이(가) 모두 올바르게 처리되면 응답의 `notifications` 배열에 나타납니다. 그러나 `notifications` `id`이(가) 누락된 경우 해당 특정 `notification`은(는) 처리되지 않았습니다. 이 시나리오에서는 성공한 `notification` 응답을 검색할 때까지 다시 시도 논리를 적용할 수 있습니다. API 호출이 차단되어 성능 지연이 발생하지 않도록 재시도 논리에 시간 제한이 지정되어 있는지 확인하십시오.
 
 ## 프리페치된 보기에 대한 알림
 
-한 번의 게재 호출을 통해 하나 이상의 알림을 전송할 수 있습니다. 알림 유형을 올바르게 반영할 수 있도록 추적해야 하는 지표가 각 mbox에 대해 `click` 또는 `display`인지 여부를 결정합니다. 또한 각 알림에 대해 `id`을(를) 전달하여 알림이 [!UICONTROL Adobe Target Delivery API]을(를) 통해 올바르게 전송되었는지 확인할 수 있습니다. 보고 목적으로 제공된 보기에 대해 `click` 또는 `display`이(가) 발생한 시점을 나타내기 위해 타임스탬프를 [!DNL Target](으)로 전달해야 합니다.
+한 번의 게재 호출을 통해 하나 이상의 알림을 전송할 수 있습니다. 알림 유형을 올바르게 반영할 수 있도록 추적해야 하는 지표가 각 mbox에 대해 `click` 또는 `display`인지 여부를 결정합니다. 또한 각 알림에 대해 `id`을(를) 전달하여 알림이 [!UICONTROL Adobe Target Delivery API]을(를) 통해 올바르게 전송되었는지 확인할 수 있습니다. 보고 목적으로 제공된 보기에 대해 `click` 또는 `display`이(가) 발생한 시점을 나타내기 위해 타임스탬프를 [!DNL Target] (으)로 전달해야 합니다.
 
 ```
 curl -X POST \
@@ -186,4 +186,4 @@ curl -X POST \
 }
 ```
 
-[!DNL Target](으)로 전송된 `notifications`이(가) 모두 올바르게 처리되면 응답의 `notifications` 배열에 나타납니다. 그러나 `notifications` `id`이(가) 누락된 경우 해당 특정 알림은 처리되지 않았습니다. 이 시나리오에서는 성공적인 알림 응답이 검색될 때까지 재시도 논리를 적용할 수 있습니다. API 호출이 차단되어 성능 지연이 발생하지 않도록 재시도 논리에 시간 제한이 지정되어 있는지 확인하십시오.
+[!DNL Target] (으)로 전송된 `notifications`이(가) 모두 올바르게 처리되면 응답의 `notifications` 배열에 나타납니다. 그러나 `notifications` `id`이(가) 누락된 경우 해당 특정 알림은 처리되지 않았습니다. 이 시나리오에서는 성공적인 알림 응답이 검색될 때까지 재시도 논리를 적용할 수 있습니다. API 호출이 차단되어 성능 지연이 발생하지 않도록 재시도 논리에 시간 제한이 지정되어 있는지 확인하십시오.

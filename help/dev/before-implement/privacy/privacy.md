@@ -41,7 +41,7 @@ Adobe은 사용자가 [!DNL Target] Adobe에 대해 활성화할 수 있는 &quo
 
 ### [!DNL Adobe Experience Platform Web SDK]을(를) 사용할 때 데이터 스트림 수준 IP 난독화 {#aep}
 
-[!DNL Platform Web SDK](버전 23.4 이상)을 사용하는 경우 데이터스트림 수준의 IP 난독화 설정이 [!DNL Target]에 설정된 IP 난독화 옵션보다 우선합니다. 예를 들어 데이터스트림 수준 IP 난독화 옵션이 [!UICONTROL Full](으)로 설정되어 있고 [!DNL Target] IP 난독화 옵션이 [!UICONTROL Last octet obfuscation](으)로 설정되어 있으면 [!DNL Target]은(는) 완전히 난독화된 IP를 받습니다.
+[!DNL Platform Web SDK] (버전 23.4 이상)을 사용하는 경우 데이터스트림 수준의 IP 난독화 설정이 [!DNL Target]에 설정된 IP 난독화 옵션보다 우선합니다. 예를 들어 데이터스트림 수준 IP 난독화 옵션이 [!UICONTROL Full] (으)로 설정되어 있고 [!DNL Target] IP 난독화 옵션이 [!UICONTROL Last octet obfuscation] (으)로 설정되어 있으면 [!DNL Target]은(는) 완전히 난독화된 IP를 받습니다.
 
 자세한 내용은 *[!DNL Adobe Experience Platfrom]데이터 스트림 가이드*&#x200B;에서 [데이터 스트림 구성](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ko){target=_blank}의 [!UICONTROL IP Obfuscation]을(를) 참조하십시오.
 

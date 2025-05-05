@@ -61,14 +61,14 @@ ht-degree: 80%
 | response > execute > mboxes > mbox > metrics | `clickThrough` 지표 목록을 포함합니다. |
 | response > execute > mboxes > mbox > mbox | mbox의 이름. |
 | response > execute > mboxes > mbox >index | 응답이 요청에서 나온 이 색인이 있는 mbox용임을 나타냅니다. |
-| response > execute > mboxes > mbox > analytics > payload | mbox가 적용된 후 [!DNL Analytics](으)로 전송해야 하는 클라이언트측 통합을 위한 [!DNL Analytics] 페이로드입니다. (A4T 사용 &quot;캠페인&quot; 섹션을 참조하십시오.) |
+| response > execute > mboxes > mbox > analytics > payload | mbox가 적용된 후 [!DNL Analytics] (으)로 전송해야 하는 클라이언트측 통합을 위한 [!DNL Analytics] 페이로드입니다. (A4T 사용 &quot;캠페인&quot; 섹션을 참조하십시오.) |
 | response > execute > mboxes | 실행된 mbox 목록. |
 | response > execute > pageLoad > options > content | &quot;선택 사항&quot;의 컨텐츠가 잘 정의되어 있지 않으며 선택 사항 유형/템플릿 구조에 직접적으로 의존합니다. |
 | response > execute > pageLoad > options > type | 선택 사항 유형. &quot;컨텐츠&quot; 필드의 유형을 반영합니다. 지원되는 유형은 html, 리디렉션, JSON, 다이내믹 및 작업입니다. |
 | response > execute > pageLoad > options | 보기를 기준으로 그룹화되지 않은 선택 사항(target-global-mbox + 보기를 기준으로 그룹화되지 않은 보기를 사용하는 활동의 선택 사항). |
 | response > execute > pageLoad > metrics | 특정 보기에 속하도록 설정되지 않은 클릭 지표. |
 | response > execute > pageLoad > trace | pageLoad 요청에 대한 모든 추적 데이터를 포함하는 개체. |
-| response > execute > pageLoad > analytics > payload | 페이지 로드 콘텐츠가 적용된 후 [!DNL Analytics](으)로 전송해야 하는 클라이언트측 통합을 위한 [!DNL Analytics] 페이로드입니다. (A4T 사용 &quot;캠페인&quot; 섹션을 참조하십시오.) |
+| response > execute > pageLoad > analytics > payload | 페이지 로드 콘텐츠가 적용된 후 [!DNL Analytics] (으)로 전송해야 하는 클라이언트측 통합을 위한 [!DNL Analytics] 페이로드입니다. (A4T 사용 &quot;캠페인&quot; 섹션을 참조하십시오.) |
 
 ## [!UICONTROL applyOffers()] 호출 예
 

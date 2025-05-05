@@ -34,7 +34,7 @@ ht-degree: 6%
 
 ## 클라이언트측 구현
 
-[**Adobe Experience Platform Web SDK**](/help/dev/implement/client-side/aep-web-sdk.md): [!DNL Adobe Experience Platform Web SDK]을(를) 사용하면 [!UICONTROL Adobe Experience Edge Network]을(를) 통해 [!DNL Experience Cloud]([!DNL Target] 포함)의 다양한 서비스와 상호 작용할 수 있습니다.
+[**Adobe Experience Platform Web SDK**](/help/dev/implement/client-side/aep-web-sdk.md): [!DNL Adobe Experience Platform Web SDK]을(를) 사용하면 [!UICONTROL Adobe Experience Edge Network]을(를) 통해 [!DNL Experience Cloud] ([!DNL Target] 포함)의 다양한 서비스와 상호 작용할 수 있습니다.
 
 [**Target at.js JavaScript 라이브러리**](/help/dev/implement/client-side/overview.md): at.js JavaScript 라이브러리는 웹 구현에 대한 페이지 로드 시간을 향상시키고, 보안을 강화하고, 단일 페이지 애플리케이션에 대해 더 나은 구현 옵션을 제공합니다.
 

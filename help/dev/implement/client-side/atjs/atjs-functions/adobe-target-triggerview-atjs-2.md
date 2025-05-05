@@ -13,7 +13,7 @@ ht-degree: 21%
 
 # adobe.target.triggerView (viewName, options) - at.js 2.x
 
-이 함수는 새 페이지를 로드할 때마다 또는 페이지의 구성 요소가 다시 렌더링될 때 호출할 수 있습니다. [!UICONTROL Visual Experience Composer](VEC)을 사용하여 [!UICONTROL A/B Test] 및 [!UICONTROL Experience Targeting](XT) 활동을 만들려면 단일 페이지 응용 프로그램(SPA)에 대해 `adobe.target.triggerView()`을 구현해야 합니다. 사이트에서 `[!UICONTROL adobe.target.triggerView()]`이(가) 구현되지 않으면 SPA에 VEC를 사용할 수 없습니다. 자세한 내용은 [단일 페이지 애플리케이션 구현](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md)을 참조하십시오.
+이 함수는 새 페이지를 로드할 때마다 또는 페이지의 구성 요소가 다시 렌더링될 때 호출할 수 있습니다. [!UICONTROL Visual Experience Composer] (VEC)을 사용하여 [!UICONTROL A/B Test] 및 [!UICONTROL Experience Targeting] (XT) 활동을 만들려면 단일 페이지 응용 프로그램(SPA)에 대해 `adobe.target.triggerView()`을 구현해야 합니다. 사이트에서 `[!UICONTROL adobe.target.triggerView()]`이(가) 구현되지 않으면 SPA에 VEC를 사용할 수 없습니다. 자세한 내용은 [단일 페이지 애플리케이션 구현](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md)을 참조하십시오.
 
 >[!NOTE]
 >
