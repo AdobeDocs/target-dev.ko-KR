@@ -25,7 +25,7 @@ ht-degree: 29%
 
 1. 앱에 [!DNL Adobe Mobile Services SDK]을(를) 추가합니다.
 
-   [핵심 구현 및 라이프사이클](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/dev-qs.html)에서 지침을 찾을 수 있습니다.
+   [핵심 구현 및 라이프사이클](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/dev-qs.html?lang=ko)에서 지침을 찾을 수 있습니다.
 
 1. 클라이언트 코드, 시간 제한을 추가하고, SSL을 활성화합니다. 
 

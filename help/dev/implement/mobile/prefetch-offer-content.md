@@ -30,5 +30,5 @@ iOS 및 Android Mobile SDK에서 미리 가져오기 방법을 사용할 때는 
 
 미리 가져오기 방법, 공용 클래스 및 코드 샘플을 포함한 자세한 내용은 다음을 참조하십시오.
 
-* **iOS:** *Mobile Services iOS SDK 도움말*&#x200B;에서 [iOS에서 오퍼 콘텐츠 미리 가져오기](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-mob-target-prefetch-ios.html).
-* **Android:** *Mobile Services Android SDK 도움말*&#x200B;에서 [Android에서 오퍼 콘텐츠 미리 가져오기](https://experienceleague.adobe.com/docs/mobile-services/android/target-android/c-mob-target-prefetch-android.html).
+* **iOS:** *Mobile Services iOS SDK 도움말*&#x200B;에서 [iOS에서 오퍼 콘텐츠 미리 가져오기](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-mob-target-prefetch-ios.html?lang=ko).
+* **Android:** *Mobile Services Android SDK 도움말*&#x200B;에서 [Android에서 오퍼 콘텐츠 미리 가져오기](https://experienceleague.adobe.com/docs/mobile-services/android/target-android/c-mob-target-prefetch-android.html?lang=ko).
