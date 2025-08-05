@@ -11,24 +11,24 @@ ht-degree: 5%
 
 # 개인화에 [!DNL Adobe Target] 및 [!DNL Web SDK] 사용
 
-[!DNL Adobe Experience Platform] [!DNL Web SDK]은(는) [!DNL Adobe Target]에서 관리되는 개인화된 경험을 웹 채널에 전달하고 렌더링할 수 있습니다. VEC([시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html))라고 하는 WYSIWYG 편집기 또는 [양식 기반 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html))를 사용하여 활동 및 개인화 경험을 만들고, 활성화하고, 전달할 수 있습니다.
+[!DNL Adobe Experience Platform] [!DNL Web SDK]은(는) [!DNL Adobe Target]에서 관리되는 개인화된 경험을 웹 채널에 전달하고 렌더링할 수 있습니다. VEC([시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=ko))라고 하는 WYSIWYG 편집기 또는 [양식 기반 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=ko))를 사용하여 활동 및 개인화 경험을 만들고, 활성화하고, 전달할 수 있습니다.
 
 >[!IMPORTANT]
 >
->[!DNL Target]Target을 at.js 2.x에서 Experience Platform Web SDK으로 마이그레이션[!DNL Experience Platform Web SDK] 자습서를 사용하여 [ 구현을 ](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html)&#x200B;(으)로 마이그레이션하는 방법을 알아봅니다.
+>[!DNL Target]Target을 at.js 2.x에서 Experience Platform Web SDK으로 마이그레이션[!DNL Experience Platform Web SDK] 자습서를 사용하여 [ 구현을 ](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=ko)&#x200B;(으)로 마이그레이션하는 방법을 알아봅니다.
 >
->[!DNL Target]Web SDK에서 Adobe Experience Cloud 구현[ 자습서를 사용하여 처음으로 ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)을(를) 구현하는 방법을 알아봅니다. [!DNL Target]에 대한 자세한 내용은 [Experience Platform Web SDK으로 Target 설정](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html)이라는 자습서 섹션을 참조하십시오.
+>[!DNL Target]Web SDK에서 Adobe Experience Cloud 구현[ 자습서를 사용하여 처음으로 ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko)을(를) 구현하는 방법을 알아봅니다. [!DNL Target]에 대한 자세한 내용은 [Experience Platform Web SDK으로 Target 설정](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=ko)이라는 자습서 섹션을 참조하십시오.
 
 다음 기능이 테스트되었으며 현재 [!DNL Target]에서 지원됩니다.
 
-* [A/B 테스트](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html)
-* [A4T 노출 및 전환 보고](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html)
-* [Automated Personalization 활동](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html)
-* [경험 타깃팅 활동](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html)
-* [MVT(다변량 테스트)](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html)
-* [권장 사항 활동](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html)
-* [기본 대상 노출 및 전환 보고](https://experienceleague.adobe.com/docs/target/using/reports/reports.html)
-* [VEC 지원](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html)
+* [A/B 테스트](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=ko)
+* [A4T 노출 및 전환 보고](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=ko)
+* [Automated Personalization 활동](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=ko)
+* [경험 타깃팅 활동](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=ko)
+* [MVT(다변량 테스트)](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html?lang=ko)
+* [권장 사항 활동](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html?lang=ko)
+* [기본 대상 노출 및 전환 보고](https://experienceleague.adobe.com/docs/target/using/reports/reports.html?lang=ko)
+* [VEC 지원](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=ko)
 
 ## [!DNL Web SDK] 시스템 다이어그램
 
@@ -51,27 +51,27 @@ ht-degree: 5%
 
 [!DNL Target]을(를) 사용하려면 다음을 수행하십시오.
 
-1. 적절한 클라이언트 코드를 사용하여 [!DNL Target]데이터스트림[에서 ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)을(를) 사용하도록 설정하십시오.
+1. 적절한 클라이언트 코드를 사용하여 [!DNL Target]데이터스트림[에서 ](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/overview)을(를) 사용하도록 설정하십시오.
 1. 이벤트에 `renderDecisions` 옵션을 추가합니다.
 
 그런 다음 선택적으로 다음 옵션을 추가할 수도 있습니다.
 
 * **`decisionScopes`**: 이 옵션을 이벤트에 추가하여 특정 활동(양식 기반 작성기로 만든 활동에 유용함)을 검색합니다.
-* **[코드 조각 사전 숨김](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/manage-flicker)**: 페이지의 특정 부분만 숨깁니다.
+* **[코드 조각 사전 숨김](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/manage-flicker)**: 페이지의 특정 부분만 숨깁니다.
 
 ## [!UICONTROL Adobe Target] VEC 사용
 
-VEC를 [!DNL Web SDK] 구현과 함께 사용하려면 [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-target-vec-helper/) 또는 [Chrome](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension) VEC Helper 확장 프로그램을 설치하고 활성화하십시오.
+VEC를 [!DNL Web SDK] 구현과 함께 사용하려면 [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-target-vec-helper/) 또는 [Chrome](https://experienceleague.adobe.com/ko/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension) VEC Helper 확장 프로그램을 설치하고 활성화하십시오.
 
-자세한 내용은 [Adobe Target 안내서](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html)에서 *시각적 경험 작성기 Helper 확장 기능*&#x200B;을 참조하십시오.
+자세한 내용은 [Adobe Target 안내서](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=ko)에서 *시각적 경험 작성기 Helper 확장 기능*&#x200B;을 참조하십시오.
 
 ## 개인화된 콘텐츠 렌더링
 
-자세한 내용은 [개인화 콘텐츠 렌더링](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)을 참조하십시오.
+자세한 내용은 [개인화 콘텐츠 렌더링](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)을 참조하십시오.
 
 ## XDM의 대상
 
-[!DNL Target]을(를) 통해 전달되는 [!DNL Web SDK] 활동에 대한 대상을 정의할 때 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)을(를) 정의하고 사용해야 합니다. XDM 스키마, 클래스 및 스키마 필드 그룹을 정의한 후에는 타깃팅을 위해 XDM 데이터로 정의된 [!DNL Target] 대상 규칙을 만들 수 있습니다. [!DNL Target] 내에서 XDM 데이터가 [!UICONTROL Audience Builder]에 사용자 지정 매개 변수로 표시됩니다. XDM은 점 표기법을 사용하여 serialize됩니다(예: `web.webPageDetails.name`).
+[!DNL Target]을(를) 통해 전달되는 [!DNL Web SDK] 활동에 대한 대상을 정의할 때 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ko)을(를) 정의하고 사용해야 합니다. XDM 스키마, 클래스 및 스키마 필드 그룹을 정의한 후에는 타깃팅을 위해 XDM 데이터로 정의된 [!DNL Target] 대상 규칙을 만들 수 있습니다. [!DNL Target] 내에서 XDM 데이터가 [!UICONTROL Audience Builder]에 사용자 지정 매개 변수로 표시됩니다. XDM은 점 표기법을 사용하여 serialize됩니다(예: `web.webPageDetails.name`).
 
 사용자 지정 매개 변수 또는 사용자 프로필을 사용하는 사전 정의된 대상이 있는 [!DNL Target] 활동이 있는 경우 SDK을 통해 올바르게 전달되지 않습니다. 사용자 지정 매개 변수 또는 사용자 프로필을 사용하는 대신 XDM을 사용해야 합니다. 그러나 XDM이 필요하지 않은 [!DNL Web SDK]을(를) 통해 지원되는 기본 대상 타깃팅 필드가 있습니다. 이러한 필드는 XDM이 필요하지 않은 [!DNL Target] UI에서 사용할 수 있습니다.
 
@@ -84,7 +84,7 @@ VEC를 [!DNL Web SDK] 구현과 함께 사용하려면 [Firefox](https://addons.
 * 트래픽 소스
 * 시간대
 
-자세한 내용은 [Adobe Target 안내서](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/target-rules.html)의 *대상 범주*&#x200B;를 참조하십시오.
+자세한 내용은 [Adobe Target 안내서](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/target-rules.html?lang=ko)의 *대상 범주*&#x200B;를 참조하십시오.
 
 ### 응답 토큰
 
@@ -287,7 +287,7 @@ alloy("sendEvent", {
 
 ## 디버깅
 
-mboxTrace 및 mboxDebug는 더 이상 사용되지 않습니다. 대신 [웹 SDK 디버깅](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/use-cases/debugging)의 메서드를 사용하십시오.
+mboxTrace 및 mboxDebug는 더 이상 사용되지 않습니다. 대신 [웹 SDK 디버깅](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/use-cases/debugging)의 메서드를 사용하십시오.
 
 ## Terminology
 

@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # [!DNL Adobe Target] 개발자 안내서
 
-**([설명서 업데이트 [!DNL Target] 보기](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html){target=_blank})**
+**([설명서 업데이트 [!DNL Target] 보기](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html?lang=ko){target=_blank})**
 
 이 *[!DNL Adobe Target]개발자 안내서*&#x200B;은(는) [!DNL Target]을(를) 구현하고 관리하기 위한 API 및 SDK 설명서를 포함하여 [!DNL Target] 개발자를 위한 리소스 및 안내서를 제공합니다.
 
@@ -26,7 +26,7 @@ ht-degree: 6%
 >
 >* [*[!DNL Adobe Target] 튜토리얼&#x200B;*](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html?lang=ko-KR){target=_blank}
 >
->릴리스 정보는 [ 비즈니스 실무자 안내서](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html){target=_blank}의 *[!DNL Adobe Target]Target 릴리스 정보(현재)*&#x200B;를 참조하십시오.
+>릴리스 정보는 [ 비즈니스 실무자 안내서](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html?lang=ko){target=_blank}의 *[!DNL Adobe Target]Target 릴리스 정보(현재)*&#x200B;를 참조하십시오.
 
 ## 구현 시작하기
 
@@ -86,7 +86,7 @@ ht-degree: 6%
 
 [**Admin Console API**](https://developer.adobe.com/umapi/): Adobe User Management 및 User Sync API를 통해 사용자 및 제품 권한을 관리합니다.
 
-[**[!DNL Adobe Experience Platform Edge Network Server API]**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html): 다양한 데이터 수집, 개인화, 광고 및 마케팅 사용 사례에 [!DNL Adobe Experience Platform Edge Network Server] API를 사용하십시오.
+[**[!DNL Adobe Experience Platform Edge Network Server API]**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=ko): 다양한 데이터 수집, 개인화, 광고 및 마케팅 사용 사례에 [!DNL Adobe Experience Platform Edge Network Server] API를 사용하십시오.
 
 ## 리소스
 
@@ -98,6 +98,6 @@ ht-degree: 6%
 * [Target 구현](./before-implement/prepare-to-implement-target.md)
 * [대상 관리](./before-administer/target-api-overview.md)
 * [Adobe Target 개발 문서 GitHub 리포지토리](https://github.com/AdobeDocs/target-developers)
-* [Adobe Target 릴리스 노트](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html)
+* [Adobe Target 릴리스 노트](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html?lang=ko)
 * [Adobe Target 비즈니스 사용 안내서](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=ko_KR)
 
