@@ -5,7 +5,7 @@ description: ' [!DNL Adobe Target] 을(를) 구현하고 관리하며 해당 API
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
 exl-id: 655cff9b-fc04-45cf-9068-5c6c32b70d79
-source-git-commit: dadc3804da4592dba4ad88b8c5c9f804c56e232b
+source-git-commit: 599aa4c965e331bb2681523d50708a03fc933875
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 6%
@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # [!DNL Adobe Target] 개발자 안내서
 
-**([설명서 업데이트 [!DNL Target] 보기](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html?lang=ko){target=_blank})**
+**([설명서 업데이트 [!DNL Target] 보기](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html){target=_blank})**
 
 이 *[!DNL Adobe Target]개발자 안내서*&#x200B;은(는) [!DNL Target]을(를) 구현하고 관리하기 위한 API 및 SDK 설명서를 포함하여 [!DNL Target] 개발자를 위한 리소스 및 안내서를 제공합니다.
 
@@ -24,9 +24,9 @@ ht-degree: 6%
 >
 >* [*[!DNL Adobe Target] 비즈니스 실무자 안내서&#x200B;*](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=ko_KR){target=_blank}
 >
->* [*[!DNL Adobe Target]개 Tutorials *](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html?lang=ko-KR){target=_blank}
+>* [*[!DNL Adobe Target] 튜토리얼&#x200B;*](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html?lang=ko-KR){target=_blank}
 >
->릴리스 정보는 *[!DNL Adobe Target]비즈니스 실무자 안내서*&#x200B;의 [Target 릴리스 정보(현재)](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html?lang=ko){target=_blank}를 참조하십시오.
+>릴리스 정보는 [ 비즈니스 실무자 안내서](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html){target=_blank}의 *[!DNL Adobe Target]Target 릴리스 정보(현재)*&#x200B;를 참조하십시오.
 
 ## 구현 시작하기
 
@@ -34,7 +34,7 @@ ht-degree: 6%
 
 ## 클라이언트측 구현
 
-[**Adobe Experience Platform Web SDK**](/help/dev/implement/client-side/aep-web-sdk.md): [!DNL Adobe Experience Platform Web SDK]을(를) 사용하면 [!UICONTROL Adobe Experience Edge Network]을(를) 통해 [!DNL Experience Cloud] ([!DNL Target] 포함)의 다양한 서비스와 상호 작용할 수 있습니다.
+[**Adobe Experience Platform Web SDK**](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md): [!DNL Adobe Experience Platform Web SDK]을(를) 사용하면 [!DNL Experience Cloud]을(를) 통해 [!DNL Target]&#x200B;([!UICONTROL Adobe Experience Edge Network] 포함)의 다양한 서비스와 상호 작용할 수 있습니다.
 
 [**Target at.js JavaScript 라이브러리**](/help/dev/implement/client-side/overview.md): at.js JavaScript 라이브러리는 웹 구현에 대한 페이지 로드 시간을 향상시키고, 보안을 강화하고, 단일 페이지 애플리케이션에 대해 더 나은 구현 옵션을 제공합니다.
 
@@ -42,27 +42,27 @@ ht-degree: 6%
 
 [**Target SDK 개요**](implement/server-side/server-side-overview.md): 온디바이스 의사 결정을 포함하여 [!DNL Adobe Target]개의 SDK를 시작합니다.
 
-[**Node.js SDK**](implement/server-side/node-js/overview.md): [!DNL Target] Node.js SDK를 사용하는 방법.
+[**Node.js SDK**](implement/server-side/node-js/overview.md): [!DNL Target] Node.js SDK 사용 방법.
 
-[**Java SDK**](implement/server-side/java/overview.md): [!DNL Target] Java SDK를 사용하는 방법.
+[**Java SDK**](implement/server-side/java/overview.md): [!DNL Target] Java SDK 사용 방법.
 
-[**.NET SDK**](implement/server-side/net/overview.md): [!DNL Target] .NET SDK를 사용하는 방법입니다.
+[**.NET SDK**](implement/server-side/net/overview.md): [!DNL Target] .NET SDK 사용 방법
 
-[**Python SDK**](implement/server-side/python/overview.md): [!DNL Target] Python SDK를 사용하는 방법.
+[**Python SDK**](implement/server-side/python/overview.md): [!DNL Target] Python SDK 사용 방법.
 
 ## 하이브리드 구현
 
 [**하이브리드 배포**](implement/hybrid/hybrid-overview.md): 클라이언트측과 서버측 구현의 조합을 사용하여 [!DNL Target]을(를) 구현합니다.
 
-## Recommendations 구현
+## 권장 사항 구현
 
-[**Recommendations 구현**](implement/recommendations/recommendations.md): [!DNL Adobe Target Recommendations]을(를) 계획하고 구현합니다.
+[**권장 사항 구현**](implement/recommendations/recommendations.md): [!DNL Adobe Target Recommendations]을(를) 계획하고 구현합니다.
 
 ## 모바일 앱 구현
 
-[**AEP Mobile SDK 개요**](implement/mobile/overview.md): [!DNL Adobe Experience Platform]개의 Mobile SDK를 사용하여 [!DNL Adobe Target]을(를) 구현하는 방법에 대한 개요입니다.
+[**AEP Mobile SDK 개요**](implement/mobile/overview.md): [!DNL Adobe Target]개의 Mobile SDK를 사용하여 [!DNL Adobe Experience Platform]을(를) 구현하는 방법에 대한 개요입니다.
 
-[**AEP Mobile SDK 참조**](https://developer.adobe.com/client-sdks/documentation/): [!DNL Adobe Experience Platform]개의 Mobile SDK를 사용하여 [!DNL Adobe Target]을(를) 구현합니다.
+[**AEP Mobile SDK 참조**](https://developer.adobe.com/client-sdks/documentation/): [!DNL Adobe Target]개의 Mobile SDK를 사용하여 [!DNL Adobe Experience Platform]을(를) 구현합니다.
 
 ## 이메일 구현
 
@@ -84,20 +84,20 @@ ht-degree: 6%
 
 [**[!DNL Target Models API]**](administer/models-api/models-api-overview.md): [!DNL Target] 기계 학습 모델에 사용되는 기능을 정의할 차단 목록을 관리합니다.
 
-[**Admin Console API**](https://developer.adobe.com/umapi/): Adobe 사용자 관리 및 사용자 동기화 API를 통해 사용자 및 제품 권한을 관리합니다.
+[**Admin Console API**](https://developer.adobe.com/umapi/): Adobe User Management 및 User Sync API를 통해 사용자 및 제품 권한을 관리합니다.
 
-[**[!DNL Adobe Experience Platform Edge Network Server API]**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=ko): 다양한 데이터 수집, 개인화, 광고 및 마케팅 사용 사례에 [!DNL Adobe Experience Platform Edge Network Server] API를 사용하십시오.
+[**[!DNL Adobe Experience Platform Edge Network Server API]**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html): 다양한 데이터 수집, 개인화, 광고 및 마케팅 사용 사례에 [!DNL Adobe Experience Platform Edge Network Server] API를 사용하십시오.
 
 ## 리소스
 
 * [Adobe 오픈 소스 리포지토리](https://github.com/adobe)
 * [Target 노드 JS SDK Source](https://github.com/adobe/target-nodejs-sdk)
-* [Target 노드 JS SDK 예제 저장소](https://github.com/adobe/target-nodejs-sdk-samples)
+* [Target 노드 JS SDK 예제 리포지토리](https://github.com/adobe/target-nodejs-sdk-samples)
 * [Target Java SDK Source](https://github.com/adobe/target-java-sdk)
-* [Target Java SDK 예제 리포지토리](https://github.com/adobe/target-java-sdk-samples)
+* [Target Java SDK 예제 저장소](https://github.com/adobe/target-java-sdk-samples)
 * [Target 구현](./before-implement/prepare-to-implement-target.md)
 * [대상 관리](./before-administer/target-api-overview.md)
 * [Adobe Target 개발 문서 GitHub 리포지토리](https://github.com/AdobeDocs/target-developers)
-* [Adobe Target 릴리스 노트](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html?lang=ko)
+* [Adobe Target 릴리스 노트](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html)
 * [Adobe Target 비즈니스 사용 안내서](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=ko_KR)
 

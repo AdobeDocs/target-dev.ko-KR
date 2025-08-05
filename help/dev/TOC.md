@@ -2,10 +2,10 @@
 user-guide-title: Adobe Target 개발자 안내서
 breadcrumb-title: Target 개발자 안내서
 user-guide-description: 고객의 경험을 맞춤화 및 개인화하여 웹 및 모바일 사이트, 앱, 소셜 미디어 및 기타 디지털 채널에서 매출을 극대화하는 방법을 알아봅니다.
-source-git-commit: c963a070a7a4c5e7dc2915eb5ac7d60895340705
+source-git-commit: ac13e0dd7f67de50b77778921c90a95f12c2b9e4
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 45%
+source-wordcount: '769'
+ht-degree: 44%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 45%
 # Adobe Target 개발자 안내서 {#developer}
 
 + [Adobe Target 개발자 안내서](overview.md)
-+ 시작{#implementation}
++ 시작하기 {#implementation}
    + 구현하기 전에 {#before-implement}
       + [구현하기 전에](before-implement/considerations-before-you-implement-target.md)
       + [Target 구현 준비](before-implement/prepare-to-implement-target.md)
-   + 개인정보보호 및 보안 {#privacy}
+   + 개인 정보 보호 및 보안 {#privacy}
       + [개인정보 보호 개요](before-implement/privacy/privacy.md)
       + [개인정보 보호 및 데이터 보호 규정](before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md)
       + [Target 쿠키](before-implement/privacy/cookie-behavior.md)
@@ -43,7 +43,9 @@ ht-degree: 45%
    + [CNAME 및 Adobe Target](before-implement/implement-cname-support-in-target.md)
 + 클라이언트측 구현 {#client-side}
    + [개요: 클라이언트측 웹용 Target 구현](implement/client-side/overview.md)
-   + [Adobe Experience Platform Web SDK 구현 개요](implement/client-side/aep-web-sdk.md)
+   + Adobe Experience Platform 웹 SDK {#web-sdk}
+      + [Adobe Experience Platform Web SDK 구현 개요](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md)
+      + [개인화에 Adobe Target 및 Web SDK 사용](/help/dev/implement/client-side/aep-web-sdk/target-overview.md)
    + at.js 구현 {#at-js-implementation}
       + [at.js 개요](implement/client-side/atjs/how-atjs-works/overview.md)
       + at.js 작동 방식 {#at-js}
@@ -90,7 +92,7 @@ ht-degree: 45%
       + [이전 구현에서 글로벌 mbox를 사용](implement/client-side/atjs/global-mbox/mbox-global-target-standard.md)
       + [글로벌 mbox에 매개 변수 전달](implement/client-side/atjs/global-mbox/pass-parameters-to-global-mbox.md)
       + [글로벌 mbox 자주 묻는 질문](implement/client-side/atjs/global-mbox/global-mbox-faq.md)
-+ 서버 측 구현 {#server-side}
++ 서버측 구현 {#server-side}
    + [서버측: Target 구현 개요](implement/server-side/server-side-overview.md)
    + [Target SDK 시작하기](implement/server-side/sdk-guides/getting-started/getting-started.md)
    + [샘플 앱](implement/server-side/sdk-guides/sample-apps/sample-apps.md)
@@ -110,7 +112,7 @@ ht-degree: 45%
       + [온디바이스 의사 결정 개요](implement/server-side/sdk-guides/on-device-decisioning/overview.md)
       + 규칙 아티팩트 {#rule-artifact}
          + [규칙 아티팩트 개요](implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md)
-         + [Adobe Target SDK를 통해 다운로드](implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-sdk.md)
+         + [Adobe Target SDK을 통해 다운로드](implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-sdk.md)
          + [JSON 페이로드를 통해 다운로드](implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-json.md)
          + [규칙 아티팩트 예](implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-example.md)
       + [기능 플래그를 사용하여 A/B 테스트 실행](implement/server-side/sdk-guides/on-device-decisioning/execute-ab-tests-with-feature-flags.md)
@@ -163,15 +165,15 @@ ht-degree: 45%
       + [비동기 요청(Python)](implement/server-side/python/asynchronous-requests.md)
       + [로거(Python)](implement/server-side/python/logger.md)
 + [하이브리드 구현](implement/hybrid/hybrid-overview.md)
-+ [Recommendations 구현](implement/recommendations/recommendations.md)
-+ [Recommendations 구현 베타](/help/dev/implement/recommendations/recommendations-beta.md)
++ [권장 사항 구현](implement/recommendations/recommendations.md)
++ [권장 사항 구현 베타](/help/dev/implement/recommendations/recommendations-beta.md)
 + 모바일 앱 구현 {#mobile-apps}
    + [모바일 앱을 위한 Target 개요](implement/mobile/overview.md)
    + [Target 모바일 미리보기](implement/mobile/target-mobile-preview.md)
    + [위치 서비스 사용](implement/mobile/use-location-service.md)
    + [모바일 앱을 위한 Target FAQ](implement/mobile/mobile-faq.md)
-   + [웹 보기가 있는 기본 앱에서 AEP Mobile SDK로 Target 구현](/help/dev/implement/mobile/native-app.md)
-+ 전자 메일 구현 {#implement-email}
+   + [웹 보기가 있는 기본 앱에서 AEP Mobile SDK으로 Target 구현](/help/dev/implement/mobile/native-app.md)
++ 이메일 구현 {#implement-email}
    + [이메일: Target 구현 개요](implement/email/overview.md)
    + [이미지용 Adbox 만들기](implement/email/testing-content-with-the-adbox.md)
    + [이메일 이미지 Adbox 테스트](implement/email/testing-email-image-adbox.md)
@@ -202,12 +204,12 @@ ht-degree: 45%
       + [단일 프로필 업데이트 API](/help/dev/administer/profile-api/profile-single-api.md)
       + [벌크 프로필 업데이트 API](/help/dev/administer/profile-api/profile-bulk-api.md)
    + [보고 API](/help/dev/administer/reporting-api/reporting-api.md)
-   + Recommendations API {#recommendations-api}
+   + 권장 사항 API {#recommendations-api}
       + [Recommendations API 개요](before-administer/recs-api/overview.md)
       + [API를 사용하여 카탈로그 관리](before-administer/recs-api/manage-catalog.md)
       + [사용자 지정 기준 관리](before-administer/recs-api/manage-custom-criteria.md)
-      + [Recommendations에서 배달 API 사용](before-administer/recs-api/fetch-recs-server-side-delivery-api.md)
-      + [RECOMMENDATIONS API](/help/dev/administer/recommendations-api/recommendations-api.md)
+      + [Recommendations와 함께 배달 API 사용](before-administer/recs-api/fetch-recs-server-side-delivery-api.md)
+      + [권장 사항 API](/help/dev/administer/recommendations-api/recommendations-api.md)
    + 모델 API {#models-api}
       + [모델 API(차단 목록에 추가) 개요](before-administer/models-api.md)
       + [모델 API](/help/dev/administer/models-api/models-api-overview.md)
@@ -215,8 +217,8 @@ ht-degree: 45%
    + [Adobe Experience Platform Edge Network 서버 API](/help/dev/before-implement/delivery-api-overview/aep-edge-network-server-api.md)
 + 구현 패턴 {#implementation-patterns}
    + [구현 패턴 개요](/help/dev/patterns/pattern-overview.md)
-   + at.js을(를) 사용하는 Recommendations 구현 패턴 {#atjs}
-      + [at.js 개요를 사용한 Recommendations 구현 패턴](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
+   + at.js를 사용한 권장 사항 구현 패턴 {#atjs}
+      + [at.js 개요를 사용한 권장 사항 구현 패턴](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
       + [SDK 초기화](/help/dev/patterns/recs-atjs/initialize-sdk.md)
       + [데이터 수집 구성](/help/dev/patterns/recs-atjs/data-collection.md)
       + [경험 렌더링](/help/dev/patterns/recs-atjs/render-experiences.md)
