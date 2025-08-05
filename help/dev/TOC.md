@@ -2,10 +2,10 @@
 user-guide-title: Adobe Target 개발자 안내서
 breadcrumb-title: Target 개발자 안내서
 user-guide-description: 고객의 경험을 맞춤화 및 개인화하여 웹 및 모바일 사이트, 앱, 소셜 미디어 및 기타 디지털 채널에서 매출을 극대화하는 방법을 알아봅니다.
-source-git-commit: ac13e0dd7f67de50b77778921c90a95f12c2b9e4
+source-git-commit: f4e0e1b202863eb9fddb40836cf53d2df7cdbebe
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 44%
+source-wordcount: '787'
+ht-degree: 43%
 
 ---
 
@@ -43,55 +43,61 @@ ht-degree: 44%
    + [CNAME 및 Adobe Target](before-implement/implement-cname-support-in-target.md)
 + 클라이언트측 구현 {#client-side}
    + [개요: 클라이언트측 웹용 Target 구현](implement/client-side/overview.md)
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+   + Adobe Experience Platform Web SDK 구현 {#aep}
+      + [Adobe Experience Platform Web SDK 구현 개요](implement/client-side/aep-web-sdk.md)
+      + [단일 페이지 응용 프로그램 구현](/help/dev/implement/client-side/aep-web-sdk/spa-implementation.md)
+=======
    + Adobe Experience Platform 웹 SDK {#web-sdk}
       + [Adobe Experience Platform Web SDK 구현 개요](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md)
       + [개인화에 Adobe Target 및 Web SDK 사용](/help/dev/implement/client-side/aep-web-sdk/target-overview.md)
-   + at.js 구현 {#at-js-implementation}
-      + [at.js 개요](implement/client-side/atjs/how-atjs-works/overview.md)
-      + at.js 작동 방식 {#at-js}
-         + [at.js 작동 방식 개요](implement/client-side/atjs/how-atjs-works/how-atjs-works.md)
-         + [at.js에서 플리커를 관리하는 방법](implement/client-side/atjs/how-atjs-works/manage-flicker-with-atjs.md)
-         + [at.js 통합](implement/client-side/atjs/how-atjs-works/target-atjs-integrations.md)
-      + at.js를 배포하는 방법 {#deploy-at-js}
-         + [at.js를 배포하는 방법](implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md)
-         + [Adobe Experience Platform을 사용하여 Target 구현](implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)
-         + [태그 관리자 없이 Target 구현](implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md)
-         + [Dynamic Tag Manager(DTM)를 사용하는 Target 구현](implement/client-side/atjs/how-to-deployatjs/implement-target-using-dtm.md)
-         + [단일 페이지 애플리케이션(SPA)에 대한 Target 구현](implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md)
-      + 온디바이스 의사 결정 {#on-device-decisioning}
-         + [온디바이스 의사 결정 개요](implement/client-side/atjs/on-device-decisioning/on-device-decisioning.md)
-         + [지원되는 기능](implement/client-side/atjs/on-device-decisioning/supported-features.md)
-         + [규칙 아티팩트](implement/client-side/atjs/on-device-decisioning/rule-artifact.md)
-         + [문제 해결](implement/client-side/atjs/on-device-decisioning/troubleshooting-on-device-decisioning.md)
-      + at.js 함수 {#functions-overview}
-         + [at.js 함수 개요](implement/client-side/atjs/atjs-functions/atjs-functions.md)
-         + [adobe.target.getOffer()](implement/client-side/atjs/atjs-functions/adobe-target-getoffer.md)
-         + [adobe.target.getOffers() - at.js 2.x](implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md)
-         + [adobe.target.applyOffer()](implement/client-side/atjs/atjs-functions/adobe-target-applyoffer.md)
-         + [adobe.target.applyOffers() - at.js 2.x](implement/client-side/atjs/atjs-functions/adobe-target-applyoffers-atjs-2.md)
-         + [adobe.target.triggerView() - at.js 2.x](implement/client-side/atjs/atjs-functions/adobe-target-triggerview-atjs-2.md)
-         + [adobe.target.trackEvent()](implement/client-side/atjs/atjs-functions/adobe-target-trackevent.md)
-         + [mboxCreate() - at.js 1.x](implement/client-side/atjs/atjs-functions/mboxcreate-atjs.md)
-         + [targetGlobalSettings()](implement/client-side/atjs/atjs-functions/targetglobalsettings.md)
-         + [mboxDefine() 및 mboxUpdate() - at.js 1.x](implement/client-side/atjs/atjs-functions/mboxdefine-mboxupdate-atjs-1x.md)
-         + [targetPageParams()](implement/client-side/atjs/atjs-functions/targetpageparams.md)
-         + [targetPageParamsAll()](implement/client-side/atjs/atjs-functions/targetpageparamsall.md)
-         + [registerExtension() - at.js 1.x](implement/client-side/atjs/atjs-functions/registerextension-atjs-1x.md)
-         + [sendNotifications() - at.js 2.1](implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21.md)
-         + [at.js 사용자 지정 이벤트](implement/client-side/atjs/atjs-functions/atjs-custom-events.md)
-         + [Adobe Experience Cloud Debugger를 사용하여 at.js 디버그](implement/client-side/target-debugging-atjs/target-debugging-atjs.md)
-         + [Target에서 클라우드 기반 인스턴스 사용](implement/client-side/target-debugging-atjs/targeting-using-cloud-based-instances.md)
-      + [at.js FAQ](implement/client-side/atjs/target-atjs-faq.md)
-      + [at.js 버전 세부 사항](implement/client-side/atjs/target-atjs-versions.md)
-      + [at.js 1.x에서 at.js 2.x로 업그레이드](implement/client-side/atjs/upgrading-from-atjs-1x-to-atjs-20.md)
-      + [at.js 쿠키](implement/client-side/atjs/atjs-cookies.md)
-   + [사용자 에이전트 및 클라이언트 힌트](implement/client-side/atjs/user-agent-and-client-hints.md)
-   + 글로벌 mbox 이해 {#global-mbox}
-      + [글로벌 mbox 이해 개요](implement/client-side/atjs/global-mbox/global-mbox-overview.md)
-      + [글로벌 mbox 사용자 지정](implement/client-side/atjs/global-mbox/customize-global-mbox.md)
-      + [이전 구현에서 글로벌 mbox를 사용](implement/client-side/atjs/global-mbox/mbox-global-target-standard.md)
-      + [글로벌 mbox에 매개 변수 전달](implement/client-side/atjs/global-mbox/pass-parameters-to-global-mbox.md)
-      + [글로벌 mbox 자주 묻는 질문](implement/client-side/atjs/global-mbox/global-mbox-faq.md)
+>>>>>>>>>>63c8d3b4c4f6000294c0669159e97426b213595b
+> + at.js 구현 {#at-js-implementation}
+   + [at.js 개요](implement/client-side/atjs/how-atjs-works/overview.md)
+   + at.js 작동 방식 {#at-js}
+      + [at.js 작동 방식 개요](implement/client-side/atjs/how-atjs-works/how-atjs-works.md)
+      + [at.js에서 플리커를 관리하는 방법](implement/client-side/atjs/how-atjs-works/manage-flicker-with-atjs.md)
+      + [at.js 통합](implement/client-side/atjs/how-atjs-works/target-atjs-integrations.md)
+   + at.js를 배포하는 방법 {#deploy-at-js}
+      + [at.js를 배포하는 방법](implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md)
+      + [Adobe Experience Platform을 사용하여 Target 구현](implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)
+      + [태그 관리자 없이 Target 구현](implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md)
+      + [Dynamic Tag Manager(DTM)를 사용하는 Target 구현](implement/client-side/atjs/how-to-deployatjs/implement-target-using-dtm.md)
+      + [단일 페이지 애플리케이션(SPA)에 대한 Target 구현](implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md)
+   + 온디바이스 의사 결정 {#on-device-decisioning}
+      + [온디바이스 의사 결정 개요](implement/client-side/atjs/on-device-decisioning/on-device-decisioning.md)
+      + [지원되는 기능](implement/client-side/atjs/on-device-decisioning/supported-features.md)
+      + [규칙 아티팩트](implement/client-side/atjs/on-device-decisioning/rule-artifact.md)
+      + [문제 해결](implement/client-side/atjs/on-device-decisioning/troubleshooting-on-device-decisioning.md)
+   + at.js 함수 {#functions-overview}
+      + [at.js 함수 개요](implement/client-side/atjs/atjs-functions/atjs-functions.md)
+      + [adobe.target.getOffer()](implement/client-side/atjs/atjs-functions/adobe-target-getoffer.md)
+      + [adobe.target.getOffers() - at.js 2.x](implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md)
+      + [adobe.target.applyOffer()](implement/client-side/atjs/atjs-functions/adobe-target-applyoffer.md)
+      + [adobe.target.applyOffers() - at.js 2.x](implement/client-side/atjs/atjs-functions/adobe-target-applyoffers-atjs-2.md)
+      + [adobe.target.triggerView() - at.js 2.x](implement/client-side/atjs/atjs-functions/adobe-target-triggerview-atjs-2.md)
+      + [adobe.target.trackEvent()](implement/client-side/atjs/atjs-functions/adobe-target-trackevent.md)
+      + [mboxCreate() - at.js 1.x](implement/client-side/atjs/atjs-functions/mboxcreate-atjs.md)
+      + [targetGlobalSettings()](implement/client-side/atjs/atjs-functions/targetglobalsettings.md)
+      + [mboxDefine() 및 mboxUpdate() - at.js 1.x](implement/client-side/atjs/atjs-functions/mboxdefine-mboxupdate-atjs-1x.md)
+      + [targetPageParams()](implement/client-side/atjs/atjs-functions/targetpageparams.md)
+      + [targetPageParamsAll()](implement/client-side/atjs/atjs-functions/targetpageparamsall.md)
+      + [registerExtension() - at.js 1.x](implement/client-side/atjs/atjs-functions/registerextension-atjs-1x.md)
+      + [sendNotifications() - at.js 2.1](implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21.md)
+      + [at.js 사용자 지정 이벤트](implement/client-side/atjs/atjs-functions/atjs-custom-events.md)
+      + [Adobe Experience Cloud Debugger를 사용하여 at.js 디버그](implement/client-side/target-debugging-atjs/target-debugging-atjs.md)
+      + [Target에서 클라우드 기반 인스턴스 사용](implement/client-side/target-debugging-atjs/targeting-using-cloud-based-instances.md)
+   + [at.js FAQ](implement/client-side/atjs/target-atjs-faq.md)
+   + [at.js 버전 세부 사항](implement/client-side/atjs/target-atjs-versions.md)
+   + [at.js 1.x에서 at.js 2.x로 업그레이드](implement/client-side/atjs/upgrading-from-atjs-1x-to-atjs-20.md)
+   + [at.js 쿠키](implement/client-side/atjs/atjs-cookies.md)
++ [사용자 에이전트 및 클라이언트 힌트](implement/client-side/atjs/user-agent-and-client-hints.md)
++ 글로벌 mbox 이해 {#global-mbox}
+   + [글로벌 mbox 이해 개요](implement/client-side/atjs/global-mbox/global-mbox-overview.md)
+   + [글로벌 mbox 사용자 지정](implement/client-side/atjs/global-mbox/customize-global-mbox.md)
+   + [이전 구현에서 글로벌 mbox를 사용](implement/client-side/atjs/global-mbox/mbox-global-target-standard.md)
+   + [글로벌 mbox에 매개 변수 전달](implement/client-side/atjs/global-mbox/pass-parameters-to-global-mbox.md)
+   + [글로벌 mbox 자주 묻는 질문](implement/client-side/atjs/global-mbox/global-mbox-faq.md)
 + 서버측 구현 {#server-side}
    + [서버측: Target 구현 개요](implement/server-side/server-side-overview.md)
    + [Target SDK 시작하기](implement/server-side/sdk-guides/getting-started/getting-started.md)
