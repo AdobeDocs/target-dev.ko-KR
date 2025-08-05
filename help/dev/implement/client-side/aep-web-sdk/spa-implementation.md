@@ -1,5 +1,5 @@
 ---
-title: '[!DNL  Adobe Experience Platform Web SDK]에 대한 단일 페이지 응용 프로그램 구현'
+title: '[!DNL &#x200B; Adobe Experience Platform Web SDK]에 대한 단일 페이지 응용 프로그램 구현'
 description: ' [!DNL Adobe Experience Platform Web SDK]사용 [!DNL Target]의 단일 페이지 응용 프로그램(SPA) 구현을 만드는 방법을 알아봅니다.'
 keywords: target;adobe target;xdm 보기;보기;단일 페이지 애플리케이션;SPA;SPA 라이프사이클;클라이언트측;AB 테스트;AB;경험 타깃팅;XT;VEC
 feature: AEP Web SDK
