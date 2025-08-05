@@ -1,9 +1,9 @@
 ---
-title: '[!DNL &#x200B; Adobe Experience Platform Web SDK]에 대한 단일 페이지 응용 프로그램 구현'
+title: '[!DNL Adobe Experience Platform Web SDK]에 대한 단일 페이지 응용 프로그램 구현'
 description: ' [!DNL Adobe Experience Platform Web SDK]사용 [!DNL Target]의 단일 페이지 응용 프로그램(SPA) 구현을 만드는 방법을 알아봅니다.'
 keywords: target;adobe target;xdm 보기;보기;단일 페이지 애플리케이션;SPA;SPA 라이프사이클;클라이언트측;AB 테스트;AB;경험 타깃팅;XT;VEC
 feature: AEP Web SDK
-source-git-commit: f4e0e1b202863eb9fddb40836cf53d2df7cdbebe
+source-git-commit: 9a2c35b2d150638fbda00be866f84d2a6faa4300
 workflow-type: tm+mt
 source-wordcount: '1680'
 ht-degree: 2%
@@ -61,7 +61,7 @@ SPA용 [!UICONTROL Adobe Target] VEC는 SPA 경험을 함께 구성하는 시각
 
 [!UICONTROL XDM Views]을(를) [!DNL Target]에서 활용하여 마케터가 [!UICONTROL Visual Experience Composer]을(를) 통해 SPA에서 A/B 및 XT 테스트를 실행하도록 지원할 수 있습니다. 이렇게 하려면 다음 단계를 수행하여 일회용 개발자 설정을 완료해야 합니다.
 
-1. [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/install/overview)을(를) 설치합니다.
+1. [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview)을(를) 설치합니다.
 2. 개인화할 단일 페이지 응용 프로그램에서 모든 [!UICONTROL XDM Views]을(를) 결정합니다.
 3. [!UICONTROL XDM Views]을(를) 정의한 후 A/B 또는 XT VEC 활동을 전달하려면 단일 페이지 애플리케이션에서 `sendEvent()`을(를) `renderDecisions`(으)로 설정하고 해당 `true`(으)로 설정하여 [!UICONTROL XDM View] 함수를 구현하십시오. [!UICONTROL XDM View]을(를) `xdm.web.webPageDetails.viewName`에 전달해야 합니다. 이 단계를 통해 마케터는 [!UICONTROL Visual Experience Composer]을(를) 활용하여 해당 XDM에 대한 A/B 및 XT 테스트를 시작할 수 있습니다.
 
@@ -221,7 +221,7 @@ class Checkout extends Component {
 
 >[!NOTE]
 >
->SPA용 VEC를 사용하려면 [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-target-vec-helper/) 또는 [Chrome VEC Helper 확장 프로그램](https://experienceleague.adobe.com/ko/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension)을 설치하고 활성화해야 합니다.
+>SPA용 VEC를 사용하려면 [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-target-vec-helper/) 또는 [Chrome VEC Helper 확장 프로그램](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension)을 설치하고 활성화해야 합니다.
 
 ### [!UICONTROL Modifications] 패널
 
