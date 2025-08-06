@@ -1,11 +1,11 @@
 ---
-title: at.js를 사용한 Recommendations 구현 패턴
-description: at.js를 사용하는 Recommendations의 구현 패턴을 사용하는 방법을 이해합니다
+title: at.js를 사용한 권장 사항 구현 패턴
+description: at.js를 사용하는 Recommendations에 대한 구현 패턴을 사용하는 방법을 이해합니다
 feature: APIs/SDKs
 level: Experienced
 role: Developer
 exl-id: d568cd1d-acc3-42e0-ae2c-5787e6f361f8
-source-git-commit: 50ee7e66e30c0f8367763a63b6fde5977d30cfe7
+source-git-commit: 3b0bc0b67800ed4b1da6ba2bfa05c677147a78ba
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # at.js 개요를 사용하는 [!DNL Recommendations] 구현 패턴
 
-이 구현 패턴은 [at.js JavaScript 라이브러리](/help/dev/implement/client-side/atjs/how-atjs-works/overview.md)를 사용할 때 [!DNL Adobe Target Recommendations] 구현을 이해하고 만드는 데 도움이 됩니다.
+이 구현 패턴은 [!DNL Adobe Target Recommendations]at.js JavaScript 라이브러리[를 사용할 때 ](/help/dev/implement/client-side/atjs/how-atjs-works/how-atjs-works.md) 구현을 이해하고 만드는 데 도움이 됩니다.
 
 이미지를 클릭하여 전체 화면으로 확장합니다.
 
@@ -24,8 +24,8 @@ ht-degree: 0%
 
 1. [!DNL Adobe Target] 및 [!DNL Experience Cloud ID Service]용 클라이언트측 SDK
 1. [!DNL Target Delivery API] 통화
-1. [!UICONTROL Experience Cloud ID] (ECID) 획득 호출
-1. 벌크 프로필 업데이트 API 및 [!DNL Customer Attributes] (CA) 서비스
+1. [!UICONTROL Experience Cloud ID]&#x200B;(ECID) 획득 호출
+1. 벌크 프로필 업데이트 API 및 [!DNL Customer Attributes]&#x200B;(CA) 서비스
 1. 고객의 데이터 소스에서 [!DNL Target] 프로필 스토어로 프로필 데이터 수집
 1. 프로필 및 행동 데이터 수집 및 방문자에게 표시할 경험 결정
 1. 페이지에서 렌더링되는 경험

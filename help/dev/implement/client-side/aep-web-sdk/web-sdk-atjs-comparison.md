@@ -3,7 +3,8 @@ title: at.js와 Experience Platform Web SDK 비교
 description: at.js 기능을  [!DNL Experience Platform Web SDK]과(와) 비교하는 방법에 대해 알아봅니다.
 keywords: target;adobe target;activity.id;experience.id;renderDecisions;의사 결정 범위;코드 조각 사전 숨김;vec;양식 기반 경험 작성기;xdm;대상;의사 결정;범위;스키마;시스템 다이어그램;다이어그램
 feature: AEP Web SDK
-source-git-commit: d6b93537692a1efbc2650a015f5a44d4fd1fd422
+exl-id: 31c9722b-5d92-4653-aa20-4183d166c097
+source-git-commit: 158c45b824df8d3bd565ac7c654b65f1fd631e2c
 workflow-type: tm+mt
 source-wordcount: '2006'
 ht-degree: 5%
@@ -26,7 +27,7 @@ ht-degree: 5%
 
 사전 빌드된 버전은 CDN에서 사용할 수 있습니다. 페이지에서 직접 CDN의 라이브러리를 참조하거나, 자체 인프라에서 다운로드하여 호스팅할 수 있습니다. 축소 및 축소 해제된 형식으로 사용할 수 있습니다. 축소되지 않은 버전은 디버깅에 유용합니다.
 
-자세한 내용은 [JavaScript 라이브러리를 사용하여 웹 SDK 설치](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/install/library)를 참조하십시오.
+자세한 내용은 [JavaScript 라이브러리를 사용하여 웹 SDK 설치](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library)를 참조하십시오.
 
 ## 라이브러리 구성
 
@@ -72,7 +73,7 @@ window.adobe.target.init(window, document, {
 
 ### Platform Web SDK 구성
 
-[`configure`](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/commands/configure/overview) 명령을 사용하여 SDK 구성이 완료되었습니다. `configure` 명령은 먼저 호출된 *always*&#x200B;입니다.
+[`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview) 명령을 사용하여 SDK 구성이 완료되었습니다. `configure` 명령은 먼저 호출된 *always*&#x200B;입니다.
 
 ## 페이지 로드 [!DNL Target] 오퍼를 요청하고 자동으로 렌더링하는 방법
 
@@ -82,7 +83,7 @@ at.js 2.x를 사용하여 `pageLoadEnabled,` 설정을 사용하면 라이브러
 
 ### [!DNL PLatform Web SDK] 사용 중
 
-[!DNL Target] [시각적 경험 작성기](https://experienceleague.adobe.com/ko/docs/target/using/experiences/vec/visual-experience-composer) 내에서 만든 콘텐츠를 SDK에서 자동으로 검색하고 렌더링할 수 있습니다.
+[!DNL Target] [시각적 경험 작성기](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer) 내에서 만든 콘텐츠를 SDK에서 자동으로 검색하고 렌더링할 수 있습니다.
 
 [!DNL Target]개의 오퍼를 요청하고 자동으로 렌더링하려면 `sendEvent` 명령을 사용하고 `renderDecisions` 옵션을 `true.`(으)로 설정합니다. 이렇게 하면 SDK에서 자동 렌더링에 적합한 개인화된 콘텐츠를 자동으로 렌더링하도록 합니다.
 
@@ -182,7 +183,7 @@ alloy("sendEvent", {
 }
 ```
 
-[자세히 알아보기](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
+[자세히 알아보기](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
 
 ## 요청 및 *NOT*&#x200B;이(가) 페이지 로드 대상 오퍼를 자동으로 렌더링하는 방법
 
@@ -214,7 +215,7 @@ adobe.target.getOffers({
 .catch(console.error);
 ```
 
-[자세히 알아보기](https://experienceleague.adobe.com/ko/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-functions)
+[자세히 알아보기](https://experienceleague.adobe.com/en/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-functions)
 
 ### [!DNL Platform Web SDK] 사용 중
 
@@ -261,7 +262,7 @@ alloy("sendEvent", {
   });
 ```
 
-[자세히 알아보기](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
+[자세히 알아보기](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
 
 ## 특정 양식 기반 Target mbox를 요청하는 방법
 
@@ -297,7 +298,7 @@ adobe.target.getOffers({
 .catch(console.error);
 ```
 
-[자세히 알아보기](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-functions.html?lang=ko)
+[자세히 알아보기](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-functions.html)
 
 ### [!DNL Platform Web SDK] 사용 중
 
@@ -418,7 +419,7 @@ alloy("sendEvent", {
 });
 ```
 
-[자세히 알아보기](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
+[자세히 알아보기](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
 
 ## [!DNL Target] 활동을 적용하는 방법
 
@@ -435,7 +436,7 @@ adobe.target.getOffers({...})
   .catch(error => console.log("Error", error));
 ```
 
-`applyOffers`전용 설명서[에서 ](https://experienceleague.adobe.com/ko/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffers-atjs-2) 명령에 대해 자세히 알아보세요.
+`applyOffers`전용 설명서[에서 ](https://experienceleague.adobe.com/en/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffers-atjs-2) 명령에 대해 자세히 알아보세요.
 
 ### [!DNL Platform Web SDK] 사용 중
 
@@ -449,7 +450,7 @@ alloy("applyPropositions", {
 });
 ```
 
-`applyPropositions`전용 설명서[에서 ](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/rendering-personalization-content) 명령에 대해 자세히 알아보세요.
+`applyPropositions`전용 설명서[에서 ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content) 명령에 대해 자세히 알아보세요.
 
 ## 이벤트 추적 방법
 
@@ -485,7 +486,7 @@ adobe.target.sendNotifications({
 });
 ```
 
-[자세히 알아보기](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html?lang=ko)
+[자세히 알아보기](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html)
 
 ### [!DNL Platform Web SDK] 사용 중
 
@@ -603,7 +604,7 @@ alloy("sendEvent", {
 });
 ```
 
-[자세히 알아보기](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/rendering-personalization-content#manual)
+[자세히 알아보기](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content#manual)
 
 **예 3 - 작업을 수행한 후 실행된 이벤트 추적**
 
@@ -685,7 +686,7 @@ alloy("sendEvent", {
 
 ## [!UICONTROL Response Tokens]을(를) 활용하는 방법
 
-[!DNL Target]에서 반환된 Personalization 컨텐츠에 [응답 토큰](https://experienceleague.adobe.com/ko/docs/target/using/administer/response-tokens)이 포함되어 있습니다. 응답 토큰은 활동, 오퍼, 경험, 사용자 프로필, 지역 정보 등에 대한 세부 정보입니다. 이러한 세부 정보는 서드파티 도구와 공유하거나 디버깅에 사용할 수 있습니다. [!DNL Target] 사용자 인터페이스에서 응답 토큰을 구성할 수 있습니다.
+[!DNL Target]에서 반환된 Personalization 컨텐츠에 [응답 토큰](https://experienceleague.adobe.com/en/docs/target/using/administer/response-tokens)이 포함되어 있습니다. 응답 토큰은 활동, 오퍼, 경험, 사용자 프로필, 지역 정보 등에 대한 세부 정보입니다. 이러한 세부 정보는 서드파티 도구와 공유하거나 디버깅에 사용할 수 있습니다. [!DNL Target] 사용자 인터페이스에서 응답 토큰을 구성할 수 있습니다.
 
 ### at.js 사용
 
@@ -699,7 +700,7 @@ document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function(e) {
 }); 
 ```
 
-[자세히 알아보기](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=ko)
+[자세히 알아보기](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html)
 
 ### [!DNL Platform Web SDK] 사용 중
 
@@ -707,7 +708,7 @@ document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function(e) {
 >
 >[!DNL Experience Platform Web SDK] 버전 2.6.0 이상을 사용 중인지 확인하십시오.
 
-응답 토큰은 `propositions` 명령의 결과에 노출된 `sendEvent`의 일부로 반환됩니다. 각 제안에는 `items,`의 배열이 포함되어 있으며 `meta` 관리 UI에서 활성화된 경우 각 항목에는 응답 토큰으로 채워진 [!DNL Target] 개체가 있습니다. [자세히 알아보기](https://experienceleague.adobe.com/ko/docs/target/using/administer/response-tokens)
+응답 토큰은 `propositions` 명령의 결과에 노출된 `sendEvent`의 일부로 반환됩니다. 각 제안에는 `items,`의 배열이 포함되어 있으며 `meta` 관리 UI에서 활성화된 경우 각 항목에는 응답 토큰으로 채워진 [!DNL Target] 개체가 있습니다. [자세히 알아보기](https://experienceleague.adobe.com/en/docs/target/using/administer/response-tokens)
 
 **예**
 
@@ -814,7 +815,7 @@ Analytics 클라이언트 측 로깅은 at.js 설정에서 `analyticsLogging: cl
 }
 ```
 
-그런 다음 [!DNL Analytics]을(를) 통해 [!DNL &#x200B; Data Insertion API]에 페이로드를 전달할 수 있습니다.
+그런 다음 [!DNL Analytics]을(를) 통해 [!DNL  Data Insertion API]에 페이로드를 전달할 수 있습니다.
 
 예제 2: 모든 `getOffers` 함수에서 구성:
 
@@ -878,7 +879,7 @@ at.js 설정에서 [!DNL Analytics]을(를) 설정하거나 `analyticsLogging: s
 
 ![Analytics 서버측 로깅 워크플로를 보여 주는 다이어그램](/help/dev/implement/client-side/aep-web-sdk/assets/a4t-server-side-atjs.png)
 
-[자세히 알아보기](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4timplementation.html?lang=ko)
+[자세히 알아보기](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4timplementation.html)
 
 ### [!DNL Platform Web SDK] 사용 중
 
@@ -960,7 +961,7 @@ window.targetGlobalSettings = {
 };
 ```
 
-[자세히 알아보기](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/targetgobalsettings.html?lang=ko)
+[자세히 알아보기](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/targetgobalsettings.html)
 
 ### [!DNL Platform Web SDK] 사용 중
 
@@ -1060,7 +1061,7 @@ adobe.target.getOffers({
 .catch(console.error);
 ```
 
-[자세히 알아보기](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/adobe-target-getoffers-atjs-2.html?lang=ko)
+[자세히 알아보기](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/adobe-target-getoffers-atjs-2.html)
 
 ### [!DNL Platform Web SDK] 사용 중
 
@@ -1140,7 +1141,7 @@ window.targetPageParams = function() {
 };
 ```
 
-[자세히 알아보기](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/targetpageparams.html?lang=ko)
+[자세히 알아보기](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/targetpageparams.html)
 
 ### [!DNL Platform Web SDK] 사용 중
 
@@ -1260,5 +1261,5 @@ at.js 라이브러리는 다음 디버깅 기능을 표시합니다.
 * [Assurance](https://experienceleague.adobe.com/ko/docs/experience-platform/assurance/home) 사용 중
 * [웹 SDK 디버그 사용](https://experienceleague.adobe.com/ko/docs/experience-platform/assurance/home)
 * [웹 SDK 모니터링 후크 사용](https://github.com/adobe/alloy/wiki/Monitoring-Hooks)
-* [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/ko/docs/experience-platform/debugger/home) 사용
+* [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home) 사용
 * 대상 추적

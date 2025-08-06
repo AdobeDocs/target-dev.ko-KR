@@ -1,10 +1,10 @@
 ---
 title: 프로필 업데이트
-description: Adobe Target 프로필 API를 사용하여 방문자 데이터를  [!DNL Target] (으)로 보내는 방법을 알아봅니다.
+description: Adobe Target 프로필 API를 사용하여 방문자 데이터를  [!DNL Target](으)로 보내는 방법을 알아봅니다.
 contributors: https://github.com/icaraps
 exl-id: 482a4175-1d02-47e9-a5c0-dd00e8560773
 feature: APIs/SDKs
-source-git-commit: 315e8fbe67938588c3c9a0135e0cd85fa1f12187
+source-git-commit: 3b0bc0b67800ed4b1da6ba2bfa05c677147a78ba
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 각 방문자에 대한 프로필 정보는 쿠키 또는 서드파티 앱에 저장됩니다.
 
-웹 페이지에서 [!DNL Target] 코드([at.js](/help/dev/implement/client-side/atjs/how-atjs-works/overview.md) 또는 [Adobe Experience Platform Web SDK](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md))를 구현하는 경우 쿠키의 프로필 정보가 프로필 매개 변수를 사용하여 [!DNL Target]에 전달됩니다. [!DNL Target]은(는) 방문자의 쿠키에서 생성한 `pcID`을(를) 통해 각 방문자를 고유하게 식별합니다. 그러나 `mbox3rdPartyIds`을(를) 사용하여 mbox 호출을 통해 외부 앱의 프로필 매개 변수를 전달할 수 있습니다.
+웹 페이지에서 [!DNL Target] 코드([at.js](/help/dev/implement/client-side/atjs/how-atjs-works/how-atjs-works.md) 또는 [Adobe Experience Platform Web SDK](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md))를 구현하는 경우 쿠키의 프로필 정보가 프로필 매개 변수를 사용하여 [!DNL Target]에 전달됩니다. [!DNL Target]은(는) 방문자의 쿠키에서 생성한 `pcID`을(를) 통해 각 방문자를 고유하게 식별합니다. 그러나 `mbox3rdPartyIds`을(를) 사용하여 mbox 호출을 통해 외부 앱의 프로필 매개 변수를 전달할 수 있습니다.
 
 [!DNL Adobe Target]과의 페이지 기반 통합의 일부로 보낼 수 없거나 보내지 않으려는 [!DNL Target]에 보낼 방문자에 대한 프로필 데이터가 있는 경우 [!DNL Target] 프로필 API를 사용하십시오. 페이지에서 사용할 수 없는 CRM(고객 관계 관리) 또는 POS(판매 지점) 시스템의 데이터일 수 있습니다. 또는 이 데이터가 페이지에서 전달하는 것이 적절하지 않은 보다 민감한 특성일 수 있습니다.
 
