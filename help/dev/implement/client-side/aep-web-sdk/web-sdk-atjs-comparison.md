@@ -815,7 +815,7 @@ Analytics 클라이언트 측 로깅은 at.js 설정에서 `analyticsLogging: cl
 }
 ```
 
-그런 다음 [!DNL Analytics]을(를) 통해 [!DNL  Data Insertion API]에 페이로드를 전달할 수 있습니다.
+그런 다음 [!DNL Analytics]을(를) 통해 [!DNL &#x200B; Data Insertion API]에 페이로드를 전달할 수 있습니다.
 
 예제 2: 모든 `getOffers` 함수에서 구성:
 
