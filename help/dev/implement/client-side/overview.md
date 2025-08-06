@@ -13,7 +13,7 @@ ht-degree: 28%
 
 # 개요: 클라이언트측 웹용 [!DNL Target] 구현
 
-클라이언트측 [!DNL Adobe Target]의 구현에서 [!DNL Target]은 활동과 연관된 경험을 클라이언트 브라우저에 직접 전달합니다. 브라우저는 표시할 경험을 결정하고 표시합니다. 클라이언트측 구현에서는 WYSIWYG 편집기, [시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html) (VEC) 또는 [양식 기반 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html)인 비시각적 인터페이스를 사용하여 활동 및 개인화 경험을 만들 수 있습니다.
+클라이언트측 [!DNL Adobe Target]의 구현에서 [!DNL Target]은 활동과 연관된 경험을 클라이언트 브라우저에 직접 전달합니다. 브라우저는 표시할 경험을 결정하고 표시합니다. 클라이언트측 구현에서는 WYSIWYG 편집기, [시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=ko) (VEC) 또는 [양식 기반 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=ko)인 비시각적 인터페이스를 사용하여 활동 및 개인화 경험을 만들 수 있습니다.
 
 [!DNL Target] 클라이언트측을 구현하려면 다음 JavaScript 라이브러리 중 하나를 사용해야 합니다.
 
