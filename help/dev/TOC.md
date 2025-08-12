@@ -2,10 +2,10 @@
 user-guide-title: Adobe Target 개발자 안내서
 breadcrumb-title: Target 개발자 안내서
 user-guide-description: 고객의 경험을 맞춤화 및 개인화하여 웹 및 모바일 사이트, 앱, 소셜 미디어 및 기타 디지털 채널에서 매출을 극대화하는 방법을 알아봅니다.
-source-git-commit: 8f24ffe82e16de0dbbd86d3baf0e76d826a98a9a
+source-git-commit: b1b0424bfe61fb8b4e88723e6bb2c565d75f8351
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 43%
+source-wordcount: '827'
+ht-degree: 41%
 
 ---
 
@@ -169,6 +169,10 @@ ht-degree: 43%
       + [비동기 요청(Python)](implement/server-side/python/asynchronous-requests.md)
       + [로거(Python)](implement/server-side/python/logger.md)
 + [하이브리드 구현](implement/hybrid/hybrid-overview.md)
++ Experience Platform SDK을 사용하는 Analytics for Target(A4T) {#a4t}
+   + [Experience Platform Web SDK에서 A4T(Adobe Analytics for Target) 로깅](/help/dev/implement/a4t/overview-a4t.md)
+   + [Experience Platform Web SDK의 A4T 데이터에 대한 클라이언트측 로깅](/help/dev/implement/a4t/client-side-logging.md)
+   + [Experience Platform Web SDK의 A4T 데이터에 대한 서버측 로깅](/help/dev/implement/a4t/server-side-a4t.md)
 + [권장 사항 구현](implement/recommendations/recommendations.md)
 + [권장 사항 구현 베타](/help/dev/implement/recommendations/recommendations-beta.md)
 + 모바일 앱 구현 {#mobile-apps}
