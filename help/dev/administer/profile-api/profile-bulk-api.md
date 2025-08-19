@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API]을(를) 
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: bee8752dd212a14f8414879e03565867eb87f6b9
+source-git-commit: 39f0ab4a6b06d0b3415be850487552714f51b4a2
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 8%
+source-wordcount: '929'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API]을(를) 사용하면 배치 파일을 사용하여 웹 사이트에 대한 여러 방문자의 사용자 프로필을 일괄적으로 업데이트할 수 있습니다.
 
-[!UICONTROL Bulk Profile Update API]을(를) 사용하면 많은 사용자에 대한 프로필 매개 변수 형식의 자세한 방문자 프로필 데이터를 외부 소스에서 [!DNL Target] (으)로 편리하게 보낼 수 있습니다. 외부 소스에는 일반적으로 웹 페이지에서 사용할 수 없는 CRM(고객 관계 관리) 또는 POS(판매 지점) 시스템이 포함될 수 있습니다.
+[!UICONTROL Bulk Profile Update API]을(를) 사용하면 많은 사용자에 대한 프로필 매개 변수 형식의 자세한 방문자 프로필 데이터를 외부 소스에서 [!DNL Target]&#x200B;(으)로 편리하게 보낼 수 있습니다. 외부 소스에는 일반적으로 웹 페이지에서 사용할 수 없는 CRM(고객 관계 관리) 또는 POS(판매 지점) 시스템이 포함될 수 있습니다.
 
 | 버전 | URL 예 | 기능 |
 | --- | --- | --- |
@@ -24,9 +24,13 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->[!UICONTROL Bulk Profile Update API]의 버전 2(v2)가 현재 버전입니다. 그러나 [!DNL Target]은(는) 여전히 버전 1(v1)을 지원합니다.
+>[!DNL Bulk Profile Update API]의 버전 2(v2)가 현재 버전입니다. 그러나 [!DNL Target]은(는) 버전 1(v1)을 계속 지원합니다.
+>
+>* **`PCID`에 의존하지 않는 독립 실행형 구현은 버전 2**&#x200B;을 사용합니다. [!DNL Target] 구현에서 익명 방문자에 대한 프로필 식별자 중 하나로 [!DNL Experience Cloud ID]&#x200B;(ECID)을 사용하는 경우 버전 2(v2) 배치 파일에서 키로 `pcId`을(를) 사용하면 안 됩니다. `pcId`의 버전 2와 함께 [!DNL Bulk Profile Update API]을(를) 사용하는 것은 [!DNL Target]에 의존하지 않는 독립 실행형 `ECID` 구현을 위한 것입니다.
+>
+>* **`thirdPartID`을(를) 사용하는 구현, 버전 1 사용**: 프로필 식별에 `ECID`을(를) 사용하는 구현은 일괄 처리 파일에서 `pcId`을(를) 키로 사용하려면 API의 버전 1(v1)을 사용해야 합니다. 구현에서 프로필 식별에 `thirdPartyId`을(를) 사용하는 경우 `thirdPartyId`을(를) 키로 사용하는 버전 2(v2)가 권장됩니다.
 
-## 벌크 프로필 업데이트 API의 이점
+## [!UICONTROL Bulk Profile Update API]의 이점
 
 * 프로필 속성의 개수에 대한 제한은 없습니다.
 * 사이트를 통해 전송된 프로필 속성은 API를 통해 또는 그 반대로 업데이트할 수 있습니다.
@@ -43,13 +47,13 @@ ht-degree: 8%
 
 프로필 데이터를 대량으로 업데이트하려면 배치 파일을 만듭니다. 배치 파일은 다음 샘플 파일과 유사한 쉼표로 구분된 값이 있는 텍스트 파일입니다.
 
-``` ```
+``````
 batch=pcId,param1,param2,param3,param4
 123,value1
 124,value1,,,value4
 125,,value2
 126,value1,value2,value3,value4
-``` ```
+``````
 
 >[!NOTE]
 >
@@ -58,10 +62,10 @@ batch=pcId,param1,param2,param3,param4
 파일을 처리하기 위해 [!DNL Target] 서버에 대한 POST 호출에서 이 파일을 참조합니다. 배치 파일을 생성할 때 다음 사항을 고려하십시오.
 
 * 파일의 첫 행은 열 머리글을 지정해야 합니다.
-* 첫 번째 헤더는 `pcId` 또는 `thirdPartyId`이어야 합니다. [!UICONTROL Marketing Cloud visitor ID]은(는) 지원되지 않습니다. [!UICONTROL pcId]은(는) [!DNL Target]에서 생성한 visitorID입니다. `thirdPartyId`은(는) 클라이언트 응용 프로그램에서 지정한 ID이며, mbox 호출을 통해 `mbox3rdPartyId`(으)로 [!DNL Target]에 전달됩니다. 여기에서 `thirdPartyId`(으)로 참조되어야 합니다.
+* 첫 번째 헤더는 `pcId` 또는 `thirdPartyId`이어야 합니다. [!UICONTROL Marketing Cloud visitor ID]은(는) 지원되지 않습니다. [!UICONTROL pcId]은(는) [!DNL Target]에서 생성한 visitorID입니다. `thirdPartyId`은(는) 클라이언트 응용 프로그램에서 지정한 ID이며, mbox 호출을 통해 [!DNL Target]&#x200B;(으)로 `mbox3rdPartyId`에 전달됩니다. 여기에서 `thirdPartyId`(으)로 참조되어야 합니다.
 * 보안상의 이유로 배치 파일에서 지정하는 매개변수와 값은 UTF-8을 사용하여 URL로 인코딩되어야 합니다. HTTP 요청을 통해 처리하기 위해 매개 변수와 값을 다른 에지 노드로 전달할 수 있습니다.
 * 매개 변수는 `paramName` 형식이어야 합니다. 매개 변수가 [!DNL Target]에 `profile.paramName`(으)로 표시됩니다.
-* [!UICONTROL Bulk Profile Update API] v2를 사용하는 경우 각 `pcId`에 대해 모든 매개 변수 값을 지정할 필요는 없습니다. [!DNL Target]에서 찾을 수 없는 `pcId` 또는 `mbox3rdPartyId`에 대해 프로필이 만들어집니다. v1을 사용하는 경우 누락된 pcIds 또는 mbox3rdPartyIds에 대해 프로필이 만들어지지 않습니다.
+* [!UICONTROL Bulk Profile Update API] v2를 사용하는 경우 각 `pcId`에 대해 모든 매개 변수 값을 지정할 필요는 없습니다. `pcId`에서 찾을 수 없는 `mbox3rdPartyId` 또는 [!DNL Target]에 대해 프로필이 만들어집니다. v1을 사용하는 경우 누락된 pcIds 또는 mbox3rdPartyIds에 대해 프로필이 만들어지지 않습니다.
 * 묶음 파일의 크기는 50MB 미만이어야 합니다. 또한 총 행 수는 50만 개를 초과할 수 없습니다. 이 제한은 서버가 너무 많은 요청으로 침수되지 않도록 합니다.
 * 여러 파일을 보낼 수 있습니다. 단, 하루에 보내는 모든 파일의 행 합계 합계는 각 클라이언트에 대해 100만 개를 초과할 수 없습니다.
 * 업로드할 수 있는 속성 수에는 제한이 없습니다. 하지만 고객 속성, 프로필 API, Mbox 내 프로필 매개 변수 및 프로필 스크립트 출력을 포함하는 외부 프로필 데이터의 총 크기는 64KB를 초과할 수 없습니다.
@@ -71,9 +75,9 @@ batch=pcId,param1,param2,param3,param4
 
 파일을 처리할 [!DNL Target] Edge Server에 대한 HTTP POST 요청을 만듭니다. 다음은 curl 명령을 사용한 batch.txt 파일에 대한 샘플 HTTP POST 요청입니다.
 
-``` ```
+``````
 curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
-``` ```
+``````
 
 여기서
 
@@ -81,7 +85,7 @@ BATCH.TXT는 파일 이름입니다. CLIENTCODE는 [!DNL Target] 클라이언트
 
 클라이언트 코드를 모르는 경우 [!DNL Target] 사용자 인터페이스에서 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**&#x200B;을(를) 클릭합니다. 클라이언트 코드는 [!UICONTROL Account Details] 섹션에 표시됩니다.
 
-### Inspect 응답
+### 응답 검사
 
 프로필 API는 &quot;batchStatus&quot; 아래의 링크와 함께 처리할 배치의 제출 상태를 특정 배치 작업의 전체 상태를 보여 주는 다른 URL로 반환합니다.
 
