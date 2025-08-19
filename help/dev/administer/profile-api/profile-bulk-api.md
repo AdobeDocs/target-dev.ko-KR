@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API]을(를) 
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: 8cab20a7842b0a05c5b2a845662a7ab5f60393bd
+source-git-commit: dae198fd8ef3fc8473ad31807c146802339b1832
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '917'
 ht-degree: 7%
 
 ---
@@ -26,9 +26,11 @@ ht-degree: 7%
 >
 >[!DNL Bulk Profile Update API]의 버전 2(v2)가 현재 버전입니다. 그러나 [!DNL Target]은(는) 버전 1(v1)을 계속 지원합니다.
 >
->* **`ECID`에 의존하지 않는 독립 실행형 구현은 버전 2**&#x200B;을 사용합니다. [!DNL Target] 구현에서 익명 방문자에 대한 프로필 식별자 중 하나로 [!DNL Experience Cloud ID]&#x200B;(ECID)을 사용하는 경우 버전 2(v2) 배치 파일에서 키로 `pcId`을(를) 사용하면 안 됩니다. `pcId`의 버전 2와 함께 [!DNL Bulk Profile Update API]을(를) 사용하는 것은 [!DNL Target]에 의존하지 않는 독립 실행형 `ECID` 구현을 위한 것입니다.
+>* [!DNL Target] 구현에서 익명 방문자에 대한 프로필 식별자 중 하나로 [!DNL Experience Cloud ID]&#x200B;(ECID)을 사용하는 경우 버전 2(v2) 배치 파일에서 키로 `pcId`을(를) 사용하지 마십시오. `pcId`의 v2와 함께 [!DNL Bulk Profile Update API]을(를) 사용하는 것은 ECID에 의존하지 않는 독립 실행형 [!DNL Target] 구현에만 사용됩니다.
 >
->* **`thirdPartID`을(를) 사용하는 구현, 버전 1 사용**: 프로필 식별에 `ECID`을(를) 사용하는 구현은 일괄 처리 파일에서 `pcId`을(를) 키로 사용하려면 API의 버전 1(v1)을 사용해야 합니다. 구현에서 프로필 식별에 `thirdPartyId`을(를) 사용하는 경우 `thirdPartyId`을(를) 키로 사용하는 버전 2(v2)가 권장됩니다.
+>* 구현에서 프로필 식별에 ECID를 사용하고 일괄 처리 파일의 키로 `pcId`을(를) 사용하려면 API 버전 1(v1)을 사용하십시오.
+>
+>* 구현에서 프로필 식별에 `thirdPartyId`을(를) 사용하는 경우 키로 `thirdPartyId`을(를) 사용하여 API의 버전 2(v2)를 사용하십시오.
 
 ## [!UICONTROL Bulk Profile Update API]의 이점
 
@@ -47,13 +49,13 @@ ht-degree: 7%
 
 프로필 데이터를 대량으로 업데이트하려면 배치 파일을 만듭니다. 배치 파일은 다음 샘플 파일과 유사한 쉼표로 구분된 값이 있는 텍스트 파일입니다.
 
-``` ```
+``````
 batch=pcId,param1,param2,param3,param4
 123,value1
 124,value1,,,value4
 125,,value2
 126,value1,value2,value3,value4
-``` ```
+``````
 
 >[!NOTE]
 >
@@ -75,9 +77,9 @@ batch=pcId,param1,param2,param3,param4
 
 파일을 처리할 [!DNL Target] Edge Server에 대한 HTTP POST 요청을 만듭니다. 다음은 curl 명령을 사용한 batch.txt 파일에 대한 샘플 HTTP POST 요청입니다.
 
-``` ```
+``````
 curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
-``` ```
+``````
 
 여기서
 
