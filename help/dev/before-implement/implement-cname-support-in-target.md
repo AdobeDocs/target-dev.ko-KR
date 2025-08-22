@@ -4,16 +4,16 @@ description: '[!UICONTROL Adobe Client Care]과(와) 함께  [!DNL Adobe Target]
 title: Target에서 CNAME을 사용하는 방법
 feature: Privacy & Security
 exl-id: 5709df5b-6c21-4fea-b413-ca2e4912d6cb
-source-git-commit: 1a78a1e2750ae906338e91ff24ac16cdc99323ba
+source-git-commit: 04dfc34bcd3e7efbf73cd167334b440d42cafd1b
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1169'
 ht-degree: 1%
 
 ---
 
 # CNAME 및 Target
 
-[!DNL Adobe Target]에서 CNAME(표준 이름) 지원을 구현하기 위한 [!DNL Adobe Client Care] 작업 지침. CNAME을 사용하여 광고 차단 문제 또는 ITP 관련(Intelligent Tracking Prevention) 쿠키 정책을 처리합니다. CNAME을 사용하면 Adobe이 소유한 도메인이 아니라 고객이 소유한 도메인이 호출됩니다.
+[!DNL Adobe Client Care]에서 CNAME(표준 이름) 지원을 구현하기 위한 [!DNL Adobe Target] 작업 지침. CNAME을 사용하여 광고 차단 문제 또는 ITP 관련(Intelligent Tracking Prevention) 쿠키 정책을 처리합니다. CNAME을 사용하면 Adobe이 소유한 도메인이 아니라 고객이 소유한 도메인이 호출됩니다.
 
 ## Target에서 CNAME 지원 요청
 
@@ -31,7 +31,7 @@ ht-degree: 1%
    >
    >Adobe의 인증 기관인 DigiCert는 이 단계가 완료될 때까지 인증서를 발급할 수 없습니다. 따라서 Adobe은 이 단계가 완료될 때까지 CNAME 구현에 대한 요청을 이행할 수 없습니다.
 
-1. [이 양식을 작성](assets/FPC_Request_Form.xlsx)한 다음 [CNAME 지원을 요청하는 Adobe Client Care 티켓을 열 때 포함](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=ko&#reference_ACA3391A00EF467B87930A450050077C):
+1. [이 양식을 작성](assets/FPC_Request_Form.xlsx)한 다음 [CNAME 지원을 요청하는 Adobe Client Care 티켓을 열 때 포함](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C):
 
    * [!DNL Adobe Target] 클라이언트 코드:
    * SSL 인증서 호스트 이름(예: `target.example.com target.example.org`):
@@ -96,6 +96,8 @@ Apple ITP(Intelligent Tracking Prevention) 버전 2.3에서는 [!DNL Target]개�
 macOS 또는 Linux 명령줄 터미널에서 bash 및 curl >=7.49를 사용하여 다음 명령 세트를 사용합니다.
 
 1. 이 bash 함수를 복사하여 터미널에 붙여넣거나 함수를 bash 시작 스크립트 파일(일반적으로 `~/.bash_profile` 또는 `~/.bashrc`)에 붙여넣어 터미널 세션에서 함수를 사용할 수 있도록 하십시오.
+
+   +++세부 정보 보기
 
    ```
    function adobeTargetCnameValidation {
@@ -240,13 +242,15 @@ macOS 또는 Linux 명령줄 터미널에서 bash 및 curl >=7.49를 사용하�
    }
    ```
 
+   +++
+
 1. `target.example.com`을(를) 호스트 이름으로 바꾸면서 이 명령을 붙여 넣습니다.
 
-   ```
-   adobeTargetCnameValidation target.example.com
-   ```
+   ```adobeTargetCnameValidation target.example.com```
 
-   구현이 준비되면 아래와 같은 출력이 표시됩니다. 중요한 점은 모든 유효성 검사 상태 줄에 `🚫`이(가) 아닌 `✅`이(가) 표시된다는 것입니다. 각 Target 에지 CNAME 분할에는 요청된 인증서의 기본 호스트 이름과 일치하는 `CN=target.example.com`이(가) 표시됩니다(인증서의 추가 SAN 호스트 이름은 이 출력에 인쇄되지 않음).
+   구현이 준비되면 아래와 같은 출력이 표시됩니다. 중요한 점은 모든 유효성 검사 상태 줄에 `✅`이(가) 아닌 `🚫`이(가) 표시된다는 것입니다. 각 Target 에지 CNAME 분할에는 요청된 인증서의 기본 호스트 이름과 일치하는 `CN=target.example.com`이(가) 표시됩니다(인증서의 추가 SAN 호스트 이름은 이 출력에 인쇄되지 않음).
+
+   +++세부 정보 보기
 
    ```
    $ adobeTargetCnameValidation target.example.com
@@ -310,6 +314,8 @@ macOS 또는 Linux 명령줄 터미널에서 bash 및 curl >=7.49를 사용하�
        🔎  DNS A records:     https://whatsmydns.net/#A/target.example.com
        🔎  DNS CNAME record:  https://whatsmydns.net/#CNAME/target.example.com 
    ```
+
++++
 
 >[!NOTE]
 >
