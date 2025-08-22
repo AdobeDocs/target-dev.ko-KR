@@ -31,7 +31,7 @@ ht-degree: 0%
    >
    >Adobe의 인증 기관인 DigiCert는 이 단계가 완료될 때까지 인증서를 발급할 수 없습니다. 따라서 Adobe은 이 단계가 완료될 때까지 CNAME 구현에 대한 요청을 이행할 수 없습니다.
 
-1. [이 양식을 작성](assets/FPC_Request_Form.xlsx)한 다음 [CNAME 지원을 요청하는 Adobe Client Care 티켓을 열 때 포함](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C):
+1. [이 양식을 작성](assets/FPC_Request_Form.xlsx)한 다음 [CNAME 지원을 요청하는 Adobe Client Care 티켓을 열 때 포함](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=ko&#reference_ACA3391A00EF467B87930A450050077C):
 
    * [!DNL Adobe Target] 클라이언트 코드:
    * SSL 인증서 호스트 이름(예: `target.example.com target.example.org`):
