@@ -247,7 +247,7 @@ macOS 또는 Linux 명령줄 터미널에서 bash 및 curl >=7.49를 사용하�
 
 구현이 준비되면 아래와 같은 출력이 표시됩니다. 중요한 점은 모든 유효성 검사 상태 줄에 `✅`이(가) 아닌 `🚫`이(가) 표시된다는 것입니다. 각 Target 에지 CNAME 분할에는 요청된 인증서의 기본 호스트 이름과 일치하는 `CN=target.example.com`이(가) 표시됩니다(인증서의 추가 SAN 호스트 이름은 이 출력에 인쇄되지 않음).
 
-Adobe Target     +++ 세부 정보 보기
++++Adobe Target      세부 정보 보기
     
     &quot;bash {line-numbers=&quot;true&quot;}
     $ adobeTargetCnameValidation
@@ -255,7 +255,7 @@ Adobe Target     +++ 세부 정보 보기
     ✅ target.example.com 통과 DNS CNAME 유효성 검사
     ✅ target.example.com 통과 지역 IRL1에 대한 TLS 및 HTTP 응답 유효성 검사
     ✅ target.example.com 통과 지역 IND1에 대한 TLS 및 HTTP 응답 유효성 검사
-    ✅ target.example.com 통과 지역 SIN{8 target.example.com 응답 TLS 및 HTTP 응답 확인 지역 또는
+    ✅ target.example.com 통과 지역 SIN&lbrace;8 target.example.com 응답 TLS 및 HTTP 응답 확인 지역 또는
     ✅ target.example.com에 대한 유효성 검사 TLS 및 지역 HTTP 응답 유효성 검사 SYD에 대한 HTTP 응답 유효성 검사 
     ✅ target.example.com에 대한 TLS 및 HTTP 응답 유효성 검사 VA에 대한 VA
     ✅ target.example.com에 대한 TLS 및 HTTP 응답 유효성 검사 TYO
@@ -275,7 +275,7 @@ Adobe Target     +++ 세부 정보 보기
      target.example.com [edge shard: SYD-pool.data.adobedc.net] =====✅* 만료일: 2월 20일
     59 2026 GMT:59:* 발급자: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
     * 제목: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com===== 
-     shard: VA-pool.data.adobedc.net] =====✅* 만료일: 2월 20일
+     shard: VA-pool.data.adobedc.net&rbrack; =====✅* 만료일: 2월 20일
     59 2026 GMT:59:* 발급자: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
     * 제목: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com===== 
      target.example.com target.example.com edge shard: TYO-pool.data.adobedc =====✅* 만료 날짜: 2월 20일 23
@@ -283,7 +283,7 @@ Adobe Target     +++ 세부 정보 보기
     * 제목: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com========================================================== 추가 TLS/SSL 유효성 검사는 SSL Shopper:    
      https://www.sslshopper.com/ssl-checker.html#hostname=target.example.com 전 세계 DNS 전파를 확인하려면 whatsmydns.net을 참조하십시오.    🔎개의 DNS A 레코드:     https://whatsmydns.net/#A/target.example.com🔎 DNS CNAME 레코드: https://whatsmydns.net/#CNAME/target.example.com
     🔎&quot;
-    +++
++++
     
     
 
