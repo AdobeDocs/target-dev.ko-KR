@@ -315,7 +315,7 @@ macOS 또는 Linux 명령줄 터미널에서 bash 및 curl >=7.49를 사용하�
        🔎  DNS CNAME record:  https://whatsmydns.net/#CNAME/target.example.com 
    ```
 
-+++
+   +++
 
 >[!NOTE]
 >
