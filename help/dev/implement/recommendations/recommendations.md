@@ -168,4 +168,4 @@ function targetPageParams() {
 
 ## &#x200B;6. (선택 사항) 관리 API를 사용하여 [!UICONTROL Recommendations] 관리
 
-[에 대한 [!UICONTROL Recommendations] 관리 및 배달 API를 구성하고 사용하는 방법에 대해 알아보려면 ](../../before-administer/recs-api/overview.md)[!UICONTROL Target] API 사용[!UICONTROL Recommendations] 실습 안내서를 참조하십시오.
+[에 대한 [!UICONTROL Recommendations] 관리 및 배달 API를 구성하고 사용하는 방법에 대해 알아보려면 ](../../before-administer/recs-api/overview.md) [!UICONTROL Target] API 사용[!UICONTROL Recommendations] 실습 안내서를 참조하십시오.
