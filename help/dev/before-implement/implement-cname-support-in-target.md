@@ -4,7 +4,7 @@ description: '[!UICONTROL Adobe Client Care]과(와) 함께  [!DNL Adobe Target]
 title: Target에서 CNAME을 사용하는 방법
 feature: Privacy & Security
 exl-id: 5709df5b-6c21-4fea-b413-ca2e4912d6cb
-source-git-commit: d803ee9ddb58c73e089e938773ba264e03ef9b1b
+source-git-commit: 71a8a2d9d324cd31452a4400d76052432efbfdd4
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 1%
@@ -31,7 +31,7 @@ ht-degree: 1%
    >
    >Adobe의 인증 기관인 DigiCert는 이 단계가 완료될 때까지 인증서를 발급할 수 없습니다. 따라서 Adobe은 이 단계가 완료될 때까지 CNAME 구현에 대한 요청을 이행할 수 없습니다.
 
-1. [이 양식을 작성](assets/FPC_Request_Form.xlsx)한 다음 [CNAME 지원을 요청하는 Adobe Client Care 티켓을 열 때 포함](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=ko&#reference_ACA3391A00EF467B87930A450050077C):
+1. [이 양식을 작성](assets/FPC_Request_Form.xlsx)한 다음 [CNAME 지원을 요청하는 Adobe Client Care 티켓을 열 때 포함](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C):
 
    * [!DNL Adobe Target] 클라이언트 코드:
    * SSL 인증서 호스트 이름(예: `target.example.com target.example.org`):
