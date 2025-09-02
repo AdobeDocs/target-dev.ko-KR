@@ -4,7 +4,7 @@ description: '[!UICONTROL Adobe Client Care]과(와) 함께  [!DNL Adobe Target]
 title: Target에서 CNAME을 사용하는 방법
 feature: Privacy & Security
 exl-id: 5709df5b-6c21-4fea-b413-ca2e4912d6cb
-source-git-commit: 71a8a2d9d324cd31452a4400d76052432efbfdd4
+source-git-commit: 4f28018a55d484f45ebbbce319d580450d3db68b
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 1%
@@ -31,12 +31,13 @@ ht-degree: 1%
    >
    >Adobe의 인증 기관인 DigiCert는 이 단계가 완료될 때까지 인증서를 발급할 수 없습니다. 따라서 Adobe은 이 단계가 완료될 때까지 CNAME 구현에 대한 요청을 이행할 수 없습니다.
 
-1. [이 양식을 작성](assets/FPC_Request_Form.xlsx)한 다음 [CNAME 지원을 요청하는 Adobe Client Care 티켓을 열 때 포함](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=ko&#reference_ACA3391A00EF467B87930A450050077C):
+1. [이 양식을 작성](assets/FPC_Request_Form.xlsx)한 다음 [CNAME 지원을 요청하는 Adobe Client Care 티켓을 열 때 포함](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C):
 
    * [!DNL Adobe Target] 클라이언트 코드:
    * SSL 인증서 호스트 이름(예: `target.example.com target.example.org`):
    * SSL 인증서 구매자(Adobe이 적극 권장됨, FAQ 참조): Adobe/고객
    * 고객이 &quot;자체 인증서 가져오기&quot;(BYOC)라고도 하는 인증서를 구입할 경우 다음 추가 세부 정보를 작성하십시오.
+
       * 인증서 조직(예: Company Inc):
       * 인증서 조직 단위(선택 사항, 예: 마케팅):
       * 인증서 국가(예: 미국):
@@ -306,3 +307,4 @@ CNAME을 사용하는 경우 옵트아웃 링크에 &quot;client=`clientcode` �
 
 * CNAME 및 at.js 1.x가 있는 경우 QA 모드는 서드파티 쿠키를 기반으로 하므로 고정되지 않습니다. 해결 방법은 탐색하는 각 URL에 미리보기 매개 변수를 추가하는 것입니다. CNAME 및 at.js 2.x가 있는 경우 QA 모드는 고정적입니다.
 * CNAME을 사용하는 경우 [!DNL Target] 호출에 대한 쿠키 헤더의 크기가 증가할 수 있습니다. Adobe에서는 쿠키 크기를 8KB 미만으로 유지하는 것이 좋습니다.
+
