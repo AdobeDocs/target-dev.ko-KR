@@ -19,7 +19,7 @@ ht-degree: 1%
 ## [!DNL Target]에서 CNAME 지원 요청
 
 1. SSL 인증서에 필요한 호스트 이름 목록을 확인합니다(아래 FAQ 참조).
-1. [이 양식을 작성](/help/dev/implement/assets/FPC_Request_Form.xlsx)한 다음 [CNAME 지원을 요청하는 Client Care 티켓을 열기 [!DNL Adobe] 할 때 포함](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information#reference_ACA3391A00EF467B87930A450050077C):
+1. [이 양식을 작성](/help/dev/implement/assets/FPC_Request_Form.xlsx)한 다음 [CNAME 지원을 요청하는 Client Care 티켓을 열기 [!DNL Adobe] 할 때 포함](https://experienceleague.adobe.com/ko/docs/target/using/cmp-resources-and-contact-information#reference_ACA3391A00EF467B87930A450050077C):
 
    * [!DNL Adobe Target] 클라이언트 코드:
    * SSL 인증서 호스트 이름(예: `target.example.com target.example.org`):
