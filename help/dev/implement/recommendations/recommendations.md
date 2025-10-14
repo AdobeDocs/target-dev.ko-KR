@@ -23,7 +23,7 @@ ht-degree: 21%
 
 1. [사용자 동작을 캡처하고 권장 사항을 전달하는 데 사용할 웹 및 모바일 앱 표면에 [!UICONTROL Target]](#implement-target)을(를) 구현합니다.
 1. [사용자에게 추천할 제품 또는 콘텐츠의 [!UICONTROL Recommendations] 카탈로그를 설정](#set-up-your-recommendations-catalog)합니다.
-1. [행동 정보 및 컨텍스트를 ](#pass-behavioral-information-and-context)에 전달[!DNL Target Recommendations]하여 개인화된 추천을 제공할 수 있도록 합니다.
+1. [행동 정보 및 컨텍스트를 &#x200B;](#pass-behavioral-information-and-context)에 전달[!DNL Target Recommendations]하여 개인화된 추천을 제공할 수 있도록 합니다.
 1. [전역 제외 구성](#configure-global-exclusions).
 1. [설정 [!UICONTROL Recommendations]개 구성](#configure-recommendations-settings).
 1. (선택 사항) [관리 API를 사용하여 [!UICONTROL Recommendations]을(를) 관리](#administer-recommendations-using-admin-apis)합니다.
@@ -123,7 +123,7 @@ function targetPageParams() {
 }
 ```
 
-장바구니 기반 권장 사항에 대한 자세한 내용은 [ 비즈니스 실무자 안내서](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/base-the-recommendation-on-a-recommendation-key.html?lang=ko#cart-based)의 *[!DNL Adobe Target]장바구니 기반*&#x200B;을(를) 참조하십시오.
+장바구니 기반 권장 사항에 대한 자세한 내용은 [&#x200B; 비즈니스 실무자 안내서](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/base-the-recommendation-on-a-recommendation-key.html?lang=ko#cart-based)의 *[!DNL Adobe Target]장바구니 기반*&#x200B;을(를) 참조하십시오.
 
 ### 방문자 장바구니에 이미 있는 항목 제외
 
@@ -141,11 +141,11 @@ function targetPageParams() {
 
 ### 구매/주문 확인 페이지
 
-구매 이벤트가 발생하면 구매한 항목의 ID를 전달합니다. [at.js를 배포하는 방법 > 태그 관리자 없이 ](../client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md#track-conversions) 구현[ 문서에서 [!UICONTROL Target]전환 추적](../client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md)을 참조하십시오.
+구매 이벤트가 발생하면 구매한 항목의 ID를 전달합니다. [at.js를 배포하는 방법 > 태그 관리자 없이 &#x200B;](../client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md#track-conversions) 구현[&#x200B; 문서에서 [!UICONTROL Target]전환 추적](../client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md)을 참조하십시오.
 
 ## &#x200B;4. 전역 제외 구성
 
-방문자에게 추천하지 않으려는 글로벌 수준의 항목을 제외합니다. [ 비즈니스 실무자 안내서](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/exclusions.html?lang=ko)의 *[!DNL Adobe Target]제외*&#x200B;를 참조하십시오.
+방문자에게 추천하지 않으려는 글로벌 수준의 항목을 제외합니다. [&#x200B; 비즈니스 실무자 안내서](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/exclusions.html?lang=ko)의 *[!DNL Adobe Target]제외*&#x200B;를 참조하십시오.
 
 ## &#x200B;5. [!UICONTROL Recommendations] 설정 구성
 
@@ -162,10 +162,10 @@ function targetPageParams() {
 | 사용자 지정 글로벌 mbox | (선택 사항) [!UICONTROL Target] 활동을 제공하는 데 사용되는 사용자 지정 글로벌 mbox를 지정합니다. 기본적으로 [!UICONTROL Target]에서 사용하는 글로벌 mbox는 [!UICONTROL Recommendations]에 사용됩니다.<P>참고: 이 옵션은 [!UICONTROL Target] **[!UICONTROL Administration]** 페이지에서 설정됩니다. [!UICONTROL Target]을(를) 열고 **[!UICONTROL Administration]** > **[!UICONTROL Visual Experience Composer]**&#x200B;을(를) 클릭합니다. |
 | 업계 카테고리 | 업계 카테고리는 권장 사항 기준을 분류하는 데 사용됩니다. 이 정보는 팀원이 장바구니 페이지나 미디어 페이지에 가장 적합한 기준과 같이 특정 페이지에 적합한 기준을 찾는 데 도움이 됩니다. |
 | 호환되지 않는 기준 필터링 | 선택한 페이지가 필수 데이터를 전달하는 기준만 표시하려면 이 선택 사항을 사용하십시오. 모든 기준이 모든 페이지에서 올바르게 실행되는 것은 아닙니다. 페이지 또는 mbox는 호환될 현재 항목/현재 카테고리에 대한 `entity.id` 또는 `entity.categoryId`을(를) 전달해야 합니다. 일반적으로 호환 가능한 기준만 표시하는 것이 가장 좋습니다. 그러나 호환되지 않는 기준을 활동에 사용할 수 있게 하려면 이 선택 사항을 선택 취소하십시오.<P>태그 관리 솔루션을 사용하는 경우에는 이 선택 사항을 비활성화하는 것이 좋습니다.<P>이 옵션에 대한 자세한 내용은 [[!UICONTROL Recommendations] 비즈니스 실무자 안내서](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/recommendations-faq.html?lang=ko)의 *[!DNL Adobe Target]FAQ*&#x200B;를 참조하십시오. |
-| 기본 호스트 그룹 | 기본 호스트 그룹을 선택합니다.<P>호스트 그룹을 사용하여 카탈로그에 있는 사용 가능한 항목을 다양한 용도로 구분할 수 있습니다. 예를 들어 개발 및 프로덕션 환경, 다양한 브랜드 또는 다양한 지역용으로 호스트 그룹을 사용할 수 있습니다. 기본적으로 카탈로그 검색, 컬렉션 및 제외의 미리 보기 결과는 기본 호스트 그룹을 기반으로 합니다. (환경 필터를 사용하여 다른 호스트 그룹을 선택하여 결과를 미리 볼 수도 있습니다.) 기본적으로 항목을 만들거나 업데이트할 때 환경 ID를 지정하지 않는 한 새로 추가된 항목은 모든 호스트 그룹에서 사용할 수 있습니다. 전달되는 권장 사항은 요청에 지정된 호스트 그룹에 따라 다릅니다.<P>제품이 보이지 않는다면 올바른 호스트 그룹을 사용하고 있는지 확인하십시오. 예를 들어, 스테이징 환경을 사용하도록 권장 사항을 설정하고 호스트 그룹을 스테이징으로 설정하는 경우, 제품을 표시할 스테이징 환경에서 컬렉션을 다시 만들어야 합니다. 각 환경에서 사용 가능한 제품을 확인하려면 각 환경에서 카탈로그 검색을 사용하십시오. 선택한 환경(호스트 그룹)에 대한 [!UICONTROL Recommendations] 컬렉션 및 제외 콘텐츠를 미리 볼 수도 있습니다.<P>**참고:** 선택한 환경을 변경한 후 검색을 클릭하여 반환된 결과를 업데이트해야 합니다.<P> **[!UICONTROL The Environment]** 필터는 Target UI의 다음 위치에서 사용할 수 있습니다.<ul><li>카탈로그 검색(**[!UICONTROL Recommendations]** > **[!UICONTROL Catalog Search]**)</li><li>컬렉션 만들기 대화 상자(**[!UICONTROL Recommendations]** > **[!UICONTROL Collections]** > **[!UICONTROL Create New]**)</li><li>컬렉션 업데이트 대화 상자(**[!UICONTROL Recommendations]** > **[!UICONTROL Collections]** > **[!UICONTROL Edit]**)</li><li>제외 만들기 대화 상자(**[!UICONTROL Recommendations]** > **[!UICONTROL Exclusions]** > **[!UICONTROL Create New]**)</li><li>제외 업데이트 대화 상자(**[!UICONTROL Recommendations]** > **[!UICONTROL Exclusions]** > **[!UICONTROL Edit]**)</li></ul>자세한 내용은 [ 비즈니스 실무자 안내서](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=ko)의 *[!DNL Adobe Target]호스트*&#x200B;를 참조하십시오. |
+| 기본 호스트 그룹 | 기본 호스트 그룹을 선택합니다.<P>호스트 그룹을 사용하여 카탈로그에 있는 사용 가능한 항목을 다양한 용도로 구분할 수 있습니다. 예를 들어 개발 및 프로덕션 환경, 다양한 브랜드 또는 다양한 지역용으로 호스트 그룹을 사용할 수 있습니다. 기본적으로 카탈로그 검색, 컬렉션 및 제외의 미리 보기 결과는 기본 호스트 그룹을 기반으로 합니다. (환경 필터를 사용하여 다른 호스트 그룹을 선택하여 결과를 미리 볼 수도 있습니다.) 기본적으로 항목을 만들거나 업데이트할 때 환경 ID를 지정하지 않는 한 새로 추가된 항목은 모든 호스트 그룹에서 사용할 수 있습니다. 전달되는 권장 사항은 요청에 지정된 호스트 그룹에 따라 다릅니다.<P>제품이 보이지 않는다면 올바른 호스트 그룹을 사용하고 있는지 확인하십시오. 예를 들어, 스테이징 환경을 사용하도록 권장 사항을 설정하고 호스트 그룹을 스테이징으로 설정하는 경우, 제품을 표시할 스테이징 환경에서 컬렉션을 다시 만들어야 합니다. 각 환경에서 사용 가능한 제품을 확인하려면 각 환경에서 카탈로그 검색을 사용하십시오. 선택한 환경(호스트 그룹)에 대한 [!UICONTROL Recommendations] 컬렉션 및 제외 콘텐츠를 미리 볼 수도 있습니다.<P>**참고:** 선택한 환경을 변경한 후 검색을 클릭하여 반환된 결과를 업데이트해야 합니다.<P> **[!UICONTROL The Environment]** 필터는 Target UI의 다음 위치에서 사용할 수 있습니다.<ul><li>카탈로그 검색(**[!UICONTROL Recommendations]** > **[!UICONTROL Catalog Search]**)</li><li>컬렉션 만들기 대화 상자(**[!UICONTROL Recommendations]** > **[!UICONTROL Collections]** > **[!UICONTROL Create New]**)</li><li>컬렉션 업데이트 대화 상자(**[!UICONTROL Recommendations]** > **[!UICONTROL Collections]** > **[!UICONTROL Edit]**)</li><li>제외 만들기 대화 상자(**[!UICONTROL Recommendations]** > **[!UICONTROL Exclusions]** > **[!UICONTROL Create New]**)</li><li>제외 업데이트 대화 상자(**[!UICONTROL Recommendations]** > **[!UICONTROL Exclusions]** > **[!UICONTROL Edit]**)</li></ul>자세한 내용은 [&#x200B; 비즈니스 실무자 안내서](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=ko)의 *[!DNL Adobe Target]호스트*&#x200B;를 참조하십시오. |
 | 썸네일 기본 URL | 제품 카탈로그용의 기본 URL을 설정하면 썸네일 URL을 전달할 때, 제품의 썸네일을 지정할 때 상대 URL을 사용할 수 있습니다.<P>예:<P>`"entity.thumbnailURL=/Images/Homepage/product1.jpg"`<P>썸네일 기본 URL에 상대적인 URL을 설정합니다. |
 | [!UICONTROL Recommendations] API 토큰 | Download API와 같은 [!UICONTROL Recommendations] API 호출에서 이 토큰을 사용하십시오. |
 
 ## &#x200B;6. (선택 사항) 관리 API를 사용하여 [!UICONTROL Recommendations] 관리
 
-[에 대한 [!UICONTROL Recommendations] 관리 및 배달 API를 구성하고 사용하는 방법에 대해 알아보려면 ](../../before-administer/recs-api/overview.md) [!UICONTROL Target] API 사용[!UICONTROL Recommendations] 실습 안내서를 참조하십시오.
+[에 대한 [!UICONTROL Recommendations] 관리 및 배달 API를 구성하고 사용하는 방법에 대해 알아보려면 &#x200B;](../../before-administer/recs-api/overview.md) [!UICONTROL Target] API 사용[!UICONTROL Recommendations] 실습 안내서를 참조하십시오.

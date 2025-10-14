@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # at.js 개요를 사용하는 [!DNL Recommendations] 구현 패턴
 
-이 구현 패턴은 [!DNL Adobe Target Recommendations]at.js JavaScript 라이브러리[를 사용할 때 ](/help/dev/implement/client-side/atjs/how-atjs-works/how-atjs-works.md) 구현을 이해하고 만드는 데 도움이 됩니다.
+이 구현 패턴은 [!DNL Adobe Target Recommendations]at.js JavaScript 라이브러리[를 사용할 때 &#x200B;](/help/dev/implement/client-side/atjs/how-atjs-works/how-atjs-works.md) 구현을 이해하고 만드는 데 도움이 됩니다.
 
 이미지를 클릭하여 전체 화면으로 확장합니다.
 

@@ -27,7 +27,7 @@ alloy("sendEvent", {
   });
 ```
 
-이 예에서 `result.propositions`은(는) 존재하는 경우 이벤트와 관련된 개인화 제안이 포함된 배열입니다. [의 콘텐츠에 대한 자세한 내용은 ](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)개인화 콘텐츠 렌더링`result.propositions.`을 참조하십시오
+이 예에서 `result.propositions`은(는) 존재하는 경우 이벤트와 관련된 개인화 제안이 포함된 배열입니다. [의 콘텐츠에 대한 자세한 내용은 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)개인화 콘텐츠 렌더링`result.propositions.`을 참조하십시오
 
 웹 SDK에서 자동으로 렌더링된 모든 명제에서 모든 활동 이름을 수집하여 단일 배열로 푸시하려는 경우 그런 다음 단일 스토리지를 서드파티로 전송할 수 있습니다. 이 경우:
 

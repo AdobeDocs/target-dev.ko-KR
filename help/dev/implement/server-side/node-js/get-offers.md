@@ -70,7 +70,7 @@ TargetClient.getOffers(options: Object): Promise
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |
 | status | 숫자 | HTTP 상태 코드 |
-| message | 문자열 | 응답에 대한 메시지. 예를 들어 응답이 [장치 ](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md) 또는 서버측에서 결정되었는지 여부를 나타낼 수 있습니다 |
+| message | 문자열 | 응답에 대한 메시지. 예를 들어 응답이 [장치 &#x200B;](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md) 또는 서버측에서 결정되었는지 여부를 나타낼 수 있습니다 |
 | remoteMbox | 배열 | Decisioning 메서드가 `on-device`인 경우 온디바이스에서 완전히 결정할 수 없는 mbox 이름 배열이 제공됩니다. 즉, [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) 요청이 필요합니다. |
 
 ## 예

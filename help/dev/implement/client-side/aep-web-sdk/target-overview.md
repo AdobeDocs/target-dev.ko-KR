@@ -15,9 +15,9 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->[!DNL Target]Target을 at.js 2.x에서 Experience Platform Web SDK으로 마이그레이션[!DNL Experience Platform Web SDK] 자습서를 사용하여 [ 구현을 ](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=ko)&#x200B;(으)로 마이그레이션하는 방법을 알아봅니다.
+>[!DNL Target]Target을 at.js 2.x에서 Experience Platform Web SDK으로 마이그레이션[!DNL Experience Platform Web SDK] 자습서를 사용하여 [&#x200B; 구현을 &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=ko)&#x200B;(으)로 마이그레이션하는 방법을 알아봅니다.
 >
->[!DNL Target]Web SDK에서 Adobe Experience Cloud 구현[ 자습서를 사용하여 처음으로 ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko)을(를) 구현하는 방법을 알아봅니다. [!DNL Target]에 대한 자세한 내용은 [Experience Platform Web SDK으로 Target 설정](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=ko)이라는 자습서 섹션을 참조하십시오.
+>[!DNL Target]Web SDK에서 Adobe Experience Cloud 구현[&#x200B; 자습서를 사용하여 처음으로 &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko)을(를) 구현하는 방법을 알아봅니다. [!DNL Target]에 대한 자세한 내용은 [Experience Platform Web SDK으로 Target 설정](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=ko)이라는 자습서 섹션을 참조하십시오.
 
 다음 기능이 테스트되었으며 현재 [!DNL Target]에서 지원됩니다.
 
@@ -51,7 +51,7 @@ ht-degree: 5%
 
 [!DNL Target]을(를) 사용하려면 다음을 수행하십시오.
 
-1. 적절한 클라이언트 코드를 사용하여 [!DNL Target]데이터스트림[에서 ](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/overview)을(를) 사용하도록 설정하십시오.
+1. 적절한 클라이언트 코드를 사용하여 [!DNL Target]데이터스트림[에서 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/overview)을(를) 사용하도록 설정하십시오.
 1. 이벤트에 `renderDecisions` 옵션을 추가합니다.
 
 그런 다음 선택적으로 다음 옵션을 추가할 수도 있습니다.

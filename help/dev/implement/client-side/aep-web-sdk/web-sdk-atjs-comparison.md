@@ -436,7 +436,7 @@ adobe.target.getOffers({...})
   .catch(error => console.log("Error", error));
 ```
 
-`applyOffers`전용 설명서[에서 ](https://experienceleague.adobe.com/ko/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffers-atjs-2) 명령에 대해 자세히 알아보세요.
+`applyOffers`전용 설명서[에서 &#x200B;](https://experienceleague.adobe.com/ko/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffers-atjs-2) 명령에 대해 자세히 알아보세요.
 
 ### [!DNL Platform Web SDK] 사용 중
 
@@ -450,7 +450,7 @@ alloy("applyPropositions", {
 });
 ```
 
-`applyPropositions`전용 설명서[에서 ](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/rendering-personalization-content) 명령에 대해 자세히 알아보세요.
+`applyPropositions`전용 설명서[에서 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/rendering-personalization-content) 명령에 대해 자세히 알아보세요.
 
 ## 이벤트 추적 방법
 
@@ -869,7 +869,7 @@ adobe.target.getOffers({
 }
 ```
 
-[!DNL Analytics] 페이로드(`tnta` 토큰)는 [!DNL Analytics]데이터 삽입 API[를 사용하여 ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) 히트에 포함해야 합니다.
+[!DNL Analytics] 페이로드(`tnta` 토큰)는 [!DNL Analytics]데이터 삽입 API[를 사용하여 &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) 히트에 포함해야 합니다.
 
 #### [!DNL Analytics] 서버측 로깅
 
@@ -894,7 +894,7 @@ at.js 설정에서 [!DNL Analytics]을(를) 설정하거나 `analyticsLogging: s
 
 ![Analytics 클라이언트 측 로깅 워크플로를 보여 주는 다이어그램](/help/dev/implement/client-side/aep-web-sdk/assets/analytics-disabled-datastream-config.png)
 
-고객은 [!DNL Analytics] 명령을 체인화하고 결과 제안 배열을 반복하여 `tnta`데이터 삽입 API[!DNL Analytics]를 사용하여 [과(와) 공유해야 하는 ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) 토큰(`sendEvent`)에 액세스할 수 있습니다.
+고객은 [!DNL Analytics] 명령을 체인화하고 결과 제안 배열을 반복하여 `tnta`데이터 삽입 API[!DNL Analytics]를 사용하여 [과(와) 공유해야 하는 &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) 토큰(`sendEvent`)에 액세스할 수 있습니다.
 
 **예**
 

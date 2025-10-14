@@ -18,4 +18,4 @@ at.js 라이브러리는 [!DNL Adobe Target]의 클라이언트측 구현을 위
 
 * [at.js 작동 방식](/help/dev/implement/client-side/atjs/how-atjs-works/how-atjs-works.md)
 * [at.js에서 플리커를 관리하는 방법](/help/dev/implement/client-side/atjs/how-atjs-works/manage-flicker-with-atjs.md)
-* [ [!DNL Target]과(와) 통합되는 at.js의 지원 상태입니다.](/help/dev/implement/client-side/atjs/how-atjs-works/target-atjs-integrations.md)
+* [&#x200B; [!DNL Target]과(와) 통합되는 at.js의 지원 상태입니다.](/help/dev/implement/client-side/atjs/how-atjs-works/target-atjs-integrations.md)

@@ -115,7 +115,7 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 ## 사용자가 [!DNL Adobe Target]에서 분석 페이로드를 검색합니다.
 
-사용자는 지정된 mbox에 대한 [!DNL Adobe Analytics] 페이로드를 검색한 다음 [!DNL Adobe Analytics]데이터 삽입 API[를 통해 ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md)에 보낼 수 있습니다. [!DNL Adobe Target] 요청이 실행되면 `client_side`을(를) 요청의 `logging` 필드에 전달합니다. 이 요청은 지정된 mbox가 보고 소스로 [!DNL Analytics]을(를) 사용하는 활동에 있는 경우 페이로드를 반환합니다.
+사용자는 지정된 mbox에 대한 [!DNL Adobe Analytics] 페이로드를 검색한 다음 [!DNL Adobe Analytics]데이터 삽입 API[를 통해 &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md)에 보낼 수 있습니다. [!DNL Adobe Target] 요청이 실행되면 `client_side`을(를) 요청의 `logging` 필드에 전달합니다. 이 요청은 지정된 mbox가 보고 소스로 [!DNL Analytics]을(를) 사용하는 활동에 있는 경우 페이로드를 반환합니다.
 
 >[!BEGINTABS]
 

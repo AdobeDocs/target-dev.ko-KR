@@ -65,7 +65,7 @@ at.js 2.[Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-
 >
 >또는
 >
->at.js 2.[!DNL Target] UI를 사용하여 *x*&#x200B;을(를) 배포하고 선택한 [메서드를 사용하여 ](/help/dev/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md)을(를) 배포합니다.
+>at.js 2.[!DNL Target] UI를 사용하여 *x*&#x200B;을(를) 배포하고 선택한 [메서드를 사용하여 &#x200B;](/help/dev/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md)을(를) 배포합니다.
 
 ## 사용 중단된 at.js 함수
 

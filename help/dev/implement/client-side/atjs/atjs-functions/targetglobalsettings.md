@@ -186,7 +186,7 @@ ht-degree: 18%
 * **기본값**: true(at.js 버전 1.6.2부터 true)
 * **설명**: `<clientCode>.tt.omtrdc.net` 도메인을 사용할지 `mboxedge<clusterNumber>.tt.omtrdc.net` 도메인을 사용할지 여부를 나타냅니다.
 
-  이 값이 true이면 `mboxedge<clusterNumber>.tt.omtrdc.net` 도메인이 쿠키에 저장됩니다. at.js 1.8.2 및 at.js 2.3.1 이전 버전의 at.js를 사용할 때 현재 [CNAME](/help/dev/before-implement/implement-cname-support-in-target.md)에서 작동하지 않습니다. 문제가 발생하면 [at.js를 ](/help/dev/implement/client-side/atjs/target-atjs-versions.md)최신 지원되는 버전으로 업데이트하는 것이 좋습니다.
+  이 값이 true이면 `mboxedge<clusterNumber>.tt.omtrdc.net` 도메인이 쿠키에 저장됩니다. at.js 1.8.2 및 at.js 2.3.1 이전 버전의 at.js를 사용할 때 현재 [CNAME](/help/dev/before-implement/implement-cname-support-in-target.md)에서 작동하지 않습니다. 문제가 발생하면 [at.js를 &#x200B;](/help/dev/implement/client-side/atjs/target-atjs-versions.md)최신 지원되는 버전으로 업데이트하는 것이 좋습니다.
 
 ### overrideMboxEdgeServerTimeout
 

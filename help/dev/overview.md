@@ -26,7 +26,7 @@ ht-degree: 6%
 >
 >* [*[!DNL Adobe Target] 튜토리얼&#x200B;*](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html?lang=ko-KR){target=_blank}
 >
->릴리스 정보는 [ 비즈니스 실무자 안내서](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html?lang=ko){target=_blank}의 *[!DNL Adobe Target]Target 릴리스 정보(현재)*&#x200B;를 참조하십시오.
+>릴리스 정보는 [&#x200B; 비즈니스 실무자 안내서](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html?lang=ko){target=_blank}의 *[!DNL Adobe Target]Target 릴리스 정보(현재)*&#x200B;를 참조하십시오.
 
 ## 구현 시작하기
 

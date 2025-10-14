@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ### [!DNL Analytics] 클라이언트측 로깅 사용 {#enable-analytics-client-side-logging}
 
-구현에 대해 [!DNL Analytics] 클라이언트측 로깅을 사용하도록 설정하려면 [!DNL Adobe Analytics]데이터스트림[에서 ](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/overview) 구성을 사용하지 않도록 설정해야 합니다.
+구현에 대해 [!DNL Analytics] 클라이언트측 로깅을 사용하도록 설정하려면 [!DNL Adobe Analytics]데이터스트림[에서 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/overview) 구성을 사용하지 않도록 설정해야 합니다.
 
 ![Analytics 데이터 스트림 구성 사용 안 함](/help/dev/implement/a4t/assets/disable-analytics-datastream.png)
 
@@ -202,7 +202,7 @@ ht-degree: 0%
 }
 ```
 
-`scopeDetails.characteristics.analyticsToken`과(와) `scopeDetails.characteristics.analyticsDisplayToken`(표시된 콘텐츠의 경우) 및 `scopeDetails.characteristics.analyticsClickToken`(클릭 지표의 경우)의 모든 값은 `tnta`데이터 삽입 API[ 호출에서 ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) 태그로 수집 및 포함되어야 하는 A4T 페이로드입니다.
+`scopeDetails.characteristics.analyticsToken`과(와) `scopeDetails.characteristics.analyticsDisplayToken`(표시된 콘텐츠의 경우) 및 `scopeDetails.characteristics.analyticsClickToken`(클릭 지표의 경우)의 모든 값은 `tnta`데이터 삽입 API[&#x200B; 호출에서 &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) 태그로 수집 및 포함되어야 하는 A4T 페이로드입니다.
 
 >[!IMPORTANT]
 >
@@ -425,10 +425,10 @@ function getClickAnalyticsPayload(proposition) {
 1. 페이지에 콘텐츠 변경 사항을 적용합니다.
 1. `decisioning.propositionDisplay` 알림 이벤트 보내기;
 1. SDK 응답에서 [!DNL Analytics] 표시 토큰을 수집하고 [!DNL Analytics] 히트에 대한 페이로드를 구성합니다.
-1. [!DNL Analytics]데이터 삽입 API[를 사용하여 페이로드를 ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md)에 보냅니다.
+1. [!DNL Analytics]데이터 삽입 API[를 사용하여 페이로드를 &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md)에 보냅니다.
 1. 전달된 제안에 클릭 지표가 있는 경우 클릭이 수행될 때 `decisioning.propositionInteract` 알림 이벤트를 전송하도록 클릭 수신기를 설정해야 합니다. `onBeforeEventSend` 이벤트를 가로채면 다음 작업이 발생하도록 `decisioning.propositionInteract` 처리기를 구성해야 합니다.
    1. [!DNL Analytics]에서 클릭 `xdm._experience.decisioning.propositions`개 토큰 수집 중
-   1. [!DNL Analytics]데이터 삽입 API[!DNL Analytics]를 통해 수집된 [ 페이로드와 함께 클릭 ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) 히트를 보내는 중;
+   1. [!DNL Analytics]데이터 삽입 API[!DNL Analytics]를 통해 수집된 [&#x200B; 페이로드와 함께 클릭 &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) 히트를 보내는 중;
 
 ```javascript
 alloy("sendEvent", {
