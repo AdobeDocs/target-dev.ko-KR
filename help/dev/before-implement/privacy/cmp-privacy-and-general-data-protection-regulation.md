@@ -17,7 +17,7 @@ ht-degree: 62%
 
 ## 개인정보 보호 및 일반 데이터 보호 규정(GDPR) 개요
 
-2018년 5월 25일 자로 유럽 연합의 GDPR이 발효되었습니다. 이 규정의 의미에 대한 자세한 내용은 [GDPR 및 비즈니스](https://business.adobe.com/privacy/general-data-protection-regulation.html)를 참조하십시오.
+2018년 5월 25일 자로 유럽 연합의 GDPR이 발효되었습니다. 이 규정의 의미에 대한 자세한 내용은 [GDPR 및 비즈니스](https://business.adobe.com/kr/privacy/general-data-protection-regulation.html)를 참조하십시오.
 
 Adobe가 기업에 소프트웨어 및 서비스를 제공할 때 Adobe는 이러한 서비스를 제공하는 과정에서 처리하고 저장하는 개인 데이터에 대한 데이터 처리자 역할을 합니다. Adobe는 데이터 처리자로서 귀사의 허가 및 지침(예: Adobe와의 계약에 명시된 내용)에 따라 개인 데이터를 처리합니다.
 
