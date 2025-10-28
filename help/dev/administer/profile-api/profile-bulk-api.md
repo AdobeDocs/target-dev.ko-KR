@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API]을(를) 
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: dae198fd8ef3fc8473ad31807c146802339b1832
+source-git-commit: 38ed32560170e5a8f472aa191bb5a24d4e13cde7
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 7%
+source-wordcount: '1078'
+ht-degree: 6%
 
 ---
 
@@ -49,13 +49,13 @@ ht-degree: 7%
 
 프로필 데이터를 대량으로 업데이트하려면 배치 파일을 만듭니다. 배치 파일은 다음 샘플 파일과 유사한 쉼표로 구분된 값이 있는 텍스트 파일입니다.
 
-``` ```
+``````
 batch=pcId,param1,param2,param3,param4
 123,value1
 124,value1,,,value4
 125,,value2
 126,value1,value2,value3,value4
-``` ```
+``````
 
 >[!NOTE]
 >
@@ -77,9 +77,9 @@ batch=pcId,param1,param2,param3,param4
 
 파일을 처리할 [!DNL Target] Edge Server에 대한 HTTP POST 요청을 만듭니다. 다음은 curl 명령을 사용한 batch.txt 파일에 대한 샘플 HTTP POST 요청입니다.
 
-``` ```
+``````
 curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
-``` ```
+``````
 
 여기서
 
@@ -144,3 +144,25 @@ http://mboxedge45.tt.omtrdc.net/m2/demo/profile/batchStatus?batchId=demo-1701473
     <failedUpdates>0</failedUpdates>
 </response>
 ```
+
+## [!DNL Bulk Profile Update API]의 빈 값 처리에 대한 설명
+
+[!DNL Target] [!DNL Bulk Profile Update API]&#x200B;(v1 또는 v2)을 사용할 때 시스템에서 빈 매개 변수 또는 특성 값을 처리하는 방법을 이해하는 것이 중요합니다.
+
+### 예상 동작
+
+기존 매개 변수 또는 속성에 대해 빈 값(&quot;&quot;, null 또는 누락 필드)을 전송해도 프로필 저장소에서 해당 값이 재설정되거나 삭제되지 않습니다. 이것은 계획적인 것이다.
+
+빈 값은 무시됩니다. API는 불필요한 업데이트 또는 의미 없는 업데이트를 방지하기 위해 처리 중에 빈 값을 필터링합니다.
+
+**기존 데이터를 지우지 않습니다**: 매개 변수에 이미 값이 있는 경우 빈 값을 보내면 값이 변경되지 않습니다.
+
+**비어 있는 일괄 처리를 건너뜁니다**: 일괄 처리에 비어 있거나 null 값만 포함되어 있으면 일괄 처리가 완전히 무시되고 업데이트가 적용되지 않습니다.
+
+### 추가 참고 사항
+
+이 동작은 [!DNL Bulk Profile Update API]의 v1과 v2 모두에 적용됩니다.
+
+빈 값을 전송하여 특성을 지우거나 제거하려고 시도해도 효과가 없습니다.
+
+명시적 속성 제거에 대한 지원은 API의 향후 버전(v3)에 대해 계획되어 있지만 현재 사용할 수 없습니다.
