@@ -14,7 +14,7 @@ ht-degree: 2%
 
 차단 목록에 추가하다 API라고도 하는 모델 API를 사용하면 사용자가 [!UICONTROL Automated Personalization]&#x200B;(AP) 및 [!DNL Auto-Target]&#x200B;(AT) 활동에 대한 머신 러닝 모델에 사용되는 기능 목록을 보고 관리할 수 있습니다. AP 또는 AT 활동용 모델에서 기능을 사용하지 않으려면 모델 API를 사용하여 해당 기능을 &quot;사용자 차단 목록&quot;에 추가할 수 있습니다.
 
-**[!UICONTROL blocklist]**&#x200B;은(는) [!DNL Adobe Target]이(가) 해당 기계 학습 모델에서 제외할 기능 집합을 정의합니다. 기능에 대한 자세한 내용은 [사용한 데이터 [!DNL Target] 머신 러닝 알고리즘](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/ap-data.html)을 참조하십시오.
+**[!UICONTROL blocklist]**&#x200B;은(는) [!DNL Adobe Target]이(가) 해당 기계 학습 모델에서 제외할 기능 집합을 정의합니다. 기능에 대한 자세한 내용은 [사용한 데이터 [!DNL Target] 머신 러닝 알고리즘](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/ap-data.html?lang=ko)을 참조하십시오.
 
 차단 목록은 활동(활동 수준)별로 정의되거나 [!DNL Target] 계정(전역 수준) 내의 모든 활동에 대해 정의될 수 있습니다.
 
@@ -100,7 +100,7 @@ GET https://mc.adobe.io/<tenant>/target/models/features/<campaignId>
 >
 >활동의 활동 ID를 찾으려면 [!DNL Target] UI에서 활동 목록으로 이동합니다. 관심 있는 활동을 클릭합니다. 활동 ID는 결과 활동 개요 페이지의 본문과 해당 페이지의 URL 끝에 표시됩니다.
 
-**[!UICONTROL externalName]**&#x200B;은(는) 기능에 대한 알기 쉬운 이름입니다. 이 값은 [!DNL Target]에 의해 만들어지며 시간이 지남에 따라 변경될 수 있습니다. 사용자는 [Personalization 인사이트 보고서](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html)에서 사용자에게 친숙한 이러한 이름을 볼 수 있습니다.
+**[!UICONTROL externalName]**&#x200B;은(는) 기능에 대한 알기 쉬운 이름입니다. 이 값은 [!DNL Target]에 의해 만들어지며 시간이 지남에 따라 변경될 수 있습니다. 사용자는 [Personalization 인사이트 보고서](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html?lang=ko)에서 사용자에게 친숙한 이러한 이름을 볼 수 있습니다.
 
 **[!UICONTROL internalName]**&#x200B;은(는) 기능의 실제 식별자입니다. 또한 [!DNL Target]에 의해 만들어졌지만 변경할 수 없습니다. 이 값은 차단 목록에 추가하다와 같은 기능을 식별하기 위해 참조해야 하는 값입니다.
 

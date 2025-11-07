@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # at.js에 대한 [!UICONTROL On-device decisioning]
 
-버전 2.5.0부터 at.js는 [!UICONTROL on-device decisioning]을(를) 제공합니다. [!UICONTROL On-device decisioning]을(를) 사용하면 브라우저에서 [A/B 테스트](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html) 및 [경험 타깃팅](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html)&#x200B;(XT) 활동을 캐시하여 [!DNL Adobe Target] Edge Network에 대한 차단 네트워크 요청 없이 메모리 내 결정을 수행할 수 있습니다.
+버전 2.5.0부터 at.js는 [!UICONTROL on-device decisioning]을(를) 제공합니다. [!UICONTROL On-device decisioning]을(를) 사용하면 브라우저에서 [A/B 테스트](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=ko) 및 [경험 타깃팅](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=ko)&#x200B;(XT) 활동을 캐시하여 [!DNL Adobe Target] Edge Network에 대한 차단 네트워크 요청 없이 메모리 내 결정을 수행할 수 있습니다.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ ht-degree: 4%
 * **매우 빠른 의사 결정과 경험을 제공합니다.** 버킷팅 및 의사 결정은 네트워크 요청을 차단하지 않도록 메모리 내 및 브라우저에서 수행됩니다.
 * **응용 프로그램 성능을 향상시킵니다.** 실험을 실행하고 최종 사용자 환경을 손상시키지 않고 고객 및 사용자에게 개인화를 제공합니다.
 * **Google 사이트 품질 점수를 개선합니다.** 메모리에서 발생하는 의사 결정을 통해 온라인 비즈니스의 Google 사이트 품질 점수를 향상시켜 소비자가 더 많이 검색할 수 있도록 하십시오.
-* **실시간 분석에서 알아봅니다.** A4T([Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html)) 보고를 통해 활동 성과를 실시간으로 확인할 수 있습니다. A4T를 사용하면 중요한 순간에 전략을 피벗할 수 있습니다.
+* **실시간 분석에서 알아봅니다.** A4T([Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=ko)) 보고를 통해 활동 성과를 실시간으로 확인할 수 있습니다. A4T를 사용하면 중요한 순간에 전략을 피벗할 수 있습니다.
 
 ## 지원되는 기능
 
@@ -56,7 +56,7 @@ ht-degree: 4%
 
 Server-side만 at.js 2.5.0+가 구현되고 웹 속성에 배포되는 경우 기본적으로 설정되는 기본 의사 결정 방법입니다.
 
-서버측만 기본 구성으로 사용하면 모든 결정이 [!DNL Target] 에지 네트워크에서 수행되며, 여기에는 차단 서버 호출이 포함됩니다. 이 접근 방식은 점진적 지연을 발생시킬 수 있지만, [!DNL Target]권장 사항[, &#x200B;](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html)Automated Personalization[(AP) 및 &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html)자동 타기팅[&#x200B; 활동을 포함하는 &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html)의 기계 학습 기능을 적용할 수 있는 기능을 제공하는 것과 같은 중요한 이점도 제공합니다.
+서버측만 기본 구성으로 사용하면 모든 결정이 [!DNL Target] 에지 네트워크에서 수행되며, 여기에는 차단 서버 호출이 포함됩니다. 이 접근 방식은 점진적 지연을 발생시킬 수 있지만, [!DNL Target]권장 사항[, &#x200B;](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html?lang=ko)Automated Personalization[(AP) 및 &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=ko)자동 타기팅[&#x200B; 활동을 포함하는 &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html?lang=ko)의 기계 학습 기능을 적용할 수 있는 기능을 제공하는 것과 같은 중요한 이점도 제공합니다.
 
 또한 세션 및 채널에서 지속되는 [!DNL Target]의 사용자 프로필을 사용하여 개인화된 경험을 향상하면 비즈니스에 강력한 결과를 제공할 수 있습니다.
 
@@ -72,7 +72,7 @@ Server-side만 at.js 2.5.0+가 구현되고 웹 속성에 배포되는 경우 �
 
 | 단계 | 설명 |
 | --- | --- |
-| 1 | Experience Cloud 방문자 ID는 [Adobe Experience Cloud ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?)에서 검색됩니다. |
+| 1 | Experience Cloud 방문자 ID는 [Adobe Experience Cloud ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko&)에서 검색됩니다. |
 | 2 | at.js 라이브러리는 동기식으로 로드되며 문서 본문을 숨깁니다.<br />   at.js 라이브러리는 페이지에 구현된 코드 조각 사전 숨김(선택 사항)을 사용하여 비동기식으로 로드할 수도 있습니다. |
 | 3 | at.js 라이브러리는 깜박임을 방지하기 위해 본문을 숨깁니다. |
 | 4 | (ECID, 고객 ID, 사용자 지정 매개 변수, 사용자 프로필 등과 같은) 구성된 모든 매개 변수를 포함하는 페이지 로드 요청이 이루어집니다. |
@@ -111,7 +111,7 @@ Server-side만 at.js 2.5.0+가 구현되고 웹 속성에 배포되는 경우 �
 
 | 단계 | 설명 |
 | --- | --- |
-| 1 | Experience Cloud 방문자 ID는 [Adobe Experience Cloud ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html)에서 검색됩니다. |
+| 1 | Experience Cloud 방문자 ID는 [Adobe Experience Cloud ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)에서 검색됩니다. |
 | 2 | at.js 라이브러리는 동기식으로 로드되며 문서 본문을 숨깁니다.<br />at.js 라이브러리는 페이지에 구현된 사전에 숨기는 코드 조각(선택 사항)을 사용하여 비동기식으로 로드할 수도 있습니다. |
 | 3 | at.js 라이브러리는 깜박임을 방지하기 위해 본문을 숨깁니다. |
 | 4 | at.js 라이브러리는 방문자에게 가장 가까운 Akamai CDN에서 JSON 규칙 아티팩트를 검색하도록 요청합니다. |
@@ -138,7 +138,7 @@ Server-side만 at.js 2.5.0+가 구현되고 웹 속성에 배포되는 경우 �
 
 | 단계 | 설명 |
 | --- | --- |
-| 1 | Experience Cloud 방문자 ID는 [Adobe Experience Cloud ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html)에서 검색됩니다. |
+| 1 | Experience Cloud 방문자 ID는 [Adobe Experience Cloud ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)에서 검색됩니다. |
 | 2 | at.js 라이브러리는 동기식으로 로드되며 문서 본문을 숨깁니다.<br />at.js 라이브러리는 페이지에 구현된 사전에 숨기는 코드 조각(선택 사항)을 사용하여 비동기식으로 로드할 수도 있습니다. |
 | 3 | at.js 라이브러리는 깜박임을 방지하기 위해 본문을 숨깁니다. |
 | 4 | at.js 라이브러리는 JSON 규칙 아티팩트를 해석하고 메모리에서 결정을 실행하여 경험을 검색합니다. |
@@ -173,7 +173,7 @@ JSON 규칙 아티팩트에는 mbox에 실행 중인 서버측 활동 또는 [!U
 
 | 단계 | 설명 |
 | --- | --- |
-| 1 | Experience Cloud 방문자 ID는 [Adobe Experience Cloud ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html)에서 검색됩니다. |
+| 1 | Experience Cloud 방문자 ID는 [Adobe Experience Cloud ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)에서 검색됩니다. |
 | 2 | at.js 라이브러리는 동기식으로 로드되며 문서 본문을 숨깁니다.<br />at.js 라이브러리는 페이지에 구현된 사전에 숨기는 코드 조각(선택 사항)을 사용하여 비동기식으로 로드할 수도 있습니다. |
 | 3 | at.js 라이브러리는 깜박임을 방지하기 위해 본문을 숨깁니다. |
 | 4 | ECID, 고객 ID, 사용자 지정 매개 변수, 사용자 프로필 등과 같은 구성된 모든 매개 변수를 포함하여 [!DNL Adobe Target] Edge Network에 대한 페이지 로드 요청이 수행됩니다. |
@@ -203,7 +203,7 @@ JSON 규칙 아티팩트에는 mbox에 실행 중인 서버측 활동 또는 [!U
 
 | 단계 | 설명 |
 | --- | --- |
-| 1 | Experience Cloud 방문자 ID는 [Adobe Experience Cloud ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html)에서 검색됩니다. |
+| 1 | Experience Cloud 방문자 ID는 [Adobe Experience Cloud ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)에서 검색됩니다. |
 | 2 | at.js 라이브러리는 동기식으로 로드되며 문서 본문을 숨깁니다.<br />at.js 라이브러리는 페이지에 구현된 사전에 숨기는 코드 조각(선택 사항)을 사용하여 비동기식으로 로드할 수도 있습니다. |
 | 3 | at.js 라이브러리는 깜박임을 방지하기 위해 본문을 숨깁니다. |
 | 4 | 경험 검색을 요청합니다. |
@@ -223,7 +223,7 @@ JSON 규칙 아티팩트에는 mbox에 실행 중인 서버측 활동 또는 [!U
 
 >[!NOTE]
 >
->온디바이스 의사 결정 토글을 활성화하거나 비활성화하려면 관리자 또는 승인자 [사용자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html)이 있어야 합니다.
+>온디바이스 의사 결정 토글을 활성화하거나 비활성화하려면 관리자 또는 승인자 [사용자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=ko)이 있어야 합니다.
 
 1. **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]**&#x200B;을(를) 클릭합니다.
 1. **[!UICONTROL Account details]**&#x200B;에서 **[!UICONTROL On-Device Decisioning]** 토글을 &quot;켜짐&quot; 위치로 밉니다.

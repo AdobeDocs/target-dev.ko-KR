@@ -16,7 +16,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->UI를 통해 [!DNL Target]을(를) 관리하려면 [Adobe Target 비즈니스 실무자 안내서&#x200B;**&#x200B;의 &#x200B;](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en)관리 섹션을 참조하십시오.
+>UI를 통해 [!DNL Target]을(를) 관리하려면 [Adobe Target 비즈니스 실무자 안내서&#x200B;**&#x200B;의 &#x200B;](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=ko)관리 섹션을 참조하십시오.
 >
 >관리 API 및 프로필 API는 종종 총괄적으로(&quot;관리 및 프로필 API&quot;) 참조되지만, 별도로(&quot;관리 API&quot; 및 &quot;프로필 API&quot;) 참조할 수도 있습니다. Recommendations API는 [!DNL Target] 관리 API의 특정 구현입니다.
 
@@ -74,11 +74,11 @@ Postman은 API 호출을 쉽게 실행할 수 있는 애플리케이션입니다
 
 활동을 통해 사용자에 대한 콘텐츠를 테스트하거나 개인화할 수 있습니다. 활동은 다음 유형 중 하나일 수 있습니다.
 
-* [A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html)
-* [경험 타겟팅(XT)](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html)
-* [추천](https://experienceleague.adobe.com/docs/target/using/activities/recommendations-activity.html)
-* [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html)
-* [MVT(다변량 테스트)](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html)
+* [A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=ko)
+* [경험 타겟팅(XT)](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=ko)
+* [추천](https://experienceleague.adobe.com/docs/target/using/activities/recommendations-activity.html?lang=ko)
+* [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=ko)
+* [MVT(다변량 테스트)](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html?lang=ko)
 
 ## 일괄 업데이트
 
