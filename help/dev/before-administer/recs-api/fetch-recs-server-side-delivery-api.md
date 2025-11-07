@@ -6,7 +6,7 @@ kt: 3815
 thumbnail: null
 author: Judy Kim
 exl-id: 9b391f42-2922-48e0-ad7e-10edd6125be6
-source-git-commit: 526445fccee9b778b7ac0d7245338f235f11d333
+source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 1%
@@ -42,9 +42,9 @@ Adobe Target용 [배달 API](/help/dev/implement/delivery-api/overview.md)은(�
 
 ## 양식 기반 경험 작성기를 사용하여 추천 만들기
 
-배달 API와 함께 사용할 수 있는 권장 사항을 만들려면 [양식 기반 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=ko)를 사용하십시오.
+배달 API와 함께 사용할 수 있는 권장 사항을 만들려면 [양식 기반 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html)를 사용하십시오.
 
-1. 먼저 권장 사항에 사용할 JSON 기반 디자인을 작성 및 저장합니다. 샘플 JSON과 양식 기반 활동을 구성할 때 JSON 응답을 반환하는 방법에 대한 배경 정보는 [권장 디자인 만들기](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-design/create-design.html?lang=ko)에 대한 설명서를 참조하십시오. 이 예제에서 디자인 이름은 *단순 JSON*입니다.
+1. 먼저 권장 사항에 사용할 JSON 기반 디자인을 작성 및 저장합니다. 샘플 JSON과 양식 기반 활동을 구성할 때 JSON 응답을 반환하는 방법에 대한 배경 정보는 [권장 디자인 만들기](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-design/create-design.html)에 대한 설명서를 참조하십시오. 이 예제에서 디자인 이름은 *단순 JSON*입니다.
    ![server-side-create-recs-json-design.png](assets/server-side-create-recs-json-design.png)
 
 1. Target에서 **[!UICONTROL Activities]** > **[!UICONTROL Create Activity]** > **[!UICONTROL Recommendations]**(으)로 이동한 다음 **[!UICONTROL Form]**&#x200B;을(를) 선택합니다.
@@ -54,7 +54,7 @@ Adobe Target용 [배달 API](/help/dev/implement/delivery-api/overview.md)은(�
 1. 속성을 선택하고 **[!UICONTROL Next]**&#x200B;을(를) 클릭합니다.
 1. 사용자가 권장 사항의 응답을 받을 위치를 정의합니다. 아래 예제에서는 *api_charter* 위치를 사용합니다. 이전에 만든 *단순 JSON*이라는 JSON 기반 디자인을 선택하십시오.
    ![server-side-create-recs-form.png](assets/server-side-create-recs-form1.png)
-1. 권장 사항을 저장하고 활성화합니다. 그러면 결과가 생성됩니다. [결과가 준비되면](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/previewing-and-launching-your-recommendations-activity.html?lang=ko) 배달 API를 사용하여 결과를 검색할 수 있습니다.
+1. 권장 사항을 저장하고 활성화합니다. 그러면 결과가 생성됩니다. [결과가 준비되면](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/previewing-and-launching-your-recommendations-activity.html) 배달 API를 사용하여 결과를 검색할 수 있습니다.
 
 ## 게재 API 사용
 
@@ -64,11 +64,10 @@ Adobe Target용 [배달 API](/help/dev/implement/delivery-api/overview.md)은(�
 
 1. 클라이언트 코드가 필요합니다. 다시 말해서 **[!UICONTROL Recommendations]** > **[!UICONTROL Settings]**(으)로 이동하여 Adobe Target에서 클라이언트 코드를 찾을 수 있습니다. **권장 API 토큰** 섹션의 **클라이언트 코드** 값을 참고하십시오.
    ![client-code.png](assets/client-code.png)
-1. 클라이언트 코드가 있으면 배달 API 호출을 구성합니다. 아래 예제는 [배달 API Postman 컬렉션](../../implement/delivery-api/overview.md/#section/Getting-Started/Postman-Collection)에서 제공된 **[!UICONTROL Web Batched Mboxes Delivery API Call]**&#x200B;에서 시작하여 관련 내용을 수정합니다. 예:
+1. 클라이언트 코드가 있으면 배달 API 호출을 구성합니다. 아래 예제는 **[!UICONTROL Web Batched Mboxes Delivery API Call]**&#x200B;배달 API Postman 컬렉션[에서 제공된 ](../../implement/delivery-api/overview.md#section/Getting-Started/Postman-Collection)에서 시작하여 관련 내용을 수정합니다. 예:
    * **browser** 및 **address** 개체는 HTML 이외의 사용 사례에 필요하지 않으므로 **Body**&#x200B;에서 제거되었습니다.
    * *api_charter*&#x200B;이(가) 이 예제에서 위치 이름으로 나열됩니다.
    * 이 권장 사항은 현재 항목 키를 Target에 전달해야 하는 콘텐츠 유사성을 기반으로 하므로 entity.id가 지정됩니다.
-
      ![server-side-Delivery-API-call.png](assets/server-side-delivery-api-call2.png)
 쿼리 매개 변수를 올바르게 구성해야 합니다. 예를 들어 필요에 따라 `{{CLIENT_CODE}}`을(를) 지정해야 합니다. &lt;!— Q: 업데이트된 호출 구문에서 entity.id는 이전 버전에서와 같이 mboxParameter 대신 profileParameter로 나열됩니다. —> &lt;!— Q: 이전 이미지 ![server-side-create-recs-post.png](assets/server-side-create-recs-post.png) 이전 첨부 텍스트: &quot;이 권장 사항은 mboxParameters를 통해 전송된 entity.id를 기반으로 하는 콘텐츠 유사 제품을 기반으로 합니다.&quot; —>
      ![client-code3](assets/client-code3.png)
@@ -116,7 +115,7 @@ Adobe Target용 [배달 API](/help/dev/implement/delivery-api/overview.md)은(�
 ## 참조 설명서
 
 * [Adobe Target 배달 API 설명서](/help/dev/implement/delivery-api/overview.md)
-* [이메일에 권장 사항 통합](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/integrating-recs-email.html?lang=ko)
+* [이메일에 권장 사항 통합](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/integrating-recs-email.html)
 
 ## 요약 및 검토
 

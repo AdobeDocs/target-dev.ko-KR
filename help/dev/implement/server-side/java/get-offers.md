@@ -1,9 +1,9 @@
 ---
-title: Java SDK를 사용할 때  [!DNL Adobe Target] 에서 getOffers()를 사용합니다.
+title: Java SDK을 사용할 때  [!DNL Adobe Target] 에서 getOffers()를 사용합니다.
 description: getOffers()를 사용하여 결정을 실행하고  [!DNL Adobe Target]에서 경험을 검색하는 방법을 알아봅니다.
 feature: APIs/SDKs
 exl-id: 9d7bf956-9d6a-4b4f-a401-2e6814f17f3d
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 13%
@@ -36,14 +36,14 @@ TargetDeliveryResponse TargetClient.getOffers(TargetDeliveryRequest request)
 TargetDeliveryRequestBuilder TargetDeliveryRequest.builder()
 ```
 
-## 매개 변수
+## 매개변수
 
 `[!UICONTROL TargetDeliveryRequestBuilder]` 개체의 구조는 다음과 같습니다.
 
 | 이름 | 유형 | 필수 | 설명 |
 | --- | --- | --- | --- |
 | 컨텍스트 | 컨텍스트 | 예 | 요청에 대한 컨텍스트를 지정합니다. |
-| sessionId |  | 문자열 | 아니오 | 여러 [!DNL Target]개의 요청을 연결하는 데 사용됨 |
+| sessionId | 문자열 | 아니오 | 여러 [!DNL Target]개의 요청을 연결하는 데 사용됨 |
 | thirdPartyId | 문자열 | 아니오 | 모든 호출에서 보낼 수 있는 사용자의 회사 식별자 |
 | cookies | 목록 | 아니요 | 동일한 사용자의 이전 [!DNL Target] 요청에서 반환된 쿠키 목록입니다. |
 | customerIds | 맵 | 아니요 | VisitorId 호환 형식의 고객 ID |
@@ -63,7 +63,7 @@ TargetDeliveryRequestBuilder TargetDeliveryRequest.builder()
 | tntId | 문자열 | 아니오 | 사용자의 [!DNL Target]에 있는 기본 식별자입니다. targetCookies에서 가져왔습니다. 제공되지 않을 경우 자동으로 생성됩니다. |
 | mcId | 문자열 | 아니오 | 다른 [!DNL Adobe] 솔루션(ECID) 간에 데이터를 병합하고 공유하는 데 사용됩니다. targetCookies에서 가져왔습니다. 제공되지 않을 경우 자동으로 생성됩니다. |
 | trackingServer | 문자열 | 아니오 | [!DNL Adobe Target]과(와) [!DNL Adobe Analytics]이(가) 데이터를 올바르게 결합하기 위한 Adobe Analytics 서버. |
-| trackingServerSecure | 문자열 | 아니오 | [!DNL Adobe Target]과(와) [!DNL Adobe Analytics]이(가) 데이터를 올바르게 결합하기 위한 [!UICONTROL Adobe Analytics Secure Server]입니다. |
+| trackingServerSecure | 문자열 | 아니오 | [!UICONTROL Adobe Analytics Secure Server]과(와) [!DNL Adobe Target]이(가) 데이터를 올바르게 결합하기 위한 [!DNL Adobe Analytics]입니다. |
 | decisioningMethod | DecisioningMethod | 아니요 | 온디바이스 의사 결정에 대해 ON_DEVICE 또는 HYBRID 의사 결정 방법을 명시적으로 설정하는 데 사용할 수 있습니다. |
 
 각 필드의 값은 *[!UICONTROL Target View Delivery API]* 요청 사양을 준수해야 합니다. *[!UICONTROL Target View Delivery API]*&#x200B;에 대한 자세한 내용은 [http://developers.adobetarget.com/api/#view-delivery-overview](http://developers.adobetarget.com/api/#view-delivery-overview)을(를) 참조하세요.
@@ -71,7 +71,7 @@ TargetDeliveryRequestBuilder TargetDeliveryRequest.builder()
 
 ## 응답
 
-`TargetClient.getOffers(`이(가) 반환한 `TargetDeliveryResponse`의 구조는 다음과 같습니다.
+`TargetDeliveryResponse`이(가) 반환한 `TargetClient.getOffers(`의 구조는 다음과 같습니다.
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |

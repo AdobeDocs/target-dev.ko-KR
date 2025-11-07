@@ -4,7 +4,7 @@ description: Target 및 유럽 연합 일반 데이터 정보 보호 규정(GDPR
 title: Target은 개인정보 보호 및 데이터 보호 규정을 어떻게 처리합니까?
 feature: Privacy & Security
 exl-id: 40bac3c5-8e6f-4a90-ac0c-eddce1dbe6c0
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
 source-wordcount: '2329'
 ht-degree: 62%
@@ -17,7 +17,7 @@ ht-degree: 62%
 
 ## 개인정보 보호 및 일반 데이터 보호 규정(GDPR) 개요
 
-2018년 5월 25일 자로 유럽 연합의 GDPR이 발효되었습니다. 이 규정의 의미에 대한 자세한 내용은 [GDPR 및 비즈니스](https://business.adobe.com/kr/privacy/general-data-protection-regulation.html)를 참조하십시오.
+2018년 5월 25일 자로 유럽 연합의 GDPR이 발효되었습니다. 이 규정의 의미에 대한 자세한 내용은 [GDPR 및 비즈니스](https://business.adobe.com/privacy/general-data-protection-regulation.html)를 참조하십시오.
 
 Adobe가 기업에 소프트웨어 및 서비스를 제공할 때 Adobe는 이러한 서비스를 제공하는 과정에서 처리하고 저장하는 개인 데이터에 대한 데이터 처리자 역할을 합니다. Adobe는 데이터 처리자로서 귀사의 허가 및 지침(예: Adobe와의 계약에 명시된 내용)에 따라 개인 데이터를 처리합니다.
 
@@ -30,9 +30,9 @@ Adobe Experience Cloud은 데이터 제어자가 다음 작업을 완료할 수 
 
 자세한 내용은 다음 문서를 참조하십시오.
 
-* [Adobe Privacy Service 개요](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ko)
-* [Privacy Service API 안내서](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=ko)
-* [Privacy Service UI 개요](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=ko)
+* [Adobe Privacy Service 개요](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
+* [Privacy Service API 안내서](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html)
+* [Privacy Service UI 개요](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html)
 
 ## 캘리포니아 소비자 개인정보 보호법(CCPA) 개요
 
@@ -73,7 +73,7 @@ Adobe Experience Platform을 사용하여 옵트인을 관리하는 것이 좋�
 
 1. **Adobe Experience Platform(또는 이전에 승인된 데이터 주체)를 통해 Target 태그가 사전 승인되었습니다.** Target 태그는 예상대로 동의 및 기능을 위해 유지되지 않습니다.
 1. **Target 태그가 사전 승인되지 않으며 `bodyHidingEnabled`가 FALSE:** Target 태그는 고객으로부터 동의가 수집된 후에만 실행됩니다. 동의하기 전에는 기본 콘텐츠만 사용할 수 있습니다. 동의를 받은 후 Target을 호출하여 데이터 주체(방문자)에 대해 개인화된 콘텐츠를 사용할 수 있습니다. 동의 전에는 기본 콘텐츠만 사용할 수 있으므로, 개인화될 수 있는 페이지 또는 콘텐츠의 모든 부분을 다루는 스플래시 페이지와 같은 적절한 전략을 사용하는 것이 중요합니다. 이 프로세스를 통해 데이터 주체(방문자)에 대한 경험의 일관성을 유지할 수 있습니다.
-1. **Target 태그가 사전 승인되지 않으며 `bodyHidingEnabled`가 TRUE:** Target 태그는 고객으로부터 동의가 수집된 후에만 실행됩니다. 동의하기 전에는 기본 콘텐츠만 사용할 수 있습니다. 그러나 `bodyHidingEnabled`가 true로 설정되어 있으므로 `bodyHiddenStyle`은 Target 태그가 실행될 때까지 페이지에 어떤 콘텐츠가 숨겨져 있는지 나타냅니다(또는 데이터 주체에서 선택 기능을 거부하며, 이 경우 기본 콘텐츠가 표시됨). 기본적으로 `bodyHiddenStyle`은 `body { opacity:0;}`로 설정되어 있으며, 이를 사용하면 HTML 본문 태그가 숨겨집니다. 아래는 페이지 콘텐츠를 하나의 컨테이너에 배치하고 동의 관리자 대화 상자를 별도의 컨테이너에 배치하여 동의 관리자 대화 상자 이외의 페이지 본문 전체가 숨겨질 수 있도록 하는 Adobe 권장 페이지 구성입니다. 이 설정은 페이지 콘텐츠 컨테이너만 숨기도록 Target을 구성합니다. [Privacy Service 개요](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ko&)를 참조합시오.
+1. **Target 태그가 사전 승인되지 않으며 `bodyHidingEnabled`가 TRUE:** Target 태그는 고객으로부터 동의가 수집된 후에만 실행됩니다. 동의하기 전에는 기본 콘텐츠만 사용할 수 있습니다. 그러나 `bodyHidingEnabled`가 true로 설정되어 있으므로 `bodyHiddenStyle`은 Target 태그가 실행될 때까지 페이지에 어떤 콘텐츠가 숨겨져 있는지 나타냅니다(또는 데이터 주체에서 선택 기능을 거부하며, 이 경우 기본 콘텐츠가 표시됨). 기본적으로 `bodyHiddenStyle`은 `body { opacity:0;}`로 설정되어 있으며, 이를 사용하면 HTML 본문 태그가 숨겨집니다. 아래는 페이지 콘텐츠를 하나의 컨테이너에 배치하고 동의 관리자 대화 상자를 별도의 컨테이너에 배치하여 동의 관리자 대화 상자 이외의 페이지 본문 전체가 숨겨질 수 있도록 하는 Adobe 권장 페이지 구성입니다. 이 설정은 페이지 콘텐츠 컨테이너만 숨기도록 Target을 구성합니다. [Privacy Service 개요](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?)를 참조합시오.
 
    시나리오 3에 대한 권장 페이지 설정은 다음과 같습니다.
 
@@ -115,11 +115,11 @@ Adobe은 데이터 프로세서로서 이미 의무를 충족하거나 의무를
 
 아니요. Adobe은 데이터 관리자가 GDPR 및 CCPA 요구 사항을 충족하는 데 도움이 되는 중심적인 방법을 제공합니다. 데이터 제어자는 각 솔루션으로 직접 이동할 필요가 없습니다.
 
-Target을 포함한 Experience Cloud 솔루션의 모든 GDPR 및 CCPA 요청은 현재 GDPR API라고 하는 중앙 Adobe API를 통해 전달됩니다. 그런 다음 API는 데이터 제어자의 Experience Cloud 솔루션 세트에 걸친 요청을 완료합니다.
+Target을 포함하여 Experience Cloud 솔루션의 모든 GDPR 및 CCPA 요청은 현재 GDPR API라고 하는 중앙 Adobe API를 통해 전달됩니다. 그런 다음 API는 데이터 제어자의 Experience Cloud 솔루션 세트에 걸친 요청을 완료합니다.
 
 ### Adobe은 데이터 주체/사용자 요청에 대해 고객이 어떤 정보를 삭제할 수 있도록 허용합니까?
 
-Target 내의 개별 방문자와 관련된 정보는 Target 방문자 프로필 내에 포함되어 있습니다. Target을 사용하면 고객이 방문자 프로필의 ID와 관련된 모든 데이터를 삭제할 수 있습니다. 프로필 데이터 Target 저장소의 예제는 [방문자 프로필](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=ko)을 참조하세요.
+Target 내의 개별 방문자와 관련된 정보는 Target 방문자 프로필 내에 포함되어 있습니다. Target을 사용하면 고객이 방문자 프로필의 ID와 관련된 모든 데이터를 삭제할 수 있습니다. 프로필 데이터 Target 저장소의 예제는 [방문자 프로필](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html)을 참조하세요.
 
 특정 개인을 식별하지 않는 집계 또는 익명화 데이터(예: 보고 데이터) 또는 특정 개인과 관련이 없는 데이터(예: 콘텐츠 데이터)는 사용자 삭제 요청 범위를 벗어납니다.
 
@@ -147,7 +147,7 @@ GDPR 및 CCPA에 의해 변경되는 것은 귀하가 동의를 얻어야 하는
 
 Target은 사용자의 동의 관리 전략을 지원하기 위해 Adobe Experience Platform을 통해 옵트인 기능 지원을 제공하지 않습니다. 선택 기능을 통해 고객이 Target 태그를 실행하는 방법과 시기를 제어할 수 있습니다. Adobe Experience Platform을 통해 Target 태그를 사전 승인할 수 있는 옵션도 있습니다. Adobe Experience Platform을 사용하여 옵트인을 관리하는 것이 좋습니다. 동의 전략의 일부로 유용하게 사용할 수 있는 Target 실행 전에 페이지에서 선택한 요소를 숨기기 위한 세부적인 제어 기능이 Adobe Experience Platform에 추가로 있습니다.
 
-GDPR, CCPA 및 Adobe Experience Platform에 대한 자세한 내용은 [Adobe 개인 정보 보호 JavaScript 라이브러리 및 GDPR](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ko&)을 참조하십시오. 또한 위의 *Adobe Target 및 Adobe Experience Platform 옵트인* 섹션을 참조하십시오.
+GDPR, CCPA 및 Adobe Experience Platform에 대한 자세한 내용은 [Adobe 개인 정보 보호 JavaScript 라이브러리 및 GDPR](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?)을 참조하십시오. 또한 위의 *Adobe Target 및 Adobe Experience Platform 옵트인* 섹션을 참조하십시오.
 
 ### `AdobePrivacy.js`가 GDPR API에 정보를 제출합니까?
 
@@ -286,7 +286,7 @@ AdobePrivacy.js는 이 정보를 API에 제출하지 *않습니다*. 정보 제�
 | Sample_Parameter | Target 프로필의 정보 중 다수는 데이터 관리자가 업로드하거나 직접 제공합니다. 이 예에서는 프로필 업데이트 API를 사용하여 Target 프로필에 매개 변수가 업로드되었습니다. 자세한 내용은 [데이터를 Target으로 가져오는 방법](/help/dev/before-implement/methods-to-get-data-into-target/methods-to-get-data-into-target.md)을 참조하십시오. |
 | user.ReturnTimeOfDay | 이 표준 필드에는 사용자가 가장 최근에 다시 방문한 시간이 포함되어 있습니다. |
 | firstSessionStart | 이 표준 필드에는 사용자의 첫 번째 세션이 시작된 시간이 포함됩니다. |
-| user.sessionCountScript | Target 프로필의 정보 중 다수는 데이터 관리자가 업로드하거나 직접 제공합니다. 이 예에서 프로필 스크립트는 이 방문자가 데이터 관리자의 사이트에 대해 수행한 세션의 수를 증가시키고 있습니다. 자세한 내용은 [프로필 스크립트 속성](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=ko)을 참조하십시오. |
+| user.sessionCountScript | Target 프로필의 정보 중 다수는 데이터 관리자가 업로드하거나 직접 제공합니다. 이 예에서 프로필 스크립트는 이 방문자가 데이터 관리자의 사이트에 대해 수행한 세션의 수를 증가시키고 있습니다. 자세한 내용은 [프로필 스크립트 속성](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html)을 참조하십시오. |
 
 >[!NOTE]
 >
@@ -294,7 +294,7 @@ AdobePrivacy.js는 이 정보를 API에 제출하지 *않습니다*. 정보 제�
 
 ### Target이 IP 난독화를 지원합니까?
 
-Target에서는 IP 난독화를 GDPR 또는 CCPA 구현 전략의 일부로 사용하도록 선택하는 경우 지원합니다. 자세한 내용은 [개인 정보](privacy.md/#replacement-of-last-octet-of-ip-addresses)를 참조하십시오.
+Target에서는 IP 난독화를 GDPR 또는 CCPA 구현 전략의 일부로 사용하도록 선택하는 경우 지원합니다. 자세한 내용은 [개인 정보](privacy.md#replacement-of-last-octet-of-ip-addresses)를 참조하십시오.
 
 ### 데이터가 서드파티로 공유되거나 판매되는 것을 방지하기 위해 수행해야 하는 작업이 있습니까?
 

@@ -4,7 +4,7 @@ description: mbox 요청 또는 오퍼가 실패하거나 성공하면 알림을
 title: at.js 사용자 지정 이벤트는 어떻게 사용합니까?
 feature: at.js
 exl-id: a4baed9a-9eb8-4343-9834-709b03e44ca2
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 71%
@@ -50,4 +50,4 @@ document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function(event) 
 
 응답 토큰 및 at.js 사용자 지정 이벤트를 사용하여 [!DNL Target]에서 타사 시스템으로 프로필 정보를 공유하는 방법을 알아보려면 다음 비디오를 시청하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/33347/?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/23253/?quality=12)

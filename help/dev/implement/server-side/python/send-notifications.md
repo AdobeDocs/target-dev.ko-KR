@@ -1,9 +1,9 @@
 ---
-title: Python SDK를 사용하여  [!DNL Adobe Target] 에 디스플레이 또는 클릭 알림 보내기
+title: Python SDK을 사용하여  [!DNL Adobe Target] 에 디스플레이 또는 클릭 알림 보내기
 description: 측정 및 보고를 위해 sendNotifications()를 사용하여 디스플레이를 보내거나  [!DNL Adobe Target] 에 알림을 클릭하는 방법에 대해 알아봅니다.
 feature: APIs/SDKs
 exl-id: 03827b18-a546-4ec8-8762-391fcb3ac435
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 8%
@@ -35,7 +35,7 @@ ht-degree: 8%
 target_client.send_notifications(options)
 ```
 
-## 매개 변수
+## 매개변수
 
 `options`의 구조는 다음과 같습니다.
 
@@ -60,13 +60,13 @@ target_client.send_notifications(options)
 | target_cookie | dict | [!DNL Target] 쿠키 |
 | target_location_hint_cookie | dict | [!DNL Target] 위치 힌트 쿠키 |
 | analytics_details | list[AnalyticsResponse] | 클라이언트측 [!DNL Analytics] 사용의 경우 [!DNL Analytics] 페이로드 |
-| 추적 |  | list[dict] | 모든 요청 mbox/보기에 대해 집계된 추적 데이터 |
-| response_tokens | list[dict] | [&#x200B; 응답 토큰 &#x200B; 목록](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=ko) |
+| 추적 | list[dict] | 모든 요청 mbox/보기에 대해 집계된 추적 데이터 |
+| response_tokens | list[dict] | [ 응답 토큰 &#x200B; 목록](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) |
 | meta | dict | 온디바이스 의사 결정에 사용하기 위한 추가 의사 결정 메타데이터 |
 
 ## 예
 
-먼저 `home` 및 `product1` mbox에 대한 콘텐츠를 미리 가져오기 위한 [!UICONTROL Target Delivery API] 요청을 빌드해 보겠습니다.
+먼저 [!UICONTROL Target Delivery API] 및 `home` mbox에 대한 콘텐츠를 미리 가져오기 위한 `product1` 요청을 빌드해 보겠습니다.
 
 ### Python
 
@@ -155,7 +155,7 @@ notification = Notification(
 notification_request = DeliveryRequest(notifications=[notification])
 ```
 
-미리 가져오기 응답에 전달된 [!DNL Target] 오퍼에 해당하는 이벤트 토큰과 mbox 상태가 모두 포함되어 있습니다. 알림 요청을 빌드하면 `send_notifications()` API 메서드를 통해 [!DNL Target]에 보낼 수 있습니다.
+미리 가져오기 응답에 전달된 [!DNL Target] 오퍼에 해당하는 이벤트 토큰과 mbox 상태가 모두 포함되어 있습니다. 알림 요청을 빌드하면 [!DNL Target] API 메서드를 통해 `send_notifications()`에 보낼 수 있습니다.
 
 ### Python
 

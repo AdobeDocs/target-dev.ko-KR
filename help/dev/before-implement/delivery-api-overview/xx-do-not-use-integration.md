@@ -2,7 +2,7 @@
 title: Experience Cloud과 통합
 description: Experience Cloud과 통합
 keywords: 배달 api
-source-git-commit: f16903556954d2b1854acd429f60fbf6fc2920de
+source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 7%
@@ -26,7 +26,7 @@ ht-degree: 7%
 Adobe Target은 다음 식별자가 제공되면 서버측을 통해 Adobe Analytics에 analytics 페이로드를 자동으로 전달할 수 있습니다.
 
 1. `supplementalDataId` - Adobe Analytics과 Adobe Target 사이를 연결하는 데 사용되는 ID
-1. `trackingServer` - Adobe 분석 서버 Adobe Target과 Adobe Analytics에서 데이터를 올바르게 연결하려면 Adobe Target과 Adobe Analytics 모두에 동일한 `supplementalDataId`을(를) 전달해야 합니다.
+1. `trackingServer` - Adobe Analytics 서버 Adobe Target과 Adobe Analytics에서 데이터를 올바르게 연결하려면 Adobe Target과 Adobe Analytics 모두에 동일한 `supplementalDataId`을(를) 전달해야 합니다.
 
 ```
 curl -X POST \
@@ -189,7 +189,7 @@ https://{datacollectionhost.sc.omtrdc.net}/b/ss/{rsid}/0/CODEVERSION?pe=tnt&tnta
 | `rsid` | 예 | 보고서 세트 ID |
 | `pe` | 예 | 페이지 이벤트. 항상 `tnt`(으)로 설정 |
 | `tnta` | 예 | `analytics` -> `payload` -> `tnta`의 Target 서버에서 반환된 Analytics 페이로드 |
-| `mid` | Marketing Cloud 방문자 ID |
+| `mid` | Marketing Cloud 방문자 ID |  |
 
 ### 필수 헤더 값
 
@@ -205,13 +205,13 @@ https://demo.sc.omtrdc.net/b/ss/myCustomRsid/0/MOBILE-1.0?pe=tnt&tnta=285408:0:0
 
 ## Adobe Audience Manager
 
-Adobe Audience Manager(AAM) 세그먼트는 Adobe Target 배달 API를 통해 활용할 수도 있습니다. AAM 세그먼트를 활용하려면 다음 필드를 제공해야 합니다.
+Adobe Target 배달 API를 통해 Adobe Audience Manager(AAM) 세그먼트를 활용할 수도 있습니다. AAM 세그먼트를 활용하려면 다음 필드를 제공해야 합니다.
 
 | 필드 이름 | 필수 | 설명 |
 | --- | --- | --- |
 | `locationHint` | 예 | DCS 위치 힌트는 프로필을 검색하기 위해 히트할 AAM DCS 끝점을 결정하는 데 사용됩니다. 1보다 크거나 같아야 합니다. |
 | `marketingCloudVisitorId` | 예 | Marketing Cloud 방문자 ID |
-| `blob` | 예 | AAM Blob을 사용하여 추가 데이터를 AAM에 보낼 수 있습니다. 비워 둘 수 없으며 크기는 1024 미만이어야 합니다. |
+| `blob` | 예 | AAM Blob을 사용하여 추가 데이터를 AAM으로 보낼 수 있습니다. 비워 둘 수 없으며 크기는 1024 미만이어야 합니다. |
 
 ```
 curl -X POST \

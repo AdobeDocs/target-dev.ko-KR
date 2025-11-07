@@ -1,10 +1,10 @@
 ---
 keywords: adobe.target.getOffers, getOffers, getoffers, 오퍼 가져오기, at.js, 함수, 함수, $8
-description: ' [!DNL Adobe Target] at.js 라이브러리에 대한 [!UICONTROL adobe.target.getOffers()] 함수와 해당 옵션을 사용하여 여러 [!DNL Target] 오퍼를 가져오는 요청을 실행합니다. (at.js 2.x)'
+description: '[!UICONTROL adobe.target.getOffers()]at.js 라이브러리에 대한  [!DNL Adobe Target]  함수와 해당 옵션을 사용하여 여러 [!DNL Target] 오퍼를 가져오는 요청을 실행합니다. (at.js 2.x)'
 title: '[!UICONTROL adobe.target.getOffers()] 함수를 사용하는 방법'
 feature: at.js
 exl-id: b96a3018-93eb-49e7-9aed-b27bd9ae073a
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
 source-wordcount: '1317'
 ht-degree: 62%
@@ -21,9 +21,9 @@ ht-degree: 62%
 
 | 키 | 유형 | 필수? | 설명 |
 | --- | --- | --- | --- |
-| `consumerId` | 문자열 | 아니오 | 기본값이 제공되지 않을 경우 기본값은 클라이언트의 글로벌 mbox입니다. 이 키는 A4T 통합에 사용되는 SDID(Supplemental Data ID)를 생성하는 데 사용됩니다.<P>`getOffers()`을(를) 사용할 때 각 호출은 새 SDID를 생성합니다. 동일한 페이지에 여러 개의 mbox 요청이 있고 SDID를 유지하려는 경우(target-global-mbox의 SDID와 [!DNL Adobe Analytics] SDID가 일치하도록) `consumerId` 매개 변수를 사용하십시오.<P>`getOffers()`에 &quot;mbox1&quot;, &quot;mbox2&quot; 및 &quot;mbox3&quot;이라는 mbox가 3개 있는 경우 `getOffers()` 호출에 `consumerId: "mbox1, mbox2, mbox3"`을(를) 포함하십시오. |
+| `consumerId` | 문자열 | 아니오 | 기본값이 제공되지 않을 경우 기본값은 클라이언트의 글로벌 mbox입니다. 이 키는 A4T 통합에 사용되는 SDID(Supplemental Data ID)를 생성하는 데 사용됩니다.<P>`getOffers()`을(를) 사용할 때 각 호출은 새 SDID를 생성합니다. 동일한 페이지에 여러 개의 mbox 요청이 있고 SDID를 유지하려는 경우(target-global-mbox의 SDID와 [!DNL Adobe Analytics] SDID가 일치하도록) `consumerId` 매개 변수를 사용하십시오.<P>`getOffers()`에 &quot;mbox1&quot;, &quot;mbox2&quot; 및 &quot;mbox3&quot;이라는 mbox가 3개 있는 경우 `consumerId: "mbox1, mbox2, mbox3"` 호출에 `getOffers()`을(를) 포함하십시오. |
 | `decisioningMethod` | 문자열 | 아니오 | &quot;서버측&quot;, &quot;온디바이스&quot;, &quot;하이브리드&quot; |
-| `request` | 개체 | 예 | 아래의 &quot;요청&quot; 표를 참조하십시오. |
+| `request` | 개체 | 예 | 아래의 &quot;요청&quot; 테이블을 참조하십시오. |
 | `timeout` | 숫자 | 아니오 | 요청 시간 제한. 지정하지 않으면 기본값 at.js 시간 제한이 사용됩니다. |
 
 ## 요청
@@ -35,10 +35,10 @@ ht-degree: 62%
 | 필드 이름 | 필수? | 제한 | 설명 |
 | --- | --- | --- | --- |
 | request > id | 아니오 |  | `tntId`, `thirdPartyId`, `marketingCloudVisitorId` 중 하나는 필수입니다. |
-| request > id > thirdPartyId | 아니오 | 최대 크기 = 128. |  |  |
+| request > id > thirdPartyId | 아니오 | 최대 크기 = 128. |  |
 | Request > experienceCloud | 아니오 |  |  |
 | Request > experienceCloud > analytics | 아니오 |  | Adobe Analytics 통합 |
-| Request > experienceCloud > analytics > logging | 아니오 | 페이지에서 다음을 구현해야 합니다.<ul><li>방문자 ID 서비스</li><li>Appmeasurement.js</li></ul> | 지원되는 값은 다음과 같습니다.<P>**client_side**: 지정하면 [!UICONTROL Data Insertion API]을(를) 통해 [!UICONTROL Adobe Analytics]에 보내는 데 사용해야 하는 호출자에게 분석 페이로드가 반환됩니다.<P>**server_side**: [!DNL Target] 및 [!DNL Analytics] 백엔드가 보고 목적으로 SDID를 사용하여 호출을 함께 연결하는 기본값입니다. |
+| Request > experienceCloud > analytics > logging | 아니오 | 페이지에서 다음을 구현해야 합니다.<ul><li>방문자 ID 서비스</li><li>Appmeasurement.js</li></ul> | 지원되는 값은 다음과 같습니다.<P>**client_side**: 지정하면 [!UICONTROL Adobe Analytics]을(를) 통해 [!UICONTROL Data Insertion API]에 보내는 데 사용해야 하는 호출자에게 분석 페이로드가 반환됩니다.<P>**server_side**: [!DNL Target] 및 [!DNL Analytics] 백엔드가 보고 목적으로 SDID를 사용하여 호출을 함께 연결하는 기본값입니다. |
 | request > prefetch | 아니오 |  |  |
 | request > prefetch > views | 아니오 | 최대 개수 50.<P>이름은 비워둘 수 없습니다.<P>이름 길이 `<=` 128.<P>값 길이 `<=` 5000입니다.<P>이름은 &quot;profile&quot;로 시작하면 안 됩니다.<P>허용되지 않는 이름: &quot;orderId&quot;, &quot;orderTotal&quot;, &quot;productPurchasedId&quot;. | 활성 활동에서 적절한 보기를 검색하는 데 사용할 매개 변수를 전달합니다. |
 | request > prefetch > views > profileParameters | 아니오 | 최대 개수 50.<P>이름은 비워둘 수 없습니다.<P>이름 길이 `<=` 128.<P>값 길이 `<=` 5000입니다.<P>문자열 값만 허용합니다.<P>이름은 &quot;profile&quot;로 시작하면 안 됩니다. | 활성 활동에서 적절한 보기를 검색하는 데 사용할 프로필 매개 변수를 전달합니다. |
@@ -61,7 +61,7 @@ ht-degree: 62%
 | request > execute > pageLoad > order > total | 아니오 | `>=` 0. | 페이지가 로드될 때 지정된 주문 합계로 오퍼를 검색합니다. |
 | request > execute > pageLoad > order > purchasedProductIds | 아니오 | 빈 값이 없습니다.<P>각 값의 최대 길이는 50자입니다.<P>쉼표로 연결 및 구분됩니다.<P>제품 ID의 총 길이는 `<=` 250입니다. | 페이지가 로드될 때 지정된 구입 제품 ID로 오퍼를 검색합니다. |
 | request > execute > mboxes | 아니오 | 최대 크기 = 50.<P>null 요소가 없습니다. |  |
-| request > execute > mboxes>mbox | 예 | 비어 있지 않음.<P>&#39;-clicked&#39; 접미사가 없습니다.<P>최대 크기 = 250.<P>허용되는 문자: `'-, ._\/=:;&!@#$%^&*()_+|?~[]{}'` | mbox 이름. |
+| request > execute > mboxes>mbox | 예 | 비어 있지 않음.<P>&#39;-clicked&#39; 접미사가 없습니다.<P>최대 크기 = 250.<P>허용되는 문자: `'-, ._\/=:;&!@#$%^&*()_+|?~[]{}'`\|mbox 이름. |
 | request > execute > mboxes>mbox>index | 예 | null 아님<P>고유.<P>`>=` 0. | 색인은 mbox가 처리되는 순서를 나타내지 않습니다. 몇 개의 지역 mbox가 있는 웹 페이지에서와 마찬가지로, 처리되는 순서를 지정할 수 없습니다. |
 | request > execute > mboxes > mbox > parameters | 아니오 | 최대 개수 = 50.<P>이름은 비워둘 수 없습니다.<P>이름 길이 `<=` 128.<P>문자열 값만 허용합니다.<P>값 길이 `<=` 5000입니다.<P>이름은 &quot;profile&quot;로 시작하면 안 됩니다.<P>허용되지 않는 이름: &quot;orderId&quot;, &quot;orderTotal&quot;, &quot;productPurchasedId&quot;. | 지정된 매개 변수를 사용하여 주어진 mbox에 대한 오퍼를 검색합니다. |
 | request > execute > mboxes>mbox>profileParameters | 아니오 | 최대 개수 = 50.<P>이름은 비워둘 수 없습니다.<P>이름 길이 `<=` 128.<P>문자열 값만 허용합니다.<P>값 길이 `<=`256.<P>이름은 &quot;profile&quot;로 시작하면 안 됩니다. | 지정된 프로필 매개 변수를 사용하여 주어진 mbox에 대한 오퍼를 검색합니다. |
@@ -204,7 +204,7 @@ adobe.target.getOffers({
 }
 ```
 
-[데이터 삽입 API](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md)를 통해 페이로드를 [!DNL Adobe Analytics]에 전달할 수 있습니다.
+[!DNL Adobe Analytics]데이터 삽입 API[를 통해 페이로드를 ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md)에 전달할 수 있습니다.
 
 ## [!UICONTROL getOffers()] 및 [!UICONTROL applyOffers()]을(를) 통해 여러 mbox에서 데이터를 가져와 렌더링합니다.
 
