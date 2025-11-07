@@ -204,7 +204,7 @@ adobe.target.getOffers({
 }
 ```
 
-[!DNL Adobe Analytics]데이터 삽입 API[를 통해 페이로드를 ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md)에 전달할 수 있습니다.
+[!DNL Adobe Analytics]데이터 삽입 API[를 통해 페이로드를 &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md)에 전달할 수 있습니다.
 
 ## [!UICONTROL getOffers()] 및 [!UICONTROL applyOffers()]을(를) 통해 여러 mbox에서 데이터를 가져와 렌더링합니다.
 

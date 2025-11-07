@@ -64,7 +64,7 @@ Adobe Target용 [배달 API](/help/dev/implement/delivery-api/overview.md)은(�
 
 1. 클라이언트 코드가 필요합니다. 다시 말해서 **[!UICONTROL Recommendations]** > **[!UICONTROL Settings]**(으)로 이동하여 Adobe Target에서 클라이언트 코드를 찾을 수 있습니다. **권장 API 토큰** 섹션의 **클라이언트 코드** 값을 참고하십시오.
    ![client-code.png](assets/client-code.png)
-1. 클라이언트 코드가 있으면 배달 API 호출을 구성합니다. 아래 예제는 **[!UICONTROL Web Batched Mboxes Delivery API Call]**&#x200B;배달 API Postman 컬렉션[에서 제공된 ](../../implement/delivery-api/overview.md#section/Getting-Started/Postman-Collection)에서 시작하여 관련 내용을 수정합니다. 예:
+1. 클라이언트 코드가 있으면 배달 API 호출을 구성합니다. 아래 예제는 **[!UICONTROL Web Batched Mboxes Delivery API Call]**&#x200B;배달 API Postman 컬렉션[에서 제공된 &#x200B;](../../implement/delivery-api/overview.md#section/Getting-Started/Postman-Collection)에서 시작하여 관련 내용을 수정합니다. 예:
    * **browser** 및 **address** 개체는 HTML 이외의 사용 사례에 필요하지 않으므로 **Body**&#x200B;에서 제거되었습니다.
    * *api_charter*&#x200B;이(가) 이 예제에서 위치 이름으로 나열됩니다.
    * 이 권장 사항은 현재 항목 키를 Target에 전달해야 하는 콘텐츠 유사성을 기반으로 하므로 entity.id가 지정됩니다.

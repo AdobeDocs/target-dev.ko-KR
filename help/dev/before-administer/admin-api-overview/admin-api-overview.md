@@ -12,17 +12,17 @@ ht-degree: 2%
 
 # Target 관리 API 개요
 
-이 문서에서는 [!DNL Adobe Target Admin API]을(를) 이해하고 성공적으로 사용하는 데 필요한 배경 정보에 대한 개요를 제공합니다. 다음 내용은 사용자가 [에 대해 ](../configure-authentication.md)인증을 구성[!DNL Adobe Target Admin API]하는 방법을 이해하고 있다고 가정합니다.
+이 문서에서는 [!DNL Adobe Target Admin API]을(를) 이해하고 성공적으로 사용하는 데 필요한 배경 정보에 대한 개요를 제공합니다. 다음 내용은 사용자가 [에 대해 &#x200B;](../configure-authentication.md)인증을 구성[!DNL Adobe Target Admin API]하는 방법을 이해하고 있다고 가정합니다.
 
 >[!NOTE]
 >
->UI를 통해 [!DNL Target]을(를) 관리하려면 [Adobe Target 비즈니스 실무자 안내서&#x200B;**&#x200B;의 ](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en)관리 섹션을 참조하십시오.
+>UI를 통해 [!DNL Target]을(를) 관리하려면 [Adobe Target 비즈니스 실무자 안내서&#x200B;**&#x200B;의 &#x200B;](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en)관리 섹션을 참조하십시오.
 >
 >관리 API 및 프로필 API는 종종 총괄적으로(&quot;관리 및 프로필 API&quot;) 참조되지만, 별도로(&quot;관리 API&quot; 및 &quot;프로필 API&quot;) 참조할 수도 있습니다. Recommendations API는 [!DNL Target] 관리 API의 특정 구현입니다.
 
 ## 시작하기 전에
 
-[관리 API](../../administer/admin-api/admin-api-overview-new.md)에 대해 제공된 모든 코드 예제에서 {tenant}을(를) 테넌트 값으로, `your-bearer-token`을(를) JWT로 생성한 액세스 토큰으로, `your-api-key`을(를) [Adobe Developer Console](https://developer.adobe.com/console/home)의 API 키로 바꿉니다. 테넌트 및 JWT에 대한 자세한 내용은 Adobe [ 관리 API에 대해 ](../configure-authentication.md)인증을 구성[!DNL Target]하는 방법에 대한 문서를 참조하십시오.
+[관리 API](../../administer/admin-api/admin-api-overview-new.md)에 대해 제공된 모든 코드 예제에서 {tenant}을(를) 테넌트 값으로, `your-bearer-token`을(를) JWT로 생성한 액세스 토큰으로, `your-api-key`을(를) [Adobe Developer Console](https://developer.adobe.com/console/home)의 API 키로 바꿉니다. 테넌트 및 JWT에 대한 자세한 내용은 Adobe [&#x200B; 관리 API에 대해 &#x200B;](../configure-authentication.md)인증을 구성[!DNL Target]하는 방법에 대한 문서를 참조하십시오.
 
 ## 버전 매기기
 

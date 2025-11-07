@@ -197,7 +197,7 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 >[!ENDTABS]
 
-여기에 표시된 예에서 사용자는 `SES_PREVIOUS_VISIT_COUNT`단계 1`SES_TOTAL_SESSIONS`에 설명된 대로 활동 ID가 260480 활동에 대한 전체 기능 목록을 쿼리하여 이전에 식별한 두 개의 기능 [ 및 ](#step1)을(를) 차단하고 있습니다. 또한 위의 [표](#table)에 설명된 대로 &quot;AAM&quot;라는 접두사가 있는 기능을 차단하여 얻은 Experience Cloud 세그먼트에서 오는 모든 기능을 차단합니다.
+여기에 표시된 예에서 사용자는 `SES_PREVIOUS_VISIT_COUNT`단계 1`SES_TOTAL_SESSIONS`에 설명된 대로 활동 ID가 260480 활동에 대한 전체 기능 목록을 쿼리하여 이전에 식별한 두 개의 기능 [&#x200B; 및 &#x200B;](#step1)을(를) 차단하고 있습니다. 또한 위의 [표](#table)에 설명된 대로 &quot;AAM&quot;라는 접두사가 있는 기능을 차단하여 얻은 Experience Cloud 세그먼트에서 오는 모든 기능을 차단합니다.
 
 ![3단계](assets/models-api-step-3.png)
 

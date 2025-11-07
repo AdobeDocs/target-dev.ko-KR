@@ -42,7 +42,7 @@ ht-degree: 4%
 
 ## [!UICONTROL on-device decisioning]은(는) 어떻게 작동합니까?
 
-[!UICONTROL on-device decisioning]이(가) 활성화된 상태에서 at.js를 배포하고 초기화하면 A/B 및 XT 활동, 대상 및 에셋에 대한 [을(를) 포함하는 ](/help/dev/implement/client-side/atjs/on-device-decisioning/rule-artifact.md)규칙 아티팩트[!UICONTROL on-device decisioning]가 방문자와 가장 가까운 Akamai CDN에서 다운로드되어 방문자의 브라우저에 로컬로 캐시됩니다. at.js에서 경험을 검색하도록 요청하는 경우 캐시된 규칙 아티팩트에 인코딩된 메타데이터를 기반으로 반환할 경험에 대한 결정이 인메모리에 수행됩니다.
+[!UICONTROL on-device decisioning]이(가) 활성화된 상태에서 at.js를 배포하고 초기화하면 A/B 및 XT 활동, 대상 및 에셋에 대한 [을(를) 포함하는 &#x200B;](/help/dev/implement/client-side/atjs/on-device-decisioning/rule-artifact.md)규칙 아티팩트[!UICONTROL on-device decisioning]가 방문자와 가장 가까운 Akamai CDN에서 다운로드되어 방문자의 브라우저에 로컬로 캐시됩니다. at.js에서 경험을 검색하도록 요청하는 경우 캐시된 규칙 아티팩트에 인코딩된 메타데이터를 기반으로 반환할 경험에 대한 결정이 인메모리에 수행됩니다.
 
 ## 의사 결정 방법
 
@@ -56,7 +56,7 @@ ht-degree: 4%
 
 Server-side만 at.js 2.5.0+가 구현되고 웹 속성에 배포되는 경우 기본적으로 설정되는 기본 의사 결정 방법입니다.
 
-서버측만 기본 구성으로 사용하면 모든 결정이 [!DNL Target] 에지 네트워크에서 수행되며, 여기에는 차단 서버 호출이 포함됩니다. 이 접근 방식은 점진적 지연을 발생시킬 수 있지만, [!DNL Target]권장 사항[, ](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html)Automated Personalization[(AP) 및 ](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html)자동 타기팅[ 활동을 포함하는 ](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html)의 기계 학습 기능을 적용할 수 있는 기능을 제공하는 것과 같은 중요한 이점도 제공합니다.
+서버측만 기본 구성으로 사용하면 모든 결정이 [!DNL Target] 에지 네트워크에서 수행되며, 여기에는 차단 서버 호출이 포함됩니다. 이 접근 방식은 점진적 지연을 발생시킬 수 있지만, [!DNL Target]권장 사항[, &#x200B;](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html)Automated Personalization[(AP) 및 &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html)자동 타기팅[&#x200B; 활동을 포함하는 &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html)의 기계 학습 기능을 적용할 수 있는 기능을 제공하는 것과 같은 중요한 이점도 제공합니다.
 
 또한 세션 및 채널에서 지속되는 [!DNL Target]의 사용자 프로필을 사용하여 개인화된 경험을 향상하면 비즈니스에 강력한 결과를 제공할 수 있습니다.
 
@@ -262,7 +262,7 @@ JSON 규칙 아티팩트에는 mbox에 실행 중인 서버측 활동 또는 [!U
 
 ### 전역 설정
 
-모든 [!DNL Target]개의 결정에 대해 기본 의사 결정 메서드를 구성할 수 있습니다. 다양한 의사 결정 방법은 서버측 전용, 온디바이스 전용 및 하이브리드입니다. [!DNL Target] UI에서 선택한 의사 결정 메서드가 `window.targetGlobalSettings` 필드 아래의 `decisioningMethod`에 구성되어 있습니다. `decisioningMethod`targetGlobalSettings()[에서 ](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#decisioningmethod)에 대해 자세히 알아보세요.
+모든 [!DNL Target]개의 결정에 대해 기본 의사 결정 메서드를 구성할 수 있습니다. 다양한 의사 결정 방법은 서버측 전용, 온디바이스 전용 및 하이브리드입니다. [!DNL Target] UI에서 선택한 의사 결정 메서드가 `window.targetGlobalSettings` 필드 아래의 `decisioningMethod`에 구성되어 있습니다. `decisioningMethod`targetGlobalSettings() [에서 &#x200B;](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#decisioningmethod)에 대해 자세히 알아보세요.
 
 ```javascript {line-numbers="true"}
 <head> 
@@ -282,7 +282,7 @@ JSON 규칙 아티팩트에는 mbox에 실행 중인 서버측 활동 또는 [!U
 
 ### 사용자 지정된 설정
 
-`decisioningMethod`에서 `window.targetGlobalSettings`을(를) 설정했지만 사용 사례에 따라 각 `decisioningMethod` 결정에 대해 [!DNL Adobe Target]을(를) 재정의하려는 경우 At.js2.5.0+의 `decisioningMethod`getOffers()[ 호출에서 ](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md)을(를) 지정하여 이 절차를 수행할 수 있습니다.
+`decisioningMethod`에서 `window.targetGlobalSettings`을(를) 설정했지만 사용 사례에 따라 각 `decisioningMethod` 결정에 대해 [!DNL Adobe Target]을(를) 재정의하려는 경우 At.js2.5.0+의 `decisioningMethod`getOffers() [&#x200B; 호출에서 &#x200B;](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md)을(를) 지정하여 이 절차를 수행할 수 있습니다.
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffers({ 

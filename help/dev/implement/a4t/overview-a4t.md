@@ -28,9 +28,9 @@ ht-degree: 1%
 | 로깅 방법 | 설명 |
 | --- | --- |
 | 서버측 [!DNL Analytics] 로깅 | Edge Network을 통해 전송된 모든 [!DNL Analytics]개의 히트는 히트 결합 프로세스를 거치지 않고도 서버측에서 [!DNL Target]개의 세부 정보로 보강됩니다. |
-| 클라이언트측 [!DNL Analytics] 로깅 | [!DNL Target] 데이터가 클라이언트측에서 반환되므로 [!DNL Analytics]데이터 삽입 API[를 사용하여 데이터를 수동으로 늘리고 ](https://experienceleague.adobe.com/docs/analytics/import/c-data-insertion-api.html)에 보낼 수 있습니다. |
+| 클라이언트측 [!DNL Analytics] 로깅 | [!DNL Target] 데이터가 클라이언트측에서 반환되므로 [!DNL Analytics]데이터 삽입 API[를 사용하여 데이터를 수동으로 늘리고 &#x200B;](https://experienceleague.adobe.com/docs/analytics/import/c-data-insertion-api.html)에 보낼 수 있습니다. |
 
-로깅 메서드는 구성된 [!DNL Adobe Analytics]데이터스트림[에서 ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)을(를) 사용하는지 여부에 따라 결정됩니다.
+로깅 메서드는 구성된 [!DNL Adobe Analytics]데이터스트림[에서 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)을(를) 사용하는지 여부에 따라 결정됩니다.
 
 ![로깅 방법 결정 흐름](/help/dev/implement/a4t/assets/analytics-logging.png)
 
