@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API]을(를) 
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: 892de7c241a165b55a5cf85ce8f472ad8e200ac3
+source-git-commit: c2300ad6affdf3c1028e5c52ccaceb577a289227
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1056'
 ht-degree: 6%
 
 ---
@@ -49,13 +49,13 @@ ht-degree: 6%
 
 프로필 데이터를 대량으로 업데이트하려면 배치 파일을 만듭니다. 배치 파일은 다음 샘플 파일과 유사한 쉼표로 구분된 값이 있는 텍스트 파일입니다.
 
-``` ```
+``````
 batch=pcId,param1,param2,param3,param4
 123,value1
 124,value1,,,value4
 125,,value2
 126,value1,value2,value3,value4
-``` ```
+``````
 
 >[!NOTE]
 >
@@ -69,7 +69,6 @@ batch=pcId,param1,param2,param3,param4
 * 매개 변수는 `paramName` 형식이어야 합니다. 매개 변수가 [!DNL Target]에 `profile.paramName`(으)로 표시됩니다.
 * [!UICONTROL Bulk Profile Update API] v2를 사용하는 경우 각 `pcId`에 대해 모든 매개 변수 값을 지정할 필요는 없습니다. `pcId`에서 찾을 수 없는 `mbox3rdPartyId` 또는 [!DNL Target]에 대해 프로필이 만들어집니다. v1을 사용하는 경우 누락된 pcIds 또는 mbox3rdPartyIds에 대해 프로필이 만들어지지 않습니다. 자세한 내용은 아래의 [빈 값 처리 [!DNL Bulk Profile Update API]](#empty)를 참조하십시오.
 * 묶음 파일의 크기는 50MB 미만이어야 합니다. 또한 총 행 수는 50만 개를 초과할 수 없습니다. 이 제한은 서버가 너무 많은 요청으로 침수되지 않도록 합니다.
-* 여러 파일을 보낼 수 있습니다. 단, 하루에 보내는 모든 파일의 행 합계 합계는 각 클라이언트에 대해 100만 개를 초과할 수 없습니다.
 * 업로드할 수 있는 속성 수에는 제한이 없습니다. 하지만 고객 속성, 프로필 API, Mbox 내 프로필 매개 변수 및 프로필 스크립트 출력을 포함하는 외부 프로필 데이터의 총 크기는 64KB를 초과할 수 없습니다.
 * 매개 변수와 값은 대/소문자를 구분합니다.
 
@@ -77,9 +76,9 @@ batch=pcId,param1,param2,param3,param4
 
 파일을 처리할 [!DNL Target] Edge Server에 대한 HTTP POST 요청을 만듭니다. 다음은 curl 명령을 사용한 batch.txt 파일에 대한 샘플 HTTP POST 요청입니다.
 
-``` ```
+``````
 curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
-``` ```
+``````
 
 여기서
 
