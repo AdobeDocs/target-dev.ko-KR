@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API]을(를) 
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: c2300ad6affdf3c1028e5c52ccaceb577a289227
+source-git-commit: 23cbece45828cf057594445b010a353d865d36ed
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 6%
@@ -49,13 +49,13 @@ ht-degree: 6%
 
 프로필 데이터를 대량으로 업데이트하려면 배치 파일을 만듭니다. 배치 파일은 다음 샘플 파일과 유사한 쉼표로 구분된 값이 있는 텍스트 파일입니다.
 
-``` ```
+```
 batch=pcId,param1,param2,param3,param4
 123,value1
 124,value1,,,value4
 125,,value2
 126,value1,value2,value3,value4
-``` ```
+```
 
 >[!NOTE]
 >
@@ -76,9 +76,9 @@ batch=pcId,param1,param2,param3,param4
 
 파일을 처리할 [!DNL Target] Edge Server에 대한 HTTP POST 요청을 만듭니다. 다음은 curl 명령을 사용한 batch.txt 파일에 대한 샘플 HTTP POST 요청입니다.
 
-``` ```
+```
 curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
-``` ```
+```
 
 여기서
 
