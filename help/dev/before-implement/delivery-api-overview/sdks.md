@@ -13,15 +13,15 @@ ht-degree: 2%
 
 # SDK
 
-[!DNL Adobe Target]은(는) [서버측 SDK](../../implement/server-side/server-side-overview.md)을(를) 제공하여 [!DNL Target Delivery API]과(와) 상호 작용하고 [!UICONTROL Adobe Analytics] 및 [!DNL Adobe Audience Manager]과(와) 같은 다른 [!DNL Adobe Experience Cloud] 솔루션과의 [!UICONTROL Target] 통합을 쉽게 지원합니다.
+[!DNL Adobe Target]은(는) [서버측 SDK](../../implement/server-side/server-side-overview.md)을(를) 제공하여 [!DNL Target Delivery API]과(와) 상호 작용하고 [!UICONTROL Target] 및 [!DNL Adobe Experience Cloud]과(와) 같은 다른 [!UICONTROL Adobe Analytics] 솔루션과의 [!DNL Adobe Audience Manager] 통합을 쉽게 지원합니다.
 
-SDK를 사용하면 세션 및 쿠키 관리에 대한 우수 사례를 따를 수 있습니다. SDK를 활용하여 복잡성을 완화하고 API의 잘못된 사용을 방지하는 것이 좋습니다.
+SDK를 사용하면 세션 및 쿠키 관리에 대한 우수 사례를 따를 수 있습니다. SDK을 활용하여 복잡성을 완화하고 API의 잘못된 사용을 방지하는 것이 좋습니다.
 
 ## Node.js SDK
 
 자세한 내용은 [Node.js SDK 개요](/help/dev/implement/server-side/node-js/overview.md)를 참조하십시오.
 
-[Node.js SDK](https://github.com/adobe/target-nodejs-sdk)는 Github에서 오픈 소스 및 유지 관리되며 여기에서 설명서 및 사용 지침을 찾을 수 있습니다.
+[Node.js SDK](https://github.com/adobe/target-nodejs-sdk)은(는) Github 내에서 오픈 소스이고 유지 관리되며 여기에서 설명서 및 사용 지침을 찾을 수 있습니다.
 
 Node.js SDK에 대한 [changelog](https://github.com/adobe/target-nodejs-sdk/blob/main/CHANGELOG.md)을(를) 읽습니다.
 
@@ -29,7 +29,7 @@ Node.js SDK에 대한 [changelog](https://github.com/adobe/target-nodejs-sdk/blo
 
 자세한 내용은 [Java SDK 개요](/help/dev/implement/server-side/java/overview.md)를 참조하십시오.
 
-[Java SDK](https://github.com/adobe/target-java-sdk)은(는) Github 내에서 오픈 소스이고 유지 관리되며 여기에서 설명서 및 사용 지침을 찾을 수 있습니다.
+[Java SDK](https://github.com/adobe/target-java-sdk)은(는) Github 내에서 오픈 소스이고 유지 관리되며, 여기에서 설명서 및 사용 지침을 찾을 수 있습니다.
 
 Java SDK에 대한 [changelog](https://github.com/adobe/target-java-sdk/blob/main/CHANGELOG.md)을(를) 읽습니다.
 
@@ -45,7 +45,7 @@ Java SDK에 대한 [changelog](https://github.com/adobe/target-java-sdk/blob/mai
 
 자세한 내용은 [Python SDK](/help/dev/implement/server-side/python/overview.md)를 참조하십시오.
 
-[Python SDK](https://github.com/adobe/target-python-sdk)는 Github에서 오픈 소스 및 유지 관리되며 여기에서 설명서 및 사용 지침을 찾을 수 있습니다.
+[Python SDK](https://github.com/adobe/target-python-sdk)은(는) Github 내에서 오픈 소스이고 유지 관리되며, 여기에서 설명서 및 사용 지침을 찾을 수 있습니다.
 
 Python SDK에 대한 [Changelog](https://github.com/adobe/target-python-sdk/blob/master/CHANGELOG.md)를 읽습니다.
 
