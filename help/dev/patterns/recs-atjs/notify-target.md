@@ -51,7 +51,7 @@ ht-degree: 0%
    * `orderTotal`: 구매에 대한 주문 총계입니다.
    * `orderId`: 구매의 주문 ID.
 
-  다음 그림은 [ 페이지에서만 실행해야 하는  [!DNL tags] 규칙  [!DNL Experience Platform]in](https://experienceleague.adobe.com/docs/tags.html){target=_blank}[!UICONTROL Confirmation]을(를) 보여 줍니다.
+  다음 그림은 [&#x200B; 페이지에서만 실행해야 하는  [!DNL tags] 규칙  [!DNL Experience Platform]in](https://experienceleague.adobe.com/docs/tags.html){target=_blank}[!UICONTROL Confirmation]을(를) 보여 줍니다.
 
   ![작업 구성 페이지](/help/dev/patterns/recs-atjs/assets/action-configuration.png){width="400" zoomable="yes"}
 
