@@ -174,7 +174,7 @@ ht-degree: 41%
    + [Experience Platform Web SDK의 A4T 데이터에 대한 클라이언트측 로깅](/help/dev/implement/a4t/client-side-logging.md)
    + [Experience Platform Web SDK의 A4T 데이터에 대한 서버측 로깅](/help/dev/implement/a4t/server-side-a4t.md)
 + [권장 사항 구현](implement/recommendations/recommendations.md)
-+ {hide-from-toc}[권장 사항 구현 베타](/help/dev/implement/recommendations/recommendations-beta.md)
++ [hide-from-toc권장 사항 구현 베타](/help/dev/implement/recommendations/recommendations-beta.md)
 + 모바일 앱 구현 {#mobile-apps}
    + [모바일 앱을 위한 Target 개요](implement/mobile/overview.md)
    + [Target 모바일 미리보기](implement/mobile/target-mobile-preview.md)
