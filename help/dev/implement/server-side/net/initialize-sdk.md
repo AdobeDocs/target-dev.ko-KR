@@ -4,8 +4,10 @@ description: create 메서드를 사용하여 Java SDK을 초기화하고 [!UICO
 feature: APIs/SDKs
 exl-id: 501010c3-22f4-49a8-b2ac-c7307232d180
 TQID: https://experienceleague.adobe.com/uOEojoWWjXmcDl2yY1UmSRD-EXL0j9p-p-eE8PXa7Rk
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: b18c88053a47a97d6718a69cb72cb4e5d99969c8
 workflow-type: tm+mt
 source-wordcount: 359
@@ -27,7 +29,7 @@ ht-degree: 15%
 
 `TargetClient.Create`을(를) 사용하여 `TargetClient`을(를) 만듭니다.
 
-## C#
+## C&#35;
 
 ```csharp {line-numbers="true"}
 TargetClient TargetClient.Create(TargetClientConfig clientConfig)
@@ -35,7 +37,7 @@ TargetClient TargetClient.Create(TargetClientConfig clientConfig)
 
 `ClientConfig`이(가) ClientConfig.Builder를 사용하여 만들어집니다.
 
-## C#
+## C&#35;
 
 ```csharp {line-numbers="true"}
 TargetClientConfig.Builder TargetClientConfig.Builder()
@@ -69,7 +71,7 @@ TargetClientConfig.Builder TargetClientConfig.Builder()
 
 ## 예
 
-## C#
+## C&#35;
 
 ```csharp {line-numbers="true"}
 var targetClientConfig = new TargetClientConfig.Builder("acmeclient", "ABCDEF012345677890ABCDEF0@AdobeOrg")
