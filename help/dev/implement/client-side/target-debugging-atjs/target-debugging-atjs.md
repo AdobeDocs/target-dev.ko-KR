@@ -36,12 +36,12 @@ ht-degree: 6%
 
 ### Adobe Experience Cloud Debugger 확장 프로그램 ![개요 배지](../../assets/overview.png) 추가
 
->[!VIDEO](https://video.tv.adobe.com/v/23114/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/33241/?captions=kor&quality=12)
 
 ### Adobe Experience Cloud Debugger를 사용한 기본 Adobe Target 디버깅 ![개요 배지](../../assets/overview.png)
 
->[!VIDEO](https://video.tv.adobe.com/v/23115/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/33299/?captions=kor&quality=12)
 
 ### Mbox 추적 ![개요 배지](../../assets/overview.png)
 
->[!VIDEO](https://video.tv.adobe.com/v/23113/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/33304/?captions=kor&quality=12)
