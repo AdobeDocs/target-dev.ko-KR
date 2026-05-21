@@ -7,15 +7,12 @@ thumbnail: null
 author: Judy Kim
 exl-id: 51a67a49-a92d-4377-9a9f-27116e011ab1
 TQID: https://experienceleague.adobe.com/sRzck0uJDaJdFZ9nG4Ijrbw31iX3M8WY5nIW2x4nl-0
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: f05a93102cc0f9b86a6521ff8007aa59f2af3c1a
 workflow-type: tm+mt
-source-wordcount: 930
+source-wordcount: 921
 ht-degree: 0%
 
 ---
@@ -24,7 +21,7 @@ ht-degree: 0%
 
 경우에 따라 권장 사항에서 제공하는 알고리즘에서 홍보하려는 특정 항목을 표시하지 못할 수 있습니다. 이러한 상황에서 사용자 지정 기준은 주어진 주요 항목 또는 카테고리에 대한 특정 권장 항목 세트를 전달할 수 있는 방법을 제공합니다.
 
-사용자 지정 기준을 만들려면 키 항목 또는 범주와 권장 항목 간에 원하는 매핑을 정의하고 가져옵니다. 이 프로세스는 [사용자 지정 기준 설명서](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html?lang=ko)에 설명되어 있습니다. 해당 설명서에서 설명한 대로 Target UI(사용자 인터페이스)를 통해 사용자 지정 기준을 만들고, 편집하고, 삭제할 수 있습니다. 하지만 Target에서는 사용자 지정 기준을 더 자세히 관리할 수 있는 사용자 지정 기준 API 세트를 제공합니다.
+사용자 지정 기준을 만들려면 키 항목 또는 범주와 권장 항목 간에 원하는 매핑을 정의하고 가져옵니다. 이 프로세스는 [사용자 지정 기준 설명서](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html)에 설명되어 있습니다. 해당 설명서에서 설명한 대로 Target UI(사용자 인터페이스)를 통해 사용자 지정 기준을 만들고, 편집하고, 삭제할 수 있습니다. 하지만 Target에서는 사용자 지정 기준을 더 자세히 관리할 수 있는 사용자 지정 기준 API 세트를 제공합니다.
 
 >[!WARNING]
 >
@@ -38,7 +35,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->이 연습에서 설명한 대로 사용자 지정 기준 만들기 API를 사용하여 만든 사용자 지정 기준이 UI에 나타나고 여기서 지속됩니다. UI에서 편집하거나 삭제할 수 없습니다. API를 통해 **편집하거나 삭제할 수 있지만** 어느 경우든 Target UI에 계속 표시됩니다. UI에서 편집하거나 삭제하는 옵션을 유지하려면 사용자 지정 기준 만들기 API와 반대로 [설명서](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html?lang=ko)에 대한 UI를 사용하여 사용자 지정 기준을 만드십시오.
+>이 연습에서 설명한 대로 사용자 지정 기준 만들기 API를 사용하여 만든 사용자 지정 기준이 UI에 나타나고 여기서 지속됩니다. UI에서 편집하거나 삭제할 수 없습니다. API를 통해 **편집하거나 삭제할 수 있지만** 어느 경우든 Target UI에 계속 표시됩니다. UI에서 편집하거나 삭제하는 옵션을 유지하려면 사용자 지정 기준 만들기 API와 반대로 [설명서](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html)에 대한 UI를 사용하여 사용자 지정 기준을 만드십시오.
 
 위의 경고를 읽고 UI에서 이후에 삭제할 수 없는 새 사용자 지정 기준을 쉽게 만든 후에만 다음 단계를 수행하십시오.
 
@@ -123,4 +120,4 @@ ht-degree: 0%
 
 축하합니다! 이제 권장 사항 API를 사용하여 사용자 지정 기준을 만들고, 나열하고, 편집하고, 삭제하고, 세부 정보를 가져올 수 있습니다. 다음 섹션에서는 Target 게재 API를 사용하여 권장 사항을 검색합니다.
 
-&lt;!— [다음 &quot;서버측 배달 API로 권장 사항 가져오기&quot; >](fetch-recs-server-side-delivery-api.md) —>
+<!-- [Next "Fetch Recommendations with the Server-side Delivery API" >](fetch-recs-server-side-delivery-api.md) -->

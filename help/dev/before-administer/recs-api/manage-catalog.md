@@ -7,15 +7,12 @@ thumbnail: null
 author: Judy Kim
 exl-id: aea82607-cde4-456a-8dfb-2967badce455
 TQID: https://experienceleague.adobe.com/9uKu-mX9xzz-sG4-peyfzrwogo27nF8TZ4zFXBi6TaU
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0fe52344f654f22d1ff7aaace0ba5a99e92d036d
 workflow-type: tm+mt
-source-wordcount: 905
+source-wordcount: 901
 ht-degree: 0%
 
 ---
@@ -156,7 +153,7 @@ GET https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities/[entity.id]
 
    >[!NOTE]
    >
-   >환경이 명시적으로 지정되지 않은 경우 엔터티 가져오기는 [기본 환경](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=ko)에서만 엔터티를 가져옵니다. 기본 환경이 아닌 다른 환경에서 가져오려면 환경 ID를 지정해야 합니다.
+   >환경이 명시적으로 지정되지 않은 경우 엔터티 가져오기는 [기본 환경](https://experienceleague.adobe.com/docs/target/using/administer/environments.html)에서만 엔터티를 가져옵니다. 기본 환경이 아닌 다른 환경에서 가져오려면 환경 ID를 지정해야 합니다.
 
 1. 필요한 경우 `environmentId` 매개 변수를 추가하고 요청을 다시 보냅니다.
 
@@ -208,4 +205,4 @@ DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities?ids=[comma-delimit
 
 축하합니다! 이제 Recommendations API를 사용하여 카탈로그의 엔터티에 대한 세부 사항을 만들고, 업데이트하고, 삭제하고, 가져올 수 있습니다. 다음 섹션에서는 사용자 지정 기준을 관리하는 방법에 대해 알아봅니다.
 
-&lt;!— [다음 &quot;사용자 지정 기준 관리&quot; >](manage-custom-criteria.md) —>
+<!-- [Next "Manage Custom Criteria" >](manage-custom-criteria.md) -->
