@@ -5,16 +5,29 @@ title: Target에서 CNAME을 사용하는 방법
 feature: Privacy & Security
 role: Developer
 exl-id: bf533771-6d46-48ba-964c-3ad9ce9f7352
-source-git-commit: c9f6bf53ee8a9d6808191bbe7d014d31a9d80829
+TQID: https://experienceleague.adobe.com/gTS60hypD2WGc2fJh-sUkq2-pkzt2KnM4CzSQ050L40
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '1256'
+source-wordcount: 1313
 ht-degree: 1%
 
 ---
 
 # CNAME 및 [!DNL Target]
 
-[!DNL Adobe]에서 CNAME(표준 이름) 지원을 구현하기 위한 [!DNL Adobe Target] Client Care 작업 지침 CNAME을 사용하여 광고 차단 문제 또는 ITP 관련(Intelligent Tracking Prevention) 쿠키 정책을 처리합니다. CNAME을 사용하면 [!DNL Adobe]이(가) 소유한 도메인이 아니라 고객이 소유한 도메인에 호출됩니다.
+[!DNL Adobe Target]에서 CNAME(표준 이름) 지원을 구현하기 위한 [!DNL Adobe] Client Care 작업 지침 CNAME을 사용하여 광고 차단 문제 또는 ITP 관련(Intelligent Tracking Prevention) 쿠키 정책을 처리합니다. CNAME을 사용하면 [!DNL Adobe]이(가) 소유한 도메인이 아니라 고객이 소유한 도메인에 호출됩니다.
 
 ## [!DNL Target]에서 CNAME 지원 요청
 
@@ -253,7 +266,7 @@ function adobeTargetCnameValidation {
    adobeTargetCnameValidation target.example.com
    ```
 
-   구현이 준비되면 아래와 같은 출력이 표시됩니다. 중요한 점은 모든 유효성 검사 상태 줄에 `✅`이(가) 아닌 `🚫`이(가) 표시된다는 것입니다. 각 [!DNL Target] 에지 CNAME 분할에는 요청된 인증서의 기본 호스트 이름과 일치하는 `CN=target.example.com`이(가) 표시됩니다(인증서의 추가 SAN 호스트 이름은 이 출력에 인쇄되지 않음).
+   구현이 준비되면 아래와 같은 출력이 표시됩니다. 중요한 점은 모든 유효성 검사 상태 줄에 `🚫`이(가) 아닌 `✅`이(가) 표시된다는 것입니다. 각 [!DNL Target] 에지 CNAME 분할에는 요청된 인증서의 기본 호스트 이름과 일치하는 `CN=target.example.com`이(가) 표시됩니다(인증서의 추가 SAN 호스트 이름은 이 출력에 인쇄되지 않음).
 
 ```
 $ adobeTargetCnameValidation target.example.com

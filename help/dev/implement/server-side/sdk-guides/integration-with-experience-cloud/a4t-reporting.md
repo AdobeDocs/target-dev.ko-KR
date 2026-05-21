@@ -4,9 +4,17 @@ description: Experience Cloud, A4T 보고, Analytics for Target 통합과 통합
 keywords: 배달 api, 서버측, 서버측, 통합, a4t
 exl-id: 0d09d7a1-528d-4e6a-bc6c-f7ccd61f5b75
 feature: Implement Server-side
-source-git-commit: cbae0f1758fb0dee4837e8c237f8617ecb46eb25
+TQID: https://experienceleague.adobe.com/Qx5xwszkQLumkFhGJDbvyIofPe7qxUDN922iqmhsClk
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: 392
 ht-degree: 6%
 
 ---
@@ -24,7 +32,7 @@ ht-degree: 6%
 
 ## 전제 조건
 
-1. [!DNL Adobe Target]을(를) 보고 소스로 사용하여 [!DNL Adobe Analytics] UI에서 활동을 구성하고 계정이 A4T에 대해 활성화되었는지 확인하십시오.
+1. [!DNL Adobe Analytics]을(를) 보고 소스로 사용하여 [!DNL Adobe Target] UI에서 활동을 구성하고 계정이 A4T에 대해 활성화되었는지 확인하십시오.
 1. API 사용자는 Adobe [!UICONTROL Marketing Cloud Visitor ID]을(를) 생성하고 [!DNL Target] 요청이 실행될 때 이 ID를 사용할 수 있도록 합니다.
 
 ## [!DNL Adobe Target]에서 [!DNL Analytics] 페이로드를 자동으로 전달합니다.
@@ -115,7 +123,7 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 ## 사용자가 [!DNL Adobe Target]에서 분석 페이로드를 검색합니다.
 
-사용자는 지정된 mbox에 대한 [!DNL Adobe Analytics] 페이로드를 검색한 다음 [!DNL Adobe Analytics]데이터 삽입 API[를 통해 &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md)에 보낼 수 있습니다. [!DNL Adobe Target] 요청이 실행되면 `client_side`을(를) 요청의 `logging` 필드에 전달합니다. 이 요청은 지정된 mbox가 보고 소스로 [!DNL Analytics]을(를) 사용하는 활동에 있는 경우 페이로드를 반환합니다.
+사용자는 지정된 mbox에 대한 [!DNL Adobe Analytics] 페이로드를 검색한 다음 [데이터 삽입 API](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md)를 통해 [!DNL Adobe Analytics]에 보낼 수 있습니다. [!DNL Adobe Target] 요청이 실행되면 `client_side`을(를) 요청의 `logging` 필드에 전달합니다. 이 요청은 지정된 mbox가 보고 소스로 [!DNL Analytics]을(를) 사용하는 활동에 있는 경우 페이로드를 반환합니다.
 
 >[!BEGINTABS]
 
@@ -206,7 +214,7 @@ https://{datacollectionhost.sc.omtrdc.net}/b/ss/{rsid}/{content_type_num}/{code_
 | `code_ver` | 예 | 항상 &quot;MOBILE-1.0&quot;으로 설정 |
 | `session` | 예 | 항상 &quot;0&quot;으로 설정 |
 | `pe` | 예 | 페이지 이벤트. 항상 `tnt`(으)로 설정 |
-| `tnta` | 예 | [!DNL Analytics]의 [!DNL Target] 서버에서 `analytics -> payload -> tnta` 페이로드를 반환했습니다. |
+| `tnta` | 예 | `analytics -> payload -> tnta`의 [!DNL Target] 서버에서 [!DNL Analytics] 페이로드를 반환했습니다. |
 | `sessionId` | 예 | 진행 중인 세션의 [!DNL Target] 세션 ID |
 | `mid` | 예 | Marketing Cloud 방문자 ID |
 

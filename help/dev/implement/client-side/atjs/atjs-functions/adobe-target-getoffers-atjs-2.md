@@ -1,13 +1,26 @@
 ---
 keywords: adobe.target.getOffers, getOffers, getoffers, 오퍼 가져오기, at.js, 함수, 함수, $8
-description: '[!UICONTROL adobe.target.getOffers()]at.js 라이브러리에 대한  [!DNL Adobe Target]  함수와 해당 옵션을 사용하여 여러 [!DNL Target] 오퍼를 가져오는 요청을 실행합니다. (at.js 2.x)'
+description: ' [!DNL Adobe Target] at.js 라이브러리에 대한 [!UICONTROL adobe.target.getOffers()] 함수와 해당 옵션을 사용하여 여러 [!DNL Target] 오퍼를 가져오는 요청을 실행합니다. (at.js 2.x)'
 title: '[!UICONTROL adobe.target.getOffers()] 함수를 사용하는 방법'
 feature: at.js
 exl-id: b96a3018-93eb-49e7-9aed-b27bd9ae073a
-source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
+TQID: https://experienceleague.adobe.com/jJXcWyQzJ48GNCNcOT165vxcO-CLExTj-t-3kbR2FZ0
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 62%
+source-wordcount: 1340
+ht-degree: 60%
 
 ---
 
@@ -17,11 +30,11 @@ ht-degree: 62%
 
 >[!NOTE]
 >
->이 함수는 at.js 2.x에서 도입되었으며, at.js 버전 1.*x*&#x200B;에는 사용할 수 없습니다.
+>이 함수는 at.js 2.x에서 도입되었습니다. 이 함수는 at.js 버전 1.*x*&#x200B;에서 사용할 수 없습니다.
 
 | 키 | 유형 | 필수? | 설명 |
 | --- | --- | --- | --- |
-| `consumerId` | 문자열 | 아니오 | 기본값이 제공되지 않을 경우 기본값은 클라이언트의 글로벌 mbox입니다. 이 키는 A4T 통합에 사용되는 SDID(Supplemental Data ID)를 생성하는 데 사용됩니다.<P>`getOffers()`을(를) 사용할 때 각 호출은 새 SDID를 생성합니다. 동일한 페이지에 여러 개의 mbox 요청이 있고 SDID를 유지하려는 경우(target-global-mbox의 SDID와 [!DNL Adobe Analytics] SDID가 일치하도록) `consumerId` 매개 변수를 사용하십시오.<P>`getOffers()`에 &quot;mbox1&quot;, &quot;mbox2&quot; 및 &quot;mbox3&quot;이라는 mbox가 3개 있는 경우 `consumerId: "mbox1, mbox2, mbox3"` 호출에 `getOffers()`을(를) 포함하십시오. |
+| `consumerId` | 문자열 | 아니오 | 기본값이 제공되지 않을 경우 기본값은 클라이언트의 글로벌 mbox입니다. 이 키는 A4T 통합에 사용되는 SDID(Supplemental Data ID)를 생성하는 데 사용됩니다.<P>`getOffers()`을(를) 사용할 때 각 호출은 새 SDID를 생성합니다. 동일한 페이지에 여러 개의 mbox 요청이 있고 SDID를 유지하려는 경우(target-global-mbox의 SDID와 [!DNL Adobe Analytics] SDID가 일치하도록) `consumerId` 매개 변수를 사용하십시오.<P>`getOffers()`에 &quot;mbox1&quot;, &quot;mbox2&quot; 및 &quot;mbox3&quot;이라는 mbox가 3개 있는 경우 `getOffers()` 호출에 `consumerId: "mbox1, mbox2, mbox3"`을(를) 포함하십시오. |
 | `decisioningMethod` | 문자열 | 아니오 | &quot;서버측&quot;, &quot;온디바이스&quot;, &quot;하이브리드&quot; |
 | `request` | 개체 | 예 | 아래의 &quot;요청&quot; 테이블을 참조하십시오. |
 | `timeout` | 숫자 | 아니오 | 요청 시간 제한. 지정하지 않으면 기본값 at.js 시간 제한이 사용됩니다. |
@@ -38,7 +51,7 @@ ht-degree: 62%
 | request > id > thirdPartyId | 아니오 | 최대 크기 = 128. |  |
 | Request > experienceCloud | 아니오 |  |  |
 | Request > experienceCloud > analytics | 아니오 |  | Adobe Analytics 통합 |
-| Request > experienceCloud > analytics > logging | 아니오 | 페이지에서 다음을 구현해야 합니다.<ul><li>방문자 ID 서비스</li><li>Appmeasurement.js</li></ul> | 지원되는 값은 다음과 같습니다.<P>**client_side**: 지정하면 [!UICONTROL Adobe Analytics]을(를) 통해 [!UICONTROL Data Insertion API]에 보내는 데 사용해야 하는 호출자에게 분석 페이로드가 반환됩니다.<P>**server_side**: [!DNL Target] 및 [!DNL Analytics] 백엔드가 보고 목적으로 SDID를 사용하여 호출을 함께 연결하는 기본값입니다. |
+| Request > experienceCloud > analytics > logging | 아니오 | 페이지에서 다음을 구현해야 합니다.<ul><li>방문자 ID 서비스</li><li>Appmeasurement.js</li></ul> | 지원되는 값은 다음과 같습니다.<P>**client_side**: 지정하면 [!UICONTROL Data Insertion API]을(를) 통해 [!UICONTROL Adobe Analytics]에 보내는 데 사용해야 하는 호출자에게 분석 페이로드가 반환됩니다.<P>**server_side**: [!DNL Target] 및 [!DNL Analytics] 백엔드가 보고 목적으로 SDID를 사용하여 호출을 함께 연결하는 기본값입니다. |
 | request > prefetch | 아니오 |  |  |
 | request > prefetch > views | 아니오 | 최대 개수 50.<P>이름은 비워둘 수 없습니다.<P>이름 길이 `<=` 128.<P>값 길이 `<=` 5000입니다.<P>이름은 &quot;profile&quot;로 시작하면 안 됩니다.<P>허용되지 않는 이름: &quot;orderId&quot;, &quot;orderTotal&quot;, &quot;productPurchasedId&quot;. | 활성 활동에서 적절한 보기를 검색하는 데 사용할 매개 변수를 전달합니다. |
 | request > prefetch > views > profileParameters | 아니오 | 최대 개수 50.<P>이름은 비워둘 수 없습니다.<P>이름 길이 `<=` 128.<P>값 길이 `<=` 5000입니다.<P>문자열 값만 허용합니다.<P>이름은 &quot;profile&quot;로 시작하면 안 됩니다. | 활성 활동에서 적절한 보기를 검색하는 데 사용할 프로필 매개 변수를 전달합니다. |
@@ -204,7 +217,7 @@ adobe.target.getOffers({
 }
 ```
 
-[!DNL Adobe Analytics]데이터 삽입 API[를 통해 페이로드를 &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md)에 전달할 수 있습니다.
+[데이터 삽입 API](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md)를 통해 페이로드를 [!DNL Adobe Analytics]에 전달할 수 있습니다.
 
 ## [!UICONTROL getOffers()] 및 [!UICONTROL applyOffers()]을(를) 통해 여러 mbox에서 데이터를 가져와 렌더링합니다.
 
@@ -287,7 +300,7 @@ adobe.target.getOffers({
 
 ## [!UICONTROL getOffers()]을(를) 호출하여 페이지 로드를 수행합니다.
 
-다음 예제에서는 at.js 2에서 [!UICONTROL getOffers()]을(를) 사용하여 pageLoad를 수행하는 방법을 보여 줍니다.*x*
+다음 예제에서는 at.js 2.*x*&#x200B;에서 [!UICONTROL getOffers()]을(를) 사용하여 pageLoad를 수행하는 방법을 보여 줍니다
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffers({

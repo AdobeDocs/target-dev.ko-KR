@@ -5,9 +5,20 @@ title: 웹 보기에서 네이티브 코드를 사용하는 모바일 앱에서 
 feature: Implement Mobile
 role: Developer
 exl-id: 3dd2e1d7-c744-4ba8-aaa4-6c2fe64d01fa
-source-git-commit: 50ee7e66e30c0f8367763a63b6fde5977d30cfe7
+TQID: https://experienceleague.adobe.com/JrbjPpq3ds0sl4rkMnuzF9SYk2PI4r676hHqN-Pvn78
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: d051910f-2bda-47ea-a969-6ade9fcd71f1
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: 611
 ht-degree: 0%
 
 ---
@@ -16,19 +27,19 @@ ht-degree: 0%
 
 이 문서에서는 [!DNL Adobe Experience Platform Mobile SDK]을(를) 사용하여 웹 보기에서 네이티브 코드를 사용하는 모바일 앱에서 [!DNL Adobe Target]을(를) 구현하기 위한 모범 사례를 공유합니다.
 
-이 문서에서는 [[!DNL Adobe Experience Platform Mobile SDK]](https://developer.adobe.com/client-sdks/documentation/getting-started/){target=_blank} 및 GitHub 저장소의 [Swift](https://github.com/adobe/aep-sdk-app/){target=_blank}에 작성된 [!DNL Target] 통합을 사용하는 샘플 iOS 앱을 사용합니다.
+이 문서에서는 [[!DNL Adobe Experience Platform Mobile SDK]](https://developer.adobe.com/client-sdks/documentation/getting-started/){target=_blank} 및 [GitHub 저장소의 Swift](https://github.com/adobe/aep-sdk-app/){target=_blank}로 작성된 [!DNL Target] 통합을 사용하는 샘플 iOS 앱을 사용합니다.
 
 실제 환경에서는 엔터프라이즈 앱이 모바일 앱에서 웹 보기를 사용할 수 있습니다. 웹 보기는 URL을 사용하여 웹 페이지를 로드하는 컨테이너입니다. 이 컨테이너는 컨트롤이 없는 브라우저 창과 유사합니다. iOS에서 웹 보기 컨테이너는 웹 페이지를 처리할 때 Safari 브라우저로 작동합니다.
 
-## 전제 조건
+## 사전 요구 사항
 
 [!DNL Adobe Experience Platform Mobile SDK]을(를) 시작하려면 몇 가지 전제 조건 작업을 수행해야 합니다.
 
-자세한 내용은 [[!DNL Adobe Experience Platform Mobile SDK]](https://developer.adobe.com/client-sdks/documentation/){target=_blank} 설명서의 [Adobe Target](https://developer.adobe.com/client-sdks/documentation/adobe-target/){target=_blank}을(를) 참조하십시오.
+자세한 내용은 [[!DNL Adobe Experience Platform Mobile SDK]](https://developer.adobe.com/client-sdks/documentation/){target=_blank} 설명서의 [Adobe Target](https://developer.adobe.com/client-sdks/documentation/adobe-target/){target=_blank}을 참조하세요.
 
 ## 기본 코드와 웹 보기 동기화
 
-웹 보기가 있는 기본 앱에서 [!DNL Target]을(를) 구현할 때 어려움은 [!DNL Adobe Experience Platform Mobile SDK]이(가) [!DNL Adobe] 솔루션이 원활하게 작동하는 데 필요한 모든 식별자를 이미 생성했다는 것입니다. 그러나 식별자는 기본 플랫폼 환경에 없으므로 웹 보기에 아직 표시되지 않습니다. 따라서 방문자 ID가 웹 환경에서 지속되도록 일부 SDK 식별자를 웹 보기에 전달하는 브리지를 만들어야 합니다. 이 작업을 제대로 수행하지 못하면 중복 방문이 발생하고, 이는 보고에 영향을 줍니다.
+웹 보기가 있는 기본 앱에서 [!DNL Target]을(를) 구현할 때 어려움은 [!DNL Adobe Experience Platform Mobile SDK]이(가) [!DNL Adobe] 솔루션이 원활하게 작동하는 데 필요한 모든 식별자를 이미 생성했다는 것입니다. 그러나 식별자는 기본 플랫폼 환경에 없으므로 웹 보기에 아직 표시되지 않습니다. 따라서 방문자 ID가 웹 환경에 지속되도록 일부 SDK 식별자를 웹 보기에 전달하는 브리지를 만들어야 합니다. 이 작업을 제대로 수행하지 못하면 중복 방문이 발생하고, 이는 보고에 영향을 줍니다.
 
 다행히 [!DNL Adobe Experience Platform Mobile SDK]에서는 다음 샘플 코드와 같이 웹 보기에서 동일한 방문자를 사용하고 유지하는 데 필요한 [!DNL Adobe] 매개 변수를 생성하는 편리한 방법을 제공합니다.
 
@@ -43,7 +54,7 @@ Identity.appendTo(url: URL(string: url), completion: {appendedURL, error in
 });
 ```
 
-`Identity.appendTo` 메서드에 대한 자세한 내용 및 메서드 사용 방법의 예를 보려면 *Mobile SDK 설명서*&#x200B;에서 [Swift > 예제](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/tabs/api-reference/){target=_blank}을 참조하십시오.
+`Identity.appendTo` 메서드에 대한 자세한 내용 및 메서드 사용 방법의 예를 보려면 *Mobile SDK 설명서*&#x200B;에서 [Swift > 예제](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/tabs/api-reference/){target=_blank}를 참조하십시오.
 
 `Identity.appendTo`을(를) 사용하는 URL:
 
@@ -60,7 +71,7 @@ https://vadymus.github.io/ateng/at-order-confirmation/index.html?a=1&b=2&adobe_m
 알 수 있듯이 URL에 `adobe_mc` 매개 변수가 추가되었습니다. 이 매개변수에는 다음에 대한 인코딩된 값이 포함되어 있습니다.
 
 * TS=1660667205: 현재 타임스탬프입니다. 이 타임스탬프는 웹 보기가 만료된 값을 받지 않도록 합니다.
-* MCMID=69624092487065093697422606480535692677: [!UICONTROL Experience Cloud ID] (ECID). [!DNL Adobe] 솔루션 간 방문자 식별에 필요한 MID 또는 [!UICONTROL Marketing Cloud ID]이라고도 합니다.
+* MCMID=69624092487065093697422606480535692677: [!UICONTROL Experience Cloud ID]&#x200B;(ECID). [!DNL Adobe] 솔루션 간 방문자 식별에 필요한 MID 또는 [!UICONTROL Marketing Cloud ID]이라고도 합니다.
 * MCORGID=EB9CAE8B56E003697F000101@AdobeOrg: [!UICONTROL Adobe Organization ID].
 
 `Identity.getUrlVariables`은(는) [!DNL Experience Cloud Identity Service] URL 변수를 포함하는 적절한 형식의 문자열을 반환하는 대체 [!DNL Adobe Experience Platform Mobile SDK] 메서드입니다. 자세한 내용은 *ID API 참조*&#x200B;에서 [getUrlVariables](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#geturlvariables){target=_blank}을(를) 참조하십시오.

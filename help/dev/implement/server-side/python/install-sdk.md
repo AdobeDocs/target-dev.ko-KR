@@ -1,18 +1,23 @@
 ---
 title: Python SDK 설치
-description: ' [!DNL Adobe Target] Python SDK를 설치하는 방법을 알아봅니다.'
+description: ' [!DNL Adobe Target] Python SDK을 설치하는 방법을 알아봅니다.'
 feature: APIs/SDKs
 exl-id: e4371cc4-2965-4253-9b5d-13fa6835ce67
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/rnzXo6mrdyK9EWeB0zls-WjwXIZPdZb7Es-rrkOejyc
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 2%
+source-wordcount: 61
+ht-degree: 1%
 
 ---
 
 # Python SDK 설치
 
-Python SDK는 [pypi](https://pypi.org/project/target-python-sdk)에 의해 배포됩니다. 시작하려면 pip를 통해 설치하여 종속으로 추가합니다.
+Python SDK은 [pypi](https://pypi.org/project/target-python-sdk)에 의해 배포됩니다. 시작하려면 pip를 통해 설치하여 종속으로 추가합니다.
 
 ## 설치
 

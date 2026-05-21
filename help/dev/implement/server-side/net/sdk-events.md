@@ -3,9 +3,14 @@ title: ' [!DNL Adobe Target] .NET SDK의 이벤트 구독'
 description: '[!UICONTROL OnDeviceDecisioningHandler] 개체를 사용하여 .NET SDK 내에서 발생하는 다양한 이벤트를 구독하는 방법에 대해 알아봅니다.'
 feature: APIs/SDKs
 exl-id: 7578033f-3de5-4d13-9739-46ad1269ec5f
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/oeGknU-pW1-XjVrxn8JNEPoFBF8Gntt-vaVnqjdyTC8
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: 120
 ht-degree: 5%
 
 ---
@@ -14,7 +19,7 @@ ht-degree: 5%
 
 ## 설명
 
-[SDK를 초기화](initialize-sdk.md)할 때 선택적 `OnDeviceDecisioningReady` 대리자를 `TargetClientConfig` 개체에 제공할 수 있습니다. 이 대리자는 SDK에서 장치 내 메서드 호출을 수행할 준비가 되면 호출됩니다. [!UICONTROL on-device decisioning] 아티팩트 다운로드를 처리하는 데 사용할 수 있는 다른 대리자도 두 명 있습니다.
+[SDK을 초기화](initialize-sdk.md)할 때 선택적 `OnDeviceDecisioningReady` 대리자를 `TargetClientConfig` 개체에 제공할 수 있습니다. 이 대리자는 SDK에서 장치 내 메서드 호출을 수행할 준비가 되었을 때 호출됩니다. [!UICONTROL on-device decisioning] 아티팩트 다운로드를 처리하는 데 사용할 수 있는 다른 대리자도 두 명 있습니다.
 
 ## 이벤트
 

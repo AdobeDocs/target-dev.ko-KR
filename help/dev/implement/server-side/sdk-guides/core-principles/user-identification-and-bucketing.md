@@ -3,10 +3,18 @@ title: 사용자 식별 및 버킷팅
 description: 사용자 식별 및 버킷팅
 exl-id: 4fcf235b-6a58-442c-ae13-9d05ec1033fc
 feature: Implement Server-side
-source-git-commit: 09a50aa67ccd5c687244a85caad24df56c0d78f5
+TQID: https://experienceleague.adobe.com/V9hK5oj7F-SV2wou2sz-Ve3RVJ1EMsFJDmcNF4ctV5o
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 3%
+source-wordcount: 1172
+ht-degree: 4%
 
 ---
 
@@ -165,11 +173,11 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 이 시나리오에서 [!DNL Adobe Target]은(는) 원래 호출로 전달되지 않았으므로 `tntId`을(를) 생성하며, 이 호출은 제공된 `thirdPartyId`에 매핑됩니다.
 
-## Marketing Cloud 방문자 ID(marketingCloudVisitorId)
+## Marketing Cloud 방문자 ID (marketingCloudVisitorId)
 
 `marketingCloudVisitorId`은(는) Adobe Experience Cloud의 모든 솔루션에서 방문자를 식별하는 범용 및 영구 ID입니다. 조직에서 ID 서비스를 구현하면 이 ID를 사용하여 [!DNL Adobe Target], Adobe Analytics 및 Adobe Audience Manager을 비롯한 다양한 Experience Cloud 솔루션에서 동일한 사이트 방문자와 해당 데이터를 식별할 수 있습니다. [!DNL Target]을(를) [!DNL Adobe Analytics] 및 [!DNL Adobe Audience Manager]과(와) 통합할 때 `marketingCloudVisitorId`이(가) 필요합니다.
 
-다음 샘플 호출은 Experience Cloud ID 서비스에서 검색된 `marketingCloudVisitorId`이(가) [!DNL Target]에 전달되는 방법을 보여 줍니다.
+다음 샘플 호출은 Experience Cloud ID 서비스에서 검색된 `marketingCloudVisitorId`을(를) [!DNL Target]에 전달하는 방법을 보여 줍니다.
 
 >[!BEGINTABS]
 

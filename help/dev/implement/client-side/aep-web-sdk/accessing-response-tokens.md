@@ -3,9 +3,20 @@ title: Adobe Experience Platform Web SDK을 사용하여 응답 토큰 액세스
 description: ' [!DNL Adobe Experience Platform Web SDK]을(를) 사용하여 응답 토큰에 액세스하는 방법을 알아봅니다.'
 keywords: 개인화;target;adobe target;renderDecisions;sendEvent;decisionScopes;result.decisions,응답 토큰;
 feature: AEP Web SDK
-source-git-commit: f010ca54aac3c2a644a77fb2f88aff1996f6ddfe
+exl-id: b125017c-c257-4f2f-a479-dd0f20e76a9a
+TQID: https://experienceleague.adobe.com/kqa-HY5-dOvNq-yGqthunYDdyTKkiiFdsHquyN34ERg
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: 273
 ht-degree: 0%
 
 ---
@@ -14,7 +25,7 @@ ht-degree: 0%
 
 [!DNL Adobe Target]에서 반환된 Personalization 콘텐츠에는 활동, 오퍼, 경험, 사용자 프로필, 지역 정보 등에 대한 세부 정보인 [응답 토큰](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=ko)이(가) 포함되어 있습니다. 이러한 세부 정보는 서드파티 도구와 공유하거나 디버깅에 사용할 수 있습니다. [!DNL Target] 사용자 인터페이스에서 응답 토큰을 구성할 수 있습니다.
 
-개인화 콘텐츠에 액세스하려면 이벤트를 전송할 때 콜백 함수를 제공하십시오. 이 콜백은 SDK이 서버로부터 성공적인 응답을 받은 후에 호출됩니다. 콜백에는 반환된 개인화 콘텐츠가 포함된 `result` 속성이 포함될 수 있는 `propositions` 개체가 제공됩니다. 다음은 콜백 함수를 제공하는 예입니다.
+개인화 콘텐츠에 액세스하려면 이벤트를 전송할 때 콜백 함수를 제공하십시오. 이 콜백은 SDK이 서버로부터 성공적인 응답을 받은 후에 호출됩니다. 콜백에는 반환된 개인화 콘텐츠가 포함된 `propositions` 속성이 포함될 수 있는 `result` 개체가 제공됩니다. 다음은 콜백 함수를 제공하는 예입니다.
 
 ```javascript
 alloy("sendEvent", {
@@ -27,7 +38,7 @@ alloy("sendEvent", {
   });
 ```
 
-이 예에서 `result.propositions`은(는) 존재하는 경우 이벤트와 관련된 개인화 제안이 포함된 배열입니다. [의 콘텐츠에 대한 자세한 내용은 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)개인화 콘텐츠 렌더링`result.propositions.`을 참조하십시오
+이 예에서 `result.propositions`은(는) 존재하는 경우 이벤트와 관련된 개인화 제안이 포함된 배열입니다. `result.propositions.`의 콘텐츠에 대한 자세한 내용은 [개인화 콘텐츠 렌더링](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)을 참조하십시오
 
 웹 SDK에서 자동으로 렌더링된 모든 명제에서 모든 활동 이름을 수집하여 단일 배열로 푸시하려는 경우 그런 다음 단일 스토리지를 서드파티로 전송할 수 있습니다. 이 경우:
 

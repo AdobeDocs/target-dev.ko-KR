@@ -1,12 +1,23 @@
 ---
 title: 대상 타기팅
-description: 대상을 사용하여 실험 및 개인화 활동을 타깃팅할 수 있습니다. [!DNL Adobe Target] 은(는) 기본적으로 무수히 강력한 대상 타깃팅 기능을 지원합니다.
+description: 대상을 사용하여 실험 및 개인화 활동을 타깃팅할 수 있습니다. [!DNL Adobe Target] 무수한 강력한 대상 타깃팅 기능을 즉시 지원합니다.
 exl-id: df1bd856-e848-452c-90a0-abf29e7a2313
 feature: Implement Server-side
-source-git-commit: 09a50aa67ccd5c687244a85caad24df56c0d78f5
+TQID: https://experienceleague.adobe.com/BmKrCmWIkEkNHiipZ-DqDlhzOT7bVmKHl9de5uXhJQU
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 22%
+source-wordcount: 1069
+ht-degree: 15%
 
 ---
 
@@ -36,7 +47,7 @@ ht-degree: 22%
 
 ### 지역
 
-자세한 내용은 [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html?lang=ko)을 참조하세요.
+자세한 내용은 [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html?lang=ko)을 참조하십시오.
 &#x200B; &#x200B;
 * 국가/지역
 * 주/도
@@ -69,7 +80,7 @@ ht-degree: 22%
 * 화면 높이(픽셀)
 * 화면 너비(픽셀)
 
-### 사용자 지정
+### 사용자 정의
 
 자세한 내용은 [사용자 지정 매개 변수](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html?lang=ko)를 참조하십시오.
 
@@ -207,11 +218,11 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 | [방문자 프로필](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=ko) | 아니요 |
 | [트래픽 소스](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=ko) | 아니요 |
 | [시간대](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html?lang=ko) | 예 |
-| [Experience Cloud 대상](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=ko)(Adobe Audience Manager, Adobe Analytics 및 Adobe Experience Manager의 대상) | 아니요 |
+| [Experience Cloud 대상](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=ko)&#x200B;(Adobe Audience Manager, Adobe Analytics 및 Adobe Experience Manager의 대상) | 아니요 |
 
 ### 온디바이스 의사 결정을 위한 지역 타기팅
 
-Adobe 지역 기반 대상을 사용하는 온디바이스 의사 결정 활동에 대해 지연 시간이 거의 0에 가깝도록 유지하려면 `getOffers` 호출에서 지역 값을 직접 제공하는 것이 좋습니다. 요청의 `Context`에서 `Geo` 개체를 설정하여 이 작업을 수행합니다. 즉, 서버에서 각 최종 사용자의 위치를 확인하는 방법이 필요합니다. 예를 들어 서버는 사용자가 구성하는 서비스를 사용하여 IP-to-Geo 조회를 수행할 수 있습니다. Google Cloud와 같은 일부 호스팅 공급자는 각 `HttpServletRequest`에서 사용자 지정 헤더를 통해 이 기능을 제공합니다.
+지역 기반 대상을 사용하는 온디바이스 의사 결정 활동에 대해 지연 시간이 거의 0에 가깝도록 유지하기 위해 Adobe에서는 `getOffers` 호출에 지역 값을 직접 제공할 것을 권장합니다. 요청의 `Context`에서 `Geo` 개체를 설정하여 이 작업을 수행합니다. 즉, 서버에서 각 최종 사용자의 위치를 확인하는 방법이 필요합니다. 예를 들어 서버는 사용자가 구성하는 서비스를 사용하여 IP-to-Geo 조회를 수행할 수 있습니다. Google Cloud와 같은 일부 호스팅 공급자는 각 `HttpServletRequest`에서 사용자 지정 헤더를 통해 이 기능을 제공합니다.
 
 >[!BEGINTABS]
 
@@ -270,7 +281,7 @@ public class TargetRequestUtils {
 
 >[!ENDTABS]
 
-그러나 서버에 IP-to-Geo 조회를 수행할 수 없지만 지역 기반 대상이 포함된 `getOffers` 요청에 대해 디바이스에서 의사 결정을 수행하려는 경우 이 기능도 지원됩니다. 이 방법은 원격 IP-to-Geo 조회를 사용하여 각 `getOffers` 호출에 지연을 추가한다는 단점이 있습니다. 서버 근처에 있는 CDN에 도달하므로 이 대기 시간은 원격 `getOffers` 호출보다 짧아야 합니다. SDK가 사용자 IP 주소의 지리적 위치를 검색하려면 **only**&#x200B;에서 요청의 `Context`에 있는 `Geo` 개체에 있는 `ipAddress` 필드를 제공해야 합니다. `ipAddress` 외에 다른 필드가 제공된 경우 [!DNL Target] SDK는 확인을 위해 지리적 위치 메타데이터를 가져오지 않습니다.
+그러나 서버에 IP-to-Geo 조회를 수행할 수 없지만 지역 기반 대상이 포함된 `getOffers` 요청에 대해 디바이스에서 의사 결정을 수행하려는 경우 이 기능도 지원됩니다. 이 방법은 원격 IP-to-Geo 조회를 사용하여 각 `getOffers` 호출에 지연을 추가한다는 단점이 있습니다. 서버 근처에 있는 CDN에 도달하므로 이 대기 시간은 원격 `getOffers` 호출보다 짧아야 합니다. SDK에서 사용자 IP 주소의 지리적 위치를 검색하려면 **only**&#x200B;에서 요청의 `Context`에 있는 `Geo` 개체에 있는 `ipAddress` 필드를 제공해야 합니다. `ipAddress` 외에 다른 필드가 제공된 경우 [!DNL Target] SDK에서 확인을 위해 지리적 위치 메타데이터를 가져오지 않습니다.
 
 >[!BEGINTABS]
 
@@ -334,4 +345,4 @@ public class TargetRequestUtils {
 | [방문자 프로필](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=ko) | 예 |
 | [트래픽 소스](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=ko) | 예 |
 | [시간대](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html?lang=ko) | 예 |
-| [Experience Cloud 대상](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=ko)(Adobe Audience Manager, Adobe Analytics 및 Adobe Experience Manager의 대상) | 예 |
+| [Experience Cloud 대상](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=ko)&#x200B;(Adobe Audience Manager, Adobe Analytics 및 Adobe Experience Manager의 대상) | 예 |

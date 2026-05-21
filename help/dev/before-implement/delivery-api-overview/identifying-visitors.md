@@ -4,10 +4,18 @@ description: ' [!DNL Adobe Target] 내에서 사용자를 식별하려면 어떻
 keywords: 배달 api
 exl-id: 5b8c28aa-caad-44a9-880a-3c5f844e47b2
 feature: APIs/SDKs
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/ciTxaPn8odyuyHzrnqhPWzdmpcU2bknOATGCt-ZtAZw
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 7%
+source-wordcount: 789
+ht-degree: 9%
 
 ---
 
@@ -169,7 +177,7 @@ curl -X POST \
 
 ## Customer ID
 
-[고객 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=ko)을(를) 추가하고 Experience Cloud 방문자 ID와 연결할 수 있습니다. `customerIds`을(를) 보낼 때마다 `marketingCloudVisitorId`도 제공해야 합니다. 또한 각 방문자에 대해 각 `customerId`과(와) 함께 인증 상태를 제공할 수 있습니다. 다음 인증 상태를 고려할 수 있습니다.
+[고객 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=ko)를 추가하고 Experience Cloud 방문자 ID와 연결할 수 있습니다. `customerIds`을(를) 보낼 때마다 `marketingCloudVisitorId`도 제공해야 합니다. 또한 각 방문자에 대해 각 `customerId`과(와) 함께 인증 상태를 제공할 수 있습니다. 다음 인증 상태를 고려할 수 있습니다.
 
 | 인증 상태 | 사용자 상태 |
 | --- | --- |

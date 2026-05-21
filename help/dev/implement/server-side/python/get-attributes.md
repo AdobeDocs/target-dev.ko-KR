@@ -1,12 +1,19 @@
 ---
 title: ' [!DNL Adobe Target] Python SDK에서 비동기 요청을 사용하는 방법'
-description: ' [!DNL Target] Python SDK가 비동기 요청을 지원하여 효과적인 대상 시간을 0으로 줄이는 방법에 대해 알아봅니다.'
+description: ' [!DNL Target] Python SDK이 효과적인 대상 시간을 0으로 줄일 수 있는 비동기 요청을 지원하는 방법에 대해 알아봅니다.'
 feature: APIs/SDKs
 exl-id: fafb9e28-5ac5-41c1-8e7f-f40550b6749f
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/CFfT7Amoca2yqYkkt9AviTmWi-RCjGdABYYuWHxvqC8
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 16%
+source-wordcount: 130
+ht-degree: 15%
 
 ---
 
@@ -25,12 +32,12 @@ ht-degree: 16%
 target_client_instance.get_attributes(mbox_names, options)
 ```
 
-## 매개 변수
+## 매개변수
 
 | 이름 | 유형 | 필수 | 기본값 | 설명 |
 | --- | --- | --- | --- | --- |
 | mbox_names | list[str] | 예 | 없음 | mbox 이름 목록 |
-| options | dict | 아니요 | 없음 | [오퍼 가져오기](get-offers.md)에 사용된 것과 동일한 옵션 |
+| options | dict | 아니오 | 없음 | [오퍼 가져오기](get-offers.md)에 사용된 것과 동일한 옵션 |
 
 ## Attributeprovider
 

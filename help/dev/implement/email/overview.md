@@ -4,10 +4,24 @@ description: AdBox 또는 리디렉터 사용과 같이 JavaScript이 아닌 시
 title: 이메일에 대해  [!DNL Target] 을(를) 구현하려면 어떻게 해야 합니까?
 feature: Implement Email
 exl-id: dda00b75-5d58-4405-ae58-75e7883a30ed
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/NeITIa97pW-yiB6EB-ajqRuBgp9mx-uzdwlREdgotj8
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: c94a34eb-b51c-4dd1-a6a4-46b0d84ccccd
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e9001ce2-5245-4a8e-8601-dd958009072f
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 63%
+source-wordcount: 441
+ht-degree: 62%
 
 ---
 
@@ -28,7 +42,7 @@ AdBox 광고 및 리디렉터는 모든 종류의 활동에 사용할 수 있습
 
 ## 보안 모범 사례
 
-리디렉터를 사용하면 오픈 리디렉션 취약점의 위험에 노출될 수 있습니다. 리디렉터 링크를 서드파티가 무단으로 사용하지 않도록 하려면, 기본 리디렉션 URL 도메인에 &quot;승인된 호스트&quot;를 사용하여 허용 목록에 추가하다하는 것이 좋습니다. [!DNL Target]은(는) 리디렉션을 허용할 호스트 허용 목록에 추가하다 도메인을 사용합니다. 자세한 내용은 *호스트*&#x200B;에서  [!DNL Target][&#128279;](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=ko#allowlist)(으)로 mbox 호출을 보내도록 승인된 호스트를 지정하는 허용 목록 만들기를 참조하십시오.
+리디렉터를 사용하면 오픈 리디렉션 취약점의 위험에 노출될 수 있습니다. 리디렉터 링크를 서드파티가 무단으로 사용하지 않도록 하려면, 기본 리디렉션 URL 도메인에 &quot;승인된 호스트&quot;를 사용하여 허용 목록에 추가하다하는 것이 좋습니다. [!DNL Target]은(는) 리디렉션을 허용할 호스트 허용 목록에 추가하다 도메인을 사용합니다. 자세한 내용은 *호스트*&#x200B;에서  [!DNL Target][&#128279;](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=ko#allowlist)&#x200B;(으)로 mbox 호출을 보내도록 승인된 호스트를 지정하는 허용 목록 만들기를 참조하십시오.
 
 ## 제한
 

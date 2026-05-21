@@ -4,10 +4,21 @@ description: ' [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 [!
 title: '[!UICONTROL mboxCreate()] 함수를 사용하는 방법'
 feature: at.js
 exl-id: 86eba1fc-4e1d-4793-94e7-898bf81f8945
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/hCEKL9RPtqIbMVEouzObjU6dc7TKl1hBtKZ1jEdicRE
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 56%
+source-wordcount: 211
+ht-degree: 41%
 
 ---
 
@@ -17,7 +28,7 @@ ht-degree: 56%
 
 >[!NOTE]
 >
->이 함수는 at.js 버전 1.*x*&#x200B;에만 사용할 수 있습니다. 이 함수는 at.js 2.x의 릴리스에서 더 이상 사용되지 않으며, at.js 2.x에서 사용하는 경우 기본 콘텐츠를 반환합니다.
+>이 함수는 at.js 버전 1.*x*&#x200B;에만 사용할 수 있습니다. 이 함수는 at.js 2.x의 릴리스에서 더 이상 사용되지 않습니다. 이 함수는 at.js 2.x와 함께 사용되는 경우 기본 콘텐츠를 반환합니다.
 
 이 함수는 주로 mbox.js(사용 중단됨)에서 at.js로 간편하게 전환하기 위해 at.js에 내장되어 있습니다. `[!UICONTROL mboxCreate()]`에 대한 최신 대안은 `[!UICONTROL adobe.target.getOffer()]`/`[!UICONTROL adobe.target.applyOffer()]` 또는 Angular 지시문입니다.
 

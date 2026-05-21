@@ -1,11 +1,16 @@
 ---
 title: ' [!DNL Adobe Target] Python SDK에서 비동기 요청을 사용하는 방법'
-description: ' [!DNL Target] Python SDK가 비동기 요청을 지원하여 효과적인 대상 시간을 0으로 줄이는 방법에 대해 알아봅니다.'
+description: ' [!DNL Target] Python SDK이 효과적인 대상 시간을 0으로 줄일 수 있는 비동기 요청을 지원하는 방법에 대해 알아봅니다.'
 feature: APIs/SDKs
 exl-id: 44ab74e5-3c1a-49cf-9fff-fe523b0c2592
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/ZWRw2OlSbuEHorY0MXPOaBw3uePIW5dzpsuqho0Jtqk
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: 142
 ht-degree: 4%
 
 ---
@@ -14,7 +19,7 @@ ht-degree: 4%
 
 ## 설명
 
-서버 측 통합의 한 가지 이점은 병렬 처리를 사용하여 서버 측에서 사용할 수 있는 엄청난 대역폭과 컴퓨팅 리소스를 활용할 수 있다는 것입니다. [!DNL Target] Python SDK는 비동기 요청을 지원하므로 유효 대상 시간을 0으로 줄일 수 있습니다.
+서버 측 통합의 한 가지 이점은 병렬 처리를 사용하여 서버 측에서 사용할 수 있는 엄청난 대역폭과 컴퓨팅 리소스를 활용할 수 있다는 것입니다. [!DNL Target] Python SDK은 비동기 요청을 지원하므로 유효 타겟 시간을 0으로 줄일 수 있습니다.
 
 ## 지원되는 메서드
 

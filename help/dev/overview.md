@@ -5,10 +5,36 @@ description: ' [!DNL Adobe Target] 을(를) 구현하고 관리하며 해당 API
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
 exl-id: 655cff9b-fc04-45cf-9068-5c6c32b70d79
-source-git-commit: 599aa4c965e331bb2681523d50708a03fc933875
+TQID: https://experienceleague.adobe.com/lTn4veG9PKL-ZXohH3qv1UH7lpyLfn80nwuxgehXSy0
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+  - id: b050e0cd-2ddd-42cd-a71b-5d9e1fdf75e0
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+  - id: dfc8a233-f2b5-4811-bf63-b4262aebc5a5
+subfeature_v2:
+  - id: a94ced60-8199-4549-b453-ede2acb4101e
+  - id: c011fe9c-b94b-4a88-93d8-f2acece55112
+  - id: c5abb976-5170-45d6-bcac-66d15d10a4d4
+  - id: cd7b6938-5837-4ee0-9790-5840997133d9
+  - id: e22d67ea-317b-44f8-abd1-52e07f636ca8
+  - id: fc9c2184-9102-403f-bd6c-0055021e4bea
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 6%
+source-wordcount: 501
+ht-degree: 11%
 
 ---
 
@@ -26,7 +52,7 @@ ht-degree: 6%
 >
 >* [*[!DNL Adobe Target] 튜토리얼&#x200B;*](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html?lang=ko-KR){target=_blank}
 >
->릴리스 정보는 [&#x200B; 비즈니스 실무자 안내서](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html?lang=ko){target=_blank}의 *[!DNL Adobe Target]Target 릴리스 정보(현재)*&#x200B;를 참조하십시오.
+>릴리스 정보는 *[!DNL Adobe Target]비즈니스 실무자 안내서*&#x200B;의 [Target 릴리스 정보(현재)](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html?lang=ko){target=_blank}를 참조하십시오.
 
 ## 구현 시작하기
 
@@ -34,7 +60,7 @@ ht-degree: 6%
 
 ## 클라이언트측 구현
 
-[**Adobe Experience Platform Web SDK**](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md): [!DNL Adobe Experience Platform Web SDK]을(를) 사용하면 [!DNL Experience Cloud]을(를) 통해 [!DNL Target]&#x200B;([!UICONTROL Adobe Experience Edge Network] 포함)의 다양한 서비스와 상호 작용할 수 있습니다.
+[**Adobe Experience Platform Web SDK**](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md): [!DNL Adobe Experience Platform Web SDK]을(를) 사용하면 [!UICONTROL Adobe Experience Edge Network]을(를) 통해 [!DNL Experience Cloud]&#x200B;([!DNL Target] 포함)의 다양한 서비스와 상호 작용할 수 있습니다.
 
 [**Target at.js JavaScript 라이브러리**](/help/dev/implement/client-side/overview.md): at.js JavaScript 라이브러리는 웹 구현에 대한 페이지 로드 시간을 향상시키고, 보안을 강화하고, 단일 페이지 애플리케이션에 대해 더 나은 구현 옵션을 제공합니다.
 
@@ -60,9 +86,9 @@ ht-degree: 6%
 
 ## 모바일 앱 구현
 
-[**AEP Mobile SDK 개요**](implement/mobile/overview.md): [!DNL Adobe Target]개의 Mobile SDK를 사용하여 [!DNL Adobe Experience Platform]을(를) 구현하는 방법에 대한 개요입니다.
+[**AEP Mobile SDK 개요**](implement/mobile/overview.md): [!DNL Adobe Experience Platform]개의 Mobile SDK를 사용하여 [!DNL Adobe Target]을(를) 구현하는 방법에 대한 개요입니다.
 
-[**AEP Mobile SDK 참조**](https://developer.adobe.com/client-sdks/documentation/): [!DNL Adobe Target]개의 Mobile SDK를 사용하여 [!DNL Adobe Experience Platform]을(를) 구현합니다.
+[**AEP Mobile SDK 참조**](https://developer.adobe.com/client-sdks/documentation/): [!DNL Adobe Experience Platform]개의 Mobile SDK를 사용하여 [!DNL Adobe Target]을(를) 구현합니다.
 
 ## 이메일 구현
 
@@ -91,10 +117,10 @@ ht-degree: 6%
 ## 리소스
 
 * [Adobe 오픈 소스 리포지토리](https://github.com/adobe)
-* [Target 노드 JS SDK Source](https://github.com/adobe/target-nodejs-sdk)
-* [Target 노드 JS SDK 예제 리포지토리](https://github.com/adobe/target-nodejs-sdk-samples)
+* [Target Node JS SDK Source](https://github.com/adobe/target-nodejs-sdk)
+* [Target 노드 JS SDK 예 리포지토리](https://github.com/adobe/target-nodejs-sdk-samples)
 * [Target Java SDK Source](https://github.com/adobe/target-java-sdk)
-* [Target Java SDK 예제 저장소](https://github.com/adobe/target-java-sdk-samples)
+* [Target Java SDK 예제 리포지토리](https://github.com/adobe/target-java-sdk-samples)
 * [Target 구현](./before-implement/prepare-to-implement-target.md)
 * [대상 관리](./before-administer/target-api-overview.md)
 * [Adobe Target 개발 문서 GitHub 리포지토리](https://github.com/AdobeDocs/target-developers)

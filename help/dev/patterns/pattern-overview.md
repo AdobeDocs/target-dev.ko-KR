@@ -5,9 +5,21 @@ feature: APIs/SDKs
 level: Experienced
 role: Developer
 exl-id: 65fd369a-6034-4b51-8ddf-e53e526a795d
-source-git-commit: 50ee7e66e30c0f8367763a63b6fde5977d30cfe7
+TQID: https://experienceleague.adobe.com/H85u3UrJXqEeUPscsxTkbTJsF9kmSSpK-ExzCyZT8yE
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: 383
 ht-degree: 0%
 
 ---
@@ -32,7 +44,7 @@ ht-degree: 0%
 
 1. 새로운 패턴에 대한 아이디어를 제안하려면 이 문서의 하단으로 스크롤하여 피드백 옵션 모달을 표시합니다.
 
-   또는 
+   또는
 
    기존 패턴에 대한 개선 사항 또는 수정 사항을 제안하려면 해당 문서의 하단으로 스크롤하여 피드백 옵션 모달을 표시합니다.
 

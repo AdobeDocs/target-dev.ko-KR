@@ -1,22 +1,36 @@
 ---
-keywords: 허용 목록에 추가하다 콘텐츠 보안 정책, csp.js, 허용 목록, 플리커, 사전 숨기기, 사전 숨기기, 콘텐츠 보안 정책, iFrame, iframe
+keywords: 콘텐츠 보안 정책, csp.js, 허용 목록, 플리커, 사전 숨기기, 사전 숨기기, 콘텐츠 보안 정책, iFrame, iframe
 description: ' [!DNL Adobe Target]을(를) 사용할 때 추가해야 하는 콘텐츠 보안 정책(CSP) 지침에 대해 알아봅니다.'
 title: ' [!DNL Target] 은 콘텐츠 보안 정책(CSP)을 어떻게 처리합니까?'
 feature: Privacy & Security
 exl-id: ec6942e5-36d8-4f88-b3d6-47f9eaca03a8
-source-git-commit: c43c79b29768694eac534e22047b5ee6a3d0ccd5
+TQID: https://experienceleague.adobe.com/gGNgYyblw6-D-RiHBtzAtrOOdhVOsIzYQ-HhkhCtyuI
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: 610
 ht-degree: 28%
 
 ---
 
 # 콘텐츠 보안 정책(CSP) 지침
 
-[!DNL Adobe Target] 구현에 [콘텐츠 보안 정책](https://ko.wikipedia.org/wiki/Content_Security_Policy)(CSP)을 사용하는 경우 [at.js 2.1 이상 버전](../../implement/client-side/atjs/target-atjs-versions.md)을 사용할 때 다음과 같은 CSP 지침을 추가해야 합니다.
+[!DNL Adobe Target] 구현에 [콘텐츠 보안 정책](https://ko.wikipedia.org/wiki/Content_Security_Policy)&#x200B;(CSP)을 사용하는 경우 [at.js 2.1 이상 버전](../../implement/client-side/atjs/target-atjs-versions.md)을 사용할 때 다음과 같은 CSP 지침을 추가해야 합니다.
 
 * `*.tt.omtrdc.net` 허용 목록이 포함된 `connect-src` [!DNL Target] 에지로의 네트워크 요청을 수락하기 위해 필요합니다.
-* `style-src unsafe-inline` 사전 숨기기 및 플리커 제어에 필요합니다.
+* `style-src unsafe-inline`. 사전 숨기기 및 플리커 제어에 필요합니다.
 * `script-src unsafe-inline`. HTML 오퍼의 일부일 수 있는 JavaScript 실행을 허용하기 위해 필요합니다.
 
 ## 자주 묻는 질문 (FAQ)
@@ -37,7 +51,7 @@ JavaScript 호출을 통해 모든 도메인에서 [!DNL Target]에 액세스할
 
 ### 내 사이트가 외부 도메인에 iFrame으로 임베드되는 것을 허용하거나 방지하려면 어떻게 해야 합니까?
 
-[시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=ko){target=_blank}(VEC)가 웹 사이트를 iFrame에 포함할 수 있도록 하려면 웹 서버 설정에서 CSP(설정된 경우)를 변경해야 합니다. [!DNL Adobe] 도메인은 화이트리스트에 추가하고 구성해야 합니다.
+[VEC(시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=ko){target=_blank})가 웹 사이트를 iFrame에 포함할 수 있도록 하려면 웹 서버 설정에서 CSP(설정된 경우)를 변경해야 합니다. [!DNL Adobe] 도메인은 화이트리스트에 추가하고 구성해야 합니다.
 
 보안상의 이유로 사이트가 외부 도메인 아래에 iFrame으로 포함되지 않도록 하려는 경우
 

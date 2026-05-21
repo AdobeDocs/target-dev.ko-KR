@@ -4,10 +4,28 @@ description: ' [!DNL Target] UI 또는 REST API를 사용하는 대신 설정을
 title: '[!UICONTROL targetGlobalSettings()] 함수를 사용하는 방법'
 feature: at.js
 exl-id: f6218313-6a70-448e-8555-b7b039e64b2c
-source-git-commit: 12cf430b65695d38d1651f2a97df418d82d231f3
+TQID: https://experienceleague.adobe.com/6IeQo7RCys6Qe6bPydmmtgaAERi7rnneBYFOzseaL2g
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '2565'
-ht-degree: 18%
+source-wordcount: 2702
+ht-degree: 17%
 
 ---
 
@@ -67,7 +85,7 @@ ht-degree: 18%
 
 * **유형**: 문자열
 * **기본값**: UI를 통해 설정된 값입니다.
-* **설명**: 도메인 간 추적이 사용되는지 여부를 나타냅니다. 허용되는 값은 at.js 버전에 따라 다릅니다. at.js v1의 경우&#x200B;*x*&#x200B;에서 `enabled`(브라우저는 자사 쿠키와 타사 쿠키 모두 설정)을 선택하여 도메인 간 기능이 `disabled`(브라우저에서 사용자 도메인의 쿠키 설정(자사 쿠키만)), `x only`(브라우저에서 [!DNL Target]의 도메인에서만 쿠키 설정) 또는 둘 다인지 여부를 지정합니다. at.js v2.10 이상 버전의 경우 도메인 간 기능이 `enabled`(브라우저는 퍼스트 파티 쿠키와 타사 쿠키를 모두 설정함)인지 `disabled`(브라우저는 타사 쿠키를 설정하지 않음)인지를 지정합니다.
+* **설명**: 도메인 간 추적이 사용되는지 여부를 나타냅니다. 허용되는 값은 at.js 버전에 따라 다릅니다. at.js v1.*x*&#x200B;의 경우 `enabled`(브라우저가 자사 쿠키와 타사 쿠키 모두를 설정)을 선택하여 도메인 간 기능이 `disabled`(브라우저가 도메인에서 쿠키를 설정하는지(자사 쿠키만), `x only`(브라우저가 [!DNL Target]의 도메인에서 쿠키를 설정하는지) 또는 둘 다인지 여부를 지정합니다. at.js v2.10 이상 버전의 경우 도메인 간 기능이 `enabled`(브라우저는 퍼스트 파티 쿠키와 타사 쿠키를 모두 설정함)인지 `disabled`(브라우저는 타사 쿠키를 설정하지 않음)인지를 지정합니다.
 
 ### cspScriptNonce
 
@@ -102,7 +120,7 @@ ht-degree: 18%
 
   Server-side만 at.js 2.5+가 구현되고 웹 속성에 배포되는 경우 기본적으로 설정되는 기본 의사 결정 방법입니다.
 
-  서버측만 기본 구성으로 사용하면 모든 결정이 [!DNL Target] 에지 네트워크에서 수행되며, 여기에는 차단 서버 호출이 포함됩니다. 이 접근 방식은 점진적 지연을 발생시킬 수 있지만, [Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html?lang=ko), [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=ko)(AP) 및 [자동 타기팅](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html?lang=ko) 활동을 포함하는 [!DNL Target]의 기계 학습 기능을 적용할 수 있는 기능을 제공하는 등의 상당한 이점도 제공합니다.
+  서버측만 기본 구성으로 사용하면 모든 결정이 [!DNL Target] 에지 네트워크에서 수행되며, 여기에는 차단 서버 호출이 포함됩니다. 이 접근 방식은 점진적 지연을 발생시킬 수 있지만, [권장 사항](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html?lang=ko), [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=ko)&#x200B;(AP) 및 [자동 타기팅](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html?lang=ko) 활동을 포함하는 [!DNL Target]의 기계 학습 기능을 적용할 수 있는 기능을 제공하는 것과 같은 중요한 이점도 제공합니다.
 
   또한 세션 및 채널에서 지속되는 [!DNL Target]의 사용자 프로필을 사용하여 개인화된 경험을 향상하면 비즈니스에 강력한 결과를 제공할 수 있습니다.
 
@@ -186,7 +204,7 @@ ht-degree: 18%
 * **기본값**: true(at.js 버전 1.6.2부터 true)
 * **설명**: `<clientCode>.tt.omtrdc.net` 도메인을 사용할지 `mboxedge<clusterNumber>.tt.omtrdc.net` 도메인을 사용할지 여부를 나타냅니다.
 
-  이 값이 true이면 `mboxedge<clusterNumber>.tt.omtrdc.net` 도메인이 쿠키에 저장됩니다. at.js 1.8.2 및 at.js 2.3.1 이전 버전의 at.js를 사용할 때 현재 [CNAME](/help/dev/before-implement/implement-cname-support-in-target.md)에서 작동하지 않습니다. 문제가 발생하면 [at.js를 &#x200B;](/help/dev/implement/client-side/atjs/target-atjs-versions.md)최신 지원되는 버전으로 업데이트하는 것이 좋습니다.
+  이 값이 true이면 `mboxedge<clusterNumber>.tt.omtrdc.net` 도메인이 쿠키에 저장됩니다. at.js 1.8.2 및 at.js 2.3.1 이전 버전의 at.js를 사용할 때 현재 [CNAME](/help/dev/before-implement/implement-cname-support-in-target.md)에서 작동하지 않습니다. 문제가 발생하면 [at.js](/help/dev/implement/client-side/atjs/target-atjs-versions.md)를 지원되는 최신 버전으로 업데이트하는 것이 좋습니다.
 
 ### overrideMboxEdgeServerTimeout
 
@@ -238,7 +256,7 @@ ht-degree: 18%
 
 * **유형**: 부울
 * **기본값**: true
-* **설명**: 사용하도록 설정하면 Adobe에서 SDK 기능 사용 및 성능 원격 분석 데이터를 수집합니다. 개인 데이터는 수집되지 않습니다.
+* **설명**: 활성화되면 Adobe은 SDK 기능 사용 및 성능 원격 분석 데이터를 수집합니다. 개인 데이터는 수집되지 않습니다.
 
 ### timeout
 
@@ -250,7 +268,7 @@ ht-degree: 18%
 
 * **유형**: 부울
 * **기본값**: true
-* **설명**: 활성화되면 페이지가 로드될 때 보기가 자동으로 검색됩니다. `triggerView`이(가) 호출되면 해당 보기가 브라우저에 표시됩니다. 이 옵션을 사용하지 않으면 페이지 로드 시 보기가 검색되지 않고 `triggerView`이(가) 아무 작업도 하지 않습니다. 보기는 at.js 2에서 지원됩니다.*x* 에만 사용할 수 있습니다.
+* **설명**: 활성화되면 페이지가 로드될 때 보기가 자동으로 검색됩니다. `triggerView`이(가) 호출되면 해당 보기가 브라우저에 표시됩니다. 이 옵션을 사용하지 않으면 페이지 로드 시 보기가 검색되지 않고 `triggerView`이(가) 아무 작업도 하지 않습니다. 보기는 at.js 2.*x*&#x200B;에서만 지원됩니다.
 
 ### visitorApiTimeout
 
@@ -414,7 +432,7 @@ window.targetGlobalSettings = {
 
 ## 하이브리드 개인화
 
-`serverState`은(는) at.js v2.2+에서 사용할 수 있는 설정이며, [!DNL Target]의 하이브리드 통합이 구현될 때 페이지 성능을 최적화하는 데 사용할 수 있습니다. 하이브리드 통합은 클라이언트측에서 at.js v2.2+를 사용하고 있으며, 서버측에서 배달 API 또는 [!DNL Target] SDK를 모두 사용하고 있음을 의미합니다. `serverState` 는 at.js v2.2+에서 서버측에서 가져온 콘텐츠에서 직접 경험을 적용하고 서비스되는 페이지의 일부로 클라이언트에 반환할 수 있는 기능을 제공합니다.
+`serverState`은(는) at.js v2.2+에서 사용할 수 있는 설정이며, [!DNL Target]의 하이브리드 통합이 구현될 때 페이지 성능을 최적화하는 데 사용할 수 있습니다. 하이브리드 통합은 클라이언트측에서 at.js v2.2+를 사용하고 있으며, 서버측에서 배달 API 또는 [!DNL Target] SDK을 모두 사용하고 있음을 의미합니다. `serverState` 는 at.js v2.2+에서 서버측에서 가져온 콘텐츠에서 직접 경험을 적용하고 서비스되는 페이지의 일부로 클라이언트에 반환할 수 있는 기능을 제공합니다.
 
 ### 전제 조건
 
@@ -425,7 +443,7 @@ window.targetGlobalSettings = {
 
 ### 코드 샘플
 
-작동 방식을 더 잘 이해하려면 서버에 있는 아래 코드 예를 참조하십시오. 이 코드는 사용자가 [Target Node.js SDK](https://github.com/adobe/target-nodejs-sdk)를 사용하고 있다고 가정합니다.
+작동 방식을 더 잘 이해하려면 서버에 있는 아래 코드 예를 참조하십시오. 이 코드는 사용자가 [Target Node.js SDK](https://github.com/adobe/target-nodejs-sdk)을 사용하고 있다고 가정합니다.
 
 ```javascript {line-numbers="true"}
 // First, we fetch the offers via Target Node.js SDK API, as usual
@@ -554,4 +572,4 @@ const PAGE_TEMPLATE = `
 `serverState`의 작동 방식에 대해 자세히 알아보려면 다음 리소스를 확인하십시오.
 
 * [샘플 코드](https://github.com/Adobe-Marketing-Cloud/target-node-client-samples/tree/master/advanced-atjs-integration-serverstate).
-* `serverState`[&#128279;](https://github.com/Adobe-Marketing-Cloud/target-node-client-samples/tree/master/react-shopping-cart-demo)이(가) 있는 단일 페이지 응용 프로그램(SPA) 샘플 앱입니다.
+* [단일 페이지 응용 프로그램(SPA) 샘플 앱(`serverState`](https://github.com/Adobe-Marketing-Cloud/target-node-client-samples/tree/master/react-shopping-cart-demo) 포함)

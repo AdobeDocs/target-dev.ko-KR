@@ -5,10 +5,23 @@ feature: APIs/SDKs
 level: Experienced
 role: Developer
 exl-id: 7cf0c70b-a4bc-46f4-9b33-099bdb7dd9a9
-source-git-commit: 50ee7e66e30c0f8367763a63b6fde5977d30cfe7
+TQID: https://experienceleague.adobe.com/uHFbc8JEhjjGYIulJUvhkH7cXXht6Rht9rY43HjuNqg
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 4%
+source-wordcount: 1060
+ht-degree: 3%
 
 ---
 
@@ -18,7 +31,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->*SDK 초기화*&#x200B;에서 [자동 페이지 로드 요청 구성 단계](/help/dev/patterns/recs-atjs/initialize-sdk.md#automatic) 동안 자동 페이지 로드 요청을 활성화한 경우, Adobe Target SDK를 호출하여 지역 위치 요청을 사용하여 추가 경험을 렌더링하려는 경우가 아니면 이 활동을 건너뛸 수 있습니다.
+>*SDK 초기화*&#x200B;에서 [자동 페이지 로드 요청 구성 단계](/help/dev/patterns/recs-atjs/initialize-sdk.md#automatic) 동안 자동 페이지 로드 요청을 활성화한 경우, Adobe Target SDK을 호출하여 지리적 위치 요청을 사용하여 추가 경험을 렌더링하려는 경우가 아니면 이 활동을 건너뛸 수 있습니다.
 
 >[!TIP]
 >
@@ -58,8 +71,8 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL A
 **사용 가능한 옵션**
 
 * ID별 프로모션
-* 컬렉션별 [홍보](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/collections.html?lang=ko){target=_blank}
-* 특성별 [승격](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=ko){target=_blank}
+* [컬렉션별 홍보](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/collections.html?lang=ko){target=_blank}
+* [속성별 프로모션](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=ko){target=_blank}
 
 **필요한 엔터티 매개 변수**
 
@@ -229,7 +242,7 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL A
 
 **판독값**
 
-* [엔터티 특성](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=ko){target=_blank}
+* [엔티티 속성](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=ko){target=_blank}
 
 [!DNL Target] UI를 사용하여 [제품 피드](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html?lang=ko){target=_blank}를 만들어 [!DNL Recommendations]에 대한 제품 카탈로그를 업데이트하여 이 단계를 수행할 수도 있습니다.
 
@@ -239,13 +252,13 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL A
 
 ## 3.10: 포함 규칙의 키로 사용되는 프로필 속성 제공 {#keys}
 
-위에서 언급한 모든 Recommendations 기준에서 포함 규칙의 키로 사용되는 프로필 속성을 제공합니다.
+위에서 언급한 모든 권장 사항 기준에서 포함 규칙의 키로 사용되는 프로필 속성을 제공합니다.
 
 +++ 세부 정보 보기
 
 **판독값**
 
-* [프로필 특성](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=ko){target=_blank}
+* [프로필 속성](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=ko){target=_blank}
 
 +++
 

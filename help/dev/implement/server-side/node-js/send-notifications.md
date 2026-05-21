@@ -1,11 +1,19 @@
 ---
-title: Node.js SDK를 사용하여  [!DNL Adobe Target] 에 디스플레이 또는 클릭 알림 보내기
+title: Node.js SDK을 사용하여  [!DNL Adobe Target] 에 디스플레이 또는 클릭 알림 보내기
 description: 측정 및 보고를 위해 sendNotifications()를 사용하여 디스플레이를 보내거나  [!DNL Adobe Target] 에 알림을 클릭하는 방법에 대해 알아봅니다.
 feature: APIs/SDKs
 exl-id: 84bb6a28-423c-457f-8772-8e3f70e06a6c
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/-YiepZ5Rqm7JFTUuYKxQc2ISL5EZ9nvW-K0M-aoaleU
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: 246
 ht-degree: 4%
 
 ---
@@ -35,7 +43,7 @@ ht-degree: 4%
 TargetClient.sendNotifications(options: Object): Promise
 ```
 
-### 매개 변수
+### 매개변수
 
 `options`의 구조는 다음과 같습니다.
 

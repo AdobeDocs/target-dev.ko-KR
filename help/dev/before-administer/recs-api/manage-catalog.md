@@ -6,18 +6,25 @@ kt: 3815
 thumbnail: null
 author: Judy Kim
 exl-id: aea82607-cde4-456a-8dfb-2967badce455
-source-git-commit: 2fba03b3882fd23a16342eaab9406ae4491c9044
+TQID: https://experienceleague.adobe.com/9uKu-mX9xzz-sG4-peyfzrwogo27nF8TZ4zFXBi6TaU
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: 905
 ht-degree: 0%
 
 ---
 
-# API를 사용하여 Recommendations 카탈로그 관리
+# API를 사용하여 권장 사항 카탈로그 관리
 
-Recommendations API를 사용하기 위한 [요구 사항](/help/dev/before-administer/recs-api/overview.md#prerequisites)을(를) 충족하는 동안 [Adobe Developer Console](https://developer.adobe.com/console/home)에서 [!DNL Adobe Target] 관리 API를 사용하기 위해 JWT 인증 흐름을 사용하여 [액세스 토큰을 생성](/help/dev/before-administer/configure-authentication.md)하는 방법에 대해 배웠습니다.
+Recommendations API를 사용하기 위한 [요구 사항](/help/dev/before-administer/recs-api/overview.md#prerequisites)을(를) 충족하는 동안 [Adobe Developer Console](https://developer.adobe.com/console/home)에서 [!DNL Adobe Target] 관리 API를 사용하기 위해 JWT 인증 흐름을 사용하여 [액세스 토큰을 생성](/help/dev/before-administer/configure-authentication.md)하는 방법을 배웠습니다.
 
-이제 [Recommendations API](https://developer.adobe.com/target/administer/recommendations-api/)를 사용하여 권장 사항 카탈로그의 항목을 추가, 업데이트 또는 삭제할 수 있습니다. 나머지 Adobe Target 관리 API와 마찬가지로 Recommendations API도 인증이 필요합니다.
+이제 [권장 사항 API](https://developer.adobe.com/target/administer/recommendations-api/)를 사용하여 권장 사항 카탈로그에 항목을 추가, 업데이트 또는 삭제할 수 있습니다. 나머지 Adobe Target 관리 API와 마찬가지로 Recommendations API는 인증이 필요합니다.
 
 >[!NOTE]
 >
@@ -25,11 +32,11 @@ Recommendations API를 사용하기 위한 [요구 사항](/help/dev/before-admi
 
 ![JWT3ff](assets/configure-io-target-jwt3ff.png)
 
-계속하기 전에 [Recommendations Postman 컬렉션](https://developer.adobe.com/target/administer/recommendations-api/#section/Postman)을(를) 가져옵니다.
+계속하기 전에 [권장 사항 Postman 컬렉션](https://developer.adobe.com/target/administer/recommendations-api/#section/Postman)을 가져옵니다.
 
 ## 엔티티 저장 API를 사용하여 항목 생성 및 업데이트
 
-제품 페이지에서 실행되는 CSV 제품 피드 또는 Target 요청이 아닌 API를 사용하여 Recommendations 제품 데이터베이스를 채우려면 [엔티티 저장 API](https://developer.adobe.com/target/administer/recommendations-api/#operation/saveEntities)를 사용하십시오. 이 요청은 단일 Target 환경에서 항목을 추가하거나 업데이트합니다. 구문은 입니다.
+제품 페이지에서 실행되는 CSV 제품 피드 또는 Target 요청이 아닌 API를 사용하여 권장 사항 제품 데이터베이스를 채우려면 [엔티티 저장 API](https://developer.adobe.com/target/administer/recommendations-api/#operation/saveEntities)를 사용하십시오. 이 요청은 단일 Target 환경에서 항목을 추가하거나 업데이트합니다. 구문은 입니다.
 
 ```
 POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities
@@ -72,7 +79,7 @@ POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities
        }
    ```
 
-1. **[!UICONTROL Send]**&#x200B;을(를) 클릭합니다. 다음 응답을 수신해야 합니다.
+1. **[!UICONTROL Send]** 아이콘을 클릭합니다. 다음 응답을 수신해야 합니다.
 
    ![SaveEntities5.png](assets/SaveEntities05.png)
 

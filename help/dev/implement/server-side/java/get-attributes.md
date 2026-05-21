@@ -1,11 +1,18 @@
 ---
-title: Java SDK를 사용하여  [!DNL Adobe Target] 에서 getAttributes 사용
+title: Java SDK과 함께  [!DNL Adobe Target] 에서 getAttributes 사용
 description: getAttributes()를 사용하여  [!DNL Target] 에서 실험과 개인화된 경험을 가져오고 특성 값을 추출하는 방법을 알아봅니다.
 feature: APIs/SDKs
 exl-id: e493e1b9-7180-4a7c-b98d-be84cc3a57c3
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/ZZy9nUXiyR-qwBmOgv-TPS6ZuilvAuW850gH1Doqquo
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: 169
 ht-degree: 13%
 
 ---
@@ -24,12 +31,12 @@ ht-degree: 13%
 Attributes TargetClient.getAttributes(TargetDeliveryRequest targetRequest, String ...mboxes)
 ```
 
-## 매개 변수
+## 매개변수
 
 | 이름 | 유형 | 필수 | 기본값 | 설명 |
 | --- | --- | --- | --- | --- |
 | targetRequest | TargetDeliveryRequest | 예 | 없음 | [오퍼 가져오기](get-offers.md)에 사용된 것과 동일한 &#x200B; 대상 요청 |
-| mboxNames | var-args 배열 | 아니요 | 없음 | mbox 이름의 var-args 배열 |
+| mboxNames | var-args 배열 | 아니오 | 없음 | mbox 이름의 var-args 배열 |
 
 
 ## 결과

@@ -3,10 +3,21 @@ title: 속성을 사용하여 기능 테스트 실행
 description: 속성을 사용하여 기능 테스트 실행
 feature: APIs/SDKs
 exl-id: c89d337c-20a9-454c-930c-79d9217e23b6
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/y2Mwmnn2k91-LKBy1UmZ5a1s6dZeb5VMyHdyJc2lc34
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 0%
+source-wordcount: 891
+ht-degree: 1%
 
 ---
 
@@ -30,7 +41,7 @@ ht-degree: 0%
 >
 >소매 전자 상거래 회사라고 가정합니다. 고객이 제품 카탈로그를 검색하고 정렬할 때 전환율을 높이려고 합니다. 특정 정렬 알고리즘과 페이지 매김 전략이 다른 것보다 더 나은 결과를 얻는다는 가설이 있습니다. 이러한 이론을 테스트하기 위해 최종 사용자를 위한 다양한 정렬 옵션을 사용하여 정렬 위젯의 재설계와 관련된 기능 테스트를 실행하도록 결정합니다. 이 기능 테스트가 거의 0에 가까운 지연에서 실행되어 사용자 경험에 부정적인 영향을 주지 않고 결과를 왜곡하지 않도록 하려는 경우
 
-## 1. 조직에 대해 [!UICONTROL on-device decisioning] 사용
+## &#x200B;1. 조직에 대해 [!UICONTROL on-device decisioning] 사용
 
 온디바이스 의사 결정을 활성화하면 A/B 활동이 거의 0에 가까운 지연 시간에 실행됩니다. 이 기능을 사용하려면 [!DNL Adobe Target]에서 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]**(으)로 이동하여 **[!UICONTROL On-Device Decisioning]** 전환을 사용하도록 설정하십시오.
 
@@ -42,7 +53,7 @@ ht-degree: 0%
 
 **[!UICONTROL On-Device Decisioning]** 전환을 활성화한 후 [!DNL Adobe Target]에서 클라이언트에 대한 *규칙 아티팩트*&#x200B;를 생성하기 시작합니다.
 
-## 2. [!UICONTROL A/B Test] 활동 만들기
+## &#x200B;2. [!UICONTROL A/B Test] 활동 만들기
 
 1. [!DNL Adobe Target]에서 **[!UICONTROL Activities]** 페이지로 이동한 다음 **[!UICONTROL Create Activity]** > **[!UICONTROL A/B test]**&#x200B;을(를) 선택합니다.
 
@@ -52,9 +63,9 @@ ht-degree: 0%
 
    ![대체 이미지](assets/asset-form.png)
 
-## 3. A 및 B 정의
+## &#x200B;3. A 및 B 정의
 
-1. 활동을 만드는 **[!UICONTROL Experiences]** 단계에서 **[!UICONTROL Add Experience]**(2) 단추를 클릭하여 활동의 이름(1)을 입력하고 두 번째 경험인 경험 B를 추가합니다. 속성을 사용하여 기능 테스트를 실행할 응용 프로그램 내의 위치(3)의 이름을 입력합니다. 아래 예제에서 `product-results-page`은(는) 경험 A에 대해 정의된 위치입니다. 또한 경험 B에 대해 정의된 위치입니다.
+1. 활동을 만드는 **[!UICONTROL Experiences]** 단계에서 **[!UICONTROL Add Experience]**(2) 단추를 클릭하여 활동의 이름(1)을 입력하고 두 번째 경험인 경험 B를 추가합니다. 속성을 사용하여 기능 테스트를 실행할 응용 프로그램 내의 위치(3)의 이름을 입력합니다. 아래 예제에서 `product-results-page`은(는) 경험 A에 대해 정의된 위치입니다. (또한 경험 B에 대해 정의된 위치입니다.)
 
    ![대체 이미지](assets/asset-location.png)
 
@@ -88,35 +99,35 @@ ht-degree: 0%
 
    ![대체 이미지](assets/asset-sorting-b.png)
 
-## 4. 대상자 추가
+## &#x200B;4. 대상자 추가
 
 **[!UICONTROL Targeting]** 단계에서 **[!UICONTROL All Visitors]** 대상을 유지합니다. 이렇게 하면 정렬 기능의 영향과 결과에 가장 큰 영향을 미치는 알고리즘 및 항목 수를 이해할 수 있습니다.
 
 ![대체 이미지](assets/asset-audience-b.png)
 
-## 5. 트래픽 할당 설정
+## &#x200B;5. 트래픽 할당 설정
 
 정렬 알고리즘 및 페이지 매김 전략을 테스트할 방문자의 비율을 정의합니다. 즉, 이 테스트를 롤아웃할 사용자의 비율은 얼마입니까? 이 예에서 이 테스트를 로그인한 모든 사용자에게 배포하려면 트래픽 할당을 100%로 유지합니다.
 
 ![대체 이미지](assets/asset-allocation-100.png)
 
-## 6. 트래픽 분포를 변형으로 설정
+## &#x200B;6. 트래픽 분포를 변형으로 설정
 
 페이지당 50개 제품 제한으로 권장 대 베스트셀러 정렬 알고리즘을 보게 되는 방문자의 비율을 정의합니다. 이 예에서는 트래픽 분포를 경험 A와 B 간에 50/50으로 분할합니다.
 
 ![대체 이미지](assets/asset-variations-50.png)
 
-## 7. 보고 설정
+## &#x200B;7. 보고 설정
 
 **[!UICONTROL Goals & Settings]** 단계에서 A/B 테스트 결과를 [!DNL Adobe Target] UI에서 보려면 **[!UICONTROL Adobe Target]**&#x200B;을(를) **[!UICONTROL Reporting Source]**(으)로 선택하거나, Adobe Analytics UI에서 보려면 **[!UICONTROL Adobe Analytics]**&#x200B;을(를) 선택하십시오.
 
 ![대체 이미지](assets/asset-reporting-b.png)
 
-## 8. KPI 추적을 위한 지표 추가
+## &#x200B;8. KPI 추적을 위한 지표 추가
 
 특성을 사용하여 기능 테스트를 측정하려면 **[!UICONTROL Goal Metric]**&#x200B;을(를) 선택하십시오. 이 예에서 성공은 표시된 정렬 알고리즘 및 페이지 매김 전략에 따라 사용자가 제품을 구매하는지 여부에 따라 결정됩니다.
 
-## 9. 속성을 사용하여 기능 테스트를 애플리케이션에 구현합니다
+## &#x200B;9. 속성을 사용하여 기능 테스트를 애플리케이션에 구현
 
 >[!BEGINTABS]
 
@@ -173,7 +184,7 @@ String paginationLimit = attributes.getString("product-results-page", "paginatio
 
 >[!ENDTABS]
 
-## 10. 전환 이벤트를 추적하는 코드 구현
+## &#x200B;10. 전환 이벤트를 추적하는 코드 구현
 
 >[!BEGINTABS]
 
@@ -242,6 +253,6 @@ String paginationLimit = attributes.getString("product-results-page", "paginatio
 
 >[!ENDTABS]
 
-## 11. 속성을 사용하여 기능 테스트 활성화
+## &#x200B;11. 속성을 사용하여 기능 테스트 활성화
 
 ![대체 이미지](assets/asset-activate.png)

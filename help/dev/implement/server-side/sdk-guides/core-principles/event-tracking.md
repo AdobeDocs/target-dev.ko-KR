@@ -3,9 +3,18 @@ title: 이벤트 추적
 description: ' [!DNL Adobe Target]의 이벤트 추적 기능을 사용하여 비즈니스 및 사용 사례에 가장 중요한 지표를 효과적으로 측정합니다.'
 exl-id: a47fa692-c633-4c53-82da-878b1e451a3f
 feature: Implement Server-side
-source-git-commit: 09a50aa67ccd5c687244a85caad24df56c0d78f5
+TQID: https://experienceleague.adobe.com/swckm7EdKlSkC2xl1P57EAyiuGz18rucZOAxcudzYpo
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: 528
 ht-degree: 1%
 
 ---
@@ -16,7 +25,7 @@ ht-degree: 1%
 
 [!DNL Adobe Target]의 SDK를 통해 이벤트를 추적하려면 다음 2단계 프로세스를 따르십시오.
 
-1. SDK를 설치하고 [!DNL Adobe Target]에 이벤트를 보내는 코드를 배포합니다.
+1. SDK을 설치하고 [!DNL Adobe Target]에 이벤트를 보내는 코드를 배포합니다.
 
 1. UI에서 목표 지표를 사용하여 [!DNL Adobe Target] 활동을 만들고 활성화합니다.
 
@@ -28,7 +37,7 @@ ht-degree: 1%
 
 | 기본 목표 | 이벤트 |
 | --- | --- |
-| 변환 | 페이지 확인함, mbox 확인함 및 mbox 클릭함 |
+| 전환 | 페이지 확인함, mbox 확인함 및 mbox 클릭함 |
 | 수입 | mbox를 보고 mbox를 클릭함 |
 | 참여 | 페이지 보기 수, 고객 점수 및 사이트에서 보낸 시간 |
 

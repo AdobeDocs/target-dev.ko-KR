@@ -4,10 +4,26 @@ description: ' [!DNL Adobe Target] 서버측 배달 API, SDK 및 [!DNL Target Re
 title: ' [!DNL Target] 서버측 배달 API 및 SDK에 대한 자세한 내용은 어디에서 확인할 수 있습니까?'
 feature: Implement Server-side
 exl-id: 3eb0a789-cf1a-4d02-acf7-3c895bcb662f
-source-git-commit: 75af30045684b95d5989b0a1f877ba95bb8cd883
+TQID: https://experienceleague.adobe.com/x5WKb9Eenz2bw-idOnxlpWdtiivTx05n38sNXEt3DNc
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: b050e0cd-2ddd-42cd-a71b-5d9e1fdf75e0
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: a6cc21b9-1a36-4fa6-9c61-4acd04d9c88c
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 13%
+source-wordcount: 603
+ht-degree: 12%
 
 ---
 
@@ -44,15 +60,15 @@ ht-degree: 13%
 
 [!DNL Target] 배달 API를 통해 다음을 수행할 수 있습니다.
 
-* SPA 및 모바일 채널을 비롯한 웹과 연결된 TV, 키오스크 또는 매장 내 디지털 화면과 같은 비브라우저 기반 IoT 장치 전반에 경험을 제공합니다.
+* SPA 및 모바일 채널을 비롯한 웹과 연결된 TV, 키오스크 또는 매장 내 디지털 화면과 같은 비브라우저 기반 IoT 장치 전반에 걸쳐 경험을 제공합니다.
 * HTTP/s를 호출할 수 있는 모든 서버측 플랫폼 또는 애플리케이션에서 경험을 제공합니다.
 * 방문자가 비즈니스에 참여하는 데 사용한 채널 또는 장치에 관계없이 방문자에게 일관되고 개인화된 경험을 제공합니다.
 * 서버의 세션 내에 방문자를 위한 경험을 캐시하므로 여러 API 호출을 방지할 수 있으므로 성능이 향상됩니다.
-* Adobe Analytics, Adobe Audience Manager(AAM) 및 서버측 Experience Cloud ID 서비스와 같은 Adobe Experience Cloud 제품과 원활하게 통합됩니다.
+* 서버측에서 Adobe Analytics, Adobe Audience Manager(AAM) 및 Experience Cloud ID 서비스와 같은 Adobe Experience Cloud 제품과 원활하게 통합됩니다.
 
 ## 서버측 SDK
 
-[!DNL Adobe Target] 서버측 SDK 설명서는 선택한 언어로 서버에 [!DNL Target]을(를) 구현하는 데 도움이 됩니다.
+[!DNL Adobe Target] 서버측 SDK 설명서를 통해 선택한 언어로 서버에 [!DNL Target]을(를) 구현할 수 있습니다.
 
 * [Node.js](node-js/overview.md)
 * [Java](java/overview.md)
@@ -62,9 +78,9 @@ ht-degree: 13%
 [!DNL Adobe Target]의 서버측 SDK를 통해 다음을 수행할 수 있습니다.
 
 * **거의 0에 가까운 대기 시간**&#x200B;에 **기능 플래그 지정**, **롤아웃**, **A/B 실험**&#x200B;을 실행하고 실행하십시오.
-* **웹**(예: **SPA**, **모바일 채널** 및 연결된 TV, 키오스크 또는 매장 내 디지털 화면과 같은 비브라우저 기반 **사물인터넷(IoT) 장치**)에서 경험을 전달하십시오.
+* **SPA** 및 **모바일 채널**&#x200B;과(와) 연결된 TV, 키오스크 또는 매장 내 디지털 화면과 같은 비브라우저 기반 **사물인터넷(IoT) 장치**&#x200B;를 포함하여 **웹**&#x200B;에서 경험을 전달하십시오.
 * 사용자가 귀하의 비즈니스에 참여한 채널 또는 장치에 관계없이 **ML(기계 학습) 기반의 개인화된 경험**&#x200B;을 사용자에게 전달합니다.
-* **서버측에서** Adobe Experience Cloud Adobe Analytics **,** Adobe Audience Manager **및** Experience Cloud ID 서비스&#x200B;**와 같은** 제품과 원활하게 통합됩니다.
+* **서버측에서** Adobe Experience Cloud **,** Adobe Audience Manager **및** Experience Cloud ID 서비스&#x200B;**와 같은** 제품과 원활하게 통합됩니다.
 
 [디바이스에서 의사 결정](sdk-guides/on-device-decisioning/overview.md)을 통해 간단한 기능 플래그 지정 사용 사례를 실행하는 방법을 알아보려면 [시작하기](sdk-guides/getting-started/getting-started.md) 페이지를 참조하세요.
 
@@ -72,6 +88,6 @@ ht-degree: 13%
 
 ## [!DNL Target Recommendations] API
 
-링크: [Target Recommendations API](https://developers.adobetarget.com/api/recommendations) 및 [Adobe Recommendations API 개요](../../before-administer/recs-api/overview.md).
+링크: [Target Recommendations API](https://developers.adobetarget.com/api/recommendations) 및 [Adobe Recommendations API 개요](../../before-administer/recs-api/overview.md)
 
-Recommendations API를 사용하면 [!DNL Target] 권장 사항 서버와 프로그래밍 방식으로 상호 작용할 수 있습니다. 이러한 API는 일반적으로 [!DNL Target] 사용자 인터페이스를 통해 수행하는 기능을 수행하기 위해 다양한 애플리케이션 스택과 통합될 수 있습니다.
+Recommendations API를 사용하면 [!DNL Target] Recommendations 서버와 프로그래밍 방식으로 상호 작용할 수 있습니다. 이러한 API는 일반적으로 [!DNL Target] 사용자 인터페이스를 통해 수행하는 기능을 수행하기 위해 다양한 애플리케이션 스택과 통합될 수 있습니다.

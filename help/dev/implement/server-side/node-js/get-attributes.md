@@ -1,11 +1,18 @@
 ---
 title: ' [!DNL Adobe Target] Node.js SDK에서 비동기 요청을 사용하는 방법'
-description: ' [!DNL Target] Node.js SDK가 비동기 요청을 지원하여 유효한 타겟 시간을 0으로 줄이는 방법에 대해 알아봅니다.'
+description: ' [!DNL Target] Node.js SDK이 비동기 요청을 지원하여 효과적인 대상 시간을 0으로 줄이는 방법에 대해 알아봅니다.'
 feature: APIs/SDKs
 exl-id: aa06f3ca-7d2a-4334-8092-730a8705dfb0
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/cIoEnAinSLl-TO2vunG164i97Y2h-9NdE487ZyXJSzs
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: 116
 ht-degree: 18%
 
 ---
@@ -24,7 +31,7 @@ ht-degree: 18%
 TargetClient.getAttributes(mboxNames: Array, options: Object): Promise
 ```
 
-## 매개 변수
+## 매개변수
 
 | 이름 | 유형 | 필수 | 기본값 |
 | --- | --- | --- |--- |

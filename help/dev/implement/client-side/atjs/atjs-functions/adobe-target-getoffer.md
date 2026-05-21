@@ -4,10 +4,23 @@ description: ' [!DNL Adobe Target] at.js 라이브러리에 대한 [!UICONTROL a
 title: '[!UICONTROL adobe.target.getOffer()] 함수를 사용하는 방법'
 feature: at.js
 exl-id: 7b917d42-06e8-4838-a09d-0c4872c9beaa
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/GcXVIt-42-PV0j4Q4oe5uePTZAn7PDIMicIAULDXz-s
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 79%
+source-wordcount: 463
+ht-degree: 72%
 
 ---
 
@@ -22,7 +35,7 @@ ht-degree: 79%
 | mbox | 문자열 | 예 | Mbox 이름 |
 | params | 개체 | 아니오 | Mbox 매개 변수입니다. 다음 구조를 가진 키 - 값 쌍의 개체입니다.<P>`{ "param1": "value1", "param2": "value2"}` |
 | 성공 | 함수 | 예 | 서버에서 응답을 받았을 때 실행할 콜백입니다. 성공 콜백 함수는 오퍼 개체의 배열을 나타내는 단일 매개 변수를 수신합니다. 다음은 성공 콜백 예입니다.<P>`function handleSuccess(response){......}`<P>자세한 내용은 아래 응답을 참조하십시오. |
-| 오류 | 함수 | 예 | 오류가 발생한 경우 실행할 콜백입니다. 오류가 있는 것으로 간주되는 몇 가지 경우가 있습니다.<ul><li>HTTP 상태 코드가 200 정상이 아닙니다.</li><li>응답을 구문 분석할 수 없습니다. 예를 들어, JSON이 잘못 구성되었거나 JSON 대신 HTML이 구성되었습니다.</li><li>응답에 &quot;오류&quot; 키가 포함되어 있습니다. 예를 들어, 요청을 제대로 처리할 수 없다는 예외가 에지에서 발생했습니다. mbox가 차단되어 컨텐츠를 검색할 수 없는 등의 경우 오류가 발생했습니다. 오류 콜백 함수는 두 개의 매개 변수(status 및 error)를 수신합니다. 오류 콜백 예제는 다음과 같습니다. `function handleError(status, error){......}`</li></ul>자세한 내용은 오류 응답을 참조하십시오. |
+| 오류 | 함수 | 예 | 오류가 발생한 경우 실행할 콜백입니다. 오류가 있는 것으로 간주되는 몇 가지 경우가 있습니다.<ul><li>HTTP 상태 코드가 200 정상이 아닙니다.</li><li>응답을 구문 분석할 수 없습니다. 예를 들어, JSON이 잘못 구성되었거나 JSON 대신 HTML이 구성되었습니다.</li><li>응답에 &quot;오류&quot; 키가 포함되어 있습니다. 예를 들어, 요청을 제대로 처리할 수 없다는 예외가 에지에서 발생했습니다. mbox가 차단되어 콘텐츠를 검색할 수 없는 등의 경우 오류가 발생했습니다. 오류 콜백 함수에는 상태 및 오류의 두 매개 변수가 수신됩니다. 오류 콜백 예제는 다음과 같습니다. `function handleError(status, error){......}`</li></ul>자세한 내용은 오류 응답을 참조하십시오. |
 | timeout | 숫자 | 아니오 | 시간 초과(밀리 초)입니다. 지정하지 않으면 at.js의 기본 시간 초과가 사용됩니다.<P>[!UICONTROL Administration] > [!UICONTROL Implementation] 아래의 [!DNL Target] UI에서 기본 시간 제한을 설정할 수 있습니다. |
 
 ## 예

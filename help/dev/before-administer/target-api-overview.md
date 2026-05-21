@@ -3,9 +3,21 @@ title: Adobe Target API 개요
 description: 배달 api, 보고 api, 관리 api, 프로필 api, 권장 사항 api 및 postman 컬렉션 링크를 포함한 다양한 Adobe Target API의 개요입니다.
 exl-id: bf886103-36af-4061-b8be-2fe645f45ff3
 feature: APIs/SDKs
-source-git-commit: 2fba03b3882fd23a16342eaab9406ae4491c9044
+TQID: https://experienceleague.adobe.com/GbrWhrZxH-sTtpxotpJGbr-sHuIXrX7rZFQhju76-vM
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: 448
 ht-degree: 0%
 
 ---
@@ -26,7 +38,7 @@ Adobe Target API는 관리자, 프로필, 게재 및 보고 유형에 따라 그
 
 | API 유형 | 이를 통해 수행할 수 있는 작업 | 다운로드 링크 | 기타 유용한 링크 |
 | --- | --- | --- |--- |
-| [관리](../administer/admin-api/admin-api-overview-new.md) | 활동, 대상, 오퍼 및 기타 개체(Recommendations 엔티티, 기준, 디자인 등)를 만들고, 수정하고, 삭제합니다. Recommendations API는 관리 API의 유형입니다.) | <UL><li>[Target 관리 API Postman 컬렉션](https://developers.adobetarget.com/api/#admin-postman-collection)</li><li>[Recommendations API Postman 컬렉션](https://developer.adobe.com/target/administer/recommendations-api/#section/Postman)</li></UL> | [Recommendations API 사용](../before-administer/recs-api/overview.md) |
+| [관리](../administer/admin-api/admin-api-overview-new.md) | 활동, 대상, 오퍼 및 기타 개체(권장 사항 엔티티, 기준, 디자인 등)를 만들고, 수정하고, 삭제합니다. Recommendations API는 관리 API의 유형입니다.) | <UL><li>[Target 관리 API Postman 컬렉션](https://developers.adobetarget.com/api/#admin-postman-collection)</li><li>[권장 사항 API Postman 컬렉션](https://developer.adobe.com/target/administer/recommendations-api/#section/Postman)</li></UL> | [권장 사항 API 사용](../before-administer/recs-api/overview.md) |
 | 프로필 | Adobe Target에 저장된 사용자 프로필을 검색하고 수정합니다. | [Target 프로필 API Postman 컬렉션](https://developers.adobetarget.com/api/#profiles) |  |
 | [배달](../implement/delivery-api/overview.md) | 최종 사용자에게 전달하기 위해 Target에서 최적화되고 개인화된 콘텐츠를 검색합니다. | [Target 배달 API Postman 컬렉션](/help/dev/before-implement/delivery-api-overview/getting-started.md#postman) |  |
 | [보고](../administer/admin-api/admin-api-overview-new.md) | 활동 결과 및 기타 보고 결과를 내보냅니다. | 보고 API는 [Target 관리 API Postman 컬렉션](https://developers.adobetarget.com/api/#admin-postman-collection) 내에 포함되어 있습니다. |  |
@@ -34,7 +46,7 @@ Adobe Target API는 관리자, 프로필, 게재 및 보고 유형에 따라 그
 
 ## API 차이점
 
-Target 관리 API(Recommendations API 포함)와 Target 배달 API 사이에는 중요한 차이점이 있습니다.
+Target 관리 API(Recommendations API 포함)와 Target 게재 API 사이에는 중요한 차이점이 있습니다.
 
 * 관리 API를 사용하면 Target UI에서 구성할 수 있는 Target의 다양한 측면을 구성할 수 있습니다. UI에서 사용할 수 없는 Target의 측면을 구성할 수 있는 모델 API는 예외입니다. **모든 관리 API에 인증이 필요합니다.**
 

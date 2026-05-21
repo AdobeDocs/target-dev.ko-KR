@@ -4,10 +4,22 @@ description: ' [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 [!
 title: '[!UICONTROL adobe.target.applyOffers()] 함수를 사용하는 방법'
 feature: at.js
 exl-id: c391e3f4-fdf1-4e33-8dcb-6bf46e390538
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/9WIJvPZIlrtLkv-vv-HRkctgwHn3nX-jrE4-4usXW0Y
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 80%
+source-wordcount: 820
+ht-degree: 78%
 
 ---
 
@@ -17,12 +29,12 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->이 함수는 at.js 2.*x*. 이 함수는 at.js 버전 1.*x*&#x200B;에는 사용할 수 없습니다.
+>이 함수는 at.js 2.*x*&#x200B;에서 도입되었습니다. 이 함수는 at.js 버전 1.*x*&#x200B;에서 사용할 수 없습니다.
 
 | 키 | 유형 | 필수? | 설명 |
 | --- | --- | --- | --- |
-| selector | 문자열 | 아니오 | [!DNL Target]이 오퍼 컨텐츠를 배치해야 하는 HTML 요소를 식별하는 데 사용되는 HTML 요소 또는 CSS 선택기입니다. 선택기를 제공하지 않으면 [!DNL Target]에서 사용할 HTML 요소를 HTML HEAD으로 간주합니다. |
-| 응답 | 개체 | 예 | `getOffers()`의 응답 개체.<br />아래의 &quot;요청&quot; 표를 참조하십시오. |
+| selector | 문자열 | 아니오 | [!DNL Target]이 오퍼 컨텐츠를 배치해야 하는 HTML 요소를 식별하는 데 사용되는 HTML 요소 또는 CSS 선택기입니다. 선택기를 제공하지 않으면 [!DNL Target]에서 사용할 HTML 요소를 HTML HEAD으로 가정합니다. |
+| 응답 | 개체 | 예 | `getOffers()`의 응답 개체입니다.<br />아래 요청 표를 참조하십시오. |
 
 ## 응답
 
@@ -61,14 +73,14 @@ ht-degree: 80%
 | response > execute > mboxes > mbox > metrics | `clickThrough` 지표 목록을 포함합니다. |
 | response > execute > mboxes > mbox > mbox | mbox의 이름. |
 | response > execute > mboxes > mbox >index | 응답이 요청에서 나온 이 색인이 있는 mbox용임을 나타냅니다. |
-| response > execute > mboxes > mbox > analytics > payload | mbox가 적용된 후 [!DNL Analytics] (으)로 전송해야 하는 클라이언트측 통합을 위한 [!DNL Analytics] 페이로드입니다. (A4T 사용 &quot;캠페인&quot; 섹션을 참조하십시오.) |
+| response > execute > mboxes > mbox > analytics > payload | mbox가 적용된 후 [!DNL Analytics]&#x200B;(으)로 전송해야 하는 클라이언트측 통합을 위한 [!DNL Analytics] 페이로드입니다. (A4T 사용 &quot;캠페인&quot; 섹션을 참조하십시오.) |
 | response > execute > mboxes | 실행된 mbox 목록. |
 | response > execute > pageLoad > options > content | &quot;선택 사항&quot;의 컨텐츠가 잘 정의되어 있지 않으며 선택 사항 유형/템플릿 구조에 직접적으로 의존합니다. |
 | response > execute > pageLoad > options > type | 선택 사항 유형. &quot;컨텐츠&quot; 필드의 유형을 반영합니다. 지원되는 유형은 html, 리디렉션, JSON, 다이내믹 및 작업입니다. |
 | response > execute > pageLoad > options | 보기를 기준으로 그룹화되지 않은 선택 사항(target-global-mbox + 보기를 기준으로 그룹화되지 않은 보기를 사용하는 활동의 선택 사항). |
 | response > execute > pageLoad > metrics | 특정 보기에 속하도록 설정되지 않은 클릭 지표. |
 | response > execute > pageLoad > trace | pageLoad 요청에 대한 모든 추적 데이터를 포함하는 개체. |
-| response > execute > pageLoad > analytics > payload | 페이지 로드 콘텐츠가 적용된 후 [!DNL Analytics] (으)로 전송해야 하는 클라이언트측 통합을 위한 [!DNL Analytics] 페이로드입니다. (A4T 사용 &quot;캠페인&quot; 섹션을 참조하십시오.) |
+| response > execute > pageLoad > analytics > payload | 페이지 로드 콘텐츠가 적용된 후 [!DNL Analytics]&#x200B;(으)로 전송해야 하는 클라이언트측 통합을 위한 [!DNL Analytics] 페이로드입니다. (A4T 사용 &quot;캠페인&quot; 섹션을 참조하십시오.) |
 
 ## [!UICONTROL applyOffers()] 호출 예
 
