@@ -1,18 +1,21 @@
 ---
 title: ' [!DNL Adobe Target] Python SDK 시작'
-description: ' [!DNL Adobe Target] 고객이 Python SDK를 설치하고 초기화하고 사용하는 방법에 대해 알아봅니다.'
+description: ' [!DNL Adobe Target] 고객이 Python SDK을 설치, 초기화 및 사용하는 방법을 알아봅니다.'
 feature: APIs/SDKs
 exl-id: 2ccd1b4e-d9af-4547-81fe-c70e6f00df3d
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/yqURWV6x9TZblAgpXl-bay9ZReykHwCvUDIr0A45bQ0
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: 129
 ht-degree: 2%
 
 ---
 
 # Python SDK 개요
 
-이 참조 안내서에서는 [!DNL Adobe Target] 고객이 Python SDK를 설치하고 초기화하고 사용하는 방법을 보여 줍니다.
+이 참조 안내서에서는 [!DNL Adobe Target] 고객이 Python SDK을 설치, 초기화 및 사용하는 방법을 보여 줍니다.
 
 ## 전제 조건
 
@@ -20,11 +23,11 @@ ht-degree: 2%
 
 ## 시작하기
 
-Python SDK를 사용하여 시작하는 방법을 보려면 [[!DNL Target] SDK 시작 안내서](../sdk-guides/getting-started/getting-started.md)로 이동하십시오.
+Python SDK을 사용하는 방법을 보려면 [[!DNL Target] SDK 시작 안내서](../sdk-guides/getting-started/getting-started.md)로 이동하십시오.
 
 ## 샘플 앱
 
-Python SDK를 테스트합니다.
+Python SDK 테스트 드라이브:
 
 * [[!DNL Adobe Target] [!UICONTROL on-device decisioning] 데모 사이트 방문](https://github.com/adobe/on-device-decisioning-demo-site)
 * [샘플 응용 프로그램](../sdk-guides/sample-apps/sample-apps.md)에서.

@@ -4,9 +4,12 @@ description: Adobe Target 게재 API 개요
 keywords: 배달 api
 exl-id: e760bddc-b1ae-4b7b-bff2-aba81c6b6d34
 feature: APIs/SDKs
-source-git-commit: 413b16ed0b098de6914558fa29b9ca59aaba958e
+TQID: https://experienceleague.adobe.com/gPXGax6ccvZZPklT3jnZbqyOj3mCClEfSpdufAFPtSs
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: 184
 ht-degree: 0%
 
 ---
@@ -21,7 +24,7 @@ ht-degree: 0%
 * HTTP/s를 호출할 수 있는 모든 서버측 플랫폼 또는 애플리케이션에서 경험을 제공합니다.
 * 사용자가 귀하의 비즈니스에 관여한 채널 또는 장치에 관계없이 일관되고 개인화된 경험을 사용자에게 제공합니다.
 * 서버의 세션 내에서 사용자에 대한 경험을 캐시하므로 여러 API 호출을 방지하고 결과적으로 더 나은 성능을 얻을 수 있습니다.
-* 서버측에서 [!DNL Adobe Experience Cloud], [!DNL Adobe Analytics] 및 [!DNL Adobe Audience Manager]과(와) 같은 [!DNL Experience Cloud ID Service] 제품과 원활하게 통합됩니다.
+* 서버측에서 [!DNL Adobe Analytics], [!DNL Adobe Audience Manager] 및 [!DNL Experience Cloud ID Service]과(와) 같은 [!DNL Adobe Experience Cloud] 제품과 원활하게 통합됩니다.
 
 >[!NOTE]
 >

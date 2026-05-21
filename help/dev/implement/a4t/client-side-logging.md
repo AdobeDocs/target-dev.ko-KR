@@ -5,22 +5,28 @@ seo-title: Client-side logging for A4T data in the Experience Platform Web SDK
 seo-description: Learn how to enable client-side logging for Adobe Analytics for Target (A4T) using the Experience Platform Web SDK.
 keywords: target;a4t;로깅;web sdk;경험;플랫폼;
 feature: Implementation
-source-git-commit: 4d4ca7dcffdbaee5770084bd85c3109df0d6a8d4
+exl-id: fef34eec-128f-4433-a557-42f1347cf2c3
+TQID: https://experienceleague.adobe.com/A-6Z757zzqoIW12ICTs9WBwXjHbapgLArhGSoIgMulo
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: 1139
 ht-degree: 0%
 
 ---
 
 # [!DNL Experience Platform Web SDK]의 A4T 데이터에 대한 클라이언트측 로깅
 
-[!DNL Adobe Experience Platform Web SDK]을(를) 사용하면 웹 응용 프로그램의 클라이언트측에서 [Target용 Adobe Analytics(A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=ko) 데이터를 수집할 수 있습니다.
+[!DNL Adobe Experience Platform Web SDK]을(를) 사용하면 웹 응용 프로그램의 클라이언트측에서 [Target용 Adobe Analytics(A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) 데이터를 수집할 수 있습니다.
 
-클라이언트측 로깅은 관련 [!DNL Target] 데이터가 클라이언트측에서 반환됨을 의미하며, 이를 통해 데이터를 수집하고 [!DNL Analytics]과(와) 공유할 수 있습니다. [데이터 삽입 API](https://experienceleague.adobe.com/docs/analytics/import/c-data-insertion-api.html?lang=ko)를 사용하여 데이터를 Analytics에 수동으로 전송하려면 이 옵션을 활성화해야 합니다.
+클라이언트측 로깅은 관련 [!DNL Target] 데이터가 클라이언트측에서 반환됨을 의미하며, 이를 통해 데이터를 수집하고 [!DNL Analytics]과(와) 공유할 수 있습니다. [데이터 삽입 API](https://experienceleague.adobe.com/docs/analytics/import/c-data-insertion-api.html)를 사용하여 데이터를 Analytics에 수동으로 전송하려면 이 옵션을 활성화해야 합니다.
 
 >[!NOTE]
 >
->[AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ko)을(를) 사용하여 이 작업을 수행하는 메서드가 현재 개발 중이며 가까운 미래에 제공될 예정입니다.
+>[AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)을(를) 사용하여 이 작업을 수행하는 메서드가 현재 개발 중이며 가까운 미래에 제공될 예정입니다.
 
 이 문서에서는 [!DNL Platform Web SDK]에 대한 클라이언트측 A4T 로깅을 설정하는 단계에 대해 설명하고 일반적인 사용 사례에 대한 구현 예를 제공합니다.
 
@@ -28,23 +34,23 @@ ht-degree: 0%
 
 이 자습서에서는 사용자가 맞춤화를 위해 [!DNL Platform Web SDK]을(를) 사용하는 것과 관련된 기본 개념 및 프로세스를 잘 알고 있다고 가정합니다. 소개가 필요한 경우 다음 설명서를 검토하십시오.
 
-* [웹 SDK 구성](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/commands/configure/overview)
-* [이벤트 보내기](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/commands/sendevent/overview)
-* [개인화 콘텐츠 렌더링](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
+* [웹 SDK 구성](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview)
+* [이벤트 보내기](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendevent/overview)
+* [개인화 콘텐츠 렌더링](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
 
 ## [!DNL Analytics] 클라이언트측 로깅 설정 {#set-up-client-side-logging}
 
-다음 하위 섹션에서는 [!DNL Analytics] 구현에 대해 [!DNL Platform Web SDK] 클라이언트측 로깅을 활성화하는 방법에 대해 간략히 설명합니다.
+다음 하위 섹션에서는 [!DNL Platform Web SDK] 구현에 대해 [!DNL Analytics] 클라이언트측 로깅을 활성화하는 방법에 대해 간략히 설명합니다.
 
 ### [!DNL Analytics] 클라이언트측 로깅 사용 {#enable-analytics-client-side-logging}
 
-구현에 대해 [!DNL Analytics] 클라이언트측 로깅을 사용하도록 설정하려면 [!DNL Adobe Analytics]데이터스트림[에서 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/overview) 구성을 사용하지 않도록 설정해야 합니다.
+구현에 대해 [!DNL Analytics] 클라이언트측 로깅을 사용하도록 설정하려면 [데이터스트림](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)에서 [!DNL Adobe Analytics] 구성을 사용하지 않도록 설정해야 합니다.
 
 ![Analytics 데이터 스트림 구성 사용 안 함](/help/dev/implement/a4t/assets/disable-analytics-datastream.png)
 
 ### SDK에서 [!DNL A4T] 데이터를 검색하여 [!DNL Analytics]&#x200B;(으)로 보냅니다. {#a4t-to-analytics}
 
-이 보고 메서드가 제대로 작동하려면 [!DNL A4T] 히트의 [`sendEvent`](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/commands/sendevent/overview) 명령에서 검색된 [!DNL Analytics] 관련 데이터를 보내야 합니다.
+이 보고 메서드가 제대로 작동하려면 [!DNL Analytics] 히트의 [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendevent/overview) 명령에서 검색된 [!DNL A4T] 관련 데이터를 보내야 합니다.
 
 [!DNL Target] Edge에서 제안 응답을 계산하면 [!DNL Analytics] 클라이언트측 로깅이 활성화되었는지(예: 데이터스트림에서 [!DNL Analytics]이 비활성화되었는지) 확인합니다. 클라이언트측 로깅이 활성화되면 시스템은 응답의 각 제안에 [!DNL Analytics] 토큰을 추가합니다.
 
@@ -52,7 +58,7 @@ ht-degree: 0%
 
 ![클라이언트측 로깅 흐름](/help/dev/implement/a4t/assets/analytics-client-side-logging.png)
 
-다음은 `interact` 클라이언트측 로깅이 활성화된 경우 [!DNL Analytics] 응답의 예입니다. [!DNL Analytics] 보고가 있는 활동에 대한 제안인 경우 `scopeDetails.characteristics.analyticsToken` 속성이 있습니다.
+다음은 [!DNL Analytics] 클라이언트측 로깅이 활성화된 경우 `interact` 응답의 예입니다. [!DNL Analytics] 보고가 있는 활동에 대한 제안인 경우 `scopeDetails.characteristics.analyticsToken` 속성이 있습니다.
 
 ```json
 {
@@ -202,7 +208,7 @@ ht-degree: 0%
 }
 ```
 
-`scopeDetails.characteristics.analyticsToken`과(와) `scopeDetails.characteristics.analyticsDisplayToken`(표시된 콘텐츠의 경우) 및 `scopeDetails.characteristics.analyticsClickToken`(클릭 지표의 경우)의 모든 값은 `tnta`데이터 삽입 API[&#x200B; 호출에서 &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) 태그로 수집 및 포함되어야 하는 A4T 페이로드입니다.
+`scopeDetails.characteristics.analyticsToken`과(와) `scopeDetails.characteristics.analyticsDisplayToken`(표시된 콘텐츠의 경우) 및 `scopeDetails.characteristics.analyticsClickToken`(클릭 지표의 경우)의 모든 값은 [데이터 삽입 API](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) 호출에서 `tnta` 태그로 수집 및 포함되어야 하는 A4T 페이로드입니다.
 
 >[!IMPORTANT]
 >
@@ -225,11 +231,11 @@ ht-degree: 0%
 
 ### [!UICONTROL Form-Based Experience Composer]개 활동 {#form-based-composer}
 
-[!DNL Platform Web SDK]을(를) 사용하여 [Adobe Target 양식 기반 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=ko) 활동에서 제안 실행을 제어할 수 있습니다.
+[!DNL Platform Web SDK]을(를) 사용하여 [Adobe Target 양식 기반 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html) 활동에서 제안 실행을 제어할 수 있습니다.
 
 특정 결정 범위에 대한 제안을 요청하면 반환된 제안에 해당 [!DNL Analytics] 토큰이 포함됩니다. 가장 좋은 방법은 [!DNL Experience Platform Web SDK] `sendEvent` 명령을 체인한 다음 반환된 제안을 반복하여 실행하여 [!DNL Analytics] 토큰을 동시에 수집하는 것입니다.
 
-다음과 같이 `sendEvent` 활동 범위에 대해 [!UICONTROL Form-Based Experience Composer] 명령을 트리거할 수 있습니다.
+다음과 같이 [!UICONTROL Form-Based Experience Composer] 활동 범위에 대해 `sendEvent` 명령을 트리거할 수 있습니다.
 
 ```javascript
 alloy("sendEvent", {
@@ -419,16 +425,16 @@ function getClickAnalyticsPayload(proposition) {
 
 #### 구현 요약 {#implementation-summary}
 
-요약하면 [!UICONTROL Form-Based Experience Composer]에 [!DNL Experience Platform Web SDK] 활동을 적용할 때 다음 단계를 실행해야 합니다.
+요약하면 [!DNL Experience Platform Web SDK]에 [!UICONTROL Form-Based Experience Composer] 활동을 적용할 때 다음 단계를 실행해야 합니다.
 
 1. [!UICONTROL Form-Based Experience Composer]개의 활동 오퍼를 가져오는 이벤트를 보냅니다.
 1. 페이지에 콘텐츠 변경 사항을 적용합니다.
 1. `decisioning.propositionDisplay` 알림 이벤트 보내기;
 1. SDK 응답에서 [!DNL Analytics] 표시 토큰을 수집하고 [!DNL Analytics] 히트에 대한 페이로드를 구성합니다.
-1. [!DNL Analytics]데이터 삽입 API[를 사용하여 페이로드를 &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md)에 보냅니다.
-1. 전달된 제안에 클릭 지표가 있는 경우 클릭이 수행될 때 `decisioning.propositionInteract` 알림 이벤트를 전송하도록 클릭 수신기를 설정해야 합니다. `onBeforeEventSend` 이벤트를 가로채면 다음 작업이 발생하도록 `decisioning.propositionInteract` 처리기를 구성해야 합니다.
-   1. [!DNL Analytics]에서 클릭 `xdm._experience.decisioning.propositions`개 토큰 수집 중
-   1. [!DNL Analytics]데이터 삽입 API[!DNL Analytics]를 통해 수집된 [&#x200B; 페이로드와 함께 클릭 &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) 히트를 보내는 중;
+1. [데이터 삽입 API](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md)를 사용하여 페이로드를 [!DNL Analytics]에 보냅니다.
+1. 전달된 제안에 클릭 지표가 있는 경우 클릭이 수행될 때 `decisioning.propositionInteract` 알림 이벤트를 전송하도록 클릭 수신기를 설정해야 합니다. `decisioning.propositionInteract` 이벤트를 가로채면 다음 작업이 발생하도록 `onBeforeEventSend` 처리기를 구성해야 합니다.
+   1. `xdm._experience.decisioning.propositions`에서 클릭 [!DNL Analytics]개 토큰 수집 중
+   1. [데이터 삽입 API](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md)를 통해 수집된 [!DNL Analytics] 페이로드와 함께 클릭 [!DNL Analytics] 히트를 보내는 중;
 
 ```javascript
 alloy("sendEvent", {
@@ -465,7 +471,7 @@ alloy("sendEvent", {
 
 ### [!UICONTROL Visual Experience Composer]&#x200B;(VEC) 활동 {#visual-experience-composer-acitivties}
 
-[!DNL Platform Web SDK]을(를) 사용하면 [VEC(시각적 경험 작성기)](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=ko)를 사용하여 작성된 오퍼를 처리할 수 있습니다.
+[!DNL Platform Web SDK]을(를) 사용하면 [VEC(시각적 경험 작성기)](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html)를 사용하여 작성된 오퍼를 처리할 수 있습니다.
 
 >[!NOTE]
 >
@@ -511,9 +517,9 @@ alloy("sendEvent", {
 
 [!DNL Adobe Target] 활동을 사용하면 DOM에 수동으로 연결되거나 DOM에 자동으로 연결된 다양한 지표(VEC 작성 활동)를 페이지에서 설정할 수 있습니다. 두 유형 모두 웹 페이지에서 지연된 최종 사용자 상호 작용입니다.
 
-이를 해결하려면 [!DNL Analytics] `onBeforeEventSend` 후크를 사용하여 [!DNL Adobe Experience Platform Web SDK] 페이로드를 수집하는 것이 좋습니다. `onBeforeEventSend` 후크는 `configure` 명령을 사용하여 구성해야 하며, 데이터 스트림을 통해 전송되는 모든 이벤트에 반영됩니다.
+이를 해결하려면 `onBeforeEventSend` [!DNL Adobe Experience Platform Web SDK] 후크를 사용하여 [!DNL Analytics] 페이로드를 수집하는 것이 좋습니다. `onBeforeEventSend` 후크는 `configure` 명령을 사용하여 구성해야 하며, 데이터 스트림을 통해 전송되는 모든 이벤트에 반영됩니다.
 
-다음은 `onBeforeEventSent`개의 히트를 트리거하도록 [!DNL Analytics]을(를) 구성하는 방법의 예입니다.
+다음은 [!DNL Analytics]개의 히트를 트리거하도록 `onBeforeEventSent`을(를) 구성하는 방법의 예입니다.
 
 ```javascript
 alloy("configure", {

@@ -4,10 +4,15 @@ description: ' [!DNL Adobe Target] 이(가) IP 주소 수집 및 처리, PII 및
 title: Target은 PII를 포함한 개인 정보 보호 문제를 어떻게 처리합니까?
 feature: Privacy & Security
 exl-id: 4330e034-2483-4a25-9c87-48dbef6fc9de
-source-git-commit: 88bde40aa6dfb96e1d53e4db6ba5547d38dbbb99
+TQID: https://experienceleague.adobe.com/lEllQscRLJ1I-5mu3r2TyoxYfaOb2nLHVQzG9YnL0ig
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 43%
+source-wordcount: 799
+ht-degree: 44%
 
 ---
 
@@ -25,7 +30,7 @@ ht-degree: 43%
 
 ## IP 주소의 마지막 옥텟 대체
 
-Adobe은 사용자가 [!DNL Target] Adobe에 대해 활성화할 수 있는 &quot;계획적 개인 정보 보호&quot; 설정을 개발했습니다. 사용하도록 설정하면 [!DNL Target] Adobe이 IP 주소를 수집할 때 IP 주소의 마지막 옥텟(마지막 부분)을 즉시 난독화합니다. 이러한 익명화는 선택 사항인 IP 주소의 지역 조회를 포함하여, IP 주소의 모든 처리 이전에 수행됩니다.
+Adobe은 사용자가 Adobe [!DNL Target]에 대해 활성화할 수 있는 &quot;계획적 개인 정보 보호&quot; 설정을 개발했습니다. 활성화되면 Adobe [!DNL Target]은(는) IP 주소가 수집된 시점에 IP 주소의 마지막 옥텟(마지막 부분)을 즉시 난독화합니다. 이러한 익명화는 선택 사항인 IP 주소의 지역 조회를 포함하여, IP 주소의 모든 처리 이전에 수행됩니다.
 
 이 기능이 활성화되어 있으면 IP 주소가 충분히 익명으로 변경되므로 더 이상 개인 정보로 식별되지 않습니다. 따라서 [!DNL Target]은(는) 개인 정보 수집을 허용하지 않는 국가의 데이터 개인 정보 보호 법률에 따라 사용할 수 있습니다. 도시 수준의 정보를 획득하는 것은 IP 주소 난독화의 영향을 크게 받을 수 있습니다. 지역 및 국가 수준의 정보를 획득하는 것은 IP 주소 난독화의 영향을 약간만 받아야 합니다.
 
@@ -41,9 +46,9 @@ Adobe은 사용자가 [!DNL Target] Adobe에 대해 활성화할 수 있는 &quo
 
 ### [!DNL Adobe Experience Platform Web SDK]을(를) 사용할 때 데이터 스트림 수준 IP 난독화 {#aep}
 
-[!DNL Platform Web SDK] (버전 23.4 이상)을 사용하는 경우 데이터스트림 수준의 IP 난독화 설정이 [!DNL Target]에 설정된 IP 난독화 옵션보다 우선합니다. 예를 들어 데이터스트림 수준 IP 난독화 옵션이 [!UICONTROL Full] (으)로 설정되어 있고 [!DNL Target] IP 난독화 옵션이 [!UICONTROL Last octet obfuscation] (으)로 설정되어 있으면 [!DNL Target]은(는) 완전히 난독화된 IP를 받습니다.
+[!DNL Platform Web SDK]&#x200B;(버전 23.4 이상)을 사용하는 경우 데이터스트림 수준의 IP 난독화 설정이 [!DNL Target]에 설정된 IP 난독화 옵션보다 우선합니다. 예를 들어 데이터스트림 수준 IP 난독화 옵션이 [!UICONTROL Full]&#x200B;(으)로 설정되어 있고 [!DNL Target] IP 난독화 옵션이 [!UICONTROL Last octet obfuscation]&#x200B;(으)로 설정되어 있으면 [!DNL Target]은(는) 완전히 난독화된 IP를 받습니다.
 
-자세한 내용은 *[!DNL Adobe Experience Platfrom]데이터 스트림 가이드*&#x200B;에서 [데이터 스트림 구성](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ko){target=_blank}의 [!UICONTROL IP Obfuscation]을(를) 참조하십시오.
+자세한 내용은 *[!DNL Adobe Experience Platfrom]Datastreams 안내서*&#x200B;의 [데이터스트림 구성](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html){target=_blank}에서 [!UICONTROL IP Obfuscation]을(를) 참조하십시오.
 
 ## 지리 특성
 
@@ -74,6 +79,6 @@ IP 주소가 완전히 난독화된 경우 지리 특성 및 지역 타기팅을
 
 ## 기능 사용 데이터 수집
 
-[!DNL Target] 기능이 의도한 대로 작동하는지 확인하거나 활용도가 낮은 기능을 식별하기 위해 개별 기능 사용 데이터를 내부 Adobe 용도로 수집합니다. 성능 관련 문제를 해결하기 위해 다양한 지연 시간 측정값이 수집됩니다. 개인 데이터는 수집되지 않습니다.
+[!DNL Target] 기능이 의도한 대로 작동되는지 확인하거나 활용도가 낮은 기능을 식별하기 위해 개별 기능 사용 데이터가 내부 Adobe 용도로 수집됩니다. 성능 관련 문제를 해결하기 위해 다양한 지연 시간 측정값이 수집됩니다. 개인 데이터는 수집되지 않습니다.
 
 클라이언트 초기화 옵션에서 `telemetryEnabled`를 false로 설정하여 SDK의 사용 데이터를 보고하지 않도록 선택할 수 있습니다. 자세한 내용은 [telemetryEnabled in targetGlobalSettings](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#telemetryenabled)를 참조하십시오.

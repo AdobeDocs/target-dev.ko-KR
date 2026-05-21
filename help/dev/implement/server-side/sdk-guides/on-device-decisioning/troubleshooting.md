@@ -3,9 +3,14 @@ title: 온디바이스 의사 결정 문제 해결
 description: '[!UICONTROL on-device decisioning] 문제 해결 방법 알아보기'
 exl-id: e76f95ce-afae-48e0-9dbb-2097133574dc
 feature: APIs/SDKs
-source-git-commit: 1d892d4d4d6f370f7772d0308ee0dd0d5c12e700
+TQID: https://experienceleague.adobe.com/Fp25tLDtuk-CqqcbofshX2-0MzQzayE2xN8OvNT3zVo
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: 1158
 ht-degree: 0%
 
 ---
@@ -20,15 +25,15 @@ ht-degree: 0%
 1. [!DNL Target] 추적이 활성화되었는지 확인
 1. 정의된 폴링 간격에 따라 [!UICONTROL on-device decisioning] *규칙 아티팩트*&#x200B;가 검색되고 캐시되었는지 확인하십시오.
 1. 양식 기반 경험 작성기를 통해 테스트 [!UICONTROL on-device decisioning] 활동을 만들어 캐시된 규칙 아티팩트를 통해 콘텐츠 전달의 유효성을 검사합니다.
-1. Inspect 알림 전송 오류
+1. 전송 알림 오류 검사
 
-## 1. 로거가 구성되어 있는지 확인합니다
+## &#x200B;1. 로거가 구성되었는지 확인
 
-SDK를 초기화할 때 로깅을 활성화했는지 확인하십시오.
+SDK을 초기화할 때 로깅을 활성화했는지 확인하십시오.
 
 **Node.js**
 
-Node.js SDK의 경우 `logger` 개체를 제공해야 합니다.
+Node.js SDK의 경우 `logger` 개체가 제공되어야 합니다.
 
 ```js {line-numbers="true"}
 const CONFIG = {
@@ -40,7 +45,7 @@ const CONFIG = {
 
 **Java SDK**
 
-`ClientConfig`에서 Java SDK `logRequests`을(를) 사용하도록 설정해야 합니다.
+Java SDK의 경우 `ClientConfig`에서 `logRequests`을(를) 활성화해야 합니다.
 
 ```js {line-numbers="true"}
 ClientConfig config = ClientConfig.builder()
@@ -56,7 +61,7 @@ ClientConfig config = ClientConfig.builder()
 java -Dorg.slf4j.simpleLogger.defaultLogLevel=DEBUG ...
 ```
 
-## 2.[!DNL Target]추적이 활성화되었는지 확인
+## &#x200B;2. [!DNL Target]추적이 활성화되었는지 확인
 
 추적을 사용하도록 설정하면 [!DNL Adobe Target]에서 규칙 아티팩트와 관련된 추가 정보를 출력합니다.
 
@@ -113,9 +118,9 @@ java -Dorg.slf4j.simpleLogger.defaultLogLevel=DEBUG ...
      AT: LD.ArtifactProvider artifact received - status=200
    ```
 
-## 3. 정의된 폴링 간격에 따라 [!UICONTROL on-device decisioning] *규칙 아티팩트*&#x200B;가 검색 및 캐시되었는지 확인합니다.
+## &#x200B;3. 정의된 폴링 간격에 따라 [!UICONTROL on-device decisioning] *규칙 아티팩트*&#x200B;가 검색되고 캐시되었는지 확인하십시오.
 
-1. 폴링 간격(기본값: 20분) 기간을 기다린 후 SDK에서 아티팩트를 가져오는지 확인하십시오. 동일한 터미널 로그가 출력됩니다.
+1. 폴링 간격(기본값: 20분) 기간을 대기하고 SDK에서 아티팩트를 가져오는지 확인합니다. 동일한 터미널 로그가 출력됩니다.
 
    또한 [!DNL Target]Trace의 정보를 규칙 아티팩트에 대한 세부 정보와 함께 터미널에 출력해야 합니다.
 
@@ -135,7 +140,7 @@ java -Dorg.slf4j.simpleLogger.defaultLogLevel=DEBUG ...
      },
    ```
 
-## 4. 양식 기반 경험 작성기를 통해 테스트 [!UICONTROL on-device decisioning] 활동을 만들어 캐시된 규칙 아티팩트를 통해 콘텐츠 배달을 확인합니다
+## &#x200B;4. 양식 기반 경험 작성기를 통해 테스트 [!UICONTROL on-device decisioning] 활동을 만들어 캐시된 규칙 아티팩트를 통해 콘텐츠 전달의 유효성을 검사합니다.
 
 1. Experience Cloud의 [!DNL Target]UI로 이동
 
@@ -201,9 +206,9 @@ java -Dorg.slf4j.simpleLogger.defaultLogLevel=DEBUG ...
    Response:  <div>test</div>
    ```
 
-## Inspect 알림 전송 오류
+## 전송 알림 오류 검사
 
-온디바이스 의사 결정을 사용할 때 getOffers 실행 요청에 대해 알림이 자동으로 전송됩니다. 이러한 요청은 백그라운드에서 자동으로 전송됩니다. `sendNotificationError` 이벤트를 구독하면 모든 오류를 검사할 수 있습니다. 다음은 Node.js SDK를 사용하여 알림 오류에 가입하는 방법을 보여 주는 코드 샘플입니다.
+온디바이스 의사 결정을 사용할 때 getOffers 실행 요청에 대해 알림이 자동으로 전송됩니다. 이러한 요청은 백그라운드에서 자동으로 전송됩니다. `sendNotificationError` 이벤트를 구독하면 모든 오류를 검사할 수 있습니다. 다음은 Node.js SDK을 사용하여 알림 오류에 가입하는 방법을 보여 주는 코드 샘플입니다.
 
 ```js {line-numbers="true"}
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -490,4 +495,4 @@ TargetDeliveryResponse response = targetClient.getOffers(request);
 
 * &quot;온디바이스 의사 결정 적격&quot; 활동에 사용된 mbox가 &quot;온디바이스 의사 결정 적격&quot;이 아닌 다른 활동에도 사용되면 mbox는 `rules.json` 아티팩트의 `remoteMboxes` 섹션 아래에 나열됩니다. mbox가 `remoteMboxes` 아래에 나열되면 해당 mbox에 대한 `getOffer(s)` 호출로 인해 서버가 호출됩니다.
 
-* 작업 영역/속성에서 활동을 설정하고 SDK를 구성할 때 이를 포함하지 않으면 기본 작업 영역의 `rules.josn`이(가) 다운로드될 수 있으며 `remoteMboxes` 섹션 아래에서 mbox를 사용할 수 있습니다.
+* 작업 영역/속성에서 활동을 설정하고 SDK을 구성할 때 이를 포함하지 않으면 기본 작업 영역의 `rules.josn`이(가) 다운로드될 수 있으며 이는 `remoteMboxes` 섹션 아래의 mbox를 사용할 수 있습니다.

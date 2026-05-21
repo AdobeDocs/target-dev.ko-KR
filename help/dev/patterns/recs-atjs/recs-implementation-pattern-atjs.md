@@ -5,16 +5,22 @@ feature: APIs/SDKs
 level: Experienced
 role: Developer
 exl-id: d568cd1d-acc3-42e0-ae2c-5787e6f361f8
-source-git-commit: 3b0bc0b67800ed4b1da6ba2bfa05c677147a78ba
+TQID: https://experienceleague.adobe.com/uYNa5mL-8ffPS-ddjnQzILnPFMbjNJqKZDmQT8qFeGA
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: 152
 ht-degree: 0%
 
 ---
 
 # at.js 개요를 사용하는 [!DNL Recommendations] 구현 패턴
 
-이 구현 패턴은 [!DNL Adobe Target Recommendations]at.js JavaScript 라이브러리[를 사용할 때 &#x200B;](/help/dev/implement/client-side/atjs/how-atjs-works/how-atjs-works.md) 구현을 이해하고 만드는 데 도움이 됩니다.
+이 구현 패턴은 [at.js JavaScript 라이브러리](/help/dev/implement/client-side/atjs/how-atjs-works/how-atjs-works.md)를 사용할 때 [!DNL Adobe Target Recommendations] 구현을 이해하고 만드는 데 도움이 됩니다.
 
 이미지를 클릭하여 전체 화면으로 확장합니다.
 

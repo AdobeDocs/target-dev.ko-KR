@@ -3,10 +3,15 @@ title: Target SDK 시작하기
 description: Adobe Target SDK를 사용하려면 어떻게 합니까?
 feature: APIs/SDKs
 exl-id: a5ae9826-7bb5-41de-8796-76edc4f5b281
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/oW9op2s6buvt5Jp18DYzrwh7aBXSNEPAikq9EPISaWQ
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 0%
+source-wordcount: 622
+ht-degree: 1%
 
 ---
 
@@ -29,7 +34,7 @@ ht-degree: 0%
 1. 애플리케이션의 이벤트에 대한 추적 구현
 1. [!UICONTROL A/B Test] 활동 활성화
 
-## 1. 조직에 대해 온디바이스 의사 결정 사용
+## &#x200B;1. 조직에 대해 온디바이스 의사 결정 활성화
 
 디바이스에서 의사 결정을 사용하면 [!UICONTROL A/B Test] 활동이 거의 0에 가까운 대기 시간에 실행됩니다. 이 기능을 사용하려면 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]**(으)로 이동하여 **[!UICONTROL On-Device Decisioning]** 토글을 활성화하십시오.
 
@@ -37,11 +42,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**[!UICONTROL On-Device Decisioning]** 전환을 활성화하거나 비활성화하려면 **[!UICONTROL Admin]** 또는 **[!UICONTROL Approver]** [사용자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=ko)이(가) 있어야 합니다.
+>**[!UICONTROL On-Device Decisioning]** 전환을 활성화하거나 비활성화하려면 **[!UICONTROL Admin]** 또는 **[!UICONTROL Approver]** [사용자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html)이(가) 있어야 합니다.
 
 **[!UICONTROL On-Device Decisioning]** 전환을 활성화한 후 [!DNL Adobe Target]에서 클라이언트에 대한 [규칙 아티팩트](../on-device-decisioning/rule-artifact-overview.md)를 생성하기 시작합니다.
 
-## 2. SDK 설치
+## &#x200B;2. SDK 설치
 
 Node.js, Java 및 Python의 경우 터미널의 프로젝트 디렉터리에서 다음 명령을 실행합니다. .NET의 경우 [NuGet에서 설치](https://www.nuget.org/packages/Adobe.Target.Client)하여 종속성으로 추가하십시오.
 
@@ -77,7 +82,7 @@ pip install target-python-sdk
 
 >[!ENDTABS]
 
-## 3. SDK 초기화
+## &#x200B;3. SDK 초기화
 
 규칙 아티팩트는 SDK 초기화 단계 중에 다운로드됩니다. 초기화 단계를 사용자 정의하여 아티팩트가 다운로드되고 사용되는 방법을 결정할 수 있습니다.
 
@@ -146,7 +151,7 @@ target_client = TargetClient.create(CONFIG)
 
 >[!ENDTABS]
 
-## 4. [!DNL Adobe Target] [!UICONTROL A/B Test] 활동에서 기능 플래그를 설정합니다
+## &#x200B;4. [!DNL Adobe Target] [!UICONTROL A/B Test] 활동에서 기능 플래그 설정
 
 1. [!DNL Target]에서 **[!UICONTROL Activities]** 페이지로 이동한 다음 **[!UICONTROL Create Activity]** > **[!UICONTROL A/B test]**&#x200B;을(를) 선택합니다.
 
@@ -196,7 +201,7 @@ target_client = TargetClient.create(CONFIG)
 
    ![대체 이미지](assets/asset-next_2_t.png)
 
-1. 아래 표시된 **[!UICONTROL Targeting]** 단계 예제에서 대상 타깃팅(2)은 단순성을 위해 모든 방문자의 기본 세트에 남아 있습니다. 즉, 활동이 타깃팅되지 않습니다. 그러나 참고 Adobe은 항상 프로덕션 활동의 대상을 타기팅하는 것을 권장합니다. **[!UICONTROL Next]**(3)을(를) 클릭하여 **[!UICONTROL Goals & Settings]** 활동 만들기 단계로 진행합니다.
+1. 아래 표시된 **[!UICONTROL Targeting]** 단계 예제에서 대상 타깃팅(2)은 단순성을 위해 모든 방문자의 기본 세트에 남아 있습니다. 즉, 활동이 타깃팅되지 않습니다. 단, Adobe에서는 항상 프로덕션 활동의 대상을 타기팅하는 것을 권장합니다. **[!UICONTROL Next]**(3)을(를) 클릭하여 **[!UICONTROL Goals & Settings]** 활동 만들기 단계로 진행합니다.
 
    ![대체 이미지](assets/asset-next_2_g.png)
 
@@ -204,7 +209,7 @@ target_client = TargetClient.create(CONFIG)
 
    ![대체 이미지](assets/asset-conv.png)
 
-## 5. 응용 프로그램에서 기능 구현 및 렌더링
+## &#x200B;5. 응용 프로그램에서 기능 구현 및 렌더링
 
 [!DNL Target]에서 기능 플래그 변수를 설정한 후 해당 변수를 사용하도록 응용 프로그램 코드를 수정하십시오. 예를 들어 애플리케이션에서 기능 플래그를 가져온 후 이를 사용하여 기능을 활성화하고 방문자가 자격을 부여받은 경험을 렌더링할 수 있습니다.
 
@@ -272,7 +277,7 @@ def target_client_ready():
 
 >[!ENDTABS]
 
-## 6. 애플리케이션의 이벤트에 대한 추가 추적 구현
+## &#x200B;6. 애플리케이션의 이벤트에 대한 추가 추적 구현
 
 선택적으로 sendNotification() 함수를 사용하여 전환 추적을 위한 추가 이벤트를 보낼 수 있습니다.
 
@@ -382,12 +387,12 @@ target_client.send_notifications({
 
 >[!ENDTABS]
 
-## 7. [!UICONTROL A/B Test] 활동 활성화
+## &#x200B;7. [!UICONTROL A/B Test] 활동 활성화
 
 1. **[!UICONTROL Activate]**(1)을(를) 클릭하여 [!UICONTROL A/B Test] 활동을 활성화합니다.
 
    >[!NOTE]
    >
-   >이 단계를 수행하려면 **[!UICONTROL Approver]** 또는 **[!UICONTROL Publisher]** [사용자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=ko)이 있어야 합니다.
+   >이 단계를 수행하려면 **[!UICONTROL Approver]** 또는 **[!UICONTROL Publisher]** [사용자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html)이 있어야 합니다.
 
    ![대체 이미지](assets/asset-activate.png)

@@ -1,13 +1,19 @@
 ---
-keywords: at.js, at.js 디버그, adobe Experience Cloud 디버거, experience cloud debugger, mbox 추적, mbox 강조 표시, 디버그, 디버깅, $9
+keywords: at.js, at.js 디버그, adobe Experience Cloud debugger, experience cloud debugger, mbox 추적, mbox 강조 표시, 디버그, 디버깅, $9
 description: '[!UICONTROL Adobe Experience Cloud Debugger]을(를) 사용하여 라이브러리 구성을 보고, 요청을 검사하고, 콘솔 로깅을 켜고,  [!DNL Target] 호출 요청을 비활성화하는 등의 작업을 수행할 수 있습니다.'
-title: '[!UICONTROL Adobe Experience Cloud Debugger]을(를) 사용하여 at.Js를 디버깅하려면 어떻게 합니까?'
+title: 에서 디버깅하는 방법[!UICONTROL Adobe Experience Cloud Debugger]이(가) 있는 Js?
 feature: at.js
 exl-id: ac215560-3f6f-4269-947c-961e7a43c9e1
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/pZtiohItxWcjKFJTCXX8JtvOpEjFMsG1SJdp9ANalOE
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 7%
+source-wordcount: 162
+ht-degree: 6%
 
 ---
 
@@ -17,7 +23,7 @@ ht-degree: 7%
 
 라이브러리 구성을 빠르게 보고, 사용자 지정 매개 변수가 올바르게 전달되었는지 확인하기 위한 요청을 검사하고, 콘솔 로깅을 켜고, 모든 [!DNL Target] 요청을 비활성화할 수 있습니다. [!DNL Experience Cloud]을(를) 인증하면 강력한 Mbox 추적 도구를 사용하여 활동 및 대상 자격과 방문자 프로필을 검사할 수 있습니다.
 
-[Adobe Experience Cloud Debugger 개요](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=ko){target=_blank}를 검토합니다.
+[Adobe Experience Cloud Debugger 개요](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html){target=_blank}를 검토하십시오.
 
 ## 교육 비디오
 
@@ -25,12 +31,12 @@ ht-degree: 7%
 
 ### Adobe Experience Cloud Debugger 확장 프로그램 ![개요 배지](../../assets/overview.png) 추가
 
->[!VIDEO](https://video.tv.adobe.com/v/33241/?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/23114/?quality=12)
 
 ### Adobe Experience Cloud Debugger를 사용한 기본 Adobe Target 디버깅 ![개요 배지](../../assets/overview.png)
 
->[!VIDEO](https://video.tv.adobe.com/v/33299/?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/23115/?quality=12)
 
 ### Mbox 추적 ![개요 배지](../../assets/overview.png)
 
->[!VIDEO](https://video.tv.adobe.com/v/33304/?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/23113/?quality=12)

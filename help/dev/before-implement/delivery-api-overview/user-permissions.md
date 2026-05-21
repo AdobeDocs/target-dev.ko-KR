@@ -1,20 +1,23 @@
 ---
 title: Adobe Target Delivery API 사용자 권한
 description: Adobe Target Delivery API 사용자 권한
-badgePremium: label="Premium" type="Positive" url="https://experienceleague.adobe.com/docs/target/using/introduction/intro.html?lang=ko#premium newtab=true" tooltip="Target Premium에 포함된 내용을 확인합니다."
+badgePremium: label="Premium" type="Positive" url="https://experienceleague.adobe.com/docs/target/using/introduction/intro.html?lang=en#premium newtab=true" tooltip="Target Premium에 포함된 내용을 확인합니다."
 keywords: 배달 api
 exl-id: 332f90bd-4079-4653-aa38-b35837631c94
 feature: APIs/SDKs
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/V7F8WjDNUMJJySyep0nVCg0wMK05ZfdV4XPtMjXOBvM
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: 180
 ht-degree: 0%
 
 ---
 
 # 사용자 권한(Premium)
 
-[!DNL Adobe]을(를) 사용하면 고객이 Adobe Target을 사용할 때 사용자에 대한 권한을 관리할 수 있습니다. [!UICONTROL Adobe Target Delivery API]을(를) 성공적으로 호출하려면 올바른 권한이 있는 토큰을 API 호출 내에 전달해야 합니다. 사용자 권한 부여 및 토큰을 검색하는 방법에 대해 자세히 알아보려면 [이 설명서](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=ko)를 참조하세요.
+[!DNL Adobe]을(를) 사용하면 고객이 Adobe Target을 사용할 때 사용자에 대한 권한을 관리할 수 있습니다. [!UICONTROL Adobe Target Delivery API]을(를) 성공적으로 호출하려면 올바른 권한이 있는 토큰을 API 호출 내에 전달해야 합니다. 사용자 권한 부여 및 토큰을 검색하는 방법에 대해 자세히 알아보려면 [이 설명서](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html)를 참조하세요.
 
 ```
 curl -X POST \

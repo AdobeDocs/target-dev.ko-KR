@@ -1,11 +1,14 @@
 ---
-title: 요청을 기록하려면  [!DNL Adobe Target] Node.js SDK를 초기화하십시오.
+title: 요청을 기록하려면  [!DNL Adobe Target] Node.js SDK을 초기화하십시오
 description: ' [!DNL Adobe Target] Node.js SDK에서 요청을 기록하는 방법에 대해 알아봅니다.'
 feature: APIs/SDKs
 exl-id: 5db3e301-47b3-4330-b185-c0c03f72e790
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/tC6xT-eAHOO17h1BK-PwWTBmwg3Dy0Wj8KYrV3W-VR4
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: 83
 ht-degree: 2%
 
 ---
@@ -14,7 +17,7 @@ ht-degree: 2%
 
 ## 설명
 
-[SDK를 초기화](initialize-sdk.md)할 때 `options.logger` 개체는 선택적 개체입니다. 그러나 문제가 발생할 때 효과적으로 디버깅하려면 SDK를 초기화할 때 `logger` 개체를 제공해야 합니다.
+[SDK을 초기화](initialize-sdk.md)할 때 `options.logger` 개체는 선택 개체입니다. 그러나 문제가 발생할 때 효과적으로 디버깅하려면 SDK을 초기화할 때 `logger` 개체를 제공해야 합니다.
 
 `logger` 개체에는 `debug()` 및 `error()` 메서드가 있어야 합니다. `console`과(와) 같은 적절한 로거가 제공되면 [!DNL Target]개의 요청 및 응답이 기록됩니다.
 

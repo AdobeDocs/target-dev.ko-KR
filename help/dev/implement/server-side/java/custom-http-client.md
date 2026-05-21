@@ -3,20 +3,23 @@ title: 사용자 지정 HTTP 클라이언트를 구성하는 방법 알아보기
 description: ClientConfig.builder().httpClient()를 사용하여 TargetClient를 구성하는 방법을 알아봅니다.
 feature: APIs/SDKs
 exl-id: 7615029c-b62d-4ed1-aadb-32e364c4c654
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/SwijRIrhqSG4Mlij4sBH9Kx8tRB-6Bo7eyMoUZREOW8
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: 108
 ht-degree: 0%
 
 ---
 
 # 사용자 지정 HTTP 클라이언트 구성(Java)
 
-SDK를 실행하는 응용 프로그램에 사용자 지정 HTTP 클라이언트가 필요한 경우 SSL 구성 또는 요청에 기본 헤더 추가와 같은 기능을 활성화하려면 `ClientConfig.builder().httpClient()`을(를) 사용하여 `TargetClient`을(를) 구성해야 합니다.
+SDK을 실행하는 응용 프로그램에 사용자 지정 HTTP 클라이언트가 필요한 경우 SSL 구성 또는 요청에 기본 헤더 추가와 같은 기능을 활성화하려면 `ClientConfig.builder().httpClient()`을(를) 사용하여 `TargetClient`을(를) 구성해야 합니다.
 
 ## 기본 사용자 지정 HTTP 클라이언트 구성
 
-현재 SDK는 `org.apache.http.client.HttpClient` 인터페이스를 구현하는 HTTP 클라이언트를 지원합니다.
+SDK은 현재 `org.apache.http.client.HttpClient` 인터페이스를 구현하는 HTTP 클라이언트를 지원합니다.
 
 ### 기본 구현
 

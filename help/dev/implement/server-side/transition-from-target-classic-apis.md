@@ -4,10 +4,15 @@ description: ' [!DNL Adobe Developer Console]의  [!DNL Adobe Target Classic] AP
 title: ' [!DNL Adobe Developer Console]에서  [!DNL Target Classic] API에서  [!DNL Target] API로 전환하는 방법은 무엇입니까?'
 feature: APIs/SDKs
 exl-id: b84e3767-89ad-4e2d-9bb4-7e31bffbc285
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/cIWcraU0O9Ut1VBbD5ScKOyBrXniyIEM5XEVZMJvffk
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ceid: f7c7de77-382f-4f48-8b36-61a170f06d3d
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 38%
+source-wordcount: 595
+ht-degree: 32%
 
 ---
 
@@ -67,4 +72,4 @@ ht-degree: 38%
 
 ## 도움말
 
-질문이 있거나 Classic API에서 [!DNL Adobe Developer Console]의 [!DNL Target] API로 전환하는 데 도움이 필요한 경우 [!DNL Adobe Target Client Care] (tt-support@adobe.com)에 문의하십시오.
+질문이 있거나 Classic API에서 [!DNL Adobe Developer Console]의 [!DNL Target] API로 전환하는 데 도움이 필요한 경우 [!DNL Adobe Target Client Care]&#x200B;(tt-support@adobe.com)에 문의하십시오.

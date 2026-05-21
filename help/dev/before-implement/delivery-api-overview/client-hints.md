@@ -3,16 +3,21 @@ title: Adobe Target 배달 API 클라이언트 힌트
 description: ' [!DNL Adobe Target] 배달 API에서 클라이언트 힌트를 사용하는 방법은 무엇입니까?'
 exl-id: 317b9d7d-5b98-464e-9113-08b899ee1455
 feature: APIs/SDKs
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/ijbOsWitZdNHpjNduh8xtPyEYdw2tsWz2rB6jZ5JbQA
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e0eb8757-182f-49f3-94a4-1587d16f5094id: ff2b9b37-92e0-45fc-b853-379d44c08c89
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: 278
 ht-degree: 0%
 
 ---
 
 # 클라이언트 힌트 및 [!UICONTROL Adobe Target Delivery API]
 
-오퍼 요청 시 클라이언트 힌트를 [!DNL Adobe Target] (으)로 보내야 합니다.
+오퍼 요청 시 클라이언트 힌트를 [!DNL Adobe Target]&#x200B;(으)로 보내야 합니다.
 
 일반적으로 사용 가능한 모든 클라이언트 힌트를 [!DNL Target]에 보내는 것이 좋습니다. 자세한 내용은 [클라이언트측 구현](../../implement/client-side/overview.md) 섹션에서 [사용자 에이전트 및 클라이언트 힌트](/help/dev/implement/client-side/atjs/user-agent-and-client-hints.md)를 참조하십시오.
 
@@ -24,7 +29,7 @@ ht-degree: 0%
 
 ### 서버에서
 
-이 경우 배달 API 요청 시 브라우저에서 [!DNL Target] (으)로 클라이언트 힌트를 수동으로 전달해야 합니다.
+이 경우 배달 API 요청 시 브라우저에서 [!DNL Target]&#x200B;(으)로 클라이언트 힌트를 수동으로 전달해야 합니다.
 
 ```
 curl -X POST 'http://mboxedge28.tt.omtrdc.net/rest/v1/delivery?client=myClientCode&sessionId=abcdefghijkl00014' -d '{

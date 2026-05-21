@@ -4,9 +4,15 @@ description: 페이지 또는 앱을 로드하는 동안 at.js 및 [!DNL Target]
 title: at.js는 플리커를 어떻게 관리합니까?
 feature: at.js
 exl-id: 8aacf254-ec3d-4831-89bb-db7f163b3869
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/r8uyzkf1gSHmppyDHPOcn5jrH86Hedb4ArMmtigq93w
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ceid: f7c7de77-382f-4f48-8b36-61a170f06d3d
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: 717
 ht-degree: 57%
 
 ---
@@ -27,7 +33,7 @@ at.js 구성 시 이 설정을 활성화할 경우 at.js가 HTML BODY 스타일 
 
 구현에서 `opacity: 0`이(가) 작동하지 않는 경우 `bodyHiddenStyle`을(를) 사용자 지정하여 깜박임을 관리하고 `body {visibility:hidden !important}`(으)로 설정할 수도 있습니다. `body {opacity:0 !important}` 또는 `body {visibility:hidden !important}` 중 특정 환경에 가장 적합한 것을 사용할 수 있습니다.
 
-다음 그림에서는 at.js 1.*x*&#x200B;와 at.js 2.x의 본문 숨기기와 본문 표시 호출을 보여줍니다.
+다음 그림은 at.js 1.*x*&#x200B;와 at.js 2.x 모두에서 본문 숨기기 및 본문 표시 호출을 보여줍니다.
 
 **at.js 2.x**
 
@@ -47,7 +53,7 @@ at.js 구성 시 이 설정을 활성화할 경우 at.js가 HTML BODY 스타일 
 
 at.js를 비동기식으로 로드하는 것은 브라우저 렌더링이 차단되지 않도록 하는 좋은 방법입니다. 그러나 이 기법은 웹 페이지에서 플리커를 유발할 수 있습니다.
 
-관련 HTML 요소가 Target에 의해 개인화된 후 표시되는 사전에 숨기는 코드 조각을 사용하여 플리커를 방지할 수 있습니다.
+관련 HTML 요소가 Target에 의해 개인화된 후 표시되는 사전에 숨기는(pre-hiding) 코드 조각을 사용하여 플리커를 방지할 수 있습니다.
 
 at.js는 페이지에 직접 포함되거나 태그 관리자(예: Adobe Experience Platform Launch)를 통해 비동기식으로 로드할 수 있습니다.
 

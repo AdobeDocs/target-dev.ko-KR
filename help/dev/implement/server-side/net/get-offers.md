@@ -1,11 +1,16 @@
 ---
-title: .NET SDK를 사용할 때  [!DNL Adobe Target] 에서 getOffers()를 사용합니다.
+title: .NET SDK을 사용할 때  [!DNL Adobe Target] 에서 getOffers()를 사용합니다.
 description: getOffers()를 사용하여 결정을 실행하고  [!DNL Adobe Target]에서 경험을 검색하는 방법을 알아봅니다.
 feature: APIs/SDKs
 exl-id: 4d1d1cbd-c7e5-4146-9fea-08e01923874d
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/T-oUyDgCJZ8hqQZgCb3-Z-d9WeMaffwq8krMHhGvYlI
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: 572
 ht-degree: 13%
 
 ---
@@ -34,7 +39,7 @@ TargetDeliveryResponse TargetClient.GetOffers(TargetDeliveryRequest request)
 TargetDeliveryRequest.Builder TargetDeliveryRequest.Builder()
 ```
 
-## 매개 변수
+## 매개변수
 
 `TargetDeliveryRequest.Builder` 개체의 구조는 다음과 같습니다.
 
@@ -88,7 +93,7 @@ TargetDeliveryRequest.Builder TargetDeliveryRequest.Builder()
 | 값 | string | 쿠키 값 |
 | MaxAge | int | `MaxAge` 옵션은 현재 시간(초)을 기준으로 하여 Expires를 편리하게 설정할 수 있습니다 |
 
-쿠키가 만료되는 것에 대해 걱정할 필요는 없습니다. [!DNL Target]이(가) SDK 내에서 `MaxAge`을(를) 처리합니다.
+쿠키가 만료되는 것에 대해 걱정할 필요는 없습니다. [!DNL Target]에서 SDK 내의 `MaxAge`을(를) 처리합니다.
 
 ## 예
 

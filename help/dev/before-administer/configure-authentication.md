@@ -3,10 +3,15 @@ title: ' [!DNL Adobe Target] API에 대한 인증을 구성하는 방법'
 description: ' [!DNL Adobe Target] API와 성공적으로 상호 작용하는 데 필요한 인증 토큰을 생성하는 방법'
 feature: APIs/SDKs, Administration & Configuration
 exl-id: fc67363c-6527-40aa-aff1-350b5af884ab
-source-git-commit: 2fba03b3882fd23a16342eaab9406ae4491c9044
+TQID: https://experienceleague.adobe.com/sgdBKse1b-0kPKjzDx4fDoFsNpnIzXAT8TpDUkQ7fGw
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '1785'
-ht-degree: 0%
+source-wordcount: 1937
+ht-degree: 1%
 
 ---
 
@@ -22,7 +27,7 @@ ht-degree: 0%
 >
 >통합을 마이그레이션하는 방법에 대한 자세한 내용과 단계별 지침은 *Developer Console* 설명서의 [서비스 계정(JWT) 자격 증명에서 OAuth 서버 간 자격 증명으로 마이그레이션](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target=_blank}을 참조하십시오.
 >
->새 OAuth 자격 증명을 설정하는 방법에 대한 자세한 내용은 *Developer Console* 설명서의 [OAuth 서버 간 자격 증명 구현](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target=_blank}을 참조하십시오.
+>새 OAuth 자격 증명을 설정하는 방법에 대한 자세한 내용은 *Developer Console* 설명서에서 [OAuth 서버 간 자격 증명 구현](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target=_blank}을 참조하십시오.
 
 [!DNL Adobe Target] API와 성공적으로 상호 작용하는 데 필요한 레거시 JWT 인증 토큰을 생성하는 데 필요한 사전 단계는 다음과 같습니다.
 
@@ -36,15 +41,15 @@ ht-degree: 0%
 | 리소스 | 세부 사항 |
 | --- | --- |
 | Postman | 이러한 단계를 성공적으로 완료하려면 운영 체제용 [Postman 앱](https://www.postman.com/downloads/)을(를) 가져오십시오. Postman basic은 계정 생성이 무료입니다. 일반적으로 [!DNL Adobe Target]개의 API를 사용하는 데는 필요하지 않지만 Postman을 사용하면 API 워크플로가 더 쉬워지며, [!DNL Adobe Target]에서는 API를 실행하고 작동 방법을 배울 수 있도록 여러 Postman 컬렉션을 제공합니다. 이 안내서의 나머지 부분에서는 Postman에 대한 작업 지식을 전제로 합니다. 도움이 필요하면 [Postman 설명서](https://learning.getpostman.com/)를 참조하세요. |
-| 참조 | 이 안내서의 나머지 부분에서 다음 리소스에 익숙하다고 가정합니다.<ul><li>[Github Adobe I/O](https://github.com/adobeio)</li><li>[Target 관리자 및 프로필 API 설명서](../administer/admin-api/admin-api-overview-new.md)</li><li>[Recommendations API 설명서](https://developer.adobe.com/target/administer/recommendations-api/)</li></ul> |
+| 참조 | 이 안내서의 나머지 부분에서 다음 리소스에 익숙하다고 가정합니다.<ul><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[Target 관리자 및 프로필 API 설명서](../administer/admin-api/admin-api-overview-new.md)</li><li>[권장 사항 API 설명서](https://developer.adobe.com/target/administer/recommendations-api/)</li></ul> |
 
 ## Adobe I/O 프로젝트 만들기
 
 이 섹션에서는 [!DNL Adobe Developer Console]에 액세스하고 [!DNL Adobe Target]에 대한 프로젝트를 만듭니다. 자세한 내용은 프로젝트에 대한 [설명서](https://developer.adobe.com/developer-console/docs/guides/projects/)를 참조하세요.
 
-&lt;!—(1. [인증에 대한 설명서](https://developer.adobe.com/developer-console/docs/guides/authentication/)에 따라 개인 키 및 공개 인증서를 생성합니다. // [//]: #([Adobe IO 설정 방법: 인증 - 단계별](https://helpx.adobe.com/marketing-cloud-core/kb/adobe-io-authentication-step-by-step.html)의 **단계 1**&#x200B;에 설명됨). 1단계를 완료한 후 이 안내서로 돌아가서 아래의 2단계로 다시 시작하십시오. // 이 단계의 결과는 `private.key` 파일 및 `certificate_pub.crt` 파일을 만든 것입니다. 이 두 파일을 생성했으면 이 안내서로 돌아갑니다.)—>
+&lt;!---(1. 인증에 대한 [설명서](https://developer.adobe.com/developer-console/docs/guides/authentication/)에 따라 개인 키 및 공개 인증서를 생성합니다. // [//]: # ([Adobe IO 설정 방법: 인증 - 단계별](https://helpx.adobe.com/marketing-cloud-core/kb/adobe-io-authentication-step-by-step.html)의 **단계 1**&#x200B;에 설명). 1단계를 완료한 후 이 안내서로 돌아가서 아래의 2단계로 다시 시작하십시오. // 이 단계의 결과는 `private.key` 파일 및 `certificate_pub.crt` 파일을 만든 것입니다. 이 두 파일을 생성했으면 이 안내서로 돌아갑니다.)—>
 
-1. [Adobe Admin Console](https://adminconsole.adobe.com/)에서 [!DNL Adobe] 사용자 계정에 [!DNL Target]에 대한 [제품 관리자](https://helpx.adobe.com/kr/enterprise/using/admin-roles.html) 및 [개발자](https://helpx.adobe.com/kr/enterprise/using/manage-developers.html) 수준 액세스 권한이 모두 부여되었는지 확인하십시오.
+1. [Adobe Admin Console](https://adminconsole.adobe.com/)에서 [!DNL Adobe] 사용자 계정에 [!DNL Target]에 대한 [제품 관리자](https://helpx.adobe.com/enterprise/using/admin-roles.html) 및 [개발자](https://helpx.adobe.com/enterprise/using/manage-developers.html) 수준 액세스 권한이 모두 부여되었는지 확인하십시오.
 
 1. [Adobe Developer Console](https://developer.adobe.com/console/home)에서 이 통합을 만들 [!UICONTROL Experience Cloud Organization]을(를) 선택합니다. (단일 [!UICONTROL Experience Cloud Organization]에 대한 액세스 권한만 있을 수 있습니다.)
 
@@ -74,11 +79,11 @@ ht-degree: 0%
 
    ![configure-io-target-createproject8](assets/configure-io-target-createproject8.png)
 
-1. Adobe Developer Console으로 돌아가서 Adobe Recommendations을 사용 중인 속성에 해당하는 [제품 프로필](https://helpx.adobe.com/kr/enterprise/using/manage-products-and-profiles.html)을 선택합니다. 속성을 사용하지 않는 경우 기본 Workspace 옵션을 선택합니다. **[!UICONTROL Save configured API]** 아이콘을 클릭합니다.
+1. Adobe Developer Console으로 돌아가서 Adobe Recommendations을 사용 중인 속성에 해당하는 [제품 프로필](https://helpx.adobe.com/enterprise/using/manage-products-and-profiles.html)을 선택합니다. 속성을 사용하지 않는 경우 기본 Workspace 옵션을 선택합니다. **[!UICONTROL Save configured API]** 아이콘을 클릭합니다.
 
    ![configure-io-target-createproject9](assets/configure-io-target-createproject9.png)
 
-1. **[!UICONTROL Create Integration]**&#x200B;을(를) 클릭합니다. API가 성공적으로 구성되었음을 나타내는 임시 메시지를 수신해야 합니다.
+1. **[!UICONTROL Create Integration]** 아이콘을 클릭합니다. API가 성공적으로 구성되었음을 나타내는 임시 메시지를 수신해야 합니다.
 1. 마지막 단계로 프로젝트 이름을 원래 `Project 1`보다 의미 있는 이름으로 바꾸십시오. 이렇게 하려면 탐색 경로를 표시로 사용하여 프로젝트로 이동하고 **[!UICONTROL Edit project]**&#x200B;을(를) 클릭하여 **[!UICONTROL Edit Project]** 모달에 액세스한 다음 프로젝트 이름을 변경합니다.
 
    ![configure-io-target-createproject11](assets/configure-io-target-createproject11.png)
@@ -91,11 +96,11 @@ ht-degree: 0%
 
 [!DNL Target]에 액세스하는 데 사용할 수 있는 Adobe 프로젝트가 있으므로 Adobe API 요청과 함께 해당 프로젝트의 세부 정보를 보내야 합니다. 여러 [!DNL Target] API를 포함하여 여러 Adobe API와 상호 작용하려면 이러한 세부 정보가 필요합니다. 예를 들어 통합 세부 정보에는 [!DNL Target] 관리 API에 필요한 권한 부여 및 인증 정보가 포함됩니다. 따라서 Postman에서 API를 사용하려면 해당 세부 정보를 Postman에 가져와야 합니다.
 
-Postman에서 프로젝트의 세부 정보를 지정하는 방법에는 여러 가지가 있지만 이 섹션에서는 일부 사전 빌드된 기능 및 컬렉션을 활용합니다. 먼저 (이 섹션에서) 통합 세부 사항을 Postman 환경으로 내보냅니다. 다음 섹션에서 필요한 Adobe 리소스에 대한 액세스 권한을 부여하기 위한 전달자 액세스 토큰을 생성합니다.
+Postman에서 프로젝트의 세부 정보를 지정하는 방법에는 여러 가지가 있지만 이 섹션에서는 일부 사전 빌드된 기능 및 컬렉션을 활용합니다. 먼저 (이 섹션에서) 통합 세부 사항을 Postman 환경으로 내보냅니다. 다음(다음 섹션)에서는 필요한 Adobe 리소스에 대한 액세스 권한을 부여하기 위한 전달자 액세스 토큰을 생성합니다.
 
 >[!NOTE]
 >
->[!DNL Target]을(를) 포함하여 모든 Experience Cloud 솔루션에 적용할 수 있는 비디오 지침은 [Experience Platform API와 함께 Postman 사용](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=ko)을 참조하십시오. 다음 섹션은 [!DNL Target] API와 관련이 있습니다. 1. Experience Platform API를 만들고 Postman 2로 내보냅니다. Postman을 사용하여 액세스 토큰을 생성합니다. 이러한 단계는 아래에 나와 있습니다.
+>[!DNL Target]을(를) 포함하여 모든 Experience Cloud 솔루션에 적용할 수 있는 비디오 지침은 [Experience Platform API와 함께 Postman 사용](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html)을 참조하십시오. 다음 섹션은 [!DNL Target] API와 관련이 있습니다. 1. Experience Platform API를 만들고 Postman 2로 내보냅니다. Postman을 사용하여 액세스 토큰을 생성합니다. 이러한 단계는 아래에 나와 있습니다.
 
 1. [Adobe Developer Console](https://developer.adobe.com/console/home)에서 새 프로젝트의 **[!UICONTROL Service Account (JWT)]** 자격 증명을 보려면 이동하십시오. 표시된 대로 왼쪽 탐색 또는 **[!UICONTROL Credentials]** 섹션을 사용합니다.
 
@@ -149,9 +154,9 @@ Postman에서 프로젝트의 세부 정보를 지정하는 방법에는 여러 
 
 ## 전달자 액세스 토큰 생성
 
-이 섹션에서는 [!DNL Adobe Target] API와의 상호 작용을 인증하는 데 필요한 전달자 액세스 토큰을 생성합니다. 전달자 액세스 토큰을 생성하려면 통합 세부 정보(이전 섹션에서 설정됨)를 [IMS(Identity Management 서비스) Adobe](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/AuthenticationGuide.md)로 보내야 합니다. 이 작업을 수행하는 방법에는 몇 가지가 있지만, 이 안내서에서는 프로세스를 직접적이고 쉽게 만드는 사전 설치된 IMS 호출이 포함된 Postman 컬렉션을 사용합니다. 컬렉션을 가져오면 필요할 때마다 다시 사용하여 [!DNL Adobe Target]뿐만 아니라 다른 Adobe API에 대해서도 새 토큰을 생성할 수 있습니다.
+이 섹션에서는 [!DNL Adobe Target] API와의 상호 작용을 인증하는 데 필요한 전달자 액세스 토큰을 생성합니다. 전달자 액세스 토큰을 생성하려면 통합 세부 정보(이전 섹션에서 설정됨)를 [Adobe IMS(Identity Management Service)](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/AuthenticationGuide.md)로 보내야 합니다. 이 작업을 수행하는 방법에는 몇 가지가 있지만, 이 안내서에서는 프로세스를 직접적이고 쉽게 만드는 사전 설치된 IMS 호출이 포함된 Postman 컬렉션을 사용합니다. 컬렉션을 가져오면 필요할 때마다 다시 사용하여 [!DNL Adobe Target]뿐만 아니라 다른 Adobe API에 대해서도 새 토큰을 생성할 수 있습니다.
 
-1. [Adobe Identity Management 서비스 API 샘플 호출](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)(으)로 이동합니다.
+1. [Adobe Identity Management 서비스 API 샘플 호출](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)&#x200B;(으)로 이동합니다.
 
    ![token1](assets/configure-io-target-generatetoken1.png)
 
@@ -183,7 +188,7 @@ Postman에서 프로젝트의 세부 정보를 지정하는 방법에는 여러 
 
    ![token7](assets/configure-io-target-generatetoken7.png)
 
-질문: JSON 웹 토큰(JWT) 및 전달자 액세스 토큰을 생성하기 위해 Adobe I/O 액세스 토큰 생성 Postman 컬렉션을 사용해야 합니까?
+질문: Adobe I/O 액세스 토큰 생성 Postman 컬렉션을 사용하여 JSON 웹 토큰(JWT) 및 전달자 액세스 토큰을 생성해야 합니까?
 
 답변: 아니요. Adobe I/O 액세스 토큰 생성 Postman 컬렉션은 Postman에서 JWT 및 전달자 액세스 토큰을 보다 쉽게 생성할 수 있는 편리성으로 제공됩니다. 또는 Adobe Developer Console 내의 기능을 사용하여 액세스 전달자 토큰을 수동으로 생성할 수 있습니다.
 
@@ -199,7 +204,7 @@ Postman에서 프로젝트의 세부 정보를 지정하는 방법에는 여러 
 
    ![testtoken1](assets/configure-io-target-testtoken1.png)
 
-1. `{{access_token}}`과(와) 같은 변수는 처음에 확인되지 않습니다. 여러 가지 방법으로 해결할 수 있습니다. 예를 들어 `{{access_token}}`이라는 새 컬렉션 변수를 정의할 수 있지만, 이 안내서에서는 이전에 사용 중이던 Postman 환경을 활용하도록 API 요청을 대신 변경합니다. 이렇게 하면 환경이 Adobe API에서 공통되는 모든 변수를 일관되게 단일 통합으로 계속 사용할 수 있습니다.
+1. `{{access_token}}`과(와) 같은 변수는 처음에 확인되지 않습니다. 여러 가지 방법으로 해결할 수 있습니다. 예를 들어 `{{access_token}}`이라는 새 컬렉션 변수를 정의할 수 있지만, 이 안내서에서는 이전에 사용 중이던 Postman 환경을 활용하도록 API 요청을 대신 변경합니다. 이를 통해 환경은 Adobe API에서 공통되는 모든 변수를 일관되게 단일 통합으로 계속 사용할 수 있습니다.
 
    ![testtoken2](assets/configure-io-target-testtoken2.png)
 
@@ -231,4 +236,4 @@ Postman에서 프로젝트의 세부 정보를 지정하는 방법에는 여러 
 
    ![testtoken6](assets/configure-io-target-testtoken6.png)
 
-이제 Adobe 인증을 확인했으므로 이를 사용하여 [!DNL Adobe Target] API(및 다른 Adobe API)와 상호 작용할 수 있습니다. 예를 들어 [Recommendations API를 사용](recs-api/overview.md)하여 권장 사항을 만들거나 관리하거나 [Target 배달 API](/help/dev/implement/delivery-api/overview.md)와 함께 사용할 수 있습니다.
+이제 Adobe 인증을 확인했으므로 이 인증을 사용하여 [!DNL Adobe Target] API(및 다른 Adobe API)와 상호 작용할 수 있습니다. 예를 들어 [권장 사항 API를 사용](recs-api/overview.md)하여 권장 사항을 만들거나 관리하거나 [Target 배달 API](/help/dev/implement/delivery-api/overview.md)와 함께 사용할 수 있습니다.

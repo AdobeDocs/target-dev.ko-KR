@@ -1,18 +1,23 @@
 ---
 title: JSON 페이로드를 통해 온디바이스 의사 결정 규칙 아티팩트 다운로드, 저장 및 업데이트
-description: 이 방법은 애플리케이션이 SDK 메서드를 사용하는 각 파일에서 SDK를 초기화해야 하는 방식으로 구성되어 있는 경우에 가장 적합합니다.
+description: 이 방법은 애플리케이션이 SDK 메서드를 사용하는 각 파일에서 SDK을 초기화해야 하는 방식으로 구성되어 있는 경우에 가장 적합합니다.
 feature: APIs/SDKs
 exl-id: 4ccfb455-f813-4bdb-a9c1-d576a110a9bb
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/knFQFgPKL-DBOtBnWUIz2-7usi35DPtxd-FSINqHHhY
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e7840a7b-a94f-4256-aed0-4e94b08e157bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 0%
+source-wordcount: 298
+ht-degree: 1%
 
 ---
 
 # JSON 페이로드를 통해 규칙 아티팩트 다운로드, 저장 및 업데이트
 
-이 방법은 애플리케이션이 SDK 메서드를 사용하는 각 파일에서 SDK를 초기화해야 하는 방식으로 구성되어 있는 경우에 가장 적합합니다. 웹 애플리케이션이 SDK 초기화 중에 규칙 아티팩트의 JSON 페이로드를 사용하려면 먼저 JSON 페이로드가 다운로드되어 애플리케이션이 사용할 수 있도록 해야 합니다.
+이 방법은 애플리케이션이 SDK 메서드를 사용하는 각 파일에서 SDK을 초기화해야 하는 방식으로 구성되어 있는 경우에 가장 적합합니다. SDK 초기화 중에 웹 애플리케이션에서 규칙 아티팩트의 JSON 페이로드를 사용하려면 먼저 JSON 페이로드가 다운로드되고 애플리케이션에서 사용할 수 있는지 확인해야 합니다.
 
 ## 단계 요약
 
@@ -20,7 +25,7 @@ ht-degree: 0%
 1. SDK 초기화
 1. JSON 페이로드 저장 및 사용
 
-## 1. SDK 설치
+## &#x200B;1. SDK 설치
 
 >[!BEGINTABS]
 
@@ -42,9 +47,9 @@ npm i @adobe/target-nodejs-sdk -P
 
 >[!ENDTABS]
 
-## 2. SDK 초기화
+## &#x200B;2. SDK 초기화
 
-1. 먼저 SDK를 가져옵니다. 서버 시작을 제어할 수 있는 동일한 파일로 가져옵니다.
+1. 먼저 SDK을 가져옵니다. 서버 시작을 제어할 수 있는 동일한 파일로 가져옵니다.
 
    **Node.js**
 
@@ -59,7 +64,7 @@ npm i @adobe/target-nodejs-sdk -P
    import com.adobe.target.edge.client.TargetClient;
    ```
 
-1. SDK를 구성하려면 create 메서드를 사용합니다.
+1. SDK을 구성하려면 create 메서드를 사용합니다.
 
    **Node.js**
 
@@ -118,7 +123,7 @@ npm i @adobe/target-nodejs-sdk -P
    &lt;!— image-client-code.png 삽입 —>
    ![대체 이미지](assets/asset-rule-artifact-3.png)
 
-## 3. JSON 페이로드 저장 및 해제
+## &#x200B;3. JSON 페이로드 저장 및 삭제
 
 JSON 페이로드를 저장하는 데 사용하는 메커니즘은 시스템 아키텍처에 따라 다릅니다. 로컬 파일, 데이터베이스 또는 Memcached와 같은 메모리 객체 캐싱 시스템을 사용할 수 있습니다. 사용하려면 애플리케이션에서 이 JSON을 읽을 수 있어야 합니다. 이 안내서에서는 로컬 파일을 저장소로 사용합니다.
 
@@ -162,7 +167,7 @@ TargetDeliveryResponse response = targetClient.getOffers(request);
 
 >[!NOTE]
 >
->JSON 페이로드를 통해 [!DNL Adobe Target]SDK를 초기화하면 [!DNL Adobe Target]SDK에서 규칙 아티팩트가 다운로드될 때까지 기다릴 필요가 없기 때문에 서버에서 온디바이스 의사 결정 활동을 통해 요청을 즉시 제공할 수 있습니다.
+>JSON 페이로드를 통해 [!DNL Adobe Target]SDK을 초기화하면 [!DNL Adobe Target]SDK이 규칙 아티팩트가 다운로드될 때까지 기다릴 필요가 없기 때문에 서버에서 온디바이스 의사 결정 활동을 통해 요청을 즉시 제공할 수 있습니다.
 
 다음은 JSON 페이로드 초기화 기능을 보여 주는 예입니다.
 

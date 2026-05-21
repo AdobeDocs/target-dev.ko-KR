@@ -1,13 +1,18 @@
 ---
 title: Adobe Target 단일 프로필 업데이트 API
-description: ' [!DNL Adobe Target] [!UICONTROL Single Profile Update API]을(를) 사용하여 단일 방문자의 프로필 데이터를  [!DNL Target] (으)로 보내는 방법을 알아봅니다.'
+description: ' [!DNL Adobe Target] [!UICONTROL Single Profile Update API]을(를) 사용하여 단일 방문자의 프로필 데이터를  [!DNL Target](으)로 보내는 방법을 알아봅니다.'
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 4e022db3-215f-461b-9222-38ce2f2dbc28
-source-git-commit: e2462d12cf58ab5a588c13a96df5e6abafb9d675
+TQID: https://experienceleague.adobe.com/HEjGkrgixufe9wQvaPAljSlZRSaF-idgwKYWs3cuoJ0
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 3%
+source-wordcount: 361
+ht-degree: 4%
 
 ---
 
@@ -37,15 +42,15 @@ ht-degree: 3%
 
 `pcId`에 대한 프로필을 업데이트하려면 다음을 사용합니다.
 
-``` ```
-https://&lt;your-client-code>.tt.omtrdc.net/m2/client/profile/update?mboxPC=1368007744041-575948.01_00&profile.attr=0&profile.attr2=1...
-``` ```
+``````
+https://<your-client-code>.tt.omtrdc.net/m2/client/profile/update?mboxPC=1368007744041-575948.01_00&profile.attr=0&profile.attr2=1...
+``````
 
 `mbox3rdPartyId`에 대한 프로필을 업데이트하려면 다음을 사용합니다.
 
-``` ```
-shell http://&lt;your-client-code>.tt.omtrdc.net/m2/client/profile/update?mbox3rdPartyId=123456&profile.attr=0&profile.attr2=1...
-``` ```
+``````
+shell http://<your-client-code>.tt.omtrdc.net/m2/client/profile/update?mbox3rdPartyId=123456&profile.attr=0&profile.attr2=1...
+``````
 
 [!UICONTROL Single Profile Update API]은(는) 업데이트 전용입니다. 아무 것도 발견되지 않으면 프로필이 만들어지지 않습니다.
 
@@ -54,8 +59,8 @@ shell http://&lt;your-client-code>.tt.omtrdc.net/m2/client/profile/update?mbox3r
 * 매개 변수와 값은 UTF-8을 사용하여 URL로 인코딩되어야 합니다.
 * 매개 변수 형식은 `profile.paramName`입니다.
 * 모든 pcIds 및 mbox3rdPartyIds에 대해 일부 매개 변수 값이 있어야 하는 것은 아닙니다.
-* 매개 변수와 값은 대/소문자를 구분합니다.
-* GET과 POST이 모두 지원됩니다.
+* 매개변수 및 값은 대/소문자를 구분합니다.
+* GET과 POST가 모두 지원됩니다.
 * 제한의 현재 크기 제한은 GET의 경우 8KB, POST의 경우 60KB입니다.
 
 ## 응답

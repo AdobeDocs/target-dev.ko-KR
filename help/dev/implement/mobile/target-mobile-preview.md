@@ -4,10 +4,13 @@ description: 모바일 미리 보기 링크를 사용하여 모바일 앱 활동
 title: ' [!DNL Adobe Target] Mobile에서 모바일 미리 보기 링크를 사용하는 방법은 무엇입니까?'
 feature: Implement Mobile
 exl-id: c0c4237a-de1f-4231-b085-f8f1e96afc13
-source-git-commit: 15e42d0fb049f9243ff5468ff5f22a8e79c55c79
+TQID: https://experienceleague.adobe.com/ISZJ4lc8hhsQc3a-Mwz07US4fuEHobuvzCciFhmxEJk
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 23%
+source-wordcount: 552
+ht-degree: 18%
 
 ---
 
@@ -17,11 +20,11 @@ ht-degree: 23%
 
 모바일 미리 보기 기능을 사용하면 모바일 앱 활동을 라이브로 시작하기 전에 완전히 테스트할 수 있습니다.
 
-## 전제 조건
+## 사전 요구 사항
 
-1. **지원되는 SDK 버전 사용:** 모바일 미리 보기 기능을 사용하려면 해당 앱에서 해당 버전의 [!DNL Adobe Mobile SDK]을(를) 다운로드하여 설치해야 합니다.
+1. **지원되는 버전의 SDK 사용:** 모바일 미리 보기 기능을 사용하려면 해당 앱에서 해당 버전의 [!DNL Adobe Mobile SDK]을(를) 다운로드하여 설치해야 합니다.
 
-   적절한 SDK를 다운로드하는 방법은 *[!DNL Adobe Experience Platform Mobile SDK]* 설명서의 [현재 SDK 버전](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/){target=_blank}을 참조하십시오.
+   적절한 SDK을 다운로드하는 방법은 *[!DNL Adobe Experience Platform Mobile SDK]* 설명서의 [최신 SDK 버전](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/){target=_blank}을 참조하십시오.
 
 1. **URL 체계 설정:** 미리 보기 링크는 URL 체계를 사용하여 앱을 엽니다. 미리 보기에 대한 고유한 URL 체계를 지정합니다.
 
@@ -29,7 +32,7 @@ ht-degree: 23%
 
    다음 링크에는 추가 정보가 포함되어 있습니다.
 
-   * **iOs**: iOS의 URL 체계 설정에 대한 자세한 내용은 *Apple 개발자* 웹 사이트에서 [앱에 대한 사용자 지정 URL 체계 정의](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target=_blank}를 참조하십시오.
+   * **iOs**: iOS의 URL 체계 설정에 대한 자세한 내용은 *Apple 개발자* 웹 사이트에서 [앱의 사용자 지정 URL 체계 정의](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target=_blank}를 참조하십시오.
    * **Android**: Android의 URL 체계 설정에 대한 자세한 내용은 *Android 개발자* 웹 사이트에서 [앱 콘텐츠에 대한 딥링크 만들기](https://developer.android.com/training/app-links/deep-linking){target=_blank}를 참조하십시오.
 
 1. **`collectLaunchInfo` API 설정(i0S만 해당)**
@@ -46,7 +49,7 @@ ht-degree: 23%
 
    >[!NOTE]
    >
-   >양식 기반 [!UICONTROL A/B Test] 및 [!UICONTROL Experience Targeting] (XT) 활동만 선택할 수 있습니다.
+   >양식 기반 [!UICONTROL A/B Test] 및 [!UICONTROL Experience Targeting]&#x200B;(XT) 활동만 선택할 수 있습니다.
 
    ![대체 이미지](assets/mobile-preview-select-activities.png)
 

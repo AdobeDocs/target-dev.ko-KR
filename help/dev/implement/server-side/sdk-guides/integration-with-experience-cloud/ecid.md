@@ -1,20 +1,26 @@
 ---
 title: Experience Cloud ID(ECID) 서비스
-description: ' [!DNL Target] 에서 콘텐츠를 가져오는 데  [!DNL Target] SDK를 사용하는 것은 강력한 기능이지만 사용자 추적을 위해 [!UICONTROL Experience Cloud ID] (ECID)를 사용하는 것의 추가 가치는 A4T 보고 및 [!DNL Adobe Audience Manager] (AAM) 세그먼트와 같은 Adobe [!DNL Target]. The ECID enables you to leverage [!DNL Adobe Experience Cloud] 제품 및 기능 이상으로 확장됩니다.'
+description: ' [!DNL Target] 에서 콘텐츠를 가져오는 데  [!DNL Target] SDK를 사용하는 것은 강력한 기능이지만 사용자 추적을 위해 [!UICONTROL Experience Cloud ID]​(ECID)를 사용하는 것의 추가 가치는 Adobe [!DNL Target]. The ECID enables you to leverage [!DNL Adobe Experience Cloud] A4T 보고 및 [!DNL Adobe Audience Manager] (AAM) 세그먼트와 같은 제품 및 기능 이상으로 확장됩니다.'
 exl-id: fd7e5c3e-51c1-4965-ab6a-f50a6b0c910b
 feature: Implement Server-side
-source-git-commit: 09a50aa67ccd5c687244a85caad24df56c0d78f5
+TQID: https://experienceleague.adobe.com/751nWT-fW5Ct1rZ2DgnTz2Pkt9W7-JfcusQ6eqrDp1A
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+subfeature_v2: id: df62f171-ac37-440f-8f0f-f41a72ebdd34
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: 261
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Experience Cloud ID] (ECID) 서비스
+# [!UICONTROL Experience Cloud ID]&#x200B;(ECID) 서비스
 
-## [!UICONTROL Experience Cloud ID] (ECID) 통합
+## [!UICONTROL Experience Cloud ID]&#x200B;(ECID) 통합
 
-[!DNL Target]에서 콘텐츠를 가져오는 데 [!DNL Target] SDK를 사용하는 것이 강력할 수 있지만 사용자 추적을 위해 [!UICONTROL Experience Cloud ID] (ECID)을 사용하는 추가 가치는 [!DNL Adobe Target]을(를) 초과합니다. ECID를 사용하면 A4T 보고 및 [!DNL Adobe Audience Manager] (AAM) 세그먼트와 같은 [!DNL Adobe Experience Cloud]개의 제품 및 기능을 활용할 수 있습니다.
+[!DNL Target]에서 콘텐츠를 가져오는 데 [!DNL Target] SDK를 사용하는 것이 강력할 수 있지만 사용자 추적을 위해 [!UICONTROL Experience Cloud ID]&#x200B;(ECID)을 사용하는 추가 가치는 [!DNL Adobe Target]을(를) 초과합니다. ECID를 사용하면 A4T 보고 및 [!DNL Adobe Audience Manager]&#x200B;(AAM) 세그먼트와 같은 [!DNL Adobe Experience Cloud]개의 제품 및 기능을 활용할 수 있습니다.
 
 ECID는 자체 상태를 유지하는 `visitor.js`에 의해 생성 및 유지 관리됩니다. `visitor.js` 파일은 ECID 통합을 위해 [!DNL Target] SDK에서 사용하는 `AMCV_{organizationId}` 쿠키를 만듭니다. [!DNL Target] 응답이 반환되면 클라이언트측의 방문자 인스턴스를 [!DNL Target] SDK에서 반환된 `thevisitorState`(으)로 업데이트해야 합니다.
 

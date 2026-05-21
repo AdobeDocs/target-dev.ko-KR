@@ -3,26 +3,31 @@ title: Adobe Target 관리 API 개요
 description: ' [!DNL Adobe Target Admin API] 개요'
 exl-id: 1168d376-c95b-4c5a-b7a2-c7815799a787
 feature: APIs/SDKs
-source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
+TQID: https://experienceleague.adobe.com/pJIaDbvs5sAFD8KPsnaNAMQAoq-lowmLs-B0zRAGzDY
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: 1400
 ht-degree: 2%
 
 ---
 
 # Target 관리 API 개요
 
-이 문서에서는 [!DNL Adobe Target Admin API]을(를) 이해하고 성공적으로 사용하는 데 필요한 배경 정보에 대한 개요를 제공합니다. 다음 내용은 사용자가 [에 대해 &#x200B;](../configure-authentication.md)인증을 구성[!DNL Adobe Target Admin API]하는 방법을 이해하고 있다고 가정합니다.
+이 문서에서는 [!DNL Adobe Target Admin API]을(를) 이해하고 성공적으로 사용하는 데 필요한 배경 정보에 대한 개요를 제공합니다. 다음 내용은 사용자가 [!DNL Adobe Target Admin API]에 대해 [인증을 구성](../configure-authentication.md)하는 방법을 이해하고 있다고 가정합니다.
 
 >[!NOTE]
 >
->UI를 통해 [!DNL Target]을(를) 관리하려면 [Adobe Target 비즈니스 실무자 안내서&#x200B;**&#x200B;의 &#x200B;](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=ko)관리 섹션을 참조하십시오.
+>UI를 통해 [!DNL Target]을(를) 관리하려면 *Adobe Target 비즈니스 실무자 안내서*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en)의 [관리 섹션을 참조하십시오.
 >
 >관리 API 및 프로필 API는 종종 총괄적으로(&quot;관리 및 프로필 API&quot;) 참조되지만, 별도로(&quot;관리 API&quot; 및 &quot;프로필 API&quot;) 참조할 수도 있습니다. Recommendations API는 [!DNL Target] 관리 API의 특정 구현입니다.
 
 ## 시작하기 전에
 
-[관리 API](../../administer/admin-api/admin-api-overview-new.md)에 대해 제공된 모든 코드 예제에서 {tenant}을(를) 테넌트 값으로, `your-bearer-token`을(를) JWT로 생성한 액세스 토큰으로, `your-api-key`을(를) [Adobe Developer Console](https://developer.adobe.com/console/home)의 API 키로 바꿉니다. 테넌트 및 JWT에 대한 자세한 내용은 Adobe [&#x200B; 관리 API에 대해 &#x200B;](../configure-authentication.md)인증을 구성[!DNL Target]하는 방법에 대한 문서를 참조하십시오.
+[관리 API](../../administer/admin-api/admin-api-overview-new.md)에 대해 제공된 모든 코드 예제에서 {tenant}을(를) 테넌트 값으로, `your-bearer-token`을(를) JWT로 생성한 액세스 토큰으로, `your-api-key`을(를) [Adobe Developer Console](https://developer.adobe.com/console/home)의 API 키로 바꿉니다. 테넌트 및 JWT에 대한 자세한 내용은 Adobe [!DNL Target] 관리 API에 대해 [인증을 구성](../configure-authentication.md)하는 방법에 대한 문서를 참조하십시오.
 
 ## 버전 매기기
 
@@ -74,11 +79,11 @@ Postman은 API 호출을 쉽게 실행할 수 있는 애플리케이션입니다
 
 활동을 통해 사용자에 대한 콘텐츠를 테스트하거나 개인화할 수 있습니다. 활동은 다음 유형 중 하나일 수 있습니다.
 
-* [A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=ko)
-* [경험 타겟팅(XT)](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=ko)
-* [추천](https://experienceleague.adobe.com/docs/target/using/activities/recommendations-activity.html?lang=ko)
-* [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=ko)
-* [MVT(다변량 테스트)](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html?lang=ko)
+* [A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html)
+* [경험 타겟팅(XT)](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html)
+* [추천](https://experienceleague.adobe.com/docs/target/using/activities/recommendations-activity.html)
+* [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html)
+* [다변량 테스트 (MVT)](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html)
 
 ## 일괄 업데이트
 
@@ -110,7 +115,7 @@ Postman은 API 호출을 쉽게 실행할 수 있는 애플리케이션입니다
 
 | 특성 | 설명 | 제한 | 기본값 |
 | --- | --- | --- | --- |
-| 본문 | http 일괄 처리 작업의 본문입니다. POST 및 PUT을 제외한 모든 작업에 대해 무시됩니다. 이전 일괄 처리 작업의 ID를 참조할 수 있습니다(예: &quot;offerId&quot;: &quot;{operationIdResponse:0}&quot;, &quot;segmentId&quot;: &quot;{operationIdResponse:1}&quot;). | 은(는) 유효한 JSON이어야 합니다. operationIdResponse를 참조하는 경우 참조된 operationId 응답은 유효한 ID여야 하며 해당 작업에 대한 메서드는 POST여야 합니다. | 빈 개체 {} |
+| 본문 | http 일괄 처리 작업의 본문입니다. 은 POST 및 PUT을 제외한 모든 작업에 대해 무시됩니다. 이전 일괄 처리 작업의 ID를 참조할 수 있습니다(예: &quot;offerId&quot;: &quot;{operationIdResponse:0}&quot;, &quot;segmentId&quot;: &quot;{operationIdResponse:1}&quot;). | 은(는) 유효한 JSON이어야 합니다. operationIdResponse를 참조하는 경우 참조된 operationId 응답은 유효한 ID여야 하며 해당 작업에 대한 메서드는 POST여야 합니다. | 빈 개체 {} |
 | dependsOnOperationIds | 지정된 작업이 성공적으로 완료된 경우에만 현재 작업이 실행되도록 하는 제한 ID 목록입니다. 을 사용하여 작업을 연결할 수 있습니다. | 최대 255개의 작업이 허용됩니다. 고유 값만 허용됩니다. 배열에서 유효한 operationId를 가리켜야 합니다. 순환 의존성은 허용되지 않습니다. |  |
 | 헤더 | 특정 작업과 함께 보낼 키-값 헤더의 배열입니다. Authorization 헤더를 통해 배치 API에 대한 인증을 수행한 경우 개별 작업에도 복사됩니다. | 허용된 배열의 최대 헤더 수는 50개입니다. | Content-Type: application/json |
 | headers->name | 헤더 이름 | 다른 헤더 이름 간에 고유해야 합니다. 헤더는 rfc에서 대소문자를 구분하지 않습니다. 그렇지 않으면 값이 서로 무시됩니다. |  |

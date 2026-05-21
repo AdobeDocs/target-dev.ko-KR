@@ -4,9 +4,14 @@ description: Experience Cloud과 통합, Audience Manager 통합
 keywords: 배달 api, 서버측, 서버측, 통합, audience manager, aam
 exl-id: c21e0200-23ba-4a0b-adf4-38e03c087f00
 feature: Implement Server-side
-source-git-commit: e3f14e97fa48ffb1f07b29aca5711d16e75faa80
+TQID: https://experienceleague.adobe.com/mc55SxaUU8BJ81hKLji9xi0-OHCux3W4R0syuVoGrIo
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: 431
 ht-degree: 4%
 
 ---
@@ -23,9 +28,9 @@ ht-degree: 4%
 | --- | --- | --- |
 | `locationHint` | 예 | DCS 위치 힌트는 프로필을 검색하기 위해 히트할 AAM DCS 끝점을 결정하는 데 사용됩니다. 1보다 크거나 같아야 합니다. |
 | `marketingCloudVisitorId` | 예 | Marketing Cloud 방문자 ID |
-| `blob` | 예 | AAM Blob을 사용하여 추가 데이터를 AAM에 보낼 수 있습니다. 비워 둘 수 없으며 크기는 1024 미만이어야 합니다. |
+| `blob` | 예 | AAM Blob을 사용하여 추가 데이터를 AAM으로 보낼 수 있습니다. 비워 둘 수 없으며 크기는 1024 미만이어야 합니다. |
 
-`getOffers` 메서드를 호출할 때 SDK에서 이 필드를 자동으로 채우지만 올바른 방문자 쿠키가 제공되었는지 확인해야 합니다. 이 쿠키를 가져오려면 브라우저에서 VisitorAPI.js를 구현해야 합니다.
+`getOffers` 메서드 호출을 수행할 때 SDK에서 이러한 필드를 자동으로 채우지만 올바른 방문자 쿠키가 제공되도록 해야 합니다. 이 쿠키를 가져오려면 브라우저에서 VisitorAPI.js를 구현해야 합니다.
 
 ## Implementation 안내서
 
@@ -298,4 +303,4 @@ public class TargetClientService {
 
 >[!ENDTABS]
 
-`TargetRequestUtils.java`에 대한 자세한 내용은 [유틸리티 메서드(Java)](https://experienceleague.adobe.com/docs/target-dev/developer/server-side/java/utility-methods.html?lang=ko){target=_blank}를 참조하십시오.
+`TargetRequestUtils.java`에 대한 자세한 내용은 [유틸리티 메서드(Java)](https://experienceleague.adobe.com/docs/target-dev/developer/server-side/java/utility-methods.html){target=_blank}를 참조하십시오.
