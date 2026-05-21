@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: addda914fcf7ba1616ae9a9d49118e737b3ad923
 workflow-type: tm+mt
-source-wordcount: 1937
+source-wordcount: 1849
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 1%
 
 이 섹션에서는 [!DNL Adobe Developer Console]에 액세스하고 [!DNL Adobe Target]에 대한 프로젝트를 만듭니다. 자세한 내용은 프로젝트에 대한 [설명서](https://developer.adobe.com/developer-console/docs/guides/projects/)를 참조하세요.
 
-&lt;!---(1. 인증에 대한 [설명서](https://developer.adobe.com/developer-console/docs/guides/authentication/)에 따라 개인 키 및 공개 인증서를 생성합니다. // [//]: # ([Adobe IO 설정 방법: 인증 - 단계별](https://helpx.adobe.com/marketing-cloud-core/kb/adobe-io-authentication-step-by-step.html)의 **단계 1**&#x200B;에 설명). 1단계를 완료한 후 이 안내서로 돌아가서 아래의 2단계로 다시 시작하십시오. // 이 단계의 결과는 `private.key` 파일 및 `certificate_pub.crt` 파일을 만든 것입니다. 이 두 파일을 생성했으면 이 안내서로 돌아갑니다.)—>
+<!--(1. Generate your private key and public certificate, per the [documentation on authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/). // [//]: # (as described in **Step 1** of [How to set up Adobe IO: Authentication - Step by Step](https://helpx.adobe.com/marketing-cloud-core/kb/adobe-io-authentication-step-by-step.html). After completing Step 1, return to this guide and resume with Step 2, below. // The outcome of this step should be the creation of a `private.key` file and a `certificate_pub.crt` file. Return to this guide once you have generated these two files.)-->
 
 1. [Adobe Admin Console](https://adminconsole.adobe.com/)에서 [!DNL Adobe] 사용자 계정에 [!DNL Target]에 대한 [제품 관리자](https://helpx.adobe.com/kr/enterprise/using/admin-roles.html) 및 [개발자](https://helpx.adobe.com/kr/enterprise/using/manage-developers.html) 수준 액세스 권한이 모두 부여되었는지 확인하십시오.
 

@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: 86209eb483ca69d40615c632ba435d27fec78f36
 workflow-type: tm+mt
-source-wordcount: 278
+source-wordcount: 266
 ht-degree: 0%
 
 ---
@@ -38,12 +38,12 @@ ht-degree: 0%
 
 1. Target UI로 이동합니다.
 
-   &lt;!— image-target-ui-1.png 삽입 —>
+   <!-- Insert image-target-ui-1.png -->
    ![대체 이미지](assets/asset-rule-artifact-1.png)
 
 1. **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**(으)로 이동한 다음 **[!UICONTROL Generate New Authorization Token]**&#x200B;을(를) 클릭합니다.
 
-   &lt;!— image-target-ui-2.png 삽입 —>
+   <!-- Insert image-target-ui-2.png -->
    ![대체 이미지](assets/asset-rule-artifact-2.png)
 
 1. 새로 생성된 인증 토큰을 클립보드에 복사하고 Target 요청에 추가합니다.
