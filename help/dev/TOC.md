@@ -3,10 +3,10 @@ user-guide-title: Adobe Target 개발자 안내서
 breadcrumb-title: Target 개발자 안내서
 user-guide-description: 고객의 경험을 맞춤화 및 개인화하여 웹 및 모바일 사이트, 앱, 소셜 미디어 및 기타 디지털 채널에서 매출을 극대화하는 방법을 알아봅니다.
 nudge: true
-source-git-commit: 2a992af7a1a8bbc6dba4ce23263d7af7db773333
+source-git-commit: b7f74bef7a9e00aa9f794f63e5a29b391558808e
 workflow-type: tm+mt
 source-wordcount: '854'
-ht-degree: 40%
+ht-degree: 41%
 
 ---
 
@@ -44,7 +44,6 @@ ht-degree: 40%
    + [CNAME 및 Adobe Target](before-implement/implement-cname-support-in-target.md)
 + 클라이언트측 구현 {#client-side}
    + [개요: 클라이언트측 웹용 Target 구현](implement/client-side/overview.md)
-     <!--+ Prehide SDK {#prehide-sdk}-->
    + {hide-from-toc}[SDK 통합 가이드 미리 숨기기](implement/client-side/prehide-sdk/prehide-sdk.md)
    + Adobe Experience Platform Web SDK 구현 {#aep}
       + [Adobe Experience Platform Web SDK 구현 개요](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md)
