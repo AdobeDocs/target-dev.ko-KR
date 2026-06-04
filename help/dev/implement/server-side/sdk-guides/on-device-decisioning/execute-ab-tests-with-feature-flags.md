@@ -4,10 +4,17 @@ description: 온디바이스 의사 결정을 사용하여 기능 플래그로 A
 feature: APIs/SDKs
 exl-id: abf66e00-742d-4d40-9b6e-9bd71638c31a
 TQID: https://experienceleague.adobe.com/OnRFP7WgNvPy-9v8Ea8te3v5QAUlcR2WUlD7yGB-QzQ
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ce
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 813
@@ -53,7 +60,7 @@ ht-degree: 1%
 
 ![대체 이미지](assets/asset-ab.png)
 
-**[!UICONTROL A/B 테스트 활동 만들기]** 모달에서 기본 **[!UICONTROL Web]** 옵션을 선택한 상태로 둡니다(1). **[!UICONTROL Form]**&#x200B;을(를) 경험 작성기로 선택합니다(2). **[!UICONTROL 속성 제한 없이**[!UICONTROL &#x200B;기본 Workspace ]**(3)을(를) 선택하고**[!UICONTROL &#x200B;다음&#x200B;]**(4)을(를) 클릭합니다.]**
+**[!UICONTROL A/B 테스트 활동 만들기]** 모달에서 기본 **[!UICONTROL Web]** 옵션을 선택한 상태로 둡니다(1). **[!UICONTROL Form]**&#x200B;을(를) 경험 작성기로 선택합니다(2). **[!UICONTROL 속성 제한 없이**&#x200B;[!UICONTROL &#x200B;기본 Workspace &#x200B;]&#x200B;**(3)을(를) 선택하고**&#x200B;[!UICONTROL &#x200B;다음&#x200B;]&#x200B;**(4)을(를) 클릭합니다.]**
 
 ![대체 이미지](assets/asset-form.png)
 

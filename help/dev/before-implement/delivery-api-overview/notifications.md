@@ -5,9 +5,12 @@ keywords: 배달 api
 exl-id: 711388fd-2c1f-4ca4-939f-c56dc4bdc04a
 feature: APIs/SDKs
 TQID: https://experienceleague.adobe.com/rooWLG-bh7lu7eBELTQys3KoNtS-6ZicxfHoQcU6TU0
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 426
@@ -23,7 +26,7 @@ ht-degree: 0%
 
 ## 프리페치된 Mbox에 대한 알림
 
-한 번의 게재 호출을 통해 하나 이상의 알림을 전송할 수 있습니다. 알림의 `type`이(가) 올바르게 반영될 수 있도록 추적해야 하는 지표가 각 mbox에 대해 `click` 또는 `display`인지 확인하십시오. 또한 각 알림에 대해 `id`을(를) 전달하여 [!UICONTROL  Adobe Target 배달 API]를 통해 알림이 올바르게 전송되었는지 확인할 수 있습니다. 보고용으로 제공된 mbox에 대해 `click` 또는 `display`이(가) 발생한 시기를 나타내기 위해 `timestamp`을(를) [!DNL Target]&#x200B;(으)로 전달해야 합니다.
+한 번의 게재 호출을 통해 하나 이상의 알림을 전송할 수 있습니다. 알림의 `type`이(가) 올바르게 반영될 수 있도록 추적해야 하는 지표가 각 mbox에 대해 `click` 또는 `display`인지 확인하십시오. 또한 각 알림에 대해 `id`을(를) 전달하여 [!UICONTROL &#x200B; Adobe Target 배달 API]를 통해 알림이 올바르게 전송되었는지 확인할 수 있습니다. 보고용으로 제공된 mbox에 대해 `click` 또는 `display`이(가) 발생한 시기를 나타내기 위해 `timestamp`을(를) [!DNL Target]&#x200B;(으)로 전달해야 합니다.
 
 ```
 curl -X POST \

@@ -5,11 +5,18 @@ title: 클라이언트측 웹용  [!DNL Target] 을(를) 구현하는 방법
 feature: at.js
 exl-id: b3a850ff-ace0-4eea-955a-aa71dfad256f
 TQID: https://experienceleague.adobe.com/KgJyhvTguS8EXbwELaApI1mcs5egnEKHKpnxVYGqT4I
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 929e1f10bc5dd0741f0fe28cd46435e680a4a308
 workflow-type: tm+mt
 source-wordcount: 252
@@ -25,7 +32,7 @@ ht-degree: 26%
 
 * [Adobe Experience Platform 웹 SDK](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md)
 
-  [!UICONTROL Adobe Experience Platform Web SDK]를 사용하면 [!UICONTROL Adobe Experience Edge Network]을(를) 통해 [!DNL Adobe Experience Cloud]&#x200B;([!DNL Target] 포함)의 다양한 서비스와 상호 작용할 수 있습니다. [!UICONTROL Adobe Experience Platform Web SDK]&#x200B;(으)로 마이그레이션하려면 [Adobe Experience Platform Web SDK 소개]](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md)를 참조하십시오.[!UICONTROL 
+  [!UICONTROL Adobe Experience Platform Web SDK]를 사용하면 [!UICONTROL Adobe Experience Edge Network]을(를) 통해 [!DNL Adobe Experience Cloud]&#x200B;([!DNL Target] 포함)의 다양한 서비스와 상호 작용할 수 있습니다. [!UICONTROL Adobe Experience Platform Web SDK]&#x200B;(으)로 마이그레이션하려면 [Adobe Experience Platform Web SDK 소개](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md)를 참조하십시오.
 
 * [[!DNL Target] at.js JavaScript 라이브러리](/help/dev/implement/client-side/atjs/how-atjs-works/how-atjs-works.md)
 
