@@ -5,22 +5,15 @@ title: 리디렉터는 어떻게 작동합니까?
 feature: Implement Email
 exl-id: 072368ff-9f17-4709-ac2d-c9e1f0d888bb
 TQID: https://experienceleague.adobe.com/3SUsZl1y9tk97sWgdB3iB7wrAXNb2LfN3hObJM14caE
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: c94a34eb-b51c-4dd1-a6a4-46b0d84ccccd
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: c94a34eb-b51c-4dd1-a6a4-46b0d84ccccd
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 689
-ht-degree: 63%
+source-wordcount: 697
+ht-degree: 62%
 
 ---
 
@@ -57,7 +50,7 @@ ht-degree: 63%
 
    * 여기서 `yourclientcode`는 회사의 클라이언트 코드입니다. 회사의 클라이언트 코드는 모두 소문자이고 특수 문자를 포함하지 않습니다.
 
-     클라이언트 코드는 [!DNL Target] 인터페이스의 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** 페이지 맨 위에서 사용할 수 있습니다.
+     클라이언트 코드는 [!DNL Target] 인터페이스의 **[!UICONTROL 관리]** > **[!UICONTROL 구현]** 페이지 맨 위에서 사용할 수 있습니다.
 
    * `redirectorlink_456` 은 캠페인 및 테스트에서 사용할 계정에 나타나는 리디렉터 mbox의 이름입니다.
 
@@ -69,13 +62,13 @@ ht-degree: 63%
 
    >[!WARNING]
    >
-   >리디렉터를 사용하면 오픈 리디렉션 취약점의 위험에 노출될 수 있습니다. Adobe에서는 리디렉터 링크를 서드파티가 무단으로 사용하지 않도록 하기 위해 기본 리디렉션 URL 도메인을 &quot;승인된 호스트&quot;로 리디렉션할 것을 권장합니다. [!DNL Target]은(는) 리디렉션을 허용할 호스트 허용 목록에 추가하다 도메인을 사용합니다. 자세한 내용은 *호스트*&#x200B;에서  [!DNL Target][&#128279;](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=ko#allowlist)&#x200B;(으)로 mbox 호출을 보내도록 승인된 호스트를 지정하는 허용 목록 만들기를 참조하십시오.
+   >리디렉터를 사용하면 오픈 리디렉션 취약점의 위험에 노출될 수 있습니다. Adobe에서는 리디렉터 링크를 서드파티가 무단으로 사용하지 않도록 하기 위해 기본 리디렉션 URL 도메인을 &quot;승인된 호스트&quot;로 리디렉션할 것을 권장합니다. [!DNL Target]은(는) 리디렉션을 허용할 호스트 허용 목록에 추가하다 도메인을 사용합니다. 자세한 내용은 *호스트*&#x200B;에서  [!DNL Target]](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html#allowlist)&#x200B;(으)로 mbox 호출을 보내도록 승인된 호스트를 지정하는 [허용 목록 만들기를 참조하십시오.
 
 1. 리디렉터의 유효성을 확인합니다.
    1. *보안 모범 사례*: 리디렉터에서 사용되는 도메인이 위에 표시된 대로 허용 목록에추가된인지 확인하십시오. 허용 목록에추가된이 아닌 도메인을 사용하는 경우 Adobe은 해당 도메인에 대한 모든 호출을 차단하여 악의적인 행위자가 리디렉터를 사용하여 악의적인 도메인으로 리디렉션하지 못하도록 합니다.
    2. 리디렉터 URL을 브라우저에 삽입하고 새로 고칩니다.
    3. 계정에 로그인하고 mbox 목록을 새로 고친 후 새 리디렉터가 mbox로 나열되는지 확인합니다.
-1. 하나의 광고에 대해 서로 다른 대상을 테스트할 경우 각 버전에 대해 [리디렉션 오퍼](https://experienceleague.adobe.com/docs/target/using/experiences/vec/redirect-offer.html?lang=ko)를 만듭니다.
+1. 하나의 광고에 대해 서로 다른 대상을 테스트할 경우 각 버전에 대해 [리디렉션 오퍼](https://experienceleague.adobe.com/docs/target/using/experiences/vec/redirect-offer.html)를 만듭니다.
 1. 캠페인을 만듭니다.
 
    목표를 충족하는 올바른 설정을 알려면 [비JavaScript 기반 구현](/help/dev/implement/email/overview.md)을 참조하십시오.
@@ -107,7 +100,7 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->가장 좋은 방법은 **[!UICONTROL Score per visit]** 참여 지표를 사용하여 비용 값을 결정하는 것입니다.
+>가장 좋은 방법은 **[!UICONTROL 방문당 점수]** 참여 지표를 사용하여 비용 값을 결정하는 것입니다.
 
 `&mboxPageValue=-value`를 URL에 추가합니다. 음수입니다.
 
@@ -124,7 +117,7 @@ https://<your_clientcode>.tt.omtrdc.net/​m2/yourclientcode/ubox/​page?mbox=r
 
 >[!NOTE]
 >
->가장 좋은 방법은 **[!UICONTROL Score per visit]** 참여 지표를 사용하여 매출액 값을 결정하는 것입니다.
+>가장 좋은 방법은 **[!UICONTROL 방문당 점수]** 참여 지표를 사용하여 매출액 값을 결정하는 것입니다.
 
 `&mboxPageValue=value`를 URL에 추가합니다.
 

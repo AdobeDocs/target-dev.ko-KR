@@ -6,24 +6,14 @@ level: Experienced
 role: Developer
 exl-id: 250a8382-1fdd-4a70-b712-a25af5adad71
 TQID: https://experienceleague.adobe.com/PxAKvxntUCdacBLopvANAI7-8OWe-ELQqFRJu-n3RWo
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1797
+source-wordcount: 1879
 ht-degree: 4%
 
 ---
@@ -75,27 +65,27 @@ ht-degree: 4%
 
 **전제 조건**
 
-* 방문자 ID/API 서비스를 사용하려면 회사에 [!DNL Adobe Experience Cloud]이(가) 사용하도록 설정되어 있고 [!UICONTROL Organization ID]이(가) 있어야 합니다. 자세한 내용은 *ID 서비스 도움말* 안내서의 [Experience Cloud 요구 사항: 조직 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/requirements.html?lang=ko&){target=_blank}을 참조하십시오.
-* `VisitorAPI.js` 파일이 필요합니다. [!DNL Adobe Analytics]을(를) 구현한 경우 이 파일이 이미 있어야 합니다. 이 파일은 [[!DNL Adobe Experience Platform] 태그 확장](https://experienceleague.adobe.com/docs/tags.html?lang=ko){target=_blank}을 통해 추가하거나 [Adobe Analytics 코드 관리자](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ko){target=_blank}에서 다운로드할 수도 있습니다.
+* 방문자 ID/API 서비스를 사용하려면 귀사에서 [!DNL Adobe Experience Cloud]을(를) 사용하도록 설정하고 [!UICONTROL 조직 ID]가 있어야 합니다. 자세한 내용은 *ID 서비스 도움말* 안내서의 [Experience Cloud 요구 사항: 조직 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/requirements.html?){target=_blank}을 참조하십시오.
+* `VisitorAPI.js` 파일이 필요합니다. [!DNL Adobe Analytics]을(를) 구현한 경우 이 파일이 이미 있어야 합니다. 이 파일은 [[!DNL Adobe Experience Platform] 태그 확장](https://experienceleague.adobe.com/docs/tags.html){target=_blank}을 통해 추가하거나 [Adobe Analytics 코드 관리자](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html){target=_blank}에서 다운로드할 수도 있습니다.
 
 **VisitorAPI.js 구성 및 참조**
 
-자세한 내용은 [Target용 Experience Cloud 서비스 구현](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html?lang=ko){target=_blank}을 참조하십시오.
+자세한 내용은 [Target용 Experience Cloud 서비스 구현](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html){target=_blank}을 참조하십시오.
 
 **판독값**
 
-* [Experience Cloud Identity Service 개요](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=ko){target=_blank}
-* [ID 서비스 정보](https://experienceleague.adobe.com/docs/id-service/using/intro/about-id-service.html?lang=ko){target=_blank}
-* [쿠키 및 Experience Cloud ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=ko){target=_blank}
-* [Experience Cloud ID 서비스에서 ID를 요청하고 설정하는 방법](https://experienceleague.adobe.com/docs/id-service/using/intro/id-request.html?lang=ko){target=_blank}
-* [ID 동기화 및 일치율 이해하기](https://experienceleague.adobe.com/docs/id-service/using/intro/match-rates.html?lang=ko){target=_blank}
+* [Experience Cloud ID 서비스 개요](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html){target=_blank}
+* [ID 서비스 정보](https://experienceleague.adobe.com/docs/id-service/using/intro/about-id-service.html){target=_blank}
+* [쿠키 및 Experience Cloud ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html){target=_blank}
+* [Experience Cloud Identity 서비스에서 ID를 요청하고 설정하는 방법](https://experienceleague.adobe.com/docs/id-service/using/intro/id-request.html){target=_blank}
+* [ID 동기화 및 일치율 이해하기](https://experienceleague.adobe.com/docs/id-service/using/intro/match-rates.html){target=_blank}
 
 **작업**
 
 * 웹 페이지에 `VisitorAPI.js` 파일을 포함합니다.
-* 방문자 ID/API 서비스에 대해 [사용 가능한 구성](https://experienceleague.adobe.com/docs/id-service/using/reference/requirements.html?lang=ko){target=_blank}을 읽어 보십시오.
+* 방문자 ID/API 서비스에 대해 [사용 가능한 구성](https://experienceleague.adobe.com/docs/id-service/using/reference/requirements.html){target=_blank}을 읽어 보십시오.
 * `VisitorAPI.js` 파일이 로드되면 필요한 구성을 사용하여 초기화하려면 `Visitor.getInstance` 메서드를 사용합니다.
-* [사용 가능한 메서드](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/get-set.html?lang=ko){target=_blank}를 숙지하십시오.
+* [사용 가능한 메서드](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/get-set.html){target=_blank}를 숙지하십시오.
 
 +++
 
@@ -114,11 +104,11 @@ ht-degree: 4%
 * 방문자의 알려진 ID는 데이터 레이어에서 사용할 수 있어야 합니다.
 
 **고객 ID 설정**
-자세한 내용은 [setCustomerIDs](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/setcustomerids.html?lang=ko){target=_blank}을(를) 참조하십시오.
+자세한 내용은 [setCustomerIDs](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/setcustomerids.html){target=_blank}을(를) 참조하십시오.
 
 **판독값**
 
-* [mbox3rdPartyId에 대한 실시간 프로필 동기화](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=ko){target=_blank}
+* [mbox3rdPartyId에 대한 실시간 프로필 동기화](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html){target=_blank}
 
 **작업**
 
@@ -229,15 +219,15 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 ## 1.6: 프로모션 {#promotion}
 
-프로모션된 항목을 추가하고 [!DNL Target Recommendations] [디자인](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-design/create-design.html?lang=ko){target=_blank}에서 해당 배치를 제어합니다.
+프로모션된 항목을 추가하고 [!DNL Target Recommendations] [디자인](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-design/create-design.html){target=_blank}에서 해당 배치를 제어합니다.
 
 +++세부 정보 보기
 
 **사용 가능한 옵션**
 
 * ID별 프로모션
-* [컬렉션별 홍보](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/collections.html?lang=ko){target=_blank}
-* [속성별 프로모션](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=ko){target=_blank}
+* [컬렉션별 홍보](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/collections.html){target=_blank}
+* [속성별 프로모션](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html){target=_blank}
 
 **필요한 엔터티 매개 변수**
 
@@ -255,9 +245,9 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 **사용 가능한 기준**
 
-* [!UICONTROL People Who Viewed These, Viewed Those]
-* [!UICONTROL People Who Viewed These, Bought Those]
-* [!UICONTROL People Who Bought These, Bought Those]
+* [!UICONTROL 열람한 사람, 열람한 사람]
+* [!UICONTROL 열람한 사람, 구매한 사람]
+* [!UICONTROL 이 항목을 구입하고 다른 항목을 구입한 사람]
 
 **필요한 엔터티 매개 변수**
 
@@ -265,7 +255,7 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 **판독값**
 
-* [장바구니 기반](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=ko#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [장바구니 기반](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -279,13 +269,13 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 **사용 가능한 기준**
 
-* [!UICONTROL Most Viewed Across the Site]
-* [!UICONTROL Most Viewed by Category]
-* [!UICONTROL Most Viewed by Item Attribute]
-* [!UICONTROL Top Sellers Across the Site]
-* [!UICONTROL Top Sellers by Category]
-* [!UICONTROL Top Sellers by Item Attribute]
-* [!UICONTROL Top by Analytics Metric]
+* [!UICONTROL 사이트에서 가장 많이 본 항목]
+* [!UICONTROL 범주별 가장 많이 본 항목]
+* [!UICONTROL 가장 많이 본 항목 특성]
+* [!UICONTROL 사이트 전체 최상위 판매자]
+* [!UICONTROL 범주별 최상위 판매자]
+* [!UICONTROL 항목 특성별 최상위 판매자]
+* Analytics 지표로 [!UICONTROL 상위]
 
 **필요한 엔터티 매개 변수**
 
@@ -294,7 +284,7 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 **판독값**
 
-* [인기도 기반](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=ko#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [인기도 기반](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -308,10 +298,10 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 **사용 가능한 기준**
 
-* [!UICONTROL People Who Viewed This, Viewed That]
-* [!UICONTROL People Who Viewed This, Bought That]
-* [!UICONTROL People Who Bought This, Bought That]
-* [!UICONTROL Items with Similar Attributes]
+* [!UICONTROL 이 항목을 보고 다른 항목도 본 사람]
+* [!UICONTROL 이 항목을 보고 다른 항목을 구입한 사람]
+* [!UICONTROL 이 항목을 구입하고 다른 항목도 구입한 사람]
+* [!UICONTROL 비슷한 특성을 가진 항목]
 
 **필요한 엔터티 매개 변수**
 
@@ -319,7 +309,7 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 **판독값**
 
-* [항목 기반](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=ko#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [항목 기반](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -333,8 +323,8 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 **사용 가능한 기준**
 
-* [!UICONTROL Recently Viewed Items]
-* [!UICONTROL Recommended for You]
+* [!UICONTROL 최근에 본 항목]
+* [!UICONTROL 추천]
 
 **필요한 엔터티 매개 변수**
 
@@ -342,7 +332,7 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 **판독값**
 
-* [사용자 기반](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=ko#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [사용자 기반](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -356,7 +346,7 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 **사용 가능한 기준**
 
-* [!UICONTROL Custom algorithm]
+* [!UICONTROL 사용자 지정 알고리즘]
 
 **필요한 엔터티 매개 변수**
 
@@ -364,7 +354,7 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 **판독값**
 
-* [사용자 지정 기준](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=ko#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [사용자 지정 기준](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -376,7 +366,7 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 **판독값**
 
-* [동적 및 정적 포함 규칙 사용](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/dynamic-static/use-dynamic-and-static-inclusion-rules.html?lang=ko){target=_blank}
+* [동적 및 정적 포함 규칙 사용](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/dynamic-static/use-dynamic-and-static-inclusion-rules.html){target=_blank}
 
 +++
 
@@ -390,7 +380,7 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 **판독값**
 
-* [엔티티를 동적으로 제외할 수 있습니까?](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/recommendations-faq.html?lang=ko#exclude){target=_blank}
+* [엔티티를 동적으로 제외할 수 있습니까?](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/recommendations-faq.html?lang=en#exclude){target=_blank}
 
 +++
 
@@ -404,7 +394,7 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 **판독값**
 
-* [엔티티 속성](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=ko){target=_blank}
+* [엔티티 속성](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=en){target=_blank}
 
 +++
 
@@ -452,7 +442,7 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 *판독값*
 
-* [Target 작동 방식](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html?lang=ko){target=_blank}
+* [Target 작동 방식](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html){target=_blank}
 * [at.js 작동 방식](/help/dev/implement/client-side/atjs/how-atjs-works/how-atjs-works.md)
 * [태그 관리자 없이 Target 구현](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md)
 

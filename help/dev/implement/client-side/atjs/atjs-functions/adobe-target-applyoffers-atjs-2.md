@@ -1,24 +1,18 @@
 ---
 keywords: adobe.target.applyOffers, applyOffers, applyOffers, apply 오퍼, at.js, 함수, 함수,
 description: ' [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 [!UICONTROL adobe.target.applyOffers()] 함수를 사용하여 응답에 여러 오퍼를 적용합니다. (at.js 2.x)'
-title: '[!UICONTROL adobe.target.applyOffers()] 함수를 사용하는 방법'
+title: '[!UICONTROL adobe.target.applyOffers()] 함수를 사용하는 방법은 무엇입니까?'
 feature: at.js
 exl-id: c391e3f4-fdf1-4e33-8dcb-6bf46e390538
 TQID: https://experienceleague.adobe.com/9WIJvPZIlrtLkv-vv-HRkctgwHn3nX-jrE4-4usXW0Y
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 820
+source-wordcount: 825
 ht-degree: 78%
 
 ---
@@ -33,7 +27,7 @@ ht-degree: 78%
 
 | 키 | 유형 | 필수? | 설명 |
 | --- | --- | --- | --- |
-| selector | 문자열 | 아니오 | [!DNL Target]이 오퍼 컨텐츠를 배치해야 하는 HTML 요소를 식별하는 데 사용되는 HTML 요소 또는 CSS 선택기입니다. 선택기를 제공하지 않으면 [!DNL Target]에서 사용할 HTML 요소를 HTML HEAD으로 가정합니다. |
+| selector | 문자열 | 아니오 | [!DNL Target]이 오퍼 컨텐츠를 배치해야 하는 HTML 요소를 식별하는 데 사용되는 HTML 요소 또는 CSS 선택기입니다. 선택기를 제공하지 않으면 [!DNL Target]에서 사용할 HTML 요소를 HTML HEAD로 간주합니다. |
 | 응답 | 개체 | 예 | `getOffers()`의 응답 개체입니다.<br />아래 요청 표를 참조하십시오. |
 
 ## 응답

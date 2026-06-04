@@ -1,33 +1,26 @@
 ---
 title: Adobe Target 벌크 프로필 업데이트 API
-description: ' [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API]을(를) 사용하여 타깃팅에 사용할 여러 방문자의 프로필 데이터를  [!DNL Target] 에 보내는 방법을 알아봅니다.'
+description: ' [!DNL Adobe Target] [!UICONTROL 벌크 프로필 업데이트 API]를 사용하여 타깃팅에 사용할 수 있도록  [!DNL Target] 에 여러 방문자의 프로필 데이터를 전송하는 방법을 알아봅니다.'
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
 TQID: https://experienceleague.adobe.com/EVlP71oFI-NIFoTe9fyx2Xzsr9v-sZq0JGdpti1XI64
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1063
+source-wordcount: 1094
 ht-degree: 7%
 
 ---
 
 # [!DNL Adobe Target Bulk Profile Update API]
 
-[!DNL Adobe Target] [!UICONTROL Bulk Profile Update API]을(를) 사용하면 배치 파일을 사용하여 웹 사이트에 대한 여러 방문자의 사용자 프로필을 일괄적으로 업데이트할 수 있습니다.
+[!DNL Adobe Target] [!UICONTROL 벌크 프로필 업데이트 API]를 사용하면 배치 파일을 사용하여 웹 사이트에 대한 여러 방문자의 사용자 프로필을 일괄적으로 업데이트할 수 있습니다.
 
-[!UICONTROL Bulk Profile Update API]을(를) 사용하면 많은 사용자에 대한 프로필 매개 변수 형식의 자세한 방문자 프로필 데이터를 외부 소스에서 [!DNL Target]&#x200B;(으)로 편리하게 보낼 수 있습니다. 외부 소스에는 일반적으로 웹 페이지에서 사용할 수 없는 CRM(고객 관계 관리) 또는 POS(판매 지점) 시스템이 포함될 수 있습니다.
+[!UICONTROL 벌크 프로필 업데이트 API]를 사용하면 많은 사용자에 대한 프로필 매개 변수 형식의 자세한 방문자 프로필 데이터를 외부 소스에서 [!DNL Target]에 편리하게 보낼 수 있습니다. 외부 소스에는 일반적으로 웹 페이지에서 사용할 수 없는 CRM(고객 관계 관리) 또는 POS(판매 지점) 시스템이 포함될 수 있습니다.
 
 | 버전 | URL 예 | 기능 |
 | --- | --- | --- |
@@ -44,7 +37,7 @@ ht-degree: 7%
 >
 >* 구현에서 프로필 식별에 `thirdPartyId`을(를) 사용하는 경우 키로 `thirdPartyId`을(를) 사용하여 API의 버전 2(v2)를 사용하십시오.
 
-## [!UICONTROL Bulk Profile Update API]의 이점
+## [!UICONTROL 벌크 프로필 업데이트 API]의 이점
 
 * 프로필 속성의 개수에 대한 제한은 없습니다.
 * 사이트를 통해 전송된 프로필 속성은 API를 통해 또는 그 반대로 업데이트할 수 있습니다.
@@ -76,10 +69,10 @@ batch=pcId,param1,param2,param3,param4
 파일을 처리하기 위해 [!DNL Target] 서버에 대한 POST 호출에서 이 파일을 참조합니다. 배치 파일을 생성할 때 다음 사항을 고려하십시오.
 
 * 파일의 첫 행은 열 머리글을 지정해야 합니다.
-* 첫 번째 헤더는 `pcId` 또는 `thirdPartyId`이어야 합니다. [!UICONTROL Marketing Cloud visitor ID]은(는) 지원되지 않습니다. [!UICONTROL pcId]은(는) [!DNL Target]에서 생성한 visitorID입니다. `thirdPartyId`은(는) 클라이언트 응용 프로그램에서 지정한 ID이며, mbox 호출을 통해 `mbox3rdPartyId`(으)로 [!DNL Target]에 전달됩니다. 여기에서 `thirdPartyId`(으)로 참조되어야 합니다.
+* 첫 번째 헤더는 `pcId` 또는 `thirdPartyId`이어야 합니다. [!UICONTROL Marketing Cloud 방문자 ID]은(는) 지원되지 않습니다. [!UICONTROL pcId]은(는) [!DNL Target]에서 생성한 visitorID입니다. `thirdPartyId`은(는) 클라이언트 응용 프로그램에서 지정한 ID이며, mbox 호출을 통해 `mbox3rdPartyId`(으)로 [!DNL Target]에 전달됩니다. 여기에서 `thirdPartyId`(으)로 참조되어야 합니다.
 * 보안상의 이유로 배치 파일에서 지정하는 매개변수와 값은 UTF-8을 사용하여 URL로 인코딩되어야 합니다. HTTP 요청을 통해 처리하기 위해 매개 변수와 값을 다른 에지 노드로 전달할 수 있습니다.
 * 매개 변수는 `paramName` 형식이어야 합니다. 매개 변수가 [!DNL Target]에 `profile.paramName`(으)로 표시됩니다.
-* [!UICONTROL Bulk Profile Update API] v2를 사용하는 경우 각 `pcId`에 대해 모든 매개 변수 값을 지정할 필요는 없습니다. [!DNL Target]에서 찾을 수 없는 `pcId` 또는 `mbox3rdPartyId`에 대해 프로필이 만들어집니다. v1을 사용하는 경우 누락된 pcIds 또는 mbox3rdPartyIds에 대해 프로필이 만들어지지 않습니다. 자세한 내용은 아래의 [빈 값 처리 [!DNL Bulk Profile Update API]](#empty)를 참조하십시오.
+* [!UICONTROL 벌크 프로필 업데이트 API] v2를 사용하는 경우 각 `pcId`에 대해 모든 매개 변수 값을 지정할 필요는 없습니다. [!DNL Target]에서 찾을 수 없는 `pcId` 또는 `mbox3rdPartyId`에 대해 프로필이 만들어집니다. v1을 사용하는 경우 누락된 pcIds 또는 mbox3rdPartyIds에 대해 프로필이 만들어지지 않습니다. 자세한 내용은 아래의 [빈 값 처리 [!DNL Bulk Profile Update API]](#empty)를 참조하십시오.
 * 묶음 파일의 크기는 50MB 미만이어야 합니다. 또한 총 행 수는 50만 개를 초과할 수 없습니다. 이 제한은 서버가 너무 많은 요청으로 침수되지 않도록 합니다.
 * 업로드할 수 있는 속성 수에는 제한이 없습니다. 하지만 고객 속성, 프로필 API, Mbox 내 프로필 매개 변수 및 프로필 스크립트 출력을 포함하는 외부 프로필 데이터의 총 크기는 64KB를 초과할 수 없습니다.
 * 매개변수 및 값은 대/소문자를 구분합니다.
@@ -96,7 +89,7 @@ curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTC
 
 BATCH.TXT는 파일 이름입니다. CLIENTCODE는 [!DNL Target] 클라이언트 코드입니다.
 
-클라이언트 코드를 모르는 경우 [!DNL Target] 사용자 인터페이스에서 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**&#x200B;을(를) 클릭합니다. 클라이언트 코드는 [!UICONTROL Account Details] 섹션에 표시됩니다.
+클라이언트 코드를 모르는 경우 [!DNL Target] 사용자 인터페이스에서 **[!UICONTROL 관리]** > **[!UICONTROL 구현]**&#x200B;을 클릭합니다. 클라이언트 코드는 [!UICONTROL 계정 세부 정보] 섹션에 표시됩니다.
 
 ### 응답 검사
 
@@ -129,8 +122,8 @@ BATCH.TXT는 파일 이름입니다. CLIENTCODE는 [!DNL Target] 클라이언트
 | 상태 | 세부 사항 |
 | --- | --- |
 | [!UICONTROL complete] | 프로필 배치 업데이트 요청이 완료되었습니다. |
-| [!UICONTROL incomplete] | 프로필 배치 업데이트 요청이 아직 처리 중이며 완료되지 않았습니다. |
-| [!UICONTROL stuck] | 프로필 배치 업데이트 요청이 중단되어 완료할 수 없습니다. |
+| [!UICONTROL 완료 안 됨] | 프로필 배치 업데이트 요청이 아직 처리 중이며 완료되지 않았습니다. |
+| [!UICONTROL 중단] | 프로필 배치 업데이트 요청이 중단되어 완료할 수 없습니다. |
 
 ### 자세한 배치 상태 URL 응답
 

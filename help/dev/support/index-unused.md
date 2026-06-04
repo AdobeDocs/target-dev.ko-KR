@@ -3,8 +3,8 @@ title: 지원 - Adobe Analytics
 description: Adobe Analytics의 지원 페이지입니다.
 source-git-commit: f139f5b910b5d23ea8cf4ee5b00ea5f6fd3c39b2
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 6%
+source-wordcount: '97'
+ht-degree: 8%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 6%
 
 ### 개발자 포럼
 
-[시작](https://adobe.io)
+[시작하기](https://adobe.io)
 
 커뮤니티 전문가 및 Adobe 직원과 토론 및 지원을 엽니다.
 

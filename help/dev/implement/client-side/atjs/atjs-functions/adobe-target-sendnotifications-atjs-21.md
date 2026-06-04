@@ -1,23 +1,18 @@
 ---
 keywords: adobe.target.sendNotifications, sendNotifications, sendnotifications, send notifications, notifications, at.js, functions, function, $9
-description: 경험이 [!UICONTROL applyOffer]을(를) 사용하지 않고 렌더링될 때 at.js에 대해 [!UICONTROL adobe.target.sendNotifications()]을(를) 사용하여  [!DNL Target] edge로 알림을 보냅니다. (at.js.2.1 +)
+description: 경험이 [!UICONTROL applyOffer]를 사용하지 않고 렌더링될 때 at.js에 대해 [!UICONTROL adobe.target.sendNotifications()]을(를) 사용하여  [!DNL Target] edge로 알림을 보냅니다. (at.js.2.1 +)
 title: adobe.target.sendNotifications() 함수를 사용하는 방법은 무엇입니까?
 feature: at.js
 exl-id: 1a08da10-31a0-4b0b-af7d-91ed7d32c308
 TQID: https://experienceleague.adobe.com/QprkTK-0WGq-fzJ9e3FUSAZAandaZFiUY62-zQ6ajY8
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 638
+source-wordcount: 642
 ht-degree: 83%
 
 ---
@@ -49,7 +44,7 @@ ht-degree: 83%
 | Request > notifications > order | 개체 | 아니오 |  | 순서 세부 사항을 설명하는 개체입니다. |
 | Request > notifications > order > id | 문자열 | 아니오 | `<=` 250자. | 주문 ID. |
 | Request > notifications > order > total | 문자열 | 아니오 | `>=` 0 | 주문 총액. |
-| Request > notifications > order > purchasedProductIds | 문자열의 배열 | 아니요 | <ul><li>값을 비워둘 수 없습니다.</li><li>각 제품 ID의 최대 길이는 50자입니다.</li><li>쉼표로 구분되고 연결된 제품 ID의 최대 길이가 250자를 초과하면 안 됩니다.</li></ul> | 주문 제품 ID입니다. |
+| Request > notifications > order > purchasedProductIds | 문자열의 배열 | 아니오 | <ul><li>값을 비워둘 수 없습니다.</li><li>각 제품 ID의 최대 길이는 50자입니다.</li><li>쉼표로 구분되고 연결된 제품 ID의 최대 길이가 250자를 초과하면 안 됩니다.</li></ul> | 주문 제품 ID입니다. |
 | Request > notifications > product | 개체 | 아니오 |  |  |
 | Request > notifications > product > id | 문자열 | 아니오 | `<=` 128자이며, 비워 둘 수 없습니다. | 제품 ID. |
 | Request > notifications > product > categoryId | 문자열 | 아니오 | `<=` 128자이며, 비워 둘 수 없습니다. | 카테고리 ID입니다. |

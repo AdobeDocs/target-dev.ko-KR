@@ -1,10 +1,10 @@
 ---
-title: Experience Cloud과 통합
-description: Experience Cloud과 통합
+title: Experience Cloud와 통합
+description: Experience Cloud와 통합
 keywords: 배달 api
 source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '482'
 ht-degree: 7%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 7%
 <!-- The content on this page was originally pulled from the legacy Delivery API doc site, and was subsequently found to be an outdated version of information now found on [Implement > Server-side > Integration > A4T Reporting](../../implement/server-side/sdk-guides/integration-with-experience-cloud/a4t-reporting.md) and [Implement > Server-side > Integration > AAM Segments](../../implement/server-side/sdk-guides/integration-with-experience-cloud/aam-segments.md). Therefore sunsetting this page, but not deleting it from the repo immediately, pending a more thorough examination to avoid inadvertently deleting relevant content. -->
 
 
-# Experience Cloud과 통합
+# Experience Cloud와 통합
 
 ## Adobe Analytics for Target (A4T)
 

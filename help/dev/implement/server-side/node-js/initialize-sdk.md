@@ -4,19 +4,14 @@ description: create 메서드를 사용하여 Node.js SDK을 초기화하고  [!
 feature: APIs/SDKs
 exl-id: 71516e44-508a-4d8d-9f2b-7c54243e9c60
 TQID: https://experienceleague.adobe.com/uawle0-l5bcv-FuXMLkPc8kIf8DvbkRqAYelr-ehNLk
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 321
-ht-degree: 18%
+source-wordcount: 332
+ht-degree: 17%
 
 ---
 
@@ -40,9 +35,9 @@ TargetClient.create(options: Object): TargetClient
 
 | 이름 | 유형 | 필수 | 기본값 | 설명 |
 | --- | --- | --- | --- | --- |
-| 클라이언트 | 문자열 | 예 | 없음 | [!UICONTROL Adobe Target Client ID] |
-| organizationId | 문자열 | 예 | 없음 | [!UICONTROL Experience Cloud Organization ID] |
-| 환경 | 문자열 | 아니요 | production | 대상 환경 이름입니다. [!DNL Target] UI에서 [!UICONTROL Administration] > [!UICONTROL Environments]입니다. |
+| 클라이언트 | 문자열 | 예 | 없음 | [!UICONTROL Adobe Target 클라이언트 ID] |
+| organizationId | 문자열 | 예 | 없음 | [!UICONTROL Experience Cloud 조직 ID] |
+| 환경 | 문자열 | 아니요 | production | 대상 환경 이름입니다. [!DNL Target] UI에서 [!UICONTROL 관리] > [!UICONTROL 환경]입니다. |
 | timeout | 숫자 | 아니오 | 3000 | 시간 제한(밀리초) |
 | serverDomain | 문자열 | 아니오 | `*client*.tt.omtrdc.net` | 기본 호스트 이름 무시 |
 | secure | 부울 | 아니요 | true | HTTP 체계를 적용하도록 설정 해제 |

@@ -5,12 +5,9 @@ title: iOS 앱에서  [!DNL Target] 위치 및 성공 지표를 만들려면 어
 feature: Implement Mobile
 exl-id: 755c8b26-5c60-48fc-9e7e-5e97a25edb78
 TQID: https://experienceleague.adobe.com/frolzqCgdL0iz5Z3E8OaJmP6yiVq7jEYiWn6LD4bocA
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 469
@@ -28,11 +25,11 @@ ht-degree: 63%
 >
 >[모바일 앱용 Adobe Experience Platform SDK](https://developer.adobe.com/client-sdks/documentation/){target=_blank}은(는) 모바일 앱에서 [!DNL Adobe Experience Cloud] 솔루션과 서비스를 제공하는 데 권장되는 솔루션입니다.
 
-이 섹션에는 앱용 템플릿으로 사용할 수 있는 샘플 코드가 포함되어 있습니다. 이 섹션의 샘플에는 iOS용 코드가 포함되어 있습니다. 동일한 패턴이 Android에 적용됩니다. Android 관련 구문은 [Experience Cloud 솔루션용 Android SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/android/target-android/target-main.html?lang=ko) 안내서에서 찾을 수 있습니다.
+이 섹션에는 앱용 템플릿으로 사용할 수 있는 샘플 코드가 포함되어 있습니다. 이 섹션의 샘플에는 iOS용 코드가 포함되어 있습니다. 동일한 패턴이 Android에 적용됩니다. Android 관련 구문은 [Experience Cloud 솔루션용 Android SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/android/target-android/target-main.html) 안내서에서 찾을 수 있습니다.
 
 >[!NOTE]
 >
->사용 가능한 모든 [!DNL Target] 메서드의 목록은 [Mobile 설명서](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-target-methods.html?lang=ko)를 참조하세요.
+>사용 가능한 모든 [!DNL Target] 메서드의 목록은 [Mobile 설명서](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-target-methods.html)를 참조하세요.
 
 앱에서 [!DNL Target] 위치를 만들고 요청하려면 두 가지 기본 메서드가 있습니다.
 

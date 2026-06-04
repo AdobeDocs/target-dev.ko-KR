@@ -1,31 +1,25 @@
 ---
 keywords: 구현, javascript 라이브러리, js, atjs, 온디바이스 의사 결정, 온디바이스 의사 결정, at.js, 온디바이스, 온디바이스, 문제 해결, 문제 해결, 구현2
-description: at.js 라이브러리를 사용하여 [!UICONTROL on-device decisioning] 문제를 해결하는 방법을 알아봅니다.
+description: at.js 라이브러리를 사용하여 [!UICONTROL 온디바이스 의사 결정]의 문제를 해결하는 방법을 알아봅니다.
 title: at.js JavaScript 라이브러리를 사용하여 온디바이스 의사 결정 문제를 해결하려면 어떻게 합니까?
 feature: at.js
 exl-id: b9530cc7-5e83-4fdf-bde9-b2492e0861ff
 TQID: https://experienceleague.adobe.com/Ji3jAHC0Ek7FrVnabEEMm-KCtxJLJ5rSz4uyi6sWpiE
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 267
+source-wordcount: 281
 ht-degree: 0%
 
 ---
 
-# at.js에 대한 [!UICONTROL on-device decisioning] 문제 해결
+# at.js에 대한 [!UICONTROL 온디바이스 의사 결정] 문제 해결
 
-at.js JavaScript 라이브러리를 사용하여 [!UICONTROL Adobe Target]의 [!UICONTROL on-device decisioning] 문제를 해결하려면 다음 단계를 완료하십시오.
+at.js JavaScript 라이브러리를 사용하여 [!UICONTROL Adobe Target]에서 [!UICONTROL 온디바이스 의사 결정]의 문제를 해결하려면 다음 단계를 완료하십시오.
 
 ## 1단계: at.js에 대한 콘솔 로그 활성화
 
@@ -60,7 +54,7 @@ AT: LD.ArtifactProvider artifact received - status=200
 
 ## 3단계: at.js 사용자 지정 이벤트를 사용하여 규칙 아티팩트 다운로드 확인
 
-at.js 라이브러리는 [!UICONTROL on-device decisioning]을(를) 지원하도록 두 개의 새로운 사용자 지정 이벤트를 전달합니다.
+at.js 라이브러리는 [!UICONTROL 온디바이스 의사 결정]을 지원하도록 두 개의 새로운 사용자 지정 이벤트를 전달합니다.
 
 * `adobe.target.event.ARTIFACT_DOWNLOAD_SUCCEEDED`
 * `adobe.target.event.ARTIFACT_DOWNLOAD_FAILED`

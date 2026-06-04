@@ -1,24 +1,19 @@
 ---
 keywords: mboxDefine, mboxdefine, mboxDefine, mboxUpdate, mboxupdate, mbox 업데이트, at.js, 함수, 함수, mboxDefine0
 description: ' [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 [!UICONTROL mboxDefine()] 및 [!UICONTROL mboxUpdate()] 함수를 사용하여 mbox를 정의하거나 업데이트하십시오. (at.js 1.x)'
-title: '[!UICONTROL mboxDefine()] 및 [!UICONTROL mboxUpdate()] 함수를 사용하려면 어떻게 해야 합니까?'
+title: '[!UICONTROL mboxDefine()] 및 [!UICONTROL mboxUpdate()] 함수를 사용하는 방법은 무엇입니까?'
 feature: at.js
 exl-id: 0a7dbea2-1cbd-4a5b-ba68-4c76a88d65c4
 TQID: https://experienceleague.adobe.com/Fn-Ej8jk2AMEn79tOtRoP9GQc36Ugy6FtXyn6x7jkmA
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 202
-ht-degree: 47%
+source-wordcount: 208
+ht-degree: 46%
 
 ---
 

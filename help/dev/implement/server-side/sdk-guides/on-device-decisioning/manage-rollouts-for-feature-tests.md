@@ -1,23 +1,16 @@
 ---
 title: 기능 테스트에 대한 롤아웃 관리
-description: '[!UICONTROL on-device decisioning]을(를) 사용하여 기능 테스트에 대한 롤아웃을 관리하는 방법을 알아봅니다.'
+description: '[!UICONTROL 온디바이스 의사 결정]을 사용하여 기능 테스트에 대한 롤아웃을 관리하는 방법을 알아봅니다.'
 feature: APIs/SDKs
 exl-id: caa91728-6ac0-4583-a594-0c8fe616342d
 TQID: https://experienceleague.adobe.com/soG8leVV3R4Y4FSns5oIJ43oziIhtOb2zJ5bkFYxeo0
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 525
+source-wordcount: 596
 ht-degree: 1%
 
 ---
@@ -26,63 +19,63 @@ ht-degree: 1%
 
 ## 단계 요약
 
-1. 조직에 대해 [!UICONTROL on-device decisioning] 사용
-1. [!UICONTROL A/B Test] 활동 만들기
+1. 조직에 대해 [!UICONTROL 온디바이스 의사 결정] 사용
+1. [!UICONTROL A/B 테스트] 활동 만들기
 1. 기능 및 롤아웃 설정 정의
 1. 응용 프로그램에서 기능 구현 및 렌더링
 1. 애플리케이션의 이벤트에 대한 추적 구현
 1. A/B 활동 활성화
 1. 필요에 따라 롤아웃 및 트래픽 할당 조정
 
-## &#x200B;1. 조직에 대해 [!UICONTROL on-device decisioning] 사용
+## &#x200B;1. 조직에 대해 [!UICONTROL 온디바이스 의사 결정] 사용
 
-온디바이스 의사 결정을 활성화하면 A/B 활동이 거의 0에 가까운 지연 시간에 실행됩니다. 이 기능을 사용하려면 [!DNL Adobe Target]에서 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]**(으)로 이동하여 **[!UICONTROL On-Device Decisioning]** 전환을 사용하도록 설정하십시오.
+온디바이스 의사 결정을 활성화하면 A/B 활동이 거의 0에 가까운 지연 시간에 실행됩니다. 이 기능을 사용하려면 [!DNL Adobe Target]에서 **[!UICONTROL 관리]** > **[!UICONTROL 구현]** > **[!UICONTROL 계정 세부 정보]**(으)로 이동한 다음 **[!UICONTROL 디바이스에서 의사 결정]** 전환을 사용하도록 설정하십시오.
 
 ![대체 이미지](assets/asset-odd-toggle.png)
 
 >[!NOTE]
 >
->[!UICONTROL On-Device Decisioning] 전환을 활성화하거나 비활성화하려면 관리자 또는 승인자 [사용자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=ko)이(가) 있어야 합니다.
+>[!UICONTROL 디바이스에서 의사 결정] 전환을 활성화하거나 비활성화하려면 관리자 또는 승인자 [사용자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html)이(가) 있어야 합니다.
 
-[!UICONTROL On-Device Decisioning] 전환을 활성화한 후 [!DNL Adobe Target]에서 클라이언트에 대한 *규칙 아티팩트*&#x200B;를 생성하기 시작합니다.
+[!UICONTROL 디바이스에서 의사 결정] 전환을 활성화한 후 [!DNL Adobe Target]에서 클라이언트에 대한 *규칙 아티팩트*&#x200B;를 생성하기 시작합니다.
 
-## &#x200B;2. [!UICONTROL A/B Test] 활동 만들기
+## &#x200B;2. [!UICONTROL A/B 테스트] 활동 만들기
 
-1. [!DNL Adobe Target]에서 **[!UICONTROL Activities]** 페이지로 이동한 다음 **[!UICONTROL Create Activity]** > **[!UICONTROL A/B test]**&#x200B;을(를) 선택합니다.
+1. [!DNL Adobe Target]에서 **[!UICONTROL 활동]** 페이지로 이동한 다음 **[!UICONTROL 활동 만들기]** > **[!UICONTROL A/B 테스트]**&#x200B;를 선택합니다.
 
    ![대체 이미지](assets/asset-ab.png)
 
-1. **[!UICONTROL Create A/B Test Activity]** 모달에서 기본 **[!UICONTROL Web]** 옵션을 선택한 상태로 둡니다(1). **[!UICONTROL Form]**&#x200B;을(를) 경험 작성기로 선택합니다(2). **[!UICONTROL No Property Restrictions]**(3)을(를) 사용하여 **[!UICONTROL Default Workspace]**&#x200B;을(를) 선택하고 **[!UICONTROL Next]**(4)을(를) 클릭합니다.
+1. **[!UICONTROL A/B 테스트 활동 만들기]** 모달에서 기본 **[!UICONTROL Web]** 옵션을 선택한 상태로 둡니다(1). **[!UICONTROL Form]**&#x200B;을(를) 경험 작성기로 선택합니다(2). **[!UICONTROL 속성 제한 없음]**(3)이 있는 **[!UICONTROL 기본 Workspace]**(을)를 선택하고 **[!UICONTROL 다음]**(4)을 클릭합니다.
 
    ![대체 이미지](assets/asset-form.png)
 
 ## &#x200B;3. 기능 및 롤아웃 설정 정의
 
-활동 만들기 **[!UICONTROL Experiences]** 단계에서 활동의 이름을 입력합니다(1). 기능에 대한 롤아웃을 관리할 애플리케이션 내의 위치 이름(2)을 입력합니다. 예를 들어 `ondevice-rollout` 또는 `homepage-addtocart-rollout`은(는) 기능 롤아웃을 관리할 대상을 나타내는 위치 이름입니다. 아래 예제에서 `ondevice-rollout`은(는) 경험 A에 대해 정의된 위치입니다. 선택적으로 대상 세분화(4)를 추가하여 활동에 대한 자격을 제한할 수 있습니다.
+활동을 만드는 **[!UICONTROL 경험]** 단계에서 활동의 이름을 입력하십시오(1). 기능에 대한 롤아웃을 관리할 애플리케이션 내의 위치 이름(2)을 입력합니다. 예를 들어 `ondevice-rollout` 또는 `homepage-addtocart-rollout`은(는) 기능 롤아웃을 관리할 대상을 나타내는 위치 이름입니다. 아래 예제에서 `ondevice-rollout`은(는) 경험 A에 대해 정의된 위치입니다. 선택적으로 대상 세분화(4)를 추가하여 활동에 대한 자격을 제한할 수 있습니다.
 
 ![대체 이미지](assets/asset-location-rollout.png)
 
-1. 같은 페이지의 **[!UICONTROL Content]** 섹션에서 아래와 같이 드롭다운(1)의 **[!UICONTROL Create JSON Offer]**&#x200B;을(를) 선택합니다.
+1. 같은 페이지의 **[!UICONTROL 콘텐츠]** 섹션에서 아래와 같이 드롭다운(1)에서 **[!UICONTROL JSON 오퍼 만들기]**&#x200B;를 선택합니다.
 
    ![대체 이미지](assets/asset-offer.png)
 
-1. 표시되는 **[!UICONTROL JSON Data]** 텍스트 상자에 유효한 JSON 개체(2)를 사용하여 경험 A(1)에서 이 활동으로 롤아웃하려는 기능에 대한 기능 플래그 변수를 입력합니다.
+1. 표시되는 **[!UICONTROL JSON 데이터]** 텍스트 상자에 유효한 JSON 개체(2)를 사용하여 경험 A(1)에서 이 활동으로 롤아웃하려는 기능에 대한 기능 플래그 변수를 입력합니다.
 
    ![대체 이미지](assets/asset-json-a-rollout.png)
 
-1. **[!UICONTROL Next]**(1)을(를) 클릭하여 **[!UICONTROL Targeting]** 활동 만들기 단계로 진행합니다.
+1. **[!UICONTROL 다음]**(1)을 클릭하여 **[!UICONTROL 타깃팅]** 활동 만들기 단계로 진행합니다.
 
    ![대체 이미지](assets/asset-next-2-t-rollout.png)
 
-1. **[!UICONTROL Targeting]** 단계에서는 단순성을 위해 **[!UICONTROL All Visitors]** 대상(1)을 유지합니다. 하지만 트래픽 할당 (2)를 10%로 조정합니다. 이렇게 하면 사이트 방문자의 10%로만 기능이 제한됩니다. 다음(3)을 클릭하여 **[!UICONTROL Goals & Settings]** 단계로 진행합니다.
+1. **[!UICONTROL 타깃팅]** 단계에서 **[!UICONTROL 모든 방문자]** 대상(1)을 유지합니다. 하지만 트래픽 할당 (2)를 10%로 조정합니다. 이렇게 하면 사이트 방문자의 10%로만 기능이 제한됩니다. 다음(3)을 클릭하여 **[!UICONTROL 목표 및 설정]** 단계로 진행합니다.
 
    ![대체 이미지](assets/asset-next-2-g-rollout.png)
 
-1. **[!UICONTROL Goals & Settings]** 단계에서 **[!UICONTROL Adobe Target]** (1)을(를) **[!UICONTROL Reporting Source]**(으)로 선택하여 [!DNL Adobe Target] UI에서 활동 결과를 봅니다.
+1. **[!UICONTROL 목표 및 설정]** 단계에서 **[!UICONTROL Adobe Target]** (1)을(를) **[!UICONTROL 보고 Source]**(으)로 선택하여 [!DNL Adobe Target] UI에서 활동 결과를 봅니다.
 
-1. 활동을 측정할 **[!UICONTROL Goal Metric]**&#x200B;을(를) 선택하십시오. 이 예에서 성공적인 전환은 사용자가 orderConfirm (2) 위치에 도달했는지 여부에 의해 표시된 대로 사용자가 항목을 구매했는지 여부를 기반으로 합니다.
+1. 활동을 측정할 **[!UICONTROL 목표 지표]**&#x200B;를 선택하십시오. 이 예에서 성공적인 전환은 사용자가 orderConfirm (2) 위치에 도달했는지 여부에 의해 표시된 대로 사용자가 항목을 구매했는지 여부를 기반으로 합니다.
 
-1. **[!UICONTROL Save & Close]**(3)을(를) 클릭하여 활동을 저장합니다.
+1. **[!UICONTROL 저장 및 닫기]**(3)를 클릭하여 활동을 저장합니다.
 
    ![대체 이미지](assets/asset-conv-rollout.png)
 

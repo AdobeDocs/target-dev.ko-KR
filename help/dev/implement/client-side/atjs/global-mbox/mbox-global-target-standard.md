@@ -5,22 +5,15 @@ title: 이전 구현에서 글로벌 mbox를 사용할 수 있습니까?
 feature: at.js
 exl-id: fe608b5e-ff66-4ba2-a622-d4f7307a9ca9
 TQID: https://experienceleague.adobe.com/BCubNDwB8gxZ9bpuCNhxcnFnjB1xQK8ZRkLveinPj4w
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 285
-ht-degree: 20%
+source-wordcount: 304
+ht-degree: 19%
 
 ---
 
@@ -34,15 +27,15 @@ ht-degree: 20%
 
 [!DNL Target]와 레거시 구현 둘 다에 기존 글로벌 mbox를 사용하려면, 몇 개의 매개 변수를 설정해야 합니다.
 
-1. [!DNL Target]&#x200B;(으)로 이동한 다음 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**&#x200B;을(를) 클릭합니다.
+1. [!DNL Target]&#x200B;(으)로 이동한 다음 **[!UICONTROL 관리]** > **[!UICONTROL 구현]**&#x200B;을 클릭합니다.
 
-   기본적으로 **[!UICONTROL Page load enabled (Auto-create global mbox]**&#x200B;이(가) 활성화되어 있고 사용자 지정 글로벌 mbox의 이름은 `target-global-mbox`입니다.
+   기본적으로 **[!UICONTROL 페이지 로드가 활성화되었습니다(글로벌 mbox를 자동으로 만들기]**&#x200B;이 활성화됨). 사용자 지정 글로벌 mbox의 이름은 `target-global-mbox`입니다.
 
-1. 기존 mbox를 사용하려면 **[!UICONTROL Page load enabled (Auto-create global mbox]**&#x200B;을(를) 사용하지 않도록 설정하고 **[!UICONTROL Global Mbox]** 필드에 이전에 만든 글로벌 mbox의 이름을 지정하십시오.
+1. 기존 mbox를 사용하려면 **[!UICONTROL 페이지 로드가 활성화됨(글로벌 mbox를 자동으로 만들기]**)을 해제하고 **[!UICONTROL 글로벌 mbox]** 필드에 이전에 만든 글로벌 mbox의 이름을 지정하십시오.
 
    글로벌 Mbox 드롭다운에 계정의 모든 mbox가 나열됩니다. 아직 존재하지 않는 mbox를 사용하려면, mbox를 만듭니다.
 
-1. **[!UICONTROL Save]** 아이콘을 클릭합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
    계정 설정이 업데이트됩니다.
 

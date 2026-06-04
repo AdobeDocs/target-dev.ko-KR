@@ -1,24 +1,17 @@
 ---
 title: Adobe Target 배달 API 미리 가져오기
-description: '[!UICONTROL Adobe Target Delivery API]에서 미리 가져오기 사용 방법'
+description: '[!UICONTROL Adobe Target 배달 API]에서 미리 가져오기를 사용하려면 어떻게 합니까?'
 keywords: 배달 api
 exl-id: eab88e3a-442c-440b-a83d-f4512fc73e75
 feature: APIs/SDKs
 TQID: https://experienceleague.adobe.com/gthn2vJrIjEkmQdpsf4J818OrzFiLpeRvXXRAUp2SiY
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 548
+source-wordcount: 578
 ht-degree: 0%
 
 ---
@@ -37,7 +30,7 @@ ht-degree: 0%
 
 ## Mbox 미리 가져오기
 
-모바일 앱 및 서버와 같은 클라이언트는 세션 내의 특정 방문자에 대해 여러 mbox를 미리 가져오고 캐시하여 [!UICONTROL Adobe Target Delivery API]에 대한 여러 호출을 방지할 수 있습니다.
+모바일 앱 및 서버와 같은 클라이언트는 세션 내에서 지정된 방문자에 대해 여러 mbox를 미리 가져오고 캐시하여 [!UICONTROL Adobe Target 배달 API]에 대한 여러 호출을 방지할 수 있습니다.
 
 ```shell shell-session
 curl -X POST \
@@ -132,11 +125,11 @@ curl -X POST \
 }
 ```
 
-응답 내에 특정 `mbox`의 방문자에게 표시할 경험이 포함된 `content` 필드가 표시됩니다. 이 기능은 서버에 캐시된 경우 매우 유용합니다. 방문자가 세션 내에서 웹 또는 모바일 응용 프로그램과 상호 작용하고 응용 프로그램의 특정 페이지에서 `mbox`을(를) 방문할 때 다른 [!UICONTROL Adobe Target Delivery API] 호출을 수행하는 대신 캐시에서 경험을 전달할 수 있습니다. 그러나 경험이 `mbox`에서 방문자에게 전달되면 노출 로깅이 수행되도록 배달 API 호출을 통해 `notification`이(가) 전송됩니다. 이는 `prefetch` 호출의 응답이 캐시되기 때문입니다. 즉, 방문자는 `prefetch` 호출이 발생할 때 경험을 보지 못했습니다. `notification` 프로세스에 대한 자세한 내용은 [알림](notifications.md)을 참조하세요.
+응답 내에 특정 `mbox`의 방문자에게 표시할 경험이 포함된 `content` 필드가 표시됩니다. 이 기능은 서버에 캐시된 경우 매우 유용합니다. 방문자가 세션 내에서 웹 또는 모바일 애플리케이션과 상호 작용하고 애플리케이션의 특정 페이지에서 `mbox`을(를) 방문할 때 다른 [!UICONTROL Adobe Target 배달 API] 호출을 수행하는 대신 캐시에서 경험을 전달할 수 있습니다. 그러나 경험이 `mbox`에서 방문자에게 전달되면 노출 로깅이 수행되도록 배달 API 호출을 통해 `notification`이(가) 전송됩니다. 이는 `prefetch` 호출의 응답이 캐시되기 때문입니다. 즉, 방문자는 `prefetch` 호출이 발생할 때 경험을 보지 못했습니다. `notification` 프로세스에 대한 자세한 내용은 [알림](notifications.md)을 참조하세요.
 
 ## [!UICONTROL Analytics for Target] 사용 시 `clickTrack` 지표로 mbox 미리 가져오기(A4T)
 
-[[!UICONTROL Adobe Analytics for Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=ko){target=_blank}(A4T)은(는) [!DNL Analytics] 전환 지표 및 대상 세그먼트를 기반으로 활동을 만들 수 있는 솔루션 간 통합입니다.
+[[!UICONTROL Target용 Adobe Analytics]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html){target=_blank}(A4T)는 [!DNL Analytics] 전환 지표 및 대상 세그먼트를 기반으로 활동을 만들 수 있는 솔루션 간 통합입니다.
 
 다음 코드 조각은 `clickTrack` 지표가 포함된 mbox 미리 가져오기의 응답으로서, 오퍼를 클릭했음을 [!DNL Analytics]에 알립니다.
 
@@ -181,7 +174,7 @@ curl -X POST \
 
 ## 미리 가져오기 보기
 
-보기는 단일 페이지 애플리케이션(SPA) 및 모바일 애플리케이션을 보다 원활하게 지원합니다. 보기는 SPA 또는 모바일 경험을 함께 구성하는 시각적 요소의 논리 그룹으로 볼 수 있습니다. 이제 배달 API를 통해 [SPA용 보기](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md)에서 수정된 VEC 생성 [[!UICONTROL A/B Test]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=ko){target=_blank} 및 [[!UICONTROL Experience Targeting]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=ko){target=_blank} (X)T 활동을 미리 가져올 수 있습니다.
+보기는 단일 페이지 애플리케이션(SPA) 및 모바일 애플리케이션을 보다 원활하게 지원합니다. 보기는 SPA 또는 모바일 경험을 함께 구성하는 시각적 요소의 논리 그룹으로 볼 수 있습니다. 이제 배달 API를 통해 VEC가 만든 [[!UICONTROL A/B 테스트]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html){target=_blank} 및 [[!UICONTROL 경험 타깃팅]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html){target=_blank}(X)T 활동([SPA용 보기](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md)에서 수정)을 미리 가져올 수 있습니다.
 
 ```shell  {line-numbers="true"}
 curl -X POST \
@@ -211,7 +204,7 @@ curl -X POST \
 }'
 ```
 
-위의 예제 호출은 [!UICONTROL A/B Test]에 대해 SPA VEC를 통해 만들어진 모든 보기 및 `channel` 웹에 대해 표시할 XT 활동을 미리 가져옵니다. 이 호출은 `url`:`https://target.enablementadobe.com/react/demo/#/`을(를) 방문하는 `tntId`:`84e8d0e211054f18af365d65f45e902b.28_131`을(를) 가진 방문자가 사용할 수 있는 [!UICONTROL A/B Test] 또는 XT 활동에서 모든 보기를 미리 가져옵니다.
+위의 예제 호출은 [!UICONTROL A/B 테스트]를 위해 SPA VEC를 통해 만들어진 모든 보기 및 웹 `channel`에 대해 표시할 XT 활동을 미리 가져옵니다. 이 호출은 `url`:`https://target.enablementadobe.com/react/demo/#/`을(를) 방문하는 `tntId`:`84e8d0e211054f18af365d65f45e902b.28_131`을(를) 가진 방문자가 사용할 수 있는 [!UICONTROL A/B 테스트] 또는 XT 활동에서 모든 보기를 미리 가져옵니다.
 
 ```JSON  {line-numbers="true"}
 {

@@ -4,20 +4,13 @@ description: 온디바이스 의사 결정을 사용하여 기능 플래그로 A
 feature: APIs/SDKs
 exl-id: abf66e00-742d-4d40-9b6e-9bd71638c31a
 TQID: https://experienceleague.adobe.com/OnRFP7WgNvPy-9v8Ea8te3v5QAUlcR2WUlD7yGB-QzQ
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 749
+source-wordcount: 813
 ht-degree: 1%
 
 ---
@@ -26,8 +19,8 @@ ht-degree: 1%
 
 ## 단계 요약
 
-1. 조직에 대해 [!UICONTROL on-device decisioning] 사용
-1. [!UICONTROL A/B Test] 활동 만들기
+1. 조직에 대해 [!UICONTROL 온디바이스 의사 결정] 사용
+1. [!UICONTROL A/B 테스트] 활동 만들기
 1. A 및 B 정의
 1. 대상자 추가
 1. 트래픽 할당 설정
@@ -41,32 +34,32 @@ ht-degree: 1%
 >
 >가을 테마 홈 페이지 재디자인이 사용자에게 잘 표시되는지 여부를 확인하려고 한다고 가정해 보겠습니다. [!DNL Adobe Target]에서 A/B 실험을 실행하여 테스트하기로 합니다. 또한 부정적 또는 느린 사용자 경험이 결과를 왜곡하지 않도록 실험이 우수한 성능으로 전달되는지 확인해야 합니다.
 
-## &#x200B;1. 조직에 대해 [!UICONTROL on-device decisioning] 사용
+## &#x200B;1. 조직에 대해 [!UICONTROL 온디바이스 의사 결정] 사용
 
-온디바이스 의사 결정을 활성화하면 A/B 활동이 거의 0에 가까운 지연 시간에 실행됩니다. 이 기능을 사용하려면 [!DNL Adobe Target]에서 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]**(으)로 이동하여 **[!UICONTROL On-Device Decisioning]** 전환을 사용하도록 설정하십시오.
+온디바이스 의사 결정을 활성화하면 A/B 활동이 거의 0에 가까운 지연 시간에 실행됩니다. 이 기능을 사용하려면 [!DNL Adobe Target]에서 **[!UICONTROL 관리]** > **[!UICONTROL 구현]** > **[!UICONTROL 계정 세부 정보]**(으)로 이동한 다음 **[!UICONTROL 디바이스에서 의사 결정]** 전환을 사용하도록 설정하십시오.
 
 &lt;!— image-odd4.png 삽입 —>
 ![대체 이미지](assets/asset-odd-toggle.png)
 
 >[!NOTE]
 >
->온디바이스 의사 결정 토글을 활성화하거나 비활성화하려면 관리자 또는 승인자 [사용자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=ko)이 있어야 합니다.
+>온디바이스 의사 결정 토글을 활성화하거나 비활성화하려면 관리자 또는 승인자 [사용자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html)이 있어야 합니다.
 
-**[!UICONTROL On-Device Decisioning]** 전환을 활성화한 후 [!DNL Adobe Target]에서 클라이언트에 대한 규칙 아티팩트를 생성하기 시작합니다.
+**[!UICONTROL 디바이스에서 의사 결정]** 토글을 활성화한 후 [!DNL Adobe Target]에서 클라이언트에 대한 규칙 아티팩트를 생성하기 시작합니다.
 
-## &#x200B;2. [!UICONTROL A/B Test] 활동 만들기
+## &#x200B;2. [!UICONTROL A/B 테스트] 활동 만들기
 
-[!DNL Adobe Target]에서 **[!UICONTROL Activities]** 페이지로 이동한 다음 **[!UICONTROL Create Activity]** > **[!UICONTROL A/B test]**&#x200B;을(를) 선택합니다.
+[!DNL Adobe Target]에서 **[!UICONTROL 활동]** 페이지로 이동한 다음 **[!UICONTROL 활동 만들기]** > **[!UICONTROL A/B 테스트]**&#x200B;를 선택합니다.
 
 ![대체 이미지](assets/asset-ab.png)
 
-**[!UICONTROL Create A/B Test Activity]** 모달에서 기본 **[!UICONTROL Web]** 옵션을 선택한 상태로 둡니다(1). **[!UICONTROL Form]**&#x200B;을(를) 경험 작성기로 선택합니다(2). **[!UICONTROL Property Restrictions]**&#x200B;이(가) 없는 **[!UICONTROL Default Workspace]**(3)을(를) 선택하고 **[!UICONTROL Next]**(4)을(를) 클릭합니다.
+**[!UICONTROL A/B 테스트 활동 만들기]** 모달에서 기본 **[!UICONTROL Web]** 옵션을 선택한 상태로 둡니다(1). **[!UICONTROL Form]**&#x200B;을(를) 경험 작성기로 선택합니다(2). **[!UICONTROL 속성 제한 없이**[!UICONTROL &#x200B;기본 Workspace ]**(3)을(를) 선택하고**[!UICONTROL &#x200B;다음&#x200B;]**(4)을(를) 클릭합니다.]**
 
 ![대체 이미지](assets/asset-form.png)
 
 ## &#x200B;3. A 및 B 정의
 
-1. 활동을 만드는 **[!UICONTROL Experiences]** 단계에서 **[!UICONTROL Add Experience]**(2) 단추를 클릭하여 활동의 이름(1)을 입력하고 두 번째 경험인 경험 B를 추가합니다. A/B 테스트를 실행할 애플리케이션 내의 위치(3)의 이름을 입력합니다. 아래 표시된 예에서 홈 페이지는 경험 A에 대해 정의된 위치입니다. (또한 경험 B에 대해 정의된 위치입니다.)
+1. 활동을 만드는 **[!UICONTROL 경험]** 단계에서 **[!UICONTROL 경험 추가]**(2) 단추를 클릭하여 활동의 이름(1)을 입력하고 두 번째 경험인 경험 B를 추가합니다. A/B 테스트를 실행할 애플리케이션 내의 위치(3)의 이름을 입력합니다. 아래 표시된 예에서 홈 페이지는 경험 A에 대해 정의된 위치입니다. (또한 경험 B에 대해 정의된 위치입니다.)
 
    경험 A는 현재 홈 페이지 디자인인 컨트롤을 정의합니다.
 
@@ -76,7 +69,7 @@ ht-degree: 1%
 
    ![대체 이미지](assets/asset-exp-b.png)
 
-1. 경험 B에서 아래 (1)과 같이 **[!UICONTROL Create JSON Offer]**&#x200B;을(를) 선택하여 콘텐츠를 **[!UICONTROL Default Content]**&#x200B;에서 다시 디자인된 콘텐츠로 변경하려면 클릭합니다.
+1. 경험 B에서 아래 (1)과 같이 **[!UICONTROL JSON 오퍼 만들기]**&#x200B;를 선택하여 콘텐츠를 **[!UICONTROL 기본 콘텐츠]**&#x200B;에서 다시 디자인된 콘텐츠로 변경하려면 클릭하십시오.
 
    ![대체 이미지](assets/asset-offer.png)
 
@@ -93,11 +86,11 @@ ht-degree: 1%
 
 먼저 로그인 여부를 기반으로 식별할 수 있는 단골 고객에 대한 재설계를 테스트한다고 가정합니다.
 
-1. **[!UICONTROL Targeting]** 단계에서 **[!UICONTROL All Visitors]** 대상자를 바꾸려면 을(를) 클릭합니다(표시된 대로).
+1. **[!UICONTROL 타깃팅]** 단계에서 아래와 같이 **[!UICONTROL 모든 방문자]** 대상을 바꾸려면 클릭하십시오.
 
    ![대체 이미지](assets/asset-all-audiences.png)
 
-1. **[!UICONTROL Create Audience]** 모달에서 `logged-in = true`인 사용자 지정 규칙을 정의합니다. 로그인한 사용자 그룹을 정의합니다. 활동에서 이 대상을 사용합니다.
+1. **[!UICONTROL 대상 만들기]** 모달에서 `logged-in = true`인 사용자 지정 규칙을 정의합니다. 로그인한 사용자 그룹을 정의합니다. 활동에서 이 대상을 사용합니다.
 
    ![대체 이미지](assets/asset-audience.png)
 
@@ -115,13 +108,13 @@ ht-degree: 1%
 
 ## &#x200B;7. 보고 설정
 
-**[!UICONTROL Goals & Settings]** 단계에서 [!DNL Adobe Target] UI에서 활동 결과를 보려면 **[!UICONTROL Adobe Target]**&#x200B;을(를) **[!UICONTROL Reporting Source]**(으)로 선택하거나, Adobe Analytics UI에서 해당 결과를 보려면 **[!UICONTROL Adobe Analytics]**&#x200B;을(를) 선택하십시오.
+**[!UICONTROL 목표 및 설정]** 단계에서 **[!UICONTROL Adobe Target 보고]**(으)로 **[!UICONTROL Source]**&#x200B;을(를) 선택하여 [!DNL Adobe Target] UI에서 활동 결과를 보거나 **[!UICONTROL Adobe Analytics]**&#x200B;을(를) 선택하여 Adobe Analytics UI에서 활동 결과를 봅니다.
 
 ![대체 이미지](assets/asset-reporting.png)
 
 ## &#x200B;8. KPI 추적을 위한 지표 추가
 
-A/B 테스트를 측정할 **[!UICONTROL Goal Metric]**&#x200B;을(를) 선택하십시오. 이 예에서 성공적인 전환은 사용자가 페이지 하단에 도달하는지 여부를 기반으로 하여 참여를 나타냅니다. 따라서 **[!UICONTROL Conversion]**&#x200B;은(는) 사용자가 페이지 하단 위치를 보았는지 여부에 따라 결정됩니다.
+A/B 테스트를 측정할 **[!UICONTROL 목표 지표]**&#x200B;를 선택하십시오. 이 예에서 성공적인 전환은 사용자가 페이지 하단에 도달하는지 여부를 기반으로 하여 참여를 나타냅니다. 따라서 **[!UICONTROL 전환]**&#x200B;은(는) 사용자가 페이지 하단 위치를 보았는지 여부에 따라 결정됩니다.
 
 ## &#x200B;9. 기능 플래그를 사용하여 A/B 테스트를 실행하는 코드를 애플리케이션에 구현합니다
 

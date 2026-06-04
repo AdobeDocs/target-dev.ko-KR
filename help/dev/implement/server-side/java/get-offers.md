@@ -4,18 +4,14 @@ description: getOffers()를 사용하여 결정을 실행하고  [!DNL Adobe Tar
 feature: APIs/SDKs
 exl-id: 9d7bf956-9d6a-4b4f-a401-2e6814f17f3d
 TQID: https://experienceleague.adobe.com/2oYkwezf-GkZnybeQUKUbCE6sPAHNQkg3Z1KH8s2a-g
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 652
-ht-degree: 13%
+source-wordcount: 664
+ht-degree: 12%
 
 ---
 
@@ -72,10 +68,10 @@ TargetDeliveryRequestBuilder TargetDeliveryRequest.builder()
 | tntId | 문자열 | 아니오 | 사용자의 [!DNL Target]에 있는 기본 식별자입니다. targetCookies에서 가져왔습니다. 제공되지 않을 경우 자동으로 생성됩니다. |
 | mcId | 문자열 | 아니오 | 다른 [!DNL Adobe] 솔루션(ECID) 간에 데이터를 병합하고 공유하는 데 사용됩니다. targetCookies에서 가져왔습니다. 제공되지 않을 경우 자동으로 생성됩니다. |
 | trackingServer | 문자열 | 아니오 | [!DNL Adobe Target]과(와) [!DNL Adobe Analytics]이(가) 데이터를 올바르게 결합하기 위한 Adobe Analytics 서버. |
-| trackingServerSecure | 문자열 | 아니오 | [!DNL Adobe Target]과(와) [!DNL Adobe Analytics]이(가) 데이터를 올바르게 결합하기 위한 [!UICONTROL Adobe Analytics Secure Server]입니다. |
+| trackingServerSecure | 문자열 | 아니오 | [!DNL Adobe Target]과(와) [!DNL Adobe Analytics]이(가) 데이터를 올바르게 결합하기 위한 [!UICONTROL Adobe Analytics 보안 서버]입니다. |
 | decisioningMethod | DecisioningMethod | 아니요 | 온디바이스 의사 결정에 대해 ON_DEVICE 또는 HYBRID 의사 결정 방법을 명시적으로 설정하는 데 사용할 수 있습니다. |
 
-각 필드의 값은 *[!UICONTROL Target View Delivery API]* 요청 사양을 준수해야 합니다. *[!UICONTROL Target View Delivery API]*&#x200B;에 대한 자세한 내용은 [http://developers.adobetarget.com/api/#view-delivery-overview](http://developers.adobetarget.com/api/#view-delivery-overview)을(를) 참조하세요.
+각 필드의 값은 *[!UICONTROL Target 보기 배달 API]* 요청 사양을 준수해야 합니다. *[!UICONTROL Target 보기 배달 API]*&#x200B;에 대한 자세한 내용은 [http://developers.adobetarget.com/api/#view-delivery-overview](http://developers.adobetarget.com/api/#view-delivery-overview)을 참조하세요.
 
 
 ## 응답

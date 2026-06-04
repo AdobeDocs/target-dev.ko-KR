@@ -1,30 +1,28 @@
 ---
 title: Adobe Target 배달 API 단일 또는 일괄 배달
-description: '[!UICONTROL Adobe Target Delivery API]개의 단일 또는 일괄 게재 호출을 사용하는 방법'
+description: '[!UICONTROL Adobe Target 배달 API] 단일 또는 일괄 배달 호출을 사용하는 방법'
 keywords: 배달 api
 exl-id: 525cd1f2-616a-486c-8f49-8117615500bb
 feature: APIs/SDKs
 TQID: https://experienceleague.adobe.com/NMNCubmUyiVOWfq2MnkONSrQCZRqNEh0VJTfFBGptOk
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 448
+source-wordcount: 460
 ht-degree: 0%
 
 ---
 
 # 단일 또는 일괄 게재
 
-[!UICONTROL Adobe Target Delivery API]은(는) 단일 또는 일괄 게재 호출을 지원합니다. 서버에서 단일 또는 여러 mbox에 대한 콘텐츠를 요청할 수 있습니다.
+[!UICONTROL Adobe Target 배달 API]는 단일 또는 일괄 배달 호출을 지원합니다. 서버에서 단일 또는 여러 mbox에 대한 콘텐츠를 요청할 수 있습니다.
 
 단일 호출 대 일괄 호출을 수행하기로 결정할 때 성능 비용을 측정합니다. 사용자에게 표시해야 하는 모든 콘텐츠를 알고 있는 경우, 가장 좋은 방법은 여러 개의 단일 게재 호출을 방지하기 위해 단일 배치 게재 호출로 모든 mbox에 대한 콘텐츠를 검색하는 것입니다.
 
 ## 단일 게재 호출
 
-[!UICONTROL Adobe Target Delivery API]을(를) 통해 하나의 mbox에 대해 사용자에게 표시할 경험을 검색할 수 있습니다. 단일 게재 호출을 수행하는 경우 사용자를 위한 mbox에 대한 추가 콘텐츠를 검색하려면 다른 서버 호출을 시작해야 합니다. 이 작업은 시간이 지남에 따라 매우 비용이 많이 소요될 수 있으므로 단일 배달 API 호출을 사용할 때 접근 방식을 평가해야 합니다.
+[!UICONTROL Adobe Target 배달 API]를 통해 사용자에게 하나의 mbox에 대해 표시할 경험을 검색할 수 있습니다. 단일 게재 호출을 수행하는 경우 사용자를 위한 mbox에 대한 추가 콘텐츠를 검색하려면 다른 서버 호출을 시작해야 합니다. 이 작업은 시간이 지남에 따라 매우 비용이 많이 소요될 수 있으므로 단일 배달 API 호출을 사용할 때 접근 방식을 평가해야 합니다.
 
 ```
 curl -X POST \

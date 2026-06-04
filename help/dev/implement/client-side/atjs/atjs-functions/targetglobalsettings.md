@@ -1,30 +1,18 @@
 ---
 keywords: serverstate, targetGlobalSettings, targetglobalsettings, globalSettings, global 설정, at.js, function, function, clientCode, clientcode, serverDomain, serverdomain, cookieDomain, serverstate5, serverstate6, serverstate7, serverstate8, serverstate9, targetGlobalSettings0, targetGlobalSettings1, targetGlobalSettings2, targetGlobalSettings3, targetGlobalSettings4, targetGlobalSettings5, cookiedomain, crossDomain, crossdomain, timeout, globalMboxAutoCreate, visitorApiTimeout, defaultContentHiddenStyle, defaultContentVisibleStyle body, bodyBodyBodyBodySettings hidingEnabled, imsOrgId, secureOnly, overrideMboxEdgeServer, overrideMboxEdgeServerTimeout, cookiedomain5, cookiedomain6, cookiedomain7, cookiedomain8, cookiedomain9, crossDomain0, crossDomain1, crossDomain2, crossDomain3, crossDomain4, crossDomain5, optoutEnabled, optout, 옵트아웃, selectorsPollingTimeout, dataProviders, Hybrid Personalization, deviceIdLifetime
-description: ' [!DNL Target] UI 또는 REST API를 사용하는 대신 설정을 재정의하려면  [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 [!UICONTROL targetGlobalSettings()] 함수를 사용하십시오.'
-title: '[!UICONTROL targetGlobalSettings()] 함수를 사용하는 방법'
+description: ' [!DNL Target] UI 또는 REST API를 사용하는 대신 설정을 재정의하려면  [!DNL Adobe Target] at.js JavaScript 라이브러리에 대한 [!UICONTROL targetGlobalSettings()] 함수를 사용하십시오.'
+title: '[!UICONTROL targetGlobalSettings()] 함수를 사용하려면 어떻게 해야 합니까?'
 feature: at.js
 exl-id: f6218313-6a70-448e-8555-b7b039e64b2c
 TQID: https://experienceleague.adobe.com/6IeQo7RCys6Qe6bPydmmtgaAERi7rnneBYFOzseaL2g
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ceid: f7c7de77-382f-4f48-8b36-61a170f06d3d
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 2702
+source-wordcount: 2705
 ht-degree: 17%
 
 ---
@@ -120,11 +108,11 @@ ht-degree: 17%
 
   Server-side만 at.js 2.5+가 구현되고 웹 속성에 배포되는 경우 기본적으로 설정되는 기본 의사 결정 방법입니다.
 
-  서버측만 기본 구성으로 사용하면 모든 결정이 [!DNL Target] 에지 네트워크에서 수행되며, 여기에는 차단 서버 호출이 포함됩니다. 이 접근 방식은 점진적 지연을 발생시킬 수 있지만, [권장 사항](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html?lang=ko), [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=ko)&#x200B;(AP) 및 [자동 타기팅](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html?lang=ko) 활동을 포함하는 [!DNL Target]의 기계 학습 기능을 적용할 수 있는 기능을 제공하는 것과 같은 중요한 이점도 제공합니다.
+  서버측만 기본 구성으로 사용하면 모든 결정이 [!DNL Target] 에지 네트워크에서 수행되며, 여기에는 차단 서버 호출이 포함됩니다. 이 접근 방식은 점진적 지연을 발생시킬 수 있지만, [권장 사항](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html), [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html)&#x200B;(AP) 및 [자동 타기팅](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) 활동을 포함하는 [!DNL Target]의 기계 학습 기능을 적용할 수 있는 기능을 제공하는 것과 같은 중요한 이점도 제공합니다.
 
   또한 세션 및 채널에서 지속되는 [!DNL Target]의 사용자 프로필을 사용하여 개인화된 경험을 향상하면 비즈니스에 강력한 결과를 제공할 수 있습니다.
 
-  마지막으로, 서버측에서는 Adobe Experience Cloud만 사용할 수 있고 Audience Manager 및 Adobe Analytics 세그먼트를 통해 타깃팅할 수 있는 대상을 미세 조정할 수 있습니다.
+  마지막으로, 서버측에서는 Adobe Experience Cloud만 사용할 수 있으며 Audience Manager 및 Adobe Analytics 세그먼트를 통해 타깃팅할 수 있는 대상을 미세 조정할 수 있습니다.
 
   **온디바이스 전용**:
 
@@ -222,7 +210,7 @@ ht-degree: 17%
 
 * **유형**: 숫자
 * **기본값**: 300000(5분(밀리초))
-* **설명**: at.js가 새 버전의 온디바이스 의사 결정 아티팩트를 가져오고 캐시를 업데이트하는 간격입니다. 3000000&rbrace;에 허용되는 최소값입니다.`pollingInterval`
+* **설명**: at.js가 새 버전의 온디바이스 의사 결정 아티팩트를 가져오고 캐시를 업데이트하는 간격입니다. 3000000}에 허용되는 최소값입니다.`pollingInterval`
 
 ### secureOnly
 
@@ -302,8 +290,8 @@ window.targetGlobalSettings = {
 
 | 비디오 | 설명 |
 |--- |--- |
-| [Adobe Target에서 데이터 공급자 사용](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=ko) | 데이터 공급자는 타사의 데이터를 Target에 쉽게 전달할 수 있는 기능입니다. 타사는 기상 서비스, DMP 또는 자체 웹 서비스일 수 있습니다. 그런 다음, 이 데이터를 사용하여 대상자, Target 콘텐츠를 작성하고 방문자 프로필을 보강할 수 있습니다. |
-| [Adobe Target에서 데이터 공급자 구현](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html?lang=ko) | Adobe [!DNL Target]의 dataProviders 기능을 사용하여 타사 데이터 공급자로부터 데이터를 검색하고 [!DNL Target] 요청에 전달하는 방법에 대한 자세한 내용과 예제에 대한 구현입니다. |
+| [Adobe Target에서 데이터 공급자 사용](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html) | 데이터 공급자는 타사의 데이터를 Target에 쉽게 전달할 수 있는 기능입니다. 타사는 기상 서비스, DMP 또는 자체 웹 서비스일 수 있습니다. 그런 다음, 이 데이터를 사용하여 대상자, Target 콘텐츠를 작성하고 방문자 프로필을 보강할 수 있습니다. |
+| [Adobe Target에서 데이터 공급자 구현](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html) | Adobe [!DNL Target]의 dataProviders 기능을 사용하여 타사 데이터 공급자로부터 데이터를 검색하고 [!DNL Target] 요청에 전달하는 방법에 대한 자세한 내용과 예제에 대한 구현입니다. |
 
 `window.targetGlobalSettings.dataProviders` 설정은 데이터 공급자의 배열입니다.
 

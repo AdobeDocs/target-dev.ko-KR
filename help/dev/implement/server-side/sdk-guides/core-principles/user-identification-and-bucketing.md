@@ -4,16 +4,12 @@ description: 사용자 식별 및 버킷팅
 exl-id: 4fcf235b-6a58-442c-ae13-9d05ec1033fc
 feature: Implement Server-side
 TQID: https://experienceleague.adobe.com/V9hK5oj7F-SV2wou2sz-Ve3RVJ1EMsFJDmcNF4ctV5o
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
-  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: f7c7de77-382f-4f48-8b36-61a170f06d3d
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1172
+source-wordcount: 1173
 ht-degree: 4%
 
 ---
@@ -22,14 +18,14 @@ ht-degree: 4%
 
 ## 사용자 식별
 
-[!DNL Adobe Target] 내에서 사용자를 식별하는 방법에는 여러 가지가 있습니다. [!UICONTROL Target]은(는) 다음 식별자를 사용합니다.
+[!DNL Adobe Target] 내에서 사용자를 식별하는 방법에는 여러 가지가 있습니다. [!UICONTROL Target]에서는 다음 식별자를 사용합니다.
 
 | 필드 이름 | 설명 |
 | --- | --- |
 | `tntID` | `tntId`은(는) 사용자의 [!DNL Target]에 있는 기본 식별자입니다. 이 ID를 제공할 수 있습니다. 그렇지 않으면 요청에 ID가 포함되지 않은 경우 [!DNL Target]에서 자동으로 생성합니다. |
 | `thirdPartyId` | `thirdPartyId`은(는) 모든 호출과 함께 보낼 수 있는 사용자의 회사 식별자입니다. 사용자가 회사 사이트에 로그인하면 일반적으로 회사는 방문자 계정, 로열티 카드, 멤버십 번호 또는 해당 회사에 대한 기타 적용 가능한 식별자에 연결되는 ID를 만듭니다. |
 | `marketingCloudVisitorId` | `marketingCloudVisitorId`은(는) 다른 Adobe 솔루션 간에 데이터를 병합하고 공유하는 데 사용됩니다. marketingCloudVisitorId는 Adobe Analytics 및 Adobe Audience Manager과의 통합에 필요합니다. |
-| `customerIds` | Experience Cloud 방문자 ID와 함께 각 방문자에 대한 추가 [고객 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=ko) 및 인증된 상태도 활용할 수 있습니다. |
+| `customerIds` | Experience Cloud 방문자 ID와 함께 각 방문자에 대한 추가 [고객 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) 및 인증된 상태를 활용할 수도 있습니다. |
 
 ## [!DNL Target] ID(tntID)
 
@@ -241,7 +237,7 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 ## 고객 ID (customerIds)
 
-[고객 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=ko)를 Experience Cloud 방문자 ID에 추가하거나 연결할 수 있습니다. `customerIds`을(를) 보낼 때마다 `marketingCloudVisitorId`도 제공해야 합니다. 또한 각 방문자에 대해 각 `customerId`과(와) 함께 인증 상태를 제공할 수 있습니다. 다음과 같은 인증 상태가 사용될 수 있습니다.
+[고객 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)를 Experience Cloud 방문자 ID에 추가하거나 연결할 수 있습니다. `customerIds`을(를) 보낼 때마다 `marketingCloudVisitorId`도 제공해야 합니다. 또한 각 방문자에 대해 각 `customerId`과(와) 함께 인증 상태를 제공할 수 있습니다. 다음과 같은 인증 상태가 사용될 수 있습니다.
 
 | 인증 상태 | 사용자 상태 |
 | --- | --- |
@@ -323,7 +319,7 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 ## 병합된 프로필
 
-동일한 요청에서 `tntId`, `thirdPartyID` 및 `marketingCloudVisitorId`을(를) 결합할 수 있습니다. 이 시나리오에서는 [!DNL Adobe Target]이(가) 이러한 모든 ID의 매핑을 유지하고 방문자에게 고정합니다. 다른 식별자를 사용하여 프로필이 [실시간으로 병합 및 동기화](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=ko)되는 방법을 알아봅니다.
+동일한 요청에서 `tntId`, `thirdPartyID` 및 `marketingCloudVisitorId`을(를) 결합할 수 있습니다. 이 시나리오에서는 [!DNL Adobe Target]이(가) 이러한 모든 ID의 매핑을 유지하고 방문자에게 고정합니다. 다른 식별자를 사용하여 프로필이 [실시간으로 병합 및 동기화](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html)되는 방법을 알아봅니다.
 
 >[!BEGINTABS]
 

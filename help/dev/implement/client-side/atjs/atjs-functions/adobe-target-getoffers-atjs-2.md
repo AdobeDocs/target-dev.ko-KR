@@ -1,26 +1,19 @@
 ---
 keywords: adobe.target.getOffers, getOffers, getoffers, 오퍼 가져오기, at.js, 함수, 함수, $8
-description: ' [!DNL Adobe Target] at.js 라이브러리에 대한 [!UICONTROL adobe.target.getOffers()] 함수와 해당 옵션을 사용하여 여러 [!DNL Target] 오퍼를 가져오는 요청을 실행합니다. (at.js 2.x)'
-title: '[!UICONTROL adobe.target.getOffers()] 함수를 사용하는 방법'
+description: '[!UICONTROL adobe.target.getOffers()] 함수와  [!DNL Adobe Target] at.js 라이브러리에 대한 옵션을 사용하여 여러  [!DNL Target] 오퍼를 가져오기 위한 요청을 실행합니다. (at.js 2.x)'
+title: '[!UICONTROL adobe.target.getOffers()] 함수를 사용하는 방법은 무엇입니까?'
 feature: at.js
 exl-id: b96a3018-93eb-49e7-9aed-b27bd9ae073a
 TQID: https://experienceleague.adobe.com/jJXcWyQzJ48GNCNcOT165vxcO-CLExTj-t-3kbR2FZ0
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1340
-ht-degree: 60%
+source-wordcount: 1357
+ht-degree: 57%
 
 ---
 
@@ -51,7 +44,7 @@ ht-degree: 60%
 | request > id > thirdPartyId | 아니오 | 최대 크기 = 128. |  |
 | Request > experienceCloud | 아니오 |  |  |
 | Request > experienceCloud > analytics | 아니오 |  | Adobe Analytics 통합 |
-| Request > experienceCloud > analytics > logging | 아니오 | 페이지에서 다음을 구현해야 합니다.<ul><li>방문자 ID 서비스</li><li>Appmeasurement.js</li></ul> | 지원되는 값은 다음과 같습니다.<P>**client_side**: 지정하면 [!UICONTROL Data Insertion API]을(를) 통해 [!UICONTROL Adobe Analytics]에 보내는 데 사용해야 하는 호출자에게 분석 페이로드가 반환됩니다.<P>**server_side**: [!DNL Target] 및 [!DNL Analytics] 백엔드가 보고 목적으로 SDID를 사용하여 호출을 함께 연결하는 기본값입니다. |
+| Request > experienceCloud > analytics > logging | 아니오 | 페이지에서 다음을 구현해야 합니다.<ul><li>방문자 ID 서비스</li><li>Appmeasurement.js</li></ul> | 지원되는 값은 다음과 같습니다.<P>**client_side**: 지정하면 [!UICONTROL 데이터 삽입 API]를 통해 [!UICONTROL Adobe Analytics]에 보내는 데 사용해야 하는 호출자에게 분석 페이로드가 반환됩니다.<P>**server_side**: [!DNL Target] 및 [!DNL Analytics] 백엔드가 보고 목적으로 SDID를 사용하여 호출을 함께 연결하는 기본값입니다. |
 | request > prefetch | 아니오 |  |  |
 | request > prefetch > views | 아니오 | 최대 개수 50.<P>이름은 비워둘 수 없습니다.<P>이름 길이 `<=` 128.<P>값 길이 `<=` 5000입니다.<P>이름은 &quot;profile&quot;로 시작하면 안 됩니다.<P>허용되지 않는 이름: &quot;orderId&quot;, &quot;orderTotal&quot;, &quot;productPurchasedId&quot;. | 활성 활동에서 적절한 보기를 검색하는 데 사용할 매개 변수를 전달합니다. |
 | request > prefetch > views > profileParameters | 아니오 | 최대 개수 50.<P>이름은 비워둘 수 없습니다.<P>이름 길이 `<=` 128.<P>값 길이 `<=` 5000입니다.<P>문자열 값만 허용합니다.<P>이름은 &quot;profile&quot;로 시작하면 안 됩니다. | 활성 활동에서 적절한 보기를 검색하는 데 사용할 프로필 매개 변수를 전달합니다. |
@@ -98,7 +91,7 @@ adobe.target.getOffers({
 });
 ```
 
-## [!UICONTROL getOffers()]을(를) 호출하여 온디바이스 의사 결정
+## [!UICONTROL getOffers()]을(를) 호출하여 디바이스에서 의사 결정을 수행합니다.
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffers({ 
@@ -117,7 +110,7 @@ adobe.target.getOffers({
 }); 
 ```
 
-## 전달된 매개 변수 및 프로필 매개 변수를 사용하여 최신 보기를 검색하기 위해 [!UICONTROL getOffers()] 호출
+## 전달된 매개 변수 및 프로필 매개 변수를 사용하여 최신 보기를 검색하려면 [!UICONTROL getOffers()]을(를) 호출하십시오.
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffers({
@@ -138,7 +131,7 @@ adobe.target.getOffers({
 });
 ```
 
-## 전달된 매개 변수와 프로필 매개 변수를 사용하여 mbox를 검색하기 위해 [!UICONTROL getOffers()] 호출
+## 전달된 매개 변수와 프로필 매개 변수를 사용하여 mbox를 검색하려면 [!UICONTROL getOffers()]을(를) 호출하십시오.
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffers({
@@ -219,7 +212,7 @@ adobe.target.getOffers({
 
 [데이터 삽입 API](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md)를 통해 페이로드를 [!DNL Adobe Analytics]에 전달할 수 있습니다.
 
-## [!UICONTROL getOffers()] 및 [!UICONTROL applyOffers()]을(를) 통해 여러 mbox에서 데이터를 가져와 렌더링합니다.
+## [!UICONTROL getOffers()] 및 [!UICONTROL applyOffers()]를 통해 여러 mbox에서 데이터를 가져와 렌더링합니다.
 
 at.js 2.x를 사용하면 `[!UICONTROL getOffers()]` API를 통해 여러 mbox를 가져올 수 있습니다. 여러 mbox에 대한 데이터를 가져온 다음 CSS 선택기에서 식별한 다른 위치에 데이터를 렌더링하는 데 `[!UICONTROL applyOffers()]`를 사용할 수도 있습니다.
 
