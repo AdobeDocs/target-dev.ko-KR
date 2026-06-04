@@ -24,4 +24,4 @@ ht-degree: 3%
 
 [!DNL Location Service]과(와) [!DNL Target]을(를) 함께 사용하여 Adobe Experience Platform의 [태그](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko-KR)와 함께 규칙을 활용하여 [!UICONTROL 위치] 데이터를 [!DNL Adobe Target] SDK 이벤트에 첨부할 수 있습니다.
 
-자세한 내용은 [Adobe Experience Platform 위치 서비스 안내서](https://experienceleague.adobe.com/docs/places/using/home.html)에서 [[!UICONTROL Location Service 사용]을(를) [!DNL Adobe Target]](https://experienceleague.adobe.com/docs/places/using/use-places-with-other-solutions/places-target/places-target.html)과(와) 함께 사용을(를) 참조하십시오.
+자세한 내용은 [Adobe Experience Platform 위치 서비스 안내서](https://experienceleague.adobe.com/docs/places/using/home.html?lang=ko)에서 [[!UICONTROL Location Service 사용]을(를) [!DNL Adobe Target]](https://experienceleague.adobe.com/docs/places/using/use-places-with-other-solutions/places-target/places-target.html?lang=ko)과(와) 함께 사용을(를) 참조하십시오.
