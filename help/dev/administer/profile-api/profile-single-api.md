@@ -13,7 +13,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: 6fac79420aef0a73c109b2c19f363266c1f8027a
 workflow-type: tm+mt
 source-wordcount: 361
 ht-degree: 4%
@@ -46,15 +46,15 @@ ht-degree: 4%
 
 `pcId`에 대한 프로필을 업데이트하려면 다음을 사용합니다.
 
-``````
+```
 https://<your-client-code>.tt.omtrdc.net/m2/client/profile/update?mboxPC=1368007744041-575948.01_00&profile.attr=0&profile.attr2=1...
-``````
+```
 
 `mbox3rdPartyId`에 대한 프로필을 업데이트하려면 다음을 사용합니다.
 
-``````
+```
 shell http://<your-client-code>.tt.omtrdc.net/m2/client/profile/update?mbox3rdPartyId=123456&profile.attr=0&profile.attr2=1...
-``````
+```
 
 [!UICONTROL Single Profile Update API]은(는) 업데이트 전용입니다. 아무 것도 발견되지 않으면 프로필이 만들어지지 않습니다.
 
