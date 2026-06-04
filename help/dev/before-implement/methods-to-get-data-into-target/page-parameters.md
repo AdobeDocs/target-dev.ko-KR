@@ -14,7 +14,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: f6df325aff4a2eb9321b86778d102737493e63bb
 workflow-type: tm+mt
 source-wordcount: 397
 ht-degree: 31%
@@ -56,7 +56,7 @@ ht-degree: 31%
 
   IETF 사이트에 언급된 문자 외에 [!DNL Target]에서는 쿼리 문자열에 다음 문자를 사용할 수 있습니다.
 
-  ```< > # % " { } | \ ^ [ ] ` ``` {line-numbers="true"}
+  `< > # % " { } | \ ^ [ ] `
 
   다른 모든 문자는 URL로 인코딩해야 합니다. 이 표준에서는 아래 그림과 같이 다음 형식을 지정합니다( [https://www.ietf.org/rfc/rfc1738.txt](https://www.ietf.org/rfc/rfc1738.txt)).
 
