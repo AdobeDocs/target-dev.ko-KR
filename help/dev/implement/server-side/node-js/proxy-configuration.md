@@ -10,7 +10,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 102
+source-wordcount: 84
 ht-degree: 0%
 
 ---
@@ -39,5 +39,5 @@ client = TargetClient.create({
 ```
 
 이 기능은 노드 버전 18.2+에서만 작동하며, 여기서 `undici.fetch`은(는) 노드의 기본 `fetch`입니다.
-[노드 SDK 샘플 저장소를 방문하십시오.](https://github.com/adobe/target-nodejs-sdk-samples/tree/master/proxy-configuration)
+[노드 SDK 샘플 저장소](https://github.com/adobe/target-nodejs-sdk-samples/tree/master/proxy-configuration)를 방문하십시오.
 프록시 구성 예제를 참조하십시오.

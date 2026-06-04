@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Adobe Target] Java SDK에서 이벤트 구독'
-description: '[!UICONTROL OnDeviceDecisioningHandler] 개체를 사용하여 Java SDK 내에서 발생하는 다양한 이벤트를 구독하는 방법에 대해 알아봅니다.'
+description: '[!UICONTROL OnDeviceDecisioningHandler] 개체를 사용하여 Java SDK 내에서 발생하는 다양한 이벤트를 구독하는 방법을 알아봅니다.'
 feature: APIs/SDKs
 exl-id: f2d56762-6bf7-4c6b-9c14-fb20e5cfd60d
 TQID: https://experienceleague.adobe.com/x3aig-jM-GXzmLNcUNclZUK9Y49tuSF9-sdkxzJFtiM
@@ -10,8 +10,8 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 134
-ht-degree: 5%
+source-wordcount: 144
+ht-degree: 4%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 5%
 
 | 이름 | 인수 | 설명 |
 | --- | --- | --- |
-| onDeviceDecisionReady | 없음 | 클라이언트가 [!UICONTROL on-device decisioning]에 대해 처음 준비될 때 한 번만 호출됩니다. |
-| artifactDownloadSucceeded | 아티팩트 파일의 바이트[] 내용 | [!UICONTROL on-device decisioning] 아티팩트가 다운로드될 때마다 호출됩니다. |
-| artifactDownloadFailed | 예외 | [!UICONTROL on-device decisioning] 아티팩트를 다운로드하지 못할 때마다 호출됩니다. |
+| onDeviceDecisionReady | 없음 | 클라이언트가 [!UICONTROL 온디바이스 의사 결정]을 위해 처음 준비될 때 한 번만 호출됩니다. |
+| artifactDownloadSucceeded | 아티팩트 파일의 바이트[] 내용 | [!UICONTROL 온디바이스 의사 결정] 아티팩트가 다운로드될 때마다 호출됩니다. |
+| artifactDownloadFailed | 예외 | [!UICONTROL 디바이스에서 의사 결정] 아티팩트를 다운로드하지 못할 때마다 호출됩니다. |
 
 ## 예
 

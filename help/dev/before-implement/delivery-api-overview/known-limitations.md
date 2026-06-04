@@ -1,6 +1,6 @@
 ---
 title: Adobe Target 배달 API 고려 사항 및 알려진 제한 사항
-description: '[!UICONTROL Adobe Target Delivery API]을(를) 사용할 때 고려해야 할 고려 사항과 알려진 제한 사항은 무엇입니까?'
+description: '[!UICONTROL Adobe Target 배달 API]를 사용할 때 고려해야 할 고려 사항과 알려진 제한 사항은 무엇입니까?'
 keywords: 배달 api
 exl-id: 49fe13b0-efcb-4b1c-a4cb-03b64fbd9214
 feature: APIs/SDKs
@@ -11,7 +11,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 154
+source-wordcount: 158
 ht-degree: 5%
 
 ---

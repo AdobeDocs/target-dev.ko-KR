@@ -13,7 +13,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1172
+source-wordcount: 1173
 ht-degree: 4%
 
 ---
@@ -22,14 +22,14 @@ ht-degree: 4%
 
 ## 사용자 식별
 
-[!DNL Adobe Target] 내에서 사용자를 식별하는 방법에는 여러 가지가 있습니다. [!UICONTROL Target]은(는) 다음 식별자를 사용합니다.
+[!DNL Adobe Target] 내에서 사용자를 식별하는 방법에는 여러 가지가 있습니다. [!UICONTROL Target]에서는 다음 식별자를 사용합니다.
 
 | 필드 이름 | 설명 |
 | --- | --- |
 | `tntID` | `tntId`은(는) 사용자의 [!DNL Target]에 있는 기본 식별자입니다. 이 ID를 제공할 수 있습니다. 그렇지 않으면 요청에 ID가 포함되지 않은 경우 [!DNL Target]에서 자동으로 생성합니다. |
 | `thirdPartyId` | `thirdPartyId`은(는) 모든 호출과 함께 보낼 수 있는 사용자의 회사 식별자입니다. 사용자가 회사 사이트에 로그인하면 일반적으로 회사는 방문자 계정, 로열티 카드, 멤버십 번호 또는 해당 회사에 대한 기타 적용 가능한 식별자에 연결되는 ID를 만듭니다. |
 | `marketingCloudVisitorId` | `marketingCloudVisitorId`은(는) 다른 Adobe 솔루션 간에 데이터를 병합하고 공유하는 데 사용됩니다. marketingCloudVisitorId는 Adobe Analytics 및 Adobe Audience Manager과의 통합에 필요합니다. |
-| `customerIds` | Experience Cloud 방문자 ID와 함께 각 방문자에 대한 추가 [고객 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=ko) 및 인증된 상태도 활용할 수 있습니다. |
+| `customerIds` | Experience Cloud 방문자 ID와 함께 각 방문자에 대한 추가 [고객 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=ko) 및 인증된 상태를 활용할 수도 있습니다. |
 
 ## [!DNL Target] ID(tntID)
 

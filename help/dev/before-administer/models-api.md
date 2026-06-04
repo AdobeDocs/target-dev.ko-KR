@@ -16,16 +16,16 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1316
+source-wordcount: 1321
 ht-degree: 2%
 
 ---
 
 # 모델 API 개요
 
-차단 목록에 추가하다 API라고도 하는 모델 API를 사용하면 사용자가 [!UICONTROL Automated Personalization]&#x200B;(AP) 및 [!DNL Auto-Target]&#x200B;(AT) 활동에 대한 머신 러닝 모델에 사용되는 기능 목록을 보고 관리할 수 있습니다. AP 또는 AT 활동용 모델에서 기능을 사용하지 않으려면 모델 API를 사용하여 해당 기능을 &quot;사용자 차단 목록&quot;에 추가할 수 있습니다.
+차단 목록에 추가하다 API라고도 하는 모델 API를 사용하면 사용자가 [!UICONTROL AP(Automated Personalization]) 및 [!DNL Auto-Target]&#x200B;(AT) 활동을 위한 머신 러닝 모델에 사용되는 기능 목록을 보고 관리할 수 있습니다. AP 또는 AT 활동용 모델에서 기능을 사용하지 않으려면 모델 API를 사용하여 해당 기능을 &quot;사용자 차단 목록&quot;에 추가할 수 있습니다.
 
-**[!UICONTROL blocklist]**&#x200B;은(는) [!DNL Adobe Target]이(가) 해당 기계 학습 모델에서 제외할 기능 집합을 정의합니다. 기능에 대한 자세한 내용은 [사용한 데이터 [!DNL Target] 머신 러닝 알고리즘](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/ap-data.html?lang=ko)을 참조하십시오.
+**[!UICONTROL 차단 목록]**&#x200B;은(는) 기계 학습 모델에서 [!DNL Adobe Target]에 의해 제외되는 기능 집합을 정의합니다. 기능에 대한 자세한 내용은 [사용한 데이터 [!DNL Target] 머신 러닝 알고리즘](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/ap-data.html?lang=ko)을 참조하십시오.
 
 차단 목록은 활동(활동 수준)별로 정의되거나 [!DNL Target] 계정(전역 수준) 내의 모든 활동에 대해 정의될 수 있습니다.
 
@@ -111,7 +111,7 @@ GET https://mc.adobe.io/<tenant>/target/models/features/<campaignId>
 >
 >활동의 활동 ID를 찾으려면 [!DNL Target] UI에서 활동 목록으로 이동합니다. 관심 있는 활동을 클릭합니다. 활동 ID는 결과 활동 개요 페이지의 본문과 해당 페이지의 URL 끝에 표시됩니다.
 
-**[!UICONTROL externalName]**&#x200B;은(는) 기능에 대한 알기 쉬운 이름입니다. 이 값은 [!DNL Target]에 의해 만들어지며 시간이 지남에 따라 변경될 수 있습니다. 사용자는 [Personalization 인사이트 보고서](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html?lang=ko)에서 사용자에게 친숙한 이러한 이름을 볼 수 있습니다.
+**[!UICONTROL externalName]**&#x200B;은(는) 사용자에게 친숙한 기능 이름입니다. 이 값은 [!DNL Target]에 의해 만들어지며 시간이 지남에 따라 변경될 수 있습니다. 사용자는 [Personalization 인사이트 보고서](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html?lang=ko)에서 사용자에게 친숙한 이러한 이름을 볼 수 있습니다.
 
 **[!UICONTROL internalName]**&#x200B;은(는) 기능의 실제 식별자입니다. 또한 [!DNL Target]에 의해 만들어졌지만 변경할 수 없습니다. 이 값은 차단 목록에 추가하다와 같은 기능을 식별하기 위해 참조해야 하는 값입니다.
 
@@ -208,11 +208,11 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 >[!ENDTABS]
 
-여기에 표시된 예에서 사용자는 [단계 1](#step1)에 설명된 대로 활동 ID가 260480 활동에 대한 전체 기능 목록을 쿼리하여 이전에 식별한 두 개의 기능 `SES_PREVIOUS_VISIT_COUNT` 및 `SES_TOTAL_SESSIONS`을(를) 차단하고 있습니다. 또한 위의 [표](#table)에 설명된 대로 &quot;AAM&quot;라는 접두사가 있는 기능을 차단하여 얻은 Experience Cloud 세그먼트에서 오는 모든 기능을 차단합니다.
+여기에 표시된 예에서 사용자는 [단계 1](#step1)에 설명된 대로 활동 ID가 260480 활동에 대한 전체 기능 목록을 쿼리하여 이전에 식별한 두 개의 기능 `SES_PREVIOUS_VISIT_COUNT` 및 `SES_TOTAL_SESSIONS`을(를) 차단하고 있습니다. 또한 위의 [표](#table)에 설명된 대로 &quot;AAM&quot;라는 접두사가 있는 기능을 차단하여 Experience Cloud 세그먼트에서 오는 모든 기능을 차단합니다.
 
 ![3단계](assets/models-api-step-3.png)
 
-차단 목록에 추가 후 [2](#step2)을(를) 다시 수행하여 업데이트된 차단 목록 단계를 확인하는 것이 좋습니다(GET 차단 목록에 추가하다). 결과가 예상대로 표시되는지 확인합니다(결과에 최신 PUT 요청에서 추가된 기능이 포함되어 있는지 확인).
+차단 목록에 추가 기능을 확인한 후에는 [2](#step2)을 수행하여 업데이트된 차단 목록 단계를 확인하는 것이 좋습니다(다시 가져오기 차단 목록). 결과가 예상대로 나타나는지 확인합니다(결과에 최신 PUT 요청에서 추가된 기능이 포함되어 있는지 확인).
 
 ## 4단계: (선택 사항) 차단 해제 {#step4}
 
@@ -293,7 +293,7 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/global
 
 질문: 위의 코드 샘플은 중복되지 않습니까?
 
-답변: 예. 값이 &quot;AAM&quot;로 시작하는 기능을 차단하는 동시에 소스가 &quot;AAM&quot;인 모든 기능을 차단하는 것은 이중화됩니다. 그 결과, AAM(Experience Cloud 세그먼트)에서 가져온 모든 기능이 차단됩니다. 따라서, 목표가 Experience Cloud 세그먼트에서 모든 기능을 차단하는 것이면 위의 예에서 &quot;AAM&quot;로 시작하는 특정 기능을 개별적으로 지정할 필요가 없습니다.
+답변: 예. 값이 &quot;AAM&quot;로 시작하는 기능을 차단하는 동시에 소스가 &quot;AAM&quot;인 모든 기능을 차단하는 것은 이중화됩니다. 결과적으로 AAM(Experience Cloud 세그먼트)에서 가져온 모든 기능이 차단됩니다. 따라서 목표가 Experience Cloud 세그먼트에서 모든 기능을 차단하는 것이면 위의 예에서 &quot;AAM&quot;로 시작하는 특정 기능을 개별적으로 지정할 필요가 없습니다.
 
 마지막 단계: 활동 수준이든 글로벌 수준이든, 활동 수준을 수정한 후 차단 목록에 추가하다를 확인하는 것이 좋습니다. 이렇게 하면 예상한 값이 포함됩니다. `PUT`을(를) `GET`(으)로 변경하여 이 작업을 수행합니다.
 

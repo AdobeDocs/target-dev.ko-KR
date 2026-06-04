@@ -14,7 +14,7 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 411
+source-wordcount: 420
 ht-degree: 8%
 
 ---
@@ -50,7 +50,7 @@ target_client.send_notifications(options)
 
 | 이름 | 유형 | 필수 | 기본값 | 설명 |
 | --- | --- | --- | --- | --- |
-| 요청 | DeliveryRequest | 예 | 없음 | [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) 요청 준수 |
+| 요청 | DeliveryRequest | 예 | 없음 | [[!UICONTROL Target 배달 API]](/help/dev/implement/delivery-api/overview.md) 요청 준수 |
 | target_cookie | str | no | 없음 | [!DNL Target] 쿠키 |
 | target_location_hint | str | no | 없음 | [!DNL Target] 위치 힌트 |
 | consumer_id | str | no | 없음 | 여러 호출을 결합할 때 서로 다른 소비자 ID가 제공되어야 합니다 |
@@ -75,7 +75,7 @@ target_client.send_notifications(options)
 
 ## 예
 
-먼저 `home` 및 `product1` mbox에 대한 콘텐츠를 미리 가져오기 위한 [!UICONTROL Target Delivery API] 요청을 빌드해 보겠습니다.
+먼저 `home` 및 `product1` mbox에 대한 콘텐츠를 미리 가져오기 위한 [!UICONTROL Target 배달 API] 요청을 빌드해 보겠습니다.
 
 ### Python
 
@@ -89,7 +89,7 @@ delivery_request = DeliveryRequest(prefetch=prefetch)
 response = target_client.get_offers({ "request": delivery_request })
 ```
 
-성공적인 응답에는 요청된 mbox에 대해 미리 가져온 콘텐츠가 포함된 [!UICONTROL Target Delivery API] 응답 개체가 포함됩니다. 샘플 `target_response["response"]` 개체(dict 형식)는 다음과 같이 나타날 수 있습니다.
+성공적인 응답에는 요청된 mbox에 대해 미리 가져온 콘텐츠가 포함된 [!UICONTROL Target 배달 API] 응답 개체가 포함됩니다. 샘플 `target_response["response"]` 개체(dict 형식)는 다음과 같이 나타날 수 있습니다.
 
 ### Python
 

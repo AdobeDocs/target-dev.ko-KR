@@ -1,6 +1,6 @@
 ---
 title: 온디바이스 의사 결정 문제 해결
-description: '[!UICONTROL on-device decisioning] 문제 해결 방법 알아보기'
+description: '[!UICONTROL 온디바이스 의사 결정]의 문제를 해결하는 방법 알아보기'
 exl-id: e76f95ce-afae-48e0-9dbb-2097133574dc
 feature: APIs/SDKs
 TQID: https://experienceleague.adobe.com/Fp25tLDtuk-CqqcbofshX2-0MzQzayE2xN8OvNT3zVo
@@ -16,12 +16,12 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1158
+source-wordcount: 1188
 ht-degree: 0%
 
 ---
 
-# 문제 해결 [!UICONTROL on-device decisioning]
+# [!UICONTROL 온디바이스 의사 결정 문제 해결]
 
 ## 구성 확인
 
@@ -29,8 +29,8 @@ ht-degree: 0%
 
 1. `logger`이(가) 구성되어 있는지 확인합니다.
 1. [!DNL Target] 추적이 활성화되었는지 확인
-1. 정의된 폴링 간격에 따라 [!UICONTROL on-device decisioning] *규칙 아티팩트*&#x200B;가 검색되고 캐시되었는지 확인하십시오.
-1. 양식 기반 경험 작성기를 통해 테스트 [!UICONTROL on-device decisioning] 활동을 만들어 캐시된 규칙 아티팩트를 통해 콘텐츠 전달의 유효성을 검사합니다.
+1. 정의된 폴링 간격에 따라 [!UICONTROL 디바이스에서 의사 결정] *규칙 아티팩트*&#x200B;가 검색되고 캐시되었는지 확인하십시오.
+1. 양식 기반 경험 작성기를 통해 테스트 [!UICONTROL 디바이스에서 의사 결정] 활동을 만들어 캐시된 규칙 아티팩트를 통해 콘텐츠 전달의 유효성을 검사합니다.
 1. 전송 알림 오류 검사
 
 ## &#x200B;1. 로거가 구성되었는지 확인
@@ -75,7 +75,7 @@ java -Dorg.slf4j.simpleLogger.defaultLogLevel=DEBUG ...
 
    ![대체 이미지](assets/asset-target-ui-1.png)
 
-1. **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**(으)로 이동한 다음 **[!UICONTROL Generate New Authorization Token]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL 관리]** > **[!UICONTROL 구현]**(으)로 이동하고 **[!UICONTROL 새 인증 토큰 생성]**&#x200B;을 클릭합니다.
 
    ![대체 이미지](assets/asset-target-ui-2.png)
 
@@ -124,7 +124,7 @@ java -Dorg.slf4j.simpleLogger.defaultLogLevel=DEBUG ...
      AT: LD.ArtifactProvider artifact received - status=200
    ```
 
-## &#x200B;3. 정의된 폴링 간격에 따라 [!UICONTROL on-device decisioning] *규칙 아티팩트*&#x200B;가 검색되고 캐시되었는지 확인하십시오.
+## &#x200B;3. 정의된 폴링 간격에 따라 [!UICONTROL 디바이스에서 의사 결정] *규칙 아티팩트*&#x200B;가 검색되고 캐시되었는지 확인하십시오.
 
 1. 폴링 간격(기본값: 20분) 기간을 대기하고 SDK에서 아티팩트를 가져오는지 확인합니다. 동일한 터미널 로그가 출력됩니다.
 
@@ -146,7 +146,7 @@ java -Dorg.slf4j.simpleLogger.defaultLogLevel=DEBUG ...
      },
    ```
 
-## &#x200B;4. 양식 기반 경험 작성기를 통해 테스트 [!UICONTROL on-device decisioning] 활동을 만들어 캐시된 규칙 아티팩트를 통해 콘텐츠 전달의 유효성을 검사합니다.
+## &#x200B;4. 양식 기반 경험 작성기를 통해 테스트 [!UICONTROL 디바이스에서 의사 결정] 활동을 만들어 캐시된 규칙 아티팩트를 통해 콘텐츠 전달의 유효성을 검사합니다.
 
 1. Experience Cloud의 [!DNL Target]UI로 이동
 
@@ -250,11 +250,11 @@ client = TargetClient.create({
 
 ## 일반적인 문제 해결 시나리오
 
-문제가 발생하면 [!UICONTROL on-device decisioning]에 대해 [지원되는 기능](supported-features.md)을(를) 검토하십시오.
+문제가 발생하면 [!UICONTROL 디바이스에서 의사 결정]에 대해 [지원되는 기능](supported-features.md)을 검토하십시오.
 
 ### 지원되지 않는 대상 또는 활동으로 인해 온디바이스 의사 결정 활동이 실행되지 않음
 
-대상이 사용 중이거나 활동 유형이 지원되지 않아 [!UICONTROL on-device decisioning] 활동이 실행되지 않는 문제가 발생할 수 있습니다.
+대상이 사용 중이거나 활동 유형이 지원되지 않아 [!UICONTROL 디바이스에서 의사 결정] 활동이 실행되지 않는 문제가 발생할 수 있습니다.
 
 (1) 로거 출력을 사용하여 응답 개체에 있는 추적 속성의 항목을 검토합니다. 특히 캠페인 속성을 식별합니다.
 

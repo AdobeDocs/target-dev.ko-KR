@@ -1,7 +1,7 @@
 ---
 keywords: adobe.target.getOffer, getOffer, getoffer, 오퍼 가져오기, at.js, 함수, 함수, $8
-description: ' [!DNL Adobe Target] at.js 라이브러리에 대한 [!UICONTROL adobe.target.getOffer()] 함수와 해당 옵션을 사용하여  [!DNL Target] 오퍼 가져오기 요청을 실행합니다.'
-title: '[!UICONTROL adobe.target.getOffer()] 함수를 사용하는 방법'
+description: '[!UICONTROL adobe.target.getOffer()] 함수와  [!DNL Adobe Target] at.js 라이브러리에 대한 옵션을 사용하여  [!DNL Target] 오퍼를 가져오는 요청을 실행합니다.'
+title: '[!UICONTROL adobe.target.getOffer()] 함수를 사용하는 방법은 무엇입니까?'
 feature: at.js
 exl-id: 7b917d42-06e8-4838-a09d-0c4872c9beaa
 TQID: https://experienceleague.adobe.com/GcXVIt-42-PV0j4Q4oe5uePTZAn7PDIMicIAULDXz-s
@@ -19,8 +19,8 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 463
-ht-degree: 72%
+source-wordcount: 472
+ht-degree: 71%
 
 ---
 
@@ -36,11 +36,11 @@ ht-degree: 72%
 | params | 개체 | 아니오 | Mbox 매개 변수입니다. 다음 구조를 가진 키 - 값 쌍의 개체입니다.<P>`{ "param1": "value1", "param2": "value2"}` |
 | 성공 | 함수 | 예 | 서버에서 응답을 받았을 때 실행할 콜백입니다. 성공 콜백 함수는 오퍼 개체의 배열을 나타내는 단일 매개 변수를 수신합니다. 다음은 성공 콜백 예입니다.<P>`function handleSuccess(response){......}`<P>자세한 내용은 아래 응답을 참조하십시오. |
 | 오류 | 함수 | 예 | 오류가 발생한 경우 실행할 콜백입니다. 오류가 있는 것으로 간주되는 몇 가지 경우가 있습니다.<ul><li>HTTP 상태 코드가 200 정상이 아닙니다.</li><li>응답을 구문 분석할 수 없습니다. 예를 들어, JSON이 잘못 구성되었거나 JSON 대신 HTML이 구성되었습니다.</li><li>응답에 &quot;오류&quot; 키가 포함되어 있습니다. 예를 들어, 요청을 제대로 처리할 수 없다는 예외가 에지에서 발생했습니다. mbox가 차단되어 콘텐츠를 검색할 수 없는 등의 경우 오류가 발생했습니다. 오류 콜백 함수에는 상태 및 오류의 두 매개 변수가 수신됩니다. 오류 콜백 예제는 다음과 같습니다. `function handleError(status, error){......}`</li></ul>자세한 내용은 오류 응답을 참조하십시오. |
-| timeout | 숫자 | 아니오 | 시간 초과(밀리 초)입니다. 지정하지 않으면 at.js의 기본 시간 초과가 사용됩니다.<P>[!UICONTROL Administration] > [!UICONTROL Implementation] 아래의 [!DNL Target] UI에서 기본 시간 제한을 설정할 수 있습니다. |
+| timeout | 숫자 | 아니오 | 시간 초과(밀리 초)입니다. 지정하지 않으면 at.js의 기본 시간 초과가 사용됩니다.<P>[!UICONTROL 관리] > [!UICONTROL 구현]의 [!DNL Target] UI에서 기본 시간 제한을 설정할 수 있습니다. |
 
 ## 예
 
-[!UICONTROL getOffer()]을(를) 사용하여 매개 변수를 추가하고 [!UICONTROL applyOffer()]을(를) 사용하여 성공 처리:
+[!UICONTROL getOffer()]을(를) 사용하여 매개 변수를 추가하고 성공 처리에 [!UICONTROL applyOffer()]을(를) 사용합니다.
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffer({   
@@ -61,7 +61,7 @@ adobe.target.getOffer({
 });
 ```
 
-[!UICONTROL getOffer()]을(를) 사용하여 매개 변수 및 프로필 매개 변수를 추가하고 [!UICONTROL applyOffer()]을(를) 사용하여 성공 처리:
+[!UICONTROL getOffer()]을(를) 사용하여 매개 변수 및 프로필 매개 변수를 추가하고 성공 처리를 위해 [!UICONTROL applyOffer()]을(를) 사용합니다.
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffer({   

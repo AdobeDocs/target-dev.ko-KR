@@ -15,7 +15,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 7a5aae2510a014c6efaeee63080cde3e7746f91c
 workflow-type: tm+mt
-source-wordcount: 350
+source-wordcount: 352
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ npm i @adobe/target-nodejs-sdk -P
    TargetClient targetClient = TargetClient.create(config);
    ```
 
-1. 아래와 같이 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**(으)로 이동하여 [!DNL Adobe Target]에서 클라이언트와 organizationId를 모두 검색할 수 있습니다.
+1. 아래와 같이 **[!UICONTROL 관리]** > **[!UICONTROL 구현]**&#x200B;으로 이동하여 [!DNL Adobe Target]에서 클라이언트와 organizationId를 모두 검색할 수 있습니다.
 
    <!-- Insert image-client-code.png -->
    ![Target에서 관리 아래의 구현 페이지](assets/asset-rule-artifact-3.png)

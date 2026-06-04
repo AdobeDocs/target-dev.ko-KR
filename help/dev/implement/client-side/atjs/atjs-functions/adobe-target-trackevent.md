@@ -1,7 +1,7 @@
 ---
 keywords: adobe.target.trackEvent, trackEvent, trackevent, track 이벤트, at.js, 함수, 함수, preventDefault, preventdefault, prevent default, prevent default, adobe.target.trackEvent
 description: ' [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 [!UICONTROL adobe.target.trackEvent()] 함수를 사용하여 사이트에서 클릭 및 전환과 같은 사용자 작업을 보고하는 요청을 실행합니다.'
-title: '[!UICONTROL adobe.target.trackEvent()] 함수를 사용하는 방법'
+title: '[!UICONTROL adobe.target.trackEvent()] 함수를 사용하는 방법은 무엇입니까?'
 feature: at.js
 exl-id: 9a55e4f1-d7f9-47c1-867c-2ce06fb26f9f
 TQID: https://experienceleague.adobe.com/Jib9C5FvmsgIF6CA-0UbdMdnMiXxQCkU2-O3Zys3vrY
@@ -17,12 +17,12 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 324
-ht-degree: 61%
+source-wordcount: 336
+ht-degree: 59%
 
 ---
 
-# [!UICONTROL adobe.target.trackEvent(options)]
+# [!UICONTROL adobe.target.trackEvent(옵션)]
 
 이 함수는 클릭 및 전환과 같은 사용자 작업을 보고하라는 요청을 실행하며, 응답에 있는 활동을 전달하지는 않습니다.
 
@@ -32,7 +32,7 @@ ht-degree: 61%
 
 | 키 | 유형 | 필수 | 설명 |
 |--- |--- |--- |--- |
-| mbox | 문자열 | 예 | Mbox 이름<P>**참고**: 페이지에서 이미 실행된 mbox 이름으로 [!UICONTROL trackEvent()] 호출이 실행되면 [!UICONTROL trackEvent()]의 SDID가 재설정되고 페이지의 [!DNL Target] 호출과 달라집니다. 그러나 다른 mbox 이름으로 [!UICONTROL trackEvent()] 호출을 실행하면 [!UICONTROL trackEvent()] 호출의 SDID가 페이지의 [!UICONTROL Page Load Request]/[!UICONTROL triggerView()] 호출과 일관되게 유지됩니다. |
+| mbox | 문자열 | 예 | Mbox 이름<P>**참고**: 페이지에서 이미 실행된 mbox 이름으로 [!UICONTROL trackEvent()] 호출이 실행되면 [!UICONTROL trackEvent()]의 SDID가 재설정되고 페이지의 [!DNL Target] 호출과 달라집니다. 그러나 다른 mbox 이름으로 [!UICONTROL trackEvent()] 호출을 실행하면 [!UICONTROL trackEvent()] 호출의 SDID가 페이지에서 [!UICONTROL 페이지 로드 요청]/[!UICONTROL triggerView()] 호출과 일관됩니다. |
 | selector | 문자열 | 아니오 | HTML 요소를 찾는 데 사용되는 CSS 선택기입니다. 이벤트 리스너는 발견된 요소에 첨부됩니다. |
 | 유형 | 문자열 | 아니오 | 등록된 이벤트 유형을 나타냅니다. HTML 알려진 이벤트(예: click, mousedown 등)일 수도 있고 사용자 지정 HTML 이벤트일 수도 있습니다. |
 | preventDefault | 부울 | 아니오 | 이벤트 리스너 콜백에서 `[!UICONTROL event.preventDefault()]`를 사용할지 여부를 나타냅니다. 기본값은 false입니다.<P>**참고**: `[!UICONTROL form[submit]]` 및 `a[click]`만 지원됩니다. 복잡성 및 지원할 시나리오 양이 많기 때문에 기타 시나리오는 지원되지 않습니다. |

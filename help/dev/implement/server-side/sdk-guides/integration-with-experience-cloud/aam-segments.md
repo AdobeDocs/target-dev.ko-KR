@@ -1,6 +1,6 @@
 ---
 title: Experience Cloud AAM 세그먼트와 통합
-description: Experience Cloud과 통합, Audience Manager 통합
+description: Experience Cloud와 통합, Audience Manager 통합
 keywords: 배달 api, 서버측, 서버측, 통합, audience manager, aam
 exl-id: c21e0200-23ba-4a0b-adf4-38e03c087f00
 feature: Implement Server-side

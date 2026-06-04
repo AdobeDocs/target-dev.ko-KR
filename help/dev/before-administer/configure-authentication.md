@@ -15,7 +15,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: addda914fcf7ba1616ae9a9d49118e737b3ad923
 workflow-type: tm+mt
-source-wordcount: 1849
+source-wordcount: 1927
 ht-degree: 1%
 
 ---
@@ -56,27 +56,27 @@ ht-degree: 1%
 
 1. [Adobe Admin Console](https://adminconsole.adobe.com/)에서 [!DNL Adobe] 사용자 계정에 [!DNL Target]에 대한 [제품 관리자](https://helpx.adobe.com/kr/enterprise/using/admin-roles.html) 및 [개발자](https://helpx.adobe.com/kr/enterprise/using/manage-developers.html) 수준 액세스 권한이 모두 부여되었는지 확인하십시오.
 
-1. [Adobe Developer Console](https://developer.adobe.com/console/home)에서 이 통합을 만들 [!UICONTROL Experience Cloud Organization]을(를) 선택합니다. (단일 [!UICONTROL Experience Cloud Organization]에 대한 액세스 권한만 있을 수 있습니다.)
+1. [Adobe Developer Console](https://developer.adobe.com/console/home)에서 이 통합을 만들 [!UICONTROL Experience Cloud 조직]을 선택합니다. (단일 [!UICONTROL Experience Cloud 조직]에만 액세스할 수 있습니다.)
 
    ![configure-io-target-createproject2.png](assets/configure-io-target-createproject2.png)
 
-1. **[!UICONTROL Create new project]** 아이콘을 클릭합니다.
+1. **[!UICONTROL 새 프로젝트 만들기]**&#x200B;를 클릭합니다.
 
    ![configure-io-target-createproject3.png](assets/configure-io-target-createproject3.png)
 
-1. [!DNL Adobe] 서비스 및 제품에 액세스하기 위해 프로젝트에 REST API를 추가하려면 **[!UICONTROL Add API]**&#x200B;을(를) 클릭하십시오.
+1. **[!UICONTROL API 추가]**&#x200B;를 클릭하여 [!DNL Adobe] 서비스 및 제품에 액세스하기 위해 프로젝트에 REST API를 추가합니다.
 
    ![API 추가](assets/configure-io-target-createproject4.png)
 
-1. **[!DNL Adobe Target]**&#x200B;을(를) 통합할 [!DNL Adobe] 서비스로 선택합니다. 표시되는 **[!UICONTROL Next]** 단추를 클릭합니다.
+1. **[!DNL Adobe Target]**&#x200B;을(를) 통합할 [!DNL Adobe] 서비스로 선택합니다. 표시되는 **[!UICONTROL 다음]** 단추를 클릭합니다.
 
    ![configure-io-target-createproject5](assets/configure-io-target-createproject5.png)
 
-1. 공개 및 개인 키를 [!DNL Target]에 대해 만들고 있는 서비스 계정 통합과 연결하는 옵션을 선택하십시오. 이 예제에서는 **[!UICONTROL Option 1: Generate a key pair]**&#x200B;을(를) 선택하고 **[!UICONTROL Generate keypair]**&#x200B;을(를) 클릭합니다.
+1. 공개 및 개인 키를 [!DNL Target]에 대해 만들고 있는 서비스 계정 통합과 연결하는 옵션을 선택하십시오. 이 예제에서는 **[!UICONTROL 옵션 1: 키 쌍 생성]**&#x200B;을 선택하고 **[!UICONTROL 키 쌍 생성]**&#x200B;을 클릭합니다.
 
    ![configure-io-target-createproject6](assets/configure-io-target-createproject6.png)
 
-1. 지침에 따라 개인 키가 포함된 자동 다운로드된 구성 파일(`config`)을 메모하십시오. **[!UICONTROL Next]** 아이콘을 클릭합니다.
+1. 지침에 따라 개인 키가 포함된 자동 다운로드된 구성 파일(`config`)을 메모하십시오. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
    ![configure-io-target-createproject7](assets/configure-io-target-createproject7.png)
 
@@ -84,12 +84,12 @@ ht-degree: 1%
 
    ![configure-io-target-createproject8](assets/configure-io-target-createproject8.png)
 
-1. Adobe Developer Console으로 돌아가서 Adobe Recommendations을 사용 중인 속성에 해당하는 [제품 프로필](https://helpx.adobe.com/kr/enterprise/using/manage-products-and-profiles.html)을 선택합니다. 속성을 사용하지 않는 경우 기본 Workspace 옵션을 선택합니다. **[!UICONTROL Save configured API]** 아이콘을 클릭합니다.
+1. Adobe Developer Console으로 돌아가서 Adobe Recommendations을 사용 중인 속성에 해당하는 [제품 프로필](https://helpx.adobe.com/kr/enterprise/using/manage-products-and-profiles.html)을 선택합니다. 속성을 사용하지 않는 경우 기본 Workspace 옵션을 선택합니다. **[!UICONTROL 구성된 API 저장]**&#x200B;을 클릭합니다.
 
    ![configure-io-target-createproject9](assets/configure-io-target-createproject9.png)
 
-1. **[!UICONTROL Create Integration]** 아이콘을 클릭합니다. API가 성공적으로 구성되었음을 나타내는 임시 메시지를 수신해야 합니다.
-1. 마지막 단계로 프로젝트 이름을 원래 `Project 1`보다 의미 있는 이름으로 바꾸십시오. 이렇게 하려면 탐색 경로를 표시로 사용하여 프로젝트로 이동하고 **[!UICONTROL Edit project]**&#x200B;을(를) 클릭하여 **[!UICONTROL Edit Project]** 모달에 액세스한 다음 프로젝트 이름을 변경합니다.
+1. **[!UICONTROL 통합 만들기]**&#x200B;를 클릭합니다. API가 성공적으로 구성되었음을 나타내는 임시 메시지를 수신해야 합니다.
+1. 마지막 단계로 프로젝트 이름을 원래 `Project 1`보다 의미 있는 이름으로 바꾸십시오. 이렇게 하려면 표시되는 탐색 경로를 사용하여 프로젝트로 이동하고 **[!UICONTROL 프로젝트 편집]**&#x200B;을 클릭하여 **[!UICONTROL 프로젝트 편집]** 모달에 액세스한 다음 프로젝트 이름을 변경합니다.
 
    ![configure-io-target-createproject11](assets/configure-io-target-createproject11.png)
 
@@ -107,11 +107,11 @@ Postman에서 프로젝트의 세부 정보를 지정하는 방법에는 여러 
 >
 >[!DNL Target]을(를) 포함하여 모든 Experience Cloud 솔루션에 적용할 수 있는 비디오 지침은 [Experience Platform API와 함께 Postman 사용](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=ko)을 참조하십시오. 다음 섹션은 [!DNL Target] API와 관련이 있습니다. 1. Experience Platform API를 만들고 Postman 2로 내보냅니다. Postman을 사용하여 액세스 토큰을 생성합니다. 이러한 단계는 아래에 나와 있습니다.
 
-1. [Adobe Developer Console](https://developer.adobe.com/console/home)에서 새 프로젝트의 **[!UICONTROL Service Account (JWT)]** 자격 증명을 보려면 이동하십시오. 표시된 대로 왼쪽 탐색 또는 **[!UICONTROL Credentials]** 섹션을 사용합니다.
+1. [Adobe Developer Console](https://developer.adobe.com/console/home)에서 새 프로젝트의 **[!UICONTROL 서비스 계정(JWT)]** 자격 증명으로 이동합니다. 표시된 대로 왼쪽 탐색 또는 **[!UICONTROL 자격 증명]** 섹션을 사용하십시오.
 
    ![JWT1](assets/configure-io-target-jwt1.png)
 
-   **[!UICONTROL Credential details]**&#x200B;에서 **[!UICONTROL Public key(s)]**, **[!UICONTROL Client ID]** 및 서비스 계정과 관련된 기타 정보를 볼 수 있습니다.
+   **[!UICONTROL 자격 증명 세부 정보]**&#x200B;에서 **[!UICONTROL 공개 키]**, **[!UICONTROL 클라이언트 ID]** 및 서비스 계정과 관련된 기타 정보를 볼 수 있습니다.
 
    ![JWT1a](assets/configure-io-target-jwt1a.png)
 
@@ -119,7 +119,7 @@ Postman에서 프로젝트의 세부 정보를 지정하는 방법에는 여러 
 
    ![JWT2](assets/configure-io-target-jwt2.png)
 
-1. Postman 환경에 대한 인증 정보를 캡처하는 JSON 파일을 만들려면 **[!UICONTROL Download for Postman]** > **[!UICONTROL Service Account (JWT)]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL Postman용 다운로드]** > **[!UICONTROL 서비스 계정(JWT)]**&#x200B;을 클릭하여 Postman 환경에 대한 인증 정보를 캡처하는 JSON 파일을 만듭니다.
 
    ![JWT3](assets/configure-io-target-jwt3.png)
 
@@ -127,11 +127,11 @@ Postman에서 프로젝트의 세부 정보를 지정하는 방법에는 여러 
 
    ![JWT3a](assets/configure-io-target-jwt3a.png)
 
-1. Postman에서 톱니바퀴 아이콘을 클릭하여 환경을 관리한 다음 **[!UICONTROL Import]**&#x200B;을(를) 클릭하여 JSON 파일(환경)을 가져옵니다.
+1. Postman에서 톱니바퀴 아이콘을 클릭하여 환경을 관리한 다음, **[!UICONTROL 가져오기]**&#x200B;를 클릭하여 JSON 파일(환경)을 가져옵니다.
 
    ![JWT4](assets/configure-io-target-jwt4.png)
 
-1. 파일을 선택하고 **[!UICONTROL Open]**&#x200B;을(를) 클릭합니다.
+1. 파일을 선택하고 **[!UICONTROL 열기]**&#x200B;를 클릭합니다.
 
    ![JWT5](assets/configure-io-target-jwt5.png)
 
@@ -151,11 +151,11 @@ Postman에서 프로젝트의 세부 정보를 지정하는 방법에는 여러 
 
    ![JWT9](assets/configure-io-target-jwt9.png)
 
-1. Postman에서 개인 키 값을 **[!UICONTROL INITIAL VALUE]** 및 **[!UICONTROL CURRENT VALUE]** 필드에 붙여 넣습니다.
+1. Postman에서 개인 키 값을 **[!UICONTROL 초기 값]** 및 **[!UICONTROL 현재 값]** 필드에 붙여 넣으십시오.
 
    ![JWT10](assets/configure-io-target-jwt10.png)
 
-1. **[!UICONTROL Update]**&#x200B;을(를) 클릭하고 환경 모달을 닫습니다.
+1. **[!UICONTROL 업데이트]**&#x200B;를 클릭하고 환경 모달을 닫습니다.
 
 ## 전달자 액세스 토큰 생성
 
@@ -165,19 +165,19 @@ Postman에서 프로젝트의 세부 정보를 지정하는 방법에는 여러 
 
    ![token1](assets/configure-io-target-generatetoken1.png)
 
-1. **[!UICONTROL Adobe I/O Access Token Generation Postman collection]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL Adobe I/O 액세스 토큰 생성 Postman 컬렉션]**&#x200B;을 클릭합니다.
 
    ![token2](assets/configure-io-target-generatetoken2.png)
 
-1. **[!UICONTROL Raw]**&#x200B;을(를) 클릭한 다음 결과 JSON을 클립보드에 복사하여 이 컬렉션에 대한 원시 JSON을 가져옵니다. (또는 원시 JSON을 .json 파일로 저장할 수 있습니다.)
+1. **[!UICONTROL 원시]**&#x200B;를 클릭한 다음 결과 JSON을 클립보드에 복사하여 이 컬렉션에 대한 원시 JSON을 가져옵니다. (또는 원시 JSON을 .json 파일로 저장할 수 있습니다.)
 
    ![token3](assets/configure-io-target-generatetoken3.png)
 
-1. Postman에서 클립보드에서 원시 JSON을 붙여 넣고 제출하여 컬렉션을 가져옵니다. (또는 저장한 .json 파일을 업로드할 수 있습니다.) **[!UICONTROL Continue]** 아이콘을 클릭합니다.
+1. Postman에서 클립보드에서 원시 JSON을 붙여 넣고 제출하여 컬렉션을 가져옵니다. (또는 저장한 .json 파일을 업로드할 수 있습니다.) **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 
    ![token4](assets/configure-io-target-generatetoken4.png)
 
-1. Adobe I/O 액세스 토큰 생성 Postman 컬렉션에서 **[!UICONTROL IMS: JWT Generate + Auth via User Token]** 요청을 선택하고 환경이 선택되어 있는지 확인한 다음 **[!UICONTROL Send]**&#x200B;을(를) 클릭하여 토큰을 생성합니다.
+1. Adobe I/O 액세스 토큰 생성 Postman 컬렉션에서 **[!UICONTROL IMS: JWT 사용자 토큰을 통해 생성 + 인증]** 요청을 선택하고 환경이 선택되어 있는지 확인한 다음 **[!UICONTROL 전송]**&#x200B;을 클릭하여 토큰을 생성합니다.
 
    ![토큰5](assets/configure-io-target-generatetoken5.png)
 
@@ -205,7 +205,7 @@ Postman에서 프로젝트의 세부 정보를 지정하는 방법에는 여러 
 
    ![testtoken1](assets/configure-io-target-testtoken0.png)
 
-1. 컬렉션을 확장하고 **[!UICONTROL List activities]** 요청을 확인합니다.
+1. 컬렉션을 확장하고 **[!UICONTROL 활동 나열]** 요청을 확인합니다.
 
    ![testtoken1](assets/configure-io-target-testtoken1.png)
 
@@ -229,7 +229,7 @@ Postman에서 프로젝트의 세부 정보를 지정하는 방법에는 여러 
 
    ![JWT11](assets/configure-io-target-jwt11.png)
 
-1. 새 `{{TENANT_ID}}` 환경 변수를 추가하려면 입력하십시오. 테넌트 ID 값을 복사하여 새 `TENANT_ID` 환경 변수의 **[!UICONTROL INITIAL VALUE]** 및 **[!UICONTROL CURRENT VALUE]** 필드에 붙여넣으십시오.
+1. 새 `{{TENANT_ID}}` 환경 변수를 추가하려면 입력하십시오. 테넌트 ID 값을 복사하여 새 `TENANT_ID` 환경 변수의 **[!UICONTROL 초기 값]** 및 **[!UICONTROL 현재 값]** 필드에 붙여넣으십시오.
 
    ![testtoken5](assets/configure-io-target-testtoken5.png)
 

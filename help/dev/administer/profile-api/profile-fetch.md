@@ -11,7 +11,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 294
+source-wordcount: 297
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ URL은 다음 예제와 비슷합니다.
 https://<clientCode>.tt.omtrdc.net/rest/v1/profiles/marketingCloudVisitorId/<ECID>?client=<clientCode>
 ```
 
-`<clientCode>`을(를) [!DNL Target] [!UICONTROL Client Code]&#x200B;(으)로 바꾸고 `<ECID>`을(를) [!DNL Experience Cloud Visitor ID]&#x200B;([!DNL Marketing Cloud Visitor ID])(으)로 바꿉니다.
+`<clientCode>`을(를) [!DNL Target] [!UICONTROL 클라이언트 코드]&#x200B;(으)로, `<ECID>`을(를) [!DNL Experience Cloud Visitor ID]&#x200B;([!DNL Marketing Cloud Visitor ID])(으)로 바꾸십시오.
 
 ## tntid 사용
 
@@ -60,7 +60,7 @@ https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/111492025094307-353046
 https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/thirdPartyId/your-thirdpartyid?client=<your-client-code>
 ```
 
-`<your-client-code>` 및 `your-thirdpartyid`을(를) 바꾸고 GET 요청을 실행합니다. 다음은 [!UICONTROL thirdpartyid]을(를) 사용한 프로필 가져오기 호출의 예입니다.
+`<your-client-code>` 및 `your-thirdpartyid`을(를) 바꾸고 GET 요청을 실행합니다. 다음은 [!UICONTROL thirdpartyid]을(를) 사용하는 프로필 가져오기 호출의 예입니다.
 
 ```
 https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/thirdPartyId/a1-mbox3rdPartyId?client=<your-client-code>

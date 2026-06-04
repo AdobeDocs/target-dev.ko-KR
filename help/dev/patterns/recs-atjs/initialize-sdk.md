@@ -23,7 +23,7 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1797
+source-wordcount: 1879
 ht-degree: 4%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 4%
 
 **전제 조건**
 
-* 방문자 ID/API 서비스를 사용하려면 회사에 [!DNL Adobe Experience Cloud]이(가) 사용하도록 설정되어 있고 [!UICONTROL Organization ID]이(가) 있어야 합니다. 자세한 내용은 *ID 서비스 도움말* 안내서의 [Experience Cloud 요구 사항: 조직 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/requirements.html?lang=ko&){target=_blank}을 참조하십시오.
+* 방문자 ID/API 서비스를 사용하려면 귀사에서 [!DNL Adobe Experience Cloud]을(를) 사용하도록 설정하고 [!UICONTROL 조직 ID]가 있어야 합니다. 자세한 내용은 *ID 서비스 도움말* 안내서의 [Experience Cloud 요구 사항: 조직 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/requirements.html?lang=ko&){target=_blank}을 참조하십시오.
 * `VisitorAPI.js` 파일이 필요합니다. [!DNL Adobe Analytics]을(를) 구현한 경우 이 파일이 이미 있어야 합니다. 이 파일은 [[!DNL Adobe Experience Platform] 태그 확장](https://experienceleague.adobe.com/docs/tags.html?lang=ko){target=_blank}을 통해 추가하거나 [Adobe Analytics 코드 관리자](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ko){target=_blank}에서 다운로드할 수도 있습니다.
 
 **VisitorAPI.js 구성 및 참조**
@@ -84,10 +84,10 @@ ht-degree: 4%
 
 **판독값**
 
-* [Experience Cloud Identity Service 개요](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=ko){target=_blank}
+* [Experience Cloud ID 서비스 개요](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=ko){target=_blank}
 * [ID 서비스 정보](https://experienceleague.adobe.com/docs/id-service/using/intro/about-id-service.html?lang=ko){target=_blank}
 * [쿠키 및 Experience Cloud ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=ko){target=_blank}
-* [Experience Cloud ID 서비스에서 ID를 요청하고 설정하는 방법](https://experienceleague.adobe.com/docs/id-service/using/intro/id-request.html?lang=ko){target=_blank}
+* [Experience Cloud Identity 서비스에서 ID를 요청하고 설정하는 방법](https://experienceleague.adobe.com/docs/id-service/using/intro/id-request.html?lang=ko){target=_blank}
 * [ID 동기화 및 일치율 이해하기](https://experienceleague.adobe.com/docs/id-service/using/intro/match-rates.html?lang=ko){target=_blank}
 
 **작업**
@@ -255,9 +255,9 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 **사용 가능한 기준**
 
-* [!UICONTROL People Who Viewed These, Viewed Those]
-* [!UICONTROL People Who Viewed These, Bought Those]
-* [!UICONTROL People Who Bought These, Bought Those]
+* [!UICONTROL 열람한 사람, 열람한 사람]
+* [!UICONTROL 열람한 사람, 구매한 사람]
+* [!UICONTROL 이 항목을 구입하고 다른 항목을 구입한 사람]
 
 **필요한 엔터티 매개 변수**
 
@@ -279,13 +279,13 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 **사용 가능한 기준**
 
-* [!UICONTROL Most Viewed Across the Site]
-* [!UICONTROL Most Viewed by Category]
-* [!UICONTROL Most Viewed by Item Attribute]
-* [!UICONTROL Top Sellers Across the Site]
-* [!UICONTROL Top Sellers by Category]
-* [!UICONTROL Top Sellers by Item Attribute]
-* [!UICONTROL Top by Analytics Metric]
+* [!UICONTROL 사이트에서 가장 많이 본 항목]
+* [!UICONTROL 범주별 가장 많이 본 항목]
+* [!UICONTROL 가장 많이 본 항목 특성]
+* [!UICONTROL 사이트 전체 최상위 판매자]
+* [!UICONTROL 범주별 최상위 판매자]
+* [!UICONTROL 항목 특성별 최상위 판매자]
+* Analytics 지표로 [!UICONTROL 상위]
 
 **필요한 엔터티 매개 변수**
 
@@ -308,10 +308,10 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 **사용 가능한 기준**
 
-* [!UICONTROL People Who Viewed This, Viewed That]
-* [!UICONTROL People Who Viewed This, Bought That]
-* [!UICONTROL People Who Bought This, Bought That]
-* [!UICONTROL Items with Similar Attributes]
+* [!UICONTROL 이 항목을 보고 다른 항목도 본 사람]
+* [!UICONTROL 이 항목을 보고 다른 항목을 구입한 사람]
+* [!UICONTROL 이 항목을 구입하고 다른 항목도 구입한 사람]
+* [!UICONTROL 비슷한 특성을 가진 항목]
 
 **필요한 엔터티 매개 변수**
 
@@ -333,8 +333,8 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 **사용 가능한 기준**
 
-* [!UICONTROL Recently Viewed Items]
-* [!UICONTROL Recommended for You]
+* [!UICONTROL 최근에 본 항목]
+* [!UICONTROL 추천]
 
 **필요한 엔터티 매개 변수**
 
@@ -356,7 +356,7 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 **사용 가능한 기준**
 
-* [!UICONTROL Custom algorithm]
+* [!UICONTROL 사용자 지정 알고리즘]
 
 **필요한 엔터티 매개 변수**
 

@@ -20,7 +20,7 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1139
+source-wordcount: 1166
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ ht-degree: 0%
 }
 ```
 
-[!UICONTROL Form-based Experience Composer] 활동에 대한 제안은 동일한 제안 아래에 콘텐츠와 클릭 지표 항목을 모두 포함할 수 있습니다. 따라서 `scopeDetails.characteristics.analyticsToken` 속성에 콘텐츠에 대한 단일 분석 토큰이 표시되지 않고 `scopeDetails.characteristics.analyticsDisplayToken` 및 `scopeDetails.characteristics.analyticsClickToken` 속성에서 디스플레이 및 클릭 분석 토큰이 모두 지정될 수 있습니다.
+[!UICONTROL 양식 기반 경험 작성기] 활동에 대한 제안은 동일한 제안 아래에 콘텐츠와 클릭 지표 항목을 모두 포함할 수 있습니다. 따라서 `scopeDetails.characteristics.analyticsToken` 속성에 콘텐츠에 대한 단일 분석 토큰이 표시되지 않고 `scopeDetails.characteristics.analyticsDisplayToken` 및 `scopeDetails.characteristics.analyticsClickToken` 속성에서 디스플레이 및 클릭 분석 토큰이 모두 지정될 수 있습니다.
 
 ```json
 {
@@ -236,13 +236,13 @@ ht-degree: 0%
 
 다음 하위 섹션에서는 일반적인 사용 사례에 대해 [!DNL Analytics] 클라이언트측 로깅을 구현하는 방법을 보여 줍니다.
 
-### [!UICONTROL Form-Based Experience Composer]개 활동 {#form-based-composer}
+### [!UICONTROL 양식 기반 경험 작성기] 활동 {#form-based-composer}
 
 [!DNL Platform Web SDK]을(를) 사용하여 [Adobe Target 양식 기반 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=ko) 활동에서 제안 실행을 제어할 수 있습니다.
 
 특정 결정 범위에 대한 제안을 요청하면 반환된 제안에 해당 [!DNL Analytics] 토큰이 포함됩니다. 가장 좋은 방법은 [!DNL Experience Platform Web SDK] `sendEvent` 명령을 체인한 다음 반환된 제안을 반복하여 실행하여 [!DNL Analytics] 토큰을 동시에 수집하는 것입니다.
 
-다음과 같이 [!UICONTROL Form-Based Experience Composer] 활동 범위에 대해 `sendEvent` 명령을 트리거할 수 있습니다.
+다음과 같은 [!UICONTROL 양식 기반 경험 작성기] 활동 범위에 대해 `sendEvent` 명령을 트리거할 수 있습니다.
 
 ```javascript
 alloy("sendEvent", {
@@ -402,7 +402,7 @@ function getDisplayAnalyticsPayload(proposition) {
 }
 ```
 
-제안에는 해당 항목의 `schema` 속성으로 표시된 대로 여러 유형의 항목이 있을 수 있습니다. [!UICONTROL Form-Based Experience Composer] 활동에 대해 지원되는 제안 항목 스키마는 네 개입니다.
+제안에는 해당 항목의 `schema` 속성으로 표시된 대로 여러 유형의 항목이 있을 수 있습니다. [!UICONTROL 양식 기반 경험 작성기] 활동에 대해 지원되는 네 가지 제안 항목 스키마가 있습니다.
 
 ```javascript
 var HTML_SCHEMA = "https://ns.adobe.com/personalization/html-content-item";
@@ -432,9 +432,9 @@ function getClickAnalyticsPayload(proposition) {
 
 #### 구현 요약 {#implementation-summary}
 
-요약하면 [!DNL Experience Platform Web SDK]에 [!UICONTROL Form-Based Experience Composer] 활동을 적용할 때 다음 단계를 실행해야 합니다.
+요약하면 [!DNL Experience Platform Web SDK]에 [!UICONTROL 양식 기반 경험 작성기] 활동을 적용할 때 다음 단계를 실행해야 합니다.
 
-1. [!UICONTROL Form-Based Experience Composer]개의 활동 오퍼를 가져오는 이벤트를 보냅니다.
+1. [!UICONTROL 양식 기반 경험 작성기] 활동 오퍼를 가져오는 이벤트를 보냅니다.
 1. 페이지에 콘텐츠 변경 사항을 적용합니다.
 1. `decisioning.propositionDisplay` 알림 이벤트 보내기;
 1. SDK 응답에서 [!DNL Analytics] 표시 토큰을 수집하고 [!DNL Analytics] 히트에 대한 페이로드를 구성합니다.
@@ -476,7 +476,7 @@ alloy("sendEvent", {
 });
 ```
 
-### [!UICONTROL Visual Experience Composer]&#x200B;(VEC) 활동 {#visual-experience-composer-acitivties}
+### [!UICONTROL 시각적 경험 작성기]&#x200B;(VEC) 활동 {#visual-experience-composer-acitivties}
 
 [!DNL Platform Web SDK]을(를) 사용하면 [VEC(시각적 경험 작성기)](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=ko)를 사용하여 작성된 오퍼를 처리할 수 있습니다.
 

@@ -12,7 +12,7 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 357
+source-wordcount: 366
 ht-degree: 12%
 
 ---
@@ -53,7 +53,7 @@ target_client_instance.get_offers(options)
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |
-| 응답 | DeliveryResponse | [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) 응답 준수 |
+| 응답 | DeliveryResponse | [[!UICONTROL Target 배달 API]](/help/dev/implement/delivery-api/overview.md) 응답 준수 |
 | target_cookie | dict | [!DNL Target] 쿠키 |
 | target_location_hint_cookie | dict | [!DNL Target] 위치 힌트 쿠키 |
 | analytics_details | list[AnalyticsResponse] | 클라이언트측 Analytics 사용의 경우 Analytics 페이로드 |
@@ -74,8 +74,8 @@ target_client_instance.get_offers(options)
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |
 | decisioning_method | str | 사용된 의사 결정 방법: 온디바이스 또는 서버측 |
-| remote_mboxes | 목록`[str]` | Decisioning 메서드가 `on-device`인 경우 온디바이스에서 완전히 결정할 수 없는 mbox 이름 배열이 제공됩니다. 즉, [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) 요청이 필요합니다. |
-| 원격 보기 수 | 목록`[str]` | 의사 결정 메서드가 온디바이스일 때 온디바이스에서 완전히 결정될 수 없는 보기 이름 배열이 제공됩니다. 즉, [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) 요청이 필요합니다. |
+| remote_mboxes | 목록`[str]` | Decisioning 메서드가 `on-device`인 경우 온디바이스에서 완전히 결정할 수 없는 mbox 이름 배열이 제공됩니다. 즉, [[!UICONTROL Target 배달 API]](/help/dev/implement/delivery-api/overview.md) 요청이 필요합니다. |
+| 원격 보기 수 | 목록`[str]` | 의사 결정 메서드가 온디바이스일 때 온디바이스에서 완전히 결정될 수 없는 보기 이름 배열이 제공됩니다. 즉, [[!UICONTROL Target 배달 API]](/help/dev/implement/delivery-api/overview.md) 요청이 필요합니다. |
 
 ## 예
 

@@ -1,7 +1,7 @@
 ---
 keywords: mboxCreate, mboxcreate, mbox create, at.js, 함수, 함수
 description: ' [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 [!UICONTROL mboxCreate()] 함수를 사용하여 mboxDefault 클래스 이름을 사용하는 가장 가까운 DIV에 오퍼를 적용합니다. (at.js 1.x)'
-title: '[!UICONTROL mboxCreate()] 함수를 사용하는 방법'
+title: '[!UICONTROL mboxCreate()] 함수를 사용하는 방법은 무엇입니까?'
 feature: at.js
 exl-id: 86eba1fc-4e1d-4793-94e7-898bf81f8945
 TQID: https://experienceleague.adobe.com/hCEKL9RPtqIbMVEouzObjU6dc7TKl1hBtKZ1jEdicRE
@@ -17,8 +17,8 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 211
-ht-degree: 41%
+source-wordcount: 216
+ht-degree: 40%
 
 ---
 

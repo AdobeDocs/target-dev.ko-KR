@@ -19,7 +19,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 383
+source-wordcount: 398
 ht-degree: 0%
 
 ---
@@ -54,19 +54,19 @@ ht-degree: 0%
    >
    >[!DNL Experience League]에서 문제를 열려면 `github.com`에 로그인해야 합니다. 문제를 처음 여는 경우 기여 지침 및 행동 수칙 지침을 검토하십시오.
 
-1. (조건부) 새 패턴 또는 기존 패턴에 대한 개선 사항에 대한 아이디어를 제안하려면 **[!UICONTROL Detailed feedback options]**&#x200B;을(를) 클릭한 다음 **[!UICONTROL Report an issue]**&#x200B;을(를) 클릭합니다.
+1. (조건부) 새로운 패턴이나 기존 패턴에 대한 개선 사항에 대한 아이디어를 제안하려면 **[!UICONTROL 자세한 피드백 옵션]**&#x200B;을 클릭한 다음 **[!UICONTROL 문제 보고]**&#x200B;를 클릭합니다.
 
    1. 제목을 입력한 다음 텍스트 상자에 설명을 입력합니다.
 
       필요한 경우 파일 또는 스크린샷을 첨부합니다.
 
-   1. 완료되면 **[!UICONTROL Submit new issue]**&#x200B;을(를) 클릭합니다.
+   1. 완료되면 **[!UICONTROL 새 문제 제출]**&#x200B;을 클릭하세요.
 
-1. (조건부) 기존 패턴의 텍스트를 편집하려면 관련 문서의 피드백 옵션 모델에서 **[!UICONTROL Suggest an edit]**&#x200B;을(를) 클릭한 다음 **[!UICONTROL Edit]** 아이콘(연필 아이콘)을 클릭합니다.
+1. (조건부) 기존 패턴의 텍스트를 편집하려면 관련 문서의 피드백 옵션 모델에서 **[!UICONTROL 편집 제안]**&#x200B;을 클릭한 다음 **[!UICONTROL 편집]** 아이콘(연필 아이콘)을 클릭합니다.
 
    1. Markdown 구문을 사용하여 편집합니다.
 
-   1. 완료되면 **[!UICONTROL Commit changes]**&#x200B;을(를) 클릭합니다.
+   1. 완료되면 **[!UICONTROL 변경 내용 커밋]**&#x200B;을 클릭합니다.
 
 [!DNL Target] 팀은 사용자의 의견 또는 편집 내용을 검토하고 이 기능을 사용하여 사용자와 연락하여 추가 정보를 수집하거나 필요한 경우 자세한 설명을 얻을 수 있습니다.
 

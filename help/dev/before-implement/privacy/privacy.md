@@ -20,8 +20,8 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 799
-ht-degree: 44%
+source-wordcount: 814
+ht-degree: 43%
 
 ---
 
@@ -43,11 +43,11 @@ Adobe은 사용자가 Adobe [!DNL Target]에 대해 활성화할 수 있는 &quo
 
 이 기능이 활성화되어 있으면 IP 주소가 충분히 익명으로 변경되므로 더 이상 개인 정보로 식별되지 않습니다. 따라서 [!DNL Target]은(는) 개인 정보 수집을 허용하지 않는 국가의 데이터 개인 정보 보호 법률에 따라 사용할 수 있습니다. 도시 수준의 정보를 획득하는 것은 IP 주소 난독화의 영향을 크게 받을 수 있습니다. 지역 및 국가 수준의 정보를 획득하는 것은 IP 주소 난독화의 영향을 약간만 받아야 합니다.
 
-**[!UICONTROL Administration]** > **[!UICONTROL Implementation]**(으)로 이동하여 [!DNL Target] UI에서 다음 설정을 사용할 수 있습니다.
+**[!UICONTROL 관리]** > **[!UICONTROL 구현]**(으)로 이동하여 [!DNL Target] UI에서 다음 설정을 사용할 수 있습니다.
 
-* [!UICONTROL Last octet obfuscation]: [!DNL Target]에서 IP 주소의 마지막 옥텟을 숨깁니다.
-* [!UICONTROL Entire IP obfuscation]: [!DNL Target]에서 전체 IP 주소를 숨깁니다.
-* [!UICONTROL None]: [!DNL Target]에서 IP 주소의 일부를 숨기지 않습니다.
+* [!UICONTROL 마지막 옥텟 난독화]: [!DNL Target]이(가) IP 주소의 마지막 옥텟을 숨깁니다.
+* [!UICONTROL 전체 IP 난독화]: [!DNL Target]에서 전체 IP 주소를 숨깁니다.
+* [!UICONTROL 없음]: [!DNL Target]에서 IP 주소의 일부를 숨기지 않습니다.
 
   ![ip-options 난독화](assets/obfuscate-ip.png)
 
@@ -55,9 +55,9 @@ Adobe은 사용자가 Adobe [!DNL Target]에 대해 활성화할 수 있는 &quo
 
 ### [!DNL Adobe Experience Platform Web SDK]을(를) 사용할 때 데이터 스트림 수준 IP 난독화 {#aep}
 
-[!DNL Platform Web SDK]&#x200B;(버전 23.4 이상)을 사용하는 경우 데이터스트림 수준의 IP 난독화 설정이 [!DNL Target]에 설정된 IP 난독화 옵션보다 우선합니다. 예를 들어 데이터스트림 수준 IP 난독화 옵션이 [!UICONTROL Full]&#x200B;(으)로 설정되어 있고 [!DNL Target] IP 난독화 옵션이 [!UICONTROL Last octet obfuscation]&#x200B;(으)로 설정되어 있으면 [!DNL Target]은(는) 완전히 난독화된 IP를 받습니다.
+[!DNL Platform Web SDK]&#x200B;(버전 23.4 이상)을 사용하는 경우 데이터스트림 수준의 IP 난독화 설정이 [!DNL Target]에 설정된 IP 난독화 옵션보다 우선합니다. 예를 들어 데이터스트림 수준 IP 난독화 옵션이 [!UICONTROL 전체]&#x200B;(으)로 설정되어 있고 [!DNL Target] IP 난독화 옵션이 [!UICONTROL 마지막 옥텟 난독화]&#x200B;(으)로 설정되어 있으면 [!DNL Target]이(가) 완전히 난독화된 IP를 받습니다.
 
-자세한 내용은 *[!DNL Adobe Experience Platfrom]Datastreams 안내서*&#x200B;의 [데이터스트림 구성](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ko){target=_blank}에서 [!UICONTROL IP Obfuscation]을(를) 참조하십시오.
+자세한 내용은 *[!DNL Adobe Experience Platfrom]Datastreams 안내서*&#x200B;에서 [데이터스트림 구성](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ko){target=_blank}의 [!UICONTROL IP 난독화]를 참조하십시오.
 
 ## 지리 특성
 

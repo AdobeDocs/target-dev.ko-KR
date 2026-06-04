@@ -11,17 +11,17 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 175
-ht-degree: 4%
+source-wordcount: 180
+ht-degree: 3%
 
 ---
 
-# [!UICONTROL Location Service] 사용
+# [!UICONTROL 위치 서비스] 사용
 
 위치는 모바일 사용자를 이해하고 참여하기 위한 중요한 컨텍스트입니다. 모바일 앱 개발자는 이러한 컨텍스트를 사용하여 앱 디자인을 강화하고 이를 보다 개인화되고 매력적인 경험으로 만들 수 있습니다.
 
 [!DNL Adobe Experience Platform Location Service]&#x200B;([!DNL Location Service])은 위치를 인식하는 모바일 앱이 유연한 관심 영역(POI) 데이터베이스를 동반하는 풍부하고 사용하기 쉬운 SDK 인터페이스를 사용하여 위치 컨텍스트를 이해할 수 있도록 해주는 지리적 위치 서비스입니다.
 
-[!DNL Location Service]을(를) [!DNL Target]과(와) 함께 사용하여 Adobe Experience Platform의 [태그](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko-KR)와(과) 함께 규칙을 활용하여 [!UICONTROL Places] 데이터를 [!DNL Adobe Target] SDK 이벤트에 첨부할 수 있습니다.
+[!DNL Location Service]과(와) [!DNL Target]을(를) 함께 사용하여 Adobe Experience Platform의 [태그](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko-KR)와 함께 규칙을 활용하여 [!UICONTROL 위치] 데이터를 [!DNL Adobe Target] SDK 이벤트에 첨부할 수 있습니다.
 
-자세한 내용은 [Adobe Experience Platform 위치 서비스 안내서](https://experienceleague.adobe.com/docs/places/using/home.html?lang=ko)에서 [함께 [!UICONTROL Location Service] 사용 [!DNL Adobe Target]](https://experienceleague.adobe.com/docs/places/using/use-places-with-other-solutions/places-target/places-target.html?lang=ko)을 참조하세요.
+자세한 내용은 [Adobe Experience Platform 위치 서비스 안내서](https://experienceleague.adobe.com/docs/places/using/home.html?lang=ko)에서 [[!UICONTROL Location Service 사용]을(를) [!DNL Adobe Target]](https://experienceleague.adobe.com/docs/places/using/use-places-with-other-solutions/places-target/places-target.html?lang=ko)과(와) 함께 사용을(를) 참조하십시오.

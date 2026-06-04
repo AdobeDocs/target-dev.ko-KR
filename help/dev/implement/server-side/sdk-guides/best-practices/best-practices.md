@@ -1,6 +1,6 @@
 ---
 title: 온디바이스 의사 결정 사용 시 모범 사례
-description: ' [!DNL Adobe Target]에서 [!UICONTROL on-device decisioning]을(를) 사용할 때의 모범 사례 알아보기'
+description: ' [!DNL Adobe Target]에서 [!UICONTROL 온디바이스 의사 결정]을 사용할 때의 모범 사례를 알아봅니다.'
 feature: Implement Server-side
 exl-id: a0ca014d-ad9f-4ecc-961d-cb7ba236507f
 TQID: https://experienceleague.adobe.com/GgVJaAal4uS1RqpCK3wNCVwPjAOaXzjXNV7EoqWhwcY
@@ -12,14 +12,14 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 393
+source-wordcount: 399
 ht-degree: 3%
 
 ---
 
 # 모범 사례
 
-[!DNL Adobe]은(는) [!UICONTROL on-device decisioning]을(를) 사용할 때 다음 모범 사례를 권장합니다.
+[!DNL Adobe]은(는) [!UICONTROL 온디바이스 의사 결정]을 사용할 때 다음 모범 사례를 권장합니다.
 
 ## 의사 결정 방법이 &quot;온디바이스&quot;인 경우의 모범 사례
 

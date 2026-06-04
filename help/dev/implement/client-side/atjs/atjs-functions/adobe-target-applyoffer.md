@@ -1,7 +1,7 @@
 ---
 keywords: adobe.target.applyOffer, applyOffer, applyOffer, applyOffer, at.js, 함수, 함수, $8
 description: ' [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 [!UICONTROL adobe.target.applyOffer()] 함수를 사용하여 응답 콘텐츠를 적용하십시오.'
-title: '[!UICONTROL adobe.target.applyOffer()] 함수를 사용하는 방법'
+title: '[!UICONTROL adobe.target.applyOffer()] 함수를 사용하는 방법은 무엇입니까?'
 feature: at.js
 exl-id: 957bbe92-8012-4bd5-95d6-1ae38b72bb16
 TQID: https://experienceleague.adobe.com/lrjsIl-gKu1SnrZapxYcoDObvUCGG2ht58QtWbQkYts
@@ -17,12 +17,12 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 169
-ht-degree: 69%
+source-wordcount: 173
+ht-degree: 68%
 
 ---
 
-# [!UICONTROL adobe.target.applyOffer(options)]
+# [!UICONTROL adobe.target.applyOffer(옵션)]
 
 이 함수는 [!DNL Adobe Target]에 응답 콘텐츠를 적용하는 데 사용됩니다.
 

@@ -36,7 +36,7 @@ ht-degree: 4%
 
 | 리소스 | 세부 사항 |
 |--- |--- |
-| [Adobe Target 추가](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/target.html?lang=ko#implement-solutions) | 이 자습서에서는 [!DNL Adobe Experience Platform]의 태그를 사용하여 웹 사이트에서 [!DNL Target]을(를) 구현하는 단계별 지침을 제공합니다. 다뤄지는 주제에는 at.js JavaScript 라이브러리 추가, 글로벌 mbox 실행, 매개 변수 추가 및 다른 솔루션과의 통합이 있습니다. 이 문서는 Adobe Experience Platform 및 기타 Adobe Experience Cloud 솔루션을 구현하는 방법을 보여 주는 대규모 자습서의 일부입니다. |
+| [Adobe Target 추가](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/target.html?lang=ko#implement-solutions) | 이 자습서에서는 [!DNL Adobe Experience Platform]의 태그를 사용하여 웹 사이트에서 [!DNL Target]을(를) 구현하는 단계별 지침을 제공합니다. 다뤄지는 주제에는 at.js JavaScript 라이브러리 추가, 글로벌 mbox 실행, 매개 변수 추가 및 다른 솔루션과의 통합이 있습니다. 이 문서는 Adobe Experience Platform 및 기타 Adobe Experience Cloud 솔루션을 구현하는 방법을 보여 주는 대규모 튜토리얼의 일부입니다. |
 | [빠른 시작 안내서](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=ko) | 관련 고객 환경을 향상하는 데 필요한 분석, 마케팅 및 광고 태그를 배포하고 관리하는 방법에 대한 정보입니다. |
 | [Adobe [!DNL Target] 확장 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=ko) | [!DNL Adobe Experience Platform]을(를) 사용하여 [!DNL Target]을(를) 구현하는 방법에 대한 정보입니다. |
 

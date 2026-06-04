@@ -18,7 +18,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 611
+source-wordcount: 624
 ht-degree: 0%
 
 ---
@@ -71,8 +71,8 @@ https://vadymus.github.io/ateng/at-order-confirmation/index.html?a=1&b=2&adobe_m
 알 수 있듯이 URL에 `adobe_mc` 매개 변수가 추가되었습니다. 이 매개변수에는 다음에 대한 인코딩된 값이 포함되어 있습니다.
 
 * TS=1660667205: 현재 타임스탬프입니다. 이 타임스탬프는 웹 보기가 만료된 값을 받지 않도록 합니다.
-* MCMID=69624092487065093697422606480535692677: [!UICONTROL Experience Cloud ID]&#x200B;(ECID). [!DNL Adobe] 솔루션 간 방문자 식별에 필요한 MID 또는 [!UICONTROL Marketing Cloud ID]이라고도 합니다.
-* MCORGID=EB9CAE8B56E003697F000101@AdobeOrg: [!UICONTROL Adobe Organization ID].
+* MCMID=69624092487065093697422606480535692677: [!UICONTROL Experience Cloud ID]&#x200B;(ECID). MID 또는 [!UICONTROL Marketing Cloud ID]이라고도 하며, [!DNL Adobe] 솔루션 간 방문자 식별에 필요합니다.
+* MCORGID=EB9CAE8B56E003697F000101@AdobeOrg: [!UICONTROL Adobe 조직 ID].
 
 `Identity.getUrlVariables`은(는) [!DNL Experience Cloud Identity Service] URL 변수를 포함하는 적절한 형식의 문자열을 반환하는 대체 [!DNL Adobe Experience Platform Mobile SDK] 메서드입니다. 자세한 내용은 *ID API 참조*&#x200B;에서 [getUrlVariables](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#geturlvariables){target=_blank}을(를) 참조하십시오.
 
@@ -90,7 +90,7 @@ Target.getSessionId { (id, err) in
 
 ## 웹 보기에서 테스트
 
-웹 미리 보기 링크는 [!UICONTROL Activity detail] 페이지에서 [[!UICONTROL Adobe QA] 링크](/help/dev/implement/mobile/target-mobile-preview.md)를 클릭하여 다음과 같이 각 경험 미리 보기 링크를 복사하는 팝업을 표시합니다.
+웹 미리 보기 링크는 [[!UICONTROL Adobe QA] 링크](/help/dev/implement/mobile/target-mobile-preview.md)를 클릭하여 [!UICONTROL 활동 세부 정보] 페이지에 생성되며 다음과 같이 각 경험 미리 보기 링크를 복사하는 팝업을 표시합니다.
 
 ```
 ?at_preview_token=mhFIzJSF7JWb-RsnakpBqi_s83Sl64hZp928VWpkwvI&at_preview_index=1_1&at_preview_listed_activities_only=true

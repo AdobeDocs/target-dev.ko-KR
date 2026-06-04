@@ -1,6 +1,6 @@
 ---
 title: Adobe Target 배달 API 시작
-description: '[!UICONTROL Adobe Target Delivery API]을(를) 사용하는 방법'
+description: '[!UICONTROL Adobe Target 배달 API]를 사용하는 방법'
 keywords: 배달 api
 exl-id: 142ec3be-b017-4cdc-9079-b1cc173a710a
 feature: APIs/SDKs
@@ -16,14 +16,14 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 116
+source-wordcount: 132
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Adobe Target Delivery API] 시작
+# [!UICONTROL Adobe Target 배달 API] 시작
 
-[!UICONTROL Target Delivery API] 호출은 다음과 같습니다.
+[!UICONTROL Target 배달 API] 호출은 다음과 같습니다.
 
 ```
 curl -X POST \
@@ -55,9 +55,9 @@ curl -X POST \
     }'
 ```
 
-**[!UICONTROL Administration]** > **[!UICONTROL Implementation]**(으)로 이동하여 [!DNL Target] UI에서 `clientCode`을(를) 검색할 수 있습니다.
+**[!UICONTROL 관리]** > **[!UICONTROL 구현]**&#x200B;으로 이동하여 [!DNL Target] UI에서 `clientCode`을(를) 검색할 수 있습니다.
 
-[!UICONTROL Target Delivery API] 호출을 수행하기 전에 다음 단계에 따라 응답에 관련 경험이 포함되어 있는지 확인하여 최종 사용자에게 표시합니다.
+[!UICONTROL Target 배달 API]를 호출하기 전에 다음 단계에 따라 응답에 관련 경험이 포함되어 있는지 확인하여 최종 사용자에게 표시할 수 있습니다.
 
 1. [양식 기반 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=ko) 또는 [시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=ko)를 사용하여 [!DNL Target] 활동(A/B, XT, AP 또는 권장 사항)을 만듭니다.
 1. 배달 API를 사용하여 2단계에서 만든 [!DNL Target] 활동에 사용된 mbox에 대한 응답을 가져옵니다.

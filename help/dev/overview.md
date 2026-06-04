@@ -33,7 +33,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 501
+source-wordcount: 510
 ht-degree: 11%
 
 ---
@@ -104,7 +104,7 @@ ht-degree: 11%
 
 [**[!DNL Target Profile API]**](/help/dev/administer/profile-api/profiles-api.md): [!DNL Adobe Target] 사용자 프로필 정보를 검색합니다.
 
-[**[!DNL Target Reporting API]**](https://developer.adobe.com/target/administer/admin-api/#tag/Reports): [!UICONTROL A/B Test] 및 [!UICONTROL Automated Personalization] 활동 보고서 데이터를 검색합니다.
+[**[!DNL Target Reporting API]**](https://developer.adobe.com/target/administer/admin-api/#tag/Reports): [!UICONTROL A/B 테스트] 및 [!UICONTROL Automated Personalization] 활동 보고서 데이터를 검색합니다.
 
 [**[!DNL Target Recommendations API]**](https://developer.adobe.com/target/administer/recommendations-api/): [!DNL Target Recommendations] API를 사용합니다.
 

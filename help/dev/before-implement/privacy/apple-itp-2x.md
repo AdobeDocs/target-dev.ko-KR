@@ -53,4 +53,4 @@ Apple ITP 2.x는 다음 영역의 [!DNL Target]에 영향을 줍니다.
 
 ## 현재 [!DNL Target] 구현이 영향을 받습니까?
 
-[!DNL Target] JavaScript 라이브러리 외에 ECID(Experience Cloud ID) 라이브러리를 사용하는 경우 구현은 [Safari ITP 2.1이 Adobe Experience Cloud 및 Experience Platform 고객에게 미치는 영향](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)에 나열된 방식으로 영향을 받습니다.
+[!DNL Target] JavaScript 라이브러리 외에 ECID(Experience Cloud ID) 라이브러리를 사용하는 경우 구현은 다음 문서에 나열된 방식으로 영향을 받습니다. [Safari ITP 2.1이 Adobe Experience Cloud 및 Experience Platform 고객에게 미치는 영향](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).

@@ -13,7 +13,7 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 230
+source-wordcount: 233
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ TargetDeliveryResponse TargetClient.SendNotifications(TargetDeliveryRequest requ
 
 ## 예
 
-먼저 `home` 및 `product1` mbox에 대한 콘텐츠를 미리 가져오기 위한 [!UICONTROL Target Delivery API] 요청을 빌드해 보겠습니다.
+먼저 `home` 및 `product1` mbox에 대한 콘텐츠를 미리 가져오기 위한 [!UICONTROL Target 배달 API] 요청을 빌드해 보겠습니다.
 
 ### \.NET
 

@@ -11,8 +11,8 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 552
-ht-degree: 18%
+source-wordcount: 578
+ht-degree: 24%
 
 ---
 
@@ -43,15 +43,15 @@ ht-degree: 18%
 
 ## 미리 보기 링크 생성
 
-1. [!DNL Target] UI에서 **[!UICONTROL More Options]** 아이콘(세로 줄임표)을 클릭한 다음 **[!UICONTROL Create Mobile Preview Link]**&#x200B;을(를) 선택합니다.
+1. [!DNL Target] UI에서 **[!UICONTROL 추가 옵션]** 아이콘(세로 줄임표)을 클릭한 다음 **[!UICONTROL 모바일 미리 보기 링크 만들기]**&#x200B;를 선택합니다.
 
    ![대체 이미지](assets/mobile-preview-create.png)
 
-1. 미리 보려는 활동을 선택한 다음 **[!UICONTROL Generate Mobile Preview Link]**&#x200B;을(를) 클릭합니다.
+1. 미리 보려는 활동을 선택한 다음 **[!UICONTROL 모바일 미리 보기 링크 생성]**&#x200B;을 클릭합니다.
 
    >[!NOTE]
    >
-   >양식 기반 [!UICONTROL A/B Test] 및 [!UICONTROL Experience Targeting]&#x200B;(XT) 활동만 선택할 수 있습니다.
+   >양식 기반 [!UICONTROL A/B 테스트] 및 [!UICONTROL 경험 타깃팅]&#x200B;(XT) 활동만 선택할 수 있습니다.
 
    ![대체 이미지](assets/mobile-preview-select-activities.png)
 
@@ -61,7 +61,7 @@ ht-degree: 18%
 
    ![대체 이미지](assets/mobile-preview-enter-url-scheme.png)
 
-1. **[!UICONTROL Generate Mobile Preview Link]**&#x200B;을(를) 클릭한 다음 링크를 복사합니다.
+1. **[!UICONTROL 모바일 미리 보기 링크 생성]**&#x200B;을 클릭한 다음, 링크를 복사합니다.
 
    ![대체 이미지](assets/mobile-preview-generate-and-copy.png)
 
@@ -75,14 +75,14 @@ ht-degree: 18%
 
    |![딥 링크 1 미리 보기](assets/mobile-preview-open-deeplink.png)|![딥 링크 2 미리 보기](assets/mobile-preview-open-app.png)|
 
-   앱이 열리고 [!DNL Target] [!UICONTROL Mobile Preview Mode]이(가) 시작됩니다.
+   앱이 열리고 [!DNL Target] [!UICONTROL 모바일 미리 보기 모드]가 시작됩니다.
 
-1. 표시할 경험의 조합을 선택한 다음 **[!UICONTROL Launch Experiences]**&#x200B;을(를) 클릭합니다.
+1. 표시하려는 경험의 조합을 선택한 다음 **[!UICONTROL 경험 실행]**&#x200B;을 클릭합니다.
 
    |![모바일 미리 보기 1](assets/mobile-preview-experience-selection-1.png)|![모바일 미리 보기 2](assets/mobile-preview-experience-result-1-france.png)|![모바일 미리 보기 3](assets/mobile-preview-experience-result-1-shipfree.png)|
 |![모바일 미리 보기 4](assets/mobile-preview-experience-selection-2.png)|![모바일 미리 보기 5](assets/mobile-preview-experience-result-2-aus.png)|![모바일 미리 보기 6](assets/mobile-preview-experience-result-2-10off.png)|
 
 ## 제한
 
-* **[!UICONTROL Launch Experiences]** 단추를 클릭한 후 새 콘텐츠를 표시하려면 보기를 다시 로드해야 합니다. 가장 쉬운 방법은 다른 화면으로 전환한 다음, 변경이 발생할 것으로 예상되는 화면으로 돌아가는 것입니다.
+* **[!UICONTROL 경험 실행]** 단추를 클릭한 후에 새 컨텐츠가 표시되도록 보기를 다시 로드해야 합니다. 가장 쉬운 방법은 다른 화면으로 전환한 다음, 변경이 발생할 것으로 예상되는 화면으로 돌아가는 것입니다.
 * API-19(KitKat) 이전의 Android 버전에서는 모바일 미리 보기가 지원되지 않습니다.

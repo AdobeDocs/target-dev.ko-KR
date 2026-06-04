@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Experience Cloud] 개요 통합'
-description: Adobe [!DNL Target] 서버측 SDK는 Adobe Experience Cloud의 강력한 기능을 활용할 수 있도록 Adobe Analytics 및 Adobe Audience Manager과의 원활한 통합을 지원합니다.
+description: Adobe [!DNL Target] 서버측 SDK는 Adobe Analytics 및 Adobe Audience Manager과의 원활한 통합을 지원하므로 Adobe Experience Cloud의 강력한 기능을 활용할 수 있습니다.
 exl-id: 3645114e-320f-4cee-93ec-d75ae25d2c9b
 feature: Implement Server-side
 TQID: https://experienceleague.adobe.com/dKR2224IPWCqivRDs-B--Q6eaqo1VgNLTZsoozSsPEg

@@ -19,8 +19,8 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 352
-ht-degree: 3%
+source-wordcount: 424
+ht-degree: 1%
 
 ---
 
@@ -38,10 +38,10 @@ ht-degree: 3%
 
 버전 84.0.4147.105
 
-1. **[!UICONTROL Chrome]** 메뉴 > **[!UICONTROL Preferences]**&#x200B;을(를) 클릭합니다.
-1. **[!UICONTROL Privacy and Security]** 탭을 클릭합니다.
-1. **[!UICONTROL Cookies and other site data]** 아이콘을 클릭합니다.
-1. **[!UICONTROL See all cookies and site data]** 아이콘을 클릭합니다.
+1. **[!UICONTROL Chrome]** 메뉴 > **[!UICONTROL 환경 설정]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 개인 정보 및 보안]** 탭을 클릭합니다.
+1. **[!UICONTROL 쿠키 및 기타 사이트 데이터]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 모든 쿠키 및 사이트 데이터 보기]**&#x200B;를 클릭합니다.
 1. `adobe.com` 섹션을 확장하고 **mbox** 쿠키를 선택한 다음 삭제 아이콘(X)을 클릭합니다.
 
 ## Mozilla Firefox에서 [!DNL Target] 쿠키를 삭제합니다.
@@ -50,10 +50,10 @@ ht-degree: 3%
 
 ### `adobe.com`과(와) 연결된 모든 쿠키 삭제
 
-1. **[!UICONTROL Firefox]** 메뉴 > **[!UICONTROL Preferences]**&#x200B;을(를) 클릭합니다.
-1. **[!UICONTROL Privacy and Security]** 탭을 클릭합니다.
-1. **&#x200B;쿠키 및 사이트 데이터*에서 &#x200B;** [!UICONTROL Manage Data]**&#x200B;을(를) 클릭합니다.
-1. `adobe.com` 사이트를 선택한 다음 **[!UICONTROL Remove Selected]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL Firefox]** 메뉴 > **[!UICONTROL 환경 설정]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 개인 정보 및 보안]** 탭을 클릭합니다.
+1. **&#x200B;쿠키 및 사이트 데이터*에서 &#x200B;** [!UICONTROL 데이터 관리]**&#x200B;를 클릭합니다.
+1. `adobe.com` 사이트를 선택한 다음 **[!UICONTROL 선택한 항목 제거]**&#x200B;를 클릭합니다.
 
 >[!WARNING]
 >
@@ -61,20 +61,20 @@ ht-degree: 3%
 
 ### 개별 쿠키(mbox) 삭제
 
-1. Firefo에서 **[!UICONTROL Tools]** > **[!UICONTROL Web Developer]** > **[!UICONTROL Storage Inspector]**&#x200B;을(를) 클릭합니다.
-1. **[!UICONTROL Advanced]** 탭을 클릭합니다.
+1. Firefo에서 **[!UICONTROL 도구]** > **[!UICONTROL 웹 개발자]** > **[!UICONTROL 저장소 관리자]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 고급]** 탭을 클릭합니다.
 1. 삭제할 쿠키가 있는 웹 페이지로 이동합니다.
-1. **[!UICONTROL Cookies]** 섹션을 확장한 다음 `https://experience.adobe.com`을(를) 클릭합니다.
-1. **[!UICONTROL mbox]** 쿠키를 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL Delete]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL 쿠키]** 섹션을 확장한 다음 `https://experience.adobe.com`을(를) 클릭합니다.
+1. **[!UICONTROL mbox]** 쿠키를 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL 삭제]**&#x200B;를 클릭합니다.
 
 ## Microsoft Edge에서 [!DNL Target] 쿠키 삭제
 
 버전 84.0.522.52
 
-1. **[!UICONTROL Microsoft Edge]** 메뉴 > **[!UICONTROL Preferences]**&#x200B;을(를) 클릭합니다.
-1. **[!UICONTROL Site Permissions]** 탭을 클릭합니다.
-1. **[!UICONTROL Cookies and site data]** 아이콘을 클릭합니다.
-1. **[!UICONTROL See all cookies and site data]** 아이콘을 클릭합니다.
+1. **[!UICONTROL Microsoft Edge]** 메뉴 > **[!UICONTROL 환경 설정]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 사이트 권한]** 탭을 클릭합니다.
+1. **[!UICONTROL 쿠키 및 사이트 데이터]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 모든 쿠키 및 사이트 데이터 보기]**&#x200B;를 클릭합니다.
 1. `adobe.com` 섹션을 확장하고 **mbox** 쿠키를 선택한 다음 삭제 아이콘(X)을 클릭합니다.
 
 ## Apple Safari에서 [!DNL Target] 쿠키 삭제
@@ -83,10 +83,10 @@ ht-degree: 3%
 
 ### `adobe.com`과(와) 연결된 모든 쿠키 삭제
 
-1. **[!UICONTROL Safari]** 메뉴 > **[!UICONTROL Preferences]**&#x200B;을(를) 클릭합니다.
-1. **[!UICONTROL Privacy]** 탭을 클릭합니다.
-1. **[!UICONTROL Manage Website Data]** 아이콘을 클릭합니다.
-1. 삭제할 쿠키의 사이트를 선택한 다음 **[!UICONTROL Remove]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL Safari]** 메뉴 > **[!UICONTROL 환경 설정]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 개인 정보]** 탭을 클릭합니다.
+1. **[!UICONTROL 웹 사이트 데이터 관리]**&#x200B;를 클릭합니다.
+1. 삭제할 쿠키의 사이트를 선택한 다음 **[!UICONTROL 제거]**&#x200B;를 클릭합니다.
 
 >[!WARNING]
 >
@@ -94,11 +94,11 @@ ht-degree: 3%
 
 ### 개별 쿠키(mbox) 삭제
 
-1. **[!UICONTROL Safari]** 메뉴 > **[!UICONTROL Preferences]**&#x200B;을(를) 클릭합니다.
-1. **[!UICONTROL Advanced]** 탭을 클릭합니다.
-1. **[!UICONTROL Show Develop menu in menu bar]** 옵션을 선택하십시오.
+1. **[!UICONTROL Safari]** 메뉴 > **[!UICONTROL 환경 설정]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 고급]** 탭을 클릭합니다.
+1. **[!UICONTROL 메뉴 모음에 개발 메뉴 표시]** 옵션을 선택합니다.
 1. 삭제할 쿠키가 있는 웹 페이지로 이동합니다.
-1. **[!UICONTROL Develop]** 메뉴 > **[!UICONTROL Show Web Inspector]**&#x200B;을(를) 클릭합니다.
-1. **[!UICONTROL Storage]** 탭을 클릭합니다.
-1. **[!UICONTROL Cookies]** 섹션을 확장한 다음 `www.adobe.com`을(를) 클릭합니다.
-1. **mbox** 쿠키를 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL Delete]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL 개발]** 메뉴 > **[!UICONTROL 웹 검사기 표시]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 저장소]** 탭을 클릭합니다.
+1. **[!UICONTROL 쿠키]** 섹션을 확장한 다음 `www.adobe.com`을(를) 클릭합니다.
+1. **mbox** 쿠키를 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL 삭제]**&#x200B;를 클릭합니다.

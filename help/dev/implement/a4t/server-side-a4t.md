@@ -17,14 +17,14 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 153
+source-wordcount: 161
 ht-degree: 1%
 
 ---
 
 # [!DNL Experience Platform Web SDK]의 A4T 데이터에 대한 서버측 로깅
 
-[!DNL Adobe Experience Platform Web SDK]을(를) 사용하면 [!UICONTROL Experience Platform Edge Network]에서 [!UICONTROL Adobe Analytics for Target]&#x200B;(A4T) 기능을 구현할 수 있습니다. 서버측 로깅이 활성화되면 Edge Network을 통해 전송된 모든 [!DNL Analytics] 히트는 히트 결합 프로세스를 거치지 않고 서버측에서 [!DNL Target] 세부 정보로 보강됩니다.
+[!DNL Adobe Experience Platform Web SDK]을(를) 사용하면 [!UICONTROL Experience Platform Edge Network]에서 [!UICONTROL Target용 Adobe Analytics]&#x200B;(A4T) 기능을 구현할 수 있습니다. 서버측 로깅이 활성화되면 Edge Network을 통해 전송된 모든 [!DNL Analytics] 히트는 히트 결합 프로세스를 거치지 않고 서버측에서 [!DNL Target] 세부 정보로 보강됩니다.
 
 데이터 스트림 구성에서 [!DNL Analytics]을(를) 사용하도록 설정한 경우 [!DNL Analytics]에 대한 서버측 로깅이 사용하도록 설정됩니다.
 

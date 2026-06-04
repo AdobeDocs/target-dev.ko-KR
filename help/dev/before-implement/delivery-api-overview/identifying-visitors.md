@@ -14,7 +14,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 789
+source-wordcount: 797
 ht-degree: 9%
 
 ---
@@ -81,7 +81,7 @@ curl -X POST \
 }
 ```
 
-생성된 `tntId`은(는) `10abf6304b2714215b1fd39a870f01afc.28_20`입니다. 세션 간에 동일한 사용자에 대해 [!UICONTROL Adobe Target Delivery API]을(를) 호출할 때 이 `tntId`을(를) 사용해야 합니다.
+생성된 `tntId`은(는) `10abf6304b2714215b1fd39a870f01afc.28_20`입니다. 세션 전체에서 동일한 사용자에 대해 [!UICONTROL Adobe Target 배달 API]를 호출할 때 이 `tntId`을(를) 사용해야 합니다.
 
 ## Marketing Cloud 방문자 ID
 
@@ -124,7 +124,7 @@ curl -X POST \
 
 ## 타사 ID
 
-조직에서 ID를 사용하여 방문자를 식별하는 경우 `thirdPartyID`을(를) 사용하여 콘텐츠를 전달할 수 있습니다. 그러나 [!UICONTROL Adobe Target Delivery API] 호출 시마다 `thirdPartyID`을(를) 제공해야 합니다.
+조직에서 ID를 사용하여 방문자를 식별하는 경우 `thirdPartyID`을(를) 사용하여 콘텐츠를 전달할 수 있습니다. 그러나 [!UICONTROL Adobe Target 배달 API] 호출을 수행할 때마다 `thirdPartyID`을(를) 제공해야 합니다.
 
 ```
 curl -X POST \

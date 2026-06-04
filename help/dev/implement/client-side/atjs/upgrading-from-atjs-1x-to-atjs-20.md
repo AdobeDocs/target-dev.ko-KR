@@ -25,8 +25,8 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 929e1f10bc5dd0741f0fe28cd46435e680a4a308
 workflow-type: tm+mt
-source-wordcount: 3037
-ht-degree: 48%
+source-wordcount: 3100
+ht-degree: 47%
 
 ---
 
@@ -38,7 +38,7 @@ at.js 2.*x*&#x200B;을 사용하면 이전 버전에서 사용할 수 없는 다
 
 * 페이지 로드 시 모든 오퍼를 캐시하여 여러 서버 호출을 하나의 서버 호출로 줄일 수 있습니다.
 * 오퍼가 기존 서버 호출로 인해 초래되는 지연 없이 캐시를 통해 즉시 표시되므로 사이트에서 최종 사용자의 경험을 크게 향상시킬 수 있습니다.
-* 간단한 1줄의 코드 및 일회용 개발자 설정으로 마케터가 SPA에서 VEC를 통해 [!UICONTROL A/B Test] 및 [!UICONTROL Experience Targeting]&#x200B;(XT) 활동을 만들고 실행할 수 있도록 할 수 있습니다.
+* 간단한 1줄의 코드 및 일회용 개발자 설정으로 마케터가 SPA에서 VEC를 통해 [!UICONTROL A/B 테스트] 및 [!UICONTROL 경험 타깃팅]&#x200B;(XT) 활동을 만들고 실행할 수 있도록 할 수 있습니다.
 
 ## at.js 2.*x* 시스템 다이어그램
 
@@ -57,7 +57,7 @@ at.js 2.*x*&#x200B;을 사용하면 이전 버전에서 사용할 수 없는 다
 | 5 | [!DNL Target]에서는 URL 요청 매개변수 및 프로필 데이터를 기반으로 현재 페이지 및 미래 보기를 위해 방문자에게 반환할 활동 및 경험을 결정합니다. |
 | 6 | 타기팅된 콘텐츠는 다시 페이지로 전송되며, 원할 경우 추가적인 개인화를 위한 프로필 값을 포함할 수 있습니다.<P>현재 페이지의 타깃팅된 콘텐츠는 기본 콘텐츠의 플리커 없이 가능한 한 빨리 나타납니다.<P>`triggerView()`을(를) 통해 보기를 트리거할 때 추가적인 서버 호출 없이 즉시 적용할 수 있도록 브라우저에서 캐시된 SPA의 사용자 동작에 대한 결과로서 표시되는 보기를 위한 타깃팅된 콘텐츠입니다. |
 | 7 | [!UICONTROL Analytics] 데이터가 데이터 수집 서버로 전송됩니다. |
-| 8 | 대상 데이터는 SDID를 통해 [!UICONTROL Analytics] 데이터와 일치하고 [!UICONTROL Analytics] 보고 저장소로 처리됩니다.<P>그런 다음 [!UICONTROL Analytics] 데이터는 [!UICONTROL Analytics for Target]&#x200B;(A4T) 보고서를 통해 [!UICONTROL Analytics] 및 [!DNL Target] 모두에서 볼 수 있습니다. |
+| 8 | 타깃팅된 데이터는 SDID를 통해 [!UICONTROL Analytics] 데이터와 일치하며 [!UICONTROL Analytics] 보고 저장소로 처리됩니다.<P>그런 다음 [!UICONTROL Analytics] 데이터는 [!UICONTROL Analytics for Target]&#x200B;(A4T) 보고서를 통해 [!UICONTROL Analytics] 및 [!DNL Target] 모두에서 볼 수 있습니다. |
 
 이제 SPA에서 `triggerView()`가 구현될 때 그곳이 어디든, 보기 및 작업은 캐시에서 검색되고 서버 호출 없이 사용자에게 표시됩니다. `triggerView()`는 또한 노출 수를 증가시키고 기록하기 위해 [!DNL Target] 백엔드에 알림을 요청합니다.
 
@@ -71,8 +71,8 @@ at.js 2.*x*&#x200B;을 사용하면 이전 버전에서 사용할 수 없는 다
 | 2 | 보기용으로 타기팅된 콘텐츠를 캐시에서 읽습니다. |
 | 3 | 타기팅된 콘텐츠는 기본 콘텐츠의 플리커 없이 가능한 한 빨리 나타납니다. |
 | 4 | 활동 및 증분 지표에서 방문자를 계산하기 위해 알림 요청이 [!DNL Target] 프로필 스토어에 전송됩니다. |
-| 5 | [!UICONTROL Analytics] 데이터가 데이터 수집 서버로 전송되었습니다. |
-| 6 | [!DNL Target] 데이터가 SDID를 통해 [!UICONTROL Analytics] 데이터와 일치하고 [!UICONTROL Analytics] 보고 저장소로 처리됩니다. 그런 다음 [!UICONTROL Analytics] 데이터는 A4T 보고서를 통해 [!UICONTROL Analytics] 및 [!DNL Target] 모두에서 볼 수 있습니다. |
+| 5 | [!UICONTROL Analytics] 데이터를 데이터 수집 서버로 보냈습니다. |
+| 6 | [!DNL Target] 데이터는 SDID를 통해 [!UICONTROL Analytics] 데이터와 일치하며 [!UICONTROL Analytics] 보고 저장소로 처리됩니다. 그런 다음 [!UICONTROL Analytics] 데이터를 A4T 보고서를 통해 [!UICONTROL Analytics] 및 [!DNL Target]에서 모두 볼 수 있습니다. |
 
 ## at.js 2.*x* 배포
 
@@ -271,7 +271,7 @@ at.js 2.*x*&#x200B;에서 더 이상 네트워크 호출에 &quot;`target-global
 
 ### at.js에서 글로벌 mbox 이름이 문제가 됩니까?
 
-고객은 **[!UICONTROL Target]** > **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Edit at.js Settings]**&#x200B;을(를) 통해 글로벌 mbox 이름을 지정할 수 있습니다. 이 설정은 [!DNL Target] Edge Server에서 execute > pageLoad를 [!DNL Target] UI에 나타나는 글로벌 mbox 이름으로 변환하는 데 사용됩니다. 이렇게 변환하면 고객은 계속해서 서버 측 API, 양식 기반 작성기, 프로필 스크립트를 사용할 수 있으며 글로벌 mbox 이름을 사용하여 대상자를 만들 수 있습니다. 또한 다음 그림에서 보듯이, at.js 1.*x*&#x200B;을 사용하는 페이지가 여전히 있는 경우 동일한 글로벌 mbox 이름이 **[!UICONTROL Administration]** > **[!UICONTROL Visual Experience Composer]** 페이지에도 구성되도록 하는 것이 좋습니다.
+고객은 **[!UICONTROL Target]** > **[!UICONTROL 관리]** > **[!UICONTROL 구현]** > **[!UICONTROL at.js 설정 편집]**&#x200B;을 통해 글로벌 mbox 이름을 지정할 수 있습니다. 이 설정은 [!DNL Target] Edge Server에서 execute > pageLoad를 [!DNL Target] UI에 나타나는 글로벌 mbox 이름으로 변환하는 데 사용됩니다. 이렇게 변환하면 고객은 계속해서 서버 측 API, 양식 기반 작성기, 프로필 스크립트를 사용할 수 있으며 글로벌 mbox 이름을 사용하여 대상자를 만들 수 있습니다. 또한 다음 그림과 같이 at.js 1.*x*&#x200B;를 사용하는 페이지가 여전히 있는 경우 동일한 글로벌 mbox 이름이 **[!UICONTROL 관리]** > **[!UICONTROL 시각적 경험 작성기]** 페이지에도 구성되도록 하는 것이 좋습니다.
 
 ![at.js 수정 대화 상자](../assets/modify-atjs.png)
 
@@ -315,7 +315,7 @@ at.js v2.10 이상에 대해 도메인 간 추적을 사용하려면 다음 중 
 
 1. at.js 2.*x*&#x200B;과(와) 함께 [ECID 라이브러리 v4.3.0+](https://experienceleague.adobe.com/docs/id-service/using/release-notes/release-notes.html?lang=ko-KR)을(를) 설치합니다. ECID 라이브러리는 도메인 간에 방문자를 식별하는 데 사용되는 영구 ID를 관리하기 위해 존재합니다. ECID 라이브러리 v4.3.0+ 및 at.js 2.*x*&#x200B;을(를) 설치한 후 사용자를 추적하고 고유한 도메인을 확장하는 활동을 만들 수 있습니다. 이 기능은 세션이 만료된 후에만 작동합니다.
 
-1. at.js v2.10 이상이 있는 경우 ECID 라이브러리를 설치하는 대신 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**&#x200B;의 [!DNL Target] UI에서 도메인 간 설정을 활성화할 수 있습니다. (또는 at.js 코드에서 _crossDomain_ 옵션을 _enabled_(으)로 설정할 수 있습니다.)
+1. at.js v2.10 이상이 있는 경우 ECID 라이브러리를 설치하는 대신 **[!UICONTROL 관리]** > **[!UICONTROL 구현]**&#x200B;의 [!DNL Target] UI에서 도메인 간 설정을 활성화할 수 있습니다. (또는 at.js 코드에서 _crossDomain_ 옵션을 _enabled_(으)로 설정할 수 있습니다.)
 
 2.10 이전 버전의 at.js v2.*x*&#x200B;에 대해 도메인 간 추적을 사용하려면 위의 옵션 #1을 구현(ECID 라이브러리 설치)할 수 있습니다.
 
@@ -325,7 +325,7 @@ at.js v2.10 이상에 대해 도메인 간 추적을 사용하려면 다음 중 
 
 ### 글로벌 mbox 이름이 지원됨
 
-고객은 **[!UICONTROL Target]** > **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Edit]**&#x200B;을(를) 통해 글로벌 mbox 이름을 지정할 수 있습니다. 이 설정은 [!DNL Target] Edge Server에서 execute > pageLoad를 입력된 글로벌 mbox 이름으로 변환하는 데 사용됩니다. 이렇게 변환하면 고객은 계속해서 서버 측 API, 양식 기반 작성기, 프로필 스크립트를 사용할 수 있으며 글로벌 mbox를 타기팅하는 대상자를 만들 수 있습니다.
+고객은 **[!UICONTROL Target]** > **[!UICONTROL 관리]** > **[!UICONTROL 구현]** > **[!UICONTROL 편집]**&#x200B;을 통해 글로벌 mbox 이름을 지정할 수 있습니다. 이 설정은 [!DNL Target] Edge Server에서 execute > pageLoad를 입력된 글로벌 mbox 이름으로 변환하는 데 사용됩니다. 이렇게 변환하면 고객은 계속해서 서버 측 API, 양식 기반 작성기, 프로필 스크립트를 사용할 수 있으며 글로벌 mbox를 타기팅하는 대상자를 만들 수 있습니다.
 
 ### 아래의 at.js 사용자 지정 이벤트는 `triggerView()`에 적용할 수 있습니까? 아니면 `applyOffer()`나 `applyOffers()`에만 적용할 수 있습니까?
 
@@ -370,23 +370,23 @@ at.js 1.*x*&#x200B;의 고객은 vst.* mbox 매개 변수를 사용하여 대상
 
 | 유형 | 지원됨? |
 | --- | --- |
-| [!UICONTROL A/B Test] | 예 |
-| [!UICONTROL Auto-Allocate] | 예 |
-| [!UICONTROL Auto-Target] | 예 |
-| [!UICONTROL Experience Targeting] | 예 |
-| [!UICONTROL Multivariate Test] | 예 |
-| [!UICONTROL Automated Personalization] | 예 |
+| [!UICONTROL A/B 테스트] | 예 |
+| [!UICONTROL 자동 할당] | 예 |
+| [!UICONTROL 자동 타깃팅] | 예 |
+| [!UICONTROL 경험 타깃팅] | 예 |
+| [!UICONTROL 다변량 테스트] | 예 |
+| [!UICONTROL 자동화된 개인화] | 예 |
 | [!DNL Recommendations] | 예 |
 
 >[!NOTE]
 >
->모든 수정 사항이 `Page Load Event`에 적용되면 at.js 2.*x* 및 VEC를 통해 [!UICONTROL Auto-Target] 활동이 지원됩니다. 수정 사항이 특정 보기에 추가되면 [!UICONTROL A/B Test], [!UICONTROL Auto-Allocate] 및 [!UICONTROL Experience Targeting]&#x200B;(XT) 활동만 지원됩니다.
+>[!UICONTROL 자동 타겟] 활동은 모든 수정 사항이 `Page Load Event`에 적용되면 at.js 2.*x* 및 VEC를 통해 지원됩니다. 수정 사항이 특정 보기에 추가되면 [!UICONTROL A/B 테스트], [!UICONTROL 자동 할당] 및 [!UICONTROL 경험 타깃팅]&#x200B;(XT) 활동만 지원됩니다.
 
 ### 통합
 
 | 유형 | 지원됨? |
 | --- | --- |
-| [!UICONTROL Analytics for Target]&#x200B;(A4T) | 예 |
+| [!UICONTROL Analytics for Target] (A4T) | 예 |
 | 대상자 | 예 |
 | 고객 속성 | 예 |
 | AEM 경험 구성요소 | 예 |

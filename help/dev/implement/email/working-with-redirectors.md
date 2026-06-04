@@ -19,8 +19,8 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 689
-ht-degree: 63%
+source-wordcount: 697
+ht-degree: 62%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 63%
 
    * 여기서 `yourclientcode`는 회사의 클라이언트 코드입니다. 회사의 클라이언트 코드는 모두 소문자이고 특수 문자를 포함하지 않습니다.
 
-     클라이언트 코드는 [!DNL Target] 인터페이스의 **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** 페이지 맨 위에서 사용할 수 있습니다.
+     클라이언트 코드는 [!DNL Target] 인터페이스의 **[!UICONTROL 관리]** > **[!UICONTROL 구현]** 페이지 맨 위에서 사용할 수 있습니다.
 
    * `redirectorlink_456` 은 캠페인 및 테스트에서 사용할 계정에 나타나는 리디렉터 mbox의 이름입니다.
 
@@ -107,7 +107,7 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->가장 좋은 방법은 **[!UICONTROL Score per visit]** 참여 지표를 사용하여 비용 값을 결정하는 것입니다.
+>가장 좋은 방법은 **[!UICONTROL 방문당 점수]** 참여 지표를 사용하여 비용 값을 결정하는 것입니다.
 
 `&mboxPageValue=-value`를 URL에 추가합니다. 음수입니다.
 
@@ -124,7 +124,7 @@ https://<your_clientcode>.tt.omtrdc.net/​m2/yourclientcode/ubox/​page?mbox=r
 
 >[!NOTE]
 >
->가장 좋은 방법은 **[!UICONTROL Score per visit]** 참여 지표를 사용하여 매출액 값을 결정하는 것입니다.
+>가장 좋은 방법은 **[!UICONTROL 방문당 점수]** 참여 지표를 사용하여 매출액 값을 결정하는 것입니다.
 
 `&mboxPageValue=value`를 URL에 추가합니다.
 

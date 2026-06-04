@@ -17,8 +17,8 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 335
-ht-degree: 68%
+source-wordcount: 337
+ht-degree: 67%
 
 ---
 
@@ -40,7 +40,7 @@ AdBox는 mbox와 비슷하지만 JavaScript가 아니라 URL로 제어됩니다.
 
    * 여기서 `myClientCode`는 회사의 클라이언트 코드입니다. 회사의 클라이언트 코드는 모두 소문자이고 특수 문자를 포함하지 않습니다.
 
-     클라이언트 코드는 [!DNL Target] 인터페이스의 **[!UICONTROL Administation]** > **[!UICONTROL Implementation]** 페이지 맨 위에서 사용할 수 있습니다.
+     클라이언트 코드는 [!DNL Target] 인터페이스의 **[!UICONTROL 관리]** > **[!UICONTROL 구현]** 페이지 맨 위에서 사용할 수 있습니다.
 
    * 여기서 `image`는 호출 유형입니다. 이 경우 이미지입니다.
 

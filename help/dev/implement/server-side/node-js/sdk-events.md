@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Adobe Target] Node.js SDK에서 이벤트 구독'
-description: '[!UICONTROL OnDeviceDecisioningHandler] 개체를 사용하여 Node.js SDK 내에서 발생하는 다양한 이벤트에 가입하는 방법에 대해 알아봅니다.'
+description: '[!UICONTROL OnDeviceDecisioningHandler] 개체를 사용하여 Node.js SDK 내에서 발생하는 다양한 이벤트에 가입하는 방법을 알아봅니다.'
 feature: APIs/SDKs
 exl-id: 40c53840-a560-4819-ae04-f527c36b22fe
 TQID: https://experienceleague.adobe.com/KWuJT-p-Er-1mx766Y-itlFn7REZnqkUksdHKCy-2-U
@@ -10,7 +10,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 163
+source-wordcount: 164
 ht-degree: 2%
 
 ---

@@ -11,14 +11,14 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 929e1f10bc5dd0741f0fe28cd46435e680a4a308
 workflow-type: tm+mt
-source-wordcount: 262
+source-wordcount: 265
 ht-degree: 9%
 
 ---
 
 # SDK
 
-[!DNL Adobe Target]은(는) [서버측 SDK](../../implement/server-side/server-side-overview.md)을(를) 제공하여 [!DNL Target Delivery API]과(와) 상호 작용하고 [!UICONTROL Adobe Analytics] 및 [!DNL Adobe Audience Manager]과(와) 같은 다른 [!DNL Adobe Experience Cloud] 솔루션과의 [!UICONTROL Target] 통합을 쉽게 지원합니다.
+[!DNL Adobe Target]은(는) [서버측 SDK](../../implement/server-side/server-side-overview.md)을(를) 제공하여 [!DNL Target Delivery API]과(와) 상호 작용하고 [!UICONTROL Adobe Analytics] 및 [!DNL Adobe Audience Manager]과(와) 같은 다른 [!DNL Adobe Experience Cloud] 솔루션과 [!UICONTROL Target] 통합을 쉽게 할 수 있도록 지원합니다.
 
 SDK를 사용하면 세션 및 쿠키 관리에 대한 우수 사례를 따를 수 있습니다. SDK을 활용하여 복잡성을 완화하고 API의 잘못된 사용을 방지하는 것이 좋습니다.
 

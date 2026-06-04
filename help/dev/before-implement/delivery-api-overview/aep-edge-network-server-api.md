@@ -18,15 +18,15 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 101
+source-wordcount: 121
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Adobe Experience Platform Edge Network Server API] 개요
+# [!UICONTROL Adobe Experience Platform Edge Network 서버 API] 개요
 
 [!UICONTROL Adobe Experience Platform Edge Network]은(는) 고객이 [!DNL Adobe Experience Cloud] 또는 [!UICONTROL Adobe Experience Platform Edge] 서비스와 상호 작용할 수 있는 최적화된 방법을 제공합니다.
 
-[!UICONTROL Edge Network Server API]은(는) 다양한 데이터 수집, 개인화, 광고 및 마케팅 사용 사례에 사용할 수 있습니다. 서버 API는 서버, IoT 디바이스, 셋톱 박스 및 다양한 다른 디바이스에서 사용할 수 있습니다.
+[!UICONTROL Edge Network 서버 API]는 다양한 데이터 수집, 개인화, 광고 및 마케팅 사용 사례에 사용할 수 있습니다. 서버 API는 서버, IoT 디바이스, 셋톱 박스 및 다양한 다른 디바이스에서 사용할 수 있습니다.
 
 자세한 내용은 *Edge Network Server API 설명서*&#x200B;에서 [Edge Server API 개요](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=ko){target=_blank}를 참조하십시오.

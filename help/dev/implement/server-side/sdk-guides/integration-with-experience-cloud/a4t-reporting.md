@@ -1,6 +1,6 @@
 ---
 title: Experience Cloud A4T 보고와 통합
-description: Experience Cloud, A4T 보고, Analytics for Target 통합과 통합
+description: Experience Cloud와 통합, A4T 보고, Analytics for Target 통합
 keywords: 배달 api, 서버측, 서버측, 통합, a4t
 exl-id: 0d09d7a1-528d-4e6a-bc6c-f7ccd61f5b75
 feature: Implement Server-side
@@ -14,7 +14,7 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 392
+source-wordcount: 399
 ht-degree: 6%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 6%
 ## 전제 조건
 
 1. [!DNL Adobe Analytics]을(를) 보고 소스로 사용하여 [!DNL Adobe Target] UI에서 활동을 구성하고 계정이 A4T에 대해 활성화되었는지 확인하십시오.
-1. API 사용자는 Adobe [!UICONTROL Marketing Cloud Visitor ID]을(를) 생성하고 [!DNL Target] 요청이 실행될 때 이 ID를 사용할 수 있도록 합니다.
+1. API 사용자는 Adobe [!UICONTROL Marketing Cloud 방문자 ID]를 생성하고 [!DNL Target] 요청이 실행될 때 이 ID를 사용할 수 있도록 합니다.
 
 ## [!DNL Adobe Target]에서 [!DNL Analytics] 페이로드를 자동으로 전달합니다.
 

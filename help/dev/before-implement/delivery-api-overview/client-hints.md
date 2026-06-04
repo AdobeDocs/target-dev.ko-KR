@@ -16,12 +16,12 @@ topic_v2:
   - id: ff2b9b37-92e0-45fc-b853-379d44c08c89
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 278
+source-wordcount: 282
 ht-degree: 0%
 
 ---
 
-# 클라이언트 힌트 및 [!UICONTROL Adobe Target Delivery API]
+# 클라이언트 힌트 및 [!UICONTROL Adobe Target 배달 API]
 
 오퍼 요청 시 클라이언트 힌트를 [!DNL Adobe Target]&#x200B;(으)로 보내야 합니다.
 

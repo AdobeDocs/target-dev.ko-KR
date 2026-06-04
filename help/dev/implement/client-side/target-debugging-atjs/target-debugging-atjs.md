@@ -1,7 +1,7 @@
 ---
 keywords: at.js, at.js 디버그, adobe Experience Cloud debugger, experience cloud debugger, mbox 추적, mbox 강조 표시, 디버그, 디버깅, $9
-description: '[!UICONTROL Adobe Experience Cloud Debugger]을(를) 사용하여 라이브러리 구성을 보고, 요청을 검사하고, 콘솔 로깅을 켜고,  [!DNL Target] 호출 요청을 비활성화하는 등의 작업을 수행할 수 있습니다.'
-title: 에서 디버깅하는 방법[!UICONTROL Adobe Experience Cloud Debugger]이(가) 있는 Js?
+description: '[!UICONTROL Adobe Experience Cloud Debugger]를 사용하여 라이브러리 구성을 보고, 요청을 검사하고, 콘솔 로깅을 켜고, 요청을 비활성화 [!DNL Target] 합니다.'
+title: 에서 디버깅하는 방법[!UICONTROL Adobe Experience Cloud Debugger]가 있는 Js?
 feature: at.js
 exl-id: ac215560-3f6f-4269-947c-961e7a43c9e1
 TQID: https://experienceleague.adobe.com/pZtiohItxWcjKFJTCXX8JtvOpEjFMsG1SJdp9ANalOE
@@ -17,14 +17,14 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 162
+source-wordcount: 178
 ht-degree: 6%
 
 ---
 
-# [!UICONTROL Adobe Experience Cloud Debugger]을(를) 사용하여 at.js 디버그
+# [!UICONTROL Adobe Experience Cloud Debugger를 사용하여 at.js 디버그]
 
-[!DNL Target] 구현을 빠르고 쉽게 이해할 수 있는 [!UICONTROL Adobe Experience Cloud Debugger] 확장 사용에 대한 정보입니다.
+[!DNL Target] 구현을 빠르고 쉽게 이해할 수 있도록 [!UICONTROL Adobe Experience Cloud Debugger] 확장 프로그램을 사용하는 방법에 대한 정보입니다.
 
 라이브러리 구성을 빠르게 보고, 사용자 지정 매개 변수가 올바르게 전달되었는지 확인하기 위한 요청을 검사하고, 콘솔 로깅을 켜고, 모든 [!DNL Target] 요청을 비활성화할 수 있습니다. [!DNL Experience Cloud]을(를) 인증하면 강력한 Mbox 추적 도구를 사용하여 활동 및 대상 자격과 방문자 프로필을 검사할 수 있습니다.
 

@@ -42,7 +42,7 @@ ht-degree: 2%
 
 요청에 페이로드(POST 또는 PUT)가 포함된 경우 요청의 `Content-Type` 헤더를 사용하여 버전을 지정합니다.
 
-요청에 페이로드(GET, DELETE 또는 OPTIONS)가 포함되어 있지 않으면 `Accept` 헤더를 사용하여 버전을 지정합니다.
+요청에 페이로드(GET, DELETE 또는 OPTIONS)가 없으면 `Accept` 헤더를 사용하여 버전을 지정합니다.
 
 버전을 제공하지 않으면 호출이 기본적으로 V1(application/vnd.adobe.target.v1+json)로 설정됩니다.
 

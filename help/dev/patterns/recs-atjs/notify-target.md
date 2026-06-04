@@ -16,7 +16,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 368
+source-wordcount: 369
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 0%
    * `orderTotal`: 구매에 대한 주문 총계입니다.
    * `orderId`: 구매의 주문 ID.
 
-  다음 그림은 [!UICONTROL Confirmation] 페이지에서만 실행해야 하는 [규칙  [!DNL tags] in [!DNL Experience Platform]](https://experienceleague.adobe.com/docs/tags.html?lang=ko){target=_blank}을(를) 보여 줍니다.
+  다음 그림은 [!UICONTROL 확인] 페이지에서만 실행해야 하는 [규칙  [!DNL tags] in [!DNL Experience Platform]](https://experienceleague.adobe.com/docs/tags.html?lang=ko){target=_blank}을(를) 보여 줍니다.
 
   ![작업 구성 페이지](/help/dev/patterns/recs-atjs/assets/action-configuration.png){width="400" zoomable="yes"}
 

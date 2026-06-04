@@ -1,6 +1,6 @@
 ---
 keywords: 글로벌 mbox, 글로벌 mbox 사용자 지정, at.js 편집, at.js, at.js 구현
-description: ' [!DNL Adobe Target]의 [!UICONTROL Administration]-[!UICONTROL Implementation] 페이지에서 at.js에 대한 글로벌 mbox를 사용자 지정하는 방법을 알아봅니다.'
+description: ' [!DNL Adobe Target]의 [!UICONTROL 관리]-[!UICONTROL 구현] 페이지에서 at.js에 대한 글로벌 mbox를 사용자 지정하는 방법을 알아봅니다.'
 title: 글로벌 mbox를 사용자 지정하는 방법
 feature: at.js
 exl-id: f7809c3d-6e77-4bbe-8da3-4ab0a448c801
@@ -18,8 +18,8 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 209
-ht-degree: 17%
+source-wordcount: 227
+ht-degree: 16%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 17%
 
 at.js에 대한 [!DNL Adobe Target] 글로벌 mbox를 사용자 지정하는 데 도움이 되는 정보입니다.
 
-1. **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL 관리]** > **[!UICONTROL 구현]**&#x200B;을 클릭합니다.
 
-1. **[!UICONTROL Page load enabled (Auto create global mbox)]**&#x200B;을(를) 사용하지 않도록 설정한 다음 [!DNL Target]에서 활동을 전달하는 데 사용할 사용자 지정 글로벌 mbox의 이름을 추가하십시오.
+1. **[!UICONTROL 페이지 로드가 활성화됨(글로벌 mbox를 자동으로 만들기)]**&#x200B;을(를) 비활성화한 다음 [!DNL Target]에서 활동을 전달하는 데 사용할 사용자 지정 글로벌 mbox의 이름을 추가하십시오.
 
 >[!WARNING]
 >
@@ -52,4 +52,4 @@ at.js에 대한 [!DNL Adobe Target] 글로벌 mbox를 사용자 지정하는 데
 
 >[!WARNING]
 >
->계정의 모든 활동이 이 mbox와 동기화됩니다. 활동이 계속 작동할 수 있도록 글로벌 mbox가 사이트에 있는지 확인하십시오. 이 mbox와 동기화하는 [!UICONTROL Visual Experience Composer]&#x200B;(VEC)을(를) 사용하여 만든 영향을 받는 활동을 편집하고 다시 저장하십시오. [!UICONTROL Form-Based Experience Composer] 또는 API를 통해 만든 활동을 다시 저장할 필요는 없습니다.
+>계정의 모든 활동이 이 mbox와 동기화됩니다. 활동이 계속 작동할 수 있도록 글로벌 mbox가 사이트에 있는지 확인하십시오. 이 mbox와 동기화하는 [!UICONTROL 시각적 경험 작성기]&#x200B;(VEC)로 만든 영향을 받는 활동을 편집하고 다시 저장하십시오. [!UICONTROL 양식 기반 경험 작성기]에서 또는 API를 통해 만든 활동을 다시 저장할 필요는 없습니다.

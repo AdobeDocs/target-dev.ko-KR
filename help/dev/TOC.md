@@ -200,7 +200,7 @@ ht-degree: 41%
       + [단일 또는 일괄 게재](/help/dev/before-implement/delivery-api-overview/single-or-batch.md)
       + [미리 가져오기](/help/dev/before-implement/delivery-api-overview/prefetch.md)
       + [알림](/help/dev/before-implement/delivery-api-overview/notifications.md)
-      + [Experience Cloud과 통합](before-implement/delivery-api-overview/integration.md)
+      + [Experience Cloud와 통합](before-implement/delivery-api-overview/integration.md)
       + [고려 사항 및 알려진 제한 사항](/help/dev/before-implement/delivery-api-overview/known-limitations.md)
       + [클라이언트 힌트](/help/dev/before-implement/delivery-api-overview/client-hints.md)
       + [배달 API](/help/dev/implement/delivery-api/delivery-api.md)

@@ -15,7 +15,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 0fe52344f654f22d1ff7aaace0ba5a99e92d036d
 workflow-type: tm+mt
-source-wordcount: 901
+source-wordcount: 930
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Recommendations API를 사용하기 위한 [요구 사항](/help/dev/before-admi
 
 >[!NOTE]
 >
->액세스 토큰이 24시간 후에 만료되므로 인증을 위해 새로 고쳐야 할 때마다 **[!UICONTROL IMS: JWT Generate + Auth via User Token]** 요청을 보냅니다. 지침은 [Adobe API 인증 구성](../configure-authentication.md)을 참조하십시오.
+>액세스 토큰이 24시간 후에 만료되므로 인증을 위해 새로 고쳐야 할 때마다 **[!UICONTROL IMS: JWT 사용자 토큰을 통해 생성 + 인증]** 요청을 보냅니다. 지침은 [Adobe API 인증 구성](../configure-authentication.md)을 참조하십시오.
 
 ![JWT3ff](assets/configure-io-target-jwt3ff.png)
 
@@ -44,7 +44,7 @@ POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities
 
 예를 들어 특정 임계값(예: 재고 임계값 또는 가격 임계값)이 충족될 때마다 항목을 업데이트하여 해당 항목에 플래그를 지정하고 이러한 항목을 권장하지 않도록 하는 데 엔티티 저장을 사용할 수 있습니다.
 
-1. 항목을 추가하거나 업데이트할 Target 환경 ID를 얻으려면 **[!UICONTROL Target]** > **[!UICONTROL Setup]** > **[!UICONTROL Hosts]** > **[!UICONTROL CONTROL Environments]**(으)로 이동합니다.
+1. 항목을 추가하거나 업데이트할 Target 환경 ID를 얻으려면 **[!UICONTROL Target]** > **[!UICONTROL 설정]** > **[!UICONTROL 호스트]** > **[!UICONTROL 제어 환경]**(으)로 이동하십시오.
 
    ![SaveEntities1](assets/SaveEntities01.png)
 
@@ -79,7 +79,7 @@ POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities
        }
    ```
 
-1. **[!UICONTROL Send]** 아이콘을 클릭합니다. 다음 응답을 수신해야 합니다.
+1. **[!UICONTROL 보내기]**&#x200B;를 클릭합니다. 다음 응답을 수신해야 합니다.
 
    ![SaveEntities5.png](assets/SaveEntities05.png)
 
@@ -123,11 +123,11 @@ POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities
        }
    ```
 
-1. 이제 네 차례야! **[!UICONTROL Save Entities]** API를 사용하여 다음 항목을 카탈로그에 추가하십시오. 위의 샘플 JSON을 시작점으로 사용하십시오. (추가 엔티티를 포함하려면 JSON을 확장해야 합니다.)
+1. 이제 네 차례야! **[!UICONTROL 엔터티 저장]** API를 사용하여 다음 항목을 카탈로그에 추가하십시오. 위의 샘플 JSON을 시작점으로 사용하십시오. (추가 엔티티를 포함하려면 JSON을 확장해야 합니다.)
 
    ![SaveEntities6.png](assets/SaveEntities06.png)
 
-마지막 두 항목이 포함되어 있지 않은 것 같습니다. **[!UICONTROL Get Entity]** API를 사용하여 검사하고, 필요한 경우 **[!UICONTROL Delete Entities]** API를 사용하여 삭제하겠습니다.
+마지막 두 항목이 포함되어 있지 않은 것 같습니다. **[!UICONTROL 엔티티 가져오기]** API를 사용하여 검사하고, 필요한 경우 **[!UICONTROL 엔티티 삭제]** API를 사용하여 삭제해 보겠습니다.
 
 ## 엔티티 가져오기 API를 사용하여 항목 세부 정보를 가져오는 중
 
@@ -166,7 +166,7 @@ GET https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities/[entity.id]
 
    ![GetEntity5](assets/GetEntity5.png)
 
-이러한 엔티티를 카탈로그에서 제거해야 한다고 결정한다고 가정합니다. **[!UICONTROL Delete Entities]** API를 사용해 보겠습니다.
+이러한 엔티티를 카탈로그에서 제거해야 한다고 결정한다고 가정합니다. **[!UICONTROL 엔터티 삭제]** API를 사용해 보겠습니다.
 
 ## 엔티티 삭제 API를 사용하여 항목 삭제
 
@@ -180,7 +180,7 @@ DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities?ids=[comma-delimit
 >
 >엔티티 삭제 API는 지정한 ID에 의해 참조되는 엔티티를 삭제합니다. 제공된 엔티티 ID가 없는 경우 해당 환경의 모든 엔티티가 삭제됩니다. 환경 ID가 제공되지 않으면 엔티티가 모든 환경에서 삭제됩니다. 이것을 조심해서 사용하세요!
 
-1. 항목을 삭제할 대상 환경 ID를 얻으려면 **[!UICONTROL Target]** > **[!UICONTROL Setup]** > **[!UICONTROL Hosts]** > **[!UICONTROL Environments]**(으)로 이동합니다.
+1. 항목을 삭제할 대상 환경 ID를 얻으려면 **[!UICONTROL Target]** > **[!UICONTROL 설정]** > **[!UICONTROL 호스트]** > **[!UICONTROL 환경]**(으)로 이동하십시오.
 
    ![DeleteEntities1](assets/SaveEntities01.png)
 
@@ -200,7 +200,7 @@ DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities?ids=[comma-delimit
 
    ![DeleteEntities5](assets/DeleteEntities5.png)
 
-1. 삭제된 엔터티를 찾을 수 없음을 나타내는 **[!UICONTROL Get Entity]**&#x200B;을(를) 사용하여 결과를 확인합니다.
+1. **[!UICONTROL 엔터티 가져오기]**&#x200B;를 사용하여 결과를 확인합니다. 이렇게 하면 삭제된 엔터티를 찾을 수 없습니다.
 
    ![DeleteEntities6](assets/DeleteEntities6.png)
 

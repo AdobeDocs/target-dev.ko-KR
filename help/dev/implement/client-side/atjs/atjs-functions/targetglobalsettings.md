@@ -1,7 +1,7 @@
 ---
 keywords: serverstate, targetGlobalSettings, targetglobalsettings, globalSettings, global 설정, at.js, function, function, clientCode, clientcode, serverDomain, serverdomain, cookieDomain, serverstate5, serverstate6, serverstate7, serverstate8, serverstate9, targetGlobalSettings0, targetGlobalSettings1, targetGlobalSettings2, targetGlobalSettings3, targetGlobalSettings4, targetGlobalSettings5, cookiedomain, crossDomain, crossdomain, timeout, globalMboxAutoCreate, visitorApiTimeout, defaultContentHiddenStyle, defaultContentVisibleStyle body, bodyBodyBodyBodySettings hidingEnabled, imsOrgId, secureOnly, overrideMboxEdgeServer, overrideMboxEdgeServerTimeout, cookiedomain5, cookiedomain6, cookiedomain7, cookiedomain8, cookiedomain9, crossDomain0, crossDomain1, crossDomain2, crossDomain3, crossDomain4, crossDomain5, optoutEnabled, optout, 옵트아웃, selectorsPollingTimeout, dataProviders, Hybrid Personalization, deviceIdLifetime
-description: ' [!DNL Target] UI 또는 REST API를 사용하는 대신 설정을 재정의하려면  [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 [!UICONTROL targetGlobalSettings()] 함수를 사용하십시오.'
-title: '[!UICONTROL targetGlobalSettings()] 함수를 사용하는 방법'
+description: ' [!DNL Target] UI 또는 REST API를 사용하는 대신 설정을 재정의하려면  [!DNL Adobe Target] at.js JavaScript 라이브러리에 대한 [!UICONTROL targetGlobalSettings()] 함수를 사용하십시오.'
+title: '[!UICONTROL targetGlobalSettings()] 함수를 사용하려면 어떻게 해야 합니까?'
 feature: at.js
 exl-id: f6218313-6a70-448e-8555-b7b039e64b2c
 TQID: https://experienceleague.adobe.com/6IeQo7RCys6Qe6bPydmmtgaAERi7rnneBYFOzseaL2g
@@ -24,7 +24,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 2702
+source-wordcount: 2705
 ht-degree: 17%
 
 ---
@@ -124,7 +124,7 @@ ht-degree: 17%
 
   또한 세션 및 채널에서 지속되는 [!DNL Target]의 사용자 프로필을 사용하여 개인화된 경험을 향상하면 비즈니스에 강력한 결과를 제공할 수 있습니다.
 
-  마지막으로, 서버측에서는 Adobe Experience Cloud만 사용할 수 있고 Audience Manager 및 Adobe Analytics 세그먼트를 통해 타깃팅할 수 있는 대상을 미세 조정할 수 있습니다.
+  마지막으로, 서버측에서는 Adobe Experience Cloud만 사용할 수 있으며 Audience Manager 및 Adobe Analytics 세그먼트를 통해 타깃팅할 수 있는 대상을 미세 조정할 수 있습니다.
 
   **온디바이스 전용**:
 

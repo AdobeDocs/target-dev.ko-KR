@@ -1,6 +1,6 @@
 ---
 title: Adobe Target 배달 API 알림
-description: '[!UICONTROL Adobe Target Delivery API]을(를) 사용하여 알림을 실행하려면 어떻게 합니까?'
+description: '[!UICONTROL Adobe Target 배달 API]를 사용하여 알림을 실행하려면 어떻게 합니까?'
 keywords: 배달 api
 exl-id: 711388fd-2c1f-4ca4-939f-c56dc4bdc04a
 feature: APIs/SDKs
@@ -13,7 +13,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 414
+source-wordcount: 426
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 프리페치된 Mbox에 대한 알림
 
-한 번의 게재 호출을 통해 하나 이상의 알림을 전송할 수 있습니다. 알림의 `type`이(가) 올바르게 반영될 수 있도록 추적해야 하는 지표가 각 mbox에 대해 `click` 또는 `display`인지 확인하십시오. 또한 각 알림에 대해 `id`을(를) 전달하여 [!UICONTROL &#x200B; Adobe Target Delivery API]을(를) 통해 알림이 올바르게 전송되었는지 확인할 수 있습니다. 보고용으로 제공된 mbox에 대해 `click` 또는 `display`이(가) 발생한 시기를 나타내기 위해 `timestamp`을(를) [!DNL Target]&#x200B;(으)로 전달해야 합니다.
+한 번의 게재 호출을 통해 하나 이상의 알림을 전송할 수 있습니다. 알림의 `type`이(가) 올바르게 반영될 수 있도록 추적해야 하는 지표가 각 mbox에 대해 `click` 또는 `display`인지 확인하십시오. 또한 각 알림에 대해 `id`을(를) 전달하여 [!UICONTROL &#x200B; Adobe Target 배달 API]를 통해 알림이 올바르게 전송되었는지 확인할 수 있습니다. 보고용으로 제공된 mbox에 대해 `click` 또는 `display`이(가) 발생한 시기를 나타내기 위해 `timestamp`을(를) [!DNL Target]&#x200B;(으)로 전달해야 합니다.
 
 ```
 curl -X POST \
@@ -117,7 +117,7 @@ curl -X POST \
 
 ## 프리페치된 보기에 대한 알림
 
-한 번의 게재 호출을 통해 하나 이상의 알림을 전송할 수 있습니다. 알림 유형을 올바르게 반영할 수 있도록 추적해야 하는 지표가 각 mbox에 대해 `click` 또는 `display`인지 여부를 결정합니다. 또한 각 알림에 대해 `id`을(를) 전달하여 알림이 [!UICONTROL Adobe Target Delivery API]을(를) 통해 올바르게 전송되었는지 확인할 수 있습니다. 보고 목적으로 제공된 보기에 대해 `click` 또는 `display`이(가) 발생한 시점을 나타내기 위해 타임스탬프를 [!DNL Target]&#x200B;(으)로 전달해야 합니다.
+한 번의 게재 호출을 통해 하나 이상의 알림을 전송할 수 있습니다. 알림 유형을 올바르게 반영할 수 있도록 추적해야 하는 지표가 각 mbox에 대해 `click` 또는 `display`인지 여부를 결정합니다. 또한 각 알림에 대해 `id`을(를) 전달하여 알림이 [!UICONTROL Adobe Target 배달 API]를 통해 올바르게 전송되었는지 확인할 수 있습니다. 보고 목적으로 제공된 보기에 대해 `click` 또는 `display`이(가) 발생한 시점을 나타내기 위해 타임스탬프를 [!DNL Target]&#x200B;(으)로 전달해야 합니다.
 
 ```
 curl -X POST \

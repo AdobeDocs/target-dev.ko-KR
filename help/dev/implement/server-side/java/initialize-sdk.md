@@ -1,6 +1,6 @@
 ---
 title: create 메서드를 사용하여 Java SDK 초기화
-description: create 메서드를 사용하여 Java SDK을 초기화하고 [!UICONTROL TargetClient]을(를) 인스턴스화하여 실험 및 개인화된 경험을 위해  [!DNL Adobe Target] 을(를) 호출하는 방법에 대해 알아봅니다.
+description: 만들기 메서드를 사용하여 Java SDK을 초기화하고 [!UICONTROL TargetClient]을(를) 인스턴스화하여  [!DNL Adobe Target] 실험 및 개인화된 경험을 위해 호출하는 방법에 대해 알아봅니다.
 feature: APIs/SDKs
 exl-id: 0e0ddead-7de8-4549-b81c-e72598558e4b
 TQID: https://experienceleague.adobe.com/B1Ev7NnjlFMg4VoicF6Z4whyqfJYDjCwPeYRKEk2viY
@@ -12,8 +12,8 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 460
-ht-degree: 17%
+source-wordcount: 471
+ht-degree: 16%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 17%
 
 ## 설명
 
-Java SDK을 초기화하고 [!UICONTROL Target Client]을(를) 인스턴스화하여 실험 및 개인화된 경험을 위해 [!DNL Adobe Target]을(를) 호출하려면 `create` 메서드를 사용하십시오.
+Java SDK을 초기화하고 [!UICONTROL Target 클라이언트]를 인스턴스화하여 실험 및 개인화된 경험을 위해 [!DNL Adobe Target]을(를) 호출하려면 `create` 메서드를 사용하십시오.
 
 ## 방법
 
@@ -45,8 +45,8 @@ ClientConfigBuilder ClientConfig.builder()
 
 | 이름 | 유형 | 필수 | 기본값 | 설명 |
 | --- | --- | --- | --- | --- |
-| 클라이언트 | 문자열 | 예 | 없음 | [!UICONTROL Target Client Id] |
-| organizationId | 문자열 | 예 | 없음 | [!UICONTROL Experience Cloud Organization ID] |
+| 클라이언트 | 문자열 | 예 | 없음 | [!UICONTROL 대상 클라이언트 Id] |
+| organizationId | 문자열 | 예 | 없음 | [!UICONTROL Experience Cloud 조직 ID] |
 | connectTime | 숫자 | 아니요 | 10000 | 모든 요청에 대한 연결 시간 제한(밀리초) |
 | socketTime | 숫자 | 아니요 | 10000 | 모든 요청에 대한 소켓 시간 제한(밀리초) |
 | maxConnectionPerHost | 숫자 | 아니오 | 100 | [!DNL Target] 호스트당 최대 연결 수 |

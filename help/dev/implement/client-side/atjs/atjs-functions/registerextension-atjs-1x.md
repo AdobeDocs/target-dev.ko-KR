@@ -17,8 +17,8 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 274
-ht-degree: 63%
+source-wordcount: 277
+ht-degree: 62%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 63%
 * 매개 변수 중 하나가 제공되지 않으면 예외가 발생합니다.
 * 모듈 배열이 비어 있으면 예외가 발생합니다.
 
-`[!UICONTROL registerExtension]`을(를) 사용하는 방법에 대한 자세한 내용과 예를 보려면 GitHub의 [Adobe Experience Cloud Target atjs 확장 프로그램](https://github.com/Adobe-Marketing-Cloud/target-atjs-extensions) 페이지를 참조하십시오.
+`[!UICONTROL registerExtension]`을(를) 사용하는 방법에 대한 자세한 내용과 예를 보려면 GitHub의 [Adobe Experience Cloud Target atjs 확장 기능](https://github.com/Adobe-Marketing-Cloud/target-atjs-extensions) 페이지를 참조하십시오.
 
 ## 설정 모듈 메서드
 

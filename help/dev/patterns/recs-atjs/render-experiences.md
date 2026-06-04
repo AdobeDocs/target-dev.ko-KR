@@ -20,7 +20,7 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1060
+source-wordcount: 1144
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 3%
 
 ## 경험 다이어그램 렌더링 {#diagram}
 
-at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL Automatic Page Load Request]을(를) 활성화한 경우에만 적용됩니다. 이 옵션은 [!DNL Target]에서 경험을 가져오는 동안 전체 HTML 본문을 숨깁니다. 이 경우 깜박임을 처리하는 것은 사용자의 책임입니다. 지침을 위해 깜박임 처리에 사용할 수 있는 구현 패턴을 검색합니다.
+at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL 자동 페이지 로드 요청]을 사용하도록 설정한 경우에만 적용됩니다. 이 옵션은 [!DNL Target]에서 경험을 가져오는 동안 전체 HTML 본문을 숨깁니다. 이 경우 깜박임을 처리하는 것은 사용자의 책임입니다. 지침을 위해 깜박임 처리에 사용할 수 있는 구현 패턴을 검색합니다.
 
 >[!NOTE]
 >
@@ -94,9 +94,9 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL A
 
 **사용 가능한 기준**
 
-* [!UICONTROL People Who Viewed These, Viewed Those]
-* [!UICONTROL People Who Viewed These, Bought Those]
-* [!UICONTROL People Who Bought These, Bought Those]
+* [!UICONTROL 열람한 사람, 열람한 사람]
+* [!UICONTROL 열람한 사람, 구매한 사람]
+* [!UICONTROL 이 항목을 구입하고 다른 항목을 구입한 사람]
 
 **필요한 엔터티 매개 변수**
 
@@ -118,13 +118,13 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL A
 
 **사용 가능한 기준**
 
-* [!UICONTROL Most Viewed Across the Site]
-* [!UICONTROL Most Viewed by Category]
-* [!UICONTROL Most Viewed by Item Attribute]
-* [!UICONTROL Top Sellers Across the Site]
-* [!UICONTROL Top Sellers by Category]
-* [!UICONTROL Top Sellers by Item Attribute]
-* [!UICONTROL Top by Analytics Metric]
+* [!UICONTROL 사이트에서 가장 많이 본 항목]
+* [!UICONTROL 범주별 가장 많이 본 항목]
+* [!UICONTROL 가장 많이 본 항목 특성]
+* [!UICONTROL 사이트 전체 최상위 판매자]
+* [!UICONTROL 범주별 최상위 판매자]
+* [!UICONTROL 항목 특성별 최상위 판매자]
+* Analytics 지표로 [!UICONTROL 상위]
 
 **필요한 엔터티 매개 변수**
 
@@ -147,10 +147,10 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL A
 
 **사용 가능한 기준**
 
-* [!UICONTROL People Who Viewed This, Viewed That]
-* [!UICONTROL People Who Viewed This, Bought That]
-* [!UICONTROL People Who Bought This, Bought That]
-* [!UICONTROL Items with Similar Attributes]
+* [!UICONTROL 이 항목을 보고 다른 항목도 본 사람]
+* [!UICONTROL 이 항목을 보고 다른 항목을 구입한 사람]
+* [!UICONTROL 이 항목을 구입하고 다른 항목도 구입한 사람]
+* [!UICONTROL 비슷한 특성을 가진 항목]
 
 **필요한 엔터티 매개 변수**
 
@@ -173,8 +173,8 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL A
 
 **사용 가능한 기준**
 
-* [!UICONTROL Recently Viewed Items]
-* [!UICONTROL Recommended for You]
+* [!UICONTROL 최근에 본 항목]
+* [!UICONTROL 추천]
 
 **필요한 엔터티 매개 변수**
 
@@ -196,7 +196,7 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL A
 
 **사용 가능한 기준**
 
-* [!UICONTROL Custom algorithm]
+* [!UICONTROL 사용자 지정 알고리즘]
 
 **필요한 엔터티 매개 변수**
 

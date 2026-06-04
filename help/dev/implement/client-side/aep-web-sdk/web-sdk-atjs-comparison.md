@@ -23,7 +23,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 2303
+source-wordcount: 2308
 ht-degree: 5%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 5%
 
 ### at.js 설치
 
-[!DNL Adobe]을(를) 사용하면 고객이 [!DNL Adobe Experience Cloud], [!UICONTROL Implementation] 탭에서 직접 라이브러리를 다운로드할 수 있습니다. at.js 라이브러리는 고객이 like를 가진 clientCode, imsOrgId 등의 설정으로 사용자 정의됩니다.
+[!DNL Adobe]을(를) 사용하면 고객이 [!DNL Adobe Experience Cloud], [!UICONTROL 구현] 탭에서 직접 라이브러리를 다운로드할 수 있습니다. at.js 라이브러리는 고객이 like를 가진 clientCode, imsOrgId 등의 설정으로 사용자 정의됩니다.
 
 ### 웹 SDK 설치
 
@@ -319,7 +319,7 @@ adobe.target.getOffers({
 
 ### [!DNL Platform Web SDK] 사용 중
 
-`sendEvent` 명령을 사용하고 `decisionScopes` 옵션 아래에 mbox 이름을 전달하여 [!UICONTROL Form-Based Composer] 기반 활동을 가져올 수 있습니다. `sendEvent` 명령은 요청된 활동/제안을 포함하는 개체로 해결된 약속을 반환합니다.
+`sendEvent` 명령을 사용하고 `decisionScopes` 옵션 아래에 mbox 이름을 전달하여 [!UICONTROL 양식 기반 작성기] 기반 활동을 가져올 수 있습니다. `sendEvent` 명령은 요청된 활동/제안을 포함하는 개체로 해결된 약속을 반환합니다.
 
 이 코드 조각은 `propositions` 배열의 모양입니다.
 
@@ -670,7 +670,7 @@ alloy("sendEvent", {
 
 ### at.js 사용
 
-`adobe.target.triggerView` 함수를 사용합니다. 이 함수는 새 페이지를 로드할 때마다 또는 페이지의 구성 요소가 다시 렌더링될 때 호출할 수 있습니다. [!UICONTROL Visual Experience Composer]&#x200B;(VEC)을 사용하여 [!UICONTROL A/B Test] 및 [!UICONTROL Experience Targeting]&#x200B;(XT) 활동을 만들려면 단일 페이지 응용 프로그램(SPA)에 대해 `adobe.target.triggerView()` 함수를 구현해야 합니다. 사이트에서 `adobe.target.triggerView()`이(가) 구현되지 않으면 SPA에 VEC를 사용할 수 없습니다.
+`adobe.target.triggerView` 함수를 사용합니다. 이 함수는 새 페이지를 로드할 때마다 또는 페이지의 구성 요소가 다시 렌더링될 때 호출할 수 있습니다. SPA(단일 페이지 애플리케이션)에서 [!UICONTROL VEC(시각적 경험 작성기)를 사용하여 [!UICONTROL A/B 테스트] 및 [!UICONTROL 경험 타깃팅]&#x200B;(XT) 활동을 만들려면 `adobe.target.triggerView()` 함수를 구현해야 합니다. &#x200B;]사이트에서 `adobe.target.triggerView()`이(가) 구현되지 않으면 SPA에 VEC를 사용할 수 없습니다.
 
 **예**
 
@@ -682,7 +682,7 @@ adobe.target.triggerView("homeView")
 
 ### [!DNL Platform Web SDK] 사용 중
 
-단일 페이지 응용 프로그램 [!UICONTROL View Change]을(를) 트리거하거나 신호를 보내려면 `sendEvent` 명령의 `xdm` 옵션 아래에서 `web.webPageDetails.viewName` 속성을 설정하십시오. [!DNL Platform Web SDK]은(는) 보기 캐시를 확인하고, `sendEvent`에 지정된 `viewName`에 대한 오퍼가 있으면 이 오퍼를 실행하고 표시 알림 이벤트를 보냅니다.
+단일 페이지 응용 프로그램 [!UICONTROL 변경 보기]를 트리거하거나 신호를 보내려면 `sendEvent` 명령의 `xdm` 옵션 아래에 `web.webPageDetails.viewName` 속성을 설정합니다. [!DNL Platform Web SDK]은(는) 보기 캐시를 확인하고, `sendEvent`에 지정된 `viewName`에 대한 오퍼가 있으면 이 오퍼를 실행하고 표시 알림 이벤트를 보냅니다.
 
 **예**
 
@@ -699,9 +699,9 @@ alloy("sendEvent", {
 });
 ```
 
-[자세히 알아보기](/help/dev/implement/client-side/aep-web-sdk/spa-implementation.md)
+[추가 정보](/help/dev/implement/client-side/aep-web-sdk/spa-implementation.md)
 
-## [!UICONTROL Response Tokens]을(를) 활용하는 방법
+## [!UICONTROL 응답 토큰]을 활용하는 방법
 
 [!DNL Target]에서 반환된 Personalization 컨텐츠에 [응답 토큰](https://experienceleague.adobe.com/ko/docs/target/using/administer/response-tokens)이 포함되어 있습니다. 응답 토큰은 활동, 오퍼, 경험, 사용자 프로필, 지역 정보 등에 대한 세부 정보입니다. 이러한 세부 정보는 서드파티 도구와 공유하거나 디버깅에 사용할 수 있습니다. [!DNL Target] 사용자 인터페이스에서 응답 토큰을 구성할 수 있습니다.
 

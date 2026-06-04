@@ -22,7 +22,7 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 603
+source-wordcount: 618
 ht-degree: 12%
 
 ---
@@ -33,9 +33,9 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->구현에서 클라이언트측에서 at.js 및 [!DNL AppMeasurement]을(를) 사용하는 경우 아래에 설명된 [!UICONTROL Target Delivery API] 및 서버측 SDK를 사용해야 합니다.
+>구현에서 클라이언트측에서 at.js 및 [!DNL AppMeasurement]을(를) 사용하는 경우 아래에 설명된 [!UICONTROL Target 배달 API] 및 서버측 SDK를 사용해야 합니다.
 >
->구현에서 [!UICONTROL Adobe Experience Platform Web SDK]을(를) 사용하는 경우 [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server API]](https://experienceleague.adobe.com/ko/docs/experience-platform/edge-network-server-api/overview){target=_blank}을(를) 사용해야 합니다.
+>구현에서 [!UICONTROL Adobe Experience Platform Web SDK]를 사용하는 경우 [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server API]](https://experienceleague.adobe.com/ko/docs/experience-platform/edge-network-server-api/overview){target=_blank}를 사용해야 합니다.
 
 다음 프로세스는 [!DNL Target]의 서버 측 구현 시 발생합니다.
 
@@ -64,7 +64,7 @@ ht-degree: 12%
 * HTTP/s를 호출할 수 있는 모든 서버측 플랫폼 또는 애플리케이션에서 경험을 제공합니다.
 * 방문자가 비즈니스에 참여하는 데 사용한 채널 또는 장치에 관계없이 방문자에게 일관되고 개인화된 경험을 제공합니다.
 * 서버의 세션 내에 방문자를 위한 경험을 캐시하므로 여러 API 호출을 방지할 수 있으므로 성능이 향상됩니다.
-* 서버측에서 Adobe Analytics, Adobe Audience Manager(AAM) 및 Experience Cloud ID 서비스와 같은 Adobe Experience Cloud 제품과 원활하게 통합됩니다.
+* 서버측에서 Adobe Analytics, Adobe Audience Manager(AAM) 및 Experience Cloud ID 서비스 와 같은 Adobe Experience Cloud 제품과 원활하게 통합됩니다.
 
 ## 서버측 SDK
 
@@ -80,7 +80,7 @@ ht-degree: 12%
 * **거의 0에 가까운 대기 시간**&#x200B;에 **기능 플래그 지정**, **롤아웃**, **A/B 실험**&#x200B;을 실행하고 실행하십시오.
 * **SPA** 및 **모바일 채널**&#x200B;과(와) 연결된 TV, 키오스크 또는 매장 내 디지털 화면과 같은 비브라우저 기반 **사물인터넷(IoT) 장치**&#x200B;를 포함하여 **웹**&#x200B;에서 경험을 전달하십시오.
 * 사용자가 귀하의 비즈니스에 참여한 채널 또는 장치에 관계없이 **ML(기계 학습) 기반의 개인화된 경험**&#x200B;을 사용자에게 전달합니다.
-* **서버측에서** Adobe Experience Cloud **,** Adobe Audience Manager **및** Experience Cloud ID 서비스&#x200B;**와 같은** 제품과 원활하게 통합됩니다.
+* **Adobe Experience Cloud와 원활하게 통합** 서버 측에서 **Adobe Analytics**, **Adobe Audience Manager** 및 **Experience Cloud ID 서비스**&#x200B;와 같은 제품
 
 [디바이스에서 의사 결정](sdk-guides/on-device-decisioning/overview.md)을 통해 간단한 기능 플래그 지정 사용 사례를 실행하는 방법을 알아보려면 [시작하기](sdk-guides/getting-started/getting-started.md) 페이지를 참조하세요.
 

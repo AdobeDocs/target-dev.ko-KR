@@ -1,6 +1,6 @@
 ---
-title: Node.js SDK을 사용할 때  [!DNL Adobe Target] 에서 [!UICONTROL getOffers()]을(를) 사용합니다.
-description: '[!UICONTROL getOffers()]을(를) 사용하여 결정을 실행하고  [!DNL Adobe Target]에서 경험을 검색하는 방법에 대해 알아봅니다.'
+title: Node.js SDK을 사용할 때  [!DNL Adobe Target] 의 [!UICONTROL getOffers()]을(를) 사용합니다.
+description: '[!UICONTROL getOffers()]을(를) 사용하여 결정을 실행하고  [!DNL Adobe Target]에서 경험을 검색하는 방법을 알아봅니다.'
 feature: APIs/SDKs
 exl-id: 3c4125ea-68d4-405e-9b9a-5fa832743153
 TQID: https://experienceleague.adobe.com/WRGy74F1kUobRl1Pakse0VnXt3cT3-ntCljm4bHtiZ4
@@ -10,12 +10,12 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 326
-ht-degree: 20%
+source-wordcount: 342
+ht-degree: 19%
 
 ---
 
-# [!UICONTROL Get Offers]&#x200B;(Node.js)
+# [!UICONTROL 오퍼 가져오기]&#x200B;(Node.js)
 
 ## 설명
 
@@ -51,8 +51,8 @@ TargetClient.getOffers(options: Object): Promise
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |
-| 요청 | 개체 | [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) 요청 |
-| 응답 | 개체 | [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) 응답 |
+| 요청 | 개체 | [[!UICONTROL Target 배달 API]](/help/dev/implement/delivery-api/overview.md) 요청 |
+| 응답 | 개체 | [[!UICONTROL Target 배달 API]](/help/dev/implement/delivery-api/overview.md) 응답 |
 | visitorState | 개체 | 방문자 API `getInstance()`에 전달해야 하는 개체 |
 | target쿠키 | 개체 | [!DNL Target] 쿠키 |
 | targetLocationHintCookie | 개체 | [!DNL Target] 위치 힌트 쿠키 |
@@ -76,7 +76,7 @@ TargetClient.getOffers(options: Object): Promise
 | --- | --- | --- |
 | status | 숫자 | HTTP 상태 코드 |
 | message | 문자열 | 응답에 대한 메시지. 예를 들어 응답이 [장치 &#x200B;](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md) 또는 서버측에서 결정되었는지 여부를 나타낼 수 있습니다 |
-| remoteMbox | 배열 | Decisioning 메서드가 `on-device`인 경우 온디바이스에서 완전히 결정할 수 없는 mbox 이름 배열이 제공됩니다. 즉, [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) 요청이 필요합니다. |
+| remoteMbox | 배열 | Decisioning 메서드가 `on-device`인 경우 온디바이스에서 완전히 결정할 수 없는 mbox 이름 배열이 제공됩니다. 즉, [[!UICONTROL Target 배달 API]](/help/dev/implement/delivery-api/overview.md) 요청이 필요합니다. |
 
 ## 예
 

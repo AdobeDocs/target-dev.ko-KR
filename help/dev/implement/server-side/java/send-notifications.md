@@ -13,7 +13,7 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 229
+source-wordcount: 232
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ PrefetchRequest prefetchMboxesRequest = new PrefetchRequest().setMboxes(mboxRequ
 TargetDeliveryResponse targetResponse = targetJavaClient.getOffers(targetDeliveryRequest);
 ```
 
-성공적인 응답에는 요청된 mbox에 대해 미리 가져온 콘텐츠가 포함된 [!UICONTROL Target Delivery API] 응답 개체가 포함됩니다. 샘플 `targetResponse.response` 개체는 다음과 같을 수 있습니다.
+성공적인 응답에는 요청된 mbox에 대해 미리 가져온 콘텐츠가 포함된 [!UICONTROL Target 배달 API] 응답 개체가 포함됩니다. 샘플 `targetResponse.response` 개체는 다음과 같을 수 있습니다.
 
 ### 응답
 

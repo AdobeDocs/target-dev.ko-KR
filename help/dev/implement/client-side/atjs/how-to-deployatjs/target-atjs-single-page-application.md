@@ -24,7 +24,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 2848
+source-wordcount: 2851
 ht-degree: 53%
 
 ---
@@ -87,7 +87,7 @@ SPA용 [!DNL Adobe Target] VEC는 &quot;보기&quot;라는 새로운 개념(SPA 
 
    먼저 at.js 2.*x*&#x200B;을(를) 설치해야 합니다. 이 at.js 버전은 SPA를 염두에 두고 개발되었습니다. 이전 at.js 버전은 [!DNL Adobe Target] 보기 및 SPA용 VEC를 지원하지 않습니다.
 
-   **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**&#x200B;에 있는 [!DNL Adobe Target] UI를 통해 at.js 2.*x*&#x200B;을(를) 다운로드합니다. at.js 2.*x*&#x200B;은(는) [!DNL Adobe Experience Platform]의 태그를 통해 배포할 수도 있습니다.
+   **[!UICONTROL 관리]** > **[!UICONTROL 구현]**&#x200B;에 있는 [!DNL Adobe Target] UI를 통해 at.js 2.*x*&#x200B;을(를) 다운로드하십시오. at.js 2.*x*&#x200B;은(는) [!DNL Adobe Experience Platform]의 태그를 통해 배포할 수도 있습니다.
 
 1. 사이트에서 at.js 2.*x* 함수 `[triggerView()](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-triggerview-atjs-2.md)`을(를) 구현합니다.
 
@@ -101,7 +101,7 @@ SPA용 [!DNL Adobe Target] VEC는 &quot;보기&quot;라는 새로운 개념(SPA 
 
    | 매개 변수 | 유형 | 필수? | 유효성 검사 | 설명 |
    | --- | --- | --- | --- | --- |
-   | viewName | 문자열 | 예 | &#x200B;1. 후행 공백이 없습니다.<br />2. 비워 둘 수 없습니다.<br />3. 보기 이름은 모든 페이지에 대해 고유해야 합니다.<br />4. **경고**: 보기 이름을 &#39;`/`&#39;로 시작하거나 종료해서는 안 됩니다. 일반적으로 고객은 URL 경로에서 보기 이름을 추출하기 때문입니다. &quot;home&quot; 및 &quot;`/home`&quot;이(가) 다릅니다.<br />5. **경고**: `{page: true}` 선택 사항을 사용하여 동일한 보기를 여러 번 연속적으로 트리거할 수 없습니다. | 보기를 표현할 문자열 유형으로 모든 이름을 전달합니다. 이 보기 이름은 마케터가 작업을 만들고 A/B 및 XT 활동을 실행하는 VEC의 **[!UICONTROL Modifications]** 패널에 표시됩니다. |
+   | viewName | 문자열 | 예 | &#x200B;1. 후행 공백이 없습니다.<br />2. 비워 둘 수 없습니다.<br />3. 보기 이름은 모든 페이지에 대해 고유해야 합니다.<br />4. **경고**: 보기 이름을 &#39;`/`&#39;로 시작하거나 종료해서는 안 됩니다. 일반적으로 고객은 URL 경로에서 보기 이름을 추출하기 때문입니다. &quot;home&quot; 및 &quot;`/home`&quot;이(가) 다릅니다.<br />5. **경고**: `{page: true}` 선택 사항을 사용하여 동일한 보기를 여러 번 연속적으로 트리거할 수 없습니다. | 보기를 표현할 문자열 유형으로 모든 이름을 전달합니다. 이 보기 이름은 마케터가 작업을 만들고 A/B 및 XT 활동을 실행하는 VEC의 **[!UICONTROL 수정 사항]** 패널에 표시됩니다. |
    | options | 개체 | 아니오 |  |  |
    | options > page | 부울 | 아니오 |  | **TRUE**: 페이지의 기본값은 true입니다. `page=true`일 때 노출 수가 증가하면 Edge 서버로 알림이 전송됩니다.<br />**FALSE**: `page=false`일 때 노출 수가 증가하면 알림이 전송되지 않습니다. 이 값은 오퍼가 있는 페이지에서 구성 요소를 다시 렌더링하려는 경우에만 사용해야 합니다. |
 

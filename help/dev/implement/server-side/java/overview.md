@@ -10,7 +10,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 120
+source-wordcount: 123
 ht-degree: 7%
 
 ---
@@ -32,7 +32,7 @@ Java SDK을 사용하는 방법을 보려면 [[!DNL Target] SDK 시작 안내서
 
 Java SDK 테스트 드라이브:
 
-* [[!DNL Adobe Target] [!UICONTROL on-device decisioning] 데모 사이트 방문](https://github.com/adobe/on-device-decisioning-demo-site)
+* [[!DNL Adobe Target] [!UICONTROL 디바이스에서 의사 결정] 데모 사이트](https://github.com/adobe/on-device-decisioning-demo-site)를 방문하여
 * [샘플 응용 프로그램](../sdk-guides/sample-apps/sample-apps.md)에서.
 
 ## 참조

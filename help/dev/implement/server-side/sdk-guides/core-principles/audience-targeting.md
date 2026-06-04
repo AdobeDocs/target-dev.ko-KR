@@ -47,7 +47,7 @@ ht-degree: 15%
 
 ### 지역
 
-자세한 내용은 [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html?lang=ko)을 참조하십시오.
+자세한 내용은 [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html?lang=ko)을 참조하세요.
 &#x200B; &#x200B;
 * 국가/지역
 * 주/도
@@ -345,4 +345,4 @@ public class TargetRequestUtils {
 | [방문자 프로필](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=ko) | 예 |
 | [트래픽 소스](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=ko) | 예 |
 | [시간대](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html?lang=ko) | 예 |
-| [Experience Cloud 대상](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=ko)&#x200B;(Adobe Audience Manager, Adobe Analytics 및 Adobe Experience Manager의 대상) | 예 |
+| [Experience Cloud 대상](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=ko)&#x200B;(Adobe Audience Manager, Adobe Analytics 및 Adobe Experience Manager의 대상 | 예 |

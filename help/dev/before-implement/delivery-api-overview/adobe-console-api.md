@@ -13,13 +13,13 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 52
+source-wordcount: 57
 ht-degree: 0%
 
 ---
 
 # ADOBE ADMIN CONSOLE API
 
-[!UICONTROL Adobe User Management] 및 [!UICONTROL User Sync API]을(를) 통해 사용자 및 제품 권한을 관리합니다.
+[!UICONTROL Adobe 사용자 관리] 및 [!UICONTROL 사용자 동기화 API]를 통해 사용자 및 제품 권한을 관리합니다.
 
 자세한 내용은 *Adobe Developer* 웹 사이트에서 [사용자 및 제품 권한 관리, API 방법](https://developer.adobe.com/umapi/){target=_blank}을 참조하십시오.
