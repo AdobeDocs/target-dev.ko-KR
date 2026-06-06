@@ -41,7 +41,7 @@ ht-degree: 8%
 | [자동 타겟](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html?lang=ko) ![Premium](../../../assets/premium.png) | 아니요 |
 | [다변량 테스트](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html?lang=ko) (MVT) | 아니요 |
 | [경험 타기팅](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=ko) (XT) | 예 |
-| [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) ![Premium](../../../assets/premium.png) | 아니요 |
+| [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=ko) ![Premium](../../../assets/premium.png) | 아니요 |
 | [권장 사항](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html?lang=ko) ![Premium](../../../assets/premium.png) | 아니요 |
 | [Analytics for Target을 사용하는 활동](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=ko&)&#x200B;(A4T) | 예 |
 
