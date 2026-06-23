@@ -5,18 +5,12 @@ title: at.js 사용자 지정 이벤트는 어떻게 사용합니까?
 feature: at.js
 exl-id: a4baed9a-9eb8-4343-9834-709b03e44ca2
 TQID: https://experienceleague.adobe.com/gCjLJ-XBlMe-GE-gaTJ2wHkn1jmal6Ftbs1GDb0zURA
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
 workflow-type: tm+mt
 source-wordcount: 661
 ht-degree: 70%
@@ -62,4 +56,5 @@ document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function(event) 
 
 응답 토큰 및 at.js 사용자 지정 이벤트를 사용하여 [!DNL Target]에서 타사 시스템으로 프로필 정보를 공유하는 방법을 알아보려면 다음 비디오를 시청하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/33347/?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/23253/?quality=12)
+

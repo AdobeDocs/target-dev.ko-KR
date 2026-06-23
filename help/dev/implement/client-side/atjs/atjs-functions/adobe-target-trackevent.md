@@ -5,17 +5,12 @@ title: '[!UICONTROL adobe.target.trackEvent()] 함수를 사용하는 방법은 
 feature: at.js
 exl-id: 9a55e4f1-d7f9-47c1-867c-2ce06fb26f9f
 TQID: https://experienceleague.adobe.com/Jib9C5FvmsgIF6CA-0UbdMdnMiXxQCkU2-O3Zys3vrY
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
 workflow-type: tm+mt
 source-wordcount: 336
 ht-degree: 59%
@@ -26,7 +21,7 @@ ht-degree: 59%
 
 이 함수는 클릭 및 전환과 같은 사용자 작업을 보고하라는 요청을 실행하며, 응답에 있는 활동을 전달하지는 않습니다.
 
-그런 후에 이러한 이벤트 추적 mbox 호출을 사용하여 활동의 지표를 정의할 수 있습니다. 자세한 내용은 [성공 지표](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=ko) 및 [전환 추적](../how-to-deployatjs/implement-target-without-a-tag-manager.md#track-conversions)을 참조하십시오.
+그런 후에 이러한 이벤트 추적 mbox 호출을 사용하여 활동의 지표를 정의할 수 있습니다. 자세한 내용은 [성공 지표](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) 및 [전환 추적](../how-to-deployatjs/implement-target-without-a-tag-manager.md#track-conversions)을 참조하십시오.
 
 다음은 API 세부 사항입니다.
 
@@ -71,3 +66,4 @@ adobe.target.trackEvent({
 >[!WARNING]
 >
 >필수 필드가 설정되지 않은 경우 요청이 실행되지 않고 오류가 발생합니다.
+

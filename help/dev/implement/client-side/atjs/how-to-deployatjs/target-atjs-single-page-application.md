@@ -5,24 +5,12 @@ title: 단일 페이지 애플리케이션(SPA)에 대해  [!DNL Target] 을(를
 feature: Implement Server-side
 exl-id: d59d7683-0a63-47a9-bbb5-0fe4a5bb7766
 TQID: https://experienceleague.adobe.com/zFYKCYv740tA3UXvJfJx-eiNst-r0xYlj3RP-LbCcOo
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
 workflow-type: tm+mt
 source-wordcount: 2851
 ht-degree: 53%
@@ -238,7 +226,7 @@ SPA용 [!DNL Adobe Target] VEC는 &quot;보기&quot;라는 새로운 개념(SPA 
 
 ## 단일 페이지 앱 시각적 경험 작성기
 
-at.js 2.x를 설치하고 `triggerView()`를 사이트에 추가했으면 VEC를 사용하여 A/B 및 XT 활동을 실행합니다. 자세한 내용은 [SPA(단일 페이지 앱) 시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html?lang=ko)를 참조하십시오.
+at.js 2.x를 설치하고 `triggerView()`를 사이트에 추가했으면 VEC를 사용하여 A/B 및 XT 활동을 실행합니다. 자세한 내용은 [SPA(단일 페이지 앱) 시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -246,7 +234,7 @@ at.js 2.x를 설치하고 `triggerView()`를 사이트에 추가했으면 VEC를
 
 ## TriggerView를 사용하여 A4T가 at.js 2.x 및 SPA에서 올바르게 작동하는지 확인
 
-[Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=ko)&#x200B;(A4T)이 at.js 2.x에서 올바르게 작동하려면 [!DNL Target] 요청과 [!DNL Analytics] 요청에서 동일한 SDID를 전송해야 합니다.
+[Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html)&#x200B;(A4T)이 at.js 2.x에서 올바르게 작동하려면 [!DNL Target] 요청과 [!DNL Analytics] 요청에서 동일한 SDID를 전송해야 합니다.
 
 SPA와 관련된 우수 사례:
 
@@ -329,16 +317,17 @@ at.js 2.x API를 사용하면 여러 가지 방법으로 [!DNL Target] 구현을
 
 >[!VIDEO](https://video.tv.adobe.com/v/26250/?quality=12)
 
-자세한 내용은 [at.js 2.x 작동 방식 이해](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html?lang=ko)를 참조하십시오.
+자세한 내용은 [at.js 2.x 작동 방식 이해](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html)를 참조하십시오.
 
 ### SPA에서 at.js 2.x 구현
 
->[!VIDEO](https://video.tv.adobe.com/v/34780/?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/26248/?quality=12)
 
-자세한 내용은 [SPA(단일 페이지 애플리케이션)에서 Adobe Target의 at.js 2.x 구현](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html?lang=ko)을 참조하십시오.
+자세한 내용은 [SPA(단일 페이지 애플리케이션)에서 Adobe Target의 at.js 2.x 구현](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html)을 참조하십시오.
 
 ### [!DNL Adobe Target]에서 SPA용 VEC 사용
 
->[!VIDEO](https://video.tv.adobe.com/v/34786/?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/26249/?quality=12)
 
-자세한 내용은 [Adobe Target에서 SPA VEC(단일 페이지 애플리케이션용 시각적 경험 작성기) 사용](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html?lang=ko)을 참조하십시오.
+자세한 내용은 [Adobe Target에서 SPA VEC(단일 페이지 애플리케이션용 시각적 경험 작성기) 사용](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html)을 참조하십시오.
+
