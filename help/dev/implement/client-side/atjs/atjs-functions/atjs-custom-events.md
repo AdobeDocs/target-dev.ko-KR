@@ -16,7 +16,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
 workflow-type: tm+mt
 source-wordcount: 661
 ht-degree: 70%
@@ -63,3 +63,4 @@ document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function(event) 
 응답 토큰 및 at.js 사용자 지정 이벤트를 사용하여 [!DNL Target]에서 타사 시스템으로 프로필 정보를 공유하는 방법을 알아보려면 다음 비디오를 시청하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33347/?captions=kor&quality=12)
+

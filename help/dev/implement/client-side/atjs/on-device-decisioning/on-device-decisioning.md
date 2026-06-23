@@ -24,7 +24,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
 workflow-type: tm+mt
 source-wordcount: 3835
 ht-degree: 4%
@@ -357,3 +357,4 @@ Target은 메타데이터, 규칙 및 조건으로 구성된 아티팩트로 [!U
 1. [!UICONTROL 온디바이스 의사 결정][&#128279;](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md)에서 지원하는 활동 유형을 만들고 활성화한 다음 [!UICONTROL 온디바이스 의사 결정]에 적합한지 확인하십시오.
 1. at.js 설정 UI를 통해 **[!UICONTROL Decisioning 메서드]**&#x200B;을(를) **[!UICONTROL &quot;하이브리드&quot;]** 또는 **[!UICONTROL &quot;온디바이스 전용&quot;]**(으)로 설정하십시오.
 1. At.js 2.5.0+를 다운로드하여 페이지에 배포합니다.
+

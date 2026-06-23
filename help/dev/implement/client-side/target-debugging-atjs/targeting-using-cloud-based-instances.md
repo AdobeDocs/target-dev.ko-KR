@@ -15,7 +15,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 929e1f10bc5dd0741f0fe28cd46435e680a4a308
+source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
 workflow-type: tm+mt
 source-wordcount: 203
 ht-degree: 37%
@@ -37,4 +37,5 @@ ht-degree: 37%
 at.js JavaScript 라이브러리는 쿠키를 사용하여 사용자를 추적하여 [!DNL [!DNL Target]]이(가) 항상 일관된 경험을 제공하도록 합니다. [!DNL Target] JavaScript 라이브러리에서 쿠키를 저장할 수 없으면 Target 요청이 비활성화됩니다.
 
 **해결 방법:**&#x200B;공용 접미어 목록에 포함된 도메인에 클라우드 기반 인스턴스를 사용하려는 경우 `cookieDomain` 설정을 사용자 지정하는 것이 좋습니다. 자세한 내용은 [targetGlobalSettings()](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md)를 참조하십시오.
+
 

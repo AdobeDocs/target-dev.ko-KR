@@ -16,7 +16,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
 workflow-type: tm+mt
 source-wordcount: 557
 ht-degree: 38%
@@ -43,3 +43,4 @@ ht-degree: 38%
 | [[!UICONTROL registerExtension(options)]](/help/dev/implement/client-side/atjs/atjs-functions/registerextension-atjs-1x.md)<P>(at.js 1.x) | 특정 확장 기능을 등록하는 표준 방법을 제공합니다.<P>**참고:** 이 함수는 at.js 버전 1.*x*&#x200B;에만 사용할 수 있습니다. 이 함수는 at.js 2.x의 릴리스에서 더 이상 사용되지 않습니다. 이 함수는 at.js 2.x와 함께 사용되는 경우 기본 콘텐츠를 반환합니다. |
 | [[!UICONTROL at.js 사용자 지정 이벤트]](/help/dev/implement/client-side/atjs/atjs-functions/atjs-custom-events.md) | at.js 사용자 지정 이벤트는 mbox 요청 또는 오퍼가 실패하거나 성공하면 알려줍니다. |
 | [[!UICONTROL adobe.target.sendNotifications(options)]](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21.md)<P>(at.js 2.1.0) | 이 함수는 `[!UICONTROL adobe.target.applyOffer()]` 또는 `[!UICONTROL adobe.target.applyOffers()]`을(를) 사용하지 않고 경험을 렌더링할 때 [!DNL Target] Edge에 알림을 보냅니다.<P>**참고**: 이 함수는 at.js 2.1.0에서 처음 소개되었으며, 2.1.0 이상 버전에서 사용할 수 있습니다. |
+

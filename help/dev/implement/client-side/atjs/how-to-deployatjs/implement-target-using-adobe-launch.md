@@ -17,7 +17,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
 workflow-type: tm+mt
 source-wordcount: 446
 ht-degree: 4%
@@ -51,3 +51,4 @@ ht-degree: 4%
   >[!DNL Analytics] 호출이 [!DNL Target] 호출을 대기하도록 [!DNL Adobe Analytics] 확장에서 비콘 보내기 작업을 사용하십시오. 사용자 지정 코드를 사용하여 `s.t()` 또는 `s.tl()`을(를) 직접 호출하는 경우 [!DNL Analytics] 호출은 [!DNL Target] 호출이 완료될 때까지 기다리지 않습니다.
 
 * **잘못된 리디렉션 오퍼 처리 방지:** 페이지에 [!DNL Target] 및 [!DNL Analytics]이(가) 있고 Target에 의해 리디렉션 오퍼가 실행된 경우, [!DNL Analytics] 추적기가 요청을 실행하지 말아야 할 때 요청을 실행하는 상황이 발생할 수 있습니다(사용자가 다른 URL로 리디렉션되기 때문). [!DNL Adobe Experience Platform]의 태그를 통해 [!DNL Target] 및 [!DNL Analytics]을(를) 구현하면 이 문제가 발생하지 않습니다. [!DNL Adobe Experience Platform]에서 태그를 사용하면 [!DNL Target]은(는) [!DNL Analytics]에게 [!DNL Analytics] 비콘 요청을 중단하도록 지시합니다.
+

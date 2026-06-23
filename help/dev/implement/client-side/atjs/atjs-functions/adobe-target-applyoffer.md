@@ -15,7 +15,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
 workflow-type: tm+mt
 source-wordcount: 173
 ht-degree: 68%
@@ -35,7 +35,7 @@ ht-degree: 68%
 | 키 | 유형 | 필수 | 설명 |
 |--- |--- |--- |--- |
 | mbox | 문자열 | 예 | Mbox 이름<br />at.js 1.3.0(및 이후 버전)을 사용하면 Target에서 mbox 키를 사용하도록 강제 적용합니다. 이 키는 과거에는 필요했지만 현재 Target에서는 이 키를 적용하여 적절한 유효성 검사가 수행되는지와 고객이 함수를 올바르게 사용하고 있는지를 확인합니다. |
-| selector | 문자열 또는 DOM 요소 | 아니오 | Target이 오퍼 컨텐츠를 배치해야 하는 HTML 요소를 식별하는 데 사용되는 HTML 요소 또는 CSS 선택기입니다. 선택기를 제공하지 않으면 Target에서는 HTML 요소가 HTML HEAD을 사용해야 한다고 가정합니다. |
+| selector | 문자열 또는 DOM 요소 | 아니오 | Target이 오퍼 컨텐츠를 배치해야 하는 HTML 요소를 식별하는 데 사용되는 HTML 요소 또는 CSS 선택기입니다. 선택기를 제공하지 않으면 Target에서는 HTML 요소가 HTML HEAD를 사용해야 한다고 가정합니다. |
 | 오퍼 | 배열 | 예 | 요소에 적용되어야 하는 배열 작업입니다. |
 
 ## 예
@@ -60,3 +60,4 @@ adobe.target.getOffer({
  "timeout": 5000 
 }); 
 ```
+

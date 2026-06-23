@@ -15,7 +15,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
 workflow-type: tm+mt
 source-wordcount: 216
 ht-degree: 40%
@@ -57,3 +57,4 @@ ht-degree: 40%
 * 비어 있는 페이지 맨 위 `[!UICONTROL mboxCreate()]` 함수는 글로벌 mbox로 권장되지 않습니다.
 
   at.js의 자동 생성된 글로벌 mbox는 `<head>`에서 실행되고 일찍 컨텐츠를 반환할 수 있으므로 더 나은 옵션입니다.
+
