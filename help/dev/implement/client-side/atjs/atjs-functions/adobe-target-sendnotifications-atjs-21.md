@@ -15,7 +15,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
+source-git-commit: 07d851e2344279caeae25e4823ca86b9c17efd63
 workflow-type: tm+mt
 source-wordcount: 642
 ht-degree: 83%
@@ -130,4 +130,5 @@ adobe.target.getOffers({
 >[!NOTE]
 >
 >미리 가져오기 전용 [!DNL Adobe Analytics], `[!UICONTROL getOffers()]` 및 `[!UICONTROL sendNotifications()]`을(를) 사용하는 경우 `[!UICONTROL sendNotifications()]`이(가) 실행된 후에 [!DNL Analytics] 요청을 실행해야 합니다. 목적은 `[!UICONTROL sendNotifications()]`에 의해 생성된 SDID가 [!DNL Analytics] 및 [!DNL Target]에 전송된 SDID와 일치하는지 확인하는 것입니다.
+
 

@@ -17,7 +17,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
+source-git-commit: 07d851e2344279caeae25e4823ca86b9c17efd63
 workflow-type: tm+mt
 source-wordcount: 2994
 ht-degree: 38%
@@ -314,5 +314,6 @@ HTML5 doctype은 페이지가 표준 모드로 로드되도록 합니다. quirks
 ## at.js는 Ionic 앱 환경에서 작동합니까?
 
 at.js는 웹이 아닌 환경에서 작동하도록 의도되지 않았으므로 이 구현은 테스트되지 않았습니다. [!DNL Adobe]은(는) 모바일 구현용 [SDK를 권장합니다](/help/dev/implement/mobile/overview.md).
+
 
 

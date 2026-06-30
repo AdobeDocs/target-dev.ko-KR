@@ -25,7 +25,7 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 929e1f10bc5dd0741f0fe28cd46435e680a4a308
+source-git-commit: 07d851e2344279caeae25e4823ca86b9c17efd63
 workflow-type: tm+mt
 source-wordcount: 5174
 ht-degree: 60%
@@ -586,4 +586,5 @@ at.js를 구현할 때는 다음에 유의하십시오.
 * 비동기식 구현은 [!UICONTROL Test&amp;Target과 SiteCatalyst] 플러그인의 통합과 같은 레거시 통합이 작동하지 않을 수 있음을 의미합니다.
 * mbox.js 개체 및 메서드를 참조하는 [!DNL Target] 플러그인은 지원되지 않습니다.
 * 모든 [!DNL Target] 호출은 XMLHTTPRequest를 통해 수행되고 콘텐츠는 JSON을 통해 반환됩니다.
+
 
