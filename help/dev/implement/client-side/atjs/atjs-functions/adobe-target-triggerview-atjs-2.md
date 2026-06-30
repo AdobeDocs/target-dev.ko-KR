@@ -5,17 +5,12 @@ title: adobe.target.triggerView() 함수를 사용하는 방법
 feature: at.js
 exl-id: d6130c56-4e77-4668-ad21-a5b335f8b234
 TQID: https://experienceleague.adobe.com/pBC1GRKG0mxeaZ1hfaByKv2tu-XScrSJfm7lUw-3yKw
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 07d851e2344279caeae25e4823ca86b9c17efd63
 workflow-type: tm+mt
 source-wordcount: 446
 ht-degree: 19%
@@ -83,7 +78,7 @@ adobe.target.getOffers({
 
 ## 예: [!UICONTROL Adobe Visual Editing Helper 확장 기능]을 사용한 `triggerView()`에 대한 최상의 호환성
 
-[Adobe Visual Editing Helper 확장 기능](https://experienceleague.adobe.com/ko/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank}을 사용할 때는 다음 사항을 고려하십시오.
+[Adobe Visual Editing Helper 확장 기능](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank}을 사용할 때는 다음 사항을 고려하십시오.
 
 [!DNL Chrome] 확장에 대한 [!DNL Googl]e의 새 V3 매니페스트 정책으로 인해 [!UICONTROL Visual Editing Helper 확장 기능]은(는) VEC에서 [!DNL Target] 라이브러리를 로드하기 전에 `DOMContentLoaded` 이벤트를 기다려야 합니다. 이 지연으로 인해 작성 라이브러리가 준비되기 전에 웹 페이지에서 `triggerView()` 호출이 실행되어 로드 시 보기가 채워지지 않을 수 있습니다.
 
@@ -104,6 +99,7 @@ if (document.readyState === "complete") {
     window.addEventListener("load", triggerViewIfLoaded);
 }
 ```
+
 
 
 
