@@ -5,23 +5,12 @@ title: 태그 관리자 없이  [!DNL Target] 을(를) 구현할 수 있습니�
 feature: Implement Server-side
 exl-id: f675ae21-105d-4aa3-9926-59291f1136b5
 TQID: https://experienceleague.adobe.com/UkFhxuka6uds6NVcJlZqo7soQlg4kqr7Z-rvuJPuRKk
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 07d851e2344279caeae25e4823ca86b9c17efd63
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: ca4254966a337a0215d66bd28506128b9751d0e0
 workflow-type: tm+mt
 source-wordcount: 1785
 ht-degree: 32%
@@ -76,7 +65,7 @@ ht-degree: 32%
 | [!UICONTROL 페이지 로드가 활성화됨(글로벌 mbox를 자동으로 만들기)] | 각 페이지 로드 시 자동으로 실행할 at.js 파일에 글로벌 mbox 호출을 임베드할지 여부를 선택하십시오. |
 | [!UICONTROL 글로벌 mbox] | 글로벌 mbox의 이름을 선택하십시오. 기본적으로 이 이름은 target-global-mbox입니다.<p>at.js를 사용하는 mbox 이름에 앰퍼샌드(&amp;)를 포함한 특수 문자를 사용할 수 있습니다. |
 | [!UICONTROL 시간 초과(초)] | 정의된 기간 내에 [!DNL Target]이 컨텐츠에 응답하지 않으면 서버 호출 제한 시간이 초과되어 기본 컨텐츠가 표시됩니다. 방문자 세션 동안 추가 호출이 계속 시도됩니다. 기본값은 5초입니다.<p>at.js 라이브러리는 `XMLHttpRequest`의 시간 제한 설정을 사용합니다. 시간 제한은 요청이 실행될 때 시작되며 [!DNL Target]이(가) 서버에서 응답을 받을 때 중지됩니다. 자세한 내용은 Mozilla Developer Network의 [XMLHttpRequest.timeout](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/timeout)을 참조하십시오.<p>응답을 받기 전에 지정된 시간 제한이 초과되면 기본 컨텐츠가 표시되고, 모든 데이터 수집은 [!DNL Target] 에지에서 발생하므로 방문자는 활동의 참가자로 카운트될 수 있습니다. 요청이 [!DNL Target] 에지에 도달하면 방문자가 카운트됩니다.<p>시간 제한 설정을 구성할 때에는 다음 사항을 고려하십시오.<ul><li>값이 너무 낮으면, 방문자가 활동의 참가자로 카운트될 수 있음에도 불구하고 사용자에게 대부분의 시간 동안 기본 컨텐츠가 표시될 수 있습니다.</li><li>값이 너무 높으면, 확장된 기간 동안 본문 숨기기를 사용하는 경우 방문자에게 웹 페이지의 빈 영역이 표시되거나 빈 페이지가 표시될 수 있습니다.</li></ul>mbox 응답 시간을 자세히 알아보려면 브라우저의 개발자 도구에서 네트워크 탭을 살펴보십시오. 타사 웹 성과 모니터링 도구(예: Catchpoint)를 사용할 수도 있습니다.<p>**참고**: [visitorApiTimeout](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#visitorapitimeout) 설정을 사용하면 [!DNL Target]에서 너무 오랫동안 방문자 API 응답을 기다리지 않습니다. 이 설정과 여기에 설명된 at.js에 대한 시간 초과 설정은 서로 영향을 주지 않습니다. |
-| [!UICONTROL 프로필 수명] | 이 설정은 방문자 프로필이 저장되어 있는 기간을 결정합니다. 기본적으로, 프로필은 2주 동안 저장됩니다. 이 설정은 최대 90일까지 늘릴 수 있습니다.<p>프로필 라이프타임 설정을 변경하려면 [Client Care](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=ko#reference_ACA3391A00EF467B87930A450050077C)에 문의하십시오. |
+| [!UICONTROL 프로필 수명] | 이 설정은 방문자 프로필이 저장되어 있는 기간을 결정합니다. 기본적으로, 프로필은 2주 동안 저장됩니다. 이 설정은 최대 90일까지 늘릴 수 있습니다.<p>프로필 라이프타임 설정을 변경하려면 [Client Care](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html#reference_ACA3391A00EF467B87930A450050077C)에 문의하십시오. |
 
 ### 주요 구현 방법
 
@@ -90,7 +79,7 @@ at.js 설정을 편집하려면 원하는 at.js 버전 옆의 **[!UICONTROL 편�
 
 >[!WARNING]
 >
->이러한 기본 설정을 변경하기 전에 [Client Care](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=ko#reference_ACA3391A00EF467B87930A450050077C)에 문의하여 현재 구현에 영향을 주지 않도록 하십시오.
+>이러한 기본 설정을 변경하기 전에 [Client Care](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html#reference_ACA3391A00EF467B87930A450050077C)에 문의하여 현재 구현에 영향을 주지 않도록 하십시오.
 
 위에서 설명한 설정 외에도 다음과 같은 특정 at.js 설정을 사용할 수 있습니다.
 
@@ -295,5 +284,6 @@ at.js는 웹 사이트에 있는 모든 페이지의 `<head>` 요소에 구현�
 | orderId | 전환 계산을 위해 주문을 식별하는 고유한 값<p>`orderId`은(는) 고유해야 합니다. 보고서에서 중복 주문은 무시됩니다. |
 | orderTotal | 구매품의 통화 가치<p>통화 기호를 전달하지 마십시오. 소수점(쉼표 아님)을 사용하여 십진수 값을 표시합니다. |
 | productPurchasedId(선택 사항) | 주문에서 구입한 제품 ID가 쉼표로 구분된 목록<p>이러한 제품 ID는 추가 보고 분석을 지원하기 위해 감사 보고서에 표시됩니다. |
+
 
 
