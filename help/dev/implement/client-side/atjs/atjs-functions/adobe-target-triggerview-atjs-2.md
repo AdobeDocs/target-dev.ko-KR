@@ -83,7 +83,7 @@ adobe.target.getOffers({
 
 ## 예: [!UICONTROL Adobe Visual Editing Helper 확장 기능]을 사용한 `triggerView()`에 대한 최상의 호환성
 
-[Adobe Visual Editing Helper 확장 기능](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank}을 사용할 때는 다음 사항을 고려하십시오.
+[Adobe Visual Editing Helper 확장 기능](https://experienceleague.adobe.com/ko/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank}을 사용할 때는 다음 사항을 고려하십시오.
 
 [!DNL Chrome] 확장에 대한 [!DNL Googl]e의 새 V3 매니페스트 정책으로 인해 [!UICONTROL Visual Editing Helper 확장 기능]은(는) VEC에서 [!DNL Target] 라이브러리를 로드하기 전에 `DOMContentLoaded` 이벤트를 기다려야 합니다. 이 지연으로 인해 작성 라이브러리가 준비되기 전에 웹 페이지에서 `triggerView()` 호출이 실행되어 로드 시 보기가 채워지지 않을 수 있습니다.
 
