@@ -5,27 +5,12 @@ title: at.js의 각 버전에 포함된 것은 무엇입니까?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
 TQID: https://experienceleague.adobe.com/95lXe4YAZ7mD12XBtKPB3ddFtGCJYdvlXR632qosuG4
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
-subfeature_v2:
-  - id: df62f171-ac37-440f-8f0f-f41a72ebdd34
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 07d851e2344279caeae25e4823ca86b9c17efd63
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ceid: f7c7de77-382f-4f48-8b36-61a170f06d3d
+subfeature_v2: id: df62f171-ac37-440f-8f0f-f41a72ebdd34id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 235baadf4059d2c363368408012630d6619aef99
 workflow-type: tm+mt
 source-wordcount: 5174
 ht-degree: 60%
@@ -46,7 +31,7 @@ ht-degree: 60%
 >
 >해당 주 버전의 이전 부 버전에서 발견된 문제에 대한 버그 수정 사항 및 보안 패치를 얻으려면 1.*x* 또는 2.*x*&#x200B;의 최신 버전으로 업그레이드해야 합니다.
 
-[Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)의 태그는 at.js를 업그레이드하는 기본 방법입니다. 확장 개발자는 확장에 새로운 기능을 지속적으로 추가하고 버그를 자주 수정합니다. 이러한 업데이트는 새로운 버전의 확장에 패키지화되어 Adobe Experience Platform 카탈로그에서 업그레이드로 사용할 수 있습니다. 자세한 내용은 *태그 개요* 안내서에서 [확장 업그레이드](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html?lang=ko)를 참조하십시오.
+[Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)의 태그는 at.js를 업그레이드하는 기본 방법입니다. 확장 개발자는 확장에 새로운 기능을 지속적으로 추가하고 버그를 자주 수정합니다. 이러한 업데이트는 새로운 버전의 확장에 패키지화되어 Adobe Experience Platform 카탈로그에서 업그레이드로 사용할 수 있습니다. 자세한 내용은 *태그 개요* 안내서에서 [확장 업그레이드](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html)를 참조하십시오.
 
 ## at.js 버전 2.11.8(2025년 3월 31일)
 
@@ -151,7 +136,7 @@ ht-degree: 60%
 이 at.js의 릴리스에는 다음과 같은 개선 사항 및 변경 사항이 포함되어 있습니다.
 
 * at.js에 대한 [온디바이스 의사 결정](/help/dev/implement/client-side/atjs/on-device-decisioning/on-device-decisioning.md) 지원
-* Automated Personalization 활동에 대한 [링크 미리보기](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html?lang=ko) 지원
+* Automated Personalization 활동에 대한 [링크 미리보기](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html) 지원
 
 이 릴리스는 또한 Microsoft Internet Explorer 10 이상의 버전에 대한 지원을 제거합니다.
 
@@ -263,7 +248,7 @@ at.js 유지 관리 릴리스이며, 다음과 같은 개선 기능 및 수정 �
 
 * **클라이언트 측 분석 로깅**: 클라이언트 측이든 아니면 서버측이든 간에 분석 데이터를 [!DNL Adobe Analytics]에 보내는 방법을 고객이 완벽하게 제어할 수 있도록 합니다.
 
-  자세한 내용은 [클라이언트측 [!DNL Analytics] 로깅](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html?lang=ko#client-side)을 참조하십시오.
+  자세한 내용은 [클라이언트측 [!DNL Analytics] 로깅](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html#client-side)을 참조하십시오.
 
 * **알림 보내기**: 경험이 `applyOffer()` 또는 `applyOffers()` 대신 코드로 렌더링될 때 개발자가 알림을 전송할 수 있습니다.
 
@@ -380,7 +365,7 @@ at.js 버전 1.6.3에는 다음의 수정 사항과 개선 사항이 포함되�
 * `at-request-succeeded` 이벤트 세부 사항에 리디렉션 플래그가 들어 있습니다. 이 플래그는 페이지가 다른 URL로 리디렉션되는지 여부를 확인하는 데 사용할 수 있습니다. URL을 알아보려면 `at-content-rendering-redirect`에 가입합니다. (TNT-29834)
 * false로 설정한 경우 런타임 예외로 인해 `window.targetGlobalSettings.enabled`에 오류가 발생하는 문제가 해결되었습니다. (TNT-29829)
 * 글로벌 mbox 요청 실행에 사용자 지정 코드를 사용하고 본문 숨기기를 사용하는 경우 VEC(시각적 경험 작성기)에서 로드하는 동안 페이지에 오류가 발생하는 문제가 해결되었습니다. (TNT-29795)
-* `screenOrientation`, `devicePixelRatio` 및 `webGLRenderer`에 대한 지원을 추가했습니다. 이러한 새로운 [!DNL Target] 요청 매개 변수는 iPhone X 및 기타 최신 장치 검색에 사용됩니다. 자세한 내용은 [모바일](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html?lang=ko)을 참조하십시오. (TNT-29781)
+* `screenOrientation`, `devicePixelRatio` 및 `webGLRenderer`에 대한 지원을 추가했습니다. 이러한 새로운 [!DNL Target] 요청 매개 변수는 iPhone X 및 기타 최신 장치 검색에 사용됩니다. 자세한 내용은 [모바일](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html)을 참조하십시오. (TNT-29781)
 * AAM (Adobe Audience Manager) 위치 힌트가 가끔씩 전송되지 않은 문제가 해결되었습니다. (TNT-29695)
 * 이를 지원하는 브라우에서 at.js 1.5.0이 선택기 폴링을 위해 MutationObserver로 전환됩니다. at.js 1.0.0 이전의 버전은 MutationObserver polyfill을 사용했으며, 이는 문제가 있는 것으로 입증되었습니다. polyfill 문제를 방지하기 위해 버전 1.5.0에서 다음 의사 코드를 사용하여 사용할 예약 메커니즘을 결정합니다.
 
@@ -422,7 +407,7 @@ at.js 버전 1.6.3에는 다음의 수정 사항과 개선 사항이 포함되�
 
 이제 at.js 버전 1.2.3을 사용할 수 있습니다.
 
-* JSON 오퍼에 대한 지원을 추가합니다. JSON은 양식 기반 경험 작성기를 사용하여 만든 활동에서만 지원됩니다. 현재 JSON을 사용하는 유일한 방법은 직접 API 호출을 통해서입니다. [JSON 오퍼 만들기](https://experienceleague.adobe.com/docs/target/using/experiences/offers/create-json-offer.html?lang=ko)를 참조하십시오.
+* JSON 오퍼에 대한 지원을 추가합니다. JSON은 양식 기반 경험 작성기를 사용하여 만든 활동에서만 지원됩니다. 현재 JSON을 사용하는 유일한 방법은 직접 API 호출을 통해서입니다. [JSON 오퍼 만들기](https://experienceleague.adobe.com/docs/target/using/experiences/offers/create-json-offer.html)를 참조하십시오.
 
 ## at.js 버전 1.2.2
 
@@ -460,7 +445,7 @@ at.js 버전 1.6.3에는 다음의 수정 사항과 개선 사항이 포함되�
 
 다음 개선 사항 및 수정 사항이 at.js 버전 1.1에 포함되어 있습니다.
 
-* 응답 토큰 처리가 추가되었습니다. 자세한 내용은 [응답 토큰](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=ko)을 참조하십시오.
+* 응답 토큰 처리가 추가되었습니다. 자세한 내용은 [응답 토큰](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html)을 참조하십시오.
 * `document.currentScript polyfill`이 Angular 1.X를 방해하지 않도록 문제가 해결되었습니다.
 * 클릭 추적이 가시성 속성을 방해하지 않도록 하는 데 필요한 변경이 수행되었습니다. 클릭 추적 요소가 `at-element-click-tracking` 대신 `at-element-marker` CSS 클래스로 표시됩니다.
 
@@ -494,7 +479,7 @@ at.js 버전 1.6.3에는 다음의 수정 사항과 개선 사항이 포함되�
 
 다음 개선 사항 및 수정 사항이 at.js 버전 0.9.6에 포함되어 있습니다.
 
-* A4T에 대해 리디렉션 오퍼가 지원됩니다. at.js 버전 0.9.6을 다운로드하여 설치한 후에는 [!UICONTROL Target용 보고 Source으로 Adobe Analytics]&#x200B;(A4T)을 사용하는 활동에서 리디렉션 오퍼를 사용할 수 있습니다. at.js 버전 0.9.6 외에, 리디렉션 오퍼 및 A4T를 사용하기 위해 구현이 충족해야 하는 다른 최소 요구 사항도 있습니다. 자세한 내용 및 알고 있어야 하는 추가 중요한 정보는 [리디렉션 오퍼 - A4T FAQ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-redirect-offers.html?lang=ko)를 참조하십시오.
+* A4T에 대해 리디렉션 오퍼가 지원됩니다. at.js 버전 0.9.6을 다운로드하여 설치한 후에는 [!UICONTROL Target용 보고 Source으로 Adobe Analytics]&#x200B;(A4T)을 사용하는 활동에서 리디렉션 오퍼를 사용할 수 있습니다. at.js 버전 0.9.6 외에, 리디렉션 오퍼 및 A4T를 사용하기 위해 구현이 충족해야 하는 다른 최소 요구 사항도 있습니다. 자세한 내용 및 알고 있어야 하는 추가 중요한 정보는 [리디렉션 오퍼 - A4T FAQ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-redirect-offers.html)를 참조하십시오.
 * 방문자 API가 페이지에 있고 `visitorApiTimeout` 설정이 너무 적극적이었던 at.js 0.9.6 이전에는 [!DNL Target]에서 [!DNL Target] 요청에 MCID 데이터를 전송하지 않는 상황이 발생할 수 있었습니다. 이로 인해 A4T를 사용할 때 [!DNL Analytics]에서 연결되지 않은 히트 발생과 같은 문제가 나타날 수 있습니다.
 
   이 동작은 `visitorApiTimeout`이(가) 1ms로 설정되어 있더라도 [!DNL Target]은(는) SDID, 추적 서버 및 고객 ID를 수집한 후 [!DNL Target] 요청에 전송하려고 하므로 at.js 0.9.6에서 변경되었습니다.
@@ -586,5 +571,6 @@ at.js를 구현할 때는 다음에 유의하십시오.
 * 비동기식 구현은 [!UICONTROL Test&amp;Target과 SiteCatalyst] 플러그인의 통합과 같은 레거시 통합이 작동하지 않을 수 있음을 의미합니다.
 * mbox.js 개체 및 메서드를 참조하는 [!DNL Target] 플러그인은 지원되지 않습니다.
 * 모든 [!DNL Target] 호출은 XMLHTTPRequest를 통해 수행되고 콘텐츠는 JSON을 통해 반환됩니다.
+
 
 
