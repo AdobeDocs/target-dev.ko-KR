@@ -5,19 +5,12 @@ title: '[!UICONTROL adobe.target.getOffer()] 함수를 사용하는 방법은 �
 feature: at.js
 exl-id: 7b917d42-06e8-4838-a09d-0c4872c9beaa
 TQID: https://experienceleague.adobe.com/GcXVIt-42-PV0j4Q4oe5uePTZAn7PDIMicIAULDXz-s
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d851e2344279caeae25e4823ca86b9c17efd63
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: a1af9d2c909d9b3d506dd4875d1bd75149dbf636
 workflow-type: tm+mt
 source-wordcount: 472
 ht-degree: 71%
@@ -141,5 +134,6 @@ adobe.target.getOffer({
 |--- |--- |--- |
 | status | 문자열 | 오류 상태를 나타냅니다. 이 매개 변수는 다음 값을 가질 수 있습니다.<ul><li>timeout: 요청 시간이 초과되었음을 나타냅니다.</li><li>parseerror: 응답을 구문 분석할 수 없음을 나타냅니다. JSON 대신 HTML 또는 일반 텍스트가 수신된 경우가 여기에 해당됩니다.</li><li>error: 200 정상이 아닌 HTTP 상태가 수신된 것과 같은 일반적인 오류를 나타냅니다.</li></ul> |
 | 오류 | 문자열 | 예외 메시지와 같은 추가 데이터나 문제 해결에 도움이 될 수 있는 기타 항목이 포함됩니다. |
+
 
 
