@@ -21,7 +21,7 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 07d851e2344279caeae25e4823ca86b9c17efd63
+source-git-commit: ca4254966a337a0215d66bd28506128b9751d0e0
 workflow-type: tm+mt
 source-wordcount: 1785
 ht-degree: 32%
@@ -295,5 +295,6 @@ at.js는 웹 사이트에 있는 모든 페이지의 `<head>` 요소에 구현�
 | orderId | 전환 계산을 위해 주문을 식별하는 고유한 값<p>`orderId`은(는) 고유해야 합니다. 보고서에서 중복 주문은 무시됩니다. |
 | orderTotal | 구매품의 통화 가치<p>통화 기호를 전달하지 마십시오. 소수점(쉼표 아님)을 사용하여 십진수 값을 표시합니다. |
 | productPurchasedId(선택 사항) | 주문에서 구입한 제품 ID가 쉼표로 구분된 목록<p>이러한 제품 ID는 추가 보고 분석을 지원하기 위해 감사 보고서에 표시됩니다. |
+
 
 
