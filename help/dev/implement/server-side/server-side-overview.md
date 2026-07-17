@@ -5,25 +5,15 @@ title: ' [!DNL Target] 서버측 배달 API 및 SDK에 대한 자세한 내용�
 feature: Implement Server-side
 exl-id: 3eb0a789-cf1a-4d02-acf7-3c895bcb662f
 TQID: https://experienceleague.adobe.com/x5WKb9Eenz2bw-idOnxlpWdtiivTx05n38sNXEt3DNc
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: b050e0cd-2ddd-42cd-a71b-5d9e1fdf75e0
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: a6cc21b9-1a36-4fa6-9c61-4acd04d9c88c
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: b050e0cd-2ddd-42cd-a71b-5d9e1fdf75e0id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: a6cc21b9-1a36-4fa6-9c61-4acd04d9c88cid: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d095671a-1355-40aa-8b5f-06c33c68080bid: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 45af56b5ac64eb1db67c1bfdfecd6887dce990ff
 workflow-type: tm+mt
-source-wordcount: 618
-ht-degree: 12%
+source-wordcount: 825
+ht-degree: 9%
 
 ---
 
@@ -35,7 +25,7 @@ ht-degree: 12%
 >
 >구현에서 클라이언트측에서 at.js 및 [!DNL AppMeasurement]을(를) 사용하는 경우 아래에 설명된 [!UICONTROL Target 배달 API] 및 서버측 SDK를 사용해야 합니다.
 >
->구현에서 [!UICONTROL Adobe Experience Platform Web SDK]를 사용하는 경우 [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server API]](https://experienceleague.adobe.com/ko/docs/experience-platform/edge-network-server-api/overview){target=_blank}를 사용해야 합니다.
+>구현에서 [!UICONTROL Adobe Experience Platform Web SDK]를 사용하는 경우 [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server API]](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview){target=_blank}를 사용해야 합니다.
 
 다음 프로세스는 [!DNL Target]의 서버 측 구현 시 발생합니다.
 
@@ -91,3 +81,26 @@ ht-degree: 12%
 링크: [Target Recommendations API](https://developers.adobetarget.com/api/recommendations) 및 [Adobe Recommendations API 개요](../../before-administer/recs-api/overview.md)
 
 Recommendations API를 사용하면 [!DNL Target] Recommendations 서버와 프로그래밍 방식으로 상호 작용할 수 있습니다. 이러한 API는 일반적으로 [!DNL Target] 사용자 인터페이스를 통해 수행하는 기능을 수행하기 위해 다양한 애플리케이션 스택과 통합될 수 있습니다.
+
+## SDK 없이 [!DNL Platform Edge Network]개의 API 호출 {#platform-edge-api-user-agent}
+
+[!UICONTROL Adobe Experience Platform Web SDK] 및 기타 지원되는 SDK 통합에는 [!DNL Experience Platform Edge Network]을(를) 호출할 때 HTTP 요청 헤더에 브라우저와 유사한 `User-Agent` 값이 포함됩니다. SDK 없이 공개 [Interact API](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network/server-api/interact){target=_blank}를 사용하는 서버측 통합은 이 헤더를 명시적으로 제공해야 합니다.
+
+비 SDK Interact API 호출의 경우 다음 요구 사항을 준수하십시오.
+
+* HTTP 요청 헤더에 브라우저와 유사한 유효한 `User-Agent`을(를) 포함하십시오. JSON 요청 본문의 방문자 또는 사용자 에이전트 값만 이 통합 패턴에 대한 봇 탐지 요구 사항을 충족하지 않습니다.
+* 자리 표시자 또는 브라우저가 아닌 값(예: `MyApp/1.0`)을 사용하지 마십시오. 이러한 값은 봇 분류를 초래할 수 있습니다.
+* 공개 Edge API 호출에는 SDK 이름 또는 SDK 버전이 필요하지 않습니다. 이 시나리오에서는 유효한 `User-Agent` HTTP 헤더가 필수 요소입니다.
+
+[!DNL Target]이(가) 요청을 보트 트래픽으로 분류하면 아래 설명된 대로 프로필 조회, 세그먼트 평가 및 [!UICONTROL 권장 사항] 및 [!UICONTROL 자동 타겟]과(와) 같은 활동에 대한 개인화된 콘텐츠가 표시되지 않기 때문에 개인화가 실패하거나 간헐적으로 보일 수 있습니다.
+
+[[!DNL Adobe Experience Platform Web SDK] 개요](https://experienceleague.adobe.com/en/docs/target-dev/developer/client-side/aep/aep-web-sdk-overview){target=_blank}에서 SDK을 사용하여 구현하는 방법에 대해 자세히 알아보세요.
+
+**Interact API 요청의 예(헤더에는 `User-Agent`이(가) 포함되어야 함):**
+
+```http
+POST https://edge.adobedc.net/ee/v2/interact?dataStreamId=YOUR_DATASTREAM_ID&requestId=YOUR_REQUEST_ID
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15
+Accept: */*
+Content-Type: text/plain; charset=UTF-8
+```

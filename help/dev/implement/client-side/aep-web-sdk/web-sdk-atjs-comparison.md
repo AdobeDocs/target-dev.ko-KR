@@ -5,25 +5,14 @@ keywords: target;adobe target;activity.id;experience.id;renderDecisions;의사 �
 feature: AEP Web SDK
 exl-id: 31c9722b-5d92-4653-aa20-4183d166c097
 TQID: https://experienceleague.adobe.com/Ly2ytp87gfQ5mCES-43K5tU4-4fhTjdcdk-OxRRL-II
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: b6b447ccb88925a8efb6ff6a80ae475c8780dbc8
 workflow-type: tm+mt
-source-wordcount: 2308
+source-wordcount: 2354
 ht-degree: 5%
 
 ---
@@ -33,6 +22,10 @@ ht-degree: 5%
 ## 개요
 
 이 문서에서는 `at.js` 라이브러리와 Experience Platform 웹 SDK 간의 차이점에 대한 개요를 제공합니다.
+
+>[!NOTE]
+>
+>`at.js` 구현은 [!DNL Target] [배달 API](/help/dev/implement/delivery-api/overview.md)를 직접 호출합니다(예: `POST https://<clientCode>.tt.omtrdc.net/rest/v1/delivery`). [!DNL Platform Web SDK] 구현은 대신 [!UICONTROL Experience Platform Edge Network]&#x200B;(예: `POST https://edge.adobedc.net/ee/v2/interact`)에서 `sendEvent` 명령을 통해 Interact API를 호출합니다. 두 개의 서로 다른 API이며, 서로 바꿀 수 없습니다.
 
 ## 라이브러리 설치
 
@@ -44,7 +37,7 @@ ht-degree: 5%
 
 사전 빌드된 버전은 CDN에서 사용할 수 있습니다. 페이지에서 직접 CDN의 라이브러리를 참조하거나, 자체 인프라에서 다운로드하여 호스팅할 수 있습니다. 축소 및 축소 해제된 형식으로 사용할 수 있습니다. 축소되지 않은 버전은 디버깅에 유용합니다.
 
-자세한 내용은 [JavaScript 라이브러리를 사용하여 웹 SDK 설치](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/install/library)를 참조하십시오.
+자세한 내용은 [JavaScript 라이브러리를 사용하여 웹 SDK 설치](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library)를 참조하십시오.
 
 ## 라이브러리 구성
 
@@ -90,7 +83,7 @@ window.adobe.target.init(window, document, {
 
 ### Platform Web SDK 구성
 
-[`configure`](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/commands/configure/overview) 명령을 사용하여 SDK 구성이 완료되었습니다. `configure` 명령은 먼저 호출된 *always*&#x200B;입니다.
+[`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview) 명령을 사용하여 SDK 구성이 완료되었습니다. `configure` 명령은 먼저 호출된 *always*&#x200B;입니다.
 
 ## 페이지 로드 [!DNL Target] 오퍼를 요청하고 자동으로 렌더링하는 방법
 
@@ -100,7 +93,7 @@ at.js 2.x를 사용하여 `pageLoadEnabled,` 설정을 사용하면 라이브러
 
 ### [!DNL PLatform Web SDK] 사용 중
 
-[!DNL Target] [시각적 경험 작성기](https://experienceleague.adobe.com/ko/docs/target/using/experiences/vec/visual-experience-composer) 내에서 만든 콘텐츠를 SDK에서 자동으로 검색하고 렌더링할 수 있습니다.
+[!DNL Target] [시각적 경험 작성기](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer) 내에서 만든 콘텐츠를 SDK에서 자동으로 검색하고 렌더링할 수 있습니다.
 
 [!DNL Target]개의 오퍼를 요청하고 자동으로 렌더링하려면 `sendEvent` 명령을 사용하고 `renderDecisions` 옵션을 `true.`(으)로 설정합니다. 이렇게 하면 SDK에서 자동 렌더링에 적합한 개인화된 콘텐츠를 자동으로 렌더링하도록 합니다.
 
@@ -200,7 +193,7 @@ alloy("sendEvent", {
 }
 ```
 
-[자세히 알아보기](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
+[자세히 알아보기](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
 
 ## 요청 및 *NOT*&#x200B;이(가) 페이지 로드 대상 오퍼를 자동으로 렌더링하는 방법
 
@@ -279,7 +272,7 @@ alloy("sendEvent", {
   });
 ```
 
-[자세히 알아보기](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
+[자세히 알아보기](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
 
 ## 특정 양식 기반 Target mbox를 요청하는 방법
 
@@ -436,7 +429,7 @@ alloy("sendEvent", {
 });
 ```
 
-[자세히 알아보기](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
+[자세히 알아보기](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
 
 ## [!DNL Target] 활동을 적용하는 방법
 
@@ -467,7 +460,7 @@ alloy("applyPropositions", {
 });
 ```
 
-[전용 설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)에서 `applyPropositions` 명령에 대해 자세히 알아보세요.
+[전용 설명서](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)에서 `applyPropositions` 명령에 대해 자세히 알아보세요.
 
 ## 이벤트 추적 방법
 
@@ -621,7 +614,7 @@ alloy("sendEvent", {
 });
 ```
 
-[자세히 알아보기](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/personalization/rendering-personalization-content#manual)
+[자세히 알아보기](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content#manual)
 
 **예 3 - 작업을 수행한 후 실행된 이벤트 추적**
 
@@ -670,7 +663,7 @@ alloy("sendEvent", {
 
 ### at.js 사용
 
-`adobe.target.triggerView` 함수를 사용합니다. 이 함수는 새 페이지를 로드할 때마다 또는 페이지의 구성 요소가 다시 렌더링될 때 호출할 수 있습니다. SPA(단일 페이지 애플리케이션)에서 [!UICONTROL VEC(시각적 경험 작성기)를 사용하여 [!UICONTROL A/B 테스트] 및 [!UICONTROL 경험 타깃팅]&#x200B;(XT) 활동을 만들려면 `adobe.target.triggerView()` 함수를 구현해야 합니다. &#x200B;]사이트에서 `adobe.target.triggerView()`이(가) 구현되지 않으면 SPA에 VEC를 사용할 수 없습니다.
+`adobe.target.triggerView` 함수를 사용합니다. 이 함수는 새 페이지를 로드할 때마다 또는 페이지의 구성 요소가 다시 렌더링될 때 호출할 수 있습니다. SPA(단일 페이지 애플리케이션)에서 [!UICONTROL VEC(시각적 경험 작성기)를 사용하여 [!UICONTROL A/B 테스트] 및 [!UICONTROL 경험 타깃팅]&#x200B;(XT) 활동을 만들려면 `adobe.target.triggerView()` 함수를 구현해야 합니다. ]사이트에서 `adobe.target.triggerView()`이(가) 구현되지 않으면 SPA에 VEC를 사용할 수 없습니다.
 
 **예**
 
@@ -703,7 +696,7 @@ alloy("sendEvent", {
 
 ## [!UICONTROL 응답 토큰]을 활용하는 방법
 
-[!DNL Target]에서 반환된 Personalization 컨텐츠에 [응답 토큰](https://experienceleague.adobe.com/ko/docs/target/using/administer/response-tokens)이 포함되어 있습니다. 응답 토큰은 활동, 오퍼, 경험, 사용자 프로필, 지역 정보 등에 대한 세부 정보입니다. 이러한 세부 정보는 서드파티 도구와 공유하거나 디버깅에 사용할 수 있습니다. [!DNL Target] 사용자 인터페이스에서 응답 토큰을 구성할 수 있습니다.
+[!DNL Target]에서 반환된 Personalization 컨텐츠에 [응답 토큰](https://experienceleague.adobe.com/en/docs/target/using/administer/response-tokens)이 포함되어 있습니다. 응답 토큰은 활동, 오퍼, 경험, 사용자 프로필, 지역 정보 등에 대한 세부 정보입니다. 이러한 세부 정보는 서드파티 도구와 공유하거나 디버깅에 사용할 수 있습니다. [!DNL Target] 사용자 인터페이스에서 응답 토큰을 구성할 수 있습니다.
 
 ### at.js 사용
 
@@ -717,7 +710,7 @@ document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function(e) {
 }); 
 ```
 
-[자세히 알아보기](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=ko)
+[자세히 알아보기](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html)
 
 ### [!DNL Platform Web SDK] 사용 중
 
@@ -725,7 +718,7 @@ document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function(e) {
 >
 >[!DNL Experience Platform Web SDK] 버전 2.6.0 이상을 사용 중인지 확인하십시오.
 
-응답 토큰은 `sendEvent` 명령의 결과에 노출된 `propositions`의 일부로 반환됩니다. 각 제안에는 `items,`의 배열이 포함되어 있으며 [!DNL Target] 관리 UI에서 활성화된 경우 각 항목에는 응답 토큰으로 채워진 `meta` 개체가 있습니다. [자세히 알아보기](https://experienceleague.adobe.com/ko/docs/target/using/administer/response-tokens)
+응답 토큰은 `sendEvent` 명령의 결과에 노출된 `propositions`의 일부로 반환됩니다. 각 제안에는 `items,`의 배열이 포함되어 있으며 [!DNL Target] 관리 UI에서 활성화된 경우 각 항목에는 응답 토큰으로 채워진 `meta` 개체가 있습니다. [자세히 알아보기](https://experienceleague.adobe.com/en/docs/target/using/administer/response-tokens)
 
 **예**
 
@@ -832,7 +825,7 @@ Analytics 클라이언트 측 로깅은 at.js 설정에서 `analyticsLogging: cl
 }
 ```
 
-그런 다음 [!DNL &#x200B; Data Insertion API]을(를) 통해 [!DNL Analytics]에 페이로드를 전달할 수 있습니다.
+그런 다음 [!DNL  Data Insertion API]을(를) 통해 [!DNL Analytics]에 페이로드를 전달할 수 있습니다.
 
 예제 2: 모든 `getOffers` 함수에서 구성:
 
@@ -896,7 +889,7 @@ at.js 설정에서 `analyticsLogging: server_side`을(를) 설정하거나 `wind
 
 ![Analytics 서버측 로깅 워크플로를 보여 주는 다이어그램](/help/dev/implement/client-side/aep-web-sdk/assets/a4t-server-side-atjs.png)
 
-[자세히 알아보기](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4timplementation.html?lang=ko)
+[자세히 알아보기](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4timplementation.html)
 
 ### [!DNL Platform Web SDK] 사용 중
 
@@ -1278,5 +1271,5 @@ at.js 라이브러리는 다음 디버깅 기능을 표시합니다.
 * [Assurance](https://experienceleague.adobe.com/ko/docs/experience-platform/assurance/home) 사용 중
 * [웹 SDK 디버그 활성화됨](https://experienceleague.adobe.com/ko/docs/experience-platform/assurance/home)
 * [웹 SDK 모니터링 후크 사용](https://github.com/adobe/alloy/wiki/Monitoring-Hooks)
-* [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/ko/docs/experience-platform/debugger/home) 사용
+* [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home) 사용
 * 대상 추적
