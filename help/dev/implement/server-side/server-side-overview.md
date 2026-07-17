@@ -35,7 +35,7 @@ ht-degree: 9%
 >
 >구현에서 클라이언트측에서 at.js 및 [!DNL AppMeasurement]을(를) 사용하는 경우 아래에 설명된 [!UICONTROL Target 배달 API] 및 서버측 SDK를 사용해야 합니다.
 >
->구현에서 [!UICONTROL Adobe Experience Platform Web SDK]를 사용하는 경우 [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server API]](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview){target=_blank}를 사용해야 합니다.
+>구현에서 [!UICONTROL Adobe Experience Platform Web SDK]를 사용하는 경우 [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server API]](https://experienceleague.adobe.com/ko/docs/experience-platform/edge-network-server-api/overview){target=_blank}를 사용해야 합니다.
 
 다음 프로세스는 [!DNL Target]의 서버 측 구현 시 발생합니다.
 
@@ -104,7 +104,7 @@ Recommendations API를 사용하면 [!DNL Target] Recommendations 서버와 프�
 
 [!DNL Target]이(가) 요청을 보트 트래픽으로 분류하면 아래 설명된 대로 프로필 조회, 세그먼트 평가 및 [!UICONTROL 권장 사항] 및 [!UICONTROL 자동 타겟]과(와) 같은 활동에 대한 개인화된 콘텐츠가 표시되지 않기 때문에 개인화가 실패하거나 간헐적으로 보일 수 있습니다.
 
-[[!DNL Adobe Experience Platform Web SDK] 개요](https://experienceleague.adobe.com/en/docs/target-dev/developer/client-side/aep/aep-web-sdk-overview){target=_blank}에서 SDK을 사용하여 구현하는 방법에 대해 자세히 알아보세요.
+[[!DNL Adobe Experience Platform Web SDK] 개요](https://experienceleague.adobe.com/ko/docs/target-dev/developer/client-side/aep/aep-web-sdk-overview){target=_blank}에서 SDK을 사용하여 구현하는 방법에 대해 자세히 알아보세요.
 
 **Interact API 요청의 예(헤더에는 `User-Agent`이(가) 포함되어야 함):**
 
