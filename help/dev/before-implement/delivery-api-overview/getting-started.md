@@ -14,14 +14,18 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: b6b447ccb88925a8efb6ff6a80ae475c8780dbc8
 workflow-type: tm+mt
-source-wordcount: 132
+source-wordcount: 180
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Adobe Target 배달 API] 시작
+
+>[!IMPORTANT]
+>
+>이 안내서는 [!UICONTROL Target 배달 API]를 직접 호출하는 [!DNL at.js] 및 직접 서버측 구현에 적용됩니다. [!UICONTROL Adobe Experience Platform Web SDK]을(를) 사용하여 [!DNL Target]을(를) 구현하는 경우 대신 Interact API(`sendEvent` 명령, [!UICONTROL Experience Platform Edge Network])를 사용하십시오. 자세한 내용은 [Adobe Experience Platform Web SDK](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md)를 참조하십시오.
 
 [!UICONTROL Target 배달 API] 호출은 다음과 같습니다.
 

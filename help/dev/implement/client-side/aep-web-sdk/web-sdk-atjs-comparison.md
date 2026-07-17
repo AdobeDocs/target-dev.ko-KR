@@ -21,9 +21,9 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: b6b447ccb88925a8efb6ff6a80ae475c8780dbc8
 workflow-type: tm+mt
-source-wordcount: 2308
+source-wordcount: 2354
 ht-degree: 5%
 
 ---
@@ -33,6 +33,10 @@ ht-degree: 5%
 ## 개요
 
 이 문서에서는 `at.js` 라이브러리와 Experience Platform 웹 SDK 간의 차이점에 대한 개요를 제공합니다.
+
+>[!NOTE]
+>
+>`at.js` 구현은 [!DNL Target] [배달 API](/help/dev/implement/delivery-api/overview.md)를 직접 호출합니다(예: `POST https://<clientCode>.tt.omtrdc.net/rest/v1/delivery`). [!DNL Platform Web SDK] 구현은 대신 [!UICONTROL Experience Platform Edge Network]&#x200B;(예: `POST https://edge.adobedc.net/ee/v2/interact`)에서 `sendEvent` 명령을 통해 Interact API를 호출합니다. 두 개의 서로 다른 API이며, 서로 바꿀 수 없습니다.
 
 ## 라이브러리 설치
 
