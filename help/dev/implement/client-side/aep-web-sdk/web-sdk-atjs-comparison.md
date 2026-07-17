@@ -5,11 +5,22 @@ keywords: target;adobe target;activity.id;experience.id;renderDecisions;의사 �
 feature: AEP Web SDK
 exl-id: 31c9722b-5d92-4653-aa20-4183d166c097
 TQID: https://experienceleague.adobe.com/Ly2ytp87gfQ5mCES-43K5tU4-4fhTjdcdk-OxRRL-II
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: b6b447ccb88925a8efb6ff6a80ae475c8780dbc8
 workflow-type: tm+mt
 source-wordcount: 2354
@@ -663,7 +674,7 @@ alloy("sendEvent", {
 
 ### at.js 사용
 
-`adobe.target.triggerView` 함수를 사용합니다. 이 함수는 새 페이지를 로드할 때마다 또는 페이지의 구성 요소가 다시 렌더링될 때 호출할 수 있습니다. SPA(단일 페이지 애플리케이션)에서 [!UICONTROL VEC(시각적 경험 작성기)를 사용하여 [!UICONTROL A/B 테스트] 및 [!UICONTROL 경험 타깃팅]&#x200B;(XT) 활동을 만들려면 `adobe.target.triggerView()` 함수를 구현해야 합니다. ]사이트에서 `adobe.target.triggerView()`이(가) 구현되지 않으면 SPA에 VEC를 사용할 수 없습니다.
+`adobe.target.triggerView` 함수를 사용합니다. 이 함수는 새 페이지를 로드할 때마다 또는 페이지의 구성 요소가 다시 렌더링될 때 호출할 수 있습니다. SPA(단일 페이지 애플리케이션)에서 [!UICONTROL VEC(시각적 경험 작성기)를 사용하여 [!UICONTROL A/B 테스트] 및 [!UICONTROL 경험 타깃팅]&#x200B;(XT) 활동을 만들려면 `adobe.target.triggerView()` 함수를 구현해야 합니다. &#x200B;]사이트에서 `adobe.target.triggerView()`이(가) 구현되지 않으면 SPA에 VEC를 사용할 수 없습니다.
 
 **예**
 
@@ -825,7 +836,7 @@ Analytics 클라이언트 측 로깅은 at.js 설정에서 `analyticsLogging: cl
 }
 ```
 
-그런 다음 [!DNL  Data Insertion API]을(를) 통해 [!DNL Analytics]에 페이로드를 전달할 수 있습니다.
+그런 다음 [!DNL &#x200B; Data Insertion API]을(를) 통해 [!DNL Analytics]에 페이로드를 전달할 수 있습니다.
 
 예제 2: 모든 `getOffers` 함수에서 구성:
 

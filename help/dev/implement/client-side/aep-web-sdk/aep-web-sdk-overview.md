@@ -5,11 +5,22 @@ title: '[!UICONTROL Experience Platform Web SDK]을(를) 사용하여 구현하�
 feature: AEP Web SDK
 exl-id: 35ee60d2-3d6d-4169-9f22-b2aef4c6548b
 TQID: https://experienceleague.adobe.com/j3-KSuCkcyyTB2KG4Icm2E7xpAfcuPkaOlhxitd5q-4
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ceid: f7c7de77-382f-4f48-8b36-61a170f06d3d
-subfeature_v2: id: df62f171-ac37-440f-8f0f-f41a72ebdd34id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+subfeature_v2:
+  - id: df62f171-ac37-440f-8f0f-f41a72ebdd34
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: b6b447ccb88925a8efb6ff6a80ae475c8780dbc8
 workflow-type: tm+mt
 source-wordcount: 844
@@ -49,7 +60,7 @@ ht-degree: 8%
 | 기능 | 설명/링크 |
 | --- | --- |
 | [활동 QA](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html) | [!DNL Target]의 QA URL을 사용하여, 변경되지 않는 미리 보기 링크를 통한 간편한 엔드 투 엔드 활동 QA, 선택적 대상 타깃팅, 라이브 활동 데이터에서 세그먼트화된 QA 보고를 수행할 수 있습니다. 활동 QA를 사용하면 [!DNL Target] 활동을 라이브로 시작하기 전에 완전히 테스트할 수 있습니다.<p>[Target JavaScript 라이브러리 QA 모드 호환성](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html#compatibility) 및 [미리 보기 URL](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html#preview)을 참조하십시오. |
-| [[!UICONTROL Analytics for Target](A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) | [!UICONTROL Target용 Adobe Analytics]&#x200B;(A4T)은 [!DNL Analytics] 전환 지표 및 대상 세그먼트를 기반으로 활동을 만들 수 있는 솔루션 간 통합입니다. A4T 통합을 통해 Analytics 보고서를 사용하여 결과를 검사할 수 있습니다.<p>[지원되는 활동 유형](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html#section_F487896214BF4803AF78C552EF1669AA) 및 [Adobe Experience Platform Web SDK 구현에 대한 구현 단계](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4timplementation.html#platform)를 참조하십시오. |
+| [[!UICONTROL Analytics for Target] (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) | [!UICONTROL Target용 Adobe Analytics]&#x200B;(A4T)은 [!DNL Analytics] 전환 지표 및 대상 세그먼트를 기반으로 활동을 만들 수 있는 솔루션 간 통합입니다. A4T 통합을 통해 Analytics 보고서를 사용하여 결과를 검사할 수 있습니다.<p>[지원되는 활동 유형](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html#section_F487896214BF4803AF78C552EF1669AA) 및 [Adobe Experience Platform Web SDK 구현에 대한 구현 단계](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4timplementation.html#platform)를 참조하십시오. |
 | [대상자](https://experienceleague.adobe.com/docs/target/using/audiences/target.html) | [!DNL Target]의 대상은 타깃팅된 활동에서 콘텐츠 및 경험을 보게 되는 사용자를 결정합니다.<p>[대상 목록 사용](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/audiences.html#use-list) 및 [여러 대상 결합](https://experienceleague.adobe.com/docs/target/using/audiences/combining-multiple-audiences.html)을 참조하세요. |
 | [대상자 만들기](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/audiences.html?lang=ko-KR) | [!DNL Adobe Experience Platform]에서 만든 대상을 사용하면 더 풍부한 고객 데이터를 제공하여 보다 효과적인 개인화를 실현할 수 있습니다.<p>[Adobe Experience Platform 대상 사용](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/audiences.html#aep)을 참조하세요. |
 | [오퍼 결정](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html) | [!DNL Adobe Journey Optimizer]에서 만든 오퍼 결정을 [!DNL Target] 활동(수동 A/B 테스트 또는 경험 타깃팅)에 추가하여 웹과 모바일에서 방문자에 대한 다음 최상의 오퍼를 결정하고 전달합니다. |
