@@ -3,7 +3,7 @@ user-guide-title: Adobe Target 개발자 안내서
 breadcrumb-title: Target 개발자 안내서
 user-guide-description: 고객의 경험을 맞춤화 및 개인화하여 웹 및 모바일 사이트, 앱, 소셜 미디어 및 기타 디지털 채널에서 매출을 극대화하는 방법을 알아봅니다.
 nudge: true
-source-git-commit: 72b19deb10f2e0d0c38f76317b1e8fee19ae0be1
+source-git-commit: 5c19d83d1ba84165dee064183ec04a9803dd1a61
 workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 41%
@@ -87,10 +87,10 @@ ht-degree: 41%
     + [at.js 사용자 지정 이벤트](implement/client-side/atjs/atjs-functions/atjs-custom-events.md)
     + [Adobe Experience Cloud Debugger를 사용하여 at.js 디버그](implement/client-side/target-debugging-atjs/target-debugging-atjs.md)
     + [Target에서 클라우드 기반 인스턴스 사용](implement/client-side/target-debugging-atjs/targeting-using-cloud-based-instances.md)
-  + [at.js FAQ](implement/client-side/atjs/target-atjs-faq.md)
-  + [at.js 버전 세부 사항](implement/client-side/atjs/target-atjs-versions.md)
-  + [at.js 1.x에서 at.js 2.x로 업그레이드](implement/client-side/atjs/upgrading-from-atjs-1x-to-atjs-20.md)
-  + [at.js 쿠키](implement/client-side/atjs/atjs-cookies.md)
+    + [at.js FAQ](implement/client-side/atjs/target-atjs-faq.md)
+    + [at.js 버전 세부 사항](implement/client-side/atjs/target-atjs-versions.md)
+    + [at.js 1.x에서 at.js 2.x로 업그레이드](implement/client-side/atjs/upgrading-from-atjs-1x-to-atjs-20.md)
+    + [at.js 쿠키](implement/client-side/atjs/atjs-cookies.md)
   + [사용자 에이전트 및 클라이언트 힌트](implement/client-side/atjs/user-agent-and-client-hints.md)
   + 글로벌 mbox 이해 {#global-mbox}
     + [글로벌 mbox 이해 개요](implement/client-side/atjs/global-mbox/global-mbox-overview.md)
