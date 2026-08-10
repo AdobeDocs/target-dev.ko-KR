@@ -399,11 +399,11 @@ at.js 버전 1.6.3에는 다음의 수정 사항과 개선 사항이 포함되�
 
 * at.js와의 상호 작용을 추적, 디버깅 및 사용자 지정하는 데 도움이 되도록 다음과 같은 새 이벤트를 사용할 수 있습니다.
 
-   * LIBRARY_LOADED
-   * REQUEST_START
-   * CONTENT_RENDERING_START
-   * CONTENT_RENDERING_NO_OFFERS
-   * CONTENT_RENDERING_REDIRECT
+  * LIBRARY_LOADED
+  * REQUEST_START
+  * CONTENT_RENDERING_START
+  * CONTENT_RENDERING_NO_OFFERS
+  * CONTENT_RENDERING_REDIRECT
 
   자세한 내용은 [at.js 사용자 지정 이벤트](/help/dev/implement/client-side/atjs/atjs-functions/atjs-custom-events.md)를 참조하십시오.
 
@@ -553,10 +553,10 @@ at.js 버전 1.6.3에는 다음의 수정 사항과 개선 사항이 포함되�
 
   이 새로운 API는 개발자가 at.js에서 사용되는 특정 jQuery 모듈에 액세스하여 라이브러리에 대한 확장 프로그램(즉, 플러그인)을 개발할 수 있도록 합니다. 이 변경으로 인해 몇 가지 결과가 나타납니다. 이러한 결과는 다음 기능을 사용하는 사용자에게만 적용됩니다.
 
-   * `getSettings()` API가 제거되었지만 `registerExtension()`을 사용하여 동일한 기능을 사용할 수 있습니다.
-   * `getTracking()` API가 제거되었지만 `registerExtension()`을 사용하여 동일한 기능을 사용할 수 있습니다.
+  * `getSettings()` API가 제거되었지만 `registerExtension()`을 사용하여 동일한 기능을 사용할 수 있습니다.
+  * `getTracking()` API가 제거되었지만 `registerExtension()`을 사용하여 동일한 기능을 사용할 수 있습니다.
 
-   * 기존 확장(예: AngularJS 확장)은 `registerExtension()` 접근 방식을 사용하도록 업데이트해야 합니다.
+  * 기존 확장(예: AngularJS 확장)은 `registerExtension()` 접근 방식을 사용하도록 업데이트해야 합니다.
 
 * 새 at.js 알림 API.
 
