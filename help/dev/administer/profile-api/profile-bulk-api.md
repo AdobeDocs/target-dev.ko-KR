@@ -16,10 +16,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: 64d250010899c671e73045b23b8e0c79cefaa2d6
 workflow-type: tm+mt
-source-wordcount: 1094
-ht-degree: 7%
+source-wordcount: 1311
+ht-degree: 6%
 
 ---
 
@@ -83,6 +83,27 @@ batch=pcId,param1,param2,param3,param4
 * 묶음 파일의 크기는 50MB 미만이어야 합니다. 또한 총 행 수는 50만 개를 초과할 수 없습니다. 이 제한은 서버가 너무 많은 요청으로 침수되지 않도록 합니다.
 * 업로드할 수 있는 속성 수에는 제한이 없습니다. 하지만 고객 속성, 프로필 API, Mbox 내 프로필 매개 변수 및 프로필 스크립트 출력을 포함하는 외부 프로필 데이터의 총 크기는 64KB를 초과할 수 없습니다.
 * 매개변수 및 값은 대/소문자를 구분합니다.
+
+### URL 인코딩 요구 사항 {#url-encoding}
+
+>[!IMPORTANT]
+>
+>`Content-Type: application/x-www-form-urlencoded`(으)로 전송된 일괄 처리를 제출하기 전에 `batch=`(으)로 시작하는 본문을 사용하여 모든 매개 변수 이름과 값을 URL 인코딩(UTF-8)해야 합니다. 인코딩되지 않은 예약 문자는 데이터 대신 요청 구문으로 읽혀 배치가 거부되거나 잘리거나 손상될 수 있습니다.
+>
+>`batchId`을(를) 실행하지 않은 상태에서 &quot;예기치 않은 오류&quot; 응답을 받은 경우 문제 해결 단계는 [벌크 프로필 업데이트 API에서 &quot;예기치 않은 오류&quot; 반환](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-24281)을 참조하십시오.
+
+다음 문자는 일반적으로 프로필 값에 있지만 `application/x-www-form-urlencoded` 데이터에 특별한 의미가 있습니다. 인코딩되지 않은 상태로 보내는 경우 요청이 실패하거나 명백한 오류 없이 데이터가 손상됩니다.
+
+| 문자 | 다음으로 인코딩: | 인코딩되지 않은 상태로 전송되는 경우 |
+|---|---|---|
+| `%` | `%25` | 전체 배치가 거부되었습니다. 응답이 `success=false` 및 &quot;예기치 않은 오류&quot;라는 메시지와 함께 HTTP 200을 반환하고 `batchId`을(를) 발급하지 않습니다. |
+| `&` | `%26` | 배치가 처음 `&`에서 자동으로 잘립니다. 나머지 행이 삭제되어 부분 업데이트 또는 &quot;배치가 비어 있음&quot; 응답이 나타날 수 있습니다. |
+| `+` | `%2B` | 문자가 자동으로 공백으로 변환되어 저장된 값이 손상됩니다. |
+| `=` | `%3D` | 문자가 필드 경계로 잘못 해석될 수 있습니다. |
+
+_예를 들어 값 `50% off & more`은(는) `50%25 off %26 more`._(으)로 전송되어야 합니다.
+
+문자, 숫자, UTF-8 악센트 부호 문자 및 `- . ! ~ _ * ( )` 문자는 인코딩이 필요하지 않습니다. 그러나 [!DNL Adobe]은(는) 모호성을 방지하기 위해 모든 값을 인코딩하는 것을 권장합니다.
 
 ## HTTP POST 요청
 

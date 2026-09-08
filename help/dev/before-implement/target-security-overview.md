@@ -15,10 +15,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: 9ecf805fe5a25a161564412fb01081a3546ea309
 workflow-type: tm+mt
-source-wordcount: 156
-ht-degree: 71%
+source-wordcount: 163
+ht-degree: 62%
 
 ---
 
@@ -30,4 +30,4 @@ Adobe에서는 디지털 경험에 대한 보안을 매우 중요하게 생각�
 
 나아가, Adobe는 파트너, 선도적인 조사 업체, 보안 연구기관 및 기타 업계 조직들과의 협력을 통해 최신 위협과 취약성에 대해 최신 상태를 유지하고 있으며, 정기적으로 고급 보안 기술을 Adobe가 제공하는 제품 및 서비스에 포함하고 있습니다.
 
-자세한 내용은 [Adobe Target 보안 개요](https://www.adobe.com/content/dam/cc/en/security/pdfs/AdobeTargetSecurityOverview.pdf) 백서를 참조하십시오.
+자세한 내용은 [Adobe Target 보안 개요](https://www.adobe.com/cc-shared/assets/pdf/trust-center/ungated/whitepapers/experience-cloud/adobe-target-security-overview.pdf) 백서를 참조하십시오.
