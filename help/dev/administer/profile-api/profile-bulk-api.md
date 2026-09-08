@@ -90,7 +90,7 @@ batch=pcId,param1,param2,param3,param4
 >
 >`Content-Type: application/x-www-form-urlencoded`(으)로 전송된 일괄 처리를 제출하기 전에 `batch=`(으)로 시작하는 본문을 사용하여 모든 매개 변수 이름과 값을 URL 인코딩(UTF-8)해야 합니다. 인코딩되지 않은 예약 문자는 데이터 대신 요청 구문으로 읽혀 배치가 거부되거나 잘리거나 손상될 수 있습니다.
 >
->`batchId`을(를) 실행하지 않은 상태에서 &quot;예기치 않은 오류&quot; 응답을 받은 경우 문제 해결 단계는 [벌크 프로필 업데이트 API에서 &quot;예기치 않은 오류&quot; 반환](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24281)을 참조하십시오.
+>`batchId`을(를) 실행하지 않은 상태에서 &quot;예기치 않은 오류&quot; 응답을 받은 경우 문제 해결 단계는 [벌크 프로필 업데이트 API에서 &quot;예기치 않은 오류&quot; 반환](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-24281)을 참조하십시오.
 
 다음 문자는 일반적으로 프로필 값에 있지만 `application/x-www-form-urlencoded` 데이터에 특별한 의미가 있습니다. 인코딩되지 않은 상태로 보내는 경우 요청이 실패하거나 명백한 오류 없이 데이터가 손상됩니다.
 
