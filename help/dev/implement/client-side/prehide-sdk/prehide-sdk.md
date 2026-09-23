@@ -1,16 +1,13 @@
 ---
 keywords: SDK 미리 숨기기, 깜박임, 깜박임 방지, 사전 숨김, 사전 숨김, alloy, at.js, 구현, 동의, CMP, 스크립트 배치, 인라인, 외부, SDK 선택
-description: 페이지를 로드하는 동안 개인화되지 않은 콘텐츠(깜박임)를 방지하기 위해  [!DNL Adobe Target] SDK을 미리 숨기는 방법을 알아봅니다. SDK은 Adobe Alloy(웹 SDK) 및 at.js 모두에서 작동합니다.
+description: '[!DNL Adobe Target] SDK 미리 숨김을 통합하여 페이지를 로드하는 동안 개인화되지 않은 콘텐츠(깜박임)를 제거하는 방법을 알아봅니다. SDK은 Adobe Alloy(웹 SDK) 및 at.js 모두에서 작동합니다.'
 title: SDK 통합 안내서 미리 숨기기
 feature: Implementation
-hide: true
-source-git-commit: bb3c2906a52daecca03cf29331d9bec5e2955d2e
+source-git-commit: 35ac4480ead5069169a2c55d35b43d3c1a81d78a
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 0%
-
+source-wordcount: '1066'
+ht-degree: 1%
 ---
-
 
 # SDK 통합 안내서 미리 숨기기
 
@@ -63,7 +60,8 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >SDK 사전 숨김은 Alloy/at.js 전에 실행해야 합니다. Alloy가 먼저 로드되면 페이지는 개인화되지 않은 콘텐츠를 렌더링한 다음 다시 렌더링합니다. 이것이 이 SDK이 방지하려고 고안한 정확한 깜박임입니다.
-></br>>SDK 스크립트 미리 숨기기 태그에 `async` 또는 `defer`을(를) 추가하지 마십시오. 브라우저가 페이지 레이아웃을 시작하기 전에 숨김 규칙이 삽입되도록 하려면 동기 실행이 필요합니다.
+></br>
+>SDK 스크립트 사전 숨김 태그에 `async` 또는 `defer`을(를) 추가하지 마십시오. 브라우저가 페이지 레이아웃을 시작하기 전에 숨김 규칙이 삽입되도록 하려면 동기 실행이 필요합니다.
 
 SDK 미리 숨김은 이후에 정리되는 [!DNL Adobe Target] SDK보다 문서에 먼저 표시되어야 합니다. 로드 순서는 협상할 수 없습니다.
 
