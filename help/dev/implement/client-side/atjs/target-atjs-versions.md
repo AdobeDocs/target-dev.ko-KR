@@ -1,37 +1,50 @@
 ---
 keywords: at.js 릴리스, at.js 버전, 릴리스 정보
-description: ' [!DNL Adobe Target] at.js JavaScript 라이브러리의 각 버전 변경 내용에 대한 세부 사항을 봅니다.'
+description: '[!DNL Adobe Target] at.js JavaScript 라이브러리의 각 버전 변경 내용에 대한 세부 사항을 봅니다.'
 title: at.js의 각 버전에 포함된 것은 무엇입니까?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
 TQID: https://experienceleague.adobe.com/95lXe4YAZ7mD12XBtKPB3ddFtGCJYdvlXR632qosuG4
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
   - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+    internal-label: Integrations
 subfeature_v2:
   - id: df62f171-ac37-440f-8f0f-f41a72ebdd34
+    internal-label: Analytics integration
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 235baadf4059d2c363368408012630d6619aef99
+    internal-label: Privacy
+source-git-commit: 1e9b96361fd11095248b8fcae6f7a185f74a39c8
 workflow-type: tm+mt
-source-wordcount: 5174
-ht-degree: 60%
-
+source-wordcount: '5217'
+ht-degree: 59%
 ---
-
 # at.js 버전 세부 사항
 
 [!DNL Adobe Target] at.js JavaScript 라이브러리의 각 버전 변경 내용에 대한 세부 사항입니다.
@@ -47,6 +60,10 @@ ht-degree: 60%
 >해당 주 버전의 이전 부 버전에서 발견된 문제에 대한 버그 수정 사항 및 보안 패치를 얻으려면 1.*x* 또는 2.*x*&#x200B;의 최신 버전으로 업그레이드해야 합니다.
 
 [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)의 태그는 at.js를 업그레이드하는 기본 방법입니다. 확장 개발자는 확장에 새로운 기능을 지속적으로 추가하고 버그를 자주 수정합니다. 이러한 업데이트는 새로운 버전의 확장에 패키지화되어 Adobe Experience Platform 카탈로그에서 업그레이드로 사용할 수 있습니다. 자세한 내용은 *태그 개요* 안내서에서 [확장 업그레이드](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html?lang=ko)를 참조하십시오.
+
+## at.js 버전 2.11.9(2026년 2월)
+
+* At.js applyOffers 함수가 LWC(Lightning Web Components)를 올바로 감지하고 수정하지 못하는 문제를 해결했습니다. At.js 라이브러리가 LWC 구성 요소를 감지하고 해당하는 경우 수정 사항을 적용하도록 업데이트되었습니다. (TGT-54478)
 
 ## at.js 버전 2.11.8(2025년 3월 31일)
 
