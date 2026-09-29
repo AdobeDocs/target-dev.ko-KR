@@ -55,7 +55,7 @@ TLS(전송 계층 보안)는 네트워크를 통해 데이터를 안전하게 �
 
 Adobe은 고객을 TLS 1.2로 단계적으로 이전할 예정입니다. 도메인이 이미 1.2를 준수하는 도메인의 경우 필요한 변경 사항 없이 TLS 1.2로 이동합니다. 대부분의 고객 도메인은 이미 TLS 1.2를 지원합니다. 그러나 도메인이 TLS 1.2를 지원하지 않는 경우에는 오늘처럼(2020년 3월까지) 해당 도메인을 TLS 1.1에 유지합니다.
 
-이 마이그레이션 단계 중에는 문제가 발생하지 않아야 합니다. VEC가 이전에 작동했던 사이트 로드를 중지한 경우 가능한 원인으로 이 마이그레이션을 인용하여 [Client Care 티켓을 여십시오](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C).
+이 마이그레이션 단계 중에는 문제가 발생하지 않아야 합니다. VEC가 이전에 작동했던 사이트 로드를 중지한 경우 가능한 원인으로 이 마이그레이션을 인용하여 [Client Care 티켓을 여십시오](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=ko&#reference_ACA3391A00EF467B87930A450050077C).
 
 그러나 TLS 1.2를 지원하지 않고 TSL 1.1을 사용하는 고객 중 한 명이라면 도메인/인프라를 TLS 1.2로 이동할 계획을 세워야 합니다. TLS 1.1 프로토콜은 2020년 3월 1일까지 계속 지원할 예정입니다. 2020년 3월 1일부터 [!DNL Target]은(는) 향상된 Experience Composer 기능을 통해 VEC에 사용할 TLS 1.1 프로토콜을 지원하지 않습니다.
 

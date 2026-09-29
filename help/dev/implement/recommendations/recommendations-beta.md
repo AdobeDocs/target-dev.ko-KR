@@ -40,7 +40,7 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->이 문서 외에도 [Adobe Target 비즈니스 실무자 안내서](https://experienceleague.adobe.com/en/docs/target/using/target-home){target=_blank}에는 [Target 권장 사항](https://experienceleague.adobe.com/en/docs/target/using/recommendations/recommendations){target=_blank}에 대한 자세한 정보가 포함되어 있습니다.
+>이 문서 외에도 [Adobe Target 비즈니스 실무자 안내서](https://experienceleague.adobe.com/ko/docs/target/using/target-home){target=_blank}에는 [Target 권장 사항](https://experienceleague.adobe.com/ko/docs/target/using/recommendations/recommendations){target=_blank}에 대한 자세한 정보가 포함되어 있습니다.
 
 [!DNL Adobe Target]에서 첫 번째 [!UICONTROL 권장 사항] 활동을 설정하기 전에 다음 단계를 완료하십시오.
 
@@ -67,7 +67,7 @@ ht-degree: 17%
 
 | 방법 | 정의 | 사용하는 경우 | 추가 정보 |
 | --- | --- | --- | --- |
-| 카탈로그 피드 | 매일 업로드하고 수집할 피드(CSV, [!DNL Google] 제품 XML 또는 [!UICONTROL Analytics 제품 분류])를 예약합니다. | 한 번에 여러 항목에 대한 정보를 보냅니다. 자주 변경되지 않는 정보를 보내는 경우 | [피드](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/feeds)를 참조하세요. |
+| 카탈로그 피드 | 매일 업로드하고 수집할 피드(CSV, [!DNL Google] 제품 XML 또는 [!UICONTROL Analytics 제품 분류])를 예약합니다. | 한 번에 여러 항목에 대한 정보를 보냅니다. 자주 변경되지 않는 정보를 보내는 경우 | [피드](https://experienceleague.adobe.com/ko/docs/target/using/recommendations/entities/feeds)를 참조하세요. |
 | 엔티티 API | API를 호출하여 단일 항목에 대한 최신 업데이트를 보냅니다. | 한 번에 한 항목에 대해 발생하는 업데이트 전송 자주 변경되는 정보(예: 가격, 재고/재고 수준) 전송 | [엔터티 API 개발자 설명서](https://developer.adobe.com/target/administer/recommendations-api/#tag/Entities)를 참조하세요. |
 | 페이지에서 업데이트 전달 | 페이지의 JavaScript 또는 배달 API를 사용하여 단일 항목에 대한 최신 업데이트를 보냅니다. | 한 번에 한 항목에 대해 발생하는 업데이트 전송 자주 변경되는 정보(예: 가격, 재고/재고 수준) 전송 | 아래의 [항목 보기/제품 페이지](#item-views-or-product-pages)를 참조하세요. |
 
@@ -130,7 +130,7 @@ function targetPageParams() {
 }
 ```
 
-장바구니 기반 권장 사항에 대한 자세한 내용은 *[!DNL Adobe Target]비즈니스 실무자 안내서*&#x200B;의 [장바구니 기반](https://experienceleague.adobe.com/en/docs/target/using/recommendations/criteria/base-the-recommendation-on-a-recommendation-key#cart-based)을(를) 참조하십시오.
+장바구니 기반 권장 사항에 대한 자세한 내용은 *[!DNL Adobe Target]비즈니스 실무자 안내서*&#x200B;의 [장바구니 기반](https://experienceleague.adobe.com/ko/docs/target/using/recommendations/criteria/base-the-recommendation-on-a-recommendation-key#cart-based)을(를) 참조하십시오.
 
 ### 방문자 장바구니에 이미 있는 항목 제외
 
@@ -152,7 +152,7 @@ function targetPageParams() {
 
 ## &#x200B;4. 전역 제외 구성
 
-방문자에게 추천하지 않으려는 글로벌 수준의 항목을 제외합니다. *[!DNL Adobe Target]비즈니스 실무자 안내서*&#x200B;의 [제외](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/exclusions)를 참조하십시오.
+방문자에게 추천하지 않으려는 글로벌 수준의 항목을 제외합니다. *[!DNL Adobe Target]비즈니스 실무자 안내서*&#x200B;의 [제외](https://experienceleague.adobe.com/ko/docs/target/using/recommendations/entities/exclusions)를 참조하십시오.
 
 ## &#x200B;5. [!UICONTROL 권장 사항] 설정 구성
 
@@ -190,7 +190,7 @@ function targetPageParams() {
 
 [!DNL Recommendations]의 기준은 사전 결정된 방문자 행동 세트를 기준으로 추천할 제품 또는 콘텐츠를 결정하는 규칙입니다. 기준은 인기 있는 추세, 방문자의 현재 및 과거 행동 또는 유사한 제품 및 콘텐츠를 기반으로 지정할 수 있습니다. 여러 알고리즘을 추가하여 여러 권장 사항 유형을 서로 비교하면서 테스트할 수 있습니다.
 
-자세한 내용은 *Adobe Target 비즈니스 실무자 안내서*&#x200B;의 [기준](https://experienceleague.adobe.com/en/docs/target/using/recommendations/criteria/algorithms){target=_blank}을 참조하십시오.
+자세한 내용은 *Adobe Target 비즈니스 실무자 안내서*&#x200B;의 [기준](https://experienceleague.adobe.com/ko/docs/target/using/recommendations/criteria/algorithms){target=_blank}을 참조하십시오.
 
 [!UICONTROL 기준] 섹션에서 다음 설정을 사용할 수 있습니다.
 
@@ -213,7 +213,7 @@ function targetPageParams() {
 
 Adobe에서는 태그 관리 솔루션을 사용하는 경우 이 옵션을 비활성화하는 것을 권장합니다.
 
-이 옵션에 대한 자세한 내용은 *[!DNL Adobe Target]비즈니스 실무자 안내서*&#x200B;의 [[!UICONTROL 권장 사항] FAQ](https://experienceleague.adobe.com/en/docs/target/using/recommendations/recommendations-faq/recommendations-faq){target=_blank}를 참조하십시오.
+이 옵션에 대한 자세한 내용은 *[!DNL Adobe Target]비즈니스 실무자 안내서*&#x200B;의 [[!UICONTROL 권장 사항] FAQ](https://experienceleague.adobe.com/ko/docs/target/using/recommendations/recommendations-faq/recommendations-faq){target=_blank}를 참조하십시오.
 
 ### [!UICONTROL 제품 카탈로그]
 
@@ -240,7 +240,7 @@ Adobe에서는 태그 관리 솔루션을 사용하는 경우 이 옵션을 비�
 * 제외 만들기 대화 상자(**[!UICONTROL 권장 사항]** > **[!UICONTROL 제외]** > **[!UICONTROL 제외 만들기]**)
 * 제외 업데이트 대화 상자(**[!UICONTROL 권장 사항]** > **[!UICONTROL 제외]** > **[!UICONTROL 편집]**)
 
-자세한 내용은 *[!DNL Adobe Target]비즈니스 실무자 안내서*&#x200B;의 [호스트](https://experienceleague.adobe.com/en/docs/target/using/administer/hosts){target=_blank}를 참조하십시오.
+자세한 내용은 *[!DNL Adobe Target]비즈니스 실무자 안내서*&#x200B;의 [호스트](https://experienceleague.adobe.com/ko/docs/target/using/administer/hosts){target=_blank}를 참조하십시오.
 
 #### [!UICONTROL 썸네일 기반]
 
