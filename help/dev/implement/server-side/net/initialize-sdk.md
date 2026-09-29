@@ -32,7 +32,7 @@ ht-degree: 15%
 
 `TargetClient.Create`을(를) 사용하여 `TargetClient`을(를) 만듭니다.
 
-## C#
+## C#&#x200B;
 
 ```csharp {line-numbers="true"}
 TargetClient TargetClient.Create(TargetClientConfig clientConfig)
@@ -40,7 +40,7 @@ TargetClient TargetClient.Create(TargetClientConfig clientConfig)
 
 `ClientConfig`이(가) ClientConfig.Builder를 사용하여 만들어집니다.
 
-## C#
+## C#&#x200B;
 
 ```csharp {line-numbers="true"}
 TargetClientConfig.Builder TargetClientConfig.Builder()
@@ -74,7 +74,7 @@ TargetClientConfig.Builder TargetClientConfig.Builder()
 
 ## 예
 
-## C#
+## C#&#x200B;
 
 ```csharp {line-numbers="true"}
 var targetClientConfig = new TargetClientConfig.Builder("acmeclient", "ABCDEF012345677890ABCDEF0@AdobeOrg")

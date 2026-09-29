@@ -121,7 +121,7 @@ ht-degree: 0%
 
 `DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom/:criteriaId`
 
-1. 삭제하려는 (단일) 사용자 지정 기준의 기준 ID를 지정합니다. **[!UICONTROL 보내기]**를 클릭합니다.
+1. 삭제하려는 (단일) 사용자 지정 기준의 기준 ID를 지정합니다. **[!UICONTROL 보내기]**&#x200B;를 클릭합니다.
    ![DeleteCustomCriteria1](assets/DeleteCustomCriteria1.png)
 
 1. 사용자 지정 기준 가져오기를 사용하여 기준이 삭제되었는지 확인합니다.

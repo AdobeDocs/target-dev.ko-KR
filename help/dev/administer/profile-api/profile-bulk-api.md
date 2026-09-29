@@ -1,6 +1,6 @@
 ---
 title: Adobe Target 벌크 프로필 업데이트 API
-description: '[!DNL Adobe Target] [!UICONTROL 벌크 프로필 업데이트 API]를 사용하여 타깃팅에 사용할 수 있도록 여러 방문자의 프로필 데이터를 [!DNL Target](으)로 보내는 방법을 알아봅니다.'
+description: '[!DNL Adobe Target] [!UICONTROL 벌크 프로필 업데이트 API]를 사용하여 타깃팅에 사용할 수 있도록 여러 방문자의 프로필 데이터를 [!DNL Target] (으)로 보내는 방법을 알아봅니다.'
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d

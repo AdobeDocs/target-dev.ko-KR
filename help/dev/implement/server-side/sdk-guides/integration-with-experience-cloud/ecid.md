@@ -1,6 +1,6 @@
 ---
 title: Experience Cloud ID(ECID) 서비스
-description: '[!DNL Target]에서 콘텐츠를 가져오는 데 [!DNL Target] SDK를 사용하는 것은 강력한 기능이지만 사용자 추적을 위해 [!UICONTROL Experience Cloud ID](ECID)를 사용하는 것의 부가 가치는 Adobe [!DNL Target] 이상으로 확장됩니다. ECID를 사용하면 A4T 보고 및 [!DNL Adobe Audience Manager](AAM) 세그먼트와 같은 [!DNL Adobe Experience Cloud]개의 제품 및 기능을 활용할 수 있습니다.'
+description: '[!DNL Target]에서 콘텐츠를 가져오는 데 [!DNL Target] SDK를 사용하는 것은 강력한 기능이지만 사용자 추적을 위해 [!UICONTROL Experience Cloud ID] (ECID)를 사용하는 것의 부가 가치는 Adobe [!DNL Target] 이상으로 확장됩니다. ECID를 사용하면 A4T 보고 및 [!DNL Adobe Audience Manager] (AAM) 세그먼트와 같은 [!DNL Adobe Experience Cloud]개의 제품 및 기능을 활용할 수 있습니다.'
 exl-id: fd7e5c3e-51c1-4965-ab6a-f50a6b0c910b
 feature: Implement Server-side
 TQID: 'https://experienceleague.adobe.com/751nWT-fW5Ct1rZ2DgnTz2Pkt9W7-JfcusQ6eqrDp1A'

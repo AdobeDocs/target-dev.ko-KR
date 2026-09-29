@@ -1,6 +1,6 @@
 ---
 title: Java SDK을 사용하여 [!DNL Adobe Target]에 디스플레이 또는 클릭 알림 보내기
-description: '[!DNL Adobe Target](으)로 디스플레이 또는 클릭 알림을 보내기 위해 sendNotifications()를 사용하여 측정 및 보고를 수행하는 방법에 대해 알아봅니다.'
+description: '[!DNL Adobe Target] (으)로 디스플레이 또는 클릭 알림을 보내기 위해 sendNotifications()를 사용하여 측정 및 보고를 수행하는 방법에 대해 알아봅니다.'
 feature: APIs/SDKs
 exl-id: 9231b480-f50f-40d1-ab06-0b9f2a2d79e3
 TQID: 'https://experienceleague.adobe.com/aoa6x9BkuaC-6XaqU03mvWXqWucNSF9eJAk41Bk0-nE'

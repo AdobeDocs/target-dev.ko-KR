@@ -1,6 +1,6 @@
 ---
 title: .NET SDK을 사용하여 [!DNL Adobe Target]에게 디스플레이 또는 클릭 알림 보내기
-description: '[!DNL Adobe Target](으)로 디스플레이 또는 클릭 알림을 보내기 위해 sendNotifications()를 사용하여 측정 및 보고를 수행하는 방법에 대해 알아봅니다.'
+description: '[!DNL Adobe Target] (으)로 디스플레이 또는 클릭 알림을 보내기 위해 sendNotifications()를 사용하여 측정 및 보고를 수행하는 방법에 대해 알아봅니다.'
 feature: APIs/SDKs
 exl-id: 724e787c-af53-4152-8b20-136f7b5452e1
 TQID: 'https://experienceleague.adobe.com/4lJvfqWv6vDehZ-CmO7xj61-ZFS9-3nOAcA7vlbg-3c'

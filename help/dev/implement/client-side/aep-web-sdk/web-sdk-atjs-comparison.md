@@ -687,7 +687,7 @@ alloy("sendEvent", {
 
 ### at.js 사용
 
-`adobe.target.triggerView` 함수를 사용합니다. 이 함수는 새 페이지를 로드할 때마다 또는 페이지의 구성 요소가 다시 렌더링될 때 호출할 수 있습니다. SPA(단일 페이지 애플리케이션)에서 [!UICONTROL VEC(시각적 경험 작성기)를 사용하여 [!UICONTROL A/B 테스트] 및 [!UICONTROL 경험 타깃팅]&#x200B;(XT) 활동을 만들려면 `adobe.target.triggerView()` 함수를 구현해야 합니다. ]사이트에서 `adobe.target.triggerView()`이(가) 구현되지 않으면 SPA에 VEC를 사용할 수 없습니다.
+`adobe.target.triggerView` 함수를 사용합니다. 이 함수는 새 페이지를 로드할 때마다 또는 페이지의 구성 요소가 다시 렌더링될 때 호출할 수 있습니다. SPA(단일 페이지 애플리케이션)에서 [!UICONTROL VEC(시각적 경험 작성기)를 사용하여 [!UICONTROL A/B 테스트] 및 [!UICONTROL 경험 타깃팅]&#x200B;(XT) 활동을 만들려면 `adobe.target.triggerView()` 함수를 구현해야 합니다. &#x200B;]사이트에서 `adobe.target.triggerView()`이(가) 구현되지 않으면 SPA에 VEC를 사용할 수 없습니다.
 
 **예**
 
@@ -849,7 +849,7 @@ Analytics 클라이언트 측 로깅은 at.js 설정에서 `analyticsLogging: cl
 }
 ```
 
-그런 다음 [!DNL  Data Insertion API]을(를) 통해 [!DNL Analytics]에 페이로드를 전달할 수 있습니다.
+그런 다음 [!DNL &#x200B; Data Insertion API]을(를) 통해 [!DNL Analytics]에 페이로드를 전달할 수 있습니다.
 
 예제 2: 모든 `getOffers` 함수에서 구성:
 

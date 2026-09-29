@@ -1,7 +1,7 @@
 ---
 keywords: 구현, 구현, 구현, 태그 관리자, dtm, at.js, 다이내믹 태그 관리, $8
-description: 기존 [!DNL Dynamic Tag Management](DTM)을 사용하여 [!DNL Adobe Target] at.js 라이브러리를 구현하는 방법을 알아봅니다. [!DNL Adobe Experience Platform]의 태그는 [!DNL Target]을(를) 구현하는 기본 방법입니다.
-title: '[!DNL Dynamic Tag Manager](DTM)을 사용하여 [!DNL Target]을(를) 구현할 수 있습니까?'
+description: 기존 [!DNL Dynamic Tag Management] (DTM)을 사용하여 [!DNL Adobe Target] at.js 라이브러리를 구현하는 방법을 알아봅니다. [!DNL Adobe Experience Platform]의 태그는 [!DNL Target]을(를) 구현하는 기본 방법입니다.
+title: '[!DNL Dynamic Tag Manager] (DTM)을 사용하여 [!DNL Target]을(를) 구현할 수 있습니까?'
 feature: Implement Server-side
 exl-id: 8ddabd5f-c9ec-4282-a806-32af3d1d16fb
 TQID: 'https://experienceleague.adobe.com/0oLax6xrM8-r3odxWCw1r0rs-7sb2V8poPCTbNqf-P0'

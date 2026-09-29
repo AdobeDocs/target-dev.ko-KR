@@ -1,6 +1,6 @@
 ---
 title: Adobe Target 단일 프로필 업데이트 API
-description: '[!DNL Adobe Target] [!UICONTROL 단일 프로필 업데이트 API]를 사용하여 단일 방문자의 프로필 데이터를 [!DNL Target](으)로 보내는 방법을 알아봅니다.'
+description: '[!DNL Adobe Target] [!UICONTROL 단일 프로필 업데이트 API]를 사용하여 단일 방문자의 프로필 데이터를 [!DNL Target] (으)로 보내는 방법을 알아봅니다.'
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 4e022db3-215f-461b-9222-38ce2f2dbc28
