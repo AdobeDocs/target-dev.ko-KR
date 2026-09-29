@@ -3,26 +3,38 @@ title: 배달 API를 사용하여 권장 사항을 가져오는 방법
 description: 이 문서는 Adobe Target 배달 API를 사용하여 권장 사항 콘텐츠를 가져오는 데 필요한 단계를 개발자에게 안내합니다.
 feature: APIs/SDKs, Recommendations, Administration & Configuration
 kt: 3815
-thumbnail: null
+thumbnail:
 author: Judy Kim
 exl-id: 9b391f42-2922-48e0-ad7e-10edd6125be6
-TQID: https://experienceleague.adobe.com/K94vITD8ZSDXLkC42Vm02eC5RmHudBvukXNcdPFVjzk
+TQID: 'https://experienceleague.adobe.com/K94vITD8ZSDXLkC42Vm02eC5RmHudBvukXNcdPFVjzk'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
+  - id: dfc8a233-f2b5-4811-bf63-b4262aebc5a5
+    internal-label: Administration and configuration
+  - id: f69bc5f1-ebdb-4306-a281-f2e77daf734c
+    internal-label: Activities and tests
+subfeature_v2:
+  - id: ed58f4a1-16eb-4c8c-b505-be9da766a9ec
+    internal-label: Recommendations
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 129298289889a3b133eb07d0caeade2fd0b5568e
+    internal-label: Administration
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 1284
+source-wordcount: '1380'
 ht-degree: 1%
-
 ---
-
 # 배달 API를 사용하여 권장 사항 가져오기
 
 Adobe Target 및 Adobe Target Recommendations API를 사용하여 웹 페이지에 응답을 제공할 수 있지만 앱, 화면, 콘솔, 이메일, 키오스크 및 기타 디스플레이 장치를 비롯한 비 HTML 기반 경험에서도 사용할 수 있습니다. 즉, Target 라이브러리와 JavaScript을 사용할 수 없는 경우에도 [Target 배달 API](/help/dev/implement/delivery-api/overview.md)를 사용하면 전체 Target 기능에 액세스하여 개인화된 경험을 전달할 수 있습니다.
@@ -52,9 +64,9 @@ Adobe Target용 [배달 API](/help/dev/implement/delivery-api/overview.md)은(�
 
 ## 양식 기반 경험 작성기를 사용하여 추천 만들기
 
-배달 API와 함께 사용할 수 있는 권장 사항을 만들려면 [양식 기반 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=ko)를 사용하십시오.
+배달 API와 함께 사용할 수 있는 권장 사항을 만들려면 [양식 기반 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html)를 사용하십시오.
 
-1. 먼저 권장 사항에 사용할 JSON 기반 디자인을 작성 및 저장합니다. 샘플 JSON과 양식 기반 활동을 구성할 때 JSON 응답을 반환하는 방법에 대한 배경 정보는 [권장 디자인 만들기](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-design/create-design.html?lang=ko)에 대한 설명서를 참조하십시오. 이 예제에서 디자인 이름은 *단순 JSON*입니다.
+1. 먼저 권장 사항에 사용할 JSON 기반 디자인을 작성 및 저장합니다. 샘플 JSON과 양식 기반 활동을 구성할 때 JSON 응답을 반환하는 방법에 대한 배경 정보는 [권장 디자인 만들기](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-design/create-design.html)에 대한 설명서를 참조하십시오. 이 예제에서 디자인 이름은 *단순 JSON으로 지정됩니다.*
    ![server-side-create-recs-json-design.png](assets/server-side-create-recs-json-design.png)
 
 1. Target에서 **[!UICONTROL 활동]** > **[!UICONTROL 활동 만들기]** > **[!UICONTROL 권장 사항]**&#x200B;으로 이동한 다음 **[!UICONTROL 양식]**&#x200B;을 선택합니다.
@@ -62,9 +74,9 @@ Adobe Target용 [배달 API](/help/dev/implement/delivery-api/overview.md)은(�
    ![server-side-create-recs.png](assets/server-side-create-recs.png)
 
 1. 속성을 선택하고 **[!UICONTROL 다음]**&#x200B;을(를) 클릭합니다.
-1. 사용자가 권장 사항의 응답을 받을 위치를 정의합니다. 아래 예제에서는 *api_charter* 위치를 사용합니다. 이전에 만든 *단순 JSON*이라는 JSON 기반 디자인을 선택하십시오.
+1. 사용자가 권장 사항의 응답을 받을 위치를 정의합니다. 아래 예제에서는 *api_charter* 위치를 사용합니다. 이전에 만든 *단순 JSON이라는 JSON 기반 디자인을 선택하십시오.*
    ![server-side-create-recs-form.png](assets/server-side-create-recs-form1.png)
-1. 권장 사항을 저장하고 활성화합니다. 그러면 결과가 생성됩니다. [결과가 준비되면](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/previewing-and-launching-your-recommendations-activity.html?lang=ko) 배달 API를 사용하여 결과를 검색할 수 있습니다.
+1. 권장 사항을 저장하고 활성화합니다. 그러면 결과가 생성됩니다. [결과가 준비되면](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/previewing-and-launching-your-recommendations-activity.html) 배달 API를 사용하여 결과를 검색할 수 있습니다.
 
 ## 게재 API 사용
 
@@ -72,7 +84,7 @@ Adobe Target용 [배달 API](/help/dev/implement/delivery-api/overview.md)은(�
 
 `POST https://{{CLIENT_CODE}}.tt.omtrdc.net/rest/v1/delivery`
 
-1. 클라이언트 코드가 필요합니다. 다시 말해서 **[!UICONTROL 권장 사항]** > **[!UICONTROL 설정]**(으)로 이동하여 Adobe Target에서 클라이언트 코드를 찾을 수 있습니다. **권장 사항 API 토큰** 섹션의 **클라이언트 코드** 값을 참고하십시오.
+1. 클라이언트 코드가 필요합니다. 다시 말해서 **[!UICONTROL 권장 사항]** > **[!UICONTROL 설정]**(으)로 이동하여 Adobe Target에서 클라이언트 코드를 찾을 수 있습니다. **권장 API 토큰** 섹션의 **클라이언트 코드** 값을 참고하십시오.
    ![client-code.png](assets/client-code.png)
 1. 클라이언트 코드가 있으면 배달 API 호출을 구성합니다. 아래 예제는 [배달 API Postman 컬렉션](../../implement/delivery-api/overview.md#section/Getting-Started/Postman-Collection)에서 제공된 **[!UICONTROL 웹 일괄 처리된 Mbox 배달 API 호출]**&#x200B;로 시작되며 관련 사항을 수정합니다. 예:
    * **browser** 및 **address** 개체는 HTML 이외의 사용 사례에 필요하지 않으므로 **Body**&#x200B;에서 제거되었습니다.
@@ -84,7 +96,7 @@ Adobe Target용 [배달 API](/help/dev/implement/delivery-api/overview.md)은(�
 1. 요청을 보냅니다. 권장 엔터티 목록을 출력하는 JSON 디자인으로 정의된 활성 권장 사항이 실행 중인 *api_charter* 위치에 대해 실행됩니다.
 1. JSON 디자인을 기반으로 응답을 받습니다.
    ![server-side-create-recs-json-response2.png](assets/server-side-create-recs-json-response2.png)
-응답에는 키 ID와 권장 엔티티의 엔티티 ID가 포함됩니다.
+   응답에는 키 ID와 권장 엔티티의 엔티티 ID가 포함됩니다.
 
 이러한 방식으로 권장 사항과 함께 배달 API를 사용하면 HTML이 아닌 장치에서 방문자에게 권장 사항을 표시하기 전에 추가 단계를 수행할 수 있습니다. 예를 들어 최종 결과를 표시하기 전에 배달 API의 응답을 가져와서 다른 시스템(예: CMS, PIM 또는 전자 상거래 플랫폼)에서 엔티티 속성 세부 사항(재고, 가격, 등급 등)을 추가로 실시간 조회할 수 있습니다.
 
@@ -125,7 +137,7 @@ Adobe Target용 [배달 API](/help/dev/implement/delivery-api/overview.md)은(�
 ## 참조 설명서
 
 * [Adobe Target 배달 API 설명서](/help/dev/implement/delivery-api/overview.md)
-* [이메일에 권장 사항 통합](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/integrating-recs-email.html?lang=ko)
+* [이메일에 권장 사항 통합](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/integrating-recs-email.html)
 
 ## 요약 및 검토
 

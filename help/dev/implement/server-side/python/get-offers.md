@@ -1,22 +1,26 @@
 ---
-title: Python SDK을 사용할 때  [!DNL Adobe Target] 에서 getOffers()를 사용합니다.
-description: getOffers()를 사용하여 결정을 실행하고  [!DNL Adobe Target]에서 경험을 검색하는 방법을 알아봅니다.
+title: Python SDK을 사용할 때 [!DNL Adobe Target]에서 getOffers()를 사용합니다.
+description: getOffers()를 사용하여 결정을 실행하고 [!DNL Adobe Target]에서 경험을 검색하는 방법을 알아봅니다.
 feature: APIs/SDKs
 exl-id: 9539b806-e070-430e-80cf-cf632ce3f207
-TQID: https://experienceleague.adobe.com/b7t1NfE5Gcsj86w4u3Cfl5-Eb7a6HG1Hg8vi6-ViQFg
+TQID: 'https://experienceleague.adobe.com/b7t1NfE5Gcsj86w4u3Cfl5-Eb7a6HG1Hg8vi6-ViQFg'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Metadata
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 366
-ht-degree: 12%
-
+source-wordcount: '367'
+ht-degree: 11%
 ---
-
 # 오퍼 가져오기(Python)
 
 ## 설명
@@ -58,7 +62,7 @@ target_client_instance.get_offers(options)
 | target_location_hint_cookie | dict | [!DNL Target] 위치 힌트 쿠키 |
 | analytics_details | list[AnalyticsResponse] | 클라이언트측 Analytics 사용의 경우 Analytics 페이로드 |
 | 추적 | list[dict] | 모든 요청 mbox/보기에 대해 집계된 추적 데이터 |
-| response_tokens | list[dict] | [&#x200B;응답 토큰 목록](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=ko) |
+| response_tokens | list[dict] | [&#x200B;응답 토큰 목록](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) |
 | meta | dict | 온디바이스 의사 결정에 사용하기 위한 추가 의사 결정 메타데이터 |
 
 데이터를 다시 브라우저로 전달하는 데 사용되는 `target_cookie` 및 `target_location_hint_cookie` 개체의 구조는 다음과 같습니다.

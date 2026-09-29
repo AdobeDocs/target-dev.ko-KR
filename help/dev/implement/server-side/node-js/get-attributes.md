@@ -1,22 +1,26 @@
 ---
-title: ' [!DNL Adobe Target] Node.js SDK에서 비동기 요청을 사용하는 방법'
-description: ' [!DNL Target] Node.js SDK이 비동기 요청을 지원하여 효과적인 대상 시간을 0으로 줄이는 방법에 대해 알아봅니다.'
+title: '[!DNL Adobe Target] Node.js SDK에서 비동기 요청을 사용하는 방법'
+description: '[!DNL Target] Node.js SDK이 효과적인 대상 시간을 0으로 줄일 수 있는 비동기 요청을 지원하는 방법에 대해 알아봅니다.'
 feature: APIs/SDKs
 exl-id: aa06f3ca-7d2a-4334-8092-730a8705dfb0
-TQID: https://experienceleague.adobe.com/cIoEnAinSLl-TO2vunG164i97Y2h-9NdE487ZyXJSzs
+TQID: 'https://experienceleague.adobe.com/cIoEnAinSLl-TO2vunG164i97Y2h-9NdE487ZyXJSzs'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Experimentation
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 116
-ht-degree: 18%
-
+source-wordcount: '118'
+ht-degree: 17%
 ---
-
 # 속성 가져오기(Node.js)
 
 ## 설명

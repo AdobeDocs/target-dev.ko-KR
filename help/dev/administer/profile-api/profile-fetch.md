@@ -1,21 +1,24 @@
 ---
 title: 프로필 가져오기
-description: Adobe Target 프로필 API를 사용하여  [!DNL Target]에서 사용할 방문자 데이터를 가져오는 방법에 대해 알아봅니다.
+description: Adobe Target 프로필 API를 사용하여 [!DNL Target]에서 사용할 방문자 데이터를 가져오는 방법에 대해 알아봅니다.
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
 exl-id: b422ae68-49b3-4d60-9ea4-0fa67b6934b0
-TQID: https://experienceleague.adobe.com/sCVfAY8W0oYu2ak-W4MYvcWSoUiAuaU3762JEhocZSE
+TQID: 'https://experienceleague.adobe.com/sCVfAY8W0oYu2ak-W4MYvcWSoUiAuaU3762JEhocZSE'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 297
+source-wordcount: '297'
 ht-degree: 0%
-
 ---
-
 # 프로필 가져오기
 
 [!DNL Target] 프로필은 다음 세 가지 방법으로 가져올 수 있습니다. `[!DNL Experience Cloud Visitor ID]`(`ECID`), `tntid` 또는 `thirdPartyId`을(를) 사용합니다.

@@ -1,20 +1,23 @@
 ---
-title: ' [!DNL Adobe Target] Java SDK에서 유틸리티 메서드 사용'
+title: '[!DNL Adobe Target] Java SDK에서 유틸리티 메서드 사용'
 description: 컨트롤러 간에 다시 사용할 수 있고 별도의 유틸리티 클래스로 이동할 수 있는 도우미 메서드를 사용하는 방법에 대해 알아봅니다.
 feature: APIs/SDKs
 exl-id: 19418126-c4d8-4e6b-bb84-036b7fe0e6ec
-TQID: https://experienceleague.adobe.com/bAifzGxPwAw-N8x4yG-FxbtECVDZSRu0aglSibBZcfk
+TQID: 'https://experienceleague.adobe.com/bAifzGxPwAw-N8x4yG-FxbtECVDZSRu0aglSibBZcfk'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 46
+source-wordcount: '47'
 ht-degree: 2%
-
 ---
-
 # 유틸리티 메서드(Java)
 
 이러한 도우미 메서드는 컨트롤러 간에 재사용할 수 있으며 별도의 유틸리티 클래스로 이동할 수 있습니다.

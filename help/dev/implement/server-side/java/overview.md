@@ -1,20 +1,23 @@
 ---
-title: ' [!DNL Adobe Target] Java SDK 시작'
-description: ' [!DNL Adobe Target] 고객이 Java SDK을 설치, 초기화 및 사용하는 방법을 알아봅니다.'
+title: '[!DNL Adobe Target] Java SDK 시작'
+description: '[!DNL Adobe Target] 고객이 Java SDK을 설치, 초기화 및 사용할 수 있는 방법을 알아봅니다.'
 feature: APIs/SDKs
 exl-id: ccdd33f5-a9c7-4832-beba-b9692203d42c
-TQID: https://experienceleague.adobe.com/BtTvCc3i4bYN5rujWFkp-h6TNewSovwrxC8UKvEYZpI
+TQID: 'https://experienceleague.adobe.com/BtTvCc3i4bYN5rujWFkp-h6TNewSovwrxC8UKvEYZpI'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 123
+source-wordcount: '125'
 ht-degree: 7%
-
 ---
-
 # Java SDK 개요
 
 이 참조 안내서에서는 [!DNL Adobe Target] 고객이 Java SDK을 설치, 초기화 및 사용하는 방법을 보여 줍니다.

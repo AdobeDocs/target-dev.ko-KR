@@ -1,30 +1,39 @@
 ---
 keywords: 클라이언트 관리;cname;인증서 프로그램;표준 이름;쿠키;인증서;amc;adobe 관리 인증서;digicert;도메인 제어 유효성 검사;dcv
-description: ' [!DNL Adobe] Client Care와 협력하여  [!DNL Adobe Target] 에서 CNAME(표준 이름) 지원을 구현하여 광고 차단 문제를 해결합니다.'
+description: '[!DNL Adobe] Client Care를 사용하여 [!DNL Adobe Target]에서 CNAME(표준 이름) 지원을 구현하여 광고 차단 문제를 해결합니다.'
 title: Target에서 CNAME을 사용하는 방법
 feature: Privacy & Security
 role: Developer
 exl-id: bf533771-6d46-48ba-964c-3ad9ce9f7352
-TQID: https://experienceleague.adobe.com/gTS60hypD2WGc2fJh-sUkq2-pkzt2KnM4CzSQ050L40
+TQID: 'https://experienceleague.adobe.com/gTS60hypD2WGc2fJh-sUkq2-pkzt2KnM4CzSQ050L40'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: f599e456-545c-47e5-8e50-b7dfe3579517
+    internal-label: Governance and control
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
+  - id: ee6498fb-34b1-4925-be4a-9ec7a38e8dab
+    internal-label: Privacy and security
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Privacy
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 1255
+source-wordcount: '1326'
 ht-degree: 1%
-
 ---
-
 # CNAME 및 [!DNL Target]
 
 [!DNL Adobe Target]에서 CNAME(표준 이름) 지원을 구현하기 위한 [!DNL Adobe] Client Care 작업 지침 CNAME을 사용하여 광고 차단 문제 또는 ITP 관련(Intelligent Tracking Prevention) 쿠키 정책을 처리합니다. CNAME을 사용하면 [!DNL Adobe]이(가) 소유한 도메인이 아니라 고객이 소유한 도메인에 호출됩니다.
@@ -32,18 +41,18 @@ ht-degree: 1%
 ## [!DNL Target]에서 CNAME 지원 요청
 
 1. SSL 인증서에 필요한 호스트 이름 목록을 확인합니다(아래 FAQ 참조).
-1. [이 양식을 작성](/help/dev/implement/assets/FPC_Request_Form.xlsx)한 다음 [CNAME 지원을 요청하는 Client Care 티켓을 열기 [!DNL Adobe] 할 때 포함](https://experienceleague.adobe.com/ko/docs/target/using/cmp-resources-and-contact-information#reference_ACA3391A00EF467B87930A450050077C):
+1. [이 양식을 작성](/help/dev/implement/assets/FPC_Request_Form.xlsx)한 다음 [CNAME 지원을 요청하는 Client Care 티켓을 열기 [!DNL Adobe] 할 때 포함](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information#reference_ACA3391A00EF467B87930A450050077C):
 
    * [!DNL Adobe Target] 클라이언트 코드:
    * SSL 인증서 호스트 이름(예: `target.example.com target.example.org`):
    * SSL 인증서 구매자([!DNL Adobe]을(를) 적극 권장합니다. FAQ 참조): Adobe/고객
    * 고객이 &quot;자체 인증서 가져오기&quot;(BYOC)라고도 하는 인증서를 구입할 경우 다음 추가 세부 정보를 작성하십시오.
 
-      * 인증서 조직(예: Company Inc):
-      * 인증서 조직 단위(선택 사항, 예: 마케팅):
-      * 인증서 국가(예: 미국):
-      * 인증서 주/지역(예: 캘리포니아):
-      * 인증서 도시(예: 산호세):
+     * 인증서 조직(예: Company Inc):
+     * 인증서 조직 단위(선택 사항, 예: 마케팅):
+     * 인증서 국가(예: 미국):
+     * 인증서 주/지역(예: 캘리포니아):
+     * 인증서 도시(예: 산호세):
 
 1. 각 호스트 이름 요청에 대해 Adobe이 구현을 만들고 생성할 CNAME 레코드 이름으로 다시 돌아오며, 여기에는 `tt.omtrdc.net`(으)로 접두사가 추가된 임의의 문자열이 포함됩니다
 

@@ -1,31 +1,42 @@
 ---
 keywords: apple, ITP, 지능형 추적 방지, experience cloud id, ecid, itp
-description: ' [!DNL Adobe Target] 과(와) Safari 사용자의 개인 정보를 보호하려는 Apple ITP(Intelligent Tracking Prevention) 이니셔티브의 영향에 대해 알아봅니다.'
-title: ' [!DNL Target] 은(는) Apple ITP 지원을 어떻게 처리합니까?'
+description: '[!DNL Adobe Target]에 대해 알아보고 Safari 사용자의 개인 정보를 보호하려는 Apple ITP(Intelligent Tracking Prevention) 이니셔티브의 영향에 대해 알아봅니다.'
+title: '[!DNL Target]은(는) Apple ITP 지원을 어떻게 처리합니까?'
 feature: Privacy & Security
 exl-id: 6deee03b-df86-4d0d-999c-b11855ddfda5
-TQID: https://experienceleague.adobe.com/AvrlwiLa-soHwrGT1QMa8KgsiIwfwKaF-0LBxMjb8cs
+TQID: 'https://experienceleague.adobe.com/AvrlwiLa-soHwrGT1QMa8KgsiIwfwKaF-0LBxMjb8cs'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: f599e456-545c-47e5-8e50-b7dfe3579517
+    internal-label: Governance and control
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
+  - id: ee6498fb-34b1-4925-be4a-9ec7a38e8dab
+    internal-label: Privacy and security
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Privacy
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 681
+source-wordcount: '683'
 ht-degree: 28%
-
 ---
-
 # Apple ITP(Intelligent Tracking Prevention) 2.x
 
 ITP(Intelligent Tracking Prevention)는 Safari 사용자의 개인 정보를 보호하기 위한 Apple의 이니셔티브입니다. 2017년에 있었던 ITP의 첫 번째 릴리스에서는 타사 쿠키의 사용을 타깃팅했습니다. 실제로 Apple은 타사 쿠키를 완전히 차단했습니다. 타사 쿠키는 일반적으로 방문자를 추적하고 방문자 데이터를 수집하는 데 사용되기 때문에 광고 기술 및 마테크(martech) 기업의 심각한 문제 요소였습니다. 이제 Apple은 Safari 내에서 타사 쿠키가 사용되는 방법에 대해 제한 사항을 적용하려고 합니다.
@@ -48,8 +59,8 @@ Apple ITP 2.x는 다음 영역의 [!DNL Target]에 영향을 줍니다.
 | --- | --- |
 | 고유 방문자 수의 잠재적 증가 | 만료 창이 7일(ITP 2.1 사용) 및 1일(ITP 2.2 및 ITP 2.3 사용)로 설정되어 있으므로 Safari 브라우저에서 발생하는 고유 방문자 수가 증가하는 것을 볼 수 있습니다. 방문자가 7일(ITP 2.1) 또는 1일(ITP 2.2 및 ITP 2.3) 이후 도메인을 재방문하는 경우 [!DNL Target]은(는) 만료된 쿠키 대신 도메인에 새 [!DNL Target] 쿠키를 배치해야 합니다. 사용자가 동일하지만 새 [!DNL Target] 쿠키는 새 고유 방문자로 해석됩니다. |
 | [!DNL Target] 활동에 대한 전환 기간 감소 | [!DNL Target] 활동의 방문자 프로필에는 의사 결정에 대해 전환 기간이 감소될 수 있습니다. [!DNL Target] 쿠키는 방문자를 식별하고 개인화를 위해 사용자 프로필 속성을 저장하는 데 사용됩니다. 7일(ITP 2.1) 또는 1일(ITP 2.2 및 2.3) 이후 Safari에서 [!DNL Target] 쿠키가 만료될 수 있으므로, 삭제된 [!DNL Target] 쿠키에 연결되어 있던 사용자 프로필 데이터는 의사 결정 시 사용할 수 없습니다. |
-| 3rdPartyID를 기반으로 하는 프로필 스크립트 | 만료 창이 7일(ITP 2.1 사용) 및 1일(ITP 2.2 및 ITP 2.3 사용)로 설정되어 있으므로 3rdPartyID 쿠키를 기반으로 하는 [프로필 스크립트](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=ko)는 만료 시 작동을 중지합니다. |
-| iOS 디바이스에서 QA/미리보기 URL | 만료 창이 7일(ITP 2.1 사용) 및 1일(ITP 2.2 및 ITP 2.3 사용)로 설정되어 있으므로 URL이 3rdPartyID 쿠키를 기반으로 하므로 만료 시 [QA/미리 보기 URL](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html?lang=ko)의 작동이 중지됩니다. |
+| 3rdPartyID를 기반으로 하는 프로필 스크립트 | 만료 창이 7일(ITP 2.1 사용) 및 1일(ITP 2.2 및 ITP 2.3 사용)로 설정되어 있으므로 3rdPartyID 쿠키를 기반으로 하는 [프로필 스크립트](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html)는 만료 시 작동을 중지합니다. |
+| iOS 디바이스에서 QA/미리보기 URL | 만료 창이 7일(ITP 2.1 사용) 및 1일(ITP 2.2 및 ITP 2.3 사용)로 설정되어 있으므로 URL이 3rdPartyID 쿠키를 기반으로 하므로 만료 시 [QA/미리 보기 URL](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html)의 작동이 중지됩니다. |
 
 ## 현재 [!DNL Target] 구현이 영향을 받습니까?
 

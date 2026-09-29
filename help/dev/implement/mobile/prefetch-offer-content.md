@@ -1,16 +1,26 @@
 ---
 keywords: offer, 프리페치, iOS, android, sdk, mobile, mobile sdk, $8
-description: iOS 및 Android Mobile SDK의  [!DNL Adobe Target] 미리 가져오기 기능을 사용하여 서버 응답을 캐시하여 가능한 한 적은 시간에 오퍼 콘텐츠를 가져옵니다.
+description: iOS 및 Android Mobile SDK의 [!DNL Adobe Target] 미리 가져오기 기능을 사용하여 서버 응답을 캐시하여 가능한 한 적은 시간에 오퍼 콘텐츠를 가져옵니다.
 title: 모바일 앱용 오퍼 컨텐츠를 미리 가져올 수 있습니까?
 feature: Implement Mobile
 exl-id: 6f8e8298-f1e9-46f0-828f-717c7d632077
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+subfeature_v2:
+  - id: d051910f-2bda-47ea-a969-6ade9fcd71f1
+    internal-label: Implement mobile
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '318'
 ht-degree: 37%
-
 ---
-
 # 오퍼 콘텐츠 미리 가져오기
 
 [!DNL Target] 미리 가져오기 기능은 iOS 및 Android Mobile SDK를 사용하여 서버 응답을 캐시하여 가능한 한 적은 시간에 오퍼 컨텐츠를 가져옵니다.
@@ -26,9 +36,9 @@ ht-degree: 37%
 iOS 및 Android Mobile SDK에서 미리 가져오기 방법을 사용할 때는 다음 제한 사항을 고려하십시오.
 
 * 미리 가져오기 콘텐츠는 실행 간에는 지속되지 않으며, 애플리케이션이 상주하는 동안 또는 `clearPrefetchCache()` 메서드가 호출될 때까지 캐시됩니다.
-* 미리 가져오기 기능은 [!UICONTROL 자동 할당] 및 [!UICONTROL 자동 타겟] 트래픽 할당 메서드, [!UICONTROL Automated Personalization] 또는 [!UICONTROL 권장 사항] 활동 유형 또는 [A/B 또는 XT 활동 내의 권장 사항 오퍼](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-as-an-offer.html?lang=ko)에 대해 지원되지 않습니다.
+* 미리 가져오기 기능은 [!UICONTROL 자동 할당] 및 [!UICONTROL 자동 타겟] 트래픽 할당 메서드, [!UICONTROL Automated Personalization] 또는 [!UICONTROL 권장 사항] 활동 유형 또는 [A/B 또는 XT 활동 내의 권장 사항 오퍼](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-as-an-offer.html)에 대해 지원되지 않습니다.
 
 미리 가져오기 방법, 공용 클래스 및 코드 샘플을 포함한 자세한 내용은 다음을 참조하십시오.
 
-* **iOS:** *Mobile Services iOS SDK 도움말*&#x200B;에서 [iOS에서 오퍼 콘텐츠 미리 가져오기](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-mob-target-prefetch-ios.html?lang=ko).
-* **Android:** *Mobile Services Android SDK 도움말*&#x200B;에서 [Android에서 오퍼 콘텐츠 미리 가져오기](https://experienceleague.adobe.com/docs/mobile-services/android/target-android/c-mob-target-prefetch-android.html?lang=ko).
+* **iOS:** *Mobile Services iOS SDK 도움말*&#x200B;에서 [iOS에서 오퍼 콘텐츠 미리 가져오기](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-mob-target-prefetch-ios.html).
+* **Android:** *Mobile Services Android SDK 도움말*&#x200B;에서 [Android에서 오퍼 콘텐츠 미리 가져오기](https://experienceleague.adobe.com/docs/mobile-services/android/target-android/c-mob-target-prefetch-android.html).

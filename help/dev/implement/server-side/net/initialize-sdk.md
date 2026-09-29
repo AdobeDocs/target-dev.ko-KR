@@ -1,20 +1,23 @@
 ---
 title: create 메서드를 사용하여 .NET SDK 초기화
-description: 만들기 메서드를 사용하여 Java SDK을 초기화하고 [!UICONTROL TargetClient]을(를) 인스턴스화하여  [!DNL Adobe Target] 실험 및 개인화된 경험을 위해 호출하는 방법에 대해 알아봅니다.
+description: 만들기 메서드를 사용하여 Java SDK을 초기화하고 [!UICONTROL TargetClient]을(를) 인스턴스화하여 실험 및 개인화된 경험을 위해 [!DNL Adobe Target]을(를) 호출하는 방법에 대해 알아봅니다.
 feature: APIs/SDKs
 exl-id: 501010c3-22f4-49a8-b2ac-c7307232d180
-TQID: https://experienceleague.adobe.com/uOEojoWWjXmcDl2yY1UmSRD-EXL0j9p-p-eE8PXa7Rk
+TQID: 'https://experienceleague.adobe.com/uOEojoWWjXmcDl2yY1UmSRD-EXL0j9p-p-eE8PXa7Rk'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: b18c88053a47a97d6718a69cb72cb4e5d99969c8
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 369
+source-wordcount: '370'
 ht-degree: 15%
-
 ---
-
 # .NET SDK 초기화
 
 ## 설명
@@ -29,7 +32,7 @@ ht-degree: 15%
 
 `TargetClient.Create`을(를) 사용하여 `TargetClient`을(를) 만듭니다.
 
-## C&#35;
+## C#
 
 ```csharp {line-numbers="true"}
 TargetClient TargetClient.Create(TargetClientConfig clientConfig)
@@ -37,7 +40,7 @@ TargetClient TargetClient.Create(TargetClientConfig clientConfig)
 
 `ClientConfig`이(가) ClientConfig.Builder를 사용하여 만들어집니다.
 
-## C&#35;
+## C#
 
 ```csharp {line-numbers="true"}
 TargetClientConfig.Builder TargetClientConfig.Builder()
@@ -71,7 +74,7 @@ TargetClientConfig.Builder TargetClientConfig.Builder()
 
 ## 예
 
-## C&#35;
+## C#
 
 ```csharp {line-numbers="true"}
 var targetClientConfig = new TargetClientConfig.Builder("acmeclient", "ABCDEF012345677890ABCDEF0@AdobeOrg")

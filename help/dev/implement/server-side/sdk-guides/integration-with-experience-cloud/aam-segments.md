@@ -4,23 +4,28 @@ description: Experience Cloud와 통합, Audience Manager 통합
 keywords: 배달 api, 서버측, 서버측, 통합, audience manager, aam
 exl-id: c21e0200-23ba-4a0b-adf4-38e03c087f00
 feature: Implement Server-side
-TQID: https://experienceleague.adobe.com/mc55SxaUU8BJ81hKLji9xi0-OHCux3W4R0syuVoGrIo
+TQID: 'https://experienceleague.adobe.com/mc55SxaUU8BJ81hKLji9xi0-OHCux3W4R0syuVoGrIo'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a8a69496-b9ae-554a-b68e-e92a87809fc5
+    internal-label: Implement Server-side
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Implementation
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 431
+source-wordcount: '431'
 ht-degree: 4%
-
 ---
-
 # AAM 세그먼트
 
 [!DNL Adobe Target] SDK를 통해 [!DNL Adobe Audience Manager] 세그먼트를 활용할 수 있습니다. AAM 세그먼트를 활용하려면 다음 필드를 제공해야 합니다.
@@ -308,4 +313,4 @@ public class TargetClientService {
 
 >[!ENDTABS]
 
-`TargetRequestUtils.java`에 대한 자세한 내용은 [유틸리티 메서드(Java)](https://experienceleague.adobe.com/docs/target-dev/developer/server-side/java/utility-methods.html?lang=ko){target=_blank}를 참조하십시오.
+`TargetRequestUtils.java`에 대한 자세한 내용은 [유틸리티 메서드(Java)](https://experienceleague.adobe.com/docs/target-dev/developer/server-side/java/utility-methods.html){target=_blank}를 참조하십시오.

@@ -1,23 +1,30 @@
 ---
 keywords: 이메일, adbox, 이메일 이미지 adbox
-description: ' [!DNL Adobe Target] 을(를) 사용하여 이메일에서 이미지를 동적으로 테스트하고, 누군가 이메일을 열면 해당 이미지를 즉시 변경하는 방법에 대해 알아봅니다.'
+description: '[!DNL Adobe Target]을(를) 사용하여 이메일에서 이미지를 동적으로 테스트하고, 누군가 이메일을 열면 해당 이미지를 즉시 변경하는 방법에 대해 알아봅니다.'
 title: 이메일 이미지 Adbox를 테스트하려면 어떻게 합니까?
 feature: Implement Email
 exl-id: 4512741a-567f-41bb-9721-3e1c4f5302e1
-TQID: https://experienceleague.adobe.com/gmeO3ZSLpU6t5daKMoBXlaxyPd-Xu-fNABQU-Y5k4d0
+TQID: 'https://experienceleague.adobe.com/gmeO3ZSLpU6t5daKMoBXlaxyPd-Xu-fNABQU-Y5k4d0'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+subfeature_v2:
+  - id: c94a34eb-b51c-4dd1-a6a4-46b0d84ccccd
+    internal-label: Implement email
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Optimization
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 420
+source-wordcount: '421'
 ht-degree: 79%
-
 ---
-
 # 이메일 이미지 Adbox 테스트
 
 이메일에서 이미지를 동적으로 테스트하고, 누군가 이메일을 열면 해당 이미지를 즉시 변경합니다.

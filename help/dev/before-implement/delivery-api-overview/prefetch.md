@@ -4,25 +4,32 @@ description: '[!UICONTROL Adobe Target 배달 API]에서 미리 가져오기를 
 keywords: 배달 api
 exl-id: eab88e3a-442c-440b-a83d-f4512fc73e75
 feature: APIs/SDKs
-TQID: https://experienceleague.adobe.com/gthn2vJrIjEkmQdpsf4J818OrzFiLpeRvXXRAUp2SiY
+TQID: 'https://experienceleague.adobe.com/gthn2vJrIjEkmQdpsf4J818OrzFiLpeRvXXRAUp2SiY'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Mobile experience
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 578
+source-wordcount: '578'
 ht-degree: 0%
-
 ---
-
 # 미리 가져오기
 
 미리 가져오기를 사용하면 모바일 앱 및 서버와 같은 클라이언트가 한 요청에서 여러 mbox 또는 보기에 대한 콘텐츠를 가져오고, 로컬 캐시에 저장하고, 나중에 방문자가 해당 mbox 또는 보기에 방문할 때 [!DNL Target]에 알릴 수 있습니다.
@@ -136,7 +143,7 @@ curl -X POST \
 
 ## [!UICONTROL Analytics for Target] 사용 시 `clickTrack` 지표로 mbox 미리 가져오기(A4T)
 
-[[!UICONTROL Target용 Adobe Analytics]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=ko){target=_blank}(A4T)는 [!DNL Analytics] 전환 지표 및 대상 세그먼트를 기반으로 활동을 만들 수 있는 솔루션 간 통합입니다.
+[[!UICONTROL Target용 Adobe Analytics]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html){target=_blank}(A4T)는 [!DNL Analytics] 전환 지표 및 대상 세그먼트를 기반으로 활동을 만들 수 있는 솔루션 간 통합입니다.
 
 다음 코드 조각은 `clickTrack` 지표가 포함된 mbox 미리 가져오기의 응답으로서, 오퍼를 클릭했음을 [!DNL Analytics]에 알립니다.
 
@@ -181,7 +188,7 @@ curl -X POST \
 
 ## 미리 가져오기 보기
 
-보기는 단일 페이지 애플리케이션(SPA) 및 모바일 애플리케이션을 보다 원활하게 지원합니다. 보기는 SPA 또는 모바일 경험을 함께 구성하는 시각적 요소의 논리 그룹으로 볼 수 있습니다. 이제 배달 API를 통해 VEC가 만든 [[!UICONTROL A/B 테스트]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=ko){target=_blank} 및 [[!UICONTROL 경험 타깃팅]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=ko){target=_blank}(X)T 활동([SPA용 보기](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md)에서 수정)을 미리 가져올 수 있습니다.
+보기는 단일 페이지 애플리케이션(SPA) 및 모바일 애플리케이션을 보다 원활하게 지원합니다. 보기는 SPA 또는 모바일 경험을 함께 구성하는 시각적 요소의 논리 그룹으로 볼 수 있습니다. 이제 배달 API를 통해 VEC가 만든 [[!UICONTROL A/B 테스트]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html){target=_blank} 및 [[!UICONTROL 경험 타깃팅]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html){target=_blank}(X)T 활동([SPA용 보기](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md)에서 수정)을 미리 가져올 수 있습니다.
 
 ```shell  {line-numbers="true"}
 curl -X POST \

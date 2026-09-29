@@ -3,25 +3,32 @@ title: 온디바이스 의사 결정에서 지원되는 기능은 무엇입니�
 description: 라이브 서버 호출을 사용하여 머신 러닝을 통해 가장 관련성이 높고 매력적인 개인화된 콘텐츠를 전달하는 방법을 알아봅니다.
 feature: APIs/SDKs
 exl-id: 15d9870f-6c58-4da0-bfe5-ef23daf7d273
-TQID: https://experienceleague.adobe.com/Fgwu8Nh90i-tS1aCUVmQReGz6DYBP2GHdcNM7z17BSk
+TQID: 'https://experienceleague.adobe.com/Fgwu8Nh90i-tS1aCUVmQReGz6DYBP2GHdcNM7z17BSk'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Machine learning
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 731
+source-wordcount: '731'
 ht-degree: 9%
-
 ---
-
 # 지원되는 기능 개요
 
 [!DNL Adobe Target]의 서버측 SDK를 통해 개발자는 의사 결정을 위해 데이터의 성능과 최신 상태 중에서 선택할 수 있습니다. 즉, 머신 러닝을 통해 가장 관련성이 높고 매력적인 개인화된 콘텐츠를 전달하는 것이 가장 중요한 경우 라이브 서버 호출을 수행해야 합니다. 그러나 성능이 더 중요한 경우에는 디바이스에서 결정을 내려야 합니다. [!UICONTROL 온디바이스 의사 결정]이 작동하려면 지원되는 기능 목록을 참조하십시오.
@@ -32,18 +39,18 @@ ht-degree: 9%
 
 ## 활동 유형
 
-다음 표는 [양식 기반 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=ko&)를 사용하여 만든 [활동 유형](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html?lang=ko)이(가) [!UICONTROL 온디바이스 의사 결정]에 지원되거나 지원되지 않음을 나타냅니다.
+다음 표는 [양식 기반 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?)를 사용하여 만든 [활동 유형](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html)이(가) [!UICONTROL 온디바이스 의사 결정]에 지원되거나 지원되지 않음을 나타냅니다.
 
 | 활동 유형 | 지원됨 |
 | --- | --- |
-| [A/B 테스트](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=ko) | 예 |
-| [자동 할당](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html?lang=ko) | 아니오 |
-| [자동 타깃팅](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html?lang=ko) | 아니오 |
-| [Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=ko) (A4T) | 예 |
-| [다변량 테스트](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html?lang=ko) (MVT) | 아니요 |
-| [경험 타기팅](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=ko) (XT) | 예 |
-| [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=ko) (AP) | 아니오 |
-| [권장 사항](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html?lang=ko) | 아니오 |
+| [A/B 테스트](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html) | 예 |
+| [자동 할당](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html) | 아니오 |
+| [자동 타깃팅](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) | 아니오 |
+| [Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) | 예 |
+| [다변량 테스트](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html) (MVT) | 아니요 |
+| [경험 타기팅](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT) | 예 |
+| [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP) | 아니오 |
+| [권장 사항](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html) | 아니오 |
 
 
 ## 대상 타기팅
@@ -52,17 +59,17 @@ ht-degree: 9%
 
 | 대상 규칙 | 온디바이스 의사 결정 |
 | --- | --- |
-| [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html?lang=ko) | 예 |
-| [네트워크](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html?lang=ko) | 아니요 |
-| [모바일](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html?lang=ko) | 아니요 |
-| [사용자 지정 매개 변수](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html?lang=ko) | 예 |
-| [운영 체제](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html?lang=ko) | 예 |
-| [사이트 페이지](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html?lang=ko) | 예 |
-| [브라우저](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=ko) | 예 |
-| [방문자 프로필](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=ko) | 아니요 |
-| [트래픽 소스](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=ko) | 아니요 |
-| [시간대](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html?lang=ko) | 예 |
-| [Experience Cloud 대상](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=ko)&#x200B;(Adobe Audience Manager, Adobe Analytics 및 Adobe Experience Manager의 대상 | 아니요 |
+| [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | 예 |
+| [네트워크](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html) | 아니요 |
+| [모바일](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) | 아니요 |
+| [사용자 지정 매개 변수](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) | 예 |
+| [운영 체제](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html) | 예 |
+| [사이트 페이지](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html) | 예 |
+| [브라우저](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html) | 예 |
+| [방문자 프로필](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html) | 아니요 |
+| [트래픽 소스](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) | 아니요 |
+| [시간대](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | 예 |
+| [Experience Cloud 대상](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html)&#x200B;(Adobe Audience Manager, Adobe Analytics 및 Adobe Experience Manager의 대상 | 아니요 |
 
 ### [!UICONTROL 온디바이스 의사 결정]에 대한 지역 타기팅
 
@@ -182,5 +189,5 @@ public class TargetRequestUtils {
 | 할당 방법 | 지원됨 |
 | --- | --- |
 | 수동 | 예 |
-| [최고 경험에 자동 할당](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html?lang=ko) | 아니요 |
-| [개인화된 경험에 대한 자동 타겟](https://experienceleague.adobe.com/docs/target/using/activities/auto-target-to-optimize.html?lang=ko) | 아니요 |
+| [최고 경험에 자동 할당](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html) | 아니요 |
+| [개인화된 경험에 대한 자동 타겟](https://experienceleague.adobe.com/docs/target/using/activities/auto-target-to-optimize.html) | 아니요 |

@@ -3,24 +3,30 @@ title: JSON 페이로드를 통해 온디바이스 의사 결정 규칙 아티�
 description: 이 방법은 애플리케이션이 SDK 메서드를 사용하는 각 파일에서 SDK을 초기화해야 하는 방식으로 구성되어 있는 경우에 가장 적합합니다.
 feature: APIs/SDKs
 exl-id: 4ccfb455-f813-4bdb-a9c1-d576a110a9bb
-TQID: https://experienceleague.adobe.com/knFQFgPKL-DBOtBnWUIz2-7usi35DPtxd-FSINqHHhY
+TQID: 'https://experienceleague.adobe.com/knFQFgPKL-DBOtBnWUIz2-7usi35DPtxd-FSINqHHhY'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e7840a7b-a94f-4256-aed0-4e94b08e157b
+    internal-label: System architecture
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4131354373a42c475db9a4f8dcf8090dd0cbdfcd
+    internal-label: Administration
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 296
+source-wordcount: '296'
 ht-degree: 1%
-
 ---
-
 # JSON 페이로드를 통해 규칙 아티팩트 다운로드, 저장 및 업데이트
 
 이 방법은 애플리케이션이 SDK 메서드를 사용하는 각 파일에서 SDK을 초기화해야 하는 방식으로 구성되어 있는 경우에 가장 적합합니다. SDK 초기화 중에 웹 애플리케이션에서 규칙 아티팩트의 JSON 페이로드를 사용하려면 먼저 JSON 페이로드가 다운로드되고 애플리케이션에서 사용할 수 있는지 확인해야 합니다.

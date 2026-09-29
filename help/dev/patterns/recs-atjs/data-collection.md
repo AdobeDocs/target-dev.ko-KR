@@ -5,23 +5,31 @@ feature: APIs/SDKs
 level: Experienced
 role: Developer
 exl-id: 66e0f18d-c78c-463b-8c47-132ef6332927
-TQID: https://experienceleague.adobe.com/fg3xJnwYAVyz-N-xzT5Piu35Ajd2UMEvuTvTQs2wj3c
+TQID: 'https://experienceleague.adobe.com/fg3xJnwYAVyz-N-xzT5Piu35Ajd2UMEvuTvTQs2wj3c'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Data collection
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 401
+source-wordcount: '401'
 ht-degree: 1%
-
 ---
-
 # 데이터 수집 구성
 
 *데이터 수집* 다이어그램의 단계에 따라 데이터 수집에 필요한 모든 작업이 올바른 순서로 실행되도록 하십시오.
@@ -81,11 +89,11 @@ ht-degree: 1%
 
 **판독값**
 
-* [엔티티 속성](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=ko){target=_blank}
+* [엔티티 속성](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html){target=_blank}
 
 **고려 사항**
 
-* 엔터티 특성을 전달하는 또 다른 방법은 [!DNL Target] UI에서 제품 카탈로그를 업데이트하여 [권장 사항 제품 피드](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html?lang=ko){target=_blank}를 사용하는 것입니다.
+* 엔터티 특성을 전달하는 또 다른 방법은 [!DNL Target] UI에서 제품 카탈로그를 업데이트하여 [권장 사항 제품 피드](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html){target=_blank}를 사용하는 것입니다.
 * 엔티티 속성 전달은 데이터 레이어에서 제품 카탈로그 데이터를 사용할 수 있는 페이지에만 적용할 수 있습니다.
 * 모든 호출에서 `entity.event.detailsOnly=true` 매개 변수를 전달하는 것이 우선됩니다.
 

@@ -1,30 +1,42 @@
 ---
 keywords: 개인 정보, ip 주소, 지리 특성, 옵트아웃, 옵트아웃, 옵트아웃, 데이터 개인 정보, 정부 규정, 규정, gdpr, ccpa, 개인 정보, 개인 정보, PII
-description: ' [!DNL Adobe Target] 이(가) IP 주소 수집 및 처리, PII 및 옵트아웃 지침을 포함하여 해당하는 데이터 개인정보 보호법을 준수하는 방법에 대해 알아봅니다.'
+description: '[!DNL Adobe Target]이(가) IP 주소 수집 및 처리, PII 및 옵트아웃 지침을 포함하여 해당하는 데이터 개인 정보 보호법을 준수하는 방법에 대해 알아봅니다.'
 title: Target은 PII를 포함한 개인 정보 보호 문제를 어떻게 처리합니까?
 feature: Privacy & Security
 exl-id: 4330e034-2483-4a25-9c87-48dbef6fc9de
-TQID: https://experienceleague.adobe.com/lEllQscRLJ1I-5mu3r2TyoxYfaOb2nLHVQzG9YnL0ig
+TQID: 'https://experienceleague.adobe.com/lEllQscRLJ1I-5mu3r2TyoxYfaOb2nLHVQzG9YnL0ig'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: f599e456-545c-47e5-8e50-b7dfe3579517
+    internal-label: Governance and control
+subfeature_v2:
+  - id: ee6498fb-34b1-4925-be4a-9ec7a38e8dab
+    internal-label: Privacy and security
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Privacy
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 814
-ht-degree: 43%
-
+source-wordcount: '820'
+ht-degree: 44%
 ---
-
 # 개인정보 보호
 
 [!DNL Adobe Target]은 사용자가 해당하는 데이터 개인정보 보호법을 준수하여 [!DNL Target]을 사용할 수 있도록 하는 프로세스 및 설정을 활성화했습니다.
@@ -57,7 +69,7 @@ Adobe은 사용자가 Adobe [!DNL Target]에 대해 활성화할 수 있는 &quo
 
 [!DNL Platform Web SDK]&#x200B;(버전 23.4 이상)을 사용하는 경우 데이터스트림 수준의 IP 난독화 설정이 [!DNL Target]에 설정된 IP 난독화 옵션보다 우선합니다. 예를 들어 데이터스트림 수준 IP 난독화 옵션이 [!UICONTROL 전체]&#x200B;(으)로 설정되어 있고 [!DNL Target] IP 난독화 옵션이 [!UICONTROL 마지막 옥텟 난독화]&#x200B;(으)로 설정되어 있으면 [!DNL Target]이(가) 완전히 난독화된 IP를 받습니다.
 
-자세한 내용은 *[!DNL Adobe Experience Platfrom]Datastreams 안내서*&#x200B;에서 [데이터스트림 구성](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ko){target=_blank}의 [!UICONTROL IP 난독화]를 참조하십시오.
+자세한 내용은 *[!DNL Adobe Experience Platfrom]Datastreams 안내서*&#x200B;에서 [데이터스트림 구성](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html){target=_blank}의 [!UICONTROL IP 난독화]를 참조하십시오.
 
 ## 지리 특성
 

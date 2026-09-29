@@ -4,18 +4,21 @@ description: Adobe Target 게재 API 개요
 keywords: 배달 api
 exl-id: e760bddc-b1ae-4b7b-bff2-aba81c6b6d34
 feature: APIs/SDKs
-TQID: https://experienceleague.adobe.com/gPXGax6ccvZZPklT3jnZbqyOj3mCClEfSpdufAFPtSs
+TQID: 'https://experienceleague.adobe.com/gPXGax6ccvZZPklT3jnZbqyOj3mCClEfSpdufAFPtSs'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: b6b447ccb88925a8efb6ff6a80ae475c8780dbc8
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 244
+source-wordcount: '244'
 ht-degree: 0%
-
 ---
-
 # 게재 API 개요
 
 [!DNL Adobe Target Delivery API]은(는) REST를 기반으로 합니다. 이 설명서에서는 [!DNL Adobe Target] [!DNL Delivery API]을(를) 구성하는 리소스에 대해 설명합니다. HTTP 메서드는 이러한 리소스에서 작업을 실행하는 데 사용됩니다.

@@ -1,20 +1,23 @@
 ---
-title: ' [!DNL Adobe Target] Java SDK에서 이벤트 구독'
+title: '[!DNL Adobe Target] Java SDK의 이벤트 구독'
 description: '[!UICONTROL OnDeviceDecisioningHandler] 개체를 사용하여 Java SDK 내에서 발생하는 다양한 이벤트를 구독하는 방법을 알아봅니다.'
 feature: APIs/SDKs
 exl-id: f2d56762-6bf7-4c6b-9c14-fb20e5cfd60d
-TQID: https://experienceleague.adobe.com/x3aig-jM-GXzmLNcUNclZUK9Y49tuSF9-sdkxzJFtiM
+TQID: 'https://experienceleague.adobe.com/x3aig-jM-GXzmLNcUNclZUK9Y49tuSF9-sdkxzJFtiM'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 144
+source-wordcount: '145'
 ht-degree: 4%
-
 ---
-
 # SDK 이벤트(Java)
 
 ## 설명

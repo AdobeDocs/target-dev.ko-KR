@@ -3,29 +3,44 @@ title: Adobe 모델 API 개요
 description: 사용자가 기능을 기계 학습 모델에 포함하지 않도록 차단하는 데 사용할 수 있는 모델 API의 개요입니다.
 exl-id: e34b9b03-670b-4f7c-a94e-0c3cb711d8e4
 feature: APIs/SDKs, Recommendations, Administration & Configuration
-TQID: https://experienceleague.adobe.com/1Q28459Ct9BcEynSmD6oBPnGaEY2Hgnp9frKhWB4M-Q
+TQID: 'https://experienceleague.adobe.com/1Q28459Ct9BcEynSmD6oBPnGaEY2Hgnp9frKhWB4M-Q'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
+  - id: dfc8a233-f2b5-4811-bf63-b4262aebc5a5
+    internal-label: Administration and configuration
+  - id: f69bc5f1-ebdb-4306-a281-f2e77daf734c
+    internal-label: Activities and tests
+subfeature_v2:
+  - id: ed58f4a1-16eb-4c8c-b505-be9da766a9ec
+    internal-label: Recommendations
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Administration
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 1321
+source-wordcount: '1321'
 ht-degree: 2%
-
 ---
-
 # 모델 API 개요
 
 차단 목록에 추가하다 API라고도 하는 모델 API를 사용하면 사용자가 [!UICONTROL AP(Automated Personalization]) 및 [!DNL Auto-Target]&#x200B;(AT) 활동을 위한 머신 러닝 모델에 사용되는 기능 목록을 보고 관리할 수 있습니다. AP 또는 AT 활동용 모델에서 기능을 사용하지 않으려면 모델 API를 사용하여 해당 기능을 &quot;사용자 차단 목록&quot;에 추가할 수 있습니다.
 
-**[!UICONTROL 차단 목록]**&#x200B;은(는) 기계 학습 모델에서 [!DNL Adobe Target]에 의해 제외되는 기능 집합을 정의합니다. 기능에 대한 자세한 내용은 [사용한 데이터 [!DNL Target] 머신 러닝 알고리즘](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/ap-data.html?lang=ko)을 참조하십시오.
+**[!UICONTROL 차단 목록]**&#x200B;은(는) 기계 학습 모델에서 [!DNL Adobe Target]에 의해 제외되는 기능 집합을 정의합니다. 기능에 대한 자세한 내용은 [사용한 데이터 [!DNL Target] 머신 러닝 알고리즘](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/ap-data.html)을 참조하십시오.
 
 차단 목록은 활동(활동 수준)별로 정의되거나 [!DNL Target] 계정(전역 수준) 내의 모든 활동에 대해 정의될 수 있습니다.
 
@@ -111,7 +126,7 @@ GET https://mc.adobe.io/<tenant>/target/models/features/<campaignId>
 >
 >활동의 활동 ID를 찾으려면 [!DNL Target] UI에서 활동 목록으로 이동합니다. 관심 있는 활동을 클릭합니다. 활동 ID는 결과 활동 개요 페이지의 본문과 해당 페이지의 URL 끝에 표시됩니다.
 
-**[!UICONTROL externalName]**&#x200B;은(는) 사용자에게 친숙한 기능 이름입니다. 이 값은 [!DNL Target]에 의해 만들어지며 시간이 지남에 따라 변경될 수 있습니다. 사용자는 [Personalization 인사이트 보고서](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html?lang=ko)에서 사용자에게 친숙한 이러한 이름을 볼 수 있습니다.
+**[!UICONTROL externalName]**&#x200B;은(는) 사용자에게 친숙한 기능 이름입니다. 이 값은 [!DNL Target]에 의해 만들어지며 시간이 지남에 따라 변경될 수 있습니다. 사용자는 [Personalization 인사이트 보고서](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html)에서 사용자에게 친숙한 이러한 이름을 볼 수 있습니다.
 
 **[!UICONTROL internalName]**&#x200B;은(는) 기능의 실제 식별자입니다. 또한 [!DNL Target]에 의해 만들어졌지만 변경할 수 없습니다. 이 값은 차단 목록에 추가하다와 같은 기능을 식별하기 위해 참조해야 하는 값입니다.
 

@@ -4,23 +4,28 @@ description: '[!UICONTROL Adobe Target 배달 API]를 사용하는 방법'
 keywords: 배달 api
 exl-id: 142ec3be-b017-4cdc-9079-b1cc173a710a
 feature: APIs/SDKs
-TQID: https://experienceleague.adobe.com/DC-YVq6VfAaqMU1utmIMw73gzp4PIJgQjaS0a8FQEO4
+TQID: 'https://experienceleague.adobe.com/DC-YVq6VfAaqMU1utmIMw73gzp4PIJgQjaS0a8FQEO4'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: b6b447ccb88925a8efb6ff6a80ae475c8780dbc8
+    internal-label: Administration
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 180
+source-wordcount: '180'
 ht-degree: 0%
-
 ---
-
 # [!UICONTROL Adobe Target 배달 API] 시작
 
 >[!IMPORTANT]
@@ -63,6 +68,6 @@ curl -X POST \
 
 [!UICONTROL Target 배달 API]를 호출하기 전에 다음 단계에 따라 응답에 관련 경험이 포함되어 있는지 확인하여 최종 사용자에게 표시할 수 있습니다.
 
-1. [양식 기반 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=ko) 또는 [시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=ko)를 사용하여 [!DNL Target] 활동(A/B, XT, AP 또는 권장 사항)을 만듭니다.
+1. [양식 기반 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=en) 또는 [시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html)를 사용하여 [!DNL Target] 활동(A/B, XT, AP 또는 권장 사항)을 만듭니다.
 1. 배달 API를 사용하여 2단계에서 만든 [!DNL Target] 활동에 사용된 mbox에 대한 응답을 가져옵니다.
 1. 방문자에게 경험을 선물합니다.

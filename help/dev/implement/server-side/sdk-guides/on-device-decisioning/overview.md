@@ -1,34 +1,47 @@
 ---
 keywords: 서버측, 서버측, sdk, sdk, sdk, 온디바이스, 의사 결정, 온디바이스, 온디바이스, 제로 지연, 지연, 거의 제로, node.js, server side3
-description: '[!UICONTROL [!UICONTROL on-device decisioning]]을(를) 사용하여 서버에  [!DNL Target] A/B 및 MVT 활동을 캐시하여 거의 0에 가까운 대기 시간에 메모리 내 의사 결정을 수행하는 방법에 대해 알아봅니다.'
+description: '[!UICONTROL [!UICONTROL 디바이스에서 의사 결정]]을(를) 사용하여 [!DNL Target] A/B 및 MVT 활동을 서버에 캐시하여 거의 0에 가까운 대기 시간에 메모리 내 의사 결정을 수행하는 방법에 대해 알아봅니다.'
 title: 온디바이스 의사 결정이란 무엇입니까?
 feature: Implement Server-side
 exl-id: 22ed3072-56f0-4075-9d1a-d642afe3b649
-TQID: https://experienceleague.adobe.com/-HHGn3lG5fOh2GLXQ6jOLRQmX7H24lN-2fseOg4y5H4
+TQID: 'https://experienceleague.adobe.com/-HHGn3lG5fOh2GLXQ6jOLRQmX7H24lN-2fseOg4y5H4'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a8a69496-b9ae-554a-b68e-e92a87809fc5
+    internal-label: Implement Server-side
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Administration
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 1349
+source-wordcount: '1349'
 ht-degree: 8%
-
 ---
-
 # 온디바이스 의사 결정 개요
 
 차세대 [!DNL Adobe Target] SDK는 이제 [!DNL Adobe Target]의 Edge Network에 대한 네트워크 요청을 차단하지 않고, 서버에서 A/B 및 Experience Targeting(XT) 캠페인을 캐시하고 거의 0에 가까운 대기 시간에 메모리 내 결정을 수행하는 기능을 제공하는 [!UICONTROL 온디바이스 의사 결정]을 제공합니다.
@@ -60,7 +73,7 @@ ht-degree: 8%
 
 ### 활동
 
-디바이스에서 의사 결정은 [양식 기반 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=ko)에서 만든 다음 활동 유형을 지원합니다.
+디바이스에서 의사 결정은 [양식 기반 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html)에서 만든 다음 활동 유형을 지원합니다.
 
 * [!UICONTROL A/B 테스트]
 * [!UICONTROL 경험 타기팅] (XT)
@@ -77,17 +90,17 @@ ht-degree: 8%
 
 | 대상 규칙 | 온디바이스 의사 결정 |
 | --- | --- |
-| [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html?lang=ko) | 예<P>온디바이스 의사 결정을 사용할 때 지원되는 지역 속성은 다음과 같습니다.<ul><li>국가/지역</li><li>구/군/시</li><li>위도</li><li>경도</li></ul> |
-| [네트워크](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html?lang=ko) | 아니요 |
-| [모바일](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html?lang=ko) | 아니요 |
-| [사용자 지정 매개 변수](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html?lang=ko) | 예 |
-| [운영 체제](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html?lang=ko) | 예 |
-| [사이트 페이지](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html?lang=ko) | 예 |
-| [브라우저](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=ko) | 예 |
-| [방문자 프로필](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=ko) | 아니요 |
-| [트래픽 소스](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=ko) | 아니요 |
-| [시간대](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html?lang=ko) | 예 |
-| [Experience Cloud 대상](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=ko)&#x200B;(Adobe Audience Manager, Adobe Analytics 및 Adobe Experience Manager의 대상) | 아니요 |
+| [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | 예<P>온디바이스 의사 결정을 사용할 때 지원되는 지역 속성은 다음과 같습니다.<ul><li>국가/지역</li><li>구/군/시</li><li>위도</li><li>경도</li></ul> |
+| [네트워크](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html) | 아니요 |
+| [모바일](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) | 아니요 |
+| [사용자 지정 매개 변수](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) | 예 |
+| [운영 체제](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html) | 예 |
+| [사이트 페이지](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html) | 예 |
+| [브라우저](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html) | 예 |
+| [방문자 프로필](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html) | 아니요 |
+| [트래픽 소스](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) | 아니요 |
+| [시간대](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | 예 |
+| [Experience Cloud 대상](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html)&#x200B;(Adobe Audience Manager, Adobe Analytics 및 Adobe Experience Manager의 대상 | 아니요 |
 
 ## [!UICONTROL 온디바이스 의사 결정]을 사용하도록 클라이언트를 프로비저닝하려면 어떻게 합니까?
 

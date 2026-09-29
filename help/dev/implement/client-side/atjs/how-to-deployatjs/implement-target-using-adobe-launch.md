@@ -1,44 +1,51 @@
 ---
 keywords: 구현, 구현, 구현, adobe launch, launch, 경쟁, 리디렉션, experience platform launch, platform launch, 태그, adobe platform, 구현2
-description: Target을 구현하는 기본 방법인  [!DNL Adobe Experience Platform]을(를) 사용하여  [!DNL Adobe Target] at.js 라이브러리를 구현하는 방법을 알아봅니다.
-title: ' [!DNL Adobe Experience Platform]을(를) 사용하여  [!DNL Target] 을(를) 구현하려면 어떻게 합니까?'
+description: Target을 구현하는 기본 방법인 [!DNL Adobe Experience Platform]을(를) 사용하여 [!DNL Adobe Target] at.js 라이브러리를 구현하는 방법을 알아봅니다.
+title: '[!DNL Adobe Experience Platform]을(를) 사용하여 [!DNL Target]을(를) 구현하려면 어떻게 합니까?'
 feature: Implement Server-side
 exl-id: 0a325871-194a-479c-a3bf-294e3dde3e9a
-TQID: https://experienceleague.adobe.com/5dXJlXYYvlu5sskrNED2j55SNmeggtWTb1jLgXRXAEo
+TQID: 'https://experienceleague.adobe.com/5dXJlXYYvlu5sskrNED2j55SNmeggtWTb1jLgXRXAEo'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a8a69496-b9ae-554a-b68e-e92a87809fc5
+    internal-label: Implement Server-side
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: ca4254966a337a0215d66bd28506128b9751d0e0
+    internal-label: Data collection
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 446
+source-wordcount: '448'
 ht-degree: 4%
-
 ---
-
 # [!DNL Adobe Experience Platform]을(를) 사용하여 [!DNL Target] 구현
 
 [!DNL Adobe Experience Platform]의 태그는 [!DNL Adobe]의 차세대 태그 관리 기능입니다. 태그는 관련 고객 환경을 향상하는 데 필요한 분석, 마케팅 및 광고 태그를 배포하고 관리하는 간단한 방법을 고객에게 제공합니다.
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch이 [!DNL Adobe Experience Platform]에서 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과 제품 설명서에 몇 가지 용어 변경 사항이 적용되었습니다. 용어 변경에 대한 통합 참고 자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ko&)를 참조하십시오.
+>Adobe Experience Platform Launch이 [!DNL Adobe Experience Platform]에서 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과 제품 설명서에 몇 가지 용어 변경 사항이 적용되었습니다. 용어 변경에 대한 통합 참고 자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?)를 참조하십시오.
 
 다음 표에는 자세한 정보를 얻을 수 있는 다양한 소스가 나열되어 있습니다.
 
 | 리소스 | 세부 사항 |
 |--- |--- |
-| [Adobe Target 추가](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/target.html?lang=ko#implement-solutions) | 이 자습서에서는 [!DNL Adobe Experience Platform]의 태그를 사용하여 웹 사이트에서 [!DNL Target]을(를) 구현하는 단계별 지침을 제공합니다. 다뤄지는 주제에는 at.js JavaScript 라이브러리 추가, 글로벌 mbox 실행, 매개 변수 추가 및 다른 솔루션과의 통합이 있습니다. 이 문서는 Adobe Experience Platform 및 기타 Adobe Experience Cloud 솔루션을 구현하는 방법을 보여 주는 대규모 튜토리얼의 일부입니다. |
-| [빠른 시작 안내서](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=ko) | 관련 고객 환경을 향상하는 데 필요한 분석, 마케팅 및 광고 태그를 배포하고 관리하는 방법에 대한 정보입니다. |
-| [Adobe [!DNL Target] 확장 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=ko) | [!DNL Adobe Experience Platform]을(를) 사용하여 [!DNL Target]을(를) 구현하는 방법에 대한 정보입니다. |
+| [Adobe Target 추가](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/target.html#implement-solutions) | 이 자습서에서는 [!DNL Adobe Experience Platform]의 태그를 사용하여 웹 사이트에서 [!DNL Target]을(를) 구현하는 단계별 지침을 제공합니다. 다뤄지는 주제에는 at.js JavaScript 라이브러리 추가, 글로벌 mbox 실행, 매개 변수 추가 및 다른 솔루션과의 통합이 있습니다. 이 문서는 Adobe Experience Platform 및 기타 Adobe Experience Cloud 솔루션을 구현하는 방법을 보여 주는 대규모 튜토리얼의 일부입니다. |
+| [빠른 시작 안내서](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html) | 관련 고객 환경을 향상하는 데 필요한 분석, 마케팅 및 광고 태그를 배포하고 관리하는 방법에 대한 정보입니다. |
+| [Adobe [!DNL Target] 확장 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html) | [!DNL Adobe Experience Platform]을(를) 사용하여 [!DNL Target]을(를) 구현하는 방법에 대한 정보입니다. |
 
 ## [!DNL Target] 확장을 사용하여 at.js를 구현하는 이점
 

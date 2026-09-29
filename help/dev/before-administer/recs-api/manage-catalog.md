@@ -3,23 +3,34 @@ title: API를 사용하여 Recommendations 카탈로그를 관리하는 방법
 description: Adobe Target API를 사용하여 Recommendations 카탈로그에서 엔티티를 만들고, 업데이트하고, 저장하고, 가져오고, 삭제하는 데 필요한 단계입니다.
 feature: APIs/SDKs, Recommendations, Administration & Configuration
 kt: 3815
-thumbnail: null
+thumbnail:
 author: Judy Kim
 exl-id: aea82607-cde4-456a-8dfb-2967badce455
-TQID: https://experienceleague.adobe.com/9uKu-mX9xzz-sG4-peyfzrwogo27nF8TZ4zFXBi6TaU
+TQID: 'https://experienceleague.adobe.com/9uKu-mX9xzz-sG4-peyfzrwogo27nF8TZ4zFXBi6TaU'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
+  - id: dfc8a233-f2b5-4811-bf63-b4262aebc5a5
+    internal-label: Administration and configuration
+  - id: f69bc5f1-ebdb-4306-a281-f2e77daf734c
+    internal-label: Activities and tests
+subfeature_v2:
+  - id: ed58f4a1-16eb-4c8c-b505-be9da766a9ec
+    internal-label: Recommendations
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0fe52344f654f22d1ff7aaace0ba5a99e92d036d
+    internal-label: Administration
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 930
+source-wordcount: '930'
 ht-degree: 0%
-
 ---
-
 # API를 사용하여 권장 사항 카탈로그 관리
 
 Recommendations API를 사용하기 위한 [요구 사항](/help/dev/before-administer/recs-api/overview.md#prerequisites)을(를) 충족하는 동안 [Adobe Developer Console](https://developer.adobe.com/console/home)에서 [!DNL Adobe Target] 관리 API를 사용하기 위해 JWT 인증 흐름을 사용하여 [액세스 토큰을 생성](/help/dev/before-administer/configure-authentication.md)하는 방법을 배웠습니다.
@@ -150,13 +161,13 @@ GET https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities/[entity.id]
 1. 요청을 보냅니다.
 
    ![GetEntity3](assets/GetEntity3.png)
-위의 예에서 보듯이 엔티티를 찾을 수 없다는 오류 메시지가 표시되면 요청을 올바른 Target 환경에 제출하고 있는지 확인합니다.
+   위의 예에서 보듯이 엔티티를 찾을 수 없다는 오류 메시지가 표시되면 요청을 올바른 Target 환경에 제출하고 있는지 확인합니다.
 
 
 
    >[!NOTE]
    >
-   >환경이 명시적으로 지정되지 않은 경우 엔터티 가져오기는 [기본 환경](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=ko)에서만 엔터티를 가져옵니다. 기본 환경이 아닌 다른 환경에서 가져오려면 환경 ID를 지정해야 합니다.
+   >환경이 명시적으로 지정되지 않은 경우 엔터티 가져오기는 [기본 환경](https://experienceleague.adobe.com/docs/target/using/administer/environments.html)에서만 엔터티를 가져옵니다. 기본 환경이 아닌 다른 환경에서 가져오려면 환경 ID를 지정해야 합니다.
 
 1. 필요한 경우 `environmentId` 매개 변수를 추가하고 요청을 다시 보냅니다.
 

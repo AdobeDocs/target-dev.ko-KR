@@ -5,26 +5,36 @@ feature: APIs/SDKs
 level: Experienced
 role: Developer
 exl-id: 7cf0c70b-a4bc-46f4-9b33-099bdb7dd9a9
-TQID: https://experienceleague.adobe.com/uHFbc8JEhjjGYIulJUvhkH7cXXht6Rht9rY43HjuNqg
+TQID: 'https://experienceleague.adobe.com/uHFbc8JEhjjGYIulJUvhkH7cXXht6Rht9rY43HjuNqg'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Data collection
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 1144
+source-wordcount: '1144'
 ht-degree: 3%
-
 ---
-
 # 경험 렌더링
 
 경험을 렌더링하는 데 필요한 모든 작업이 올바른 순서로 실행되도록 하려면 *경험 렌더링* 다이어그램의 단계를 따르십시오.
@@ -71,8 +81,8 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL �
 **사용 가능한 옵션**
 
 * ID별 프로모션
-* [컬렉션별 홍보](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/collections.html?lang=ko){target=_blank}
-* [속성별 프로모션](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=ko){target=_blank}
+* [컬렉션별 홍보](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/collections.html){target=_blank}
+* [속성별 프로모션](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html){target=_blank}
 
 **필요한 엔터티 매개 변수**
 
@@ -80,7 +90,7 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL �
 
 **판독값**
 
-* [프로모션 추가](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/adding-promotions.html?lang=ko){target=_blank}
+* [프로모션 추가](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/adding-promotions.html){target=_blank}
 
 +++
 
@@ -104,7 +114,7 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL �
 
 **판독값**
 
-* [장바구니 기반](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=ko#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [장바구니 기반](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -133,7 +143,7 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL �
 
 **판독값**
 
-* [인기도 기반](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=ko#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [인기도 기반](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -159,7 +169,7 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL �
 
 **판독값**
 
-* [항목 기반](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=ko#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [항목 기반](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -182,7 +192,7 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL �
 
 **판독값**
 
-* [사용자 기반](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=ko#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [사용자 기반](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -204,7 +214,7 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL �
 
 **판독값**
 
-* [사용자 지정 기준](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=ko#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [사용자 지정 기준](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -216,7 +226,7 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL �
 
 **판독값**
 
-* [동적 및 정적 포함 규칙 사용](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/dynamic-static/use-dynamic-and-static-inclusion-rules.html?lang=ko){target=_blank}
+* [동적 및 정적 포함 규칙 사용](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/dynamic-static/use-dynamic-and-static-inclusion-rules.html){target=_blank}
 
 +++
 
@@ -230,7 +240,7 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL �
 
 **판독값**
 
-* [엔티티를 동적으로 제외할 수 있습니까?](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/recommendations-faq.html?lang=ko#exclude){target=_blank}
+* [엔티티를 동적으로 제외할 수 있습니까?](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/recommendations-faq.html?lang=en#exclude){target=_blank}
 
 +++
 
@@ -242,9 +252,9 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL �
 
 **판독값**
 
-* [엔티티 속성](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=ko){target=_blank}
+* [엔티티 속성](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html){target=_blank}
 
-[!DNL Target] UI를 사용하여 [제품 피드](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html?lang=ko){target=_blank}를 만들어 [!DNL Recommendations]에 대한 제품 카탈로그를 업데이트하여 이 단계를 수행할 수도 있습니다.
+[!DNL Target] UI를 사용하여 [제품 피드](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html){target=_blank}를 만들어 [!DNL Recommendations]에 대한 제품 카탈로그를 업데이트하여 이 단계를 수행할 수도 있습니다.
 
 +++
 
@@ -258,7 +268,7 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL �
 
 **판독값**
 
-* [프로필 속성](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=ko){target=_blank}
+* [프로필 속성](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html){target=_blank}
 
 +++
 
@@ -266,7 +276,7 @@ at.js에서 사용할 수 있는 자동 기본 플리커 처리는 [!UICONTROL �
 
 ## 3.11: 페이지 로드 요청 실행 {#fire}
 
-이 단계는 요청에서 `execute` > `pageLoad` 페이로드로 [!DNL Delivery API] 호출을 트리거합니다. `getOffers()` 메서드는 경험을 가져오고 `applyOffers()`은(는) 페이지에서 경험을 렌더링합니다. [시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=ko){target=_blank}(VEC)에서 작성된 경험을 렌더링하려면 `pageLoad` 요청이 필요합니다.
+이 단계는 요청에서 `execute` > `pageLoad` 페이로드로 [!DNL Delivery API] 호출을 트리거합니다. `getOffers()` 메서드는 경험을 가져오고 `applyOffers()`은(는) 페이지에서 경험을 렌더링합니다. [시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html){target=_blank}(VEC)에서 작성된 경험을 렌더링하려면 `pageLoad` 요청이 필요합니다.
 
 +++세부 정보 보기
 

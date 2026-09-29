@@ -1,29 +1,38 @@
 ---
-keywords: 쿠키, 쿠키, 쿠키 삭제, 삭제 [!DNL Target] cookie, google chrome, chrome, mozilla firefox, firefox, microsoft edge, safari, cookie1
-description: 환경을 확인할 수 있도록  [!DNL Target] 브라우저 쿠키를 삭제하는 방법을 알아봅니다.
-title: ' [!DNL Target] 쿠키를 삭제하려면 어떻게 해야 합니까?'
+keywords: 쿠키, 쿠키, 쿠키 삭제, [!DNL Target] 쿠키 삭제, google chrome, chrome, mozilla firefox, firefox, microsoft edge, safari, cookie1
+description: 환경을 확인할 수 있도록 [!DNL Target] 브라우저 쿠키를 삭제하는 방법을 알아봅니다.
+title: '[!DNL Target] 쿠키를 삭제하려면 어떻게 합니까?'
 feature: Privacy & Security
 exl-id: c975c47f-8d81-4abe-aa89-f65275a73002
-TQID: https://experienceleague.adobe.com/t4ieDzmphu8NHTM9eGnaZMoeXk-Y1G05E4K6spdSs6Y
+TQID: 'https://experienceleague.adobe.com/t4ieDzmphu8NHTM9eGnaZMoeXk-Y1G05E4K6spdSs6Y'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: f599e456-545c-47e5-8e50-b7dfe3579517
+    internal-label: Governance and control
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
+  - id: ee6498fb-34b1-4925-be4a-9ec7a38e8dab
+    internal-label: Privacy and security
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Privacy
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 424
+source-wordcount: '427'
 ht-degree: 1%
-
 ---
-
 # [!DNL Target] 쿠키 삭제
 
 테스트 중에 모든 경험의 유효성을 검사할 수 있도록 [!DNL Adobe Target] 브라우저 쿠키(mbox)를 삭제할 수 있습니다.
@@ -52,7 +61,7 @@ ht-degree: 1%
 
 1. **[!UICONTROL Firefox]** 메뉴 > **[!UICONTROL 환경 설정]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 개인 정보 및 보안]** 탭을 클릭합니다.
-1. **&#x200B;쿠키 및 사이트 데이터*에서 &#x200B;** [!UICONTROL 데이터 관리]**&#x200B;를 클릭합니다.
+1. **&#x200B;쿠키 및 사이트 데이터*에서 **[!UICONTROL 데이터 관리]**&#x200B;를 클릭합니다.
 1. `adobe.com` 사이트를 선택한 다음 **[!UICONTROL 선택한 항목 제거]**&#x200B;를 클릭합니다.
 
 >[!WARNING]

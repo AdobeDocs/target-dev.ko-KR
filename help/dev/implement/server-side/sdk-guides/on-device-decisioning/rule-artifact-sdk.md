@@ -1,25 +1,30 @@
 ---
 title: 온디바이스 의사 결정 규칙 아티팩트 자동 다운로드, 저장 및 업데이트
-description: ' [!DNL Adobe Target] SDK을 초기화하는 동안 온디바이스 의사 결정 규칙 아티팩트로 작업하는 방법에 대해 알아봅니다.'
+description: '[!DNL Adobe Target] SDK을 초기화하는 동안 온디바이스 의사 결정 규칙 아티팩트로 작업하는 방법에 대해 알아봅니다.'
 feature: APIs/SDKs
 exl-id: be41a723-616f-4aa3-9a38-8143438bd18a
-TQID: https://experienceleague.adobe.com/o4oNaCtd3PS1cDndSJHkI10pDke1DTaEnBn8u9pIQk8
+TQID: 'https://experienceleague.adobe.com/o4oNaCtd3PS1cDndSJHkI10pDke1DTaEnBn8u9pIQk8'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 7a5aae2510a014c6efaeee63080cde3e7746f91c
+    internal-label: Administration
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 352
+source-wordcount: '353'
 ht-degree: 0%
-
 ---
-
 # [!DNL Adobe Target] SDK을 통해 규칙 아티팩트를 자동으로 다운로드, 저장 및 업데이트합니다.
 
 이 방법은 웹 서버를 초기화하고 시작할 때 [!DNL Adobe Target] SDK을 초기화할 수 있는 경우에 가장 적합합니다. [!DNL Adobe Target] SDK에서 규칙 아티팩트를 다운로드하고 웹 서버 응용 프로그램이 요청을 제공하기 전에 메모리에 캐시합니다. 웹 응용 프로그램이 실행되고 나면 메모리 내 규칙 아티팩트를 사용하여 모든 [!DNL Adobe Target] 결정이 실행됩니다. 캐시된 규칙 아티팩트는 SDK 초기화 단계 동안 지정한 `pollingInterval`을(를) 기반으로 업데이트됩니다.

@@ -1,31 +1,42 @@
 ---
 keywords: tls, tls 1.0, 전송 계층 보안, 암호화, tls 1.1, tls 1.2
-description: ' [!DNL Target] TLS(전송 계층 보안) 프로토콜을 사용하여 가장 높은 보안 표준을 유지하고 고객 데이터의 안전을 강화하는 방법에 대해 알아봅니다.'
-title: ' [!DNL Target] TLS를 사용하여 보안을 제공하는 방법'
+description: '[!DNL Target]이(가) TLS(전송 계층 보안) 프로토콜을 사용하여 가장 높은 보안 표준을 유지하고 고객 데이터의 안전을 강화하는 방법에 대해 알아봅니다.'
+title: '[!DNL Target]이(가) TLS를 사용하여 보안을 제공하는 방법'
 feature: Privacy & Security
 exl-id: f5ea2272-27ab-49c9-b096-b15dd277d4e5
-TQID: https://experienceleague.adobe.com/2Ka08Kp8jLd6u7-gtwbfU1rq7SGDxE-dwBTHWz1mS3E
+TQID: 'https://experienceleague.adobe.com/2Ka08Kp8jLd6u7-gtwbfU1rq7SGDxE-dwBTHWz1mS3E'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: f599e456-545c-47e5-8e50-b7dfe3579517
+    internal-label: Governance and control
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
+  - id: ee6498fb-34b1-4925-be4a-9ec7a38e8dab
+    internal-label: Privacy and security
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Privacy
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 1231
+source-wordcount: '1233'
 ht-degree: 39%
-
 ---
-
 # TLS(전송 계층 보안) 암호화 변경 사항
 
 [!DNL Adobe] 및 [!DNL Adobe Target]이(가) TLS(전송 계층 보안)를 사용하여 가장 높은 보안 표준을 유지하고 고객 데이터의 안전을 강화하는 방법에 대한 변경 사항에 대한 정보입니다.
@@ -44,7 +55,7 @@ TLS(전송 계층 보안)는 네트워크를 통해 데이터를 안전하게 �
 
 Adobe은 고객을 TLS 1.2로 단계적으로 이전할 예정입니다. 도메인이 이미 1.2를 준수하는 도메인의 경우 필요한 변경 사항 없이 TLS 1.2로 이동합니다. 대부분의 고객 도메인은 이미 TLS 1.2를 지원합니다. 그러나 도메인이 TLS 1.2를 지원하지 않는 경우에는 오늘처럼(2020년 3월까지) 해당 도메인을 TLS 1.1에 유지합니다.
 
-이 마이그레이션 단계 중에는 문제가 발생하지 않아야 합니다. VEC가 이전에 작동했던 사이트 로드를 중지한 경우 가능한 원인으로 이 마이그레이션을 인용하여 [Client Care 티켓을 여십시오](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=ko&#reference_ACA3391A00EF467B87930A450050077C).
+이 마이그레이션 단계 중에는 문제가 발생하지 않아야 합니다. VEC가 이전에 작동했던 사이트 로드를 중지한 경우 가능한 원인으로 이 마이그레이션을 인용하여 [Client Care 티켓을 여십시오](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C).
 
 그러나 TLS 1.2를 지원하지 않고 TSL 1.1을 사용하는 고객 중 한 명이라면 도메인/인프라를 TLS 1.2로 이동할 계획을 세워야 합니다. TLS 1.1 프로토콜은 2020년 3월 1일까지 계속 지원할 예정입니다. 2020년 3월 1일부터 [!DNL Target]은(는) 향상된 Experience Composer 기능을 통해 VEC에 사용할 TLS 1.1 프로토콜을 지원하지 않습니다.
 

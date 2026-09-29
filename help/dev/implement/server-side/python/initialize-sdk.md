@@ -1,20 +1,23 @@
 ---
 title: create 메서드를 사용하여 Python SDK 초기화
-description: create 메서드를 사용하여 Python SDK을 초기화하고 [!UICONTROL TargetClient]를 인스턴스화하여 실험 및 개인화된 경험을 위해  [!DNL Adobe Target] 를 호출하는 방법에 대해 알아봅니다.
+description: create 메서드를 사용하여 Python SDK을 초기화하고 [!UICONTROL TargetClient]를 인스턴스화하여 실험 및 개인화된 경험을 위해 [!DNL Adobe Target]을(를) 호출하는 방법에 대해 알아봅니다.
 feature: APIs/SDKs
 exl-id: 3e231e8e-696d-45c7-b733-79bf99da5bec
-TQID: https://experienceleague.adobe.com/la4hiAeSKSTgV7-WPLuW-MudsVJAm3qbq1vT7rnzymQ
+TQID: 'https://experienceleague.adobe.com/la4hiAeSKSTgV7-WPLuW-MudsVJAm3qbq1vT7rnzymQ'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 287
+source-wordcount: '288'
 ht-degree: 16%
-
 ---
-
 # Python SDK 초기화
 
 설명

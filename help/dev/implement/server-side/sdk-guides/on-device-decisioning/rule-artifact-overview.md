@@ -1,31 +1,37 @@
 ---
 title: 온디바이스 의사 결정 규칙 아티팩트 이해
-description: ' [!DNL Adobe Target] [!UICONTROL 온디바이스 의사 결정] 활동의 JSON 표현인 규칙 아티팩트를 사용하는 방법을 알아봅니다.'
+description: '[!DNL Adobe Target] [!UICONTROL 온디바이스 의사 결정] 활동의 JSON 표현인 규칙 아티팩트를 사용하는 방법을 알아봅니다.'
 feature: APIs/SDKs
 exl-id: 3dfb08df-eaa9-43d4-b009-e5f64c3a96d7
-TQID: https://experienceleague.adobe.com/mPzCK-vBYFAQnslX-8FPsBaeSiYtyxjZv76anbpHWuE
+TQID: 'https://experienceleague.adobe.com/mPzCK-vBYFAQnslX-8FPsBaeSiYtyxjZv76anbpHWuE'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 86209eb483ca69d40615c632ba435d27fec78f36
+    internal-label: Administration
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 277
+source-wordcount: '278'
 ht-degree: 0%
-
 ---
-
 # 규칙 아티팩트 개요
 
 규칙 아티팩트는 [!DNL Adobe Target] [!UICONTROL 온디바이스 의사 결정] 활동에 대한 JSON 표현입니다. [!DNL Adobe Target]에서 생성한 다음 Akamai CDN으로 전파하여 최종 사용자가 가능한 한 가까운 곳에서 규칙 아티팩트를 사용할 수 있도록 합니다. 여기에는 활동을 정확하게 실행 및 전달하는 동시에 이벤트 추적을 통해 실시간 분석을 허용하는 메타데이터가 포함되어 있습니다. [!DNL Adobe Target] SDK는 규칙 아티팩트를 자동으로 관리할 수 있는 방식으로 구성할 수 있으며, 사용자 지정 시간 간격에 따라 다운로드하거나 업데이트할 수 있습니다. 또한 [Memcached](https://memcached.org/)와 같은 분산 메모리 캐싱 시스템을 사용하여 규칙 아티팩트의 로컬 복사본을 유지 관리하여 [!DNL Adobe Target] SDK을 초기화할 수 있으므로 상태 비저장 서버가 요청을 즉시 제공할 수 있습니다. 이러한 옵션에 대한 자세한 내용은 다음 안내서를 참조하십시오.
 
-* [&#x200B; [!DNL Adobe Target] SDK을 통해 규칙 아티팩트를 자동으로 다운로드, 저장 및 업데이트](rule-artifact-sdk.md)
+* [ [!DNL Adobe Target] SDK을 통해 규칙 아티팩트를 자동으로 다운로드, 저장 및 업데이트](rule-artifact-sdk.md)
 * [JSON 페이로드를 통해 규칙 아티팩트 다운로드, 저장 및 업데이트](rule-artifact-json.md)
 
 ## 규칙 아티팩트 예
