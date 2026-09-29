@@ -1,26 +1,32 @@
 ---
 title: 대상 타기팅
-description: 대상을 사용하여 실험 및 개인화 활동을 타깃팅할 수 있습니다. [!DNL Adobe Target] 무수한 강력한 대상 타깃팅 기능을 즉시 지원합니다.
+description: 대상을 사용하여 실험 및 개인화 활동을 타깃팅할 수 있습니다. [!DNL Adobe Target]은(는) 기본적으로 무수히 강력한 대상 타깃팅 기능을 지원합니다.
 exl-id: df1bd856-e848-452c-90a0-abf29e7a2313
 feature: Implement Server-side
-TQID: https://experienceleague.adobe.com/BmKrCmWIkEkNHiipZ-DqDlhzOT7bVmKHl9de5uXhJQU
+TQID: 'https://experienceleague.adobe.com/BmKrCmWIkEkNHiipZ-DqDlhzOT7bVmKHl9de5uXhJQU'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
+  - id: a8a69496-b9ae-554a-b68e-e92a87809fc5
+    internal-label: Implement Server-side
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Personalization
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 1069
+source-wordcount: '1070'
 ht-degree: 15%
-
 ---
-
 # 대상 타기팅
 
 ## 개요
@@ -47,8 +53,8 @@ ht-degree: 15%
 
 ### 지역
 
-자세한 내용은 [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html?lang=ko)을 참조하세요.
-&#x200B; &#x200B;
+자세한 내용은 [지역](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html?lang=ko)을 참조하십시오.
+&#x200B;&#x200B;
 * 국가/지역
 * 주/도
 * 구/군/시
@@ -218,7 +224,7 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 | [방문자 프로필](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=ko) | 아니요 |
 | [트래픽 소스](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=ko) | 아니요 |
 | [시간대](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html?lang=ko) | 예 |
-| [Experience Cloud 대상](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=ko)&#x200B;(Adobe Audience Manager, Adobe Analytics 및 Adobe Experience Manager의 대상) | 아니요 |
+| [Experience Cloud 대상](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=ko)&#x200B;(Adobe Audience Manager, Adobe Analytics 및 Adobe Experience Manager의 대상 | 아니요 |
 
 ### 온디바이스 의사 결정을 위한 지역 타기팅
 

@@ -1,20 +1,23 @@
 ---
-title: ' [!DNL Adobe Target] Java SDK에서 비동기 요청을 사용하는 방법'
-description: ' [!DNL Target] Java SDK이 효과적인 대상 시간을 0으로 줄일 수 있는 비동기 요청을 지원하는 방법에 대해 알아봅니다.'
+title: '[!DNL Adobe Target] Java SDK에서 비동기 요청을 사용하는 방법'
+description: '[!DNL Target] Java SDK이 효과적인 대상 시간을 0으로 줄일 수 있는 비동기 요청을 지원하는 방법에 대해 알아봅니다.'
 feature: APIs/SDKs
 exl-id: e11f8d16-76f6-4d39-822a-34a1cf7f623f
-TQID: https://experienceleague.adobe.com/Y9oTl8aU4-4HpMajdmy5KfvAwEFOpV0y9vUg7BdBRk8
+TQID: 'https://experienceleague.adobe.com/Y9oTl8aU4-4HpMajdmy5KfvAwEFOpV0y9vUg7BdBRk8'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 130
+source-wordcount: '132'
 ht-degree: 3%
-
 ---
-
 # 비동기 요청(Java)
 
 ## 설명

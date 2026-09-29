@@ -1,20 +1,23 @@
 ---
 title: 사용자 권한 및 속성
-description: ' [!DNL Target] SDK에는 사용자 권한 및 속성에 대한 지원이 포함되어 있습니다.'
+description: '[!DNL Target] SDK에는 사용자 권한 및 속성에 대한 지원이 포함되어 있습니다.'
 exl-id: 612faf1a-e8f9-4321-b831-90fba69ead3a
 feature: Implement Server-side
-TQID: https://experienceleague.adobe.com/4l6qKRuEw14xYjcEsY49-3AAjYl6gouoKWIjkNuchdI
+TQID: 'https://experienceleague.adobe.com/4l6qKRuEw14xYjcEsY49-3AAjYl6gouoKWIjkNuchdI'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a8a69496-b9ae-554a-b68e-e92a87809fc5
+    internal-label: Implement Server-side
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 123
+source-wordcount: '124'
 ht-degree: 8%
-
 ---
-
 # 사용자 권한 및 속성
 
 [!DNL Target] SDK에는 사용자 권한 및 속성에 대한 지원이 포함되어 있습니다. [!DNL Adobe Target]이(가) 작업 공간 및 속성을 통해 엔터프라이즈 권한을 처리하는 방법에 익숙하지 않다면 [엔터프라이즈 사용자 권한](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=ko-KR)에서 자세한 내용을 볼 수 있습니다.

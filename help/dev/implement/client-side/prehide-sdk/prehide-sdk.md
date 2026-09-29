@@ -3,7 +3,16 @@ keywords: SDK 미리 숨기기, 깜박임, 깜박임 방지, 사전 숨김, 사�
 description: '[!DNL Adobe Target] SDK 미리 숨김을 통합하여 페이지를 로드하는 동안 개인화되지 않은 콘텐츠(깜박임)를 제거하는 방법을 알아봅니다. SDK은 Adobe Alloy(웹 SDK) 및 at.js 모두에서 작동합니다.'
 title: SDK 통합 안내서 미리 숨기기
 feature: Implementation
-source-git-commit: 35ac4480ead5069169a2c55d35b43d3c1a81d78a
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
 source-wordcount: '1066'
 ht-degree: 1%

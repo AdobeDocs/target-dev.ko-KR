@@ -1,29 +1,38 @@
 ---
 keywords: 구현, 구현, 화이트 리스트, 화이트 리스트, 허용 목록, 에지, $9
-description: 호스트 목록을 확인하여 허용 목록에 추가하다 [!DNL Adobe Target] 에지(최종 사용자에게 최적의 응답 시간을 보장하는 지리적으로 분산된 노드)를 제공합니다.
-title: 허용 목록에 추가하다 [!DNL Target] Edge 노드는 어떻게 합니까?
+description: 호스트 목록을 확인하여 [!DNL Adobe Target] 에지(최종 사용자가 최적의 응답 시간을 확보할 수 있도록 지리적으로 분산된 노드)를 제공하는 데 도움이 됩니다.
+title: How Do I [!DNL Target] Edge 노드 허용 목록 방법
 feature: Privacy & Security
 exl-id: a7e5d2fc-da8e-414d-a3da-2441ea21503d
-TQID: https://experienceleague.adobe.com/-XCVJpuvQ1xV9vQBZbomDKU3F-60b5FS-LU8lIBp4GQ
+TQID: 'https://experienceleague.adobe.com/-XCVJpuvQ1xV9vQBZbomDKU3F-60b5FS-LU8lIBp4GQ'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: f599e456-545c-47e5-8e50-b7dfe3579517
+    internal-label: Governance and control
 subfeature_v2:
   - id: a94ced60-8199-4549-b453-ede2acb4101e
+    internal-label: Hybrid implementation
+  - id: ee6498fb-34b1-4925-be4a-9ec7a38e8dab
+    internal-label: Privacy and security
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Privacy
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 373
+source-wordcount: '375'
 ht-degree: 0%
-
 ---
-
 # [!DNL Target] 에지 노드 허용 목록
 
 [!DNL Adobe Target] 가장자리를 연결하는 데 도움이 되는 정보와 최신 호스트 목록입니다.

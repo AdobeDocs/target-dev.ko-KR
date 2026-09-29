@@ -4,13 +4,23 @@ description: Target 쿠키 동작(자사 쿠키, 자사 쿠키가 포함된 타�
 title: Target 쿠키에 대한 정보는 어디에서 찾을 수 있습니까?
 feature: at.js
 role: Developer
-source-git-commit: 39f390a0e5eedf8c6957333759d31d96ed11b321
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
 source-wordcount: '1688'
 ht-degree: 54%
-
 ---
-
 # Target 쿠키
 
 쿠키 동작은 퍼스트 파티 쿠키, 퍼스트 파티 쿠키가 포함된 타사 쿠키 또는 타사 쿠키만인지 여부에 따라 다릅니다.

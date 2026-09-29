@@ -4,18 +4,21 @@ description: Adobe Target 배달 API 및 SDK
 keywords: 배달 api
 exl-id: fc3996e6-8945-437c-9574-cc3f1a406f54
 feature: APIs/SDKs
-TQID: https://experienceleague.adobe.com/ctDEksYd-dwv5oe9QC1NMGsGUVoTdsxXDtoxg-ah2ks
+TQID: 'https://experienceleague.adobe.com/ctDEksYd-dwv5oe9QC1NMGsGUVoTdsxXDtoxg-ah2ks'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 929e1f10bc5dd0741f0fe28cd46435e680a4a308
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 265
+source-wordcount: '265'
 ht-degree: 9%
-
 ---
-
 # SDK
 
 [!DNL Adobe Target]은(는) [서버측 SDK](../../implement/server-side/server-side-overview.md)을(를) 제공하여 [!DNL Target Delivery API]과(와) 상호 작용하고 [!UICONTROL Adobe Analytics] 및 [!DNL Adobe Audience Manager]과(와) 같은 다른 [!DNL Adobe Experience Cloud] 솔루션과 [!UICONTROL Target] 통합을 쉽게 할 수 있도록 지원합니다.

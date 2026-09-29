@@ -1,15 +1,25 @@
 ---
-title: 개인화에  [!DNL Adobe Target] with [!DNL Web SDK] 을(를) 사용합니다.
-description: ' [!DNL Experience Platform Web SDK] 사용 [!DNL Adobe Target]을 통해 개인화된 콘텐츠를 렌더링하는 방법을 알아봅니다.'
+title: 개인화에 [!DNL Web SDK]과(와) 함께 [!DNL Adobe Target]을(를) 사용합니다.
+description: '[!DNL Adobe Target]을(를) 사용하여 [!DNL Experience Platform Web SDK]과(와) 함께 개인화된 콘텐츠를 렌더링하는 방법에 대해 알아봅니다.'
 feature: AEP Web SDK
 exl-id: 31c00779-20a8-4d18-9ee4-0430e5e9a84c
-source-git-commit: 925a150c06057f5830a1370eee65b5984f81a72d
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: b050e0cd-2ddd-42cd-a71b-5d9e1fdf75e0
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: a1f3c920-a3a8-4506-8067-53189547b5e6
+    internal-label: AEP Web SDK
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1563'
 ht-degree: 5%
-
 ---
-
 # 개인화에 [!DNL Adobe Target] 및 [!DNL Web SDK] 사용
 
 [!DNL Adobe Experience Platform] [!DNL Web SDK]은(는) [!DNL Adobe Target]에서 관리되는 개인화된 경험을 웹 채널에 전달하고 렌더링할 수 있습니다. VEC([시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=ko))라고 하는 WYSIWYG 편집기 또는 [양식 기반 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=ko))를 사용하여 활동 및 개인화 경험을 만들고, 활성화하고, 전달할 수 있습니다.

@@ -1,25 +1,29 @@
 ---
 title: Adobe Target 단일 프로필 업데이트 API
-description: ' [!DNL Adobe Target] [!UICONTROL 단일 프로필 업데이트 API]를 사용하여 단일 방문자의 프로필 데이터를  [!DNL Target] (으)로 전송하는 방법에 대해 알아봅니다.'
+description: '[!DNL Adobe Target] [!UICONTROL 단일 프로필 업데이트 API]를 사용하여 단일 방문자의 프로필 데이터를 [!DNL Target] (으)로 보내는 방법을 알아봅니다.'
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 4e022db3-215f-461b-9222-38ce2f2dbc28
-TQID: https://experienceleague.adobe.com/HEjGkrgixufe9wQvaPAljSlZRSaF-idgwKYWs3cuoJ0
+TQID: 'https://experienceleague.adobe.com/HEjGkrgixufe9wQvaPAljSlZRSaF-idgwKYWs3cuoJ0'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 6fac79420aef0a73c109b2c19f363266c1f8027a
+    internal-label: Implementation
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 396
+source-wordcount: '397'
 ht-degree: 4%
-
 ---
-
 # [!DNL Adobe Target Single Profile Update API]
 
 [!DNL Adobe Target] [!UICONTROL 단일 프로필 업데이트 API]를 사용하면 단일 사용자에 대한 프로필 업데이트를 보낼 수 있습니다. [!UICONTROL 단일 프로필 업데이트 API]는 [!UICONTROL 벌크 프로필 업데이트 API]와 거의 동일하지만 한 번에 한 방문자 프로필이 .cvs 파일 대신 API 호출로 인라인으로 업데이트됩니다.

@@ -1,32 +1,42 @@
 ---
 keywords: server side, 서버측, api, sdk, node.js, nodejs, node js, recommendations api, api, api, server side1
-description: ' [!DNL Adobe Target] 서버측 배달 API, SDK 및 [!DNL Target Recommendations] API에 대해 알아봅니다.'
-title: ' [!DNL Target] 서버측 배달 API 및 SDK에 대한 자세한 내용은 어디에서 확인할 수 있습니까?'
+description: '[!DNL Adobe Target] 서버측 배달 API, SDK 및 [!DNL Target Recommendations] API에 대해 알아봅니다.'
+title: '[!DNL Target] 서버측 배달 API 및 SDK에 대한 자세한 내용은 어디에서 확인할 수 있습니까?'
 feature: Implement Server-side
 exl-id: 3eb0a789-cf1a-4d02-acf7-3c895bcb662f
-TQID: https://experienceleague.adobe.com/x5WKb9Eenz2bw-idOnxlpWdtiivTx05n38sNXEt3DNc
+TQID: 'https://experienceleague.adobe.com/x5WKb9Eenz2bw-idOnxlpWdtiivTx05n38sNXEt3DNc'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: b050e0cd-2ddd-42cd-a71b-5d9e1fdf75e0
+    internal-label: APIs and SDKs
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a8a69496-b9ae-554a-b68e-e92a87809fc5
+    internal-label: Implement Server-side
 subfeature_v2:
   - id: a6cc21b9-1a36-4fa6-9c61-4acd04d9c88c
+    internal-label: Delivery API
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 7a393cc6a3f30a276a256cdabb5b42fe08f3c505
+    internal-label: Machine learning
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 820
+source-wordcount: '823'
 ht-degree: 9%
-
 ---
-
 # 서버 측: [!DNL Target] 구현
 
 [!DNL Adobe Target]개의 서버측 배달 API, SDK 및 [!DNL Target Recommendations]개의 API에 대한 정보입니다.

@@ -1,26 +1,33 @@
 ---
 title: 타겟에게 알림
-description: ' [!DNL Target] 에 의해 추적해야 하는 모든 이벤트가 trackEvent 메서드를 사용하여 전송되는지 확인합니다.'
+description: '[!DNL Target]에서 추적해야 하는 모든 이벤트가 trackEvent 메서드를 사용하여 전송되는지 확인하십시오.'
 feature: APIs/SDKs
 level: Experienced
 role: Developer
 exl-id: efccadab-d139-4423-8613-c2743d87b3a0
-TQID: https://experienceleague.adobe.com/u-RPLXjG8UBI7bDu2HgPFFnNBU--Yr0UydVX-Q-dcTc
+TQID: 'https://experienceleague.adobe.com/u-RPLXjG8UBI7bDu2HgPFFnNBU--Yr0UydVX-Q-dcTc'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Implementation
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 369
+source-wordcount: '370'
 ht-degree: 0%
-
 ---
-
 # [!DNL Target]에게 알림
 
 이 단계를 완료하면 [!DNL Adobe Target]&#x200B;(으)로 전송해야 하는 모든 이벤트가 `trackEvent` 메서드를 사용하여 전송됩니다.
@@ -56,9 +63,9 @@ ht-degree: 0%
 * 비즈니스 팀과 만나 전환 또는 성공 지표로 간주할 수 있는 모든 이벤트를 식별합니다. 또한 수익을 생성하는 전환 이벤트를 식별해야 해당 세부 정보를 이벤트 데이터와 함께 [!DNL Target]&#x200B;(으)로 보낼 수 있습니다.
 * 전환 이벤트와 함께 보낼 수 있도록 데이터 레이어에서 다음 속성을 사용할 수 있는지 확인합니다. 전환 이벤트는 제품 구매 또는 장바구니에 추가 이벤트와 같은 매출을 생성합니다.
 
-   * `productPurchaseId`: 주문의 일부로 구매한 제품 ID입니다. 쉼표를 사용하여 여러 제품을 구분하십시오.
-   * `orderTotal`: 구매에 대한 주문 총계입니다.
-   * `orderId`: 구매의 주문 ID.
+  * `productPurchaseId`: 주문의 일부로 구매한 제품 ID입니다. 쉼표를 사용하여 여러 제품을 구분하십시오.
+  * `orderTotal`: 구매에 대한 주문 총계입니다.
+  * `orderId`: 구매의 주문 ID.
 
   다음 그림은 [!UICONTROL 확인] 페이지에서만 실행해야 하는 [규칙  [!DNL tags] in [!DNL Experience Platform]](https://experienceleague.adobe.com/docs/tags.html?lang=ko){target=_blank}을(를) 보여 줍니다.
 

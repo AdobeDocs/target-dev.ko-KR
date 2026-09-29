@@ -1,33 +1,46 @@
 ---
 title: SDK 초기화
-description: ' [!DNL Adobe Target] at.js JavaScript 라이브러리를 로드하는 데 필요한 모든 단계가 올바른 순서로 실행되는지 확인하십시오.'
+description: '[!DNL Adobe Target] at.js JavaScript 라이브러리를 로드하는 데 필요한 모든 단계가 올바른 순서로 실행되는지 확인하십시오.'
 feature: APIs/SDKs
 level: Experienced
 role: Developer
 exl-id: 250a8382-1fdd-4a70-b712-a25af5adad71
-TQID: https://experienceleague.adobe.com/PxAKvxntUCdacBLopvANAI7-8OWe-ELQqFRJu-n3RWo
+TQID: 'https://experienceleague.adobe.com/PxAKvxntUCdacBLopvANAI7-8OWe-ELQqFRJu-n3RWo'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Personalization
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 1879
+source-wordcount: '1880'
 ht-degree: 4%
-
 ---
-
 # SDK 초기화
 
 *SDK 초기화* 다이어그램의 단계에 따라 [!DNL Adobe Target] at.js JavaScript 라이브러리를 로드하는 데 필요한 모든 작업이 올바른 순서로 실행되도록 하십시오.
@@ -202,12 +215,12 @@ APLR을 실행하지 않고 나중에 페이지 요청을 실행하려고 하기
 
 * 데이터 레이어는 [!DNL Target]&#x200B;(으)로 전송해야 하는 모든 데이터로 준비되어야 합니다.
 * 권장 사항: 프로필 강화
-   * `entity.id`을(를) 전달하여 마지막으로 본 제품에 기반한 기준을 기반으로 최근에 본 기준 및 항목에 대한 데이터를 캡처합니다.
-   * 즐겨찾는 범주에 따라 인기도 기준에 대한 데이터를 캡처하려면 `entity.id`을(를) 전달합니다.
-   * 사용자 지정 기준이 프로필 속성을 기반으로 하거나 임의의 기준에서 포함 규칙 필터링에 사용되는 경우 프로필 속성을 전달합니다.
+  * `entity.id`을(를) 전달하여 마지막으로 본 제품에 기반한 기준을 기반으로 최근에 본 기준 및 항목에 대한 데이터를 캡처합니다.
+  * 즐겨찾는 범주에 따라 인기도 기준에 대한 데이터를 캡처하려면 `entity.id`을(를) 전달합니다.
+  * 사용자 지정 기준이 프로필 속성을 기반으로 하거나 임의의 기준에서 포함 규칙 필터링에 사용되는 경우 프로필 속성을 전달합니다.
 * 권장 사항: 제품 데이터를 수집합니다.
-   * 다른 엔터티 매개 변수(예약된 매개 변수 및 사용자 지정)를 전달하여 [!DNL Recommendations]에서 제품 카탈로그를 수집하거나 업데이트할 수 있습니다.
-   * [!DNL Target] UI 또는 API를 사용하여 엔터티 피드를 사용하여 제품 카탈로그를 업데이트할 수도 있습니다.
+  * 다른 엔터티 매개 변수(예약된 매개 변수 및 사용자 지정)를 전달하여 [!DNL Recommendations]에서 제품 카탈로그를 수집하거나 업데이트할 수 있습니다.
+  * [!DNL Target] UI 또는 API를 사용하여 엔터티 피드를 사용하여 제품 카탈로그를 업데이트할 수도 있습니다.
 
 **데이터를[!DNL Target]**&#x200B;에 매핑
 

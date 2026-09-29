@@ -1,26 +1,34 @@
 ---
 title: Adobe Experience Platform Web SDK을 사용하여 응답 토큰 액세스
-description: ' [!DNL Adobe Experience Platform Web SDK]을(를) 사용하여 응답 토큰에 액세스하는 방법을 알아봅니다.'
+description: '[!DNL Adobe Experience Platform Web SDK]을(를) 사용하여 응답 토큰에 액세스하는 방법을 알아봅니다.'
 keywords: 개인화;target;adobe target;renderDecisions;sendEvent;decisionScopes;result.decisions,응답 토큰;
 feature: AEP Web SDK
 exl-id: b125017c-c257-4f2f-a479-dd0f20e76a9a
-TQID: https://experienceleague.adobe.com/kqa-HY5-dOvNq-yGqthunYDdyTKkiiFdsHquyN34ERg
+TQID: 'https://experienceleague.adobe.com/kqa-HY5-dOvNq-yGqthunYDdyTKkiiFdsHquyN34ERg'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: b050e0cd-2ddd-42cd-a71b-5d9e1fdf75e0
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: a1f3c920-a3a8-4506-8067-53189547b5e6
+    internal-label: AEP Web SDK
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Personalization
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 273
+source-wordcount: '273'
 ht-degree: 0%
-
 ---
-
 # 응답 토큰 액세스
 
 [!DNL Adobe Target]에서 반환된 Personalization 콘텐츠에는 활동, 오퍼, 경험, 사용자 프로필, 지역 정보 등에 대한 세부 정보인 [응답 토큰](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=ko)이(가) 포함되어 있습니다. 이러한 세부 정보는 서드파티 도구와 공유하거나 디버깅에 사용할 수 있습니다. [!DNL Target] 사용자 인터페이스에서 응답 토큰을 구성할 수 있습니다.

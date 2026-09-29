@@ -4,21 +4,26 @@ description: Experience Cloud와 통합, A4T 보고, Analytics for Target 통합
 keywords: 배달 api, 서버측, 서버측, 통합, a4t
 exl-id: 0d09d7a1-528d-4e6a-bc6c-f7ccd61f5b75
 feature: Implement Server-side
-TQID: https://experienceleague.adobe.com/Qx5xwszkQLumkFhGJDbvyIofPe7qxUDN922iqmhsClk
+TQID: 'https://experienceleague.adobe.com/Qx5xwszkQLumkFhGJDbvyIofPe7qxUDN922iqmhsClk'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a8a69496-b9ae-554a-b68e-e92a87809fc5
+    internal-label: Implement Server-side
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Data collection
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 399
+source-wordcount: '399'
 ht-degree: 6%
-
 ---
-
 # [!UICONTROL Analytics for Target]&#x200B;(A4T) 보고
 
 [!DNL Adobe Target]은(는) 온디바이스 의사 결정 및 서버측 [!DNL Target] 활동 모두에 대한 A4T 보고를 지원합니다. A4T 보고를 활성화하는 두 가지 구성 옵션이 있습니다.

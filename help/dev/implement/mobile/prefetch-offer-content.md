@@ -1,16 +1,26 @@
 ---
 keywords: offer, 프리페치, iOS, android, sdk, mobile, mobile sdk, $8
-description: iOS 및 Android Mobile SDK의  [!DNL Adobe Target] 미리 가져오기 기능을 사용하여 서버 응답을 캐시하여 가능한 한 적은 시간에 오퍼 콘텐츠를 가져옵니다.
+description: iOS 및 Android Mobile SDK의 [!DNL Adobe Target] 미리 가져오기 기능을 사용하여 서버 응답을 캐시하여 가능한 한 적은 시간에 오퍼 콘텐츠를 가져옵니다.
 title: 모바일 앱용 오퍼 컨텐츠를 미리 가져올 수 있습니까?
 feature: Implement Mobile
 exl-id: 6f8e8298-f1e9-46f0-828f-717c7d632077
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+subfeature_v2:
+  - id: d051910f-2bda-47ea-a969-6ade9fcd71f1
+    internal-label: Implement mobile
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '318'
 ht-degree: 37%
-
 ---
-
 # 오퍼 콘텐츠 미리 가져오기
 
 [!DNL Target] 미리 가져오기 기능은 iOS 및 Android Mobile SDK를 사용하여 서버 응답을 캐시하여 가능한 한 적은 시간에 오퍼 컨텐츠를 가져옵니다.

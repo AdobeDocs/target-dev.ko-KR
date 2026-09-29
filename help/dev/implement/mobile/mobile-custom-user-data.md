@@ -1,16 +1,26 @@
 ---
 keywords: 모바일 앱, 모바일 앱 데이터 전송, target 모바일 앱, 모바일 사용자 지정 사용자 데이터, 모바일 앱 사용자 지정 데이터
-description: 사용자 지정 대상을 만드는 데 도움이 되도록 위치 또는 사용자에 대한 추가 정보를  [!DNL Adobe Target] 에 이름-값 쌍으로 보내는 방법을 알아봅니다.
+description: 사용자 지정 대상을 만드는 데 도움이 되도록 위치 또는 사용자에 대한 추가 정보를 [!DNL Adobe Target]에 이름-값 쌍으로 보내는 방법을 알아봅니다.
 title: iOS 앱에서 사용자 지정 사용자 데이터를 보내려면 어떻게 해야 합니까?
 feature: Implement Mobile
 exl-id: 9cf8e8fd-1898-43b1-b339-d7a21cb35d57
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+subfeature_v2:
+  - id: d051910f-2bda-47ea-a969-6ade9fcd71f1
+    internal-label: Implement mobile
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '418'
 ht-degree: 55%
-
 ---
-
 # iOS - 사용자 지정 사용자 데이터 전송
 
 위치 또는 사용자에 대한 추가 정보를 [!DNL Target]에 이름-값 쌍으로 보낼 수 있습니다.

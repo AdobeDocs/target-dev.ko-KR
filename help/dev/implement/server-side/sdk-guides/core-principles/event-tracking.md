@@ -1,24 +1,30 @@
 ---
 title: 이벤트 추적
-description: ' [!DNL Adobe Target]의 이벤트 추적 기능을 사용하여 비즈니스 및 사용 사례에 가장 중요한 지표를 효과적으로 측정합니다.'
+description: '[!DNL Adobe Target]의 이벤트 추적 기능을 사용하여 비즈니스 및 사용 사례에 가장 중요한 지표를 효과적으로 측정합니다.'
 exl-id: a47fa692-c633-4c53-82da-878b1e451a3f
 feature: Implement Server-side
-TQID: https://experienceleague.adobe.com/swckm7EdKlSkC2xl1P57EAyiuGz18rucZOAxcudzYpo
+TQID: 'https://experienceleague.adobe.com/swckm7EdKlSkC2xl1P57EAyiuGz18rucZOAxcudzYpo'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a8a69496-b9ae-554a-b68e-e92a87809fc5
+    internal-label: Implement Server-side
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Personalization
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 528
+source-wordcount: '529'
 ht-degree: 1%
-
 ---
-
 # 이벤트 추적
 
 [!DNL Adobe Target]의 이벤트 추적 기능을 사용하여 비즈니스 및 사용 사례에 가장 중요한 지표를 효과적으로 측정합니다. 추적 이벤트는 성과가 있거나 성과가 없는 변형 또는 경험을 알려주기 때문에 실험 또는 개인화 활동의 성공을 측정하는 데 중요합니다. 이를 이해하면 사용자가 지속적으로 변화하는 환경에서 제품에 관심을 갖거나 진화하는 방법을 이해하는 데 도움이 됩니다.

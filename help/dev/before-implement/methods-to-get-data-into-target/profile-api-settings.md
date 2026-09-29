@@ -1,27 +1,33 @@
 ---
 keywords: 구현, api, 프로필, 프로필 api 설정, 인증 토큰
-description: ' [!DNL Adobe Target] API를 통해 일괄 업데이트 인증을 구성하고 프로필 인증 토큰을 생성하는 방법을 알아봅니다.'
+description: '[!DNL Adobe Target] API를 통해 일괄 업데이트 인증을 구성하고 프로필 인증 토큰을 생성하는 방법을 알아봅니다.'
 title: 프로필 API 설정을 사용하여 배치 업데이트를 활성화 또는 비활성화하려면 어떻게 합니까?
 feature: APIs/SDKs
 exl-id: 968f33d0-296b-4248-8c9a-8e6f3077bdfa
-TQID: https://experienceleague.adobe.com/-KYSphaCrm0ICK7g92v9x-uK--nwirs4-DWBR3G5rTM
+TQID: 'https://experienceleague.adobe.com/-KYSphaCrm0ICK7g92v9x-uK--nwirs4-DWBR3G5rTM'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Administration
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 363
+source-wordcount: '364'
 ht-degree: 31%
-
 ---
-
 # 프로필 API 설정
 
 [!DNL Adobe Target] API를 통해 일괄 업데이트 인증을 활성화하거나 비활성화하고 프로필 인증 토큰을 생성합니다.

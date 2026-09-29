@@ -1,30 +1,38 @@
 ---
 keywords: 구현, at.js, Javascript 라이브러리
-description: ' [!DNL Adobe Experience Platform] 의 태그를 사용하거나 태그 관리자 없이  [!DNL Adobe Target]  at.js JavaScript 라이브러리를 배포하는 방법에 대해 알아봅니다.'
+description: '[!DNL Adobe Experience Platform]의 태그를 사용하거나 태그 관리자 없이 [!DNL Adobe Target] at.js JavaScript 라이브러리를 배포하는 방법을 알아봅니다.'
 title: at.js를 배포하는 방법은 무엇입니까?
 feature: Implement Server-side
 exl-id: e62cb27e-ea80-462b-90f8-0a033b128031
-TQID: https://experienceleague.adobe.com/V80R3Ds7eaUkkJazzCLK-tIePgqund6rMfQfLBZZvRQ
+TQID: 'https://experienceleague.adobe.com/V80R3Ds7eaUkkJazzCLK-tIePgqund6rMfQfLBZZvRQ'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
   - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+    internal-label: Integrations
+  - id: a8a69496-b9ae-554a-b68e-e92a87809fc5
+    internal-label: Implement Server-side
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: ca4254966a337a0215d66bd28506128b9751d0e0
+    internal-label: Data collection
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 287
+source-wordcount: '288'
 ht-degree: 10%
-
 ---
-
 # at.js를 배포하는 방법
 
 [!DNL Adobe Experience Platform]의 태그를 사용하거나 태그 관리자 없이 [!DNL Adobe Target] JavaScript 라이브러리 at.js를 배포하는 방법에 대한 정보입니다.
@@ -44,8 +52,8 @@ ht-degree: 10%
 
   타사 태그 관리자를 사용하여 [!DNL Target]을(를) 구현하는 데 도움이 되는 두 가지 관련 항목은 다음과 같습니다.
 
-   * [구현하기 전에](/help/dev/before-implement/prepare-to-implement-target.md)
-   * [태그 관리자 없이  [!DNL Target] 구현](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md)
+  * [구현하기 전에](/help/dev/before-implement/prepare-to-implement-target.md)
+  * [태그 관리자 없이  [!DNL Target] 구현](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md)
 
   자세한 내용은 타사 태그 관리자 설명서를 참조하십시오.
 

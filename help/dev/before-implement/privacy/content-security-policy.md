@@ -1,30 +1,40 @@
 ---
 keywords: 콘텐츠 보안 정책, csp.js, 허용 목록, 플리커, 사전 숨기기, 사전 숨기기, 콘텐츠 보안 정책, iFrame, iframe
-description: ' [!DNL Adobe Target]을(를) 사용할 때 추가해야 하는 콘텐츠 보안 정책(CSP) 지침에 대해 알아봅니다.'
-title: ' [!DNL Target] 은 콘텐츠 보안 정책(CSP)을 어떻게 처리합니까?'
+description: '[!DNL Adobe Target]을(를) 사용할 때 추가해야 하는 콘텐츠 보안 정책(CSP) 지침에 대해 알아봅니다.'
+title: '[!DNL Target]은(는) 콘텐츠 보안 정책(CSP)을 어떻게 처리합니까?'
 feature: Privacy & Security
 exl-id: ec6942e5-36d8-4f88-b3d6-47f9eaca03a8
-TQID: https://experienceleague.adobe.com/gGNgYyblw6-D-RiHBtzAtrOOdhVOsIzYQ-HhkhCtyuI
+TQID: 'https://experienceleague.adobe.com/gGNgYyblw6-D-RiHBtzAtrOOdhVOsIzYQ-HhkhCtyuI'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: f599e456-545c-47e5-8e50-b7dfe3579517
+    internal-label: Governance and control
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
+  - id: ee6498fb-34b1-4925-be4a-9ec7a38e8dab
+    internal-label: Privacy and security
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Privacy
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 610
+source-wordcount: '619'
 ht-degree: 28%
-
 ---
-
 # 콘텐츠 보안 정책(CSP) 지침
 
 [!DNL Adobe Target] 구현에 [콘텐츠 보안 정책](https://ko.wikipedia.org/wiki/Content_Security_Policy)&#x200B;(CSP)을 사용하는 경우 [at.js 2.1 이상 버전](../../implement/client-side/atjs/target-atjs-versions.md)을 사용할 때 다음과 같은 CSP 지침을 추가해야 합니다.

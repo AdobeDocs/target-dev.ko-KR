@@ -1,16 +1,26 @@
 ---
 keywords: 모바일 앱, 모바일 앱 SDK, target 모바일 앱, 모바일 target sdk, 모바일 앱 SDK, SDK에서 Target 사용
 description: Adobe Mobile Services SDK을 모바일 앱에 추가하는 방법을 알아봅니다.
-title: ' [!DNL Adobe Mobile SDK]에서  [!DNL Target] 을(를) 활성화하려면 어떻게 합니까?'
+title: '[!DNL Adobe Mobile SDK]에서 [!DNL Target]을(를) 활성화하려면 어떻게 해야 합니까?'
 feature: Implement Mobile
 exl-id: 4263b96a-23c8-4513-8302-00080122181d
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+subfeature_v2:
+  - id: d051910f-2bda-47ea-a969-6ade9fcd71f1
+    internal-label: Implement mobile
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '303'
 ht-degree: 38%
-
 ---
-
 # SDK에서 [!DNL Target] 사용
 
 앱에 [!UICONTROL Adobe Mobile Services SDK]을(를) 추가합니다.
