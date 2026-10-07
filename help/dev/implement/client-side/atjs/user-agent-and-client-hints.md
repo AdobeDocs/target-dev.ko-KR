@@ -7,26 +7,34 @@ exl-id: e0d87d95-ee95-4ca9-8632-222ae1fb9a91
 TQID: https://experienceleague.adobe.com/7-Kr0OwJ4o780zkFL2EIQ0vJUqVyQp-RuoJOaBNYrQg
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
   - id: ff2b9b37-92e0-45fc-b853-379d44c08c89
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Audience segmentation
+source-git-commit: 09c7444b7ed70521cfd01caf5c996643d0a27547
 workflow-type: tm+mt
-source-wordcount: 1340
-ht-degree: 73%
-
+source-wordcount: '1460'
+ht-degree: 67%
 ---
-
 # 사용자 에이전트 및 클라이언트 힌트
 
 Adobe Target은 사용자 에이전트를 사용하여 방문자를 세그먼테이션 및 개인 맞춤화할 수 있도록 합니다.
@@ -57,6 +65,14 @@ Mozilla/5.0 (Linux; Android 12; SM-S908E) AppleWebKit/537.36 (KHTML, like Gecko)
 | 디바이스 | SM-S908E (Samsung Galaxy S22 Ultra) |
 
 수년에 걸쳐 사용자 에이전트 문자열에 포함된 브라우저 및 디바이스 정보의 양이 증가했습니다.
+
+## 사용자 에이전트를 덮어쓰는 사용자 지정 스크립트 {#custom-scripts-overwrite-user-agent}
+
+모바일 장치 타깃팅은 사용자 에이전트 문자열을 사용하므로 [!DNL Target]이(가) 읽기 전에 `navigator.userAgent`을(를) 수정하는 페이지의 모든 사용자 지정 스크립트로 인해 장치 타깃팅이 실패할 수 있습니다.
+
+웹 사이트에 필요한 특정 이벤트 대신 모든 이벤트를 수신하는 사용자 지정 스크립트가 있는 경우 의도하지 않게 [!DNL Web SDK] 이벤트를 가로채고 `navigator.userAgent`을(를) 덮어쓸 수 있습니다. 따라서 [!DNL Target]이(가) 방문자의 실제 장치 대신 잘못된 장치 정보를 받게 되고 예상 경험이 전달되지 않습니다.
+
+모바일 장치 타깃팅이 예상대로 작동하지 않는 경우 페이지의 사용자 지정 스크립트 또는 이벤트 리스너가 `navigator.userAgent`을(를) 수정하는지 확인하고 해당 리스너의 범위를 가능한 한 좁게 지정하여 [!DNL Target] 또는 웹 SDK 이벤트를 실수로 가로채지 않도록 하십시오.
 
 ## 사용자 에이전트 사용 사례
 
