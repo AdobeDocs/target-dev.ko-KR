@@ -991,7 +991,7 @@ at.js가 로드되기 전에 또는 관리 > 구현 > at.js 설정 편집 > 코�
 window.targetGlobalSettings = {  
    timeout: 200, // using custom timeout  
    visitorApiTimeout: 500, // using custom API timeout  
-   enabled: document.location.href.indexOf('https://www.adobe.com') >= 0 // enabled ONLY on adobe.com  
+   enabled: document.location.href.indexOf('https://www.adobe.com/kr') >= 0 // enabled ONLY on adobe.com  
 };
 ```
 

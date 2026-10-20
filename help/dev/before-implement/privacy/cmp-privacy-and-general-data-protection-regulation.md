@@ -49,7 +49,7 @@ ht-degree: 61%
 
 Adobe가 기업에 소프트웨어 및 서비스를 제공할 때 Adobe는 이러한 서비스를 제공하는 과정에서 처리하고 저장하는 개인 데이터에 대한 데이터 처리자 역할을 합니다. Adobe는 데이터 처리자로서 귀사의 허가 및 지침(예: Adobe와의 계약에 명시된 내용)에 따라 개인 데이터를 처리합니다.
 
-귀하는 데이터 관리자로서 Adobe가 귀하를 대신하여 처리하고 저장하는 개인 데이터를 결정합니다. 귀하가 Adobe Experience Cloud 솔루션을 사용하는 경우, Adobe는 귀하가 사용하는 솔루션 및 귀하의 Adobe Experience Cloud 계정에 전송하기로 선택한 정보에 따라 귀하를 위해 개인 데이터를 호스팅할 수 있습니다. 상세한 예제 목록은 [Adobe Experience Cloud 개인정보 보호](https://www.adobe.com/privacy/experience-cloud.html#collect)를 참조하십시오.
+귀하는 데이터 관리자로서 Adobe가 귀하를 대신하여 처리하고 저장하는 개인 데이터를 결정합니다. 귀하가 Adobe Experience Cloud 솔루션을 사용하는 경우, Adobe는 귀하가 사용하는 솔루션 및 귀하의 Adobe Experience Cloud 계정에 전송하기로 선택한 정보에 따라 귀하를 위해 개인 데이터를 호스팅할 수 있습니다. 상세한 예제 목록은 [Adobe Experience Cloud 개인정보 보호](https://www.adobe.com/kr/privacy/experience-cloud.html#collect)를 참조하십시오.
 
 Adobe Experience Cloud는 데이터 제어자가 다음 작업을 완료할 수 있도록 하는 GDPR 지원 API를 제공합니다.
 
