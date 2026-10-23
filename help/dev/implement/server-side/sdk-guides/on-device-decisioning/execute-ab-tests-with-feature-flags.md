@@ -67,7 +67,7 @@ ht-degree: 1%
 
 ![대체 이미지](assets/asset-ab.png)
 
-**[!UICONTROL A/B 테스트 활동 만들기]** 모달에서 기본 **[!UICONTROL Web]** 옵션을 선택한 상태로 둡니다(1). **[!UICONTROL Form]**&#x200B;을(를) 경험 작성기로 선택합니다(2). **[!UICONTROL 속성 제한 없이**[!UICONTROL &#x200B;기본 Workspace ]**(3)을(를) 선택하고**[!UICONTROL &#x200B;다음&#x200B;]**(4)을(를) 클릭합니다.]**
+**[!UICONTROL A/B 테스트 활동 만들기]** 모달에서 기본 **[!UICONTROL Web]** 옵션을 선택한 상태로 둡니다(1). **[!UICONTROL Form]**&#x200B;을(를) 경험 작성기로 선택합니다(2). **[!UICONTROL 속성 제한 없이**&#x200B;[!UICONTROL &#x200B;기본 Workspace &#x200B;]&#x200B;**(3)을(를) 선택하고**&#x200B;[!UICONTROL &#x200B;다음&#x200B;]&#x200B;**(4)을(를) 클릭합니다.]**
 
 ![대체 이미지](assets/asset-form.png)
 
