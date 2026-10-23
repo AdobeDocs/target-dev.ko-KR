@@ -57,7 +57,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->온디바이스 의사 결정 토글을 활성화하거나 비활성화하려면 관리자 또는 승인자 [사용자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=ko)이 있어야 합니다.
+>온디바이스 의사 결정 토글을 활성화하거나 비활성화하려면 관리자 또는 승인자 [사용자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html)이 있어야 합니다.
 
 **[!UICONTROL 디바이스에서 의사 결정]** 토글을 활성화한 후 [!DNL Adobe Target]에서 클라이언트에 대한 규칙 아티팩트를 생성하기 시작합니다.
 
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 ![대체 이미지](assets/asset-ab.png)
 
-**[!UICONTROL A/B 테스트 활동 만들기]** 모달에서 기본 **[!UICONTROL Web]** 옵션을 선택한 상태로 둡니다(1). **[!UICONTROL Form]**&#x200B;을(를) 경험 작성기로 선택합니다(2). **[!UICONTROL 속성 제한 없이**&#x200B;[!UICONTROL &#x200B;기본 Workspace &#x200B;]&#x200B;**(3)을(를) 선택하고**&#x200B;[!UICONTROL &#x200B;다음&#x200B;]&#x200B;**(4)을(를) 클릭합니다.]**
+**[!UICONTROL A/B 테스트 활동 만들기]** 모달에서 기본 **[!UICONTROL Web]** 옵션을 선택한 상태로 둡니다(1). **[!UICONTROL Form]**&#x200B;을(를) 경험 작성기로 선택합니다(2). **[!UICONTROL 속성 제한 없이**[!UICONTROL &#x200B;기본 Workspace ]**(3)을(를) 선택하고**[!UICONTROL &#x200B;다음&#x200B;]**(4)을(를) 클릭합니다.]**
 
 ![대체 이미지](assets/asset-form.png)
 
