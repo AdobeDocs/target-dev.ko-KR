@@ -25,9 +25,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
+source-git-commit: 3a1674348a1cb39351051addf8e063efbf0dc9e9
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1336'
 ht-degree: 6%
 ---
 # [!DNL Adobe Target Bulk Profile Update API]
@@ -156,9 +156,9 @@ BATCH.TXT는 파일 이름입니다. CLIENTCODE는 [!DNL Target] 클라이언트
 
 | 상태 | 세부 사항 |
 | --- | --- |
-| [!UICONTROL complete] | 프로필 배치 업데이트 요청이 완료되었습니다. |
-| [!UICONTROL 완료 안 됨] | 프로필 배치 업데이트 요청이 아직 처리 중이며 완료되지 않았습니다. |
-| [!UICONTROL 중단] | 프로필 배치 업데이트 요청이 중단되어 완료할 수 없습니다. |
+| [!UICONTROL complete] | 프로필 배치 업데이트 요청이 완료되었습니다. 조치가 필요하지 않습니다. |
+| [!UICONTROL 완료 안 됨] | 프로필 배치 업데이트 요청이 아직 처리 중이며 완료되지 않았습니다. 조치가 필요하지 않습니다. |
+| [!UICONTROL 중단] | 프로필 배치 업데이트 요청이 중단되어 완료할 수 없습니다. 일괄 처리가 업로드된 후 24시간이 지나도 남아 있는 경우 다시 업로드해야 합니다. |
 
 ### 자세한 배치 상태 URL 응답
 
