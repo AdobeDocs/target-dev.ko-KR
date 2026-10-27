@@ -1,6 +1,6 @@
 ---
 title: Adobe Target 벌크 프로필 업데이트 API
-description: '[!DNL Adobe Target] [!UICONTROL 벌크 프로필 업데이트 API]를 사용하여 타깃팅에 사용할 수 있도록 여러 방문자의 프로필 데이터를 [!DNL Target] (으)로 보내는 방법을 알아봅니다.'
+description: '[!DNL Adobe Target] [!UICONTROL 벌크 프로필 업데이트 API]를 사용하여 타깃팅에 사용할 수 있도록 여러 방문자의 프로필 데이터를 [!DNL Target](으)로 보내는 방법을 알아봅니다.'
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
@@ -25,9 +25,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
+source-git-commit: 3a1674348a1cb39351051addf8e063efbf0dc9e9
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1336'
 ht-degree: 6%
 ---
 # [!DNL Adobe Target Bulk Profile Update API]
@@ -97,7 +97,7 @@ batch=pcId,param1,param2,param3,param4
 >
 >`Content-Type: application/x-www-form-urlencoded`(으)로 전송된 일괄 처리를 제출하기 전에 `batch=`(으)로 시작하는 본문을 사용하여 모든 매개 변수 이름과 값을 URL 인코딩(UTF-8)해야 합니다. 인코딩되지 않은 예약 문자는 데이터 대신 요청 구문으로 읽혀 배치가 거부되거나 잘리거나 손상될 수 있습니다.
 >
->`batchId`을(를) 실행하지 않은 상태에서 &quot;예기치 않은 오류&quot; 응답을 받은 경우 문제 해결 단계는 [벌크 프로필 업데이트 API에서 &quot;예기치 않은 오류&quot; 반환](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-24281)을 참조하십시오.
+>`batchId`을(를) 실행하지 않은 상태에서 &quot;예기치 않은 오류&quot; 응답을 받은 경우 문제 해결 단계는 [벌크 프로필 업데이트 API에서 &quot;예기치 않은 오류&quot; 반환](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24281)을 참조하십시오.
 
 다음 문자는 일반적으로 프로필 값에 있지만 `application/x-www-form-urlencoded` 데이터에 특별한 의미가 있습니다. 인코딩되지 않은 상태로 보내는 경우 요청이 실패하거나 명백한 오류 없이 데이터가 손상됩니다.
 
@@ -156,9 +156,9 @@ BATCH.TXT는 파일 이름입니다. CLIENTCODE는 [!DNL Target] 클라이언트
 
 | 상태 | 세부 사항 |
 | --- | --- |
-| [!UICONTROL complete] | 프로필 배치 업데이트 요청이 완료되었습니다. |
-| [!UICONTROL 완료 안 됨] | 프로필 배치 업데이트 요청이 아직 처리 중이며 완료되지 않았습니다. |
-| [!UICONTROL 중단] | 프로필 배치 업데이트 요청이 중단되어 완료할 수 없습니다. |
+| [!UICONTROL complete] | 프로필 배치 업데이트 요청이 완료되었습니다. 조치가 필요하지 않습니다. |
+| [!UICONTROL 완료 안 됨] | 프로필 배치 업데이트 요청이 아직 처리 중이며 완료되지 않았습니다. 조치가 필요하지 않습니다. |
+| [!UICONTROL 중단] | 프로필 배치 업데이트 요청이 중단되어 완료할 수 없습니다. 일괄 처리가 업로드된 후 24시간이 지나도 남아 있는 경우 다시 업로드해야 합니다. |
 
 ### 자세한 배치 상태 URL 응답
 
