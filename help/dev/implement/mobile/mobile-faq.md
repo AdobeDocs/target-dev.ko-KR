@@ -32,11 +32,11 @@ SDK은 [Adobe Marketing Cloud git](https://github.com/Adobe-Marketing-Cloud/acp-
 
 ## 현재 사용할 수 있는 SDK는 무엇입니까?
 
-Adobe Experience Platform Mobile SDK는 현재 iOS, Android 및 React를 지원합니다. 자세한 내용은 [Adobe Experience Cloud Platform Mobile SDK 안내서](https://experienceleague.adobe.com/docs/mobile.html){target=_blank}를 참조하십시오.
+Adobe Experience Platform Mobile SDK는 현재 iOS, Android 및 React를 지원합니다. 자세한 내용은 [Adobe Experience Cloud Platform Mobile SDK 안내서](https://experienceleague.adobe.com/docs/mobile.html?lang=ko){target=_blank}를 참조하십시오.
 
 ## 위도와 경도에 대한 확인 측면에서 위치 기반 기능의 빈도는 얼마입니까?
 
-자세한 내용은 [Adobe Places 설명서](https://experienceleague.adobe.com/docs/places/using/home.html){target=_blank}를 참조하세요.
+자세한 내용은 [Adobe Places 설명서](https://experienceleague.adobe.com/docs/places/using/home.html?lang=ko){target=_blank}를 참조하세요.
 
 ## Adobe Experience Platform Mobile SDK가 작동하려면 at.js가 필요합니까?
 
@@ -44,8 +44,8 @@ Adobe Experience Platform Mobile SDK는 현재 iOS, Android 및 React를 지원�
 
 ## [!DNL Target] Mobile은 [!DNL Adobe Target] Premium 제품 SKU만의 기능입니까?
 
-아니오. [!DNL Adobe Target Standard] 고객의 경우 [!DNL Target Standard] 모바일 앱 추가 기능만 사용하여 [!UICONTROL A/B 테스트] 및 [!UICONTROL 경험 타깃팅]&#x200B;(XT) 활동에 Mobile SDK를 사용할 수 있습니다. 모바일 앱에서 [!UICONTROL 권장 사항] 또는 AI 기반 기능을 사용하려면 [Adobe Target Premium](https://experienceleague.adobe.com/docs/target/using/introduction/intro.html#premium) 라이선스가 필요합니다.
+아니오. [!DNL Adobe Target Standard] 고객의 경우 [!DNL Target Standard] 모바일 앱 추가 기능만 사용하여 [!UICONTROL A/B 테스트] 및 [!UICONTROL 경험 타깃팅]&#x200B;(XT) 활동에 Mobile SDK를 사용할 수 있습니다. 모바일 앱에서 [!UICONTROL 권장 사항] 또는 AI 기반 기능을 사용하려면 [Adobe Target Premium](https://experienceleague.adobe.com/docs/target/using/introduction/intro.html?lang=ko#premium) 라이선스가 필요합니다.
 
 ## [!DNL Adobe Experience Manager]&#x200B;(AEM)과(와) [!DNL Target] 모바일 활동 간에 모바일 앱 통합이 있습니까?
 
-현재 AEM에서 [!DNL Target]까지 JSON [경험 조각](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html){target=_blank}을(를) 공유할 수 있으며, 이후 모바일 앱 활동에서 사용할 수도 있습니다.
+현재 AEM에서 [!DNL Target]까지 JSON [경험 조각](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=ko){target=_blank}을(를) 공유할 수 있으며, 이후 모바일 앱 활동에서 사용할 수도 있습니다.
