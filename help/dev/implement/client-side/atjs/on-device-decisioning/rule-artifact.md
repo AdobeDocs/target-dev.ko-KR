@@ -1,6 +1,6 @@
 ---
 keywords: 구현, javascript 라이브러리, js, atjs, 온디바이스 의사 결정, 온디바이스 의사 결정, 규칙 아티팩트, $8
-description: '[!UICONTROL 온디바이스 의사 결정]]에서 사용하는 JSON 규칙 아티팩트에 대해 알아봅니다.'
+description: '[!UICONTROL 온디바이스 의사 결정]&rbrack;에서 사용하는 JSON 규칙 아티팩트에 대해 알아봅니다.'
 title: JSON 규칙 아티팩트가 온디바이스 의사 결정에서 수행하는 기능은 무엇입니까?
 feature: at.js
 exl-id: 14413ccf-b55e-48a8-a474-4401eb1b50fc

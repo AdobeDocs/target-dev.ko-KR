@@ -1,7 +1,7 @@
 ---
 keywords: 개요 및 참조, 쿠키, 퍼스트 파티, 타사, 퍼스트 파티, 타사, 타사, 퍼스트 파티, 퍼스트 파티, 타사, 타사, at.js
-description: 타사 쿠키 사용이 [!DNL Adobe Target](at.js)에 미치는 영향에 대해 알아봅니다.
-title: 타사 쿠키 사용이 [!DNL Adobe Target](at.js)에 미치는 영향
+description: 타사 쿠키 사용이 [!DNL Adobe Target] (at.js)에 미치는 영향에 대해 알아봅니다.
+title: 타사 쿠키 사용이 [!DNL Adobe Target] (at.js)에 미치는 영향
 feature: at.js
 exl-id: 3827abff-aeb9-40cc-99c1-72409d4082dd
 TQID: https://experienceleague.adobe.com/EeMMYhrNz3K7qcgV3FQLtNi5vRDlXNrJHIzNFaXvizo

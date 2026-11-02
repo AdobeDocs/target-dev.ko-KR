@@ -1,6 +1,6 @@
 ---
 keywords: at.js 통합, 지원되는 통합, 지원되지 않는 통합, 타사 통합
-description: '[!UICONTROL Analytics for Target](A4T), [!UICONTROL Experience Cloud ID 서비스] 등을 포함하여 [!DNL Adobe Target] at.js에서 지원하는(그리고 지원되지 않는) 통합을 참조하십시오.'
+description: '[!UICONTROL Analytics for Target] (A4T), [!UICONTROL Experience Cloud ID 서비스] 등을 포함하여 [!DNL Adobe Target] at.js에서 지원하는(그리고 지원되지 않는) 통합을 참조하십시오.'
 title: at.js는 어떤 통합을 지원합니까?
 feature: at.js
 exl-id: d2c61e77-5fc7-4c35-905b-76b8c4f9df4b

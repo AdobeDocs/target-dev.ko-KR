@@ -1,7 +1,7 @@
 ---
 keywords: 프로필 속성 구현, 구현, 설정, 설정, 스크립팅
 description: 스크립트 프로필 특성을 사용하여 [!DNL Target]에 데이터를 가져옵니다.
-title: 스크립트 프로필 특성을 사용하여 데이터를 [!DNL Target](으)로 가져오려면 어떻게 해야 합니까?
+title: 스크립트 프로필 특성을 사용하여 데이터를 [!DNL Target] (으)로 가져오려면 어떻게 해야 합니까?
 feature: Implementation
 exl-id: ba11f1de-e68b-4505-8e3e-cd4d46ef59a2
 TQID: https://experienceleague.adobe.com/bRsl4ipgw0OeuVD0d69wmnHmrVvcGt9o0KmkhrEECZQ

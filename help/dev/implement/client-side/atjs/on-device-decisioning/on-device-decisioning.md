@@ -70,7 +70,7 @@ ht-degree: 4%
 * 대상 타기팅
 * 할당 방법
 
-자세한 내용은 [!UICONTROL 디바이스에서 의사 결정]](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md)에 대해 지원되는 기능 [을(를) 참조하십시오.
+자세한 내용은 [!UICONTROL 디바이스에서 의사 결정]&#x200B;[&#128279;](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md)에 대해 지원되는 기능 을(를) 참조하십시오.
 
 ## [!UICONTROL 디바이스에서 의사 결정]은(는) 어떻게 작동합니까?
 
@@ -366,7 +366,7 @@ Target은 메타데이터, 규칙 및 조건으로 구성된 아티팩트로 [!U
 
    첫 번째 JSON 규칙 아티팩트 생성은 최대 10분 정도 소요될 수 있습니다.
 
-1. [!UICONTROL 온디바이스 의사 결정]](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md)에서 지원하는 [활동 유형을 만들고 활성화한 다음 [!UICONTROL 온디바이스 의사 결정]에 적합한지 확인하십시오.
+1. [!UICONTROL 온디바이스 의사 결정]&#x200B;[&#128279;](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md)에서 지원하는 활동 유형을 만들고 활성화한 다음 [!UICONTROL 온디바이스 의사 결정]에 적합한지 확인하십시오.
 1. at.js 설정 UI를 통해 **[!UICONTROL Decisioning 메서드]**&#x200B;을(를) **[!UICONTROL &quot;하이브리드&quot;]** 또는 **[!UICONTROL &quot;온디바이스 전용&quot;]**(으)로 설정하십시오.
 1. At.js 2.5.0+를 다운로드하여 페이지에 배포합니다.
 

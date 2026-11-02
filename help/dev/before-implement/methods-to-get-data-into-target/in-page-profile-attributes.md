@@ -1,7 +1,7 @@
 ---
 keywords: 구현, 구현, 설정, 설정, 페이지 매개 변수
 description: 페이지 내 프로필 특성을 사용하여 [!DNL Target]에 데이터를 가져옵니다.
-title: 페이지 내 프로필 특성을 사용하여 데이터를 [!DNL Target](으)로 가져오려면 어떻게 해야 합니까?
+title: 페이지 내 프로필 특성을 사용하여 데이터를 [!DNL Target] (으)로 가져오려면 어떻게 해야 합니까?
 feature: Implementation
 exl-id: c19fd746-21a2-4eb5-8c2a-c24806e09324
 TQID: https://experienceleague.adobe.com/jXWNNl7HfrR03tEoMz7KApX3onc1Zc44IAuXy4QF2tU
