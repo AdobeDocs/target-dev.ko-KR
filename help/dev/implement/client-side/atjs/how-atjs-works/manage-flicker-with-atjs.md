@@ -1,28 +1,32 @@
 ---
 keywords: 플리커, at.js, 구현, 비동기적, 비동기적, 동기적, 동기, $8
-description: 페이지 또는 앱을 로드하는 동안 at.js 및 [!DNL Target] 플리커(기본 콘텐츠가 활동 콘텐츠로 대체되기 전에 일시적으로 표시됨)를 방지하는 방법에 대해 알아봅니다.
+description: 페이지 또는 앱을 로드하는 동안 at.js 및 [!DNL Target]에서 플리커(기본 콘텐츠가 활동 콘텐츠로 대체되기 전에 일시적으로 표시됨)를 방지하는 방법에 대해 알아봅니다.
 title: at.js는 플리커를 어떻게 관리합니까?
 feature: at.js
 exl-id: 8aacf254-ec3d-4831-89bb-db7f163b3869
 TQID: https://experienceleague.adobe.com/r8uyzkf1gSHmppyDHPOcn5jrH86Hedb4ArMmtigq93w
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
   - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+    internal-label: Integrations
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 717
+source-wordcount: '718'
 ht-degree: 57%
-
 ---
-
 # at.js에서 플리커를 관리하는 방법
 
 페이지 또는 앱 로드 중 [!DNL Adobe Target] at.js JavaScript 라이브러리가 어떻게 플리커를 방지하는지에 대한 정보입니다.

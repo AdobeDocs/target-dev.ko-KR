@@ -1,34 +1,44 @@
 ---
 keywords: serverstate, targetGlobalSettings, targetglobalsettings, globalSettings, global 설정, at.js, function, function, clientCode, clientcode, serverDomain, serverdomain, cookieDomain, serverstate5, serverstate6, serverstate7, serverstate8, serverstate9, targetGlobalSettings0, targetGlobalSettings1, targetGlobalSettings2, targetGlobalSettings3, targetGlobalSettings4, targetGlobalSettings5, cookiedomain, crossDomain, crossdomain, timeout, globalMboxAutoCreate, visitorApiTimeout, defaultContentHiddenStyle, defaultContentVisibleStyle body, bodyBodyBodyBodySettings hidingEnabled, imsOrgId, secureOnly, overrideMboxEdgeServer, overrideMboxEdgeServerTimeout, cookiedomain5, cookiedomain6, cookiedomain7, cookiedomain8, cookiedomain9, crossDomain0, crossDomain1, crossDomain2, crossDomain3, crossDomain4, crossDomain5, optoutEnabled, optout, 옵트아웃, selectorsPollingTimeout, dataProviders, Hybrid Personalization, deviceIdLifetime
-description: ' [!DNL Target] UI 또는 REST API를 사용하는 대신 설정을 재정의하려면  [!DNL Adobe Target] at.js JavaScript 라이브러리에 대한 [!UICONTROL targetGlobalSettings()] 함수를 사용하십시오.'
+description: '[!DNL Target] UI 또는 REST API를 사용하는 대신 설정을 재정의하려면 [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 [!UICONTROL targetGlobalSettings()] 함수를 사용하십시오.'
 title: '[!UICONTROL targetGlobalSettings()] 함수를 사용하려면 어떻게 해야 합니까?'
 feature: at.js
 exl-id: f6218313-6a70-448e-8555-b7b039e64b2c
 TQID: https://experienceleague.adobe.com/6IeQo7RCys6Qe6bPydmmtgaAERi7rnneBYFOzseaL2g
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
   - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+    internal-label: Integrations
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: ca4254966a337a0215d66bd28506128b9751d0e0
 workflow-type: tm+mt
-source-wordcount: 2705
+source-wordcount: '2707'
 ht-degree: 17%
-
 ---
-
 # [!UICONTROL targetGlobalSettings()]
 
 [!DNL Target] UI에서 또는 REST API를 사용하여 설정하는 대신 `[!UICONTROL targetGlobalSettings()]`을(를) 사용하여 at.js 라이브러리의 설정을 재정의할 수 있습니다.
@@ -552,12 +562,12 @@ const PAGE_TEMPLATE = `
 
 * 현재 at.js v2.2에서는 다음에 대해 serverState를 통한 경험 전달만 지원합니다.
 
-   * 페이지 로드 시 실행되는 VEC 생성 활동.
-   * 미리 가져온 보기.
+  * 페이지 로드 시 실행되는 VEC 생성 활동.
+  * 미리 가져온 보기.
 
-     at.js API에서 [!DNL Target] 보기 및 `triggerView()`을(를) 사용하는 SPA의 경우, at.js v2.2는 서버측에서 미리 가져온 모든 보기에 대한 콘텐츠를 캐시하고 각 보기가 `triggerView()`을(를) 통해 트리거되는 즉시 적용하며, [!DNL Target]에 대한 추가적인 콘텐츠 가져오기 호출을 실행하지 않습니다.
+    at.js API에서 [!DNL Target] 보기 및 `triggerView()`을(를) 사용하는 SPA의 경우, at.js v2.2는 서버측에서 미리 가져온 모든 보기에 대한 콘텐츠를 캐시하고 각 보기가 `triggerView()`을(를) 통해 트리거되는 즉시 적용하며, [!DNL Target]에 대한 추가적인 콘텐츠 가져오기 호출을 실행하지 않습니다.
 
-   * **참고**: 현재 서버측에서 검색된 mbox는 `serverState`에서 지원되지 않습니다.
+  * **참고**: 현재 서버측에서 검색된 mbox는 `serverState`에서 지원되지 않습니다.
 
 * `serverState` 오퍼를 적용할 때 at.js는 `pageLoadEnabled` 및 `viewsEnabled` 설정을 고려합니다. 예를 들어 `pageLoadEnabled` 설정이 false인 경우 페이지 로드 오퍼가 적용되지 않습니다.
 

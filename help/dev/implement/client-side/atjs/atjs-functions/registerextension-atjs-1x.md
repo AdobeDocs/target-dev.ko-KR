@@ -1,27 +1,30 @@
 ---
 keywords: registerExtension, registerextension, register extension, at.js, function, function, clientCode, serverDomain, globalMboxName, globalMboxAutoCreate, timeout, registerExtension2
-description: ' [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 [!UICONTROL registerExtension()] 함수를 사용하여 특정 확장을 등록하십시오. (at.js 1.x)'
+description: '[!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 [!UICONTROL registerExtension()] 함수를 사용하여 특정 확장을 등록하십시오. (at.js 1.x)'
 title: '[!UICONTROL registerExtension()] 함수를 사용하는 방법'
 feature: at.js
 exl-id: 71decf00-84c5-4914-b0cd-bb061fa6265f
 TQID: https://experienceleague.adobe.com/qTWubp0dNesN-8vsooz8pdbjfSw1W1ktm-0bG6YRzJw
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: a1af9d2c909d9b3d506dd4875d1bd75149dbf636
 workflow-type: tm+mt
-source-wordcount: 277
+source-wordcount: '278'
 ht-degree: 62%
-
 ---
-
 # [!UICONTROL registerExtension()] - at.js 1.x
 
 특정 확장 기능을 등록하는 표준 방법을 제공합니다.

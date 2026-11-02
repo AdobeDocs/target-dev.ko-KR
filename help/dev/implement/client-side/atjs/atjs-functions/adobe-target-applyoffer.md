@@ -1,27 +1,30 @@
 ---
 keywords: adobe.target.applyOffer, applyOffer, applyOffer, applyOffer, at.js, 함수, 함수, $8
-description: ' [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 [!UICONTROL adobe.target.applyOffer()] 함수를 사용하여 응답 콘텐츠를 적용하십시오.'
+description: '[!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 [!UICONTROL adobe.target.applyOffer()] 함수를 사용하여 응답 콘텐츠를 적용하십시오.'
 title: '[!UICONTROL adobe.target.applyOffer()] 함수를 사용하는 방법은 무엇입니까?'
 feature: at.js
 exl-id: 957bbe92-8012-4bd5-95d6-1ae38b72bb16
 TQID: https://experienceleague.adobe.com/lrjsIl-gKu1SnrZapxYcoDObvUCGG2ht58QtWbQkYts
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: a1af9d2c909d9b3d506dd4875d1bd75149dbf636
 workflow-type: tm+mt
-source-wordcount: 173
-ht-degree: 68%
-
+source-wordcount: '174'
+ht-degree: 67%
 ---
-
 # [!UICONTROL adobe.target.applyOffer(옵션)]
 
 이 함수는 [!DNL Adobe Target]에 응답 콘텐츠를 적용하는 데 사용됩니다.

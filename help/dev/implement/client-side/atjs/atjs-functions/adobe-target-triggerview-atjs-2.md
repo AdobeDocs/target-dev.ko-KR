@@ -1,27 +1,30 @@
 ---
 keywords: adobe.target.triggerView, triggerView, trigger view, trigger view, at.js, functions, function, viewName, viewname, view name, view name, adobe.target.triggerView1
-description: SPA(단일 페이지 애플리케이션)에서 사용하려면  [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 adobe.target.triggerView() 함수를 사용하십시오. (at.js 2.x)
+description: SPA(단일 페이지 애플리케이션)에서 사용하려면 [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 adobe.target.triggerView() 함수를 사용하십시오. (at.js 2.x)
 title: adobe.target.triggerView() 함수를 사용하는 방법
 feature: at.js
 exl-id: d6130c56-4e77-4668-ad21-a5b335f8b234
 TQID: https://experienceleague.adobe.com/pBC1GRKG0mxeaZ1hfaByKv2tu-XScrSJfm7lUw-3yKw
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: a1af9d2c909d9b3d506dd4875d1bd75149dbf636
 workflow-type: tm+mt
-source-wordcount: 446
+source-wordcount: '447'
 ht-degree: 19%
-
 ---
-
 # adobe.target.triggerView (viewName, options) - at.js 2.x
 
 이 함수는 새 페이지를 로드할 때마다 또는 페이지의 구성 요소가 다시 렌더링될 때 호출할 수 있습니다. [!UICONTROL 시각적 경험 작성기]&#x200B;(VEC)를 사용하여 [!UICONTROL A/B 테스트] 및 [!UICONTROL 경험 타깃팅]&#x200B;(XT) 활동을 만들려면 단일 페이지 응용 프로그램(SPA)에 대해 `adobe.target.triggerView()`을(를) 구현해야 합니다. 사이트에서 `[!UICONTROL adobe.target.triggerView()]`이(가) 구현되지 않으면 SPA에 VEC를 사용할 수 없습니다. 자세한 내용은 [단일 페이지 애플리케이션 구현](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md)을 참조하십시오.

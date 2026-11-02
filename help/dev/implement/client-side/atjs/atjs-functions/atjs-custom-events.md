@@ -1,28 +1,32 @@
 ---
 keywords: 사용자 지정 이벤트, at.js, 요청 실패, 요청 성공, 콘텐츠 렌더링 실패, 콘텐츠 렌더링 성공, 라이브러리 로드됨, 요청 시작, 콘텐츠 렌더링 시작, 콘텐츠 렌더링 오퍼 없음, 콘텐츠 렌더링 리디렉션, 사용자 지정 이벤트2
-description: mbox 요청 또는 오퍼가 실패하거나 성공하면 알림을 받으려면  [!DNL Adobe Target] at.js JavaScript 라이브러리에 대한 사용자 지정 이벤트를 사용하십시오.
+description: mbox 요청 또는 오퍼가 실패하거나 성공하면 알림을 받으려면 [!DNL Adobe Target] at.js JavaScript 라이브러리에 대한 사용자 지정 이벤트를 사용하십시오.
 title: at.js 사용자 지정 이벤트는 어떻게 사용합니까?
 feature: at.js
 exl-id: a4baed9a-9eb8-4343-9834-709b03e44ca2
 TQID: https://experienceleague.adobe.com/gCjLJ-XBlMe-GE-gaTJ2wHkn1jmal6Ftbs1GDb0zURA
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
 source-git-commit: a1af9d2c909d9b3d506dd4875d1bd75149dbf636
 workflow-type: tm+mt
-source-wordcount: 661
+source-wordcount: '662'
 ht-degree: 70%
-
 ---
-
 # at.js 사용자 지정 이벤트
 
 mbox 요청 또는 오퍼가 실패하거나 성공하는 경우를 알려주는 `at.js custom events`에 대한 정보입니다.

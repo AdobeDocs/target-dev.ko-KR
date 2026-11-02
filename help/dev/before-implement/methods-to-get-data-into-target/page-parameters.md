@@ -1,26 +1,29 @@
 ---
 keywords: 구현, 구현, 설정, 설정, 페이지 매개 변수
-description: 페이지 매개 변수를 사용하여  [!DNL Target] 에 데이터를 가져옵니다.
-title: 페이지 매개 변수를 사용하여 데이터를  [!DNL Target] 로 가져오려면 어떻게 해야 합니까?
+description: 페이지 매개 변수를 사용하여 [!DNL Target]에 데이터를 가져옵니다.
+title: 페이지 매개 변수를 사용하여 데이터를 [!DNL Target]에 가져오려면 어떻게 해야 합니까?
 feature: Implementation
 exl-id: 9bb7157e-a938-4150-8a15-c9bf0a0e2296
 TQID: https://experienceleague.adobe.com/CYhZOFnli-DmREOOZGE2aGNn3x7BJ7uwGA2vfwUSnOk
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: f6df325aff4a2eb9321b86778d102737493e63bb
 workflow-type: tm+mt
-source-wordcount: 397
+source-wordcount: '399'
 ht-degree: 31%
-
 ---
-
 # 페이지 매개 변수
 
 페이지 매개 변수(&quot;mbox 매개 변수&quot;라고도 함)는 나중에 사용하기 위해 방문자의 프로필에 저장되지 않은 페이지 코드를 통해 직접 전달되는 이름/값 쌍입니다.

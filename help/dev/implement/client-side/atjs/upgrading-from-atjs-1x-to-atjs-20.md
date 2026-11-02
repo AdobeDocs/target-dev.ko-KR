@@ -1,35 +1,46 @@
 ---
 keywords: at.js 릴리스, at.js 버전, 단일 페이지 앱, spa, 교차 도메인, 교차 도메인
-description: ' [!DNL Adobe Target] at.js 1.x에서 at.js 2.x로 업그레이드하는 방법에 대해 알아보십시오. 시스템 흐름 다이어그램을 검사하고, 새로운 함수 및 더 이상 사용되지 않는 함수에 대해 알아봅니다.'
+description: '[!DNL Adobe Target] at.js 1.x에서 at.js 2.x로 업그레이드하는 방법에 대해 알아봅니다. 시스템 흐름 다이어그램을 검사하고, 새로운 함수 및 더 이상 사용되지 않는 함수에 대해 알아봅니다.'
 title: at.js 버전 1.x에서 버전 2.x로 업그레이드하는 방법은 무엇입니까?
 feature: at.js
 exl-id: fbfa5743-0fa5-44c6-89b3-fdee9b50e126
 TQID: https://experienceleague.adobe.com/JGsuogzhCvThr4QGHJ5g4d8ZqGVZ8ClAf7hXuoh7X0Q
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
   - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+    internal-label: Integrations
 subfeature_v2:
   - id: df62f171-ac37-440f-8f0f-f41a72ebdd34
+    internal-label: Analytics integration
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
 workflow-type: tm+mt
-source-wordcount: 3100
+source-wordcount: '3101'
 ht-degree: 47%
-
 ---
-
 # at.js 1.*x*&#x200B;에서 at.js 2.*x*&#x200B;으로 업그레이드
 
 [!DNL Adobe Target]의 최신 at.js 버전에서는 차세대 클라이언트측 기술에 대한 개인화를 실행하도록 기업을 지원하는 다양한 기능을 제공합니다. 이 새로운 버전은 단일 페이지 애플리케이션(SPA)과 조화로운 상호 작용을 하도록 at.js를 업그레이드하는 데 주력하고 있습니다.

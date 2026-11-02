@@ -9,24 +9,30 @@ exl-id: 886588bf-4416-4f1e-aecc-467e48c8fb23
 TQID: https://experienceleague.adobe.com/cShqvj3wSialxA-ajnROnIpzjuz66pNg3CLM6l2xPLg
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: a94ced60-8199-4549-b453-ede2acb4101e
+    internal-label: Hybrid implementation
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 265
+source-wordcount: '265'
 ht-degree: 1%
-
 ---
-
 # [!DNL Experience Platform Web SDK]에서 [!DNL Adobe Analytics for Target]&#x200B;(A4T) 로깅
 
 개인화에 [!DNL Adobe Target]을(를) 사용하는 경우 성과 측정에 사용할 시스템을 선택할 수 있습니다. 각 [Target 활동](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html?lang=ko)을 통해 [!DNL Target] 보고와 Adobe [!DNL Analytics] 보고 중에서 선택할 수 있습니다.

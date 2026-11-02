@@ -1,26 +1,29 @@
 ---
 keywords: 구현, 구현, 설정, 설정, 페이지 매개 변수, tomcat, url 인코딩, 인페이지 프로필 속성, mbox 매개 변수, 인페이지 프로필 속성, 스크립트 프로필 속성, 벌크 프로필 업데이트 API, 단일 파일 업데이트 API, 고객 속성, 구현5, 구현6, 구현7, 구현8, 구현9, 구현0, 구현1, 구현2, 구현3, 구현4, 구현5, 데이터 공급자, dataprovider, 데이터 공급자
-description: ' [!DNL Target] (페이지 매개 변수, 프로필 특성, 스크립트 프로필 특성, 데이터 공급자, 단일 및 벌크 프로필 업데이트 API, 고객 특성)에 데이터를 가져옵니다.'
+description: '[!DNL Target]에 데이터 가져오기(페이지 매개 변수, 프로필 특성, 스크립트 프로필 특성, 데이터 공급자, 단일 및 벌크 프로필 업데이트 API, 고객 특성).'
 title: 데이터를 Target으로 가져오려면 어떻게 해야 합니까?
 feature: Implementation
 exl-id: a54e306a-ea8e-4d3f-bc5d-b5895b6b9a84
 TQID: https://experienceleague.adobe.com/pmlPWRHb9tnrdSFm7s5OZ-RRsJJOxw-ntBY5AeswIcM
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 377
+source-wordcount: '377'
 ht-degree: 27%
-
 ---
-
 # 메서드 개요
 
 데이터를 Adobe Target으로 가져오는 데 사용할 수 있는 다양한 방법에 대한 정보입니다.

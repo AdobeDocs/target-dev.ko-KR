@@ -1,27 +1,30 @@
 ---
 keywords: 글로벌 mbox 매개 변수, targetPageParams, 쿼리 문자열, 배열, json, dtm
-description: '[!UICONTROL targetPageParams] 함수를 사용하여 추가 타깃팅 또는 컨텍스트 정보를  [!DNL Adobe Target] 글로벌 mbox에 전달하는 방법을 알아봅니다.'
+description: '[!UICONTROL targetPageParams] 함수를 사용하여 추가 타깃팅 또는 컨텍스트 정보를 [!DNL Adobe Target] 글로벌 mbox에 전달하는 방법을 알아봅니다.'
 title: 글로벌 mbox에 매개 변수를 전달하려면 어떻게 합니까?
 feature: at.js
 exl-id: 2a6be3e4-a618-4812-9e87-b01789705c40
 TQID: https://experienceleague.adobe.com/MRdqU23ARg1E-gf8QDbXOpaVJWd9Fx1pqJ4QXjsBdtA
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 378
+source-wordcount: '379'
 ht-degree: 60%
-
 ---
-
 # 글로벌 mbox에 매개 변수 전달
 
 JavaScript `targetPageParams` 함수는 [!DNL Adobe Target]의 글로벌 mbox에 매개 변수를 전달하는 데 사용됩니다. 추가적인 타겟팅/컨텍스트 정보를 [!DNL Target]에 전달해야 하는 모든 시나리오에서 필요합니다.

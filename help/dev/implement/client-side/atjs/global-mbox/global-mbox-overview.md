@@ -1,27 +1,30 @@
 ---
 keywords: 글로벌 mbox, at.js 구현
-description: ' [!DNL Adobe Target], a name used to refer to the single server call made at the top of each web page in your [!DNL Target] 구현의 글로벌 mbox에 대해 알아봅니다.'
+description: '[!DNL Target] 구현의 각 웹 페이지 맨 위에서 수행된 단일 서버 호출을 참조하는 데 사용되는 이름인 [!DNL Adobe Target]의 글로벌 mbox에 대해 알아봅니다.'
 title: 글로벌 mbox란?
 feature: at.js
 exl-id: 572c1dc6-5cdd-427a-9458-e5ec49990cf8
 TQID: https://experienceleague.adobe.com/MXEGvHHY8tFMfS6bMHcZYaG9mZtOWEkuODKH24JifZI
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 201
-ht-degree: 61%
-
+source-wordcount: '222'
+ht-degree: 55%
 ---
-
 # 글로벌 mbox 이해
 
 [!DNL Adobe Target] 구현의 각 웹 페이지 맨 위에서 수행된 단일 서버 호출을 참조하는 데 사용되는 이름인 글로벌 mbox에 대한 정보입니다.

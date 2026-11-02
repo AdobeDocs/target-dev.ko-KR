@@ -1,26 +1,29 @@
 ---
 keywords: 프로필 속성 구현, 구현, 설정, 설정, 스크립팅
-description: 스크립트 프로필 특성을 사용하여  [!DNL Target] 에 데이터를 가져옵니다.
-title: 스크립트 프로필 특성을 사용하여  [!DNL Target] 에 데이터를 가져오려면 어떻게 해야 합니까?
+description: 스크립트 프로필 특성을 사용하여 [!DNL Target]에 데이터를 가져옵니다.
+title: 스크립트 프로필 특성을 사용하여 데이터를 [!DNL Target] (으)로 가져오려면 어떻게 해야 합니까?
 feature: Implementation
 exl-id: ba11f1de-e68b-4505-8e3e-cd4d46ef59a2
 TQID: https://experienceleague.adobe.com/bRsl4ipgw0OeuVD0d69wmnHmrVvcGt9o0KmkhrEECZQ
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 292
+source-wordcount: '294'
 ht-degree: 71%
-
 ---
-
 # 스크립트 프로필 속성
 
 스크립트 프로필 특성은 [!DNL Adobe Target] 솔루션에 정의된 이름/값 쌍입니다. 서버 호출에 대해 Target 서버에서 JavaScript 코드 조각을 실행하여 값을 결정합니다.
