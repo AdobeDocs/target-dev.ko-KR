@@ -1,28 +1,32 @@
 ---
 keywords: at.js, 함수, javascript 라이브러리
-description: ' [!DNL Adobe Target]의 at.js JavaScript 라이브러리의 1.x 및 2.x 버전과 함께 사용할 수 있는 함수 목록을 봅니다.'
+description: '[!DNL Adobe Target]의 at.js JavaScript 라이브러리의 1.x 및 2.x 버전과 함께 사용할 수 있는 함수 목록을 봅니다.'
 title: at.js에서 사용할 수 있는 함수는 무엇입니까?
 feature: at.js
 exl-id: 1efed365-8a74-4c85-bdb1-8daaaf53d642
 TQID: https://experienceleague.adobe.com/7uABK1rDaMpA7a0skEo3g1KxTnoc-gif-uHMkMnE8QE
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 source-git-commit: a1af9d2c909d9b3d506dd4875d1bd75149dbf636
 workflow-type: tm+mt
-source-wordcount: 557
+source-wordcount: '557'
 ht-degree: 38%
-
 ---
-
 # at.js 함수
 
 [!DNL Adobe Target] at.js JavaScript 라이브러리와 함께 사용할 수 있는 함수 목록입니다. 자세한 내용 및 예를 보려면 함수 열의 링크를 클릭합니다.

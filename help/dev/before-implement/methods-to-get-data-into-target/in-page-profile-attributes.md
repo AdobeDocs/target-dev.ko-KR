@@ -1,27 +1,31 @@
 ---
 keywords: 구현, 구현, 설정, 설정, 페이지 매개 변수
-description: 페이지 내 프로필 특성을 사용하여  [!DNL Target] 에 데이터를 가져옵니다.
-title: 페이지 내 프로필 특성을 사용하여  [!DNL Target] 로 데이터를 가져오려면 어떻게 해야 합니까?
+description: 페이지 내 프로필 특성을 사용하여 [!DNL Target]에 데이터를 가져옵니다.
+title: 페이지 내 프로필 특성을 사용하여 데이터를 [!DNL Target](으)로 가져오려면 어떻게 해야 합니까?
 feature: Implementation
 exl-id: c19fd746-21a2-4eb5-8c2a-c24806e09324
 TQID: https://experienceleague.adobe.com/jXWNNl7HfrR03tEoMz7KApX3onc1Zc44IAuXy4QF2tU
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 311
+source-wordcount: '313'
 ht-degree: 40%
-
 ---
-
 # 페이지 내 프로필 속성
 
 [!DNL Adobe Target]의 페이지 내 프로필 특성(&quot;mbox 내 프로필 특성&quot;이라고도 함)은 나중에 사용하기 위해 방문자 프로필에 저장된 페이지 코드를 통해 직접 전달되는 이름/값 쌍입니다.
@@ -71,6 +75,6 @@ mboxCreate 코드에 있는 속성:
 
 ## 관련 정보 링크
 
-[프로필 속성](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=ko)
+[프로필 속성](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html)
 
-[방문자 프로필](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=ko)
+[방문자 프로필](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html)

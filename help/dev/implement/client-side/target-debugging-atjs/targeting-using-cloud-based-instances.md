@@ -1,27 +1,30 @@
 ---
 keywords: 클라우드 인스턴스, 공용 접미사 목록, 공용 접미사, 쿠키, 퍼스트 파티 쿠키, 퍼스트 파티 쿠키, azurewebsites.net, cloudapp.net, amazonaws.com, cloudfront.net, herokuapp.com, firebaseapp.com, targetGlobalSettings, cookieDomain, cloud instances5, cloud instances6, cloud instances7, cloud instances8, cloud instances9, 공용 접미사 list0, 공용 접미사 list1, 공용 접미사 list2, 공용 접미사 list3, 공용 접미사 list4, 공용 접미사 list5
-description: 클라우드 기반 인스턴스를 사용하여  [!DNL Adobe Target] 을(를) 테스트하거나 개념 입증 목적으로 고객이 직면한 문제를 살펴봅니다(솔루션 사용).
-title: 클라우드 기반 인스턴스와 함께  [!DNL Target] 을(를) 사용할 수 있습니까?
+description: 클라우드 기반 인스턴스를 사용하여 [!DNL Adobe Target]을(를) 테스트하거나 개념 입증 목적으로 고객이 직면한 문제를 살펴봅니다(솔루션 사용).
+title: 클라우드 기반 인스턴스에서 [!DNL Target]을(를) 사용할 수 있습니까?
 feature: at.js
 exl-id: 4b24fdc0-6c74-4b29-bbf9-7a761d4564a2
 TQID: https://experienceleague.adobe.com/df63sTQxukCfa4pYc1X6FRvxV3cY2UG-ixk5v9Fqh-c
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: 235baadf4059d2c363368408012630d6619aef99
 workflow-type: tm+mt
-source-wordcount: 203
+source-wordcount: '205'
 ht-degree: 37%
-
 ---
-
 # [!DNL Target]에 클라우드 기반 인스턴스 사용
 
 클라우드 기반 인스턴스를 사용하여 [!DNL Adobe Target]을 테스트할 때 고객이 직면하는 문제에 대한 정보입니다.

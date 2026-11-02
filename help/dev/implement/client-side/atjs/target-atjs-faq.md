@@ -1,29 +1,34 @@
 ---
 keywords: at.js faq, at.js 자주 묻는 질문, faq, 깜박임, 로더, 페이지 로더, 교차 도메인, 파일 크기, 파일크기, x-domain, at.js 및 mbox.js, x 전용, 교차 도메인, safari, 단일 페이지 앱, 누락된 선택기, 선택기, 단일 페이지 애플리케이션, tt.omtrdc.net, spa, Adobe Experience Manager, AEM, ip 주소, httponly, HttpOnly, 보안, ip, 쿠키 도메인
-description: ' [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 자주 묻는 질문과 대답(FAQ)을 읽어 보십시오.'
+description: '[!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 자주 묻는 질문과 대답(FAQ)을 읽어 보십시오.'
 title: at.js에 대한 일반적인 질문과 대답은 무엇입니까?
 feature: at.js
 exl-id: 362ccc5b-8731-46c0-bc52-3e55c273e216
 TQID: https://experienceleague.adobe.com/wOC67fpxKtZKP3-o-T86oA-HqySuPGebT9W5LUHuxSA
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 235baadf4059d2c363368408012630d6619aef99
 workflow-type: tm+mt
-source-wordcount: 2994
+source-wordcount: '2995'
 ht-degree: 38%
-
 ---
-
 # at.js FAQ
 
 [!DNL Adobe Target] at.js JavaScript 라이브러리에 대해 자주 묻는 질문과 대답(FAQ)입니다.
@@ -161,7 +166,7 @@ Safari 방문자를 지원하기 위해 더 나은 X-Domain이 &quot;비활성�
 
 ## 단일 페이지 애플리케이션에서 Target [!UICONTROL 시각적 경험 작성기]&#x200B;(VEC)를 사용할 수 있습니까?
 
-예. at.js 2.x를 사용하는 경우 SPA용 VEC를 사용할 수 있습니다. 자세한 내용은 [SPA(단일 페이지) 시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html?lang=ko)를 참조하십시오.
+예. at.js 2.x를 사용하는 경우 SPA용 VEC를 사용할 수 있습니다. 자세한 내용은 [SPA(단일 페이지) 시각적 경험 작성기](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html)를 참조하십시오.
 
 ## at.js 구현에 Adobe Experience Cloud Debugger를 사용할 수 있습니까?
 
@@ -252,7 +257,7 @@ TargetGlobalSettings() 함수([targetGlobalSettings](/help/dev/implement/client-
 * 커뮤니케이션 세션을 추적합니다
 * 무작위 문자로 구성되어 있습니다
 * 세션 ID는 30분 동안 유효합니다.
-* 응답 토큰을 비활성화할 수 있습니다([응답 토큰](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=ko)).
+* 응답 토큰을 비활성화할 수 있습니다([응답 토큰](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html)).
 * 이 변수는 Adobe 솔루션 환경에서만 유용합니다.
 
 값이 &quot;*&quot;인 `Access-Control-Allow-Origin` 헤더가 at.js 요청에 표시될 것으로 예상됩니다. 공용 항목이므로 인증이 필요하지 않으며 JavaScript 호출을 통해 모든 도메인에서 Adobe Edge Network에 액세스해야 합니다.

@@ -1,25 +1,27 @@
 ---
 keywords: 구현, 구현, 설정, 설정, 고객 속성
-description: 고객 특성을 사용하여  [!DNL Target] 에 데이터를 가져옵니다.
-title: 고객 특성을 사용하여  [!DNL Target] 에 데이터를 가져오려면 어떻게 해야 합니까?
+description: 고객 특성을 사용하여 [!DNL Target]에 데이터를 가져옵니다.
+title: 고객 특성을 사용하여 데이터를 [!DNL Target]에 가져오는 방법은 무엇입니까?
 feature: Implementation
 exl-id: d05cdd38-ba7c-4f29-a0ef-ae68619e7617
 TQID: https://experienceleague.adobe.com/bzK915y7fvjfZjTkSK2QWHDzmIN9SdAQiEguiUlc-r8
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 216
+source-wordcount: '218'
 ht-degree: 13%
-
 ---
-
 # 고객 속성
 
 고객 특성을 사용하면 FTP를 통해 방문자 프로필 데이터를 [!DNL Adobe Experience Cloud]에 업로드할 수 있습니다. 업로드한 후에는 [!DNL Adobe Analytics] 및 [!DNL Adobe Target]의 데이터를 사용합니다.
@@ -52,8 +54,8 @@ Experience Cloud ID(ECID) 구현이 필요합니다.
 
 ## 코드 예
 
-자세한 내용은 [고객 특성 원본을 만들고 데이터 파일을 업로드](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html?lang=ko)하는 방법을 참조하십시오.
+자세한 내용은 [고객 특성 원본을 만들고 데이터 파일을 업로드](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html)하는 방법을 참조하십시오.
 
 ### 관련 정보 링크
 
-[고객 특성 원본을 만들고 데이터 파일을 업로드](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html?lang=ko)합니다.
+[고객 특성 원본을 만들고 데이터 파일을 업로드](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html)합니다.

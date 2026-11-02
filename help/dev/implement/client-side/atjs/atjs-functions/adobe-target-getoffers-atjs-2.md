@@ -1,29 +1,34 @@
 ---
 keywords: adobe.target.getOffers, getOffers, getoffers, 오퍼 가져오기, at.js, 함수, 함수, $8
-description: '[!UICONTROL adobe.target.getOffers()] 함수와  [!DNL Adobe Target] at.js 라이브러리에 대한 옵션을 사용하여 여러  [!DNL Target] 오퍼를 가져오기 위한 요청을 실행합니다. (at.js 2.x)'
+description: '[!UICONTROL adobe.target.getOffers()] 함수와 [!DNL Adobe Target] at.js 라이브러리에 대한 옵션을 사용하여 여러 [!DNL Target] 오퍼를 가져오는 요청을 실행합니다. (at.js 2.x)'
 title: '[!UICONTROL adobe.target.getOffers()] 함수를 사용하는 방법은 무엇입니까?'
 feature: at.js
 exl-id: b96a3018-93eb-49e7-9aed-b27bd9ae073a
 TQID: https://experienceleague.adobe.com/jJXcWyQzJ48GNCNcOT165vxcO-CLExTj-t-3kbR2FZ0
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
 source-git-commit: a1af9d2c909d9b3d506dd4875d1bd75149dbf636
 workflow-type: tm+mt
-source-wordcount: 1357
+source-wordcount: '1359'
 ht-degree: 57%
-
 ---
-
 # [!UICONTROL adobe.target.getOffers()] - at.js 2.x
 
 이 함수를 사용하면 여러 mbox를 전달하여 여러 오퍼를 검색할 수 있습니다. 또한 활성 활동의 모든 보기에 대해 여러 오퍼를 검색할 수 있습니다.

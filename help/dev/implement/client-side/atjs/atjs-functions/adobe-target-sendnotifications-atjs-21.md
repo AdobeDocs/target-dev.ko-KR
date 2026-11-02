@@ -1,27 +1,30 @@
 ---
 keywords: adobe.target.sendNotifications, sendNotifications, sendnotifications, send notifications, notifications, at.js, functions, function, $9
-description: 경험이 [!UICONTROL applyOffer]를 사용하지 않고 렌더링될 때 at.js에 대해 [!UICONTROL adobe.target.sendNotifications()]을(를) 사용하여  [!DNL Target] edge로 알림을 보냅니다. (at.js.2.1 +)
+description: 경험이 [!UICONTROL applyOffer]를 사용하지 않고 렌더링될 때 at.js에 대해 [!UICONTROL adobe.target.sendNotifications()]을(를) 사용하여 [!DNL Target] Edge로 알림을 보냅니다. (at.js.2.1 +)
 title: adobe.target.sendNotifications() 함수를 사용하는 방법은 무엇입니까?
 feature: at.js
 exl-id: 1a08da10-31a0-4b0b-af7d-91ed7d32c308
 TQID: https://experienceleague.adobe.com/QprkTK-0WGq-fzJ9e3FUSAZAandaZFiUY62-zQ6ajY8
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: a1af9d2c909d9b3d506dd4875d1bd75149dbf636
 workflow-type: tm+mt
-source-wordcount: 642
+source-wordcount: '643'
 ht-degree: 83%
-
 ---
-
 # [!UICONTROL adobe.target.sendNotifications(options)]
 
 이 함수는 `[!UICONTROL adobe.target.applyOffer()]` 또는 `[!UICONTROL adobe.target.applyOffers()]`을(를) 사용하지 않고 경험을 렌더링할 때 [!DNL Target] Edge에 알림을 보냅니다.
