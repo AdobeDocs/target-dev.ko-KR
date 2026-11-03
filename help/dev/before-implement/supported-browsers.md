@@ -22,9 +22,9 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: 4d1a60ca866f126520e9a17257adc50114ddd8e7
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '452'
 ht-degree: 19%
 ---
 # 지원되는 브라우저
@@ -45,15 +45,15 @@ TLS에 대한 자세한 내용은 [TLS(전송 계층 보안) 암호화 변경 �
 | 장치 유형 | 브라우저 버전 |
 |--- |--- |
 | [!DNL Windows] | <ul><li>[!DNL Microsoft Edge]</li><li>[!DNL Google Chrome]</li><li>[!DNL Mozilla Firefox]</li></ul> |
-| [!DNL Mac] | <ul><li>[!DNL Microsoft Edge]</li><li>[!DNL Google Chrome]</li><li>[!DNL Mozilla Firefox]</li></ul> |
+| [!DNL Mac] | <ul><li>[!DNL Microsoft Edge]</li><li>[!DNL Google Chrome]</li><li>[!DNL Mozilla Firefox]</li><li>[!DNL Safari]</li></ul> |
 
 ## 시각적 편집 요구 사항
 
-VEC(시각적 경험 작성기)에서 웹 페이지를 안정적으로 열고, 작성하고, 미리 보려면 웹 브라우저에 [Adobe Experience Cloud 시각적 편집 도우미 브라우저 확장 기능](https://experienceleague.adobe.com/ko/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank}이 설치되어 있거나 [!UICONTROL EEC(고급 경험 작성기)]을 사용해야 합니다.
+[!UICONTROL VEC(시각적 경험 작성기)에서 웹 페이지를 안정적으로 열고, 작성하고, 미리 보려면 웹 브라우저에 [Adobe Experience Cloud 시각적 편집 도우미 브라우저 확장 기능](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank}이 설치되어 있거나 [!UICONTROL EEC(고급 경험 작성기)]을 사용해야 합니다.]
 
 >[!NOTE]
 >
->[!DNL Google Chrome] 및 [!DNL Microsoft Edge]은(는) 현재 [!DNL Adobe Target]에서 웹 페이지의 시각적 편집을 지원하는 유일한 브라우저입니다.
+>[!DNL Google Chrome] 및 [!DNL Microsoft Edge]은(는) 현재 [!DNL Adobe Target]에서 웹 페이지의 시각적 편집을 지원하는 유일한 브라우저입니다. [!DNL Safari]은(는) VEC 또는 EEC를 지원하지 않습니다.
 
 
 ## 콘텐츠 전달
