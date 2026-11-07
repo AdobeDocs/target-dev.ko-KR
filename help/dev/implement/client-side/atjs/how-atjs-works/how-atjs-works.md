@@ -94,7 +94,7 @@ at.js 라이브러리는 [!DNL Adobe Target]의 클라이언트측 구현을 위
 
 at.js 2.x는 SPA에 대한 Adobe Target의 지원을 개선하고 다른 Experience Cloud 솔루션과 통합됩니다. 다음 비디오에서는 모든 것이 어떻게 합쳐지는지 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26250/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3507930/?captions=kor&quality=12)
 
 자세한 내용은 [at.js 2.x 작동 방식 이해](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html?lang=ko)를 참조하십시오.
 

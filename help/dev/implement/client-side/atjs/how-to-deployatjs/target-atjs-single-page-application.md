@@ -339,7 +339,7 @@ at.js 2.x API를 사용하면 여러 가지 방법으로 [!DNL Target] 구현을
 
 ### at.js 2.x 작동 방식 이해
 
->[!VIDEO](https://video.tv.adobe.com/v/26250/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3507930/?captions=kor&quality=12)
 
 자세한 내용은 [at.js 2.x 작동 방식 이해](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html?lang=ko)를 참조하십시오.
 
