@@ -25,9 +25,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3a1674348a1cb39351051addf8e063efbf0dc9e9
+source-git-commit: 78a2ba4a9668cee9813788f03c81eb68f3a6af07
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1316'
 ht-degree: 6%
 ---
 # [!DNL Adobe Target Bulk Profile Update API]
@@ -203,5 +203,3 @@ http://mboxedge45.tt.omtrdc.net/m2/demo/profile/batchStatus?batchId=demo-1701473
 이 동작은 [!DNL Bulk Profile Update API]의 v1과 v2 모두에 적용됩니다.
 
 빈 값을 전송하여 특성을 지우거나 제거하려고 시도해도 효과가 없습니다.
-
-명시적 속성 제거에 대한 지원은 API의 향후 버전(v3)에 대해 계획되어 있지만 현재 사용할 수 없습니다.
